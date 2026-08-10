@@ -442,7 +442,7 @@
 
     .resource-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
 
@@ -459,6 +459,21 @@
     .resource-link:hover { border-color: #abc3bb; }
     .resource-name { display: block; font-size: 14px; font-weight: 800; }
     .resource-desc { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
+
+    .backup-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 7px 14px;
+      border-radius: 5px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .backup-link:hover { background: var(--accent-strong); }
+    .backup-password { margin-left: 8px; color: var(--muted); font-size: 13px; }
 
     footer {
       margin-top: 30px;
@@ -528,10 +543,6 @@
         <a class="resource-link" href="https://www.yckceo.com/" target="_blank" rel="noopener">
           <span class="resource-name">源仓库</span>
           <span class="resource-desc">阅读书源相关入口</span>
-        </a>
-        <a class="resource-link" href="https://legado.tucong.vip/" target="_blank" rel="noopener">
-          <span class="resource-name">全版本下载站</span>
-          <span class="resource-desc">原始聚合页面与下载入口</span>
         </a>
         <div class="resource-link" id="qq-group">
           <span class="resource-name">交流群 1101873338</span>
@@ -692,10 +703,13 @@
 
       function renderNoRelease(branch) {
         const message = branch.abandoned
-          ? `这个仓库当前没有公开 Release。${branch.abandoned}。`
+          ? `这个仓库当前没有公开 Release，状态：${branch.abandoned}。`
           : '这个仓库当前没有公开 Release。';
+        const backup = branch.downloadUrl
+          ? `<div><a class="backup-link" href="${escapeAttribute(branch.downloadUrl)}" target="_blank" rel="noopener">蓝奏云补档</a>${branch.password ? `<span class="backup-password">密码：<strong>${escapeHtml(branch.password)}</strong></span>` : ''}</div>`
+          : '';
         return `
-          <div class="empty-box">${escapeHtml(message)}</div>
+          <div class="empty-box">${escapeHtml(message)}${backup}</div>
         `;
       }
 
