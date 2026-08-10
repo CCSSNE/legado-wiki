@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 
 const branches = [
-  { id: 'c', name: '阅读 C', tag: 'mine', repo: 'CCSSNE/legadoC', term: 'legado-branch-c', pinned: true, note: '站长自用分支，固定置顶。' },
+  { id: 'c', name: '阅读 C', tag: 'mine', repo: 'CCSSNE/legadoC', term: 'legado-branch-c', pinned: true, note: '站长开发。' },
   { id: 'original', name: '阅读 原版', tag: 'original', repo: 'gedoor/legado', term: 'legado-branch-original', abandoned: '弃坑', note: '原版已停止维护，保留补档下载。', downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof', password: '9j41' },
   { id: 'tauri', name: '阅读 Tauri', tag: 'tauri', repo: 'LegadoTeam/Legado-Tauri', term: 'legado-branch-tauri', abandoned: '弃坑' },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony', abandoned: '弃坑' },

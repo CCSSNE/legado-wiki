@@ -81,36 +81,6 @@
       padding-top: 24px;
     }
 
-    .quick-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .stat-item {
-      padding: 12px 14px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 8px 24px rgba(22, 61, 56, 0.05);
-    }
-
-    .stat-value {
-      display: block;
-      color: var(--accent-strong);
-      font-size: 20px;
-      font-weight: 800;
-      line-height: 1.1;
-    }
-
-    .stat-label {
-      display: block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     .accel-row {
       display: flex;
       align-items: center;
@@ -488,7 +458,6 @@
       body { padding: 0 14px 40px; }
       header { margin-top: 14px; padding: 24px 20px; }
       .header-title { font-size: 27px; }
-      .quick-stats { grid-template-columns: 1fr; }
       .nav-bar { grid-template-columns: repeat(2, 1fr); }
       .accel-row { align-items: flex-start; flex-direction: column; }
       .repo-card { padding: 14px; }
@@ -508,12 +477,6 @@
   </header>
 
   <main class="container">
-    <section class="quick-stats" aria-label="页面概览">
-      <div class="stat-item"><span class="stat-value" id="branchCount">...</span><span class="stat-label">分支</span></div>
-      <div class="stat-item"><span class="stat-value" id="assetCount">...</span><span class="stat-label">下载文件</span></div>
-      <div class="stat-item"><span class="stat-value" id="starCount">...</span><span class="stat-label">Star 总数</span></div>
-    </section>
-
     <div class="accel-row">
       <div class="accel-left">
         <span class="accel-icon">⚡</span>
@@ -568,9 +531,6 @@
 
       const nav = document.getElementById('repoNav');
       const list = document.getElementById('repoList');
-      const branchCount = document.getElementById('branchCount');
-      const assetCount = document.getElementById('assetCount');
-      const starCount = document.getElementById('starCount');
       const syncTime = document.getElementById('syncTime');
       const toggle = document.getElementById('accelToggle');
       const sourceSel = document.getElementById('accelSource');
@@ -600,9 +560,6 @@
           data = await response.json();
         } catch (error) {
           list.innerHTML = `<div class="error-box">数据同步文件加载失败：${escapeHtml(error.message)}</div>`;
-          branchCount.textContent = '0';
-          assetCount.textContent = '0';
-          starCount.textContent = '0';
           syncTime.textContent = '数据同步失败';
           return;
         }
@@ -613,9 +570,6 @@
           return (right.stars ?? -1) - (left.stars ?? -1);
         });
 
-        branchCount.textContent = String(activeBranches.length);
-        assetCount.textContent = String(activeBranches.reduce((sum, branch) => sum + ((branch.release?.assets || []).length), 0));
-        starCount.textContent = formatCompactNumber(activeBranches.reduce((sum, branch) => sum + (branch.stars || 0), 0));
         nav.innerHTML = activeBranches.map(branch => `<a href="#repo-${branch.id}">${escapeHtml(branch.name)}</a>`).join('') +
           '<a href="#useful-links">推荐链接</a>';
         list.innerHTML = activeBranches.map(renderCardShell).join('');
@@ -638,7 +592,7 @@
                 <span class="tag">${escapeHtml(branch.tag)}</span>
                 <span class="repo-tag">${escapeHtml(branch.repo)}</span>
                 <span class="star-tag">${escapeHtml(starText)}</span>
-                ${branch.pinned ? '<span class="pin-tag">站长置顶</span>' : ''}
+                ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
                 <div class="repo-note">${escapeHtml(updatedText)}${branch.note ? ` · ${escapeHtml(branch.note)}` : ''}${branch.errors?.length ? ` · ${escapeHtml(branch.errors.join('；'))}` : ''}</div>
               </div>
