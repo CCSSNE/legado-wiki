@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="开源阅读 Legado 分支索引，实时聚合各分支 GitHub Release 与独立评论区。">
+  <title>Legado 分支索引</title>
+  <style>
+    :root {
+      --bg: #eef1ed;
+      --paper: #ffffff;
+      --text: #18211f;
+      --muted: #66716d;
+      --border: #d9dfda;
+      --accent: #2e6f64;
+      --accent-strong: #163d38;
+      --accent-soft: rgba(46, 111, 100, 0.1);
+      --warm: #b97235;
+      --warm-soft: #fff4df;
+      --danger: #9f2f2f;
+      --shadow: 0 18px 50px rgba(22, 61, 56, 0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      min-height: 100vh;
+      padding: 0 24px 56px;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(46, 111, 100, 0.12), transparent 28%),
+        linear-gradient(180deg, #f6f7f3 0%, var(--bg) 36%, #e6ebe6 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", Roboto, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      max-width: 1120px;
+      margin: 28px auto 0;
+      padding: 30px 34px 32px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: linear-gradient(135deg, #173d38 0%, #245a53 62%, #9b6b3f 100%);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .header-badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 4px 11px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #e7f4ef;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .header-title {
+      color: #fff;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .header-sub {
+      margin-top: 8px;
+      color: #d6e7e1;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding-top: 24px;
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .stat-item {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 8px 24px rgba(22, 61, 56, 0.05);
+    }
+
+    .stat-value {
+      display: block;
+      color: var(--accent-strong);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .accel-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(22, 61, 56, 0.06);
+    }
+
+    .accel-left { display: flex; align-items: center; gap: 10px; }
+    .accel-icon { font-size: 20px; line-height: 1; }
+    .accel-label { color: var(--text); font-size: 14px; font-weight: 500; letter-spacing: 0.01em; white-space: nowrap; }
+
+    .accel-select {
+      padding: 6px 9px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #f8faf7;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .accel-select:focus { border-color: var(--accent); }
+
+    .toggle {
+      position: relative;
+      width: 44px;
+      height: 26px;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .toggle input { width: 0; height: 0; opacity: 0; }
+    .toggle .track { position: absolute; inset: 0; border-radius: 26px; background: #d1d5db; transition: 0.25s; }
+    .toggle input:checked + .track { background: var(--accent); }
+    .toggle .thumb { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); transition: 0.25s; }
+    .toggle input:checked + .track .thumb { left: 21px; }
+
+    .nav-bar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .nav-bar a {
+      display: block;
+      padding: 9px 10px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: #fff;
+      color: #34413d;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-bar a:hover { border-color: #abc3bb; color: var(--accent-strong); transform: translateY(-1px); }
+    .nav-bar a.active { border-color: var(--accent-strong); background: var(--accent-strong); color: #fff; }
+
+    .repo-card {
+      margin-bottom: 14px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 28px rgba(22, 61, 56, 0.06);
+      transition: 0.2s;
+      scroll-margin-top: 18px;
+    }
+
+    .repo-card:hover { border-color: #b7c8c0; box-shadow: 0 14px 32px rgba(22, 61, 56, 0.1); }
+
+    .repo-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .repo-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .repo-heading h2 {
+      color: #142320;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .repo-open {
+      flex-shrink: 0;
+      padding: 6px 12px;
+      border-radius: 5px;
+      background: var(--accent-strong);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .repo-open:hover { background: #0f2d29; }
+
+    .tag {
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #e8efe9;
+      color: var(--accent-strong);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .repo-tag {
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #f3f0e9;
+      color: #7b5430;
+      font-family: "SF Mono", SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .release-info {
+      padding: 14px;
+      border: 1px solid #e1e6df;
+      border-radius: 7px;
+      background: #f8faf7;
+    }
+
+    .release-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 3px;
+      color: #18211f;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .beta-badge {
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--warm-soft);
+      color: var(--warm);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .release-meta {
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .release-body {
+      max-height: 240px;
+      margin-bottom: 14px;
+      padding: 14px;
+      overflow-y: auto;
+      border: 1px solid #e1e6df;
+      border-radius: 7px;
+      background: #fff;
+      color: #33413d;
+      font-size: 13px;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+
+    .release-body h3,
+    .release-body h4 { margin: 8px 0 4px; color: #263530; font-size: 13px; }
+    .release-body ul { margin: 4px 0 4px 18px; padding: 0; }
+    .release-body a { color: #0369a1; text-decoration: underline; }
+    .release-body::-webkit-scrollbar { width: 4px; }
+    .release-body::-webkit-scrollbar-thumb { border-radius: 3px; background: #bac7c1; }
+
+    .asset-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+      padding: 10px 12px;
+      border: 1px solid #e1e6df;
+      border-radius: 7px;
+      background: #fff;
+    }
+
+    .asset-name {
+      color: #263530;
+      font-size: 13px;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .asset-actions { display: flex; align-items: center; gap: 10px; }
+    .asset-size { color: #7d8984; font-size: 12px; white-space: nowrap; }
+
+    .asset-link {
+      padding: 6px 13px;
+      border-radius: 5px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .asset-link:hover { background: var(--accent-strong); }
+
+    .empty-box,
+    .loading-box,
+    .error-box {
+      padding: 16px;
+      border: 1px solid #e1e6df;
+      border-radius: 7px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .error-box { color: var(--danger); }
+
+    .comment-panel {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .comment-title {
+      margin-bottom: 10px;
+      color: #263530;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .netdisk-box {
+      padding: 16px;
+      border: 1px solid #e1e6df;
+      border-radius: 7px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .netdisk-link {
+      display: inline-block;
+      margin: 10px 8px 0 0;
+      padding: 8px 20px;
+      border-radius: 5px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+      text-align: right;
+    }
+
+    @media (max-width: 760px) {
+      body { padding: 0 14px 40px; }
+      header { margin-top: 14px; padding: 24px 20px; }
+      .header-title { font-size: 27px; }
+      .quick-stats { grid-template-columns: 1fr; }
+      .nav-bar { grid-template-columns: repeat(2, 1fr); }
+      .accel-row { align-items: flex-start; flex-direction: column; }
+      .repo-card { padding: 14px; }
+      .repo-header { align-items: stretch; flex-direction: column; }
+      .repo-open { text-align: center; }
+      .asset-row { grid-template-columns: 1fr; }
+      .asset-actions { justify-content: space-between; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-badge">Legado Index</div>
+    <h1 class="header-title">开源阅读分支索引</h1>
+    <p class="header-sub">版本与下载入口</p>
+  </header>
+
+  <main class="container">
+    <section class="quick-stats" aria-label="页面概览">
+      <div class="stat-item"><span class="stat-value" id="branchCount">10</span><span class="stat-label">分支</span></div>
+      <div class="stat-item"><span class="stat-value" id="assetCount">...</span><span class="stat-label">下载文件</span></div>
+      <div class="stat-item"><span class="stat-value">1</span><span class="stat-label">聚合页面</span></div>
+    </section>
+
+    <div class="accel-row">
+      <div class="accel-left">
+        <span class="accel-icon">⚡</span>
+        <span class="accel-label">GitHub 下载加速</span>
+        <select class="accel-select" id="accelSource">
+          <option value="https://gh-proxy.com/" selected>gh-proxy.com</option>
+          <option value="https://ghfast.top/">ghfast.top</option>
+        </select>
+      </div>
+      <label class="toggle" aria-label="开启 GitHub 下载加速">
+        <input type="checkbox" id="accelToggle">
+        <span class="track"><span class="thumb"></span></span>
+      </label>
+    </div>
+
+    <nav class="nav-bar" id="repoNav" aria-label="分支导航"></nav>
+    <section id="repoList" aria-label="分支列表"></section>
+
+    <footer>
+      <div class="footer-time" id="syncTime">正在同步 GitHub Release...</div>
+    </footer>
+  </main>
+
+  <script type="module" src="https://esm.sh/giscus@1"></script>
+  <script>
+    (() => {
+      const commentConfig = {
+        repo: 'CCSSNE/legado-wiki',
+        repoId: 'R_kgDOT0qm3Q',
+        category: 'General',
+        categoryId: 'DIC_kwDOT0qm3c4DDGbC'
+      };
+
+      const branches = [
+        { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
+        { id: 'main', name: '阅读 喵公子', tag: 'main', repo: 'LegadoTeam/legado', term: 'legado-branch-main' },
+        { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
+        { id: 't', name: '阅读T', tag: 't', repo: 'skybbk1001/legadoT', term: 'legado-branch-t' },
+        { id: 'sigma', name: '阅读 Sigma', tag: 'sigma', repo: 'Luoyacheng/legado', releaseRepo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma' },
+        { id: 'shutiao', name: '阅读 薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
+        { id: 'archive', name: '阅读Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
+        { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
+        { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max' },
+        {
+          id: 'original',
+          name: '阅读 原版',
+          tag: 'original',
+          repo: 'gedoor/legado',
+          term: 'legado-branch-original',
+          archived: true,
+          note: '原版已归档删库，GitHub 无可用发布，可通过网盘下载',
+          downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof',
+          password: '9j41'
+        }
+      ];
+
+      const nav = document.getElementById('repoNav');
+      const list = document.getElementById('repoList');
+      const branchCount = document.getElementById('branchCount');
+      const assetCount = document.getElementById('assetCount');
+      const syncTime = document.getElementById('syncTime');
+      const toggle = document.getElementById('accelToggle');
+      const sourceSel = document.getElementById('accelSource');
+      let loadedAssets = 0;
+      let loadedReleaseCards = 0;
+
+      branchCount.textContent = String(branches.length);
+      sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
+      toggle.checked = localStorage.getItem('legado_accel') === 'on';
+
+      nav.innerHTML = branches.map(branch => `<a href="#repo-${branch.id}">${escapeHtml(branch.name)}</a>`).join('');
+      list.innerHTML = branches.map(renderCardShell).join('');
+
+      initNavObserver();
+      patchLinks();
+      branches.forEach(loadBranch);
+
+      toggle.addEventListener('change', () => {
+        localStorage.setItem('legado_accel', toggle.checked ? 'on' : 'off');
+        patchLinks();
+      });
+
+      sourceSel.addEventListener('change', () => {
+        localStorage.setItem('legado_proxy', sourceSel.value);
+        patchLinks();
+      });
+
+      async function loadBranch(branch) {
+        const releaseBox = document.querySelector(`#repo-${branch.id} .release-slot`);
+        if (!releaseBox) return;
+
+        if (branch.archived) {
+          releaseBox.innerHTML = renderArchived(branch);
+          return;
+        }
+
+        try {
+          const releaseRepo = branch.releaseRepo || branch.repo;
+          const response = await fetch(`https://api.github.com/repos/${releaseRepo}/releases?per_page=1`, {
+            headers: { Accept: 'application/vnd.github+json' }
+          });
+
+          if (!response.ok) {
+            throw new Error(`GitHub API ${response.status}`);
+          }
+
+          const releases = await response.json();
+          if (!Array.isArray(releases) || releases.length === 0) {
+            releaseBox.innerHTML = '<div class="empty-box">这个仓库当前没有公开 Release。</div>';
+            markReleaseLoaded(0);
+            return;
+          }
+
+          const release = releases[0];
+          const assets = Array.isArray(release.assets) ? release.assets : [];
+          releaseBox.innerHTML = renderRelease(release, assets);
+          markReleaseLoaded(assets.length);
+          patchLinks();
+        } catch (error) {
+          releaseBox.innerHTML = `<div class="error-box">同步失败：${escapeHtml(error.message)}</div>`;
+          markReleaseLoaded(0);
+        }
+      }
+
+      function renderCardShell(branch) {
+        const repoUrl = `https://github.com/${branch.repo}`;
+        return `
+          <article class="repo-card" id="repo-${branch.id}">
+            <div class="repo-header">
+              <div class="repo-heading">
+                <h2>${escapeHtml(branch.name)}</h2>
+                <span class="tag">${escapeHtml(branch.tag)}</span>
+                <span class="repo-tag">${escapeHtml(branch.repo)}</span>
+              </div>
+              <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
+            </div>
+            <div class="release-slot"><div class="loading-box">正在同步 GitHub Release...</div></div>
+            ${renderComments(branch)}
+          </article>
+        `;
+      }
+
+      function renderRelease(release, assets) {
+        const title = release.name || release.tag_name || '未命名版本';
+        const published = new Date(release.published_at || release.created_at);
+        const body = release.body ? markdownToHtml(release.body) : '这个版本没有填写更新说明。';
+        const beta = release.prerelease ? '<span class="beta-badge">测试版</span>' : '';
+        const assetRows = assets.length
+          ? assets.map(renderAsset).join('')
+          : '<div class="empty-box">这个版本没有上传下载文件。</div>';
+
+        return `
+          <div class="release-info">
+            <div class="release-title">${escapeHtml(title)} ${beta}</div>
+            <div class="release-meta">发布于 ${formatDate(published)} (${relativeTime(published)}) · ${assets.length} 个文件</div>
+            <div class="release-body">${body}</div>
+            ${assetRows}
+          </div>
+        `;
+      }
+
+      function renderAsset(asset) {
+        const size = formatSize(asset.size || 0);
+        const url = asset.browser_download_url || asset.url || '#';
+        return `
+          <div class="asset-row">
+            <span class="asset-name">${escapeHtml(asset.name || '未命名文件')}</span>
+            <div class="asset-actions">
+              <span class="asset-size">${size}</span>
+              <a class="asset-link" href="${escapeAttribute(url)}" data-raw="${escapeAttribute(url)}" target="_blank" rel="noopener">下载</a>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderArchived(branch) {
+        return `
+          <div class="netdisk-box">
+            <div>${escapeHtml(branch.note)}</div>
+            <a class="netdisk-link" href="${escapeAttribute(branch.downloadUrl)}" target="_blank" rel="noopener">蓝奏云下载</a>
+            <span>密码：<strong>${escapeHtml(branch.password)}</strong></span>
+          </div>
+        `;
+      }
+
+      function renderComments(branch) {
+        return `
+          <div class="comment-panel">
+            <div class="comment-title">${escapeHtml(branch.name)} 评论</div>
+            <giscus-widget
+              repo="${commentConfig.repo}"
+              repoid="${commentConfig.repoId}"
+              category="${commentConfig.category}"
+              categoryid="${commentConfig.categoryId}"
+              mapping="specific"
+              term="${branch.term}"
+              reactionsenabled="1"
+              emitmetadata="0"
+              inputposition="top"
+              theme="preferred_color_scheme"
+              lang="zh-CN"
+              loading="lazy">
+            </giscus-widget>
+          </div>
+        `;
+      }
+
+      function markReleaseLoaded(count) {
+        loadedAssets += count;
+        loadedReleaseCards += 1;
+        assetCount.textContent = String(loadedAssets);
+        if (loadedReleaseCards >= branches.filter(branch => !branch.archived).length) {
+          syncTime.textContent = `最后同步：${formatDate(new Date())} (北京时间)`;
+        }
+      }
+
+      function patchLinks() {
+        const on = toggle.checked;
+        const base = sourceSel.value;
+        document.querySelectorAll('.asset-link').forEach(link => {
+          const raw = link.dataset.raw || link.href;
+          link.dataset.raw = raw;
+          link.href = on ? base + raw.replace(/^https?:\/\//, '') : raw;
+        });
+      }
+
+      function initNavObserver() {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const link = document.querySelector(`.nav-bar a[href="#${entry.target.id}"]`);
+            if (!link) return;
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
+              document.querySelectorAll('.nav-bar a.active').forEach(item => item.classList.remove('active'));
+              link.classList.add('active');
+            }
+          });
+        }, { rootMargin: '-70px 0px -45% 0px', threshold: [0.25] });
+
+        document.querySelectorAll('.repo-card[id^="repo-"]').forEach(card => observer.observe(card));
+      }
+
+      function markdownToHtml(markdown) {
+        const lines = markdown.replace(/\r\n/g, '\n').split('\n');
+        let html = '';
+        let inList = false;
+
+        lines.forEach(rawLine => {
+          const line = rawLine.trim();
+          if (!line) {
+            if (inList) {
+              html += '</ul>';
+              inList = false;
+            }
+            html += '<br>';
+            return;
+          }
+
+          const heading = line.match(/^(#{1,4})\s+(.+)$/);
+          if (heading) {
+            if (inList) {
+              html += '</ul>';
+              inList = false;
+            }
+            html += `<h3>${inlineMarkdown(heading[2])}</h3>`;
+            return;
+          }
+
+          const item = line.match(/^[-*]\s+(.+)$/);
+          if (item) {
+            if (!inList) {
+              html += '<ul>';
+              inList = true;
+            }
+            html += `<li>${inlineMarkdown(item[1])}</li>`;
+            return;
+          }
+
+          if (inList) {
+            html += '</ul>';
+            inList = false;
+          }
+          html += `<div>${inlineMarkdown(line)}</div>`;
+        });
+
+        if (inList) html += '</ul>';
+        return html;
+      }
+
+      function inlineMarkdown(value) {
+        return escapeHtml(value)
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\[(.*?)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+      }
+
+      function formatDate(date) {
+        if (Number.isNaN(date.getTime())) return '未知时间';
+        const parts = new Intl.DateTimeFormat('zh-CN', {
+          timeZone: 'Asia/Shanghai',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).formatToParts(date).reduce((acc, part) => {
+          acc[part.type] = part.value;
+          return acc;
+        }, {});
+        return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}`;
+      }
+
+      function relativeTime(date) {
+        if (Number.isNaN(date.getTime())) return '未知';
+        const diff = Date.now() - date.getTime();
+        const minute = 60 * 1000;
+        const hour = 60 * minute;
+        const day = 24 * hour;
+        if (diff < minute) return '刚刚';
+        if (diff < hour) return `${Math.floor(diff / minute)} 分钟前`;
+        if (diff < day) return `${Math.floor(diff / hour)} 小时前`;
+        if (diff < 2 * day) return '昨天';
+        return `${Math.floor(diff / day)} 天前`;
+      }
+
+      function formatSize(bytes) {
+        if (!bytes) return '0 B';
+        const units = ['B', 'KB', 'MB', 'GB'];
+        let size = bytes;
+        let unit = 0;
+        while (size >= 1024 && unit < units.length - 1) {
+          size /= 1024;
+          unit += 1;
+        }
+        return `${size.toFixed(unit === 0 ? 0 : 1)} ${units[unit]}`;
+      }
+
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, char => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;'
+        }[char]));
+      }
+
+      function escapeAttribute(value) {
+        return escapeHtml(value).replace(/`/g, '&#96;');
+      }
+    })();
+  </script>
+</body>
+</html>
