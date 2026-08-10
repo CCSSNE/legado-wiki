@@ -193,6 +193,16 @@
 
     .repo-card:hover { border-color: #b7c8c0; box-shadow: 0 14px 32px rgba(22, 61, 56, 0.1); }
 
+    .resource-section {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 28px rgba(22, 61, 56, 0.06);
+      scroll-margin-top: 18px;
+    }
+
     .repo-header {
       display: flex;
       align-items: flex-start;
@@ -249,6 +259,39 @@
       font-family: "SF Mono", SFMono-Regular, Menlo, monospace;
       font-size: 11px;
       font-weight: 600;
+    }
+
+    .star-tag {
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--accent-strong);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .pin-tag {
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #fff0db;
+      color: #8b4c15;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .state-tag {
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #f7e6e6;
+      color: #8d2727;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .repo-note {
+      flex-basis: 100%;
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .release-info {
@@ -366,25 +409,25 @@
       font-weight: 800;
     }
 
-    .netdisk-box {
-      padding: 16px;
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .resource-link {
+      min-height: 88px;
+      padding: 12px;
       border: 1px solid #e1e6df;
       border-radius: 7px;
       background: #fff;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .netdisk-link {
-      display: inline-block;
-      margin: 10px 8px 0 0;
-      padding: 8px 20px;
-      border-radius: 5px;
-      background: var(--accent);
-      color: #fff;
-      font-size: 14px;
+      color: var(--text);
       text-decoration: none;
     }
+
+    .resource-link:hover { border-color: #abc3bb; }
+    .resource-name { display: block; font-size: 14px; font-weight: 800; }
+    .resource-desc { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
 
     footer {
       margin-top: 30px;
@@ -407,6 +450,7 @@
       .repo-open { text-align: center; }
       .asset-row { grid-template-columns: 1fr; }
       .asset-actions { justify-content: space-between; }
+      .resource-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -419,9 +463,9 @@
 
   <main class="container">
     <section class="quick-stats" aria-label="页面概览">
-      <div class="stat-item"><span class="stat-value" id="branchCount">10</span><span class="stat-label">分支</span></div>
+      <div class="stat-item"><span class="stat-value" id="branchCount">...</span><span class="stat-label">分支</span></div>
       <div class="stat-item"><span class="stat-value" id="assetCount">...</span><span class="stat-label">下载文件</span></div>
-      <div class="stat-item"><span class="stat-value">1</span><span class="stat-label">聚合页面</span></div>
+      <div class="stat-item"><span class="stat-value" id="starCount">...</span><span class="stat-label">Star 总数</span></div>
     </section>
 
     <div class="accel-row">
@@ -440,7 +484,30 @@
     </div>
 
     <nav class="nav-bar" id="repoNav" aria-label="分支导航"></nav>
-    <section id="repoList" aria-label="分支列表"></section>
+    <section id="repoList" aria-label="分支列表"><div class="loading-box">正在同步仓库 Star 与版本信息...</div></section>
+
+    <section class="resource-section" id="useful-links" data-nav-target aria-label="推荐链接">
+      <div class="repo-header">
+        <div class="repo-heading">
+          <h2>推荐链接</h2>
+          <span class="tag">links</span>
+        </div>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-link" href="https://www.yckceo.com/" target="_blank" rel="noopener">
+          <span class="resource-name">源仓库</span>
+          <span class="resource-desc">阅读书源相关入口</span>
+        </a>
+        <a class="resource-link" href="https://legado.tucong.vip/" target="_blank" rel="noopener">
+          <span class="resource-name">全版本下载站</span>
+          <span class="resource-desc">原始聚合页面与下载入口</span>
+        </a>
+        <div class="resource-link" id="qq-group">
+          <span class="resource-name">交流群 1101873338</span>
+          <span class="resource-desc">提交新软件、补充信息或纠错</span>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-time" id="syncTime">正在同步 GitHub Release...</div>
@@ -457,49 +524,19 @@
         categoryId: 'DIC_kwDOT0qm3c4DDGbC'
       };
 
-      const branches = [
-        { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
-        { id: 'main', name: '阅读 喵公子', tag: 'main', repo: 'LegadoTeam/legado', term: 'legado-branch-main' },
-        { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
-        { id: 't', name: '阅读T', tag: 't', repo: 'skybbk1001/legadoT', term: 'legado-branch-t' },
-        { id: 'sigma', name: '阅读 Sigma', tag: 'sigma', repo: 'Luoyacheng/legado', releaseRepo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma' },
-        { id: 'shutiao', name: '阅读 薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
-        { id: 'archive', name: '阅读Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
-        { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
-        { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max' },
-        {
-          id: 'original',
-          name: '阅读 原版',
-          tag: 'original',
-          repo: 'gedoor/legado',
-          term: 'legado-branch-original',
-          archived: true,
-          note: '原版已归档删库，GitHub 无可用发布，可通过网盘下载',
-          downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof',
-          password: '9j41'
-        }
-      ];
-
       const nav = document.getElementById('repoNav');
       const list = document.getElementById('repoList');
       const branchCount = document.getElementById('branchCount');
       const assetCount = document.getElementById('assetCount');
+      const starCount = document.getElementById('starCount');
       const syncTime = document.getElementById('syncTime');
       const toggle = document.getElementById('accelToggle');
       const sourceSel = document.getElementById('accelSource');
-      let loadedAssets = 0;
-      let loadedReleaseCards = 0;
+      let activeBranches = [];
 
-      branchCount.textContent = String(branches.length);
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
       toggle.checked = localStorage.getItem('legado_accel') === 'on';
-
-      nav.innerHTML = branches.map(branch => `<a href="#repo-${branch.id}">${escapeHtml(branch.name)}</a>`).join('');
-      list.innerHTML = branches.map(renderCardShell).join('');
-
-      initNavObserver();
-      patchLinks();
-      branches.forEach(loadBranch);
+      bootstrap();
 
       toggle.addEventListener('change', () => {
         localStorage.setItem('legado_accel', toggle.checked ? 'on' : 'off');
@@ -511,59 +548,81 @@
         patchLinks();
       });
 
-      async function loadBranch(branch) {
-        const releaseBox = document.querySelector(`#repo-${branch.id} .release-slot`);
-        if (!releaseBox) return;
-
-        if (branch.archived) {
-          releaseBox.innerHTML = renderArchived(branch);
+      async function bootstrap() {
+        let data;
+        try {
+          const response = await fetch(`data/branches.json?v=${Date.now()}`, {
+            headers: { Accept: 'application/json' }
+          });
+          if (!response.ok) throw new Error(`数据文件 ${response.status}`);
+          data = await response.json();
+        } catch (error) {
+          list.innerHTML = `<div class="error-box">数据同步文件加载失败：${escapeHtml(error.message)}</div>`;
+          branchCount.textContent = '0';
+          assetCount.textContent = '0';
+          starCount.textContent = '0';
+          syncTime.textContent = '数据同步失败';
           return;
         }
 
-        try {
-          const releaseRepo = branch.releaseRepo || branch.repo;
-          const response = await fetch(`https://api.github.com/repos/${releaseRepo}/releases?per_page=1`, {
-            headers: { Accept: 'application/vnd.github+json' }
-          });
+        activeBranches = [...(data.branches || [])].sort((left, right) => {
+          if (left.pinned && !right.pinned) return -1;
+          if (!left.pinned && right.pinned) return 1;
+          return (right.stars ?? -1) - (left.stars ?? -1);
+        });
 
-          if (!response.ok) {
-            throw new Error(`GitHub API ${response.status}`);
-          }
+        branchCount.textContent = String(activeBranches.length);
+        assetCount.textContent = String(activeBranches.reduce((sum, branch) => sum + ((branch.release?.assets || []).length), 0));
+        starCount.textContent = formatCompactNumber(activeBranches.reduce((sum, branch) => sum + (branch.stars || 0), 0));
+        nav.innerHTML = activeBranches.map(branch => `<a href="#repo-${branch.id}">${escapeHtml(branch.name)}</a>`).join('') +
+          '<a href="#useful-links">推荐链接</a>';
+        list.innerHTML = activeBranches.map(renderCardShell).join('');
+        syncTime.textContent = `最后同步：${formatDate(new Date(data.generatedAt))} (北京时间)`;
 
-          const releases = await response.json();
-          if (!Array.isArray(releases) || releases.length === 0) {
-            releaseBox.innerHTML = '<div class="empty-box">这个仓库当前没有公开 Release。</div>';
-            markReleaseLoaded(0);
-            return;
-          }
-
-          const release = releases[0];
-          const assets = Array.isArray(release.assets) ? release.assets : [];
-          releaseBox.innerHTML = renderRelease(release, assets);
-          markReleaseLoaded(assets.length);
-          patchLinks();
-        } catch (error) {
-          releaseBox.innerHTML = `<div class="error-box">同步失败：${escapeHtml(error.message)}</div>`;
-          markReleaseLoaded(0);
-        }
+        initNavObserver();
+        patchLinks();
       }
 
       function renderCardShell(branch) {
         const repoUrl = `https://github.com/${branch.repo}`;
+        const starText = branch.stars === null ? 'Star 同步失败' : `${formatCompactNumber(branch.stars)} Star`;
+        const updatedText = branch.sourceUpdatedAt ? `源码更新：${formatDate(new Date(branch.sourceUpdatedAt))}` : '源码更新时间未知';
         return `
-          <article class="repo-card" id="repo-${branch.id}">
+          <article class="repo-card" id="repo-${branch.id}" data-nav-target>
             <div class="repo-header">
               <div class="repo-heading">
                 <h2>${escapeHtml(branch.name)}</h2>
                 <span class="tag">${escapeHtml(branch.tag)}</span>
                 <span class="repo-tag">${escapeHtml(branch.repo)}</span>
+                <span class="star-tag">${escapeHtml(starText)}</span>
+                ${branch.pinned ? '<span class="pin-tag">站长置顶</span>' : ''}
+                ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
+                <div class="repo-note">${escapeHtml(updatedText)}${branch.note ? ` · ${escapeHtml(branch.note)}` : ''}${branch.errors?.length ? ` · ${escapeHtml(branch.errors.join('；'))}` : ''}</div>
               </div>
               <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
             </div>
-            <div class="release-slot"><div class="loading-box">正在同步 GitHub Release...</div></div>
+            <div class="release-slot">${renderReleaseSlot(branch)}</div>
             ${renderComments(branch)}
           </article>
         `;
+      }
+
+      function renderReleaseSlot(branch) {
+        if (!branch.release) return renderNoRelease(branch);
+        const release = {
+          name: branch.release.name,
+          tag_name: branch.release.tagName,
+          prerelease: branch.release.prerelease,
+          published_at: branch.release.publishedAt,
+          created_at: branch.release.createdAt,
+          body: branch.release.body
+        };
+        const assets = (branch.release.assets || []).map(asset => ({
+          name: asset.name,
+          size: asset.size,
+          browser_download_url: asset.browserDownloadUrl
+        }));
+        return renderRelease(release, assets);
       }
 
       function renderRelease(release, assets) {
@@ -599,13 +658,12 @@
         `;
       }
 
-      function renderArchived(branch) {
+      function renderNoRelease(branch) {
+        const message = branch.abandoned
+          ? `这个仓库当前没有公开 Release。${branch.abandoned}。`
+          : '这个仓库当前没有公开 Release。';
         return `
-          <div class="netdisk-box">
-            <div>${escapeHtml(branch.note)}</div>
-            <a class="netdisk-link" href="${escapeAttribute(branch.downloadUrl)}" target="_blank" rel="noopener">蓝奏云下载</a>
-            <span>密码：<strong>${escapeHtml(branch.password)}</strong></span>
-          </div>
+          <div class="empty-box">${escapeHtml(message)}</div>
         `;
       }
 
@@ -631,15 +689,6 @@
         `;
       }
 
-      function markReleaseLoaded(count) {
-        loadedAssets += count;
-        loadedReleaseCards += 1;
-        assetCount.textContent = String(loadedAssets);
-        if (loadedReleaseCards >= branches.filter(branch => !branch.archived).length) {
-          syncTime.textContent = `最后同步：${formatDate(new Date())} (北京时间)`;
-        }
-      }
-
       function patchLinks() {
         const on = toggle.checked;
         const base = sourceSel.value;
@@ -662,7 +711,7 @@
           });
         }, { rootMargin: '-70px 0px -45% 0px', threshold: [0.25] });
 
-        document.querySelectorAll('.repo-card[id^="repo-"]').forEach(card => observer.observe(card));
+        document.querySelectorAll('[data-nav-target]').forEach(section => observer.observe(section));
       }
 
       function markdownToHtml(markdown) {
@@ -758,6 +807,10 @@
           unit += 1;
         }
         return `${size.toFixed(unit === 0 ? 0 : 1)} ${units[unit]}`;
+      }
+
+      function formatCompactNumber(value) {
+        return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(value || 0);
       }
 
       function escapeHtml(value) {
