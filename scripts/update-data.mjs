@@ -2,14 +2,14 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const branches = [
   { id: 'c', name: '阅读 C', tag: 'mine', repo: 'CCSSNE/legadoC', term: 'legado-branch-c', pinned: true, note: '站长开发。' },
-  { id: 'original', name: '阅读 原版', tag: 'original', repo: 'gedoor/legado', term: 'legado-branch-original', abandoned: '弃坑', note: '原版已停止维护，保留补档下载。', downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof', password: '9j41' },
-  { id: 'tauri', name: '阅读 Tauri', tag: 'tauri', repo: 'LegadoTeam/Legado-Tauri', term: 'legado-branch-tauri', abandoned: '弃坑' },
-  { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony', abandoned: '弃坑' },
+  { id: 'original', name: '阅读 原版', tag: 'original', repo: 'gedoor/legado', term: 'legado-branch-original', note: '原版已停止维护，保留补档下载。', downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof', password: '9j41' },
+  { id: 'tauri', name: '阅读 Tauri', tag: 'tauri', repo: 'LegadoTeam/Legado-Tauri', term: 'legado-branch-tauri', forksUrl: 'https://github.com/LegadoTeam/Legado-Tauri/forks' },
+  { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
   { id: 'sigma', name: '阅读 Sigma', tag: 'plus', repo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma', note: '也称阅读 Plus。' },
   { id: 'main', name: '喵公子版', tag: 'beta', repo: 'LegadoTeam/legado', term: 'legado-branch-main', note: '阅读 Beta。' },
   { id: 'archive', name: '阅读 Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
-  { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max', abandoned: '弃坑', note: '版本线相当混乱。' },
+  { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max', note: '版本线相当混乱。' },
   { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
   { id: 'shutiao', name: '薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
   { id: 'jingshiro', name: 'Jingshiro 版', tag: 'jingshiro', repo: 'Jingshiro/legado', term: 'legado-branch-jingshiro' },
@@ -28,6 +28,7 @@ if (token) {
 }
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const yearMs = 365 * 24 * 60 * 60 * 1000;
 
 async function githubJson(path) {
   const response = await fetch(`https://api.github.com${path}`, { headers });
@@ -73,6 +74,35 @@ async function hydrateBranch(branch) {
     }
   } catch (error) {
     result.errors.push(`版本信息同步失败：${error.message}`);
+  }
+
+  if (!result.release) {
+    result.abandoned = '弃坑';
+    result.abandonedReason = '无公开 Release';
+  } else {
+    const releaseTime = Date.parse(result.release.publishedAt || result.release.createdAt || '');
+    if (Number.isFinite(releaseTime) && Date.now() - releaseTime > yearMs) {
+      result.abandoned = '弃坑';
+      result.abandonedReason = 'Release 超过 1 年未更新';
+    }
+  }
+
+  if (branch.forksUrl) {
+    await sleep(250);
+    try {
+      const forks = await githubJson(`/repos/${branch.repo}/forks?sort=stargazers&per_page=5`);
+      result.forks = Array.isArray(forks)
+        ? forks.map(fork => ({
+            name: fork.full_name,
+            url: fork.html_url,
+            stars: fork.stargazers_count,
+            updatedAt: fork.pushed_at
+          }))
+        : [];
+    } catch (error) {
+      result.errors.push(`Fork 同步失败：${error.message}`);
+      result.forks = [];
+    }
   }
 
   await sleep(250);

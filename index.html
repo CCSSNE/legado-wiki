@@ -39,8 +39,8 @@
 
     header {
       max-width: 1120px;
-      margin: 28px auto 0;
-      padding: 30px 34px 32px;
+      margin: 10px auto 0;
+      padding: 12px 18px 13px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 8px;
       background: linear-gradient(135deg, #173d38 0%, #245a53 62%, #9b6b3f 100%);
@@ -50,12 +50,12 @@
 
     .header-badge {
       display: inline-block;
-      margin-bottom: 14px;
-      padding: 4px 11px;
+      margin-bottom: 5px;
+      padding: 3px 9px;
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.14);
       color: #e7f4ef;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -63,15 +63,15 @@
 
     .header-title {
       color: #fff;
-      font-size: 34px;
+      font-size: 24px;
       font-weight: 800;
-      line-height: 1.15;
+      line-height: 1.1;
     }
 
     .header-sub {
-      margin-top: 8px;
+      margin-top: 2px;
       color: #d6e7e1;
-      font-size: 13px;
+      font-size: 11px;
       letter-spacing: 0.16em;
     }
 
@@ -445,6 +445,31 @@
     .backup-link:hover { background: var(--accent-strong); }
     .backup-password { margin-left: 8px; color: var(--muted); font-size: 13px; }
 
+    .forks-row {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .forks-row a {
+      color: var(--accent-strong);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .forks-row a:hover { text-decoration: underline; }
+
+    .fork-chip {
+      display: inline-block;
+      margin: 3px 5px 0 0;
+      padding: 2px 6px;
+      border: 1px solid #dfe6e1;
+      border-radius: 4px;
+      background: #fff;
+      white-space: nowrap;
+    }
+
     footer {
       margin-top: 30px;
       padding-top: 10px;
@@ -454,10 +479,12 @@
       text-align: right;
     }
 
+    .footer-rule { color: #7d8984; }
+
     @media (max-width: 760px) {
       body { padding: 0 14px 40px; }
-      header { margin-top: 14px; padding: 24px 20px; }
-      .header-title { font-size: 27px; }
+      header { margin-top: 8px; padding: 12px 14px 13px; }
+      .header-title { font-size: 22px; }
       .nav-bar { grid-template-columns: repeat(2, 1fr); }
       .accel-row { align-items: flex-start; flex-direction: column; }
       .repo-card { padding: 14px; }
@@ -516,6 +543,7 @@
 
     <footer>
       <div class="footer-time" id="syncTime">正在同步 GitHub Release...</div>
+      <div class="footer-rule">弃坑标记规则：没有公开 Release，或最新 Release 超过 1 年未更新。</div>
     </footer>
   </main>
 
@@ -595,6 +623,7 @@
                 ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
                 <div class="repo-note">${escapeHtml(updatedText)}${branch.note ? ` · ${escapeHtml(branch.note)}` : ''}${branch.errors?.length ? ` · ${escapeHtml(branch.errors.join('；'))}` : ''}</div>
+                ${renderForks(branch)}
               </div>
               <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
             </div>
@@ -620,6 +649,17 @@
           browser_download_url: asset.browserDownloadUrl
         }));
         return renderRelease(release, assets);
+      }
+
+      function renderForks(branch) {
+        if (!branch.forksUrl && !branch.forks?.length) return '';
+        const forkLinks = (branch.forks || []).map(fork => {
+          const shortName = String(fork.name || '').split('/').pop() || fork.name;
+          const stars = Number.isFinite(fork.stars) ? ` ${formatCompactNumber(fork.stars)} Star` : '';
+          return `<a class="fork-chip" href="${escapeAttribute(fork.url)}" target="_blank" rel="noopener">${escapeHtml(shortName)}${escapeHtml(stars)}</a>`;
+        }).join('');
+        const forksUrl = branch.forksUrl ? `<a href="${escapeAttribute(branch.forksUrl)}" target="_blank" rel="noopener">Fork 补档</a>` : 'Fork 补档';
+        return `<div class="forks-row">${forksUrl}${forkLinks ? `：${forkLinks}` : ''}</div>`;
       }
 
       function renderRelease(release, assets) {
@@ -657,7 +697,7 @@
 
       function renderNoRelease(branch) {
         const message = branch.abandoned
-          ? `这个仓库当前没有公开 Release，状态：${branch.abandoned}。`
+          ? `这个仓库当前没有公开 Release，状态：${branch.abandoned}${branch.abandonedReason ? `（${branch.abandonedReason}）` : ''}。`
           : '这个仓库当前没有公开 Release。';
         const backup = branch.downloadUrl
           ? `<div><a class="backup-link" href="${escapeAttribute(branch.downloadUrl)}" target="_blank" rel="noopener">蓝奏云补档</a>${branch.password ? `<span class="backup-password">密码：<strong>${escapeHtml(branch.password)}</strong></span>` : ''}</div>`

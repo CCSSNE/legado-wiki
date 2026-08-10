@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T23:52:45.076Z",
+  "generatedAt": "2026-08-10T23:55:05.958Z",
   "branches": [
     {
       "id": "c",
@@ -35,7 +35,6 @@
       "tag": "original",
       "repo": "gedoor/legado",
       "term": "legado-branch-original",
-      "abandoned": "弃坑",
       "note": "原版已停止维护，保留补档下载。",
       "downloadUrl": "https://busisu.lanzoue.com/b0syt8vof",
       "password": "9j41",
@@ -43,7 +42,9 @@
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": null,
-      "errors": []
+      "errors": [],
+      "abandoned": "弃坑",
+      "abandonedReason": "无公开 Release"
     },
     {
       "id": "md3",
@@ -119,7 +120,6 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "abandoned": "弃坑",
       "stars": 2092,
       "sourceUpdatedAt": "2026-05-15T10:42:50Z",
       "githubArchived": false,
@@ -214,7 +214,6 @@
       "tag": "max",
       "repo": "youfengknight/Legado_Max",
       "term": "legado-branch-max",
-      "abandoned": "弃坑",
       "note": "版本线相当混乱。",
       "stars": 281,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
@@ -252,12 +251,46 @@
       "tag": "tauri",
       "repo": "LegadoTeam/Legado-Tauri",
       "term": "legado-branch-tauri",
-      "abandoned": "弃坑",
+      "forksUrl": "https://github.com/LegadoTeam/Legado-Tauri/forks",
       "stars": 277,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": null,
-      "errors": []
+      "errors": [],
+      "abandoned": "弃坑",
+      "abandonedReason": "无公开 Release",
+      "forks": [
+        {
+          "name": "74587/Legado-Tauri",
+          "url": "https://github.com/74587/Legado-Tauri",
+          "stars": 2,
+          "updatedAt": "2026-05-28T08:00:41Z"
+        },
+        {
+          "name": "dou010/Legado-Tauri",
+          "url": "https://github.com/dou010/Legado-Tauri",
+          "stars": 0,
+          "updatedAt": "2026-05-27T15:02:22Z"
+        },
+        {
+          "name": "GEd520/Legado-Tauri",
+          "url": "https://github.com/GEd520/Legado-Tauri",
+          "stars": 0,
+          "updatedAt": "2026-05-27T05:12:47Z"
+        },
+        {
+          "name": "lyzilvia/Legado-Tauri",
+          "url": "https://github.com/lyzilvia/Legado-Tauri",
+          "stars": 0,
+          "updatedAt": "2026-06-11T15:46:13Z"
+        },
+        {
+          "name": "JwOKR/Legado-Tauri",
+          "url": "https://github.com/JwOKR/Legado-Tauri",
+          "stars": 0,
+          "updatedAt": "2026-05-14T08:12:36Z"
+        }
+      ]
     },
     {
       "id": "r",
