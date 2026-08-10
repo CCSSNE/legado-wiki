@@ -6,7 +6,7 @@ const branches = [
   { id: 'tauri', name: '阅读 Tauri', tag: 'tauri', repo: 'LegadoTeam/Legado-Tauri', term: 'legado-branch-tauri', forksUrl: 'https://github.com/LegadoTeam/Legado-Tauri/forks' },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
-  { id: 'sigma', name: '阅读 Sigma', tag: 'plus', repo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma', note: '也称阅读 Plus。' },
+  { id: 'sigma', name: '阅读 Sigma / 阅读 Plus', tag: 'plus', repo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma' },
   { id: 'main', name: '喵公子版', tag: 'beta', repo: 'LegadoTeam/legado', term: 'legado-branch-main', note: '阅读 Beta。' },
   { id: 'archive', name: '阅读 Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
   { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max', note: '版本线相当混乱。' },

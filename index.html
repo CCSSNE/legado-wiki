@@ -622,7 +622,7 @@
                 <span class="star-tag">${escapeHtml(starText)}</span>
                 ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
-                <div class="repo-note">${escapeHtml(updatedText)}${branch.note ? ` · ${escapeHtml(branch.note)}` : ''}${branch.errors?.length ? ` · ${escapeHtml(branch.errors.join('；'))}` : ''}</div>
+                <div class="repo-note">${escapeHtml(updatedText)}</div>
                 ${renderForks(branch)}
               </div>
               <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
