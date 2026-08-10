@@ -6,7 +6,7 @@
 
 ## 评论区
 
-评论区已接入 giscus。每个分支使用独立的 `term`，对应独立的 GitHub Discussions 讨论串。
+评论区已接入 giscus。每个分支使用独立的 `term`，对应独立的 GitHub Discussions 讨论串。评论区默认折叠，点击对应软件的评论按钮后才加载。
 
 ## 推荐链接
 

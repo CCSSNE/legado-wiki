@@ -402,11 +402,42 @@
       border-top: 1px solid var(--border);
     }
 
+    .comment-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
     .comment-title {
-      margin-bottom: 10px;
       color: #263530;
       font-size: 14px;
       font-weight: 800;
+    }
+
+    .comment-toggle {
+      flex-shrink: 0;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: #fff;
+      color: var(--accent-strong);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .comment-toggle:hover {
+      border-color: #abc3bb;
+      background: #f8faf7;
+    }
+
+    .comment-body {
+      margin-top: 12px;
+    }
+
+    .comment-body[hidden] {
+      display: none;
     }
 
     .resource-grid {
@@ -580,6 +611,7 @@
         syncTime.textContent = `最后同步：${formatDate(new Date(data.generatedAt))} (北京时间)`;
 
         initNavObserver();
+        initCommentToggles();
         patchLinks();
       }
 
@@ -669,24 +701,60 @@
 
       function renderComments(branch) {
         return `
-          <div class="comment-panel">
-            <div class="comment-title">${escapeHtml(branch.name)} 评论</div>
-            <giscus-widget
-              repo="${commentConfig.repo}"
-              repoid="${commentConfig.repoId}"
-              category="${commentConfig.category}"
-              categoryid="${commentConfig.categoryId}"
-              mapping="specific"
-              term="${branch.term}"
-              reactionsenabled="1"
-              emitmetadata="0"
-              inputposition="top"
-              theme="preferred_color_scheme"
-              lang="zh-CN"
-              loading="lazy">
-            </giscus-widget>
+          <div class="comment-panel" data-comment-term="${escapeAttribute(branch.term)}">
+            <div class="comment-toggle-row">
+              <div class="comment-title">${escapeHtml(branch.name)} 评论</div>
+              <button class="comment-toggle" type="button" aria-expanded="false" data-comment-toggle>评论</button>
+            </div>
+            <div class="comment-body" data-comment-body hidden></div>
           </div>
         `;
+      }
+
+      function renderGiscusWidget(term) {
+        return `
+          <giscus-widget
+            repo="${commentConfig.repo}"
+            repoid="${commentConfig.repoId}"
+            category="${commentConfig.category}"
+            categoryid="${commentConfig.categoryId}"
+            mapping="specific"
+            term="${escapeAttribute(term)}"
+            reactionsenabled="1"
+            emitmetadata="0"
+            inputposition="top"
+            theme="preferred_color_scheme"
+            lang="zh-CN"
+            loading="lazy">
+          </giscus-widget>
+        `;
+      }
+
+      function initCommentToggles() {
+        list.addEventListener('click', event => {
+          const button = event.target.closest('[data-comment-toggle]');
+          if (!button) return;
+
+          const panel = button.closest('.comment-panel');
+          const body = panel?.querySelector('[data-comment-body]');
+          if (!panel || !body) return;
+
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          if (expanded) {
+            body.hidden = true;
+            button.setAttribute('aria-expanded', 'false');
+            button.textContent = '评论';
+            return;
+          }
+
+          if (!body.dataset.loaded) {
+            body.innerHTML = renderGiscusWidget(panel.dataset.commentTerm || '');
+            body.dataset.loaded = 'true';
+          }
+          body.hidden = false;
+          button.setAttribute('aria-expanded', 'true');
+          button.textContent = '收起';
+        });
       }
 
       function patchLinks() {
