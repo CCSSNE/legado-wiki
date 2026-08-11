@@ -1,6 +1,13 @@
 # Legado 分支索引
 
-开源阅读分支聚合页，部署在 GitHub Pages。
+开源阅读分支聚合页，部署在 GitHub Pages 和 EdgeOne。
+
+## 部署入口
+
+- GitHub Pages: https://ccssne.github.io/legado-wiki/
+- EdgeOne: https://legado.erchuang.online/
+
+两个入口都绑定 `CCSSNE/legado-wiki` 的 `main` 分支。以后更新网页只需要提交并推送 GitHub 仓库，GitHub Pages 和 EdgeOne 会自动部署。
 
 页面会在浏览器端读取定时同步的 GitHub 仓库信息与 Release，展示 Star、源码更新时间、版本、发布时间、更新说明、下载文件和下载入口。站长开发分支排在第一位，其余分支按 Star 数从高到低排列。
 
