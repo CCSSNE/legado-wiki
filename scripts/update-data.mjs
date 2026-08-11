@@ -2,7 +2,16 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const branches = [
   { id: 'c', name: '阅读 C', tag: 'mine', repo: 'CCSSNE/legadoC', term: 'legado-branch-c', pinned: true, note: '站长开发。' },
-  { id: 'original', name: '阅读 原版', tag: 'original', repo: 'gedoor/legado', term: 'legado-branch-original', note: '原版已停止维护，保留补档下载。', downloadUrl: 'https://busisu.lanzoue.com/b0syt8vof', password: '9j41' },
+  {
+    id: 'original',
+    name: '阅读 原版',
+    tag: 'original',
+    repo: 'gedoor/legado',
+    term: 'legado-branch-original',
+    forksUrl: 'https://github.com/gedoor/legado/forks',
+    skipAutoForks: true,
+    forks: [{ name: 'CCSSNE/legado', repo: 'CCSSNE/legado', url: 'https://github.com/CCSSNE/legado' }]
+  },
   { id: 'tauri', name: '阅读 Tauri', tag: 'tauri', repo: 'LegadoTeam/Legado-Tauri', term: 'legado-branch-tauri', forksUrl: 'https://github.com/LegadoTeam/Legado-Tauri/forks' },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
@@ -100,21 +109,55 @@ async function hydrateBranch(branch) {
     }
   }
 
-  if (branch.forksUrl) {
+  if (Array.isArray(branch.forks) && branch.forks.length) {
+    result.forks = [];
+    for (const fork of branch.forks) {
+      await sleep(250);
+      if (!fork.repo) {
+        result.forks.push(fork);
+        continue;
+      }
+
+      try {
+        const repo = await githubJson(`/repos/${fork.repo}`);
+        result.forks.push({
+          name: fork.name || repo.full_name,
+          repo: fork.repo,
+          url: repo.html_url,
+          stars: repo.stargazers_count,
+          updatedAt: repo.pushed_at
+        });
+      } catch (error) {
+        result.forks.push({
+          name: fork.name || fork.repo,
+          repo: fork.repo,
+          url: fork.url || `https://github.com/${fork.repo}`,
+          error: error.message
+        });
+      }
+    }
+  }
+
+  if (branch.forksUrl && !branch.skipAutoForks) {
     await sleep(250);
     try {
       const forks = await githubJson(`/repos/${branch.repo}/forks?sort=stargazers&per_page=5`);
-      result.forks = Array.isArray(forks)
-        ? forks.map(fork => ({
+      const existing = new Set((result.forks || []).map(fork => fork.repo || fork.name));
+      const autoForks = Array.isArray(forks)
+        ? forks
+            .filter(fork => !existing.has(fork.full_name))
+            .map(fork => ({
             name: fork.full_name,
+            repo: fork.full_name,
             url: fork.html_url,
             stars: fork.stargazers_count,
             updatedAt: fork.pushed_at
           }))
         : [];
+      result.forks = [...(result.forks || []), ...autoForks];
     } catch (error) {
       result.errors.push(`Fork 同步失败：${error.message}`);
-      result.forks = [];
+      result.forks = result.forks || [];
     }
   }
 
