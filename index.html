@@ -38,6 +38,10 @@
     }
 
     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       max-width: 1120px;
       margin: 10px auto 0;
       padding: 12px 18px 13px;
@@ -46,6 +50,10 @@
       background: linear-gradient(135deg, #173d38 0%, #245a53 62%, #9b6b3f 100%);
       box-shadow: var(--shadow);
       color: #fff;
+    }
+
+    .header-main {
+      min-width: 0;
     }
 
     .header-badge {
@@ -73,6 +81,39 @@
       color: #d6e7e1;
       font-size: 11px;
       letter-spacing: 0.16em;
+    }
+
+    .header-group {
+      flex-shrink: 0;
+      text-align: right;
+      color: #eef8f4;
+    }
+
+    .group-label {
+      display: block;
+      color: rgba(238, 248, 244, 0.78);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .group-number {
+      display: block;
+      margin-top: 2px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .group-desc {
+      display: block;
+      margin-top: 4px;
+      color: #d6e7e1;
+      font-size: 11px;
+      line-height: 1.35;
+      white-space: nowrap;
     }
 
     .container {
@@ -483,8 +524,10 @@
 
     @media (max-width: 760px) {
       body { padding: 0 14px 40px; }
-      header { margin-top: 8px; padding: 12px 14px 13px; }
+      header { align-items:flex-start; flex-direction:column; margin-top: 8px; padding: 12px 14px 13px; }
       .header-title { font-size: 22px; }
+      .header-group { text-align:left; }
+      .group-desc { white-space:normal; }
       .nav-bar { grid-template-columns: repeat(2, 1fr); }
       .accel-row { align-items: flex-start; flex-direction: column; }
       .repo-card { padding: 14px; }
@@ -498,9 +541,16 @@
 </head>
 <body>
   <header>
-    <div class="header-badge">Legado Index</div>
-    <h1 class="header-title">开源阅读分支索引</h1>
-    <p class="header-sub">版本与下载入口 · 可直接评论 · 群 1101873338：提交新软件、补充信息或纠错，也是阅读 C 交流群</p>
+    <div class="header-main">
+      <div class="header-badge">Legado Index</div>
+      <h1 class="header-title">开源阅读分支索引</h1>
+      <p class="header-sub">版本与下载入口 · 可直接评论</p>
+    </div>
+    <div class="header-group" aria-label="交流群">
+      <span class="group-label">交流群</span>
+      <span class="group-number">1101873338</span>
+      <span class="group-desc">提交新软件、补充信息或纠错，也是阅读 C 交流群</span>
+    </div>
   </header>
 
   <main class="container">
