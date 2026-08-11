@@ -38,7 +38,7 @@ const branches = [
     note: '版本线相当混乱。',
     relatedTitle: 'MAX 分支',
     relatedRepos: [
-      { repo: 'Suml-1/Legado_Max', label: '正统继承?' },
+      { repo: 'Suml-1/Legado_Max', label: '阅读 Max 主页版' },
       { repo: 'GEd520/legados', label: '辞晨版MAX' },
       { repo: 'DandanLLab/Legado_Max', label: '蛋蛋版MAX' }
     ]
