@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T02:03:09.013Z",
+  "generatedAt": "2026-08-11T02:24:26.830Z",
   "branches": [
     {
       "id": "c",
@@ -46,13 +46,31 @@
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
+      "backupRelease": {
+        "repo": "CCSSNE/legado",
+        "tag": "3.26.04271714"
+      },
       "stars": 46971,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release"
+      "release": {
+        "name": "阅读原版 3.26.04271714 备份",
+        "tagName": "3.26.04271714",
+        "prerelease": false,
+        "publishedAt": "2026-08-11T01:16:32Z",
+        "createdAt": "2026-08-11T01:14:46Z",
+        "body": "开源阅读原版最后源码备份。\n\n- 源码提交：da17bb2bed44f30b12a524c2457e32a20b16fa41\n- 提交时间：2026-04-27 09:14:03 UTC\n- APK：legado_app_3.26.04271714_release.apk\n\n这个仓库是独立备份仓库，不是 GitHub fork。",
+        "assets": [
+          {
+            "name": "legado_app_3.26.04271714_release.apk",
+            "size": 15218818,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legado/releases/download/3.26.04271714/legado_app_3.26.04271714_release.apk"
+          }
+        ],
+        "sourceRepo": "CCSSNE/legado",
+        "sourceUrl": "https://github.com/CCSSNE/legado/releases/tag/3.26.04271714"
+      },
+      "errors": []
     },
     {
       "id": "md3",
@@ -288,17 +306,40 @@
           "name": "CCSSNE/Legado-Tauri",
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
-          "stars": 0,
-          "updatedAt": "2026-08-11T02:02:08Z"
+          "stars": 1,
+          "updatedAt": "2026-08-11T02:12:48Z"
         }
       ],
+      "backupRelease": {
+        "repo": "CCSSNE/Legado-Tauri",
+        "tag": "v0.9.9-20260528195115-b00000093"
+      },
       "stars": 278,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release"
+      "release": {
+        "name": "Legado Tauri v0.9.9 APK 安装包备份",
+        "tagName": "v0.9.9-20260528195115-b00000093",
+        "prerelease": false,
+        "publishedAt": "2026-08-11T02:12:48Z",
+        "createdAt": "2026-05-28T11:43:26Z",
+        "body": "复刻自官方下载仓库 LegadoTeam/Legado-Tauri-Release 的发布资产。\n\n- 对应备份源码提交：376d65df06ada21ccfecb52322a6241f3ff275e3\n- 原始 Release：v0.9.9-20260528195115-b00000093\n- 构建时间：2026-05-28 19:51:15 CST\n- 发布产物：Windows + Android\n\n这是独立备份仓库的 Release，不是 GitHub fork。\n\nJenkins 自动构建测试版。\n\nTauri 版本：v0.9.9\n构建版本：v0.9.9+20260528195115.00000093\n共享构建 ID：00000093\n构建目标：win-android\n发布产物：windows+android\n",
+        "assets": [
+          {
+            "name": "app-universal-release-0.9.9-20260528195115-b00000093-android.apk",
+            "size": 49038157,
+            "browserDownloadUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/download/v0.9.9-20260528195115-b00000093/app-universal-release-0.9.9-20260528195115-b00000093-android.apk"
+          },
+          {
+            "name": "legado_tauri-0.9.9-20260528195115-b00000093-windows.exe",
+            "size": 52059648,
+            "browserDownloadUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/download/v0.9.9-20260528195115-b00000093/legado_tauri-0.9.9-20260528195115-b00000093-windows.exe"
+          }
+        ],
+        "sourceRepo": "CCSSNE/Legado-Tauri",
+        "sourceUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/tag/v0.9.9-20260528195115-b00000093"
+      },
+      "errors": []
     },
     {
       "id": "r",

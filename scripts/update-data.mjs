@@ -10,7 +10,8 @@ const branches = [
     term: 'legado-branch-original',
     forksUrl: 'https://github.com/gedoor/legado/forks',
     skipAutoForks: true,
-    forks: [{ name: 'CCSSNE/legado', repo: 'CCSSNE/legado', url: 'https://github.com/CCSSNE/legado' }]
+    forks: [{ name: 'CCSSNE/legado', repo: 'CCSSNE/legado', url: 'https://github.com/CCSSNE/legado' }],
+    backupRelease: { repo: 'CCSSNE/legado', tag: '3.26.04271714' }
   },
   {
     id: 'tauri',
@@ -20,7 +21,8 @@ const branches = [
     term: 'legado-branch-tauri',
     forksUrl: 'https://github.com/LegadoTeam/Legado-Tauri/forks',
     skipAutoForks: true,
-    forks: [{ name: 'CCSSNE/Legado-Tauri', repo: 'CCSSNE/Legado-Tauri', url: 'https://github.com/CCSSNE/Legado-Tauri' }]
+    forks: [{ name: 'CCSSNE/Legado-Tauri', repo: 'CCSSNE/Legado-Tauri', url: 'https://github.com/CCSSNE/Legado-Tauri' }],
+    backupRelease: { repo: 'CCSSNE/Legado-Tauri', tag: 'v0.9.9-20260528195115-b00000093' }
   },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
@@ -61,6 +63,24 @@ if (token) {
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const yearMs = 365 * 24 * 60 * 60 * 1000;
 
+function normalizeRelease(release) {
+  return {
+    name: release.name,
+    tagName: release.tag_name,
+    prerelease: release.prerelease,
+    publishedAt: release.published_at,
+    createdAt: release.created_at,
+    body: release.body,
+    assets: Array.isArray(release.assets)
+      ? release.assets.map(asset => ({
+          name: asset.name,
+          size: asset.size,
+          browserDownloadUrl: asset.browser_download_url
+        }))
+      : []
+  };
+}
+
 async function githubJson(path) {
   const response = await fetch(`https://api.github.com${path}`, { headers });
   if (!response.ok) {
@@ -86,25 +106,22 @@ async function hydrateBranch(branch) {
   try {
     const releases = await githubJson(`/repos/${branch.repo}/releases?per_page=1`);
     if (Array.isArray(releases) && releases.length > 0) {
-      const release = releases[0];
-      result.release = {
-        name: release.name,
-        tagName: release.tag_name,
-        prerelease: release.prerelease,
-        publishedAt: release.published_at,
-        createdAt: release.created_at,
-        body: release.body,
-        assets: Array.isArray(release.assets)
-          ? release.assets.map(asset => ({
-              name: asset.name,
-              size: asset.size,
-              browserDownloadUrl: asset.browser_download_url
-            }))
-          : []
-      };
+      result.release = normalizeRelease(releases[0]);
     }
   } catch (error) {
     result.errors.push(`版本信息同步失败：${error.message}`);
+  }
+
+  if (!result.release && branch.backupRelease) {
+    await sleep(250);
+    try {
+      const release = await githubJson(`/repos/${branch.backupRelease.repo}/releases/tags/${branch.backupRelease.tag}`);
+      result.release = normalizeRelease(release);
+      result.release.sourceRepo = branch.backupRelease.repo;
+      result.release.sourceUrl = release.html_url;
+    } catch (error) {
+      result.errors.push(`补档版本同步失败：${error.message}`);
+    }
   }
 
   if (!result.release) {
