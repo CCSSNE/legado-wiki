@@ -623,7 +623,7 @@
                 ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
                 <div class="repo-note">${escapeHtml(updatedText)}</div>
-                ${renderForks(branch)}
+                ${renderRelatedLinks(branch)}
               </div>
               <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
             </div>
@@ -651,15 +651,28 @@
         return renderRelease(release, assets);
       }
 
-      function renderForks(branch) {
-        if (!branch.forksUrl && !branch.forks?.length) return '';
-        const forkLinks = (branch.forks || []).map(fork => {
-          const shortName = String(fork.name || '').split('/').pop() || fork.name;
-          const stars = Number.isFinite(fork.stars) ? ` ${formatCompactNumber(fork.stars)} Star` : '';
-          return `<a class="fork-chip" href="${escapeAttribute(fork.url)}" target="_blank" rel="noopener">${escapeHtml(shortName)}${escapeHtml(stars)}</a>`;
-        }).join('');
-        const forksUrl = branch.forksUrl ? `<a href="${escapeAttribute(branch.forksUrl)}" target="_blank" rel="noopener">Fork 补档</a>` : 'Fork 补档';
-        return `<div class="forks-row">${forksUrl}${forkLinks ? `：${forkLinks}` : ''}</div>`;
+      function renderRelatedLinks(branch) {
+        const rows = [];
+        const formatRepoLink = item => {
+          const name = item.label || String(item.name || item.repo || '').split('/').pop() || item.name || item.repo;
+          const stars = Number.isFinite(item.stars) ? ` ${formatCompactNumber(item.stars)} Star` : '';
+          const state = item.error ? ' 暂不可访问' : '';
+          return `<a class="fork-chip" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener">${escapeHtml(name)}${escapeHtml(stars)}${escapeHtml(state)}</a>`;
+        };
+
+        if (branch.forksUrl || branch.forks?.length) {
+          const forkLinks = (branch.forks || []).map(formatRepoLink).join('');
+          const forksUrl = branch.forksUrl ? `<a href="${escapeAttribute(branch.forksUrl)}" target="_blank" rel="noopener">Fork 补档</a>` : 'Fork 补档';
+          rows.push(`<div class="forks-row">${forksUrl}${forkLinks ? `：${forkLinks}` : ''}</div>`);
+        }
+
+        if (branch.relatedRepos?.length) {
+          const title = branch.relatedTitle || '相关仓库';
+          const links = branch.relatedRepos.map(formatRepoLink).join('');
+          rows.push(`<div class="forks-row">${escapeHtml(title)}：${links}</div>`);
+        }
+
+        return rows.join('');
       }
 
       function renderRelease(release, assets) {

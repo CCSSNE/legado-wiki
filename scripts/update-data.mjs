@@ -9,7 +9,21 @@ const branches = [
   { id: 'sigma', name: '阅读 Sigma / 阅读 Plus', tag: 'plus', repo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma' },
   { id: 'main', name: '喵公子版', tag: 'beta', repo: 'LegadoTeam/legado', term: 'legado-branch-main', note: '阅读 Beta。' },
   { id: 'archive', name: '阅读 Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
-  { id: 'max', name: '阅读 MAX', tag: 'max', repo: 'youfengknight/Legado_Max', term: 'legado-branch-max', note: '版本线相当混乱。' },
+  {
+    id: 'max',
+    name: '阅读 MAX',
+    tag: 'max',
+    repo: 'youfengknight/Legado_Max',
+    term: 'legado-branch-max',
+    note: '版本线相当混乱。',
+    relatedTitle: 'MAX 分支',
+    relatedRepos: [
+      { repo: 'Suml-1/Legado_Max', label: '正统继承?' },
+      { repo: 'GEd520/legados', label: '辞晨版MAX' },
+      { repo: 'DandanLLab/Legado_Max', label: '蛋蛋版MAX' },
+      { repo: 'ZG0122/KOI', label: '备份仓库' }
+    ]
+  },
   { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
   { id: 'shutiao', name: '薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
   { id: 'jingshiro', name: 'Jingshiro 版', tag: 'jingshiro', repo: 'Jingshiro/legado', term: 'legado-branch-jingshiro' },
@@ -102,6 +116,30 @@ async function hydrateBranch(branch) {
     } catch (error) {
       result.errors.push(`Fork 同步失败：${error.message}`);
       result.forks = [];
+    }
+  }
+
+  if (Array.isArray(branch.relatedRepos) && branch.relatedRepos.length) {
+    result.relatedRepos = [];
+    for (const related of branch.relatedRepos) {
+      await sleep(250);
+      try {
+        const repo = await githubJson(`/repos/${related.repo}`);
+        result.relatedRepos.push({
+          repo: related.repo,
+          label: related.label,
+          url: repo.html_url,
+          stars: repo.stargazers_count,
+          updatedAt: repo.pushed_at
+        });
+      } catch (error) {
+        result.relatedRepos.push({
+          repo: related.repo,
+          label: related.label,
+          url: `https://github.com/${related.repo}`,
+          error: error.message
+        });
+      }
     }
   }
 
