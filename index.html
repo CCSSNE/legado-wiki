@@ -230,10 +230,17 @@
       border-top: 1px solid #c4cfca;
     }
 
-    .tree li.dashed::before,
+    .tree li.dashed::before {
+      border-left: none;
+      width: 1px;
+      background-image: repeating-linear-gradient(to bottom, #c4cfca 0 2px, transparent 2px 6px);
+    }
+
     .tree li.dashed > a::before,
     .tree li.dashed > label::before {
-      border-style: dashed;
+      border-top: none;
+      height: 1px;
+      background-image: repeating-linear-gradient(to right, #c4cfca 0 2px, transparent 2px 6px);
     }
 
     .tree input {
@@ -788,7 +795,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(renderNode).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">关系由代码分析得出：实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(renderNode).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
