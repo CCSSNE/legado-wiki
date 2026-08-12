@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T00:02:25.185Z",
+  "generatedAt": "2026-08-12T02:47:28.159Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 12,
+      "stars": 13,
       "sourceUpdatedAt": "2026-08-11T12:14:26Z",
       "githubArchived": false,
       "release": {
@@ -78,7 +78,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5601,
+      "stars": 5605,
       "sourceUpdatedAt": "2026-08-11T17:20:17Z",
       "githubArchived": false,
       "release": {
@@ -119,7 +119,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2332,
+      "stars": 2335,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -171,36 +171,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 686,
-      "sourceUpdatedAt": "2026-08-11T23:01:00Z",
+      "stars": 688,
+      "sourceUpdatedAt": "2026-08-12T01:14:44Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081201",
-        "tagName": "3.26081201",
-        "prerelease": false,
-        "publishedAt": "2026-08-11T17:42:17Z",
-        "createdAt": "2026-08-11T17:14:54Z",
-        "body": "**2026/08/12**\n- 书架管理支持批量保存网络封面并恢复书源封面\n\n",
+        "name": "legado_app_3.26081209",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-08-12T01:04:06Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/12**\n- Web 与 MCP 访问令牌保护支持关闭，关闭后仅应在可信网络中使用\n- 书架管理支持批量保存网络封面并恢复书源封面\n- 修复单章换源写入异常时可能被旧正文覆盖的问题\n- 批量单章换源支持按章节范围自动处理并在匹配异常时暂停\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081201_release.apk",
-            "size": 17825074,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26081201/legado_app_3.26081201_release.apk"
+            "name": "legado_app_3.26081209_release.apk",
+            "size": 17844021,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081209_release.apk"
           },
           {
-            "name": "legado_app_3.26081201_releaseA.apk",
-            "size": 17825080,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26081201/legado_app_3.26081201_releaseA.apk"
+            "name": "legado_app_3.26081209_releaseA.apk",
+            "size": 17844028,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081209_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081201_universal_release.apk",
-            "size": 23792254,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26081201/legado_app_3.26081201_universal_release.apk"
+            "name": "legado_app_3.26081209_universal_release.apk",
+            "size": 23811200,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081209_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081201_universal_releaseA.apk",
-            "size": 23792250,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26081201/legado_app_3.26081201_universal_releaseA.apk"
+            "name": "legado_app_3.26081209_universal_releaseA.apk",
+            "size": 23811201,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081209_universal_releaseA.apk"
           }
         ]
       },
@@ -263,7 +263,7 @@
           "updatedAt": "2026-06-01T15:19:40Z"
         }
       ],
-      "stars": 281,
+      "stars": 282,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": false,
       "release": {
