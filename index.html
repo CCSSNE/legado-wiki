@@ -233,7 +233,6 @@
     .tree li.dashed::before,
     .tree li.dashed > a::before,
     .tree li.dashed > label::before {
-      border-color: #c29a5e;
       border-style: dashed;
     }
 
@@ -727,6 +726,7 @@
         {
           branch: 'original',
           children: [
+            { external: { name: '原版补档', repo: 'CCSSNE/legado' } },
             { branch: 'shutiao' },
             { branch: 't' },
             {
@@ -763,8 +763,7 @@
               children: [
                 { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
               ]
-            },
-            { external: { name: '原版补档', repo: 'CCSSNE/legado' } }
+            }
           ]
         }
       ];
