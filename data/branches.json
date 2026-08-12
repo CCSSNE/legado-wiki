@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T13:51:29.203Z",
+  "generatedAt": "2026-08-12T15:16:45.379Z",
   "branches": [
     {
       "id": "c",
@@ -50,7 +50,7 @@
         "repo": "CCSSNE/legado",
         "tag": "3.26.04271714"
       },
-      "stars": 46976,
+      "stars": 46979,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -78,7 +78,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5614,
+      "stars": 5616,
       "sourceUpdatedAt": "2026-08-11T17:20:17Z",
       "githubArchived": false,
       "release": {
@@ -145,7 +145,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2095,
+      "stars": 2096,
       "sourceUpdatedAt": "2026-05-15T10:42:50Z",
       "githubArchived": false,
       "release": {
@@ -171,36 +171,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 699,
-      "sourceUpdatedAt": "2026-08-12T12:24:00Z",
+      "stars": 701,
+      "sourceUpdatedAt": "2026-08-12T14:35:06Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081220",
+        "name": "legado_app_3.26081222",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-12T12:13:00Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/12**\n- 修复优化绘制开启时高亮规则样式可能显示不完整的问题\n- Web 与 MCP 访问令牌保护支持关闭，关闭后仅应在可信网络中使用\n- 书架管理支持批量保存网络封面并恢复书源封面\n- 修复单章换源写入异常时可能被旧正文覆盖的问题\n- 批量单章换源支持按章节范围自动处理并在匹配异常时暂停\n- 修复 Web 书源编辑页左右栏比例异常和规则输入框偶发折叠的问题\n- MCP 批量校验书源的进度通知支持返回总数\n\n",
+        "createdAt": "2026-08-12T14:23:20Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/12**\n- 修复透明顶部栏在部分主题下文字和图标对比度不足的问题\n- 修复优化绘制开启时高亮规则样式可能显示不完整的问题\n- Web 与 MCP 访问令牌保护支持关闭，关闭后仅应在可信网络中使用\n- 书架管理支持批量保存网络封面并恢复书源封面\n- 修复单章换源写入异常时可能被旧正文覆盖的问题\n- 批量单章换源支持按章节范围自动处理并在匹配异常时暂停\n- 修复 Web 书源编辑页左右栏比例异常和规则输入框偶发折叠的问题\n- MCP 批量校验书源的进度通知支持返回总数\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081220_release.apk",
-            "size": 17844144,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081220_release.apk"
+            "name": "legado_app_3.26081222_release.apk",
+            "size": 17844168,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_release.apk"
           },
           {
-            "name": "legado_app_3.26081220_releaseA.apk",
-            "size": 17844167,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081220_releaseA.apk"
+            "name": "legado_app_3.26081222_releaseA.apk",
+            "size": 17844184,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081220_universal_release.apk",
-            "size": 23811332,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081220_universal_release.apk"
+            "name": "legado_app_3.26081222_universal_release.apk",
+            "size": 23811344,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081220_universal_releaseA.apk",
-            "size": 23811345,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081220_universal_releaseA.apk"
+            "name": "legado_app_3.26081222_universal_releaseA.apk",
+            "size": 23811356,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_universal_releaseA.apk"
           }
         ]
       },
@@ -281,7 +281,7 @@
       "repo": "youfengknight/Legado_Max",
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
-      "stars": 282,
+      "stars": 281,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": false,
       "release": {
