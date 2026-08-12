@@ -166,30 +166,148 @@
     .toggle .thumb { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); transition: 0.25s; }
     .toggle input:checked + .track .thumb { left: 21px; }
 
-    .nav-bar {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
+    .tree-nav {
       margin-bottom: 18px;
+      padding: 14px 16px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 28px rgba(22, 61, 56, 0.06);
     }
 
-    .nav-bar a {
-      display: block;
-      padding: 9px 10px;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      background: #fff;
+    .tree-nav-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 10px;
+      margin-bottom: 10px;
+      color: var(--accent-strong);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .tree-hint {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .tree { list-style: none; margin: 0; padding: 0; }
+    .tree ul { list-style: none; margin: 0; padding-left: 18px; }
+
+    .tree li {
+      position: relative;
+      padding: 2px 0 2px 16px;
+    }
+
+    .tree li::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      border-left: 1px solid #c4cfca;
+    }
+
+    .tree li:not(:has(> ul)):last-child::before {
+      height: 13px;
+      bottom: auto;
+    }
+
+    .tree > li:first-child::before,
+    .tree > li:first-child > a::before,
+    .tree > li:first-child > label::before { display: none; }
+
+    .tree li > a::before,
+    .tree li > label::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 5px;
+      width: 11px;
+      border-top: 1px solid #c4cfca;
+    }
+
+    .tree li.dashed::before,
+    .tree li.dashed > a::before,
+    .tree li.dashed > label::before {
+      border-color: #c29a5e;
+      border-style: dashed;
+    }
+
+    .tree input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .tree input ~ ul { display: none; }
+    .tree input:checked ~ ul { display: block; }
+
+    .tree-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      border-radius: 5px;
       color: #34413d;
       font-size: 13px;
       font-weight: 700;
-      text-align: center;
-      text-decoration: none;
-      transition: 0.2s;
-      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
-    .nav-bar a:hover { border-color: #abc3bb; color: var(--accent-strong); transform: translateY(-1px); }
-    .nav-bar a.active { border-color: var(--accent-strong); background: var(--accent-strong); color: #fff; }
+    .tree-label:hover { color: var(--accent-strong); }
+
+    .tree-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .tree-badge::before { content: "+"; }
+    .tree input:checked ~ label .tree-badge::before { content: "−"; }
+
+    .tree-link {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 5px;
+      color: #34413d;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.15s;
+    }
+
+    .tree-link:hover { background: var(--accent-soft); color: var(--accent-strong); }
+    .tree-link.active { background: var(--accent-strong); color: #fff; }
+
+    .tree-external .tree-link { color: var(--muted); font-weight: 500; }
+    .tree-external .tree-link:hover { color: var(--accent-strong); }
+
+    .tree-arrow { font-size: 11px; opacity: 0.7; }
+
+    .tree-pin {
+      margin-left: 2px;
+      padding: 0 6px;
+      border-radius: 4px;
+      background: var(--warm-soft);
+      color: var(--warm);
+      font-size: 10px;
+      font-weight: 700;
+    }
 
     .repo-card {
       margin-bottom: 14px;
@@ -513,7 +631,7 @@
       .header-title { font-size: 22px; }
       .header-group { text-align:left; }
       .group-desc { white-space:normal; }
-      .nav-bar { grid-template-columns: repeat(2, 1fr); }
+      .tree-nav { padding: 12px 12px 14px; }
       .accel-row { align-items: flex-start; flex-direction: column; }
       .repo-card { padding: 14px; }
       .repo-header { align-items: stretch; flex-direction: column; }
@@ -554,7 +672,7 @@
       </label>
     </div>
 
-    <nav class="nav-bar" id="repoNav" aria-label="分支导航"></nav>
+    <nav class="tree-nav" id="repoNav" aria-label="分支导航"></nav>
     <section id="repoList" aria-label="分支列表"><div class="loading-box">正在同步仓库 Star 与版本信息...</div></section>
 
     <section class="resource-section" id="useful-links" data-nav-target aria-label="推荐链接">
@@ -605,6 +723,75 @@
       const sourceSel = document.getElementById('accelSource');
       let activeBranches = [];
 
+      const forkTree = [
+        {
+          branch: 'original',
+          children: [
+            { branch: 'shutiao' },
+            { branch: 't' },
+            {
+              branch: 'sigma',
+              inherit: true,
+              children: [
+                {
+                  branch: 'archive',
+                  children: [
+                    {
+                      branch: 'r',
+                      children: [{ branch: 'c' }]
+                    }
+                  ]
+                },
+                {
+                  branch: 'max',
+                  children: [
+                    { branch: 'max-sum' },
+                    { branch: 'max-cichen' },
+                    { branch: 'max-dandan' }
+                  ]
+                },
+                { branch: 'ng' },
+                { branch: 'jingshiro', inherit: true }
+              ]
+            },
+            { branch: 'md3', inherit: true },
+            { branch: 'main', inherit: true },
+            { branch: 'harmony', inherit: true },
+            {
+              branch: 'tauri',
+              inherit: true,
+              children: [
+                { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
+              ]
+            },
+            { external: { name: '原版补档', repo: 'CCSSNE/legado' } }
+          ]
+        }
+      ];
+
+      function renderTreeNav(branches) {
+        const byId = new Map(branches.map(branch => [branch.id, branch]));
+        let seq = 0;
+        const renderNode = node => {
+          const children = node.children ? node.children.map(renderNode).join('') : '';
+          const dash = node.inherit ? ' dashed' : '';
+          if (node.external) {
+            const external = node.external;
+            return `<li class="tree-external${dash}"><a class="tree-link" href="https://github.com/${escapeAttribute(external.repo)}" target="_blank" rel="noopener">${escapeHtml(external.name)}<span class="tree-arrow"> ↗</span></a></li>`;
+          }
+          const branch = byId.get(node.branch);
+          if (!branch) return '';
+          const pin = branch.pinned ? '<span class="tree-pin">站长</span>' : '';
+          const label = `${escapeHtml(branch.name)}${pin}`;
+          if (children) {
+            const checkboxId = `tree-node-${seq++}`;
+            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-label" for="${checkboxId}"><span class="tree-badge"></span>${label}</label><ul>${children}</ul></li>`;
+          }
+          return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
+        };
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(renderNode).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
+      }
+
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
       toggle.checked = localStorage.getItem('legado_accel') === 'on';
       bootstrap();
@@ -639,8 +826,7 @@
           return (right.stars ?? -1) - (left.stars ?? -1);
         });
 
-        nav.innerHTML = activeBranches.map(branch => `<a href="#repo-${branch.id}">${escapeHtml(branch.name)}</a>`).join('') +
-          '<a href="#useful-links">推荐链接</a>';
+        nav.innerHTML = renderTreeNav(activeBranches);
         list.innerHTML = activeBranches.map(renderCardShell).join('');
         syncTime.textContent = `最后同步：${formatDate(new Date(data.generatedAt))} (北京时间)`;
 
@@ -829,10 +1015,10 @@
       function initNavObserver() {
         const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            const link = document.querySelector(`.nav-bar a[href="#${entry.target.id}"]`);
+            const link = document.querySelector(`.tree-nav a[href="#${entry.target.id}"]`);
             if (!link) return;
             if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
-              document.querySelectorAll('.nav-bar a.active').forEach(item => item.classList.remove('active'));
+              document.querySelectorAll('.tree-nav a.active').forEach(item => item.classList.remove('active'));
               link.classList.add('active');
             }
           });
