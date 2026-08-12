@@ -808,16 +808,26 @@
 
       async function bootstrap() {
         let data;
-        try {
-          const response = await fetch(`data/branches.json?v=${Date.now()}`, {
-            headers: { Accept: 'application/json' }
-          });
-          if (!response.ok) throw new Error(`数据文件 ${response.status}`);
-          data = await response.json();
-        } catch (error) {
-          list.innerHTML = `<div class="error-box">数据同步文件加载失败：${escapeHtml(error.message)}</div>`;
-          syncTime.textContent = '数据同步失败';
-          return;
+        let usedRemoteSource = false;
+        const dataSources = [
+          `data/branches.json?v=${Date.now()}`,
+          `https://raw.githubusercontent.com/CCSSNE/legado-wiki/main/data/branches.json?v=${Date.now()}`
+        ];
+
+        for (const url of dataSources) {
+          try {
+            const response = await fetch(url, { headers: { Accept: 'application/json' } });
+            if (!response.ok) throw new Error(`数据文件 ${response.status}`);
+            data = await response.json();
+            usedRemoteSource = url.startsWith('http');
+            break;
+          } catch (error) {
+            if (url === dataSources[dataSources.length - 1]) {
+              list.innerHTML = `<div class="error-box">数据同步文件加载失败：${escapeHtml(error.message)}</div>`;
+              syncTime.textContent = '数据同步失败';
+              return;
+            }
+          }
         }
 
         activeBranches = [...(data.branches || [])].sort((left, right) => {
@@ -828,7 +838,7 @@
 
         nav.innerHTML = renderTreeNav(activeBranches);
         list.innerHTML = activeBranches.map(renderCardShell).join('');
-        syncTime.textContent = `最后同步：${formatDate(new Date(data.generatedAt))} (北京时间)`;
+        syncTime.textContent = `最后同步：${formatDate(new Date(data.generatedAt))} (北京时间)${usedRemoteSource ? ' · 本地模式，数据来自 GitHub' : ''}`;
 
         initNavObserver();
         initCommentToggles();
