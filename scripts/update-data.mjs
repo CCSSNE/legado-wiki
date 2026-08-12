@@ -35,13 +35,31 @@ const branches = [
     tag: 'max',
     repo: 'youfengknight/Legado_Max',
     term: 'legado-branch-max',
-    note: '版本线相当混乱。',
-    relatedTitle: 'MAX 分支',
-    relatedRepos: [
-      { repo: 'Suml-1/Legado_Max', label: 'SUM版MAX' },
-      { repo: 'GEd520/legados', label: '辞晨版MAX' },
-      { repo: 'DandanLLab/Legado_Max', label: '蛋蛋版MAX' }
-    ]
+    note: '原版 MAX 已宣布不再维护，家族各分支独立发版。'
+  },
+  {
+    id: 'max-sum',
+    name: '阅读 MAX SUM版',
+    tag: 'max-sum',
+    repo: 'Suml-1/Legado_Max',
+    term: 'legado-branch-max-sum',
+    note: '独立发版，目前 MAX 家族最活跃的版本。'
+  },
+  {
+    id: 'max-cichen',
+    name: '阅读 MAX 辞晨版',
+    tag: 'max-cichen',
+    repo: 'GEd520/legados',
+    term: 'legado-branch-max-cichen',
+    note: '独立仓库，有自己的 APK 发布。'
+  },
+  {
+    id: 'max-dandan',
+    name: '阅读 MAX 蛋蛋版',
+    tag: 'max-dandan',
+    repo: 'DandanLLab/Legado_Max',
+    term: 'legado-branch-max-dandan',
+    note: '独立发版，有自己的 APK 发布。'
   },
   { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
   { id: 'shutiao', name: '薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
