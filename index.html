@@ -654,6 +654,19 @@
 
     .footer-rule { color: #7d8984; }
 
+    .footer-stat {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-top: 4px;
+      color: #7d8984;
+    }
+
+    .stat-item { white-space: nowrap; }
+    .stat-num { color: var(--accent-strong); font-weight: 700; }
+    #busuanzi_container_site_pv[style*="display:none"] ~ .stat-item,
+    #busuanzi_container_site_uv[style*="display:none"] { display: none; }
+
     @media (max-width: 760px) {
       body { padding: 0 14px 40px; }
       header { align-items:flex-start; flex-direction:column; margin-top: 8px; padding: 12px 14px 13px; }
@@ -732,6 +745,10 @@
       <div class="footer-rule">弃坑标记规则：没有公开 Release，或最新 Release 超过 1 年未更新。</div>
       <div class="footer-rule">收录标准：有原创代码，且发布过 APK，即可视为独立版本，本站收录。</div>
       <div class="footer-rule">收录范围：主要是开源阅读的分支，以及其它与阅读有关的代表性开源软件。</div>
+      <div class="footer-stat">
+        <span id="busuanzi_container_site_pv" class="stat-item">本站总访问量 <span id="busuanzi_value_site_pv" class="stat-num">…</span> 次</span>
+        <span id="busuanzi_container_site_uv" class="stat-item">本站访客数 <span id="busuanzi_value_site_uv" class="stat-num">…</span> 人</span>
+      </div>
     </footer>
   </main>
 
@@ -742,6 +759,7 @@
   </button>
 
   <script type="module" src="https://esm.sh/giscus@1"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script>
     (() => {
       const commentConfig = {
