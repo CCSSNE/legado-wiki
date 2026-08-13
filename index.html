@@ -825,7 +825,13 @@
 
       function renderTreeNav(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
-        const byStars = (left, right) => (byId.get(right.branch)?.stars ?? -1) - (byId.get(left.branch)?.stars ?? -1);
+        const familyStars = node => {
+          if (node.external) return 0;
+          const own = byId.get(node.branch)?.stars ?? 0;
+          const kids = node.children ? node.children.reduce((sum, child) => sum + familyStars(child), 0) : 0;
+          return own + kids;
+        };
+        const byStars = (left, right) => familyStars(right) - familyStars(left);
         const sortChildren = children => {
           const groups = { external: [], solid: [], dashed: [] };
           children.forEach(node => {
