@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T08:45:52.199Z",
+  "generatedAt": "2026-08-13T10:29:59.548Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 22,
+      "stars": 25,
       "sourceUpdatedAt": "2026-08-12T19:23:29Z",
       "githubArchived": false,
       "release": {
@@ -50,7 +50,7 @@
         "repo": "CCSSNE/legado",
         "tag": "3.26.04271714"
       },
-      "stars": 46987,
+      "stars": 46988,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -78,7 +78,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5632,
+      "stars": 5633,
       "sourceUpdatedAt": "2026-08-11T17:20:17Z",
       "githubArchived": false,
       "release": {
@@ -171,36 +171,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 712,
-      "sourceUpdatedAt": "2026-08-13T06:16:42Z",
+      "stars": 715,
+      "sourceUpdatedAt": "2026-08-13T10:22:48Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081222",
+        "name": "legado_app_3.26081318",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-12T14:23:20Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/12**\n- 修复透明顶部栏在部分主题下文字和图标对比度不足的问题\n- 修复优化绘制开启时高亮规则样式可能显示不完整的问题\n- Web 与 MCP 访问令牌保护支持关闭，关闭后仅应在可信网络中使用\n- 书架管理支持批量保存网络封面并恢复书源封面\n- 修复单章换源写入异常时可能被旧正文覆盖的问题\n- 批量单章换源支持按章节范围自动处理并在匹配异常时暂停\n- 修复 Web 书源编辑页左右栏比例异常和规则输入框偶发折叠的问题\n- MCP 批量校验书源的进度通知支持返回总数\n\n",
+        "createdAt": "2026-08-13T10:03:55Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/13**\n- 阅读页页眉页脚支持调整文字大小\n- 修复网页异步脚本结果读取后仍占用内存缓存的问题\n- 批量导入当前目录的本地书籍时支持同时创建目录同名分组\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081222_release.apk",
-            "size": 17844168,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_release.apk"
+            "name": "legado_app_3.26081318_release.apk",
+            "size": 17845066,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081318_release.apk"
           },
           {
-            "name": "legado_app_3.26081222_releaseA.apk",
-            "size": 17844184,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_releaseA.apk"
+            "name": "legado_app_3.26081318_releaseA.apk",
+            "size": 17845062,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081318_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081222_universal_release.apk",
-            "size": 23811344,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_universal_release.apk"
+            "name": "legado_app_3.26081318_universal_release.apk",
+            "size": 23812235,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081318_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081222_universal_releaseA.apk",
-            "size": 23811356,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081222_universal_releaseA.apk"
+            "name": "legado_app_3.26081318_universal_releaseA.apk",
+            "size": 23812231,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081318_universal_releaseA.apk"
           }
         ]
       },
