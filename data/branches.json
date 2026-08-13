@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T15:17:55.907Z",
+  "generatedAt": "2026-08-13T17:15:36.760Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46986,
+      "stars": 46988,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5637,
+      "stars": 5638,
       "sourceUpdatedAt": "2026-08-11T17:20:17Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2349,
+      "stars": 2352,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2098,
+      "stars": 2099,
       "sourceUpdatedAt": "2026-05-15T10:42:50Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 718,
+      "stars": 719,
       "sourceUpdatedAt": "2026-08-13T12:30:42Z",
       "githubArchived": false,
       "release": {
@@ -257,35 +257,35 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 284,
-      "sourceUpdatedAt": "2026-08-12T17:47:28Z",
+      "sourceUpdatedAt": "2026-08-13T16:24:48Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.081301",
-        "tagName": "beta-3.26.081301",
+        "name": "legado_app_3.26.081400",
+        "tagName": "beta-3.26.081400",
         "prerelease": true,
-        "publishedAt": "2026-08-12T17:47:29Z",
-        "createdAt": "2026-08-12T17:33:31Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\r\n\r\n📦 **APK版本说明：**\r\n| 版本类型 | 文件名标识 | 说明 |\r\n|---------|-----------|------|\r\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\r\n| 兼容版 | compact | 可覆盖原版和lyc版 |\r\n| 共存版 | plus | 独立安装，与主版本共存 |\r\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\r\n\r\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\r\n\r\n### 更新内容\r\n#### 有点bug，release包摘录分享功能有点问题，明天再修了\r\n* fix(调试): 移除悬浮球show/hide的success冗余日志避免刷屏\r\n* fix(主题): 优化重复导入处理同名项覆盖或复用不再追加名称2\r\n* fix(主题): 修复应用主题列表大字号时更多按钮被遮挡的问题\r\n* feat(阅读): 实现正文长按摘录分享功能\r\n* fix(摘录分享): 适配弹窗主题并精简模板管理操作\r\n* 上传Compose UI 架构规范\r\n* refactor(摘录分享): 按 UI-ARCHITECTURE 规范整改\r\n* 更新日志\r\n\r\n",
+        "publishedAt": "2026-08-13T16:24:48Z",
+        "createdAt": "2026-08-13T16:10:22Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n### 更新内容\n* 修复摘录分享功能在release包无法使用的问题\n* fix(视频播放): 修复部分m3u8视频无法播放的问题\n* fix(摘录分享): 模板管理界面补充添加模板入口\n* 更新日志\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.081301_release.apk",
-            "size": 24725822,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081301/legado_beta_3.26.081301_release.apk"
+            "name": "legado_beta_3.26.081400_release.apk",
+            "size": 24728773,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081400/legado_beta_3.26.081400_release.apk"
           },
           {
-            "name": "legado_compat_3.26.081301_legacy.apk",
-            "size": 24725834,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081301/legado_compat_3.26.081301_legacy.apk"
+            "name": "legado_compat_3.26.081400_legacy.apk",
+            "size": 24728772,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081400/legado_compat_3.26.081400_legacy.apk"
           },
           {
-            "name": "legado_plus_3.26.081301_releaseS.apk",
-            "size": 24725907,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081301/legado_plus_3.26.081301_releaseS.apk"
+            "name": "legado_plus_3.26.081400_releaseS.apk",
+            "size": 24728780,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081400/legado_plus_3.26.081400_releaseS.apk"
           },
           {
-            "name": "legado_z_debug_3.26.081301.apk",
-            "size": 60380040,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081301/legado_z_debug_3.26.081301.apk"
+            "name": "legado_z_debug_3.26.081400.apk",
+            "size": 60383255,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081400/legado_z_debug_3.26.081400.apk"
           }
         ]
       },
@@ -349,7 +349,7 @@
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
           "stars": 2,
-          "updatedAt": "2026-08-11T02:12:48Z"
+          "updatedAt": "2026-08-13T16:47:51Z"
         }
       ],
       "backupRelease": {
@@ -357,7 +357,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 278,
+      "stars": 277,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -422,66 +422,66 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 168,
-      "sourceUpdatedAt": "2026-08-13T12:17:00Z",
+      "stars": 169,
+      "sourceUpdatedAt": "2026-08-13T16:47:06Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.080111",
-        "tagName": "3.26.080111",
-        "prerelease": false,
-        "publishedAt": "2026-08-01T03:31:45Z",
-        "createdAt": "2026-06-26T04:24:52Z",
-        "body": "## 更新日志\n\n- 定期维护编译，无代码变更。\n",
+        "name": "3.26.08140028",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-13T16:47:06Z",
+        "createdAt": "2026-07-15T14:41:08Z",
+        "body": "## 更新日志\r\n⚠️ **注意：当前分支为 quickjs，包含实验性功能，可能有破坏性变更。**\r\n当前基本完成 cmp/kmp 迁移，桌面端(windows/linux/mac)产物请前往action最新运行的附件内容下载，当前仅测试windows端与安卓端，如有问题欢迎反馈\r\n\r\n- fix(CI): 修编译工作流问题                                                (12f7aac21)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 15324896,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/all.apk"
+            "size": 20552846,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 15324904,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/all_releaseA.apk"
+            "size": 20552835,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 9048213,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/arm64.apk"
+            "size": 11315339,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 9048219,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/arm64_releaseA.apk"
+            "size": 11315320,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 8597023,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/armv7.apk"
+            "size": 10588618,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 8597036,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/armv7_releaseA.apk"
+            "size": 10588615,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
           },
           {
             "name": "x64.apk",
-            "size": 9311467,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/x64.apk"
+            "size": 11654839,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/x64.apk"
           },
           {
             "name": "x64_releaseA.apk",
-            "size": 9311479,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/x64_releaseA.apk"
+            "size": 11654828,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/x64_releaseA.apk"
           },
           {
             "name": "x86.apk",
-            "size": 9381075,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/x86.apk"
+            "size": 11710466,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/x86.apk"
           },
           {
             "name": "x86_releaseA.apk",
-            "size": 9381082,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.080111/x86_releaseA.apk"
+            "size": 11710455,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/x86_releaseA.apk"
           }
         ]
       },
