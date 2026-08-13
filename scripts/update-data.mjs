@@ -145,13 +145,21 @@ async function hydrateBranch(branch) {
   }
 
   if (!result.release) {
-    result.abandoned = '弃坑';
-    result.abandonedReason = '无公开 Release';
+    const sourceTime = Date.parse(result.sourceUpdatedAt || '');
+    const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > yearMs;
+    if (sourceStale) {
+      result.abandoned = '弃坑';
+      result.abandonedReason = '无公开 Release，且源码超过 1 年未更新';
+    }
   } else {
     const releaseTime = Date.parse(result.release.publishedAt || result.release.createdAt || '');
     if (Number.isFinite(releaseTime) && Date.now() - releaseTime > yearMs) {
-      result.abandoned = '弃坑';
-      result.abandonedReason = 'Release 超过 1 年未更新';
+      const sourceTime = Date.parse(result.sourceUpdatedAt || '');
+      const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > yearMs;
+      if (sourceStale) {
+        result.abandoned = '弃坑';
+        result.abandonedReason = 'Release 与源码均超过 1 年未更新';
+      }
     }
   }
 
