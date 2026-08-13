@@ -166,6 +166,37 @@
     .toggle .thumb { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); transition: 0.25s; }
     .toggle input:checked + .track .thumb { left: 21px; }
 
+    .back-top {
+      position: fixed;
+      right: 22px;
+      bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
+      box-shadow: 0 10px 26px rgba(22, 61, 56, 0.35);
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px) scale(0.9);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, box-shadow 0.2s ease;
+      z-index: 60;
+    }
+
+    .back-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+
+    .back-top.show:hover { box-shadow: 0 14px 32px rgba(22, 61, 56, 0.45); transform: translateY(-1px) scale(1.05); }
+    .back-top.show:active { transform: translateY(0) scale(0.95); }
+
     .tree-nav {
       margin-bottom: 18px;
       padding: 14px 16px 16px;
@@ -704,6 +735,12 @@
     </footer>
   </main>
 
+  <button class="back-top" id="backTop" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
   <script type="module" src="https://esm.sh/giscus@1"></script>
   <script>
     (() => {
@@ -804,6 +841,19 @@
         localStorage.setItem('legado_proxy', sourceSel.value);
         patchLinks();
       });
+
+      const backTop = document.getElementById('backTop');
+      const showBackTopThreshold = window.innerHeight * 0.8;
+
+      function updateBackTop() {
+        backTop.classList.toggle('show', window.scrollY > showBackTopThreshold);
+      }
+
+      window.addEventListener('scroll', updateBackTop, { passive: true });
+      backTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      updateBackTop();
 
       async function bootstrap() {
         let data;
