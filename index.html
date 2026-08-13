@@ -225,6 +225,16 @@
       letter-spacing: 0;
     }
 
+    .tree-note {
+      margin-top: 10px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      background: rgba(46, 111, 100, 0.05);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
     .tree { list-style: none; margin: 0; padding: 0; }
     .tree ul { list-style: none; margin: 0; padding-left: 18px; }
 
@@ -865,7 +875,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">关系由代码分析得出：实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul><div class="tree-note">血缘关系固定：分支一经收录（无论是因 fork 自动加入，还是人工添加），挂在哪位父分支之下、是否为补档，均由人工裁定、长期不变。实线与虚线按 GitHub 实际 fork 数据自动更新：是父分支的直接 fork 显示实线，同源但非 fork 显示虚线，实际关系变化时线型自动转变。</div>`;
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
