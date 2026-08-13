@@ -120,6 +120,8 @@ async function hydrateBranch(branch) {
     result.stars = repo.stargazers_count;
     result.sourceUpdatedAt = repo.pushed_at;
     result.githubArchived = repo.archived;
+    result.fork = repo.fork;
+    result.forkOf = repo.parent?.full_name ?? null;
   } catch (error) {
     result.errors.push(`仓库信息同步失败：${error.message}`);
   }

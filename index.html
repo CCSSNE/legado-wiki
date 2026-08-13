@@ -785,7 +785,6 @@
             { branch: 't' },
             {
               branch: 'sigma',
-              inherit: true,
               children: [
                 {
                   branch: 'archive',
@@ -801,20 +800,19 @@
                   children: [
                     { branch: 'max-sum' },
                     { branch: 'max-dandan' },
-                    { branch: 'max-cichen', inherit: true }
+                    { branch: 'max-cichen' }
                   ]
                 },
-                { branch: 'ng', children: [{ branch: 'fu', inherit: true }] },
+                { branch: 'ng', children: [{ branch: 'fu' }] },
                 { branch: 'pp' },
-                { branch: 'jingshiro', inherit: true }
+                { branch: 'jingshiro' }
               ]
             },
-            { branch: 'md3', inherit: true },
-            { branch: 'main', inherit: true },
-            { branch: 'harmony', inherit: true },
+            { branch: 'md3' },
+            { branch: 'main' },
+            { branch: 'harmony' },
             {
               branch: 'tauri',
-              inherit: true,
               children: [
                 { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
               ]
@@ -832,21 +830,27 @@
           return own + kids;
         };
         const byStars = (left, right) => familyStars(right) - familyStars(left);
-        const sortChildren = children => {
+        const isDashed = (node, parentRepo) => {
+          if (!parentRepo || node.external) return false;
+          const branch = byId.get(node.branch);
+          return !(branch && branch.fork === true && branch.forkOf === parentRepo);
+        };
+        const sortChildren = (children, parentRepo) => {
           const groups = { external: [], solid: [], dashed: [] };
           children.forEach(node => {
             if (node.external) groups.external.push(node);
-            else groups[node.inherit ? 'dashed' : 'solid'].push(node);
+            else groups[isDashed(node, parentRepo) ? 'dashed' : 'solid'].push(node);
           });
           groups.solid.sort(byStars);
           groups.dashed.sort(byStars);
           return [...groups.external, ...groups.solid, ...groups.dashed];
         };
         let seq = 0;
-        const renderNode = node => {
-          const kids = node.children ? sortChildren(node.children) : null;
-          const children = kids ? kids.map(renderNode).join('') : '';
-          const dash = node.inherit ? ' dashed' : '';
+        const renderNode = (node, parentRepo) => {
+          const ownRepo = byId.get(node.branch)?.repo;
+          const kids = node.children ? sortChildren(node.children, ownRepo) : null;
+          const children = kids ? kids.map(child => renderNode(child, ownRepo)).join('') : '';
+          const dash = isDashed(node, parentRepo) ? ' dashed' : '';
           if (node.external) {
             const external = node.external;
             return `<li class="tree-external${dash}"><a class="tree-link" href="https://github.com/${escapeAttribute(external.repo)}" target="_blank" rel="noopener">${escapeHtml(external.name)}<span class="tree-arrow"> ↗</span></a></li>`;
@@ -861,7 +865,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">关系由代码分析得出：实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(renderNode).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">关系由代码分析得出：实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
