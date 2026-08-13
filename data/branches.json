@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T12:01:52.149Z",
+  "generatedAt": "2026-08-13T12:42:29.951Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 25,
-      "sourceUpdatedAt": "2026-08-12T19:23:29Z",
+      "stars": 26,
+      "sourceUpdatedAt": "2026-08-13T12:04:55Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081303c",
-        "tagName": "v3.26.081303c",
+        "name": "阅读 C 3.26.081315c",
+        "tagName": "v3.26.081315c",
         "prerelease": false,
-        "publishedAt": "2026-08-12T19:23:29Z",
-        "createdAt": "2026-08-12T19:10:49Z",
-        "body": "【备份与恢复】\r\n- 备份新增阅读记录头像目录，恢复后自动把头像配置里的绝对路径修正到当前应用目录，从 R 版换到 C 版恢复也能显示自定义头像。\r\n- 自定义封面备份增强：书架和分组里指向本地图片的自定义封面，备份时会一并并入封面目录，恢复后按文件名自动映射路径；恢复时找不到对应封面文件时保留原路径，不再清空。\r\n\r\n【配图（图片 / 视频 / 音频）】\r\n- 配图扩展为图片、视频、音频三类媒体：选择器放开为 */*，可一次多选图片/视频/音频，保存前拦截非媒体文件并提示。\r\n- 插入时按“文件名扩展名 → MIME → 文件头”三级识别媒体类型，并修复保存时无点号扩展名被默认当成 jpg 的根因，视频/音频不再被误存成图片。\r\n- 新增独立音频块：阅读页内联播放，支持播放/暂停、进度条点击与拖动 seek（触摸优先级最高），翻页继续播放、退出阅读页停止，多个音频实例的播放/暂停状态同步刷新。\r\n- 新增“配图音频播放时音量键调音量”开关（阅读设置）：内嵌音频块播放时音量键不再翻页，改为调节音量。\r\n- 新增视频全屏播放：多视频可左右滑动、滑走即停止；单个视频禁止滑动并自动横屏；视频自动抽帧作为封面并显示时长。\r\n- 配图目录页：图片显示缩略图，视频显示抽帧+时长，音频显示音符图标+时长；顶部改为小按钮行，新增多选/全选，多选模式点击勾选，长按支持保存 / 保存所有 / 删除所选。\r\n- 全屏查看体验：图片单击返回阅读页，全屏黑色背景，修复缩放卡顿与手势冲突。\r\n- 配图布局改为单图 / 双图 / 一行三张 / 一行四张，并新增两行两列四宫格；阅读排版与 PDF 导出同步支持。\r\n- TXT / EPUB / PDF 导出均支持媒体再导入：TXT 用压缩包导出并在导入时还原，EPUB 嵌入配图标记与侧车清单、导入自动重写图片源，PDF 用压缩包+归一化坐标导出、再导入裁切还原并恢复阅读页热区；配图备份恢复同步覆盖。\r\n- 修复配图设置对话框崩溃、文本菜单配图项闪现（按选区状态重建、弹窗原地更新、重新弹出前清理残留）等问题。\r\n【书签】\r\n- 新增单下划线、双下划线、波浪下划线、高亮、文字变色、删除线六种正文显示样式，效果改为位掩码多选组合，可同时勾选多种，旧数据自动迁移。\r\n- 每种样式可独立设置颜色；编辑对话框不再单独设置颜色，批量颜色入口保留在目录多选。\r\n- 新增段落书签（纯文本段落扩展，上限 1000 字）。\r\n- 阅读页新增备注气泡：自动寻找空白区、虚线箭头、相对位置跟随；气泡宽度完全按内容自适应。\r\n- 新增“显示书签备注气泡”开关：关闭后气泡默认隐藏，点击书签正文仍可单独显示；新增“点击无效果书签显示备注”开关，无样式书签点击不再被劫持。\r\n- 备注气泡背景透明度（默认 80%，对所有气泡统一生效）与气泡颜色（自动取背景主色或自定义）可在阅读设置中调节。\r\n- 禁止书签区间嵌套与交叉：选中文字命中书签时，按重叠更多 / 更短 / 更晚优先级直接进入编辑。\r\n- 目录书签页支持列表 / 网格二列 / 网格三列切换，新增多选全选与批量操作（删除 / 导出 / 备注 / 效果 / 颜色）。\r\n- 书签支持 JSON 导入；MD 导出会标注样式与颜色无法导入。\r\n- 滚动模式性能优化：复用绘制 Paint/Path、缓存气泡布局与尺寸、偏好读取改字段缓存。\r\n- 修复阅读页书签样式不渲染（打标移到行位置计算之后）、高亮覆盖文字（改为文字下层背景绘制）、文字变色覆盖其它效果等问题。\r\n\r\n【阅读体验】\r\n- 点击区域默认配置：中间竖排上中下三块全部默认设为菜单（TC / BC 由翻页改为菜单）。\r\n- 阅读页系统栏处理对齐 SUN-MAX 版：内容延伸到手势区、去掉导航栏额外 12dp、导航栏恢复透明。\r\n- 崩溃日志弹窗同步支持一键复制，复制按钮文案统一改为两个字。\r\n\r\n交流群 1101873338，好用的话点个 star，谢谢啦。",
+        "publishedAt": "2026-08-13T12:04:55Z",
+        "createdAt": "2026-08-13T12:02:45Z",
+        "body": "【App 自动更新】\n- 新增更新设置：每次启动自动检查（默认开启）、接收 Pre 版本推送（默认关闭）、下载加速源（默认 ghfast.top，可选直连 / ghproxy / gh-proxy / 自定义地址）。\n- 新增\"立即检查更新\"按钮；切换\"每次启动检测\"开关即时触发一次检查。\n- 检查 GitHub Release 新版本：按 versionCode 取最高版本（从 APK 文件名解析，不再被 tag 里的日期数字误判），弹出更新说明，下载完成自动唤起系统安装。\n- 关于页\"更新日志\"改为在线拉取最新 README（走设置的加速源），失败时回退本地。\n\n【导出与导入】\n- 导出 TXT 拆分出独立选项\"导出 TXT (zip)\"：本地 TXT 正文原样打包（不加书名头/缩进、不改写章节），图片/视频/音频与书签、替换规则作为外挂数据写入压缩包，重新导入可完整还原且不章节错乱；原\"导出 TXT\"保持原样行为。\n- TXT(zip) 导出新增\"导出书签\"选项：书签随 bookmarks.json 进压缩包，导入时同步还原。\n- TXT(zip) 导出新增\"替换净化\"外挂：开启后把当前书生效的替换规则写入 replace_rules.json（正文保持原文），导入时同步还原规则并自动打开该书的净化开关。\n- EPUB 导出修复：配图媒体原文件此前导出为 0 字节（LazyResource 文件名传错），修复后图片/视频/音频完整打包；新增书签侧车（legado_bookmarks.json），导入时还原书签与配图。\n- PDF 导出新增书签：压缩包内含 bookmarks.json，导入时同步还原。\n- 压缩包导入失败时给出明确错误提示；默认导出图片改为开启。\n- 修复压缩包导入：VIEW 打开 zip 走统一导入流程（解压保存到书籍目录 + 还原配图/媒体/书签）。\n\n【书架】\n- 书架\"全部\"分组支持在分组管理中关闭，关闭后真正不再显示；仅当用户未关闭且其他分组都为空时才兜底显示，避免空白。\n\n【修复】\n- 修复配图还原位置：全书插图按段落指纹匹配，不再依赖章节索引；段间锚点未匹配时不再堆到章末。\n- 修复压缩包导入失败：书籍保存目录未设置时兜底保存到应用外部目录，不再抛 NoBooksDirException。\n\n交流群 1101873338，好用的话点个 star，谢谢啦。",
         "assets": [
           {
-            "name": "legado_app_3.26.081303_10539.apk",
-            "size": 38488197,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081303c/legado_app_3.26.081303_10539.apk"
+            "name": "legado_app_3.26.081315_10551.apk",
+            "size": 38507545,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081315c/legado_app_3.26.081315_10551.apk"
           }
         ]
       },
@@ -171,36 +171,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 716,
-      "sourceUpdatedAt": "2026-08-13T12:00:56Z",
+      "stars": 717,
+      "sourceUpdatedAt": "2026-08-13T12:30:42Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081319",
+        "name": "legado_app_3.26081320",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-13T11:05:20Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/13**\n- 阅读页页眉页脚支持调整文字大小\n- 修复网页异步脚本结果读取后仍占用内存缓存的问题\n- 批量导入当前目录的本地书籍时支持同时创建目录同名分组\n- 修复部分页面返回和关闭按钮的无障碍标签未随应用语言显示的问题\n- 修复 Web 书源编辑页在桌面浏览器中右侧工具栏过窄的问题\n- 修复书源 JavaScript 调用 Hutool 国密算法时缺少依赖的问题\n- 修复导入超大本地书籍目录时创建分组失败的问题\n\n",
+        "createdAt": "2026-08-13T12:19:47Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/13**\n- 阅读页页眉页脚支持调整文字大小\n- 修复网页异步脚本结果读取后仍占用内存缓存的问题\n- 批量导入当前目录的本地书籍时支持同时创建目录同名分组\n- 修复部分页面返回和关闭按钮的无障碍标签未随应用语言显示的问题\n- 修复 Web 书源编辑页在桌面浏览器中右侧工具栏过窄的问题\n- 修复书源 JavaScript 调用 Hutool 国密算法时缺少依赖的问题\n- 修复测试版启动时 Bouncy Castle Provider 被代码压缩破坏的问题\n- 修复导入超大本地书籍目录时创建分组失败的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081319_release.apk",
-            "size": 19336756,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081319_release.apk"
+            "name": "legado_app_3.26081320_release.apk",
+            "size": 20221578,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081320_release.apk"
           },
           {
-            "name": "legado_app_3.26081319_releaseA.apk",
-            "size": 19336758,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081319_releaseA.apk"
+            "name": "legado_app_3.26081320_releaseA.apk",
+            "size": 20221579,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081320_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081319_universal_release.apk",
-            "size": 25303927,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081319_universal_release.apk"
+            "name": "legado_app_3.26081320_universal_release.apk",
+            "size": 26188749,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081320_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081319_universal_releaseA.apk",
-            "size": 25303935,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081319_universal_releaseA.apk"
+            "name": "legado_app_3.26081320_universal_releaseA.apk",
+            "size": 26188755,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081320_universal_releaseA.apk"
           }
         ]
       },
@@ -392,7 +392,7 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 168,
-      "sourceUpdatedAt": "2026-08-13T07:46:52Z",
+      "sourceUpdatedAt": "2026-08-13T12:17:00Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.080111",
@@ -631,35 +631,35 @@
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
       "stars": 9,
-      "sourceUpdatedAt": "2026-08-13T08:46:55Z",
+      "sourceUpdatedAt": "2026-08-13T12:35:13Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_beta_3.26.081316",
-        "tagName": "beta-3.26.081316",
+        "name": "legado_app_beta_3.26.081320",
+        "tagName": "beta-3.26.081320",
         "prerelease": true,
-        "publishedAt": "2026-08-13T08:46:48Z",
-        "createdAt": "2026-08-13T08:33:03Z",
-        "body": "### 更新内容\n* [修复]：修复 Github Releases 页面 beta 版本排序问题\n\n- 问题背景：GitHub Releases 页面默认根据 Tag 指向的 Commit 时间戳进行排序。由于 `beta` 标签和 `beta-xxx` 标签均指向同一个 Commit，导致时间戳完全相同。在这种情况下，GitHub 会降级采用字母倒序排列，致使 `beta-xxx` 永远排在 `beta` 之前。\n- 解决方案：在 `.github/workflows/test.yml` 的 `Delete Old Latest Pre-Release & Recreate Tag`步骤中，利用 `git commit --allow-empty` 强制创建一个空 Commit。\n- 影响说明：该空 Commit 赋予了 `beta` 标签一个独立且绝对最新的时间戳，从而保证其在 Releases 页面上永远置顶。此空 Commit 仅作用于 `beta` 标签（`git push -f origin beta`），不会推送到主分支，因此不污染 Git 历史，也不会导致基于 Commit 数量计算的 `versionCode` 产生任何偏差。\n\n",
+        "publishedAt": "2026-08-13T12:35:06Z",
+        "createdAt": "2026-08-13T12:24:48Z",
+        "body": "### 更新内容\n* [修复]：使用强制未来时间戳彻底解决 Github Releases 的 beta 排序问题\n\n- 问题背景：此前发现，即使针对 `beta` 标签单独创建了空 Commit，由于在同一工作流中相隔极短，GitHub 在渲染 Releases 页面时，可能会将其与 `beta-xxx` 视为同一时间周期并降级采用标签字母倒序排列。因为较短的 `beta` 在字串比对中“小于”`beta-xxx`，导致倒序排列时 `beta-xxx` 永远被视作“较大”从而置顶，反而把最新创建的 `beta` 挤压到最底部。\n- 解决方案：在 `.github/workflows/test.yml` 脚本中，通过指定 `GIT_AUTHOR_DATE` 和 `GIT_COMMITTER_DATE` 环境变量，将这个空 Commit 的时间强行拉取到未来的 2038 年。\n- 影响说明：这种时间上的降维打击彻底绕开了字母比对逻辑（2038年 > 2026年），确保无论发布了多少个 `beta-xxx`，固定 `beta` 标签的发布记录都能依靠其未来的绝对时间优势永远处于页面的第一顺位。\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.08131637_release.apk",
-            "size": 20497717,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081316/legado_beta_3.26.08131637_release.apk"
+            "name": "legado_beta_3.26.08132025_release.apk",
+            "size": 20497806,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_3.26.08132025_release.apk"
           },
           {
-            "name": "legado_beta_a_3.26.08131637_releaseA.apk",
-            "size": 20497729,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081316/legado_beta_a_3.26.08131637_releaseA.apk"
+            "name": "legado_beta_a_3.26.08132025_releaseA.apk",
+            "size": 20497807,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_a_3.26.08132025_releaseA.apk"
           },
           {
-            "name": "legado_beta_plus_3.26.08131637_releaseS.apk",
-            "size": 20497717,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081316/legado_beta_plus_3.26.08131637_releaseS.apk"
+            "name": "legado_beta_plus_3.26.08132025_releaseS.apk",
+            "size": 20497802,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_plus_3.26.08132025_releaseS.apk"
           },
           {
-            "name": "legado_beta_pp_3.26.08131637_releasePP.apk",
-            "size": 20497729,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081316/legado_beta_pp_3.26.08131637_releasePP.apk"
+            "name": "legado_beta_pp_3.26.08132025_releasePP.apk",
+            "size": 20497776,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_pp_3.26.08132025_releasePP.apk"
           }
         ]
       },
@@ -676,9 +676,7 @@
       "sourceUpdatedAt": "2026-08-13T11:56:35Z",
       "githubArchived": false,
       "release": null,
-      "errors": [],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release"
+      "errors": []
     }
   ]
 }
