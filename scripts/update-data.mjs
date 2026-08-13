@@ -65,7 +65,9 @@ const branches = [
   { id: 'shutiao', name: '薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },
   { id: 'jingshiro', name: 'Jingshiro 版', tag: 'jingshiro', repo: 'Jingshiro/legado', term: 'legado-branch-jingshiro' },
   { id: 't', name: '阅读 T', tag: 't', repo: 'skybbk1001/legadoT', term: 'legado-branch-t' },
-  { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' }
+  { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
+  { id: 'fu', name: '阅融FU', tag: 'fu', repo: 'h166278/legado_FU', term: 'legado-branch-fu', note: '阅读 NG 下游，非 GitHub fork。' },
+  { id: 'pp', name: '阅读PP', tag: 'pp', repo: 'damifan3/legadoPP', term: 'legado-branch-pp', note: '阅读 Sigma 分支。' }
 ];
 
 const token = process.env.GITHUB_TOKEN || '';

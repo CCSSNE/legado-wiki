@@ -254,20 +254,12 @@
     .tree input ~ ul { display: none; }
     .tree input:checked ~ ul { display: block; }
 
-    .tree-label {
+    .tree-toggle {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
       cursor: pointer;
-      border-radius: 5px;
-      color: #34413d;
-      font-size: 13px;
-      font-weight: 700;
-      user-select: none;
-      -webkit-user-select: none;
+      margin-right: 2px;
     }
-
-    .tree-label:hover { color: var(--accent-strong); }
 
     .tree-badge {
       display: inline-flex;
@@ -757,7 +749,8 @@
                     { branch: 'max-dandan' }
                   ]
                 },
-                { branch: 'ng' },
+                { branch: 'ng', children: [{ branch: 'fu', inherit: true }] },
+                { branch: 'pp' },
                 { branch: 'jingshiro', inherit: true }
               ]
             },
@@ -791,7 +784,7 @@
           const label = `${escapeHtml(branch.name)}${pin}`;
           if (children) {
             const checkboxId = `tree-node-${seq++}`;
-            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-label" for="${checkboxId}"><span class="tree-badge"></span>${label}</label><ul>${children}</ul></li>`;
+            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a><ul>${children}</ul></li>`;
           }
           return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
