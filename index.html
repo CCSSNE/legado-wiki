@@ -825,9 +825,21 @@
 
       function renderTreeNav(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
+        const byStars = (left, right) => (byId.get(right.branch)?.stars ?? -1) - (byId.get(left.branch)?.stars ?? -1);
+        const sortChildren = children => {
+          const groups = { external: [], solid: [], dashed: [] };
+          children.forEach(node => {
+            if (node.external) groups.external.push(node);
+            else groups[node.inherit ? 'dashed' : 'solid'].push(node);
+          });
+          groups.solid.sort(byStars);
+          groups.dashed.sort(byStars);
+          return [...groups.external, ...groups.solid, ...groups.dashed];
+        };
         let seq = 0;
         const renderNode = node => {
-          const children = node.children ? node.children.map(renderNode).join('') : '';
+          const kids = node.children ? sortChildren(node.children) : null;
+          const children = kids ? kids.map(renderNode).join('') : '';
           const dash = node.inherit ? ' dashed' : '';
           if (node.external) {
             const external = node.external;
