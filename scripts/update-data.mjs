@@ -81,7 +81,7 @@ if (token) {
 }
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-const yearMs = 365 * 24 * 60 * 60 * 1000;
+const halfYearMs = 183 * 24 * 60 * 60 * 1000;
 
 function normalizeRelease(release) {
   return {
@@ -146,19 +146,19 @@ async function hydrateBranch(branch) {
 
   if (!result.release) {
     const sourceTime = Date.parse(result.sourceUpdatedAt || '');
-    const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > yearMs;
+    const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > halfYearMs;
     if (sourceStale) {
       result.abandoned = '弃坑';
-      result.abandonedReason = '无公开 Release，且源码超过 1 年未更新';
+      result.abandonedReason = '无公开 Release，且源码超过半年未更新';
     }
   } else {
     const releaseTime = Date.parse(result.release.publishedAt || result.release.createdAt || '');
-    if (Number.isFinite(releaseTime) && Date.now() - releaseTime > yearMs) {
+    if (Number.isFinite(releaseTime) && Date.now() - releaseTime > halfYearMs) {
       const sourceTime = Date.parse(result.sourceUpdatedAt || '');
-      const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > yearMs;
+      const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > halfYearMs;
       if (sourceStale) {
         result.abandoned = '弃坑';
-        result.abandonedReason = 'Release 与源码均超过 1 年未更新';
+        result.abandonedReason = 'Release 与源码均超过半年未更新';
       }
     }
   }
