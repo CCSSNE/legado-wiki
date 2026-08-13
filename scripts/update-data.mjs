@@ -11,7 +11,8 @@ const branches = [
     forksUrl: 'https://github.com/gedoor/legado/forks',
     skipAutoForks: true,
     forks: [{ name: 'CCSSNE/legado', repo: 'CCSSNE/legado', url: 'https://github.com/CCSSNE/legado' }],
-    backupRelease: { repo: 'CCSSNE/legado', tag: '3.26.04271714' }
+    backupRelease: { repo: 'CCSSNE/legado', tag: '3.26.04271714' },
+    manualAbandoned: '上游仓库已删除，作者停止维护'
   },
   {
     id: 'tauri',
@@ -22,7 +23,8 @@ const branches = [
     forksUrl: 'https://github.com/LegadoTeam/Legado-Tauri/forks',
     skipAutoForks: true,
     forks: [{ name: 'CCSSNE/Legado-Tauri', repo: 'CCSSNE/Legado-Tauri', url: 'https://github.com/CCSSNE/Legado-Tauri' }],
-    backupRelease: { repo: 'CCSSNE/Legado-Tauri', tag: 'v0.9.9-20260528195115-b00000093' }
+    backupRelease: { repo: 'CCSSNE/Legado-Tauri', tag: 'v0.9.9-20260528195115-b00000093' },
+    manualAbandoned: '作者声明删除仓库，停止维护'
   },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
@@ -35,7 +37,8 @@ const branches = [
     tag: 'max',
     repo: 'youfengknight/Legado_Max',
     term: 'legado-branch-max',
-    note: '原版 MAX 已宣布不再维护，家族各分支独立发版。'
+    note: '原版 MAX 已宣布不再维护，家族各分支独立发版。',
+    manualAbandoned: '作者已声明不再维护'
   },
   {
     id: 'max-sum',
@@ -144,7 +147,10 @@ async function hydrateBranch(branch) {
     }
   }
 
-  if (!result.release) {
+  if (branch.manualAbandoned) {
+    result.abandoned = '弃坑';
+    result.abandonedReason = branch.manualAbandoned;
+  } else if (!result.release) {
     const sourceTime = Date.parse(result.sourceUpdatedAt || '');
     const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > halfYearMs;
     if (sourceStale) {

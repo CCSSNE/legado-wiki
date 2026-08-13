@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T13:06:41.066Z",
+  "generatedAt": "2026-08-13T13:14:49.408Z",
   "branches": [
     {
       "id": "c",
@@ -50,6 +50,7 @@
         "repo": "CCSSNE/legado",
         "tag": "3.26.04271714"
       },
+      "manualAbandoned": "上游仓库已删除，作者停止维护",
       "stars": 46987,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
@@ -70,7 +71,9 @@
         "sourceRepo": "CCSSNE/legado",
         "sourceUrl": "https://github.com/CCSSNE/legado/releases/tag/3.26.04271714"
       },
-      "errors": []
+      "errors": [],
+      "abandoned": "弃坑",
+      "abandonedReason": "上游仓库已删除，作者停止维护"
     },
     {
       "id": "md3",
@@ -281,6 +284,7 @@
       "repo": "youfengknight/Legado_Max",
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
+      "manualAbandoned": "作者已声明不再维护",
       "stars": 281,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": false,
@@ -309,7 +313,9 @@
           }
         ]
       },
-      "errors": []
+      "errors": [],
+      "abandoned": "弃坑",
+      "abandonedReason": "作者已声明不再维护"
     },
     {
       "id": "tauri",
@@ -332,6 +338,7 @@
         "repo": "CCSSNE/Legado-Tauri",
         "tag": "v0.9.9-20260528195115-b00000093"
       },
+      "manualAbandoned": "作者声明删除仓库，停止维护",
       "stars": 278,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
@@ -357,7 +364,9 @@
         "sourceRepo": "CCSSNE/Legado-Tauri",
         "sourceUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/tag/v0.9.9-20260528195115-b00000093"
       },
-      "errors": []
+      "errors": [],
+      "abandoned": "弃坑",
+      "abandonedReason": "作者声明删除仓库，停止维护"
     },
     {
       "id": "r",
@@ -631,7 +640,7 @@
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
       "stars": 9,
-      "sourceUpdatedAt": "2026-08-13T12:35:13Z",
+      "sourceUpdatedAt": "2026-08-13T13:11:15Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_beta_3.26.081320",
@@ -673,7 +682,7 @@
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork。",
       "stars": 3,
-      "sourceUpdatedAt": "2026-08-13T11:56:35Z",
+      "sourceUpdatedAt": "2026-08-13T13:13:19Z",
       "githubArchived": false,
       "release": null,
       "errors": []
