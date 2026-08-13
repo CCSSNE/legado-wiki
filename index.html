@@ -225,16 +225,6 @@
       letter-spacing: 0;
     }
 
-    .tree-note {
-      margin-top: 10px;
-      padding: 8px 10px;
-      border-radius: 6px;
-      background: rgba(46, 111, 100, 0.05);
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.7;
-    }
-
     .tree { list-style: none; margin: 0; padding: 0; }
     .tree ul { list-style: none; margin: 0; padding-left: 18px; }
 
@@ -755,6 +745,7 @@
       <div class="footer-rule">弃坑标记规则：没有公开 Release，或最新 Release 超过半年没更新，并且源码也超过半年没更新，才算弃坑；作者声明停止维护的，直接标记弃坑。</div>
       <div class="footer-rule">收录标准：有原创代码（且未被上游全部合并），并发布过 APK，即可视为独立版本，本站收录。</div>
       <div class="footer-rule">收录范围：主要是开源阅读的分支，以及其它与阅读有关的代表性开源软件。</div>
+      <div class="footer-rule">分支树说明：血缘归属（谁是谁的下游、是否补档）由人工裁定、长期固定；实线/虚线按 GitHub 实际 fork 数据自动更新。</div>
       <div class="footer-stat">
         <span id="busuanzi_container_site_pv" class="stat-item">本站总访问量 <span id="busuanzi_value_site_pv" class="stat-num">…</span> 次</span>
         <span id="busuanzi_container_site_uv" class="stat-item">本站访客数 <span id="busuanzi_value_site_uv" class="stat-num">…</span> 人</span>
@@ -875,7 +866,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul><div class="tree-note">血缘关系固定：分支一经收录（无论是因 fork 自动加入，还是人工添加），挂在哪位父分支之下、是否为补档，均由人工裁定、长期不变。实线与虚线按 GitHub 实际 fork 数据自动更新：是父分支的直接 fork 显示实线，同源但非 fork 显示虚线，实际关系变化时线型自动转变。</div>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
