@@ -654,6 +654,16 @@
 
     .footer-rule { color: #7d8984; }
 
+    .footer-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+      row-gap: 2px;
+    }
+
+    .footer-col-left { text-align: left; }
+    .footer-col-right { text-align: right; }
+
     .footer-stat {
       display: flex;
       justify-content: flex-end;
@@ -681,6 +691,8 @@
       .asset-row { grid-template-columns: 1fr; }
       .asset-actions { justify-content: space-between; }
       .resource-grid { grid-template-columns: 1fr; }
+      .footer-cols { grid-template-columns: 1fr; }
+      .footer-col-right { text-align: left; }
     }
   </style>
 </head>
@@ -742,12 +754,18 @@
 
     <footer>
       <div class="footer-time" id="syncTime">正在同步 GitHub Release...</div>
-      <div class="footer-rule">弃坑标记规则：没有公开 Release，或最新 Release 超过半年没更新，并且源码也超过半年没更新，才算弃坑；作者声明停止维护的，直接标记弃坑。</div>
-      <div class="footer-rule">收录标准：有原创代码（且未被上游全部合并），并发布过 APK，即可视为独立版本，本站收录。</div>
-      <div class="footer-rule">收录范围：主要是开源阅读的分支，以及其它与阅读有关的代表性开源软件。何为分支：代码主体仍是原版，或重构重写后仍承认阅读血统者。</div>
-      <div class="footer-rule">分支树血缘：谁是谁的下游、是否补档，由人工裁定、长期固定。</div>
-      <div class="footer-rule">分支树线型：实线/虚线按 GitHub 实际 fork 数据自动更新。</div>
-      <div class="footer-rule">分支树排序：补档置顶；先实线后虚线；各组内按家族 Star（自身+全部后代）降序。</div>
+      <div class="footer-cols">
+        <div class="footer-col footer-col-left">
+          <div class="footer-rule">弃坑标记规则：没有公开 Release，或最新 Release 超过半年没更新，<br>并且源码也超过半年没更新，才算弃坑；作者声明停止维护的，直接标记弃坑。</div>
+          <div class="footer-rule">收录标准：有原创代码（且未被上游全部合并），并发布过 APK，即可视为独立版本，本站收录。</div>
+          <div class="footer-rule">收录范围：主要是开源阅读的分支，以及其它与阅读有关的代表性开源软件。<br>何为分支：代码主体仍是原版，或重构重写后仍承认阅读血统者。</div>
+        </div>
+        <div class="footer-col footer-col-right">
+          <div class="footer-rule">分支树血缘：谁是谁的下游、是否补档，由人工裁定、长期固定。</div>
+          <div class="footer-rule">分支树线型：实线/虚线按 GitHub 实际 fork 数据自动更新。</div>
+          <div class="footer-rule">分支树排序：补档置顶；先实线后虚线；各组内按家族 Star（自身+全部后代）降序。</div>
+        </div>
+      </div>
       <div class="footer-stat">
         <span id="busuanzi_container_site_pv" class="stat-item">本站总访问量 <span id="busuanzi_value_site_pv" class="stat-num">…</span> 次</span>
         <span id="busuanzi_container_site_uv" class="stat-item">本站访客数 <span id="busuanzi_value_site_uv" class="stat-num">…</span> 人</span>
