@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T00:01:34.741Z",
+  "generatedAt": "2026-08-14T02:48:39.304Z",
   "branches": [
     {
       "id": "c",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2353,
+      "stars": 2354,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 722,
+      "stars": 724,
       "sourceUpdatedAt": "2026-08-13T22:23:53Z",
       "githubArchived": false,
       "release": {
@@ -674,35 +674,35 @@
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
       "stars": 10,
-      "sourceUpdatedAt": "2026-08-13T13:20:46Z",
+      "sourceUpdatedAt": "2026-08-14T01:16:57Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_beta_3.26.081320",
-        "tagName": "beta-3.26.081320",
+        "name": "legado_app_beta_3.26.081321",
+        "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-08-13T12:35:06Z",
-        "createdAt": "2026-08-13T12:24:48Z",
-        "body": "### 更新内容\n* [修复]：使用强制未来时间戳彻底解决 Github Releases 的 beta 排序问题\n\n- 问题背景：此前发现，即使针对 `beta` 标签单独创建了空 Commit，由于在同一工作流中相隔极短，GitHub 在渲染 Releases 页面时，可能会将其与 `beta-xxx` 视为同一时间周期并降级采用标签字母倒序排列。因为较短的 `beta` 在字串比对中“小于”`beta-xxx`，导致倒序排列时 `beta-xxx` 永远被视作“较大”从而置顶，反而把最新创建的 `beta` 挤压到最底部。\n- 解决方案：在 `.github/workflows/test.yml` 脚本中，通过指定 `GIT_AUTHOR_DATE` 和 `GIT_COMMITTER_DATE` 环境变量，将这个空 Commit 的时间强行拉取到未来的 2038 年。\n- 影响说明：这种时间上的降维打击彻底绕开了字母比对逻辑（2038年 > 2026年），确保无论发布了多少个 `beta-xxx`，固定 `beta` 标签的发布记录都能依靠其未来的绝对时间优势永远处于页面的第一顺位。\n\n",
+        "publishedAt": "2026-08-13T13:20:47Z",
+        "createdAt": "2026-08-13T13:20:45Z",
+        "body": "### 更新内容\n* [修复]：彻底解决 GitHub Releases 页面 beta 版本排序置底的问题（上两次 commit 是错误的）\n\n- 问题背景：之前发现 `beta` 标签即使使用了空 Commit 或伪造的 2038 年时间戳，也始终排在 `beta-xxx` 后面（置底）。\n- 根本原因：查阅数据后确认，GitHub Releases 页面在处理带有 `beta` 等相似前缀的标签时，会强制使用 SemVer（语义化版本）或字母降序排列，而忽略时间戳。在字符串比对规则中，`beta-xxx` 永远大于单纯的 `beta`，因此 `beta` 永远被压在最底下。\n- 解决方案：\n  1. 修改历史版本的 tag 命名，由 `beta-${{ env.VERSION }}` 改为 `archive-beta-${{ env.VERSION }}`。在首字母比对中（a < b），`archive-beta` 会自然排在 `beta` 之后，从而让 `beta` 顺利登顶。\n  2. 同步更新 `Delete All Previous Beta Releases` 清理脚本，使其能够同时识别并清理旧的 `beta-` 与新的 `archive-beta-` 标签。\n  3. 移除了此前无效的 `git commit --allow-empty` 与伪造时间的逻辑代码，恢复为最纯粹的标签覆盖。\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.08132025_release.apk",
-            "size": 20497806,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_3.26.08132025_release.apk"
+            "name": "legado_beta_3.26.08132111_release.apk",
+            "size": 20497836,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08132111_release.apk"
           },
           {
-            "name": "legado_beta_a_3.26.08132025_releaseA.apk",
-            "size": 20497807,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_a_3.26.08132025_releaseA.apk"
+            "name": "legado_beta_a_3.26.08132111_releaseA.apk",
+            "size": 20497832,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08132111_releaseA.apk"
           },
           {
-            "name": "legado_beta_plus_3.26.08132025_releaseS.apk",
-            "size": 20497802,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_plus_3.26.08132025_releaseS.apk"
+            "name": "legado_beta_plus_3.26.08132111_releaseS.apk",
+            "size": 20497836,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08132111_releaseS.apk"
           },
           {
-            "name": "legado_beta_pp_3.26.08132025_releasePP.apk",
-            "size": 20497776,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta-3.26.081320/legado_beta_pp_3.26.08132025_releasePP.apk"
+            "name": "legado_beta_pp_3.26.08132111_releasePP.apk",
+            "size": 20497820,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08132111_releasePP.apk"
           }
         ]
       },
