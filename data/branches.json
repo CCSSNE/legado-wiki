@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T15:08:58.142Z",
+  "generatedAt": "2026-08-14T16:07:55.732Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46982,
+      "stars": 46981,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5652,
+      "stars": 5651,
       "sourceUpdatedAt": "2026-08-14T08:45:25Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2363,
+      "stars": 2365,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 738,
+      "stars": 740,
       "sourceUpdatedAt": "2026-08-14T12:56:36Z",
       "githubArchived": false,
       "release": {
@@ -490,6 +490,44 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 112,
+      "sourceUpdatedAt": "2026-08-13T05:06:08Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.081312",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-13T05:06:08Z",
+        "createdAt": "2026-08-13T04:55:20Z",
+        "body": "## 更新日志\nfix(封面): 透明区域使用页面背景色 refs #11\n\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.08131256_arm64-v8a_release.apk",
+            "size": 15223430,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08131256_armeabi-v7a_release.apk",
+            "size": 14599445,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08131256_universal_release.apk",
+            "size": 15420115,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_universal_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -521,44 +559,6 @@
       "errors": [],
       "fork": false,
       "forkOf": null
-    },
-    {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": 111,
-      "sourceUpdatedAt": "2026-08-13T05:06:08Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.081312",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-08-13T05:06:08Z",
-        "createdAt": "2026-08-13T04:55:20Z",
-        "body": "## 更新日志\nfix(封面): 透明区域使用页面背景色 refs #11\n\n",
-        "assets": [
-          {
-            "name": "legado_app_3.26.08131256_arm64-v8a_release.apk",
-            "size": 15223430,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_arm64-v8a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08131256_armeabi-v7a_release.apk",
-            "size": 14599445,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_armeabi-v7a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08131256_universal_release.apk",
-            "size": 15420115,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08131256_universal_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
     },
     {
       "id": "ng",
