@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T08:39:09.468Z",
+  "generatedAt": "2026-08-14T10:18:52.888Z",
   "branches": [
     {
       "id": "c",
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5645,
-      "sourceUpdatedAt": "2026-08-14T08:29:55Z",
+      "sourceUpdatedAt": "2026-08-14T08:45:25Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.16",
-        "tagName": "3.26.16-beta.16",
+        "name": "Pre-release 3.26.16-beta.17",
+        "tagName": "3.26.16-beta.17",
         "prerelease": true,
-        "publishedAt": "2026-08-14T05:47:52Z",
-        "createdAt": "2026-08-14T05:33:02Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\r\n### [发布页](https://t.me/materado)\r\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\r\n\r\n## 重写了漫画阅读页，不怕死的朋友可以试试\r\n\r\n### 更新内容\r\n\r\n* fix: 修复 Verify 工作流失败并回归全绿\r\n* fix: 完善朗读媒体控制并抽取读完本章状态机\r\n* feat: 更完整的漫画实现\r\n* fix: 书源调试崩溃\r\n* fix: 前台服务超时崩溃\r\n* feat: add incremental AI bookshelf grouping\r\n* feat: 新增定时读完当前章节选项,优化朗读媒体控制通知\r\n* feat: 添加安卓媒体控制通知\r\n* fix: 修复听书播放器蒙版点击穿透\r\n* feat: 漫画相关\r\n* fix: prevent manga chapter navigation rollback\r\n* fix: align manga chapter navigation and sheets\r\n* feat:允许设置无规则匹配时的章节分割字数\r\n* refactor: align manga reader state with UDF\r\n* fix: stabilize manga reader navigation state\r\n* refactor: integrate manga reader with Nav3\r\n* refactor: migrate manga reader to Compose\r\n* fix: sigma的一些特性\r\n\r\n## What's Changed\r\n* feat:允许设置无规则匹配时的章节分割字数 by @todoXu in https://github.com/HapeLee/legado-with-MD3/pull/2016\r\n* feat: AI 自动分组支持增量模式 by @lalala-12138 in https://github.com/HapeLee/legado-with-MD3/pull/2029\r\n* 修复听书播放器蒙版点击穿透，添加Android媒体控制通知，朗读定时添加读完本章功能 by @lingran7031 in https://github.com/HapeLee/legado-with-MD3/pull/2024\r\n\r\n## New Contributors\r\n* @lingran7031 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2024\r\n\r\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.15...3.26.16-beta.16",
+        "publishedAt": "2026-08-14T08:45:14Z",
+        "createdAt": "2026-08-14T08:29:55Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* fix: 统一听书播放器语速调节范围与经典朗读控制一致 (#2033)\n* feat: 书源外部导入问题",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.16-arm64-v8a.apk",
-            "size": 19564064,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.17-arm64-v8a.apk",
+            "size": 19564086,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.16-armeabi-v7a.apk",
-            "size": 19103892,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.17-armeabi-v7a.apk",
+            "size": 19103915,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.16.apk",
-            "size": 26136539,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16.apk"
+            "name": "legado-3.26.16-beta.17.apk",
+            "size": 26136561,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 262908667,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/mapping.txt"
+            "size": 262924799,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/mapping.txt"
           }
         ]
       },
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2099,
+      "stars": 2100,
       "sourceUpdatedAt": "2026-05-15T10:42:50Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 732,
-      "sourceUpdatedAt": "2026-08-14T04:15:14Z",
+      "stars": 735,
+      "sourceUpdatedAt": "2026-08-14T10:18:35Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081406",
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 287,
+      "stars": 288,
       "sourceUpdatedAt": "2026-08-13T16:24:48Z",
       "githubArchived": false,
       "release": {
@@ -301,7 +301,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 282,
+      "stars": 281,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": false,
       "release": {
