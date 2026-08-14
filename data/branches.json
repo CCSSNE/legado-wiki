@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T05:06:38.105Z",
+  "generatedAt": "2026-08-14T06:44:53.946Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46991,
+      "stars": 46990,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,36 +85,36 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5639,
-      "sourceUpdatedAt": "2026-08-14T04:58:11Z",
+      "stars": 5640,
+      "sourceUpdatedAt": "2026-08-14T05:48:06Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.15",
-        "tagName": "3.26.16-beta.15",
+        "name": "Pre-release 3.26.16-beta.16",
+        "tagName": "3.26.16-beta.16",
         "prerelease": true,
-        "publishedAt": "2026-08-09T18:17:48Z",
-        "createdAt": "2026-08-09T18:01:57Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 神秘优化\n* feat: 顶栏按钮液态玻璃效果\n* feat: 优化一些AI功能\n* feat: 优化快速滚动条",
+        "publishedAt": "2026-08-14T05:47:52Z",
+        "createdAt": "2026-08-14T05:33:02Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\r\n### [发布页](https://t.me/materado)\r\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\r\n\r\n## 重写了漫画阅读页，不怕死的朋友可以试试\r\n\r\n### 更新内容\r\n\r\n* fix: 修复 Verify 工作流失败并回归全绿\r\n* fix: 完善朗读媒体控制并抽取读完本章状态机\r\n* feat: 更完整的漫画实现\r\n* fix: 书源调试崩溃\r\n* fix: 前台服务超时崩溃\r\n* feat: add incremental AI bookshelf grouping\r\n* feat: 新增定时读完当前章节选项,优化朗读媒体控制通知\r\n* feat: 添加安卓媒体控制通知\r\n* fix: 修复听书播放器蒙版点击穿透\r\n* feat: 漫画相关\r\n* fix: prevent manga chapter navigation rollback\r\n* fix: align manga chapter navigation and sheets\r\n* feat:允许设置无规则匹配时的章节分割字数\r\n* refactor: align manga reader state with UDF\r\n* fix: stabilize manga reader navigation state\r\n* refactor: integrate manga reader with Nav3\r\n* refactor: migrate manga reader to Compose\r\n* fix: sigma的一些特性\r\n\r\n## What's Changed\r\n* feat:允许设置无规则匹配时的章节分割字数 by @todoXu in https://github.com/HapeLee/legado-with-MD3/pull/2016\r\n* feat: AI 自动分组支持增量模式 by @lalala-12138 in https://github.com/HapeLee/legado-with-MD3/pull/2029\r\n* 修复听书播放器蒙版点击穿透，添加Android媒体控制通知，朗读定时添加读完本章功能 by @lingran7031 in https://github.com/HapeLee/legado-with-MD3/pull/2024\r\n\r\n## New Contributors\r\n* @lingran7031 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2024\r\n\r\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.15...3.26.16-beta.16",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.15-arm64-v8a.apk",
-            "size": 19427798,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.15/legado-3.26.16-beta.15-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.16-arm64-v8a.apk",
+            "size": 19564064,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.15-armeabi-v7a.apk",
-            "size": 18967624,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.15/legado-3.26.16-beta.15-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.16-armeabi-v7a.apk",
+            "size": 19103892,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.15.apk",
-            "size": 26000283,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.15/legado-3.26.16-beta.15.apk"
+            "name": "legado-3.26.16-beta.16.apk",
+            "size": 26136539,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/legado-3.26.16-beta.16.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 259467532,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.15/mapping.txt"
+            "size": 262908667,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.16/mapping.txt"
           }
         ]
       },
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 726,
+      "stars": 727,
       "sourceUpdatedAt": "2026-08-14T04:15:14Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 457,
+      "stars": 458,
       "sourceUpdatedAt": "2026-08-07T04:53:35Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 284,
+      "stars": 285,
       "sourceUpdatedAt": "2026-08-13T16:24:48Z",
       "githubArchived": false,
       "release": {
@@ -490,6 +490,39 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "jingshiro",
+      "name": "Jingshiro 版",
+      "tag": "jingshiro",
+      "repo": "Jingshiro/legado",
+      "term": "legado-branch-jingshiro",
+      "stars": 111,
+      "sourceUpdatedAt": "2026-08-07T14:35:54Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado 3.26.080722",
+        "tagName": "3.26.080722",
+        "prerelease": false,
+        "publishedAt": "2026-08-07T14:35:54Z",
+        "createdAt": "2026-08-07T14:19:49Z",
+        "body": null,
+        "assets": [
+          {
+            "name": "legado_releaseS_3.26.080722.apk",
+            "size": 23670453,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_releaseS_3.26.080722.apk"
+          },
+          {
+            "name": "legado_release_3.26.080722.apk",
+            "size": 23670495,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_release_3.26.080722.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "t",
       "name": "阅读 T",
       "tag": "t",
@@ -526,39 +559,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "gedoor/legado"
-    },
-    {
-      "id": "jingshiro",
-      "name": "Jingshiro 版",
-      "tag": "jingshiro",
-      "repo": "Jingshiro/legado",
-      "term": "legado-branch-jingshiro",
-      "stars": 110,
-      "sourceUpdatedAt": "2026-08-07T14:35:54Z",
-      "githubArchived": false,
-      "release": {
-        "name": "Legado 3.26.080722",
-        "tagName": "3.26.080722",
-        "prerelease": false,
-        "publishedAt": "2026-08-07T14:35:54Z",
-        "createdAt": "2026-08-07T14:19:49Z",
-        "body": null,
-        "assets": [
-          {
-            "name": "legado_releaseS_3.26.080722.apk",
-            "size": 23670453,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_releaseS_3.26.080722.apk"
-          },
-          {
-            "name": "legado_release_3.26.080722.apk",
-            "size": 23670495,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_release_3.26.080722.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
     },
     {
       "id": "ng",
