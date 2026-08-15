@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T11:36:50.964Z",
+  "generatedAt": "2026-08-15T13:01:20.340Z",
   "branches": [
     {
       "id": "c",
@@ -10,26 +10,26 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 29,
-      "sourceUpdatedAt": "2026-08-15T11:35:28Z",
+      "sourceUpdatedAt": "2026-08-15T12:57:39Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081315c",
-        "tagName": "v3.26.081315c",
+        "name": "阅读 C 3.26.081622c",
+        "tagName": "v3.26.081622c",
         "prerelease": false,
-        "publishedAt": "2026-08-13T12:04:55Z",
-        "createdAt": "2026-08-13T12:02:45Z",
-        "body": "【App 自动更新】\n- 新增更新设置：每次启动自动检查（默认开启）、接收 Pre 版本推送（默认关闭）、下载加速源（默认 ghfast.top，可选直连 / ghproxy / gh-proxy / 自定义地址）。\n- 新增\"立即检查更新\"按钮；切换\"每次启动检测\"开关即时触发一次检查。\n- 检查 GitHub Release 新版本：按 versionCode 取最高版本（从 APK 文件名解析，不再被 tag 里的日期数字误判），弹出更新说明，下载完成自动唤起系统安装。\n- 关于页\"更新日志\"改为在线拉取最新 README（走设置的加速源），失败时回退本地。\n\n【导出与导入】\n- 导出 TXT 拆分出独立选项\"导出 TXT (zip)\"：本地 TXT 正文原样打包（不加书名头/缩进、不改写章节），图片/视频/音频与书签、替换规则作为外挂数据写入压缩包，重新导入可完整还原且不章节错乱；原\"导出 TXT\"保持原样行为。\n- TXT(zip) 导出新增\"导出书签\"选项：书签随 bookmarks.json 进压缩包，导入时同步还原。\n- TXT(zip) 导出新增\"替换净化\"外挂：开启后把当前书生效的替换规则写入 replace_rules.json（正文保持原文），导入时同步还原规则并自动打开该书的净化开关。\n- EPUB 导出修复：配图媒体原文件此前导出为 0 字节（LazyResource 文件名传错），修复后图片/视频/音频完整打包；新增书签侧车（legado_bookmarks.json），导入时还原书签与配图。\n- PDF 导出新增书签：压缩包内含 bookmarks.json，导入时同步还原。\n- 压缩包导入失败时给出明确错误提示；默认导出图片改为开启。\n- 修复压缩包导入：VIEW 打开 zip 走统一导入流程（解压保存到书籍目录 + 还原配图/媒体/书签）。\n\n【书架】\n- 书架\"全部\"分组支持在分组管理中关闭，关闭后真正不再显示；仅当用户未关闭且其他分组都为空时才兜底显示，避免空白。\n\n【修复】\n- 修复配图还原位置：全书插图按段落指纹匹配，不再依赖章节索引；段间锚点未匹配时不再堆到章末。\n- 修复压缩包导入失败：书籍保存目录未设置时兜底保存到应用外部目录，不再抛 NoBooksDirException。\n\n交流群 1101873338，好用的话点个 star，谢谢啦。",
+        "publishedAt": "2026-08-15T11:37:36Z",
+        "createdAt": "2026-08-15T11:35:25Z",
+        "body": "## 2026-08-14 至 2026-08-15\n\n### 阅读与书签\n- 新增整页书签、跨页复制、选区手柄/颜色/放大镜，以及书签备注气泡和目录书签交互优化。\n- 阅读主菜单支持 200ms 淡入淡出；各处“更多”菜单关闭时统一 100ms 淡出。\n- 阅读默认样式的日间/夜间背景图片分别调整为护眼漫绿与宁静夜色；阅读设置“隐藏状态栏”默认开启。\n\n### 玻璃界面\n- 统一全局透明度、弹窗透明度和弹窗模糊度的语义与渲染。\n- Dialog、底部面板、PopupWindow 和阅读页浮层统一采用局部玻璃模糊，避免压暗或模糊整个页面。\n- 修复编辑内容底部操作区、合集预览、书架封面透明度及多个弹窗的显示细节。\n\n### 主题与书架\n- 内置 Pre 默认彩色背景；书架封面透明度独立控制普通书封面和合集封面。\n- 更新 README 更新记录与九张展示截图。",
         "assets": [
           {
-            "name": "legado_app_3.26.081315_10551.apk",
-            "size": 38507545,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081315c/legado_app_3.26.081315_10551.apk"
+            "name": "legado_app_3.26.081622_10627.apk",
+            "size": 41070710,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081622c/legado_app_3.26.081622_10627.apk"
           }
         ]
       },
       "errors": [],
-      "fork": true,
-      "forkOf": "refgd/legado"
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "original",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 4,
+          "stars": 5,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46984,
+      "stars": 46983,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -185,7 +185,7 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 749,
-      "sourceUpdatedAt": "2026-08-15T08:20:30Z",
+      "sourceUpdatedAt": "2026-08-15T12:51:11Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081516",
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 287,
+      "stars": 288,
       "sourceUpdatedAt": "2026-08-15T07:49:36Z",
       "githubArchived": false,
       "release": {
@@ -422,7 +422,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 169,
+      "stars": 170,
       "sourceUpdatedAt": "2026-08-15T01:38:25Z",
       "githubArchived": false,
       "release": {
@@ -490,6 +490,44 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 113,
+      "sourceUpdatedAt": "2026-08-15T11:04:40Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.081518",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-15T11:04:40Z",
+        "createdAt": "2026-08-15T09:59:00Z",
+        "body": "## 更新日志\nfeat(阅读): 图片URL内联style选项,单图独立控制排版样式与尺寸(TEXT/FULL/SINGLE/DEFAULT及width/height CSS尺寸)\n\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.08151853_arm64-v8a_release.apk",
+            "size": 15069121,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08151853_armeabi-v7a_release.apk",
+            "size": 14445137,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08151853_universal_release.apk",
+            "size": 15265812,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_universal_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -521,44 +559,6 @@
       "errors": [],
       "fork": false,
       "forkOf": null
-    },
-    {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": 112,
-      "sourceUpdatedAt": "2026-08-15T11:04:40Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.081518",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-08-15T11:04:40Z",
-        "createdAt": "2026-08-15T09:59:00Z",
-        "body": "## 更新日志\nfeat(阅读): 图片URL内联style选项,单图独立控制排版样式与尺寸(TEXT/FULL/SINGLE/DEFAULT及width/height CSS尺寸)\n\n",
-        "assets": [
-          {
-            "name": "legado_app_3.26.08151853_arm64-v8a_release.apk",
-            "size": 15069121,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_arm64-v8a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08151853_armeabi-v7a_release.apk",
-            "size": 14445137,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_armeabi-v7a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08151853_universal_release.apk",
-            "size": 15265812,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08151853_universal_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
     },
     {
       "id": "ng",
