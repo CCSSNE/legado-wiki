@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T14:41:41.781Z",
+  "generatedAt": "2026-08-15T15:37:31.676Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 29,
-      "sourceUpdatedAt": "2026-08-15T13:40:35Z",
+      "sourceUpdatedAt": "2026-08-15T14:46:47Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081622c",
-        "tagName": "v3.26.081622c",
+        "name": "阅读 C 3.26.081624c",
+        "tagName": "v3.26.081624c",
         "prerelease": false,
-        "publishedAt": "2026-08-15T11:37:36Z",
-        "createdAt": "2026-08-15T11:35:25Z",
-        "body": "## 2026-08-14 至 2026-08-15\n\n### 阅读与书签\n- 新增整页书签、跨页复制、选区手柄/颜色/放大镜，以及书签备注气泡和目录书签交互优化。\n- 阅读主菜单支持 200ms 淡入淡出；各处“更多”菜单关闭时统一 100ms 淡出。\n- 阅读默认样式的日间/夜间背景图片分别调整为护眼漫绿与宁静夜色；阅读设置“隐藏状态栏”默认开启。\n\n### 玻璃界面\n- 统一全局透明度、弹窗透明度和弹窗模糊度的语义与渲染。\n- Dialog、底部面板、PopupWindow 和阅读页浮层统一采用局部玻璃模糊，避免压暗或模糊整个页面。\n- 修复编辑内容底部操作区、合集预览、书架封面透明度及多个弹窗的显示细节。\n\n### 主题与书架\n- 内置 Pre 默认彩色背景；书架封面透明度独立控制普通书封面和合集封面。\n- 更新 README 更新记录与九张展示截图。",
+        "publishedAt": "2026-08-15T14:47:23Z",
+        "createdAt": "2026-08-15T14:46:45Z",
+        "body": "预发布版本 3.26.081624c\n\n- 修复更新日志 Markdown 阅读器：滚动、文字点按和长按不会误打开首张图片；图片长按仍可预览。\n- 修复自定义 Alert 弹窗长列表中底部操作区被挤出可视范围的问题。",
         "assets": [
           {
-            "name": "legado_app_3.26.081622_10627.apk",
-            "size": 41070710,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081622c/legado_app_3.26.081622_10627.apk"
+            "name": "legado_app_3.26.081624_10629.apk",
+            "size": 41072687,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081624c/legado_app_3.26.081624_10629.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46981,
+      "stars": 46980,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5660,
+      "stars": 5661,
       "sourceUpdatedAt": "2026-08-14T08:45:25Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2375,
+      "stars": 2377,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,35 +184,35 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 750,
-      "sourceUpdatedAt": "2026-08-15T14:34:43Z",
+      "stars": 752,
+      "sourceUpdatedAt": "2026-08-15T15:31:39Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081522",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-15T14:04:52Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/15**\n- 修复书源 JavaScript 嵌套调用报错时源码定位错误的问题\n- 修复在线朗读引擎导入或编辑后 CookieJar 设置丢失的问题\n- 高亮规则支持独立导入导出和批量管理\n- 文件夹分组默认显示前四本书的封面\n- 修复部分界面预测返回后无法点击的问题\n- Web 阅读页段评回复仅显示正数点赞数\n\n",
+        "createdAt": "2026-08-15T14:50:30Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/15**\n- 帮助文档目录支持显示二级章节\n- 修复书源 JavaScript 嵌套调用报错时源码定位错误的问题\n- 修复在线朗读引擎导入或编辑后 CookieJar 设置丢失的问题\n- 高亮规则支持独立导入导出和批量管理\n- 文件夹分组默认显示前四本书的封面\n- 修复部分界面预测返回后无法点击的问题\n- Web 阅读页段评回复仅显示正数点赞数\n\n",
         "assets": [
           {
             "name": "legado_app_3.26081522_release.apk",
-            "size": 20222951,
+            "size": 20222936,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081522_release.apk"
           },
           {
             "name": "legado_app_3.26081522_releaseA.apk",
-            "size": 20222948,
+            "size": 20222973,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081522_releaseA.apk"
           },
           {
             "name": "legado_app_3.26081522_universal_release.apk",
-            "size": 26190110,
+            "size": 26190099,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081522_universal_release.apk"
           },
           {
             "name": "legado_app_3.26081522_universal_releaseA.apk",
-            "size": 26190110,
+            "size": 26190133,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081522_universal_releaseA.apk"
           }
         ]
