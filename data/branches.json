@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T17:38:18.797Z",
+  "generatedAt": "2026-08-15T18:49:31.852Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 29,
-      "sourceUpdatedAt": "2026-08-15T14:46:47Z",
+      "sourceUpdatedAt": "2026-08-15T18:06:52Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081624c",
-        "tagName": "v3.26.081624c",
-        "prerelease": false,
-        "publishedAt": "2026-08-15T14:47:23Z",
-        "createdAt": "2026-08-15T14:46:45Z",
-        "body": "预发布版本 3.26.081624c\n\n- 修复更新日志 Markdown 阅读器：滚动、文字点按和长按不会误打开首张图片；图片长按仍可预览。\n- 修复自定义 Alert 弹窗长列表中底部操作区被挤出可视范围的问题。",
+        "name": "阅读 C 3.26.081703c",
+        "tagName": "v3.26.081703c",
+        "prerelease": true,
+        "publishedAt": "2026-08-15T18:06:52Z",
+        "createdAt": "2026-08-15T18:04:55Z",
+        "body": "## 本次修复\n\n- 只限制书源脚本调用 `book.setUseReplaceRule(...)`，避免书源关闭用户的替换净化；`Book` 的其他正常行为保留。\n- 修复替换规则重载时可能被并发读取为空集合的问题。\n\n## 验证\n\n- 已使用雷电模拟器完成书源刷新、239 章目录加载和正文进入阅读器回归。\n- APK 已校验包名、版本、`arm64-v8a` 与签名。",
         "assets": [
           {
-            "name": "legado_app_3.26.081624_10629.apk",
-            "size": 41072687,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081624c/legado_app_3.26.081624_10629.apk"
+            "name": "legado_app_3.26.081703_10632.apk",
+            "size": 41073825,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081703c/legado_app_3.26.081703_10632.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46981,
+      "stars": 46982,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 752,
-      "sourceUpdatedAt": "2026-08-15T17:14:22Z",
+      "sourceUpdatedAt": "2026-08-15T18:24:43Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081601",
+        "name": "legado_app_3.26081602",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-15T17:03:16Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/16**\n- 修复文件夹分组文字封面切回书架后闪烁的问题\n\n",
+        "createdAt": "2026-08-15T18:02:58Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/16**\n- 段评回复支持显示被回复用户名\n- 修复文件夹分组文字封面切回书架后闪烁的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081601_release.apk",
-            "size": 20240405,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081601_release.apk"
+            "name": "legado_app_3.26081602_release.apk",
+            "size": 20240526,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081602_release.apk"
           },
           {
-            "name": "legado_app_3.26081601_releaseA.apk",
-            "size": 20240415,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081601_releaseA.apk"
+            "name": "legado_app_3.26081602_releaseA.apk",
+            "size": 20240543,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081602_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081601_universal_release.apk",
-            "size": 26207577,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081601_universal_release.apk"
+            "name": "legado_app_3.26081602_universal_release.apk",
+            "size": 26207701,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081602_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081601_universal_releaseA.apk",
-            "size": 26207586,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081601_universal_releaseA.apk"
+            "name": "legado_app_3.26081602_universal_releaseA.apk",
+            "size": 26207716,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081602_universal_releaseA.apk"
           }
         ]
       },
