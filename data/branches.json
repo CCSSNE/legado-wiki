@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T04:49:28.827Z",
+  "generatedAt": "2026-08-15T05:43:51.836Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46982,
+      "stars": 46984,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2370,
+      "stars": 2371,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -490,6 +490,39 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "jingshiro",
+      "name": "Jingshiro 版",
+      "tag": "jingshiro",
+      "repo": "Jingshiro/legado",
+      "term": "legado-branch-jingshiro",
+      "stars": 112,
+      "sourceUpdatedAt": "2026-08-07T14:35:54Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado 3.26.080722",
+        "tagName": "3.26.080722",
+        "prerelease": false,
+        "publishedAt": "2026-08-07T14:35:54Z",
+        "createdAt": "2026-08-07T14:19:49Z",
+        "body": null,
+        "assets": [
+          {
+            "name": "legado_releaseS_3.26.080722.apk",
+            "size": 23670453,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_releaseS_3.26.080722.apk"
+          },
+          {
+            "name": "legado_release_3.26.080722.apk",
+            "size": 23670495,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_release_3.26.080722.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "t",
       "name": "阅读 T",
       "tag": "t",
@@ -528,39 +561,6 @@
       "forkOf": "gedoor/legado"
     },
     {
-      "id": "jingshiro",
-      "name": "Jingshiro 版",
-      "tag": "jingshiro",
-      "repo": "Jingshiro/legado",
-      "term": "legado-branch-jingshiro",
-      "stars": 111,
-      "sourceUpdatedAt": "2026-08-07T14:35:54Z",
-      "githubArchived": false,
-      "release": {
-        "name": "Legado 3.26.080722",
-        "tagName": "3.26.080722",
-        "prerelease": false,
-        "publishedAt": "2026-08-07T14:35:54Z",
-        "createdAt": "2026-08-07T14:19:49Z",
-        "body": null,
-        "assets": [
-          {
-            "name": "legado_releaseS_3.26.080722.apk",
-            "size": 23670453,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_releaseS_3.26.080722.apk"
-          },
-          {
-            "name": "legado_release_3.26.080722.apk",
-            "size": 23670495,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.080722/legado_release_3.26.080722.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "ng",
       "name": "阅读 NG",
       "tag": "ng",
@@ -595,7 +595,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 56,
+      "stars": 57,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
