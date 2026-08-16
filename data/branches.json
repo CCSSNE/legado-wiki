@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T04:52:05.389Z",
+  "generatedAt": "2026-08-16T05:46:21.280Z",
   "branches": [
     {
       "id": "c",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2380,
+      "stars": 2381,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 760,
-      "sourceUpdatedAt": "2026-08-16T04:39:40Z",
+      "stars": 761,
+      "sourceUpdatedAt": "2026-08-16T05:27:14Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081612",
+        "name": "legado_app_3.26081613",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-16T04:29:10Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/16**\n- 旧书源图片段评支持使用当前原生 SVG 模板\n- 补充段评大整数 ID 的书源协议说明\n- 每套阅读样式支持保存和切换自定义段评 SVG 模板\n- MCP 工具补充读写、副作用和外部访问标记\n- 段评内嵌回复默认展开\n- 避免取消备份时误报 WebDAV 上传失败\n- 段评回复支持显示被回复用户名\n- 修复大量文件夹分组文字封面切回书架后仍会闪烁的问题\n- 修复系统导航栏显示时文字选择菜单仍可能遮挡选区的问题\n\n",
+        "createdAt": "2026-08-16T05:16:44Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/16**\n- 修复未修改正文时关闭编辑器仍会覆盖章节缓存的问题\n- 旧书源图片段评支持使用当前原生 SVG 模板\n- 补充段评大整数 ID 的书源协议说明\n- 每套阅读样式支持保存和切换自定义段评 SVG 模板\n- MCP 工具补充读写、副作用和外部访问标记\n- 段评内嵌回复默认展开\n- 避免取消备份时误报 WebDAV 上传失败\n- 段评回复支持显示被回复用户名\n- 修复大量文件夹分组文字封面切回书架后仍会闪烁的问题\n- 修复系统导航栏显示时文字选择菜单仍可能遮挡选区的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081612_release.apk",
-            "size": 20242936,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081612_release.apk"
+            "name": "legado_app_3.26081613_release.apk",
+            "size": 20242962,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081613_release.apk"
           },
           {
-            "name": "legado_app_3.26081612_releaseA.apk",
-            "size": 20242944,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081612_releaseA.apk"
+            "name": "legado_app_3.26081613_releaseA.apk",
+            "size": 20242964,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081613_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081612_universal_release.apk",
-            "size": 26210115,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081612_universal_release.apk"
+            "name": "legado_app_3.26081613_universal_release.apk",
+            "size": 26210140,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081613_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081612_universal_releaseA.apk",
-            "size": 26210128,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081612_universal_releaseA.apk"
+            "name": "legado_app_3.26081613_universal_releaseA.apk",
+            "size": 26210152,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081613_universal_releaseA.apk"
           }
         ]
       },
@@ -561,41 +561,13 @@
       "forkOf": null
     },
     {
-      "id": "ng",
-      "name": "阅读 NG",
-      "tag": "ng",
-      "repo": "joestar817/legado_NG",
-      "term": "legado-branch-ng",
-      "stars": 58,
-      "sourceUpdatedAt": "2026-08-12T07:53:23Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_ng_3.26.081215",
-        "tagName": "3.26.081215",
-        "prerelease": false,
-        "publishedAt": "2026-08-12T07:53:23Z",
-        "createdAt": "2026-08-12T07:37:55Z",
-        "body": "### 更新内容\n* 修复Release菜单的R8名称依赖\n* 统一朗读引擎下拉刷新交互\n* Release保留压缩并关闭名称混淆\n* 重构阅读划线与书签抽屉\n* 完善阅读浮窗预设与听书胶囊\n* 恢复内置文件选择器并支持默认切换\n* 修复低版本安卓阅读页初始化卡住\n* 统一搜索框日夜样式并修正发现页空状态\n\n",
-        "assets": [
-          {
-            "name": "legado_NG_3.26.08121541_release.apk",
-            "size": 26749204,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.081215/legado_NG_3.26.08121541_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
-    },
-    {
       "id": "max-cichen",
       "name": "阅读 MAX 辞晨版",
       "tag": "max-cichen",
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 57,
+      "stars": 58,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -626,6 +598,34 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "ng",
+      "name": "阅读 NG",
+      "tag": "ng",
+      "repo": "joestar817/legado_NG",
+      "term": "legado-branch-ng",
+      "stars": 58,
+      "sourceUpdatedAt": "2026-08-12T07:53:23Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_ng_3.26.081215",
+        "tagName": "3.26.081215",
+        "prerelease": false,
+        "publishedAt": "2026-08-12T07:53:23Z",
+        "createdAt": "2026-08-12T07:37:55Z",
+        "body": "### 更新内容\n* 修复Release菜单的R8名称依赖\n* 统一朗读引擎下拉刷新交互\n* Release保留压缩并关闭名称混淆\n* 重构阅读划线与书签抽屉\n* 完善阅读浮窗预设与听书胶囊\n* 恢复内置文件选择器并支持默认切换\n* 修复低版本安卓阅读页初始化卡住\n* 统一搜索框日夜样式并修正发现页空状态\n\n",
+        "assets": [
+          {
+            "name": "legado_NG_3.26.08121541_release.apk",
+            "size": 26749204,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.081215/legado_NG_3.26.08121541_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "max-dandan",
