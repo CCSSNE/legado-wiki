@@ -44,7 +44,7 @@
       gap: 18px;
       max-width: 1120px;
       margin: 10px auto 0;
-      padding: 12px 18px 13px;
+      padding: 18px 20px 19px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 8px;
       background: linear-gradient(135deg, #173d38 0%, #245a53 62%, #9b6b3f 100%);
@@ -57,34 +57,52 @@
     }
 
     .header-badge {
-      display: inline-block;
-      margin-bottom: 5px;
+      display: inline-flex;
+      align-items: center;
       padding: 3px 9px;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.14);
-      color: #e7f4ef;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #e6f0ed;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      line-height: 1.45;
+      letter-spacing: 0;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: 0.15s ease;
+    }
+
+    .header-badge:hover {
+      border-color: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.13);
+      color: #fff;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 7px;
     }
 
     .header-title {
       color: #fff;
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 800;
-      line-height: 1.1;
+      line-height: 1.15;
     }
 
     .header-sub {
-      margin-top: 2px;
       color: #d6e7e1;
-      font-size: 11px;
-      letter-spacing: 0.16em;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 0.08em;
     }
 
     .header-group {
       flex-shrink: 0;
+      padding-top: 1px;
       text-align: right;
       color: #eef8f4;
     }
@@ -336,6 +354,16 @@
       color: var(--warm);
       font-size: 10px;
       font-weight: 700;
+    }
+
+    .tree-link.tree-link-pinned {
+      background: var(--accent-strong);
+      color: #fff;
+    }
+
+    .tree-link.tree-link-pinned:hover {
+      background: var(--accent-strong);
+      color: #fff;
     }
 
     .repo-card {
@@ -683,6 +711,7 @@
       body { padding: 0 14px 40px; }
       header { align-items:flex-start; flex-direction:column; margin-top: 8px; padding: 12px 14px 13px; }
       .header-title { font-size: 22px; }
+      .header-meta { flex-wrap: wrap; gap: 6px 10px; }
       .header-group { text-align:left; }
       .group-desc { white-space:normal; }
       .tree-nav { padding: 12px 12px 14px; }
@@ -701,9 +730,14 @@
 <body>
   <header>
     <div class="header-main">
-      <div class="header-badge">Legado Index</div>
       <h1 class="header-title">开源阅读分支索引</h1>
-      <p class="header-sub">版本与下载入口 · 可直接评论</p>
+      <div class="header-meta">
+        <p class="header-sub">版本与下载入口 · 可直接评论</p>
+        <a class="header-badge"
+           href="https://github.com/CCSSNE/legado-wiki"
+           target="_blank"
+           rel="noopener"><span aria-hidden="true">↗</span>&nbsp; 本站开源地址</a>
+      </div>
     </div>
     <div class="header-group" aria-label="交流群">
       <span class="group-label">交流群</span>
@@ -882,11 +916,12 @@
           if (!branch) return '';
           const pin = branch.pinned ? '<span class="tree-pin">站长</span>' : '';
           const label = `${escapeHtml(branch.name)}${pin}`;
+          const pinnedClass = branch.pinned ? ' tree-link-pinned' : '';
           if (children) {
             const checkboxId = `tree-node-${seq++}`;
-            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a><ul>${children}</ul></li>`;
+            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><a class="tree-link${pinnedClass}" href="#repo-${escapeAttribute(branch.id)}">${label}</a><ul>${children}</ul></li>`;
           }
-          return `<li class="${dash.trim()}"><a class="tree-link" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
+          return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
         return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
       }
