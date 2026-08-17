@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T09:59:45.620Z",
+  "generatedAt": "2026-08-17T10:49:48.404Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 37,
-      "sourceUpdatedAt": "2026-08-17T00:43:44Z",
+      "sourceUpdatedAt": "2026-08-17T10:09:19Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081714c",
-        "tagName": "v3.26.081714c",
+        "name": "阅读 C 3.26.081735c",
+        "tagName": "v3.26.081735c",
         "prerelease": true,
-        "publishedAt": "2026-08-17T00:43:44Z",
-        "createdAt": "2026-08-17T00:40:37Z",
-        "body": "## AI 章节净化（去广告 / 去噪音 / 查错字）\n\n- 新增 AI 章节净化：调用 AI 批量清理章节正文，支持「去广告 / 去噪音 / 查错字」三种净化类型，独立开关，默认全部开启。\n- 打开书自动净化未处理的章节，处理进度与结果实时提示；净化失败的章节可单独重新处理。\n- 章节处理记录：每章记录处理状态、正文指纹与已覆盖的净化类型（数据库升级至 103）；清除缓存、更新目录或移除书架会删除对应记录并重新判定。\n- 手动编辑或反转内容后的章节，无条件标记为已处理——自动净化不再重算该章，也不会把它写进替换规则；之后新开启某净化类型时该章会按类型重新判定。\n- 按净化类型限定预处理范围，章节预处理不再默认剥离空格与符号。\n\n## AI 供应商与模型\n\n- 新增 AI 设置页集中管理供应商、模型与请求模板；章节净化默认复用全局供应商与模型，也可单独指定。\n- 支持 AI 请求模板结构化编辑、占位符校验与连通性测试（测通后正确识别思考内容）。\n- 新增「高级设置」显示开关（默认关），开启后可调整 API 脱敏、超时等高级项。\n- API 脱敏默认开启：AI 请求与日志中的 API Key 自动打码，避免明文泄露。\n\n## AI 日志\n\n- 新增 AI 详细日志：实时状态、请求与响应明细，支持查看、清空与一键导出。\n- AI 报错统一为中文提示，并按错误类型给出第一句分类，更易定位问题。\n- 修复日志弹窗清空、复制与数量刷新卡顿。\n\n## 修复\n\n- 修复章节净化重复触发、结构化请求超时、输入顺序错乱与流式超时。\n- 修复净化实时状态提示的显示与生命周期。\n- 修复请求模板保存校验过严（放开占位符校验）。\n- AI 思考打断默认值调整为五秒，支持自定义打断重试次数。\n- 统一 AI 设置分组与流程说明文案，整理设置按钮分组。\n",
+        "publishedAt": "2026-08-17T10:09:20Z",
+        "createdAt": "2026-08-17T07:57:06Z",
+        "body": "## 本次修复：字体设置页面按钮消失\n\n- 无头弹窗将 Toolbar 菜单动作迁到底部操作行后，老式布局的内容区是 `match_parent`（无 weight），会把追加在末尾的底部操作行挤出可见区域，导致字体设置弹窗底部「默认字体 / 其它目录」等按钮不可见。\n- 修复：字体选择、换封面、代码编辑、HTTP-TTS 编辑四个弹窗的内容区改为 `0dp + layout_weight=\"1\"`，底部操作行恢复可见可点。\n\n## 验证\n\n- 已使用雷电模拟器覆盖安装并回归：字体弹窗底部「默认字体 / 其它目录」按钮可见可点（各自弹出对应功能）、换封面弹窗底部「停止」按钮可见、HTTP-TTS 编辑弹窗底部「编辑内容 / 保存 / 登录 / 查看登录头」可见、输入框聚焦后点「编辑内容」正确打开 CodeEditActivity；无崩溃无异常日志。\n- APK 已校验包名 `io.legado.app.c`、版本 `3.26.081735c`、架构 `arm64-v8a` 与签名。\n\n交流群 1101873338，好用的话点个 star，谢谢啦。",
         "assets": [
           {
-            "name": "legado_app_3.26.081714_10658.apk",
-            "size": 41247911,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081714c/legado_app_3.26.081714_10658.apk"
+            "name": "legado_app_3.26.081735_10659.apk",
+            "size": 41247987,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081735c/legado_app_3.26.081735_10659.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46997,
+      "stars": 46998,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5689,
+      "stars": 5690,
       "sourceUpdatedAt": "2026-08-17T09:46:04Z",
       "githubArchived": false,
       "release": {
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 783,
-      "sourceUpdatedAt": "2026-08-17T09:50:59Z",
+      "sourceUpdatedAt": "2026-08-17T10:15:35Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081717",
+        "name": "legado_app_3.26081718",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-17T09:11:07Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/17**\n- 修复页眉显示书签标记时正文重新排版的问题\n- 修复连续触发搜索翻页时可能跳页或提前停止的问题\n- 修复 RSS 收藏页视图重建后重复收集数据的问题\n- 搜索结果支持按屏蔽词过滤书名、作者和分类\n- 修复特定换行格式下切换净化会改变正文分段的问题\n- Android 9 及以上版本拖动选择文字时显示系统放大镜\n- 书源导入对比页支持打开替换管理并在返回后刷新预览\n- 修复搜索自动任务后上移或下移可能无效的问题\n- 代码查看对话框支持搜索并循环定位匹配文本\n- 阅读页书签标记优先显示在页眉右侧\n- 修复在搜索或分组筛选书源时拖动排序会覆盖隐藏书源顺序的问题\n- 修复在搜索或分组筛选书架时拖动排序会覆盖隐藏书籍顺序的问题\n- 修复大尺寸自定义段评图标在文字行中显示偏上的问题\n\n",
+        "createdAt": "2026-08-17T10:04:20Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/17**\n- 修复底部网页弹窗更新高度时偶尔没有贴紧屏幕底部的问题\n- 修复页眉显示书签标记时正文重新排版的问题\n- 修复连续触发搜索翻页时可能跳页或提前停止的问题\n- 修复 RSS 收藏页视图重建后重复收集数据的问题\n- 搜索结果支持按屏蔽词过滤书名、作者和分类\n- 修复特定换行格式下切换净化会改变正文分段的问题\n- Android 9 及以上版本拖动选择文字时显示系统放大镜\n- 书源导入对比页支持打开替换管理并在返回后刷新预览\n- 修复搜索自动任务后上移或下移可能无效的问题\n- 代码查看对话框支持搜索并循环定位匹配文本\n- 阅读页书签标记优先显示在页眉右侧\n- 修复在搜索或分组筛选书源时拖动排序会覆盖隐藏书源顺序的问题\n- 修复在搜索或分组筛选书架时拖动排序会覆盖隐藏书籍顺序的问题\n- 修复大尺寸自定义段评图标在文字行中显示偏上的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081717_release.apk",
-            "size": 20250026,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081717_release.apk"
+            "name": "legado_app_3.26081718_release.apk",
+            "size": 20250079,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081718_release.apk"
           },
           {
-            "name": "legado_app_3.26081717_releaseA.apk",
-            "size": 20250029,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081717_releaseA.apk"
+            "name": "legado_app_3.26081718_releaseA.apk",
+            "size": 20250078,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081718_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081717_universal_release.apk",
-            "size": 26217214,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081717_universal_release.apk"
+            "name": "legado_app_3.26081718_universal_release.apk",
+            "size": 26217265,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081718_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081717_universal_releaseA.apk",
-            "size": 26217210,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081717_universal_releaseA.apk"
+            "name": "legado_app_3.26081718_universal_releaseA.apk",
+            "size": 26217268,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081718_universal_releaseA.apk"
           }
         ]
       },
