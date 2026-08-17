@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T23:36:09.782Z",
+  "generatedAt": "2026-08-17T01:57:01.889Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 34,
-      "sourceUpdatedAt": "2026-08-15T18:06:52Z",
+      "stars": 35,
+      "sourceUpdatedAt": "2026-08-17T00:43:44Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.081703c",
-        "tagName": "v3.26.081703c",
+        "name": "阅读 C 3.26.081714c",
+        "tagName": "v3.26.081714c",
         "prerelease": true,
-        "publishedAt": "2026-08-15T18:06:52Z",
-        "createdAt": "2026-08-15T18:04:55Z",
-        "body": "## 本次修复\n\n- 只限制书源脚本调用 `book.setUseReplaceRule(...)`，避免书源关闭用户的替换净化；`Book` 的其他正常行为保留。\n- 修复替换规则重载时可能被并发读取为空集合的问题。\n\n## 验证\n\n- 已使用雷电模拟器完成书源刷新、239 章目录加载和正文进入阅读器回归。\n- APK 已校验包名、版本、`arm64-v8a` 与签名。",
+        "publishedAt": "2026-08-17T00:43:44Z",
+        "createdAt": "2026-08-17T00:40:37Z",
+        "body": "## AI 章节净化（去广告 / 去噪音 / 查错字）\n\n- 新增 AI 章节净化：调用 AI 批量清理章节正文，支持「去广告 / 去噪音 / 查错字」三种净化类型，独立开关，默认全部开启。\n- 打开书自动净化未处理的章节，处理进度与结果实时提示；净化失败的章节可单独重新处理。\n- 章节处理记录：每章记录处理状态、正文指纹与已覆盖的净化类型（数据库升级至 103）；清除缓存、更新目录或移除书架会删除对应记录并重新判定。\n- 手动编辑或反转内容后的章节，无条件标记为已处理——自动净化不再重算该章，也不会把它写进替换规则；之后新开启某净化类型时该章会按类型重新判定。\n- 按净化类型限定预处理范围，章节预处理不再默认剥离空格与符号。\n\n## AI 供应商与模型\n\n- 新增 AI 设置页集中管理供应商、模型与请求模板；章节净化默认复用全局供应商与模型，也可单独指定。\n- 支持 AI 请求模板结构化编辑、占位符校验与连通性测试（测通后正确识别思考内容）。\n- 新增「高级设置」显示开关（默认关），开启后可调整 API 脱敏、超时等高级项。\n- API 脱敏默认开启：AI 请求与日志中的 API Key 自动打码，避免明文泄露。\n\n## AI 日志\n\n- 新增 AI 详细日志：实时状态、请求与响应明细，支持查看、清空与一键导出。\n- AI 报错统一为中文提示，并按错误类型给出第一句分类，更易定位问题。\n- 修复日志弹窗清空、复制与数量刷新卡顿。\n\n## 修复\n\n- 修复章节净化重复触发、结构化请求超时、输入顺序错乱与流式超时。\n- 修复净化实时状态提示的显示与生命周期。\n- 修复请求模板保存校验过严（放开占位符校验）。\n- AI 思考打断默认值调整为五秒，支持自定义打断重试次数。\n- 统一 AI 设置分组与流程说明文案，整理设置按钮分组。\n",
         "assets": [
           {
-            "name": "legado_app_3.26.081703_10632.apk",
-            "size": 41073825,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081703c/legado_app_3.26.081703_10632.apk"
+            "name": "legado_app_3.26.081714_10658.apk",
+            "size": 41247911,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081714c/legado_app_3.26.081714_10658.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46995,
+      "stars": 46996,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5679,
+      "stars": 5680,
       "sourceUpdatedAt": "2026-08-14T08:45:25Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2388,
+      "stars": 2390,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 772,
+      "stars": 774,
       "sourceUpdatedAt": "2026-08-16T22:28:26Z",
       "githubArchived": false,
       "release": {
