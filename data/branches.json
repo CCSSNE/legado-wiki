@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T13:55:54.155Z",
+  "generatedAt": "2026-08-17T14:47:56.626Z",
   "branches": [
     {
       "id": "c",
@@ -39,7 +39,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46998,
+      "stars": 47001,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -71,7 +71,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5692,
+      "stars": 5694,
       "sourceUpdatedAt": "2026-08-17T09:46:04Z",
       "githubArchived": false,
       "release": null,
@@ -99,7 +99,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2105,
+      "stars": 2106,
       "sourceUpdatedAt": "2026-05-15T10:42:50Z",
       "githubArchived": false,
       "release": null,
@@ -128,7 +128,7 @@
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
       "stars": 464,
-      "sourceUpdatedAt": "2026-08-07T04:53:35Z",
+      "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": null,
       "errors": [],
@@ -331,7 +331,36 @@
       "stars": 11,
       "sourceUpdatedAt": "2026-08-17T07:57:39Z",
       "githubArchived": false,
-      "release": null,
+      "release": {
+        "name": "legado_app_beta_3.26.081715",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-17T07:57:40Z",
+        "createdAt": "2026-08-17T07:57:38Z",
+        "body": "### 更新内容\n* [修复 优化]：修复离线缓存界面，单本下载取消后 CacheBookService 通知栏有时无法正常关闭的 Bug；修复缓存任务列表未及时清理引起的内存泄漏，及结束时的异常取消问题\n\n**内存泄漏和协程竞态问题修复**\n\n（首先补充大量了对僵尸任务 (ZombieTask) 的日志打点，方便后续排查生命周期问题。）\n\na. 修复离线缓存界面，单本下载取消后 CacheBookService 通知栏有时无法正常自动关闭的 Bug\n\n**Bug 现象**:\n同时下载多本书籍时，如果在离线缓存界面通过点击列表单独取消书籍（暂停），当取消到最后一本时，有时通知栏无法消失，并死卡在“正在下载：0|等待中：0|失败：0|成功：X（历史累计成功数）”的状态。\n\n**根本原因**:\n1. 触发单本取消 (`IntentAction.remove`) 时，内部调用 `CacheBookModel.stop()`，其通过 `tasks.clear()` 异步取消下载协程。\n2. 由于协程的 cancel 回调是异步执行的，此时同步代码往下走，`onDownloadSet`（正在下载集合）并未立即清空。\n3. 同步触发的 `onFinally()` 因 `onDownloadSet` 不为空，拒绝将该书从 `cacheBookMap` 中移除。\n4. 导致外层 `CacheBookService` 的 `if (cacheBookMap.isEmpty())` 判定为 false，完美错失了调用 `stopSelf()` 的唯一时机。\n5. 服务变成“僵尸进程”，其内部轮询持续读取未清零的 `successDownloadSet` 历史数据，并不断刷新通知栏。\n（此时点击取消可以正常销毁通知）\n\n**修复逻辑**:\n `CacheBookModel.stop()` 中加入`onDownloadSet.clear()`。确保即使单本停止时也同步清空运行队列，让后续的 `onFinally()` 能立即将书籍踢出 `cacheBookMap`，从而顺利触发 `stopSelf()` 销毁服务。\n\nb. 修复缓存任务列表未及时清理引起的内存泄漏，及结束时的异常取消问题\n\n**问题背景：**\n当我们在进行书籍缓存下载时，会在后台输出大量 `Coroutine.cancel()` 和 `onCancel() called` 日志。特别是在停止缓存服务（如接收到 `IntentAction.stop` 停止广播）时，会瞬间对所有历史成功完成的任务再次调用取消并打印错误堆栈。这暴露出任务管理上的内存泄漏和底层协程框架的方法缺陷。\n\n**修复详情：**\n1. **修复 `CacheBook.kt` 中的内存泄漏：**\n   在 `CacheBookModel` 中启动章节下载时，每个下载协程都会通过 `tasks.add` 被加入 `CompositeCoroutine` 中保存。但任务自然结束（成功/失败）后，缺少移除逻辑，导致 `tasks` 随下载章节无限膨胀。\n   - 修改方案：使用 `.also { coroutine -> ... }` 取代原有的 `.apply { ... }` 和 `.let { ... }` 链式调用。在确保明确的 `coroutine` 变量引用的前提下，在协程自带的 `.onFinally { ... }` 生命周期回调中加入 `tasks.remove(coroutine)`。保证每一个任务在执行生命周期终了时都能将自己移出缓存管理队列。\n   - 采用 `tasks.delete(coroutine)` 而不是 `tasks.remove(it)`  ，避免因 `remove` 内部的联动 `cancel()` 触发了 `onCancel` 回调，从而把该章节错误地塞回 `waitDownloadSet` 产生死循环。\n\n2. **修复 `Coroutine.kt` 的取消设计缺陷：**\n   修改自定义协程封装 `Coroutine.kt` 中的 `cancel()` 方法。之前该方法缺少对生命周期的把控，只要被调用就会无条件触发内部的 `onCancel` 回调。导致原本的错误内存泄漏下，如 `CompositeCoroutine.clear()` 等批量清理方法误杀早已结束的无辜任务。\n   - 修改方案：在 `cancel()` 方法头部加入 `if (job.isCompleted) return` 拦截。当探测到目标底层 `Job` 已经执行结束时，阻断取消回调，并且打印异常调用的追踪日志 (`ZombieTask Log: Coroutine.Cancel() 错误调用...`) 进行监控。\n\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.08171547_release.apk",
+            "size": 20499626,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08171547_release.apk"
+          },
+          {
+            "name": "legado_beta_a_3.26.08171547_releaseA.apk",
+            "size": 20499590,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08171547_releaseA.apk"
+          },
+          {
+            "name": "legado_beta_plus_3.26.08171547_releaseS.apk",
+            "size": 20499595,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08171547_releaseS.apk"
+          },
+          {
+            "name": "legado_beta_pp_3.26.08171547_releasePP.apk",
+            "size": 20499605,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08171547_releasePP.apk"
+          }
+        ]
+      },
       "errors": [],
       "fork": true,
       "forkOf": "Luoyacheng/legado-E"
