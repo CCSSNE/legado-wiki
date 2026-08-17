@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T07:18:22.416Z",
+  "generatedAt": "2026-08-17T09:03:26.462Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 35,
+      "stars": 37,
       "sourceUpdatedAt": "2026-08-17T00:43:44Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 46996,
+      "stars": 46997,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5684,
-      "sourceUpdatedAt": "2026-08-17T07:15:52Z",
+      "stars": 5689,
+      "sourceUpdatedAt": "2026-08-17T07:22:24Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.17",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2392,
+      "stars": 2394,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 778,
-      "sourceUpdatedAt": "2026-08-17T05:33:00Z",
+      "stars": 783,
+      "sourceUpdatedAt": "2026-08-17T08:44:11Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26081713",
+        "name": "legado_app_3.26081716",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-17T05:22:03Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/17**\n- 修复 RSS 收藏页视图重建后重复收集数据的问题\n- 搜索结果支持按屏蔽词过滤书名、作者和分类\n- 修复特定换行格式下切换净化会改变正文分段的问题\n- Android 9 及以上版本拖动选择文字时显示系统放大镜\n- 书源导入对比页支持打开替换管理并在返回后刷新预览\n- 修复搜索自动任务后上移或下移可能无效的问题\n- 代码查看对话框支持搜索并循环定位匹配文本\n- 阅读页书签标记优先显示在页眉右侧\n- 修复在搜索或分组筛选书源时拖动排序会覆盖隐藏书源顺序的问题\n- 修复在搜索或分组筛选书架时拖动排序会覆盖隐藏书籍顺序的问题\n- 修复大尺寸自定义段评图标在文字行中显示偏上的问题\n\n",
+        "createdAt": "2026-08-17T08:23:41Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/17**\n- 修复连续触发搜索翻页时可能跳页或提前停止的问题\n- 修复 RSS 收藏页视图重建后重复收集数据的问题\n- 搜索结果支持按屏蔽词过滤书名、作者和分类\n- 修复特定换行格式下切换净化会改变正文分段的问题\n- Android 9 及以上版本拖动选择文字时显示系统放大镜\n- 书源导入对比页支持打开替换管理并在返回后刷新预览\n- 修复搜索自动任务后上移或下移可能无效的问题\n- 代码查看对话框支持搜索并循环定位匹配文本\n- 阅读页书签标记优先显示在页眉右侧\n- 修复在搜索或分组筛选书源时拖动排序会覆盖隐藏书源顺序的问题\n- 修复在搜索或分组筛选书架时拖动排序会覆盖隐藏书籍顺序的问题\n- 修复大尺寸自定义段评图标在文字行中显示偏上的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26081713_release.apk",
-            "size": 20266382,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081713_release.apk"
+            "name": "legado_app_3.26081716_release.apk",
+            "size": 20250022,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081716_release.apk"
           },
           {
-            "name": "legado_app_3.26081713_releaseA.apk",
-            "size": 20266388,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081713_releaseA.apk"
+            "name": "legado_app_3.26081716_releaseA.apk",
+            "size": 20250030,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081716_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26081713_universal_release.apk",
-            "size": 26233562,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081713_universal_release.apk"
+            "name": "legado_app_3.26081716_universal_release.apk",
+            "size": 26217211,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081716_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26081713_universal_releaseA.apk",
-            "size": 26233559,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081713_universal_releaseA.apk"
+            "name": "legado_app_3.26081716_universal_releaseA.apk",
+            "size": 26217201,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081716_universal_releaseA.apk"
           }
         ]
       },
@@ -257,35 +257,35 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 295,
-      "sourceUpdatedAt": "2026-08-16T16:41:46Z",
+      "sourceUpdatedAt": "2026-08-17T07:53:20Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.081700",
-        "tagName": "beta-3.26.081700",
+        "name": "legado_app_3.26.081715",
+        "tagName": "beta-3.26.081715",
         "prerelease": true,
-        "publishedAt": "2026-08-16T16:41:46Z",
-        "createdAt": "2026-08-16T16:25:36Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n### 更新内容\n* fix(书架/主题)：修复文件夹封面、书籍外边框、三点菜单不适配主题的三处问题\n* perf: 修复高亮规则较多时打开缓存章节缓慢的问题。\n* fix: 修复目录刷新后章节缓存因文件名变化而失效的问题\n* 更新日志\n\n",
+        "publishedAt": "2026-08-17T07:53:20Z",
+        "createdAt": "2026-08-17T07:36:12Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n### 更新内容\nMerge pull request #223 from xingzheyousan/main\n\n阅读记录增加全局合并同名书籍功能，新增权限管理展示界面\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.081700_release.apk",
-            "size": 30512397,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081700/legado_beta_3.26.081700_release.apk"
+            "name": "legado_beta_3.26.081715_release.apk",
+            "size": 30550373,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081715/legado_beta_3.26.081715_release.apk"
           },
           {
-            "name": "legado_compat_3.26.081700_legacy.apk",
-            "size": 30512390,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081700/legado_compat_3.26.081700_legacy.apk"
+            "name": "legado_compat_3.26.081715_legacy.apk",
+            "size": 30550359,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081715/legado_compat_3.26.081715_legacy.apk"
           },
           {
-            "name": "legado_plus_3.26.081700_releaseS.apk",
-            "size": 30512406,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081700/legado_plus_3.26.081700_releaseS.apk"
+            "name": "legado_plus_3.26.081715_releaseS.apk",
+            "size": 30550371,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081715/legado_plus_3.26.081715_releaseS.apk"
           },
           {
-            "name": "legado_z_debug_3.26.081700.apk",
-            "size": 68171886,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081700/legado_z_debug_3.26.081700.apk"
+            "name": "legado_z_debug_3.26.081715.apk",
+            "size": 68209791,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081715/legado_z_debug_3.26.081715.apk"
           }
         ]
       },
@@ -394,7 +394,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 266,
+      "stars": 267,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -533,7 +533,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 111,
+      "stars": 112,
       "sourceUpdatedAt": "2026-08-07T14:35:54Z",
       "githubArchived": false,
       "release": {
@@ -674,35 +674,35 @@
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
       "stars": 11,
-      "sourceUpdatedAt": "2026-08-14T01:16:57Z",
+      "sourceUpdatedAt": "2026-08-17T07:57:39Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_beta_3.26.081321",
+        "name": "legado_app_beta_3.26.081715",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-08-13T13:20:47Z",
-        "createdAt": "2026-08-13T13:20:45Z",
-        "body": "### 更新内容\n* [修复]：彻底解决 GitHub Releases 页面 beta 版本排序置底的问题（上两次 commit 是错误的）\n\n- 问题背景：之前发现 `beta` 标签即使使用了空 Commit 或伪造的 2038 年时间戳，也始终排在 `beta-xxx` 后面（置底）。\n- 根本原因：查阅数据后确认，GitHub Releases 页面在处理带有 `beta` 等相似前缀的标签时，会强制使用 SemVer（语义化版本）或字母降序排列，而忽略时间戳。在字符串比对规则中，`beta-xxx` 永远大于单纯的 `beta`，因此 `beta` 永远被压在最底下。\n- 解决方案：\n  1. 修改历史版本的 tag 命名，由 `beta-${{ env.VERSION }}` 改为 `archive-beta-${{ env.VERSION }}`。在首字母比对中（a < b），`archive-beta` 会自然排在 `beta` 之后，从而让 `beta` 顺利登顶。\n  2. 同步更新 `Delete All Previous Beta Releases` 清理脚本，使其能够同时识别并清理旧的 `beta-` 与新的 `archive-beta-` 标签。\n  3. 移除了此前无效的 `git commit --allow-empty` 与伪造时间的逻辑代码，恢复为最纯粹的标签覆盖。\n\n",
+        "publishedAt": "2026-08-17T07:57:40Z",
+        "createdAt": "2026-08-17T07:57:38Z",
+        "body": "### 更新内容\n* [修复 优化]：修复离线缓存界面，单本下载取消后 CacheBookService 通知栏有时无法正常关闭的 Bug；修复缓存任务列表未及时清理引起的内存泄漏，及结束时的异常取消问题\n\n**内存泄漏和协程竞态问题修复**\n\n（首先补充大量了对僵尸任务 (ZombieTask) 的日志打点，方便后续排查生命周期问题。）\n\na. 修复离线缓存界面，单本下载取消后 CacheBookService 通知栏有时无法正常自动关闭的 Bug\n\n**Bug 现象**:\n同时下载多本书籍时，如果在离线缓存界面通过点击列表单独取消书籍（暂停），当取消到最后一本时，有时通知栏无法消失，并死卡在“正在下载：0|等待中：0|失败：0|成功：X（历史累计成功数）”的状态。\n\n**根本原因**:\n1. 触发单本取消 (`IntentAction.remove`) 时，内部调用 `CacheBookModel.stop()`，其通过 `tasks.clear()` 异步取消下载协程。\n2. 由于协程的 cancel 回调是异步执行的，此时同步代码往下走，`onDownloadSet`（正在下载集合）并未立即清空。\n3. 同步触发的 `onFinally()` 因 `onDownloadSet` 不为空，拒绝将该书从 `cacheBookMap` 中移除。\n4. 导致外层 `CacheBookService` 的 `if (cacheBookMap.isEmpty())` 判定为 false，完美错失了调用 `stopSelf()` 的唯一时机。\n5. 服务变成“僵尸进程”，其内部轮询持续读取未清零的 `successDownloadSet` 历史数据，并不断刷新通知栏。\n（此时点击取消可以正常销毁通知）\n\n**修复逻辑**:\n `CacheBookModel.stop()` 中加入`onDownloadSet.clear()`。确保即使单本停止时也同步清空运行队列，让后续的 `onFinally()` 能立即将书籍踢出 `cacheBookMap`，从而顺利触发 `stopSelf()` 销毁服务。\n\nb. 修复缓存任务列表未及时清理引起的内存泄漏，及结束时的异常取消问题\n\n**问题背景：**\n当我们在进行书籍缓存下载时，会在后台输出大量 `Coroutine.cancel()` 和 `onCancel() called` 日志。特别是在停止缓存服务（如接收到 `IntentAction.stop` 停止广播）时，会瞬间对所有历史成功完成的任务再次调用取消并打印错误堆栈。这暴露出任务管理上的内存泄漏和底层协程框架的方法缺陷。\n\n**修复详情：**\n1. **修复 `CacheBook.kt` 中的内存泄漏：**\n   在 `CacheBookModel` 中启动章节下载时，每个下载协程都会通过 `tasks.add` 被加入 `CompositeCoroutine` 中保存。但任务自然结束（成功/失败）后，缺少移除逻辑，导致 `tasks` 随下载章节无限膨胀。\n   - 修改方案：使用 `.also { coroutine -> ... }` 取代原有的 `.apply { ... }` 和 `.let { ... }` 链式调用。在确保明确的 `coroutine` 变量引用的前提下，在协程自带的 `.onFinally { ... }` 生命周期回调中加入 `tasks.remove(coroutine)`。保证每一个任务在执行生命周期终了时都能将自己移出缓存管理队列。\n   - 采用 `tasks.delete(coroutine)` 而不是 `tasks.remove(it)`  ，避免因 `remove` 内部的联动 `cancel()` 触发了 `onCancel` 回调，从而把该章节错误地塞回 `waitDownloadSet` 产生死循环。\n\n2. **修复 `Coroutine.kt` 的取消设计缺陷：**\n   修改自定义协程封装 `Coroutine.kt` 中的 `cancel()` 方法。之前该方法缺少对生命周期的把控，只要被调用就会无条件触发内部的 `onCancel` 回调。导致原本的错误内存泄漏下，如 `CompositeCoroutine.clear()` 等批量清理方法误杀早已结束的无辜任务。\n   - 修改方案：在 `cancel()` 方法头部加入 `if (job.isCompleted) return` 拦截。当探测到目标底层 `Job` 已经执行结束时，阻断取消回调，并且打印异常调用的追踪日志 (`ZombieTask Log: Coroutine.Cancel() 错误调用...`) 进行监控。\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.08132111_release.apk",
-            "size": 20497836,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08132111_release.apk"
+            "name": "legado_beta_3.26.08171547_release.apk",
+            "size": 20499626,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08171547_release.apk"
           },
           {
-            "name": "legado_beta_a_3.26.08132111_releaseA.apk",
-            "size": 20497832,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08132111_releaseA.apk"
+            "name": "legado_beta_a_3.26.08171547_releaseA.apk",
+            "size": 20499590,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08171547_releaseA.apk"
           },
           {
-            "name": "legado_beta_plus_3.26.08132111_releaseS.apk",
-            "size": 20497836,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08132111_releaseS.apk"
+            "name": "legado_beta_plus_3.26.08171547_releaseS.apk",
+            "size": 20499595,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08171547_releaseS.apk"
           },
           {
-            "name": "legado_beta_pp_3.26.08132111_releasePP.apk",
-            "size": 20497820,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08132111_releasePP.apk"
+            "name": "legado_beta_pp_3.26.08171547_releasePP.apk",
+            "size": 20499605,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08171547_releasePP.apk"
           }
         ]
       },
