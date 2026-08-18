@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:48:23.069Z",
+  "generatedAt": "2026-08-18T16:50:51.705Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47008,
+      "stars": 47007,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5715,
+      "stars": 5716,
       "sourceUpdatedAt": "2026-08-18T12:51:39Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2408,
+      "stars": 2409,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 805,
-      "sourceUpdatedAt": "2026-08-18T12:01:09Z",
+      "stars": 806,
+      "sourceUpdatedAt": "2026-08-18T16:34:12Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081817",
@@ -256,36 +256,36 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 296,
-      "sourceUpdatedAt": "2026-08-17T17:21:02Z",
+      "stars": 297,
+      "sourceUpdatedAt": "2026-08-18T16:07:35Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.081801",
-        "tagName": "beta-3.26.081801",
+        "name": "legado_app_3.26.081823",
+        "tagName": "beta-3.26.081823",
         "prerelease": true,
-        "publishedAt": "2026-08-17T17:21:02Z",
-        "createdAt": "2026-08-17T17:05:25Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n### 更新内容\n* 上传Git 本地提交纪律\n* fix(书架): 修复 BookshelfMatcher 在 author 为空时匹配失败导致图标不显示\n* refactor(书架): 统一 getState 精确匹配到 bookUrlKeys 并移除冗余 exactKeys\n* fix(测试): 补充 FakeReadRecordDao 缺失的 getAllReadRecordsList 方法实现\n* fix(底栏): 修复玻璃/磨砂效果在主界面不明显的问题\n* feat(主题): 兼容导入 .red 格式主题包\n* refactor(主题): 新增 RedThemeImporter 专门处理 .red 格式主题包\n* fix(注释): 修正 .red 主题包来源描述为 Reeden 阅读 App\n* fix(主题): 修复文件选择器无法选择 .red 格式主题包的问题\n* revert(主题): 撤回 typesOfExtensions 的修改\n* fix(主题): 修复 .red 底栏图标导入丢失 normal 状态的问题\n* feat(主题): 更新应用主题摘要文案\n* 更新日志\n\n",
+        "publishedAt": "2026-08-18T16:07:36Z",
+        "createdAt": "2026-08-18T15:52:22Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n### 更新内容\n* fix(底栏): 修复 SVG 格式底栏图标无法显示的问题\n* feat(主题): 支持 SVG 底栏图标选择、GZIP 类 .red 格式和图标缓存\n* feat(主题): 支持多格式主题导出\n* fix(主题): 修复导出弹窗缺少确认键和 .red 格式字段缺失\n* feat(主题): 删除应用主题时支持选择是否一并删除关联组件\n* feat(主题): 删除选项持久化到 SharedPreferences\n* 更新日志\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.081801_release.apk",
-            "size": 30550888,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081801/legado_beta_3.26.081801_release.apk"
+            "name": "legado_beta_3.26.081823_release.apk",
+            "size": 30587210,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081823/legado_beta_3.26.081823_release.apk"
           },
           {
-            "name": "legado_compat_3.26.081801_legacy.apk",
-            "size": 30550878,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081801/legado_compat_3.26.081801_legacy.apk"
+            "name": "legado_compat_3.26.081823_legacy.apk",
+            "size": 30587191,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081823/legado_compat_3.26.081823_legacy.apk"
           },
           {
-            "name": "legado_plus_3.26.081801_releaseS.apk",
-            "size": 30550893,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081801/legado_plus_3.26.081801_releaseS.apk"
+            "name": "legado_plus_3.26.081823_releaseS.apk",
+            "size": 30587211,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081823/legado_plus_3.26.081823_releaseS.apk"
           },
           {
-            "name": "legado_z_debug_3.26.081801.apk",
-            "size": 68242980,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081801/legado_z_debug_3.26.081801.apk"
+            "name": "legado_z_debug_3.26.081823.apk",
+            "size": 68295788,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.081823/legado_z_debug_3.26.081823.apk"
           }
         ]
       },
