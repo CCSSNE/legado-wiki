@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T10:48:56.105Z",
+  "generatedAt": "2026-08-18T11:43:49.989Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47005,
+      "stars": 47006,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,7 +86,7 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5711,
-      "sourceUpdatedAt": "2026-08-18T05:01:25Z",
+      "sourceUpdatedAt": "2026-08-18T11:07:48Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.17",
@@ -185,7 +185,7 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 800,
-      "sourceUpdatedAt": "2026-08-18T10:36:19Z",
+      "sourceUpdatedAt": "2026-08-18T11:38:09Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081817",
@@ -567,20 +567,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 60,
-      "sourceUpdatedAt": "2026-08-17T17:45:31Z",
+      "sourceUpdatedAt": "2026-08-18T11:33:48Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.081215",
-        "tagName": "3.26.081215",
+        "name": "legado_ng_3.26.081819",
+        "tagName": "3.26.081819",
         "prerelease": false,
-        "publishedAt": "2026-08-12T07:53:23Z",
-        "createdAt": "2026-08-12T07:37:55Z",
-        "body": "### 更新内容\n* 修复Release菜单的R8名称依赖\n* 统一朗读引擎下拉刷新交互\n* Release保留压缩并关闭名称混淆\n* 重构阅读划线与书签抽屉\n* 完善阅读浮窗预设与听书胶囊\n* 恢复内置文件选择器并支持默认切换\n* 修复低版本安卓阅读页初始化卡住\n* 统一搜索框日夜样式并修正发现页空状态\n\n",
+        "publishedAt": "2026-08-18T11:33:48Z",
+        "createdAt": "2026-08-18T11:19:03Z",
+        "body": "### 更新内容\n* 重构书架界面并迁移关联页面到Compose\n* 修复阅读更多菜单未跟随预设透明度\n* 优化书籍目录抽屉交互体验\n* 提高书架分组网格背景透明度\n* 提高阅读正文选区透明度\n* 过滤选字菜单中的Legado处理项\n* 校正选字划线图标位置\n* 安全更新内置订阅源默认数据\n* 统一RSS页面顶栏与状态栏样式\n* 重构订阅源管理与编辑界面\n* 重构书籍详情及关联页面为Compose\n* 完善书架顶栏与主题预设\n* 修复换源等待框的 Compose 生命周期崩溃\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08121541_release.apk",
-            "size": 26749204,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.081215/legado_NG_3.26.08121541_release.apk"
+            "name": "legado_NG_3.26.08181920_release.apk",
+            "size": 26981137,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.081819/legado_NG_3.26.08181920_release.apk"
           }
         ]
       },
