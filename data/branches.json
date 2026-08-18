@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T16:50:51.705Z",
+  "generatedAt": "2026-08-18T17:46:11.060Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47007,
+      "stars": 47006,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5716,
-      "sourceUpdatedAt": "2026-08-18T12:51:39Z",
+      "sourceUpdatedAt": "2026-08-18T17:19:38Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.17",
-        "tagName": "3.26.16-beta.17",
+        "name": "Pre-release 3.26.16-beta.18",
+        "tagName": "3.26.16-beta.18",
         "prerelease": true,
-        "publishedAt": "2026-08-14T08:45:14Z",
-        "createdAt": "2026-08-14T08:29:55Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* fix: 统一听书播放器语速调节范围与经典朗读控制一致 (#2033)\n* feat: 书源外部导入问题",
+        "publishedAt": "2026-08-18T17:19:24Z",
+        "createdAt": "2026-08-18T16:51:28Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 恢复扫码导入书源入口 (#2078)\n* refactor: 移除 Hutool 依赖,改用 JCA 与纯 Kotlin 实现\n* fix(read-record): 修复备份导入重复记录并完善未知作者归属 (#2076)\n* fix: 目录更新后新增章节点击无法跳转 (Closes #2043) (#2077)\n* fix: 听书系统媒体播放器进度条随朗读推进 (#2042)\n* fix: 底栏填充样式着色层半透明,修复模糊被完全遮住 (Closes #2044) (#2075)\n* feat: 智谱AI相关\n* feat: 优化漫画阅读\n* fix: 同步刷新后的在线目录阅读状态",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.17-arm64-v8a.apk",
-            "size": 19564086,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.18-arm64-v8a.apk",
+            "size": 19449755,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.18/legado-3.26.16-beta.18-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.17-armeabi-v7a.apk",
-            "size": 19103915,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.18-armeabi-v7a.apk",
+            "size": 18989576,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.18/legado-3.26.16-beta.18-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.17.apk",
-            "size": 26136561,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/legado-3.26.16-beta.17.apk"
+            "name": "legado-3.26.16-beta.18.apk",
+            "size": 26022229,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.18/legado-3.26.16-beta.18.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 262924799,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.17/mapping.txt"
+            "size": 262820600,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.18/mapping.txt"
           }
         ]
       },
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 806,
+      "stars": 807,
       "sourceUpdatedAt": "2026-08-18T16:34:12Z",
       "githubArchived": false,
       "release": {
