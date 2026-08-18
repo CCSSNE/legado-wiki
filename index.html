@@ -860,7 +860,7 @@
                     { branch: 'max-cichen' }
                   ]
                 },
-                { branch: 'ng', children: [{ branch: 'fu' }] },
+                { branch: 'ng', children: [{ branch: 'fu' /* 已隐藏：数据侧 hidden=true，恢复显示只需去掉该标记 */ }] },
                 { branch: 'pp' },
                 { branch: 'jingshiro' }
               ]
@@ -913,7 +913,7 @@
             return `<li class="tree-external${dash}"><a class="tree-link" href="https://github.com/${escapeAttribute(external.repo)}" target="_blank" rel="noopener">${escapeHtml(external.name)}<span class="tree-arrow"> ↗</span></a></li>`;
           }
           const branch = byId.get(node.branch);
-          if (!branch) return '';
+          if (!branch || branch.hidden) return '';
           const pin = branch.pinned ? '<span class="tree-pin">站长</span>' : '';
           const label = `${escapeHtml(branch.name)}${pin}`;
           const pinnedClass = branch.pinned ? ' tree-link-pinned' : '';
@@ -977,11 +977,13 @@
           }
         }
 
-        activeBranches = [...(data.branches || [])].sort((left, right) => {
-          if (left.pinned && !right.pinned) return -1;
-          if (!left.pinned && right.pinned) return 1;
-          return (right.stars ?? -1) - (left.stars ?? -1);
-        });
+        activeBranches = [...(data.branches || [])]
+          .filter(branch => !branch.hidden)
+          .sort((left, right) => {
+            if (left.pinned && !right.pinned) return -1;
+            if (!left.pinned && right.pinned) return 1;
+            return (right.stars ?? -1) - (left.stars ?? -1);
+          });
 
         nav.innerHTML = renderTreeNav(activeBranches);
         list.innerHTML = activeBranches.map(renderCardShell).join('');
