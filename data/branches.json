@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T08:56:59.472Z",
+  "generatedAt": "2026-08-19T09:51:26.942Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 45,
-      "sourceUpdatedAt": "2026-08-19T08:49:30Z",
+      "sourceUpdatedAt": "2026-08-19T09:23:47Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C v3.26.081900c（预发布）",
-        "tagName": "v3.26.081900c",
+        "name": "阅读 C v3.26.081908c（预发布）",
+        "tagName": "v3.26.081908c",
         "prerelease": true,
-        "publishedAt": "2026-08-19T01:02:24Z",
-        "createdAt": "2026-08-19T00:59:14Z",
-        "body": "## 阅读 C v3.26.081900c（预发布）\n\n本版本集中修复**目录**相关的一批问题：\n\n- 修复目录反转列表更新与视口导航的耦合问题\n- 修复目录首次定位与反序卷折叠\n- 修复目录结构变更后的卷折叠状态\n- 修复搜索状态下的目录结构重建\n\n### 其他\n\n- AGENTS.md 补全调试模式说明与 F 工具工作流\n\n> 预发布版本（Pre），仅供抢先体验与测试。\n",
+        "publishedAt": "2026-08-19T09:21:48Z",
+        "createdAt": "2026-08-19T09:12:49Z",
+        "body": "## 阅读 C v3.26.081908c（预发布）\n\n本版本统一了书籍音频标识的展示：\n\n- 书籍详情页封面增加音频角标\n- 发现页增加音频标识\n- 统一 bindBookMediaBadge，按 bookType 区分有声书与文字书\n- 将 BookMediaBadge 移至共享 book UI 层，书架、发现、详情共用同一实现\n\n> 预发布版本（Pre），仅供抢先体验与测试。\n",
         "assets": [
           {
-            "name": "legado_app_3.26.081900_10693.apk",
-            "size": 41315405,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081900c/legado_app_3.26.081900_10693.apk"
+            "name": "legado_app_3.26.081908_10695.apk",
+            "size": 41315684,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081908c/legado_app_3.26.081908_10695.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47011,
+      "stars": 47010,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5726,
+      "stars": 5727,
       "sourceUpdatedAt": "2026-08-18T17:19:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2416,
+      "stars": 2417,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,35 +184,35 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 811,
-      "sourceUpdatedAt": "2026-08-19T08:30:44Z",
+      "stars": 814,
+      "sourceUpdatedAt": "2026-08-19T09:46:18Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26081916",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-19T08:00:40Z",
+        "createdAt": "2026-08-19T08:57:51Z",
         "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/19**\n- 修复复用网页实例可能被重复回收导致订阅源界面偶现崩溃的问题\n- 单章换源时当前书源固定显示在首项且不参与字数筛选和排序\n- 修复多设备阅读记录可能在重新打开书籍时重复累计的问题\n- 修复漫画阅读把后台停留时间计入阅读时长的问题\n- 阅读记录时长统一使用小时、分钟和秒显示\n- 修复源编辑页反复移动光标时输入法可能遮挡光标的问题\n- 修复听书切换章节时加载时间可能被计入阅读时长的问题\n\n",
         "assets": [
           {
             "name": "legado_app_3.26081916_release.apk",
-            "size": 20792920,
+            "size": 20792910,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081916_release.apk"
           },
           {
             "name": "legado_app_3.26081916_releaseA.apk",
-            "size": 20792909,
+            "size": 20792928,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081916_releaseA.apk"
           },
           {
             "name": "legado_app_3.26081916_universal_release.apk",
-            "size": 26760104,
+            "size": 26760100,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081916_universal_release.apk"
           },
           {
             "name": "legado_app_3.26081916_universal_releaseA.apk",
-            "size": 26760094,
+            "size": 26760099,
             "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26081916_universal_releaseA.apk"
           }
         ]
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 470,
+      "stars": 471,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
