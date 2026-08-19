@@ -661,6 +661,55 @@
 
     .forks-row a:hover { text-decoration: underline; }
 
+    .traffic-box {
+      position: relative;
+      height: 300px;
+    }
+
+    .traffic-box .loading-box,
+    .traffic-box .error-box,
+    .traffic-box .empty-box {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .traffic-toggles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .traffic-toggles[hidden] {
+      display: none;
+    }
+
+    .traffic-toggles button {
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: #f8faf7;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      transition: 0.15s;
+    }
+
+    .traffic-toggles button:hover {
+      border-color: #abc3bb;
+      color: var(--accent-strong);
+    }
+
+    .traffic-toggles button.active {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+      color: #fff;
+    }
+
     .fork-chip {
       display: inline-block;
       margin: 3px 5px 0 0;
@@ -693,19 +742,6 @@
     .footer-col-right { text-align: right; }
 
     .footer-time { margin-top: 4px; }
-
-    .footer-stat {
-      display: flex;
-      justify-content: flex-end;
-      gap: 16px;
-      margin-top: 4px;
-      color: #7d8984;
-    }
-
-    .stat-item { white-space: nowrap; }
-    .stat-num { color: var(--accent-strong); font-weight: 700; }
-    #busuanzi_container_site_pv[style*="display:none"] ~ .stat-item,
-    #busuanzi_container_site_uv[style*="display:none"] { display: none; }
 
     @media (max-width: 760px) {
       body { padding: 0 14px 40px; }
@@ -788,6 +824,23 @@
       </div>
     </section>
 
+    <section class="resource-section" id="traffic" data-nav-target aria-label="访问趋势">
+      <div class="repo-header">
+        <div class="repo-heading">
+          <h2>访问趋势</h2>
+          <span class="tag">stats</span>
+        </div>
+        <div class="traffic-toggles" id="trafficToggles" role="group" aria-label="切换统计范围" hidden>
+          <button type="button" data-traffic-scope="all" class="active" title="两个站点合计">总访问量</button>
+          <button type="button" data-traffic-scope="edgeone" title="EdgeOne（国内站）">国内站</button>
+          <button type="button" data-traffic-scope="github" title="GitHub Pages（原站）">原站</button>
+        </div>
+      </div>
+      <div class="traffic-box" id="trafficChart">
+        <div class="loading-box">正在加载访问统计...</div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-cols">
         <div class="footer-col footer-col-left">
@@ -800,10 +853,6 @@
           <div class="footer-rule">分支树线型：实线/虚线按 GitHub 实际 fork 数据自动更新。</div>
           <div class="footer-rule">分支树排序：补档置顶；先实线后虚线；各组内按家族 Star（自身+全部后代）降序。</div>
           <div class="footer-time" id="syncTime">正在同步 GitHub Release...</div>
-          <div class="footer-stat">
-            <span id="busuanzi_container_site_pv" class="stat-item">本站总访问量 <span id="busuanzi_value_site_pv" class="stat-num">…</span> 次</span>
-            <span id="busuanzi_container_site_uv" class="stat-item">本站访客数 <span id="busuanzi_value_site_uv" class="stat-num">…</span> 人</span>
-          </div>
         </div>
       </div>
     </footer>
@@ -816,6 +865,7 @@
   </button>
 
   <script type="module" src="https://esm.sh/giscus@1"></script>
+  <!-- 不蒜子脚本必须保留：页面每次加载它都会给两个站点默默计数（页脚已不显示数字，趋势模块依赖它累计） -->
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script>
     (() => {
@@ -832,6 +882,7 @@
       const toggle = document.getElementById('accelToggle');
       const sourceSel = document.getElementById('accelSource');
       let activeBranches = [];
+      let trafficChart = null;
 
       const forkTree = [
         {
@@ -923,7 +974,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li></ul>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li><li><a class="tree-link" href="#traffic">访问趋势</a></li></ul>`;
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
@@ -992,6 +1043,7 @@
         initNavObserver();
         initCommentToggles();
         patchLinks();
+        initTrafficChart();
       }
 
       function renderCardShell(branch) {
@@ -1184,6 +1236,163 @@
         }, { rootMargin: '-70px 0px -45% 0px', threshold: [0.25] });
 
         document.querySelectorAll('[data-nav-target]').forEach(section => observer.observe(section));
+      }
+
+      function loadChartJs() {
+        return new Promise((resolve, reject) => {
+          if (window.Chart) {
+            resolve(window.Chart);
+            return;
+          }
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js';
+          script.onload = () => resolve(window.Chart);
+          script.onerror = () => reject(new Error('图表库加载失败'));
+          document.head.appendChild(script);
+        });
+      }
+
+      const TRAFFIC_SCOPES = {
+        // 净数 = 不蒜子原始累计值 − 我们自动化查询造成的虚增（每次快照对每站 +1，记录里 runs 是累计次数）
+        all: { label: '总访问量', pv: record => (record.pv ?? 0) - 2 * (record.runs || 0), uv: record => (record.uv ?? 0) - 2 * (record.runs || 0) },
+        edgeone: { label: '国内站', pv: record => (record.edgeone?.pv ?? 0) - (record.runs || 0), uv: record => (record.edgeone?.uv ?? 0) - (record.runs || 0) },
+        github: { label: '原站', pv: record => (record.github?.pv ?? 0) - (record.runs || 0), uv: record => (record.github?.uv ?? 0) - (record.runs || 0) }
+      };
+      let trafficScope = 'all';
+      let trafficTogglesBound = false;
+
+      async function initTrafficChart() {
+        const box = document.getElementById('trafficChart');
+        const toggles = document.getElementById('trafficToggles');
+        if (!box) return;
+        const render = html => {
+          box.innerHTML = html;
+        };
+
+        let stats;
+        const sources = [
+          `data/stats.json?v=${Date.now()}`,
+          `https://raw.githubusercontent.com/CCSSNE/legado-wiki/main/data/stats.json?v=${Date.now()}`
+        ];
+        for (const url of sources) {
+          try {
+            const response = await fetch(url, { headers: { Accept: 'application/json' } });
+            if (!response.ok) throw new Error(`统计文件 ${response.status}`);
+            stats = await response.json();
+            break;
+          } catch (error) {
+            if (url === sources[sources.length - 1]) {
+              render(`<div class="error-box">访问统计加载失败：${escapeHtml(error.message)}</div>`);
+              return;
+            }
+          }
+        }
+
+        const records = Array.isArray(stats?.records) ? stats.records : [];
+        if (records.length === 0) {
+          render('<div class="empty-box">数据积累中：每小时自动记录一次，这里会逐渐长出一条访问趋势曲线。</div>');
+          return;
+        }
+        if (records.length === 1) {
+          const first = records[0];
+          const cleanPv = (first.pv ?? 0) - 2 * (first.runs || 0);
+          const cleanUv = (first.uv ?? 0) - 2 * (first.runs || 0);
+          render(`<div class="empty-box">已开始记录（${escapeHtml(first.time)}）：两站合计访问 ${cleanPv.toLocaleString('zh-CN')} 次 · 访客 ${cleanUv.toLocaleString('zh-CN')} 人（已扣除自动化查询）。多积累几天后这里会显示趋势曲线。</div>`);
+          return;
+        }
+
+        let ChartClass;
+        try {
+          ChartClass = await loadChartJs();
+        } catch (error) {
+          render(`<div class="error-box">${escapeHtml(error.message)}，已积累 ${records.length} 天数据。</div>`);
+          return;
+        }
+
+        if (toggles) toggles.hidden = false;
+
+        const sweep = () => {
+          const scope = TRAFFIC_SCOPES[trafficScope] || TRAFFIC_SCOPES.all;
+          if (trafficChart) {
+            trafficChart.destroy();
+            trafficChart = null;
+          }
+          const canvas = document.createElement('canvas');
+          render('');
+          box.appendChild(canvas);
+          trafficChart = new ChartClass(canvas, {
+            type: 'line',
+            data: {
+              labels: records.map(record => record.time.slice(5)),
+              datasets: [
+                {
+                  label: `${scope.label} (PV)`,
+                  data: records.map(scope.pv),
+                  borderColor: '#2e6f64',
+                  backgroundColor: 'rgba(46, 111, 100, 0.08)',
+                  fill: true,
+                  tension: 0.3,
+                  pointRadius: 2,
+                  pointHoverRadius: 4,
+                  borderWidth: 2
+                },
+                {
+                  label: `${scope.label} (UV)`,
+                  data: records.map(scope.uv),
+                  borderColor: '#b97235',
+                  backgroundColor: 'rgba(185, 114, 53, 0.08)',
+                  fill: true,
+                  tension: 0.3,
+                  pointRadius: 2,
+                  pointHoverRadius: 4,
+                  borderWidth: 2
+                }
+              ]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
+              plugins: {
+                legend: {
+                  position: 'top',
+                  labels: { boxWidth: 14, usePointStyle: true, font: { size: 12 } }
+                },
+                tooltip: {
+                  callbacks: {
+                    title: items => items.length ? records[items[0].dataIndex].time : ''
+                  }
+                }
+              },
+              scales: {
+                x: {
+                  ticks: { maxTicksLimit: 12, font: { size: 11 }, color: '#66716d' },
+                  grid: { display: false }
+                },
+                y: {
+                  beginAtZero: false,
+                  ticks: { font: { size: 11 }, color: '#66716d', callback: value => Number(value).toLocaleString('zh-CN') },
+                  grid: { color: 'rgba(22, 61, 56, 0.08)' }
+                }
+              }
+            }
+          });
+        };
+
+        if (toggles && !trafficTogglesBound) {
+          trafficTogglesBound = true;
+          toggles.addEventListener('click', event => {
+            const button = event.target.closest('[data-traffic-scope]');
+            if (!button || button.dataset.trafficScope === trafficScope) return;
+            trafficScope = button.dataset.trafficScope;
+            toggles.querySelectorAll('[data-traffic-scope]').forEach(item => {
+              item.classList.toggle('active', item === button);
+            });
+            sweep();
+          });
+        }
+
+        sweep();
       }
 
       function markdownToHtml(markdown) {
