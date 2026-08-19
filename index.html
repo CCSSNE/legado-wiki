@@ -663,7 +663,7 @@
 
     .traffic-box {
       position: relative;
-      height: 300px;
+      height: 340px;
     }
 
     .traffic-box .loading-box,
@@ -1238,15 +1238,15 @@
         document.querySelectorAll('[data-nav-target]').forEach(section => observer.observe(section));
       }
 
-      function loadChartJs() {
+      function loadECharts() {
         return new Promise((resolve, reject) => {
-          if (window.Chart) {
-            resolve(window.Chart);
+          if (window.echarts) {
+            resolve(window.echarts);
             return;
           }
           const script = document.createElement('script');
-          script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js';
-          script.onload = () => resolve(window.Chart);
+          script.src = 'https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js';
+          script.onload = () => resolve(window.echarts);
           script.onerror = () => reject(new Error('图表库加载失败'));
           document.head.appendChild(script);
         });
@@ -1301,82 +1301,127 @@
           return;
         }
 
-        let ChartClass;
+        let echartsApi;
         try {
-          ChartClass = await loadChartJs();
+          echartsApi = await loadECharts();
         } catch (error) {
           render(`<div class="error-box">${escapeHtml(error.message)}，已积累 ${records.length} 天数据。</div>`);
           return;
+        }
+        if (!window._trafficResizeBound) {
+          window._trafficResizeBound = true;
+          window.addEventListener('resize', () => {
+            if (trafficChart) trafficChart.resize();
+          });
         }
 
         if (toggles) toggles.hidden = false;
 
         const sweep = () => {
           const scope = TRAFFIC_SCOPES[trafficScope] || TRAFFIC_SCOPES.all;
+          // 切换范围时保留当前的缩放位置（如果有）
+          const zoomInfo = trafficChart
+            ? (trafficChart.getOption()?.dataZoom || []).find(item => item?.type === 'slider') || {}
+            : {};
           if (trafficChart) {
-            trafficChart.destroy();
+            trafficChart.dispose();
             trafficChart = null;
           }
-          const canvas = document.createElement('canvas');
           render('');
-          box.appendChild(canvas);
-          trafficChart = new ChartClass(canvas, {
-            type: 'line',
-            data: {
-              labels: records.map(record => record.time.slice(5)),
-              datasets: [
-                {
-                  label: `${scope.label} (PV)`,
-                  data: records.map(scope.pv),
-                  borderColor: '#2e6f64',
-                  backgroundColor: 'rgba(46, 111, 100, 0.08)',
-                  fill: true,
-                  tension: 0.3,
-                  pointRadius: 2,
-                  pointHoverRadius: 4,
-                  borderWidth: 2
-                },
-                {
-                  label: `${scope.label} (UV)`,
-                  data: records.map(scope.uv),
-                  borderColor: '#b97235',
-                  backgroundColor: 'rgba(185, 114, 53, 0.08)',
-                  fill: true,
-                  tension: 0.3,
-                  pointRadius: 2,
-                  pointHoverRadius: 4,
-                  borderWidth: 2
-                }
-              ]
-            },
-            options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              interaction: { mode: 'index', intersect: false },
-              plugins: {
-                legend: {
-                  position: 'top',
-                  labels: { boxWidth: 14, usePointStyle: true, font: { size: 12 } }
-                },
-                tooltip: {
-                  callbacks: {
-                    title: items => items.length ? records[items[0].dataIndex].time : ''
-                  }
-                }
-              },
-              scales: {
-                x: {
-                  ticks: { maxTicksLimit: 12, font: { size: 11 }, color: '#66716d' },
-                  grid: { display: false }
-                },
-                y: {
-                  beginAtZero: false,
-                  ticks: { font: { size: 11 }, color: '#66716d', callback: value => Number(value).toLocaleString('zh-CN') },
-                  grid: { color: 'rgba(22, 61, 56, 0.08)' }
-                }
+          trafficChart = echartsApi.init(box);
+          trafficChart.setOption({
+            animationDuration: 300,
+            tooltip: {
+              trigger: 'axis',
+              backgroundColor: '#fff',
+              borderColor: 'rgba(22, 61, 56, 0.15)',
+              textStyle: { color: '#18211f', fontSize: 12 },
+              extraCssText: 'box-shadow:0 8px 24px rgba(0,0,0,.08); border-radius:10px; padding:10px 12px;',
+              formatter: params => {
+                const p0 = Array.isArray(params) ? params[0] : params;
+                const idx = p0?.dataIndex ?? 0;
+                const header = `<div style="font-weight:800;margin-bottom:6px">${escapeHtml(records[idx]?.time || '')}</div>`;
+                const rows = (params || []).map(p =>
+                  `<div style="display:flex;justify-content:space-between;gap:16px"><span>${p.marker}${escapeHtml(p.seriesName)}</span><b>${Number(p.value).toLocaleString('zh-CN')}</b></div>`
+                ).join('');
+                return header + rows;
               }
-            }
+            },
+            grid: { left: 52, right: 18, top: 40, bottom: 64 },
+            legend: {
+              top: 6,
+              right: 12,
+              itemWidth: 12,
+              itemHeight: 8,
+              textStyle: { color: '#66716d', fontSize: 12 },
+              data: [`${scope.label} (PV)`, `${scope.label} (UV)`]
+            },
+            xAxis: {
+              type: 'category',
+              data: records.map(record => record.time.slice(5)),
+              boundaryGap: false,
+              axisLine: { lineStyle: { color: 'rgba(22, 61, 56, 0.25)' } },
+              axisTick: { show: false },
+              axisLabel: { color: '#66716d', fontSize: 11 }
+            },
+            yAxis: {
+              type: 'value',
+              axisLabel: { color: '#66716d', fontSize: 11, formatter: value => Number(value).toLocaleString('zh-CN') },
+              splitLine: { lineStyle: { color: 'rgba(22, 61, 56, 0.08)' } }
+            },
+            dataZoom: [
+              { type: 'inside', xAxisIndex: 0, start: 0, end: 100 },
+              {
+                type: 'slider',
+                xAxisIndex: 0,
+                bottom: 10,
+                height: 22,
+                borderColor: 'rgba(22, 61, 56, 0.15)',
+                fillerColor: 'rgba(46, 111, 100, 0.12)',
+                handleSize: '100%',
+                dataBackground: {
+                  lineStyle: { color: 'rgba(46, 111, 100, 0.45)' },
+                  areaStyle: { color: 'rgba(46, 111, 100, 0.08)' }
+                },
+                selectedDataBackground: {
+                  lineStyle: { color: '#2e6f64' },
+                  areaStyle: { color: 'rgba(46, 111, 100, 0.22)' }
+                },
+                textStyle: { color: '#66716d', fontSize: 10 }
+              }
+            ],
+            series: [
+              {
+                name: `${scope.label} (PV)`,
+                type: 'line',
+                data: records.map(scope.pv),
+                smooth: true,
+                showSymbol: false,
+                symbol: 'circle',
+                symbolSize: 7,
+                lineStyle: { width: 2, color: '#2e6f64' },
+                itemStyle: { color: '#2e6f64' },
+                areaStyle: { color: 'rgba(46, 111, 100, 0.08)' },
+                emphasis: { focus: 'series' }
+              },
+              {
+                name: `${scope.label} (UV)`,
+                type: 'line',
+                data: records.map(scope.uv),
+                smooth: true,
+                showSymbol: false,
+                symbol: 'circle',
+                symbolSize: 7,
+                lineStyle: { width: 2, color: '#b97235' },
+                itemStyle: { color: '#b97235' },
+                areaStyle: { color: 'rgba(185, 114, 53, 0.08)' },
+                emphasis: { focus: 'series' }
+              }
+            ]
           });
+          if (Number.isFinite(zoomInfo.start) && Number.isFinite(zoomInfo.end)) {
+            trafficChart.dispatchAction({ type: 'dataZoom', start: zoomInfo.start, end: zoomInfo.end });
+          }
         };
 
         if (toggles && !trafficTogglesBound) {
