@@ -1342,7 +1342,7 @@
               itemWidth: 12,
               itemHeight: 8,
               textStyle: { color: '#66716d', fontSize: 12 },
-              data: [`${scope.label} (PV)`, `${scope.label} (UV)`]
+              data: ['访问次数', '访客人数']
             },
             graphic: records.length === 0 ? [{
               type: 'text',
@@ -1390,7 +1390,7 @@
             ],
             series: [
               {
-                name: `${scope.label} (PV)`,
+                name: '访问次数',
                 type: 'line',
                 data: records.map(scope.pv),
                 smooth: true,
@@ -1403,7 +1403,7 @@
                 emphasis: { focus: 'series' }
               },
               {
-                name: `${scope.label} (UV)`,
+                name: '访客人数',
                 type: 'line',
                 data: records.map(scope.uv),
                 smooth: true,
