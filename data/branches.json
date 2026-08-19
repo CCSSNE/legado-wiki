@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T16:49:32.194Z",
+  "generatedAt": "2026-08-19T17:43:50.055Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 46,
-      "sourceUpdatedAt": "2026-08-19T16:44:15Z",
+      "sourceUpdatedAt": "2026-08-19T17:08:45Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C v3.26.081908c（预发布）",
-        "tagName": "v3.26.081908c",
+        "name": "阅读 C v3.26.081916c（预发布）",
+        "tagName": "v3.26.081916c",
         "prerelease": true,
-        "publishedAt": "2026-08-19T09:21:48Z",
-        "createdAt": "2026-08-19T09:12:49Z",
-        "body": "## 阅读 C v3.26.081908c（预发布）\n\n本版本统一了书籍音频标识的展示：\n\n- 书籍详情页封面增加音频角标\n- 发现页增加音频标识\n- 统一 bindBookMediaBadge，按 bookType 区分有声书与文字书\n- 将 BookMediaBadge 移至共享 book UI 层，书架、发现、详情共用同一实现\n\n> 预发布版本（Pre），仅供抢先体验与测试。\n",
+        "publishedAt": "2026-08-19T17:08:46Z",
+        "createdAt": "2026-08-19T16:43:58Z",
+        "body": "# 阅读 C v3.26.081916c（预发布）\n\n书源音频（SourceAudio）章节身份与正文 TextChapter 全面解耦：\n\n## 章节身份统一\n- 朗读会话章节身份一律以统一阅读目标 `ReadBook.durChapterIndex`（`BookChapter.index`）确定，正文 TextChapter 仅在 index 匹配且排版完成时参与段落 / LRC 准备，不再反向决定当前章节。\n\n## 启动与切章不再依赖正文\n- `newReadAloud()`：正文未加载 / 未完成排版 / 无正文（pageSize=0）时书源音频直达 `play()`，从书源目录按会话章节播放。\n- 自动上一章 / 下一章 / 上一段（detached 与 attached 模式）：均以 `BookChapter.index` 立即推进，不等待正文 TextChapter；阅读页正文有则随后同步，无则音频继续。\n- TTS / HTTP TTS 路径保持原有正文前置逻辑不变。\n\n## 字幕映射失败不再中断播放\n- 字幕 / LRC 绑定失败、段落映射越界、无时间映射定位均降级为日志，只影响正文同步 / 高亮 / 指哪读哪，不再通过 `failPlayback` 停止正常播放的音频。\n\n## 其他\n- 修复 detached 切章启动时协程作用域缺失导致的编译错误。\n- 编译：冷编译 `--no-daemon --max-workers=1`（本机内存压力预案），退出码 0。\n- 产物已验证：包名 `io.legado.app.c`、版本 `3.26.081916c` / 10696，签名校验通过。\n\n源码已同步推送至 `origin/own`（`4a97aac`）。",
         "assets": [
           {
-            "name": "legado_app_3.26.081908_10695.apk",
-            "size": 41315684,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081908c/legado_app_3.26.081908_10695.apk"
+            "name": "legado_app_3.26.081916_10696.apk",
+            "size": 41317732,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081916c/legado_app_3.26.081916_10696.apk"
           }
         ]
       },
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 819,
-      "sourceUpdatedAt": "2026-08-19T16:45:53Z",
+      "sourceUpdatedAt": "2026-08-19T17:27:16Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082000",
+        "name": "legado_app_3.26082001",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-19T16:32:20Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/20**\n- 文件夹模式书架支持左右滑动切换分组\n\n",
+        "createdAt": "2026-08-19T17:15:48Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/20**\n- 修复请求头内联脚本带首尾空白时未执行的问题\n- 文件夹模式书架支持左右滑动切换分组\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082000_release.apk",
-            "size": 20810221,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082000_release.apk"
+            "name": "legado_app_3.26082001_release.apk",
+            "size": 20810235,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082001_release.apk"
           },
           {
-            "name": "legado_app_3.26082000_releaseA.apk",
-            "size": 20810219,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082000_releaseA.apk"
+            "name": "legado_app_3.26082001_releaseA.apk",
+            "size": 20810231,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082001_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26082000_universal_release.apk",
-            "size": 26777413,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082000_universal_release.apk"
+            "name": "legado_app_3.26082001_universal_release.apk",
+            "size": 26777422,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082001_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26082000_universal_releaseA.apk",
-            "size": 26777394,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082000_universal_releaseA.apk"
+            "name": "legado_app_3.26082001_universal_releaseA.apk",
+            "size": 26777412,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082001_universal_releaseA.apk"
           }
         ]
       },
