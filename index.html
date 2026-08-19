@@ -1289,23 +1289,13 @@
         }
 
         const records = Array.isArray(stats?.records) ? stats.records : [];
-        if (records.length === 0) {
-          render('<div class="empty-box">数据积累中：每小时自动记录一次，这里会逐渐长出一条访问趋势曲线。</div>');
-          return;
-        }
-        if (records.length === 1) {
-          const first = records[0];
-          const cleanPv = (first.pv ?? 0) - 2 * (first.runs || 0);
-          const cleanUv = (first.uv ?? 0) - 2 * (first.runs || 0);
-          render(`<div class="empty-box">已开始记录（${escapeHtml(first.time)}）：两站合计访问 ${cleanPv.toLocaleString('zh-CN')} 次 · 访客 ${cleanUv.toLocaleString('zh-CN')} 人（已扣除自动化查询）。多积累几天后这里会显示趋势曲线。</div>`);
-          return;
-        }
+        if (toggles) toggles.hidden = false;
 
         let echartsApi;
         try {
           echartsApi = await loadECharts();
         } catch (error) {
-          render(`<div class="error-box">${escapeHtml(error.message)}，已积累 ${records.length} 天数据。</div>`);
+          render(`<div class="error-box">${escapeHtml(error.message)}，已积累 ${records.length} 条记录。</div>`);
           return;
         }
         if (!window._trafficResizeBound) {
@@ -1314,8 +1304,6 @@
             if (trafficChart) trafficChart.resize();
           });
         }
-
-        if (toggles) toggles.hidden = false;
 
         const sweep = () => {
           const scope = TRAFFIC_SCOPES[trafficScope] || TRAFFIC_SCOPES.all;
@@ -1356,6 +1344,16 @@
               textStyle: { color: '#66716d', fontSize: 12 },
               data: [`${scope.label} (PV)`, `${scope.label} (UV)`]
             },
+            graphic: records.length === 0 ? [{
+              type: 'text',
+              left: 'center',
+              top: 'middle',
+              style: {
+                text: '暂无数据 · 每小时自动记录',
+                fill: 'rgba(102, 113, 109, 0.65)',
+                fontSize: 13
+              }
+            }] : [],
             xAxis: {
               type: 'category',
               data: records.map(record => record.time.slice(5)),
