@@ -1372,11 +1372,15 @@
               {
                 type: 'slider',
                 xAxisIndex: 0,
-                bottom: 10,
-                height: 22,
+                bottom: 6,
+                height: 18,
                 borderColor: 'rgba(22, 61, 56, 0.15)',
+                backgroundColor: 'rgba(255, 255, 255, 0.6)',
                 fillerColor: 'rgba(46, 111, 100, 0.12)',
-                handleSize: '100%',
+                // 左右选动手柄与中间拖动条设为同样大小，保持操作一致性
+                handleSize: 7,
+                moveHandleSize: 7,
+                brushSelect: true,
                 dataBackground: {
                   lineStyle: { color: 'rgba(46, 111, 100, 0.45)' },
                   areaStyle: { color: 'rgba(46, 111, 100, 0.08)' }
