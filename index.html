@@ -687,6 +687,61 @@
       display: none;
     }
 
+    .traffic-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .traffic-mode-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .traffic-mode-switch .mode-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .traffic-mode-switch .mode-label.active {
+      color: var(--accent-strong);
+    }
+
+    .traffic-mode-switch .mode-track {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--border);
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+
+    .traffic-mode-switch .mode-knob {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      transition: left 0.2s;
+    }
+
+    .traffic-mode-switch.on .mode-track {
+      background: var(--accent);
+    }
+
+    .traffic-mode-switch.on .mode-knob {
+      left: 22px;
+    }
+
     .traffic-toggles button {
       padding: 5px 10px;
       border: 1px solid var(--border);
@@ -830,10 +885,17 @@
           <h2>访问趋势</h2>
           <span class="tag">stats</span>
         </div>
-        <div class="traffic-toggles" id="trafficToggles" role="group" aria-label="切换统计范围" hidden>
-          <button type="button" data-traffic-scope="all" class="active" title="两个站点合计">总访问量</button>
-          <button type="button" data-traffic-scope="edgeone" title="EdgeOne（国内站）">国内站</button>
-          <button type="button" data-traffic-scope="github" title="GitHub Pages（原站）">原站</button>
+        <div class="traffic-controls">
+          <div class="traffic-mode-switch" id="trafficModeSwitch" role="switch" aria-checked="false" title="切换总量 / 增量">
+            <span class="mode-label active" data-mode-side="total">总量</span>
+            <span class="mode-track"><span class="mode-knob"></span></span>
+            <span class="mode-label" data-mode-side="delta">增量</span>
+          </div>
+          <div class="traffic-toggles" id="trafficToggles" role="group" aria-label="切换统计范围">
+            <button type="button" data-traffic-scope="all" class="active" title="两个站点合计">总访问量</button>
+            <button type="button" data-traffic-scope="edgeone" title="EdgeOne（国内站）">国内站</button>
+            <button type="button" data-traffic-scope="github" title="GitHub Pages（原站）">原站</button>
+          </div>
         </div>
       </div>
       <div class="traffic-box" id="trafficChart">
@@ -1259,11 +1321,14 @@
         github: { label: '原站', pv: record => (record.github?.pv ?? 0) - (record.runs || 0), uv: record => (record.github?.uv ?? 0) - (record.runs || 0) }
       };
       let trafficScope = 'all';
+      let trafficMode = 'total';
       let trafficTogglesBound = false;
+      let trafficModesBound = false;
 
       async function initTrafficChart() {
         const box = document.getElementById('trafficChart');
         const toggles = document.getElementById('trafficToggles');
+        const modeSwitch = document.getElementById('trafficModeSwitch');
         if (!box) return;
         const render = html => {
           box.innerHTML = html;
@@ -1289,7 +1354,6 @@
         }
 
         const records = Array.isArray(stats?.records) ? stats.records : [];
-        if (toggles) toggles.hidden = false;
 
         let echartsApi;
         try {
@@ -1317,6 +1381,27 @@
           }
           render('');
           trafficChart = echartsApi.init(box);
+
+          const cleanPvValues = records.map(scope.pv);
+          const cleanUvValues = records.map(scope.uv);
+          // 增量 = 相邻两条记录的净数之差，首条没有前值记为 0；仅数据不同，曲线样式不变
+          const deltaOf = values => values.map((value, index) => (index === 0 ? 0 : value - values[index - 1]));
+          const pvData = trafficMode === 'delta' ? deltaOf(cleanPvValues) : cleanPvValues;
+          const uvData = trafficMode === 'delta' ? deltaOf(cleanUvValues) : cleanUvValues;
+          const makeSeries = (name, values, color, fill) => ({
+            name,
+            type: 'line',
+            data: values,
+            smooth: true,
+            showSymbol: false,
+            symbol: 'circle',
+            symbolSize: 7,
+            lineStyle: { width: 2, color },
+            itemStyle: { color },
+            areaStyle: { color: fill },
+            emphasis: { focus: 'series' }
+          });
+
           trafficChart.setOption({
             animationDuration: 300,
             tooltip: {
@@ -1393,32 +1478,8 @@
               }
             ],
             series: [
-              {
-                name: '访问次数',
-                type: 'line',
-                data: records.map(scope.pv),
-                smooth: true,
-                showSymbol: false,
-                symbol: 'circle',
-                symbolSize: 7,
-                lineStyle: { width: 2, color: '#2e6f64' },
-                itemStyle: { color: '#2e6f64' },
-                areaStyle: { color: 'rgba(46, 111, 100, 0.08)' },
-                emphasis: { focus: 'series' }
-              },
-              {
-                name: '访客人数',
-                type: 'line',
-                data: records.map(scope.uv),
-                smooth: true,
-                showSymbol: false,
-                symbol: 'circle',
-                symbolSize: 7,
-                lineStyle: { width: 2, color: '#b97235' },
-                itemStyle: { color: '#b97235' },
-                areaStyle: { color: 'rgba(185, 114, 53, 0.08)' },
-                emphasis: { focus: 'series' }
-              }
+              makeSeries('访问次数', pvData, '#2e6f64', 'rgba(46, 111, 100, 0.08)'),
+              makeSeries('访客人数', uvData, '#b97235', 'rgba(185, 114, 53, 0.08)')
             ]
           });
           if (Number.isFinite(zoomInfo.start) && Number.isFinite(zoomInfo.end)) {
@@ -1434,6 +1495,20 @@
             trafficScope = button.dataset.trafficScope;
             toggles.querySelectorAll('[data-traffic-scope]').forEach(item => {
               item.classList.toggle('active', item === button);
+            });
+            sweep();
+          });
+        }
+
+        if (modeSwitch && !trafficModesBound) {
+          trafficModesBound = true;
+          modeSwitch.addEventListener('click', () => {
+            trafficMode = trafficMode === 'total' ? 'delta' : 'total';
+            const isDelta = trafficMode === 'delta';
+            modeSwitch.classList.toggle('on', isDelta);
+            modeSwitch.setAttribute('aria-checked', isDelta ? 'true' : 'false');
+            modeSwitch.querySelectorAll('.mode-label').forEach(label => {
+              label.classList.toggle('active', label.dataset.modeSide === trafficMode);
             });
             sweep();
           });
