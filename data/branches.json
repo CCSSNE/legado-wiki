@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T23:40:36.543Z",
+  "generatedAt": "2026-08-20T01:53:47.245Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 46,
-      "sourceUpdatedAt": "2026-08-19T23:38:06Z",
+      "sourceUpdatedAt": "2026-08-20T01:34:38Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C v3.26.081916c（预发布）",
-        "tagName": "v3.26.081916c",
+        "name": "3.26.082001c",
+        "tagName": "v3.26.082001c",
         "prerelease": true,
-        "publishedAt": "2026-08-19T17:08:46Z",
-        "createdAt": "2026-08-19T16:43:58Z",
-        "body": "# 阅读 C v3.26.081916c（预发布）\n\n书源音频（SourceAudio）章节身份与正文 TextChapter 全面解耦：\n\n## 章节身份统一\n- 朗读会话章节身份一律以统一阅读目标 `ReadBook.durChapterIndex`（`BookChapter.index`）确定，正文 TextChapter 仅在 index 匹配且排版完成时参与段落 / LRC 准备，不再反向决定当前章节。\n\n## 启动与切章不再依赖正文\n- `newReadAloud()`：正文未加载 / 未完成排版 / 无正文（pageSize=0）时书源音频直达 `play()`，从书源目录按会话章节播放。\n- 自动上一章 / 下一章 / 上一段（detached 与 attached 模式）：均以 `BookChapter.index` 立即推进，不等待正文 TextChapter；阅读页正文有则随后同步，无则音频继续。\n- TTS / HTTP TTS 路径保持原有正文前置逻辑不变。\n\n## 字幕映射失败不再中断播放\n- 字幕 / LRC 绑定失败、段落映射越界、无时间映射定位均降级为日志，只影响正文同步 / 高亮 / 指哪读哪，不再通过 `failPlayback` 停止正常播放的音频。\n\n## 其他\n- 修复 detached 切章启动时协程作用域缺失导致的编译错误。\n- 编译：冷编译 `--no-daemon --max-workers=1`（本机内存压力预案），退出码 0。\n- 产物已验证：包名 `io.legado.app.c`、版本 `3.26.081916c` / 10696，签名校验通过。\n\n源码已同步推送至 `origin/own`（`4a97aac`）。",
+        "publishedAt": "2026-08-20T01:34:39Z",
+        "createdAt": "2026-08-20T01:33:49Z",
+        "body": "## 3.26.082001c（Pre 版本）\n\n### 听书页字体设置\n\n- 显示设置下新增字体设置：正文字号（32~90px，步进 2，默认 50）与朗读行放大倍率（100%~180%，步进 5，默认 120%）双滑条实时预览，就地重排全部文字行。\n- 字体设置性能优化：就地重排合并到每帧一次、字号倍率一次性读取、缩进测量去重；修复切章时旧字体重排回调失效的问题。\n- 文字区顶部下移 7dp（竖屏），并新增上下文字亮度渐变效果（横屏只加渐变、不下移）。\n\n### 书架返回球\n\n- 书架拖动书籍时屏幕下方出现的\"返回球\"内新增两行蓝色提示「放回 / 主页」，明确拖动释放即可把书放回书架主页（合集页同样生效）。\n\n### 沉浸听书页评论按钮链路\n\n- 评论按钮结构化渲染：正文段落拆分为文本 / 评论节点，沉浸页复用源图与公共点击入口。\n- 评论按钮交互修正：统一触摸分流命中气泡、按行坐标绘制原图、仅含评论的段落启用评论交互；命中测试与绘制共用同一套图片几何；评论气泡手势成对持有（按下即持有、落在同一气泡才触发）。\n\n### 听书页章节名\n\n- 章节名以朗读 chapterIndex 为准，目录取标题、正文未就绪不再退回书名；显示与正文一致（同走标题替换规则）。\n- 听书播放页显示设置新增\"顶部标题模式\"与\"下方章节名显示\"开关。\n\n### 书源音频与字幕映射\n\n- 音频正文与字幕映射显式化：乱序时间戳 LRC 绑定不再失败；usehtml 渲染行标记为非音频正文结构并送入显示。\n- 书源音频绑定失败时回退纯字幕模式：保留字幕文本与时间高亮，异常书源不退化成字幕全空。\n",
         "assets": [
           {
-            "name": "legado_app_3.26.081916_10696.apk",
-            "size": 41317732,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.081916c/legado_app_3.26.081916_10696.apk"
+            "name": "legado_app_3.26.082001_10701.apk",
+            "size": 41347815,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082001c/legado_app_3.26.082001_10701.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5736,
+      "stars": 5738,
       "sourceUpdatedAt": "2026-08-19T18:39:54Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 820,
-      "sourceUpdatedAt": "2026-08-19T23:34:14Z",
+      "stars": 821,
+      "sourceUpdatedAt": "2026-08-20T00:34:14Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082001",
-        "tagName": "3.26082001",
-        "prerelease": false,
-        "publishedAt": "2026-08-19T18:08:55Z",
-        "createdAt": "2026-08-19T17:15:48Z",
-        "body": "**2026/08/20**\n- 修复请求头内联脚本带首尾空白时未执行的问题\n- 文件夹模式书架支持左右滑动切换分组\n\n",
+        "name": "legado_app_3.26082008",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-08-20T00:25:37Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/20**\n- 修复帮助文档溢出菜单图标在亮色主题下看不清的问题\n- 修复代码格式化后无法撤销的问题\n- 其它、主题、备份、封面和启动页设置支持按标题、摘要和分类搜索\n- 备份与恢复支持通过二维码在同一局域网临时传输备份\n- 修复请求头内联脚本带首尾空白时未执行的问题\n- 文件夹模式书架支持左右滑动切换分组\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082001_release.apk",
-            "size": 20810235,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082001/legado_app_3.26082001_release.apk"
+            "name": "legado_app_3.26082008_release.apk",
+            "size": 20830592,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082008_release.apk"
           },
           {
-            "name": "legado_app_3.26082001_releaseA.apk",
-            "size": 20810231,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082001/legado_app_3.26082001_releaseA.apk"
+            "name": "legado_app_3.26082008_releaseA.apk",
+            "size": 20830588,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082008_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26082001_universal_release.apk",
-            "size": 26777422,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082001/legado_app_3.26082001_universal_release.apk"
+            "name": "legado_app_3.26082008_universal_release.apk",
+            "size": 26797764,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082008_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26082001_universal_releaseA.apk",
-            "size": 26777412,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082001/legado_app_3.26082001_universal_releaseA.apk"
+            "name": "legado_app_3.26082008_universal_releaseA.apk",
+            "size": 26797765,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082008_universal_releaseA.apk"
           }
         ]
       },
@@ -422,7 +422,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 176,
+      "stars": 177,
       "sourceUpdatedAt": "2026-08-19T12:29:27Z",
       "githubArchived": false,
       "release": {
