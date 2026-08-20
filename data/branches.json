@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T15:50:48.044Z",
+  "generatedAt": "2026-08-20T16:53:24.889Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 7,
+          "stars": 8,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47017,
+      "stars": 47018,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5748,
+      "stars": 5749,
       "sourceUpdatedAt": "2026-08-19T18:39:54Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 829,
-      "sourceUpdatedAt": "2026-08-20T15:07:26Z",
+      "stars": 832,
+      "sourceUpdatedAt": "2026-08-20T16:19:52Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082022",
+        "name": "legado_app_3.26082100",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-20T14:55:39Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/20**\n- 订阅源正文规则支持获取下一页内容\n- 阅读设置支持长按选择当前页可见段落\n- 修复翻页时书签标记不再随页眉移动的问题\n- 修复首次进入滚动阅读时页面可能回跳的问题\n- 阅读界面边距调整面板移至屏幕中间\n- 修复订阅源网页下载较大文件时可能内存溢出的问题\n- 文件夹模式书架进入分组后显示返回按钮\n- 发现页增加书源管理入口\n- 阅读设置支持调整下拉书签触发距离\n- 修复多次拒绝文件权限后自带文件选择器停留在灰屏的问题\n- 代码编辑器支持从工具菜单选择全文\n- 修复部分编辑页预测返回后底层界面无法交互的问题\n- 修复订阅源编辑页无法粘贴或导入单元素数组格式的问题\n- 修复源编辑页长按选择文本时输入法可能遮挡选择手柄的问题\n- 修复帮助文档溢出菜单图标在亮色主题下看不清的问题\n- 修复代码格式化后无法撤销的问题\n- 其它、主题、备份、封面和启动页设置支持按标题、摘要和分类搜索\n- 备份与恢复支持通过二维码在同一局域网临时传输备份\n- 修复请求头内联脚本带首尾空白时未执行的问题\n- 文件夹模式书架支持左右滑动切换分组\n\n",
+        "createdAt": "2026-08-20T16:06:37Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/20**\n- 修复下拉添加整页书签时可能崩溃的问题\n- 订阅源正文规则支持获取下一页内容\n- 阅读设置支持长按选择当前页可见段落\n- 修复翻页时书签标记不再随页眉移动的问题\n- 修复首次进入滚动阅读时页面可能回跳的问题\n- 阅读界面边距调整面板移至屏幕中间\n- 修复订阅源网页下载较大文件时可能内存溢出的问题\n- 文件夹模式书架进入分组后显示返回按钮\n- 发现页增加书源管理入口\n- 阅读设置支持调整下拉书签触发距离\n- 修复多次拒绝文件权限后自带文件选择器停留在灰屏的问题\n- 代码编辑器支持从工具菜单选择全文\n- 修复部分编辑页预测返回后底层界面无法交互的问题\n- 修复订阅源编辑页无法粘贴或导入单元素数组格式的问题\n- 修复源编辑页长按选择文本时输入法可能遮挡选择手柄的问题\n- 修复帮助文档溢出菜单图标在亮色主题下看不清的问题\n- 修复代码格式化后无法撤销的问题\n- 其它、主题、备份、封面和启动页设置支持按标题、摘要和分类搜索\n- 备份与恢复支持通过二维码在同一局域网临时传输备份\n- 修复请求头内联脚本带首尾空白时未执行的问题\n- 文件夹模式书架支持左右滑动切换分组\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082022_release.apk",
-            "size": 20832696,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082022_release.apk"
+            "name": "legado_app_3.26082100_release.apk",
+            "size": 20832792,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082100_release.apk"
           },
           {
-            "name": "legado_app_3.26082022_releaseA.apk",
-            "size": 20832705,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082022_releaseA.apk"
+            "name": "legado_app_3.26082100_releaseA.apk",
+            "size": 20832802,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082100_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26082022_universal_release.apk",
-            "size": 26799881,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082022_universal_release.apk"
+            "name": "legado_app_3.26082100_universal_release.apk",
+            "size": 26799968,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082100_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26082022_universal_releaseA.apk",
-            "size": 26799893,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082022_universal_releaseA.apk"
+            "name": "legado_app_3.26082100_universal_releaseA.apk",
+            "size": 26799971,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082100_universal_releaseA.apk"
           }
         ]
       },
@@ -521,7 +521,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 61,
+      "stars": 62,
       "sourceUpdatedAt": "2026-08-18T11:33:48Z",
       "githubArchived": false,
       "release": {
