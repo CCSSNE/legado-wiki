@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:56:31.064Z",
+  "generatedAt": "2026-08-21T05:49:53.453Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47021,
+      "stars": 47022,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 834,
-      "sourceUpdatedAt": "2026-08-21T04:43:44Z",
+      "sourceUpdatedAt": "2026-08-21T05:45:19Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082112",
+        "name": "legado_app_3.26082113",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-21T04:28:56Z",
-        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
+        "createdAt": "2026-08-21T05:20:52Z",
+        "body": "此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 修复下拉书签页面跟手回弹时顶部内容闪烁的问题\n- 备份路径支持恢复为应用默认目录\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082112_release.apk",
-            "size": 20851464,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082112_release.apk"
+            "name": "legado_app_3.26082113_release.apk",
+            "size": 20851491,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082113_release.apk"
           },
           {
-            "name": "legado_app_3.26082112_releaseA.apk",
-            "size": 20851464,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082112_releaseA.apk"
+            "name": "legado_app_3.26082113_releaseA.apk",
+            "size": 20851491,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082113_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26082112_universal_release.apk",
-            "size": 26818617,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082112_universal_release.apk"
+            "name": "legado_app_3.26082113_universal_release.apk",
+            "size": 26818650,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082113_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26082112_universal_releaseA.apk",
-            "size": 26818628,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082112_universal_releaseA.apk"
+            "name": "legado_app_3.26082113_universal_releaseA.apk",
+            "size": 26818666,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082113_universal_releaseA.apk"
           }
         ]
       },
@@ -394,7 +394,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 269,
+      "stars": 270,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
