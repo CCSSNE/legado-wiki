@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T23:42:20.082Z",
+  "generatedAt": "2026-08-22T01:52:44.334Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 50,
-      "sourceUpdatedAt": "2026-08-20T17:26:24Z",
+      "sourceUpdatedAt": "2026-08-22T01:47:07Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.082001c",
-        "tagName": "v3.26.082001c",
+        "name": "v3.26.082200c (pre-release)",
+        "tagName": "v3.26.082200c",
         "prerelease": true,
-        "publishedAt": "2026-08-20T01:34:39Z",
-        "createdAt": "2026-08-20T01:33:49Z",
-        "body": "## 3.26.082001c（Pre 版本）\n\n### 听书页字体设置\n\n- 显示设置下新增字体设置：正文字号（32~90px，步进 2，默认 50）与朗读行放大倍率（100%~180%，步进 5，默认 120%）双滑条实时预览，就地重排全部文字行。\n- 字体设置性能优化：就地重排合并到每帧一次、字号倍率一次性读取、缩进测量去重；修复切章时旧字体重排回调失效的问题。\n- 文字区顶部下移 7dp（竖屏），并新增上下文字亮度渐变效果（横屏只加渐变、不下移）。\n\n### 书架返回球\n\n- 书架拖动书籍时屏幕下方出现的\"返回球\"内新增两行蓝色提示「放回 / 主页」，明确拖动释放即可把书放回书架主页（合集页同样生效）。\n\n### 沉浸听书页评论按钮链路\n\n- 评论按钮结构化渲染：正文段落拆分为文本 / 评论节点，沉浸页复用源图与公共点击入口。\n- 评论按钮交互修正：统一触摸分流命中气泡、按行坐标绘制原图、仅含评论的段落启用评论交互；命中测试与绘制共用同一套图片几何；评论气泡手势成对持有（按下即持有、落在同一气泡才触发）。\n\n### 听书页章节名\n\n- 章节名以朗读 chapterIndex 为准，目录取标题、正文未就绪不再退回书名；显示与正文一致（同走标题替换规则）。\n- 听书播放页显示设置新增\"顶部标题模式\"与\"下方章节名显示\"开关。\n\n### 书源音频与字幕映射\n\n- 音频正文与字幕映射显式化：乱序时间戳 LRC 绑定不再失败；usehtml 渲染行标记为非音频正文结构并送入显示。\n- 书源音频绑定失败时回退纯字幕模式：保留字幕文本与时间高亮，异常书源不退化成字幕全空。\n",
+        "publishedAt": "2026-08-22T00:35:54Z",
+        "createdAt": "2026-08-22T00:20:51Z",
+        "body": "## 阅读 C `3.26.082200c`（预发布 / Pre-release）\n\n> 版本号 `3.26.082200c`，versionCode `10703`，基于 `own` 分支提交 `3935c7a` 编译（代码快照 `852014e`）。\n\n### 本版更新（同步远程 PR #9、#10）\n\n- **PR #9 `fix/import-parse-and-media-null`**：书源解析统一化与媒体通知 null 标题修复\n  - 新增 `BookSourceImport.kt` 统一书源导入解析入口\n  - 修复 `BaseReadAloudService` / `VideoPlayService` 媒体通知标题为 null 的问题\n- **PR #10 `fix/glass-timeout-direct-open`**：毛玻璃截图超时兜底 + 入口直进阅读页\n  - `SurfaceBackdrop` 截图超时兜底逻辑调整\n  - 应用入口直达阅读页\n\n### 说明\n\n- 正式后台 `assembleAppC` 冷编译一次通过；`aapt` 确认包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」；`apksigner` 校验通过\n- 预发布版本，未经完整回归验证，欢迎试用反馈\n",
         "assets": [
           {
-            "name": "legado_app_3.26.082001_10701.apk",
-            "size": 41347815,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082001c/legado_app_3.26.082001_10701.apk"
+            "name": "legado_app_3.26.082200c.apk",
+            "size": 41350689,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082200c/legado_app_3.26.082200c.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47022,
+      "stars": 47021,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5761,
+      "stars": 5763,
       "sourceUpdatedAt": "2026-08-19T18:39:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2434,
+      "stars": 2436,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 845,
+      "stars": 847,
       "sourceUpdatedAt": "2026-08-21T15:44:29Z",
       "githubArchived": false,
       "release": {
@@ -490,7 +490,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 115,
+      "stars": 116,
       "sourceUpdatedAt": "2026-08-21T15:06:50Z",
       "githubArchived": false,
       "release": {
@@ -590,7 +590,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 60,
+      "stars": 61,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -714,20 +714,20 @@
       "note": "阅读 NG 下游，非 GitHub fork。",
       "hidden": true,
       "stars": 4,
-      "sourceUpdatedAt": "2026-08-21T23:38:26Z",
+      "sourceUpdatedAt": "2026-08-22T01:02:23Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.082206",
+        "name": "legado_ng_3.26.082208",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-08-21T22:48:47Z",
-        "createdAt": "2026-08-21T22:35:54Z",
-        "body": "### 更新内容\n* fix: preserve custom typeface at normal weight\n\n",
+        "publishedAt": "2026-08-22T01:02:24Z",
+        "createdAt": "2026-08-22T00:52:20Z",
+        "body": "### 更新内容\n* fix: static fonts use fake bold, variable fonts use precise weight\n* fix: preserve content URI fonts and correct variable font weights\n* fix: remove unavailable hidden Typeface APIs\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08220636_beta.apk",
-            "size": 27106921,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/beta/legado_NG_3.26.08220636_beta.apk"
+            "name": "legado_NG_3.26.08220852_beta.apk",
+            "size": 27106601,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/beta/legado_NG_3.26.08220852_beta.apk"
           }
         ]
       },
