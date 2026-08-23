@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:45:10.706Z",
+  "generatedAt": "2026-08-23T17:37:55.729Z",
   "branches": [
     {
       "id": "c",
@@ -85,36 +85,36 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5802,
-      "sourceUpdatedAt": "2026-08-23T16:41:01Z",
+      "stars": 5803,
+      "sourceUpdatedAt": "2026-08-23T16:58:42Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.20",
-        "tagName": "3.26.16-beta.20",
+        "name": "Pre-release 3.26.16-beta.21",
+        "tagName": "3.26.16-beta.21",
         "prerelease": true,
-        "publishedAt": "2026-08-22T18:20:29Z",
-        "createdAt": "2026-08-22T18:04:45Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 神秘\n* Feat/reading anchor (#2089)\n* fix(read-record): 修复跨设备记录合并、时长统计及合并弹窗问题 (#2093)\n* feat: 依旧听书和有声书界面优化\n* feat: 依旧漫画优化\n* feat: 神的规范",
+        "publishedAt": "2026-08-23T16:58:30Z",
+        "createdAt": "2026-08-23T16:39:12Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 阅读设置相关\n* feat: 有声书封面比例设置\n* feat: 朗读脱离提示开关改为双态语义，默认关闭\n* feat: 简介更多渲染\n* feat: 阅读记录相关\n* feat: 朗读脱离提示增加启用开关",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.20-arm64-v8a.apk",
-            "size": 19468833,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.20/legado-3.26.16-beta.20-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.21-arm64-v8a.apk",
+            "size": 19472397,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.21/legado-3.26.16-beta.21-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.20-armeabi-v7a.apk",
-            "size": 19008647,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.20/legado-3.26.16-beta.20-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.21-armeabi-v7a.apk",
+            "size": 19012226,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.21/legado-3.26.16-beta.21-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.20.apk",
-            "size": 26041292,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.20/legado-3.26.16-beta.20.apk"
+            "name": "legado-3.26.16-beta.21.apk",
+            "size": 26044846,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.21/legado-3.26.16-beta.21.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 263936382,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.20/mapping.txt"
+            "size": 264435078,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.21/mapping.txt"
           }
         ]
       },
@@ -157,20 +157,20 @@
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
       "stars": 2116,
-      "sourceUpdatedAt": "2026-08-21T04:29:43Z",
+      "sourceUpdatedAt": "2026-08-23T16:58:03Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.2.4",
-        "tagName": "V1.0.2.4",
+        "name": "V1.0.2.6-V1.0.4.8",
+        "tagName": "V1.0.4.8",
         "prerelease": false,
-        "publishedAt": "2026-03-11T13:05:40Z",
-        "createdAt": "2025-11-25T03:48:32Z",
-        "body": "1.添加网盘导入点击跳转 WebDAV 登录页面\r\n2.关于我们点击对应QQ群后跳转对应QQ群\r\n3.重构启动页面导航结构，修复打开隐私声明和用户协议页面显示空白的问题\r\n4.修复隐私协议页面返回按钮显示逻辑\r\n5.修复消息提示配置错误导致的bug\r\n6.优化页面栈管理，避免重复打开相同页面\r\n7.添加书籍哈希值字段用于判断重复，防止重复导入书籍\r\n8.重构确认对话框组件，支持标题和内容参数\r\n9.添加WebDav工具类，实现从WebDav导入书籍\r\n10.优化书籍删除逻辑，修复书籍移除后未正常删除的问题\r\n11.修复阅读书籍后无浏览历史的问题\r\n12.修复布局样式和代码格式问题\r\n13.优化书籍列表加载逻辑，修复导入书籍后书架未刷新的问题\r\n14.修复目录错误的问题\r\n15.修复部分bug",
+        "publishedAt": "2026-08-23T16:58:03Z",
+        "createdAt": "2026-08-21T04:29:41Z",
+        "body": "**V1.0.2.6（2026/8/21）**\r\n1. 恢复阅读器左右点击和音量键翻页\r\n2. 按新版设计恢复沉浸式阅读菜单、目录和阅读设置\r\n3. 恢复听书和自动阅读功能\r\n4. 阅读页面支持整本换源和重新净化正文\r\n5. 恢复分页动画并优化章节切换体验\r\n6. 恢复阅读进度、时间和电量状态显示\r\n\r\n**V1.0.2.7（2026/8/21）**\r\n1. 修复退出阅读和切换书源时听书状态残留的问题\r\n2. 修复听书回调误切换到旧章节的问题\r\n3. 修复快速切换自动阅读和听书时可能继续后台翻页的问题\r\n\r\n**V1.0.2.8（2026/8/21）**\r\n1. 阅读菜单新增分享、加入书架和更多设置入口\r\n2. 换源页面新增书源等级评分、当前书源和响应速度筛选\r\n3. 优化阅读页底部进度、时间和电量状态实时更新\r\n4. 修复退出阅读页后自动阅读仍可能继续的问题\r\n\r\n**V1.0.2.9（2026/8/21）**\r\n1. 换源页面新增按书源等级和分组筛选的底部面板\r\n2. 阅读页底部状态栏按设计稿优化进度、时间和电量显示\r\n3. 修复切换书源时加入书架提示和章节进度显示问题\r\n4. 修复快速切换听书和自动阅读时状态残留的问题\r\n\r\n**V1.0.3.0（2026/8/21）**\r\n1. 修复阅读页无法唤出菜单和点击翻页的问题，恢复设置、换源与听书入口\r\n\r\n**V1.0.3.1（2026/8/21）**\r\n1. 修复字体、排版、背景和更多设置入口混用的问题\r\n2. 恢复阅读页左右滑页和仿真翻页效果\r\n\r\n**V1.0.3.2（2026/8/21）**\r\n1. 修复网页书源登录入口无法打开登录页面的问题\r\n2. 修复从全部分类进入发现列表时可能闪退的问题\r\n\r\n**V1.0.3.3（2026/8/21）**\r\n1. 修复部分 WebDAV 服务登录后无法读取文件目录的问题\r\n\r\n**V1.0.3.4（2026/8/21）**\r\n1. 修复网页订阅源打开后错误跳转到百度的问题\r\n\r\n**V1.0.3.5（2026/8/21）**\r\n1. 优化长章节左右滑页和仿真翻页的内存占用与流畅度\r\n\r\n**V1.0.3.6（2026/8/21）**\r\n1. 修复部分书源和订阅源无法清除站点 Cookie 的问题\r\n\r\n**V1.0.3.7（2026/8/21）**\r\n1. 修复路径型站点 Cookie 清除后仍可能继续生效的问题\r\n\r\n**V1.0.3.8（2026/8/21）**\r\n1. 进一步降低长章节左右滑页和仿真翻页的内存占用\r\n\r\n**V1.0.3.9（2026/8/21）**\r\n1. 修复听书加载后续章节时可能中断的问题\r\n\r\n**V1.0.4.0（2026/8/21）**\r\n1. 优化主页面加载，减少重复页面占用\r\n\r\n**V1.0.4.1（2026/8/22）**\r\n1. 修复 WebDAV 配置重命名时未显示原名称并可能保存为空的问题\r\n\r\n**V1.0.4.2（2026/8/22）**\r\n1. 修复 WebDAV 退出登录时可能误删其他配置的问题\r\n2. 优化 WebDAV 配置重命名，避免同名配置被误改\r\n\r\n**V1.0.4.3（2026/8/22）**\r\n1. 移除版本更新弹窗中仅支持本地书籍的过时提示\r\n\r\n**V1.0.4.4（2026/8/23）**\r\n1. 修复网页订阅源打开后可能显示空白的问题\r\n\r\n**V1.0.4.5（2026/8/23）**\r\n1. 取消本地书源选择后不再误报读取失败\r\n\r\n**V1.0.4.6（2026/8/23）**\r\n1. 移除书籍详情页中暂不可用的编辑入口\r\n\r\n**V1.0.4.7（2026/8/23）**\r\n1. 修复书籍详情页分享按钮点击无响应的问题\r\n\r\n**V1.0.4.8（2026/8/23）**\r\n1. 修复仿真翻页效果不生效的问题",
         "assets": [
           {
-            "name": "Legado-V1.0.2.4-260311-unsigned.hap",
-            "size": 26299578,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.2.4/Legado-V1.0.2.4-260311-unsigned.hap"
+            "name": "Legado-1.0.4.8-26082400-01-unsigned.hap",
+            "size": 24172776,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.4.8/Legado-1.0.4.8-26082400-01-unsigned.hap"
           }
         ]
       },
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 877,
-      "sourceUpdatedAt": "2026-08-23T15:49:30Z",
+      "stars": 879,
+      "sourceUpdatedAt": "2026-08-23T17:30:42Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26082323",
@@ -462,7 +462,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 178,
+      "stars": 179,
       "sourceUpdatedAt": "2026-08-23T05:56:47Z",
       "githubArchived": false,
       "release": {
@@ -713,20 +713,20 @@
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork，独立发版。",
       "stars": 5,
-      "sourceUpdatedAt": "2026-08-23T16:38:53Z",
+      "sourceUpdatedAt": "2026-08-23T17:25:13Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.082400",
-        "tagName": "beta-175",
-        "prerelease": true,
-        "publishedAt": "2026-08-23T16:24:10Z",
-        "createdAt": "2026-08-23T16:11:19Z",
-        "body": "### 更新内容\n* 优化：发行版历史记录与更新说明\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：统一高级标题为菱形位置和星点文字样式\n* 更新：对齐高级标题至 Rimchars 标尺\n* 更新：按字体基线对齐高级章节名\n* 更新：对齐高级章节名与装饰间距\n* 修复：高级标题列表间距与点击跳动\n* 更新：将高级标题列表行高调整为48dp\n* 修复：构建并优化发布说明\n\n",
+        "name": "legado_fu_3.26.082401",
+        "tagName": "3.26.082401",
+        "prerelease": false,
+        "publishedAt": "2026-08-23T17:25:13Z",
+        "createdAt": "2026-08-23T17:12:26Z",
+        "body": "### 更新内容\n### 更新\n\n- 统一发行版名称为legado_FU\n- 整理更新日志分类并统一小写名称\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08240011_beta.apk",
-            "size": 27135945,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/beta-175/legado_NG_3.26.08240011_beta.apk"
+            "name": "legado_fu_3.26.08240112_release.apk",
+            "size": 27135670,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.082401/legado_fu_3.26.08240112_release.apk"
           }
         ]
       },
