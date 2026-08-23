@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T14:43:10.608Z",
+  "generatedAt": "2026-08-23T15:40:23.341Z",
   "branches": [
     {
       "id": "c",
@@ -13,12 +13,12 @@
       "sourceUpdatedAt": "2026-08-23T00:17:55Z",
       "githubArchived": false,
       "release": {
-        "name": "v3.26.082200c (pre-release)",
+        "name": "阅读 C 3.26.082200c",
         "tagName": "v3.26.082200c",
-        "prerelease": true,
+        "prerelease": false,
         "publishedAt": "2026-08-22T00:35:54Z",
         "createdAt": "2026-08-22T00:20:51Z",
-        "body": "## 阅读 C `3.26.082200c`（预发布 / Pre-release）\n\n> 版本号 `3.26.082200c`，versionCode `10703`，基于 `own` 分支提交 `3935c7a` 编译（代码快照 `852014e`）。\n\n### 本版更新（同步远程 PR #9、#10）\n\n- **PR #9 `fix/import-parse-and-media-null`**：书源解析统一化与媒体通知 null 标题修复\n  - 新增 `BookSourceImport.kt` 统一书源导入解析入口\n  - 修复 `BaseReadAloudService` / `VideoPlayService` 媒体通知标题为 null 的问题\n- **PR #10 `fix/glass-timeout-direct-open`**：毛玻璃截图超时兜底 + 入口直进阅读页\n  - `SurfaceBackdrop` 截图超时兜底逻辑调整\n  - 应用入口直达阅读页\n\n### 说明\n\n- 正式后台 `assembleAppC` 冷编译一次通过；`aapt` 确认包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」；`apksigner` 校验通过\n- 预发布版本，未经完整回归验证，欢迎试用反馈\n",
+        "body": "## 阅读 C `3.26.082200c`（正式版）\n\n> 版本号 `3.26.082200c`，versionCode `10703`，基于 `own` 分支提交 `3935c7a` 编译（代码快照 `852014e`）。\n\n### 本版更新（同步远程 PR #9、#10）\n\n- **PR #9 `fix/import-parse-and-media-null`**：书源解析统一化与媒体通知 null 标题修复\n  - 新增 `BookSourceImport.kt` 统一书源导入解析入口\n  - 修复 `BaseReadAloudService` / `VideoPlayService` 媒体通知标题为 null 的问题\n- **PR #10 `fix/glass-timeout-direct-open`**：毛玻璃截图超时兜底 + 入口直进阅读页\n  - `SurfaceBackdrop` 截图超时兜底逻辑调整\n  - 应用入口直达阅读页\n\n### 说明\n\n- 正式后台 `assembleAppC` 冷编译一次通过；`aapt` 确认包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」；`apksigner` 校验通过\n- 转正复核：重新下载资产，SHA256 与 GitHub 记录一致，`aapt` badging 与签名复验通过\n",
         "assets": [
           {
             "name": "legado_app_3.26.082200c.apk",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47028,
+      "stars": 47029,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5799,
+      "stars": 5800,
       "sourceUpdatedAt": "2026-08-22T18:20:42Z",
       "githubArchived": false,
       "release": {
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 877,
-      "sourceUpdatedAt": "2026-08-23T14:31:57Z",
+      "sourceUpdatedAt": "2026-08-23T15:32:14Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082307",
+        "name": "legado_app_3.26082323",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-22T23:14:47Z",
-        "body": "<!-- legado-version-code:38200 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 系统分享导入支持网络源链接自动识别和预览\n- 精简已是最新正式版或测试版时的更新提示\n- 修复本地书更换目录规则后目录标题未立即更新的问题\n- 修复发现页切换书源分组后勾选标记跳到错误选项的问题\n- 修复测试版更新在历史重建或发布替换时的版本误判问题\n- 修复隐藏页眉时书签标记遮挡正文的问题\n- 关于页支持检查并打开与当前安装包匹配的最新测试版\n- 修复听书和漫画阅读页预测返回后界面无法交互的问题\n- 修复登录头为空时查看弹窗显示不完整的问题\n- 朗读进行中从主菜单打开朗读按钮时直接进入朗读面板\n- 长按选择整段时不再选中段首缩进空白\n- 修复朗读播放按钮的无障碍标签重复播报问题\n- 修复下拉书签页面跟手回弹时顶部内容闪烁的问题\n- 备份路径支持恢复为应用默认目录\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
+        "createdAt": "2026-08-23T15:21:47Z",
+        "body": "<!-- legado-version-code:38201 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 系统分享导入支持网络源链接自动识别和预览\n- 精简已是最新正式版或测试版时的更新提示\n- 修复本地书更换目录规则后目录标题未立即更新的问题\n- 修复发现页切换书源分组后勾选标记跳到错误选项的问题\n- 修复测试版更新在历史重建或发布替换时的版本误判问题\n- 修复隐藏页眉时书签标记遮挡正文的问题\n- 关于页支持检查并打开与当前安装包匹配的最新测试版\n- 修复听书和漫画阅读页预测返回后界面无法交互的问题\n- 修复登录头为空时查看弹窗显示不完整的问题\n- 朗读进行中从主菜单打开朗读按钮时直接进入朗读面板\n- 长按选择整段时不再选中段首缩进空白\n- 修复朗读播放按钮的无障碍标签重复播报问题\n- 修复下拉书签页面跟手回弹时顶部内容闪烁的问题\n- 备份路径支持恢复为应用默认目录\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 应用更新下载支持可选的 Android 16 实时更新通知\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082307_releaseA_vc38200.apk",
-            "size": 20854008,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082307_releaseA_vc38200.apk"
+            "name": "legado_app_3.26082323_releaseA_vc38201.apk",
+            "size": 20854761,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082323_releaseA_vc38201.apk"
           },
           {
-            "name": "legado_app_3.26082307_release_vc38200.apk",
-            "size": 20854003,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082307_release_vc38200.apk"
+            "name": "legado_app_3.26082323_release_vc38201.apk",
+            "size": 20854771,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082323_release_vc38201.apk"
           },
           {
-            "name": "legado_app_3.26082307_universal_releaseA_vc38200.apk",
-            "size": 26821190,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082307_universal_releaseA_vc38200.apk"
+            "name": "legado_app_3.26082323_universal_releaseA_vc38201.apk",
+            "size": 26821941,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082323_universal_releaseA_vc38201.apk"
           },
           {
-            "name": "legado_app_3.26082307_universal_release_vc38200.apk",
-            "size": 26821190,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082307_universal_release_vc38200.apk"
+            "name": "legado_app_3.26082323_universal_release_vc38201.apk",
+            "size": 26821944,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082323_universal_release_vc38201.apk"
           }
         ]
       },
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 301,
+      "stars": 302,
       "sourceUpdatedAt": "2026-08-21T12:25:47Z",
       "githubArchived": false,
       "release": {
@@ -713,20 +713,20 @@
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork，独立发版。",
       "stars": 5,
-      "sourceUpdatedAt": "2026-08-23T14:21:55Z",
+      "sourceUpdatedAt": "2026-08-23T15:32:50Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.082322",
-        "tagName": "beta-170",
+        "tagName": "beta-171",
         "prerelease": true,
-        "publishedAt": "2026-08-23T14:21:55Z",
-        "createdAt": "2026-08-23T14:09:23Z",
-        "body": "### 更新内容\n* 优化：发行版历史记录与更新说明\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：统一高级标题为菱形位置和星点文字样式\n* 更新：对齐高级标题至 Rimchars 标尺\n\n",
+        "publishedAt": "2026-08-23T15:03:47Z",
+        "createdAt": "2026-08-23T14:54:08Z",
+        "body": "### 更新内容\n* 优化：发行版历史记录与更新说明\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 更新：方案5：用Android文字层实现高级标题字重\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 修复：高级标题章节名字号与模板分层\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：让高级标题章节号跟随阅读主题主色\n* 更新：统一高级标题为菱形位置和星点文字样式\n* 更新：对齐高级标题至 Rimchars 标尺\n* 更新：按字体基线对齐高级章节名\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08232209_beta.apk",
-            "size": 27135072,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/beta-170/legado_NG_3.26.08232209_beta.apk"
+            "name": "legado_NG_3.26.08232254_beta.apk",
+            "size": 27135365,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/beta-171/legado_NG_3.26.08232254_beta.apk"
           }
         ]
       },
