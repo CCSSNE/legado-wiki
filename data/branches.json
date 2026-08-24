@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T16:57:35.796Z",
+  "generatedAt": "2026-08-24T17:48:57.561Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 56,
-      "sourceUpdatedAt": "2026-08-24T16:54:33Z",
+      "sourceUpdatedAt": "2026-08-24T17:47:47Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.082407c（预发布）",
-        "tagName": "v3.26.082407c",
+        "name": "阅读 C 3.26.082417c（预发布）",
+        "tagName": "v3.26.082417c",
         "prerelease": true,
-        "publishedAt": "2026-08-24T08:01:27Z",
-        "createdAt": "2026-08-24T07:58:31Z",
-        "body": "## 阅读 C 3.26.082407c（预发布）\n\n> `3.26.082407c` / versionCode `10727`，基于 `own` 分支提交 `cc7f30a` 正式冷编译产出（4m42s，退出码 0）。\n\n### 评论快照资源回收\n\n- **快照自带 resourceKeys**：评论快照资源回收改为快照自带引用清单，不再整读大 HTML 逐条比对，并堵死整体快照读取代换间的 ABA 误删窗口。\n- **后台孤儿回收**：REVIEW 结束后自动回收评论快照孤儿资源，异步调度、去重、同一书籍并发回收互斥。\n- **只重试失败项**：回收失败仅重试未成功的快照，不重扫全部。\n- **压缩摘要格式化**：回收结果压缩摘要统一格式化输出；操作标签文案精简。\n\n### 沉浸听书页\n\n- 沉浸听书页评论按钮颜色随主题反转。\n\n### 说明\n\n- 产物已验证：包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」、targetSdk 36；`apksigner` 校验通过。\n- 发布时 `own` 分支最新提交 `aaee04a`（编译后新增的 GC 基准 epoch 修复，未包含在本 APK 内）。\n- 本版为预发布（prerelease），源码已推送 `origin/own`。",
+        "publishedAt": "2026-08-24T17:32:20Z",
+        "createdAt": "2026-08-24T17:20:46Z",
+        "body": "## 阅读 C 3.26.082417c（预发布）\n\n> `3.26.082417c` / versionCode `10736`，基于 `own` 分支提交 `e6124d2` 正式冷编译产出（3m12s，退出码 0）。\n\n### 音频 TXT-ZIP 导出\n\n- **可播放的音频导出包**：导出 TXT-ZIP 时按章节打包已具备的音频媒体，导入后本地直接可播，不再依赖原书源在线拉流。\n- **只导出可用音频章节**：导出不再隐式发起缺失音频媒体的下载，只打包已就绪（可播放）的章节，缺媒体章节明确跳过；导出进度显式化，SAF 归档成功保留发布结果。\n- **归档产物对齐**：音频归档章节产物与正文/字幕侧车、插图侧车对齐，替换导出包按章节配对，不再盲目整包替换。\n\n### 离线缓存与媒体路由统一\n\n- **下载路由统一到媒体通道**：缓存管理页与沉浸听书页的章节下载统一路由到媒体任务，不再落入正文缓存；导入的媒体不混入缓存，旧版正文缓存残留清除。\n- **媒体与字幕生命周期统一**：有声音频的媒体与字幕正文同生命周期管理，媒体产物契约化约束（含离线状态判定与共享提交入口接受批量章节索引）。\n- **入口统一**：阅读页菜单中的「离线缓存」入口移除，统一收敛到缓存管理页。\n\n### 评论缓存修正\n\n- **评论自动下载默认关闭**：阅读或书架刷新时自动下载评论的开关默认改为关闭（已有记录不受影响，可在评论缓存设置中重新开启）。\n- **刷新与操作统一**：评论刷新下载收敛统一入口；有声书缓存页评论控件对齐、操作按钮精简。\n- **快照资源修复**：修复导入评论快照资源的恢复与抓取/回收引用问题；孤儿回收 GC 基准 epoch 钉在排队时刻，堵死排队-执行间 ABA 误删窗口（该修复编译时已并入本包）。\n\n### 说明\n\n- 产物已验证：包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」、targetSdk 36；`apksigner` 校验通过。\n- 发布时 `own` 分支最新提交 `babbf6a`（编译后新增的 docs 说明提交，未包含在本 APK 内）。\n- 本版为预发布（prerelease），源码已推送 `origin/own`。",
         "assets": [
           {
-            "name": "legado_app_3.26.082407c_10727.apk",
-            "size": 41693185,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082407c/legado_app_3.26.082407c_10727.apk"
+            "name": "legado_app_3.26.082417c_10736.apk",
+            "size": 41736199,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082417c/legado_app_3.26.082417c_10736.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5826,
+      "stars": 5827,
       "sourceUpdatedAt": "2026-08-24T07:23:21Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2461,
+      "stars": 2462,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 304,
+      "stars": 305,
       "sourceUpdatedAt": "2026-08-24T08:53:56Z",
       "githubArchived": false,
       "release": {
