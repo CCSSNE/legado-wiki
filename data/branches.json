@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T23:37:55.006Z",
+  "generatedAt": "2026-08-24T01:59:50.328Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 53,
-      "sourceUpdatedAt": "2026-08-23T23:19:22Z",
+      "sourceUpdatedAt": "2026-08-24T01:58:21Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C 3.26.082200c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47031,
+      "stars": 47032,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5804,
+      "stars": 5808,
       "sourceUpdatedAt": "2026-08-23T16:58:42Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 880,
-      "sourceUpdatedAt": "2026-08-23T23:20:48Z",
+      "stars": 885,
+      "sourceUpdatedAt": "2026-08-24T01:48:30Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082407",
+        "name": "legado_app_3.26082408",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-23T23:10:18Z",
-        "body": "<!-- legado-version-code:38211 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 系统分享导入支持网络源链接自动识别和预览\n- 精简已是最新正式版或测试版时的更新提示\n- 修复本地书更换目录规则后目录标题未立即更新的问题\n- 修复发现页切换书源分组后勾选标记跳到错误选项的问题\n- 修复测试版更新在历史重建或发布替换时的版本误判问题\n- 修复隐藏页眉时书签标记遮挡正文的问题\n- 关于页支持检查并打开与当前安装包匹配的最新测试版\n- 修复听书和漫画阅读页预测返回后界面无法交互的问题\n- 修复登录头为空时查看弹窗显示不完整的问题\n- 朗读进行中从主菜单打开朗读按钮时直接进入朗读面板\n- 长按选择整段时不再选中段首缩进空白\n- 修复朗读播放按钮的无障碍标签重复播报问题\n- 修复下拉书签页面跟手回弹时顶部内容闪烁的问题\n- 备份路径支持恢复为应用默认目录\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 应用更新下载支持可选的 Android 16 实时更新通知\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
+        "createdAt": "2026-08-24T00:38:05Z",
+        "body": "<!-- legado-version-code:38212 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/21**\n- 系统分享导入支持网络源链接自动识别和预览\n- 精简已是最新正式版或测试版时的更新提示\n- 修复本地书更换目录规则后目录标题未立即更新的问题\n- 修复发现页切换书源分组后勾选标记跳到错误选项的问题\n- 修复测试版更新在历史重建或发布替换时的版本误判问题\n- 修复隐藏页眉时书签标记遮挡正文的问题\n- 关于页支持检查并打开与当前安装包匹配的最新测试版\n- 修复听书和漫画阅读页预测返回后界面无法交互的问题\n- 修复登录头为空时查看弹窗显示不完整的问题\n- 朗读进行中从主菜单打开朗读按钮时直接进入朗读面板\n- 长按选择整段时不再选中段首缩进空白\n- 修复朗读播放按钮的无障碍标签重复播报问题\n- 修复下拉书签页面跟手回弹时顶部内容闪烁的问题\n- 备份路径支持恢复为应用默认目录\n- 修复视频悬浮窗权限不足时前台服务启动超时的问题\n- 字体选择支持导入 TTF、OTF 文件并区分文件来源\n- 应用更新下载支持可选的 Android 16 实时更新通知\n- 提高代码编辑器输入法可读取的文本长度上限\n- 系统分享支持直接识别并预览导入源与规则\n- 添加下拉书签时页面跟手与回弹效果\n- 修复外部字体目录不可用时无法读取应用私有目录字体的问题\n- 多次拒绝文件权限后再次选择自带文件时显示权限说明\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082407_releaseA_vc38211.apk",
-            "size": 20855600,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082407_releaseA_vc38211.apk"
+            "name": "legado_app_3.26082408_releaseA_vc38212.apk",
+            "size": 20855613,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082408_releaseA_vc38212.apk"
           },
           {
-            "name": "legado_app_3.26082407_release_vc38211.apk",
-            "size": 20855595,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082407_release_vc38211.apk"
+            "name": "legado_app_3.26082408_release_vc38212.apk",
+            "size": 20855592,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082408_release_vc38212.apk"
           },
           {
-            "name": "legado_app_3.26082407_universal_releaseA_vc38211.apk",
-            "size": 26822790,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082407_universal_releaseA_vc38211.apk"
+            "name": "legado_app_3.26082408_universal_releaseA_vc38212.apk",
+            "size": 26822796,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082408_universal_releaseA_vc38212.apk"
           },
           {
-            "name": "legado_app_3.26082407_universal_release_vc38211.apk",
-            "size": 26822783,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082407_universal_release_vc38211.apk"
+            "name": "legado_app_3.26082408_universal_release_vc38212.apk",
+            "size": 26822780,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082408_universal_release_vc38212.apk"
           }
         ]
       },
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 302,
+      "stars": 303,
       "sourceUpdatedAt": "2026-08-21T12:25:47Z",
       "githubArchived": false,
       "release": {
@@ -712,21 +712,21 @@
       "repo": "h166278/legado_FU",
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork，独立发版。",
-      "stars": 5,
-      "sourceUpdatedAt": "2026-08-23T17:25:13Z",
+      "stars": 6,
+      "sourceUpdatedAt": "2026-08-24T01:46:20Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_fu_3.26.082401",
-        "tagName": "3.26.082401",
+        "name": "legado_fu_3.26.082409",
+        "tagName": "3.26.082409",
         "prerelease": false,
-        "publishedAt": "2026-08-23T17:25:13Z",
-        "createdAt": "2026-08-23T17:12:26Z",
-        "body": "### 更新内容\n### 更新\n\n- 统一发行版名称为legado_FU\n- 整理更新日志分类并统一小写名称\n\n",
+        "publishedAt": "2026-08-24T01:46:20Z",
+        "createdAt": "2026-08-24T01:33:33Z",
+        "body": "### 更新内容\n### 更新\n\n- 让高级标题章节号遵循颜色优先级\n- 微调高级标题编辑图标大小和位置\n\n",
         "assets": [
           {
-            "name": "legado_fu_3.26.08240112_release.apk",
-            "size": 27135670,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.082401/legado_fu_3.26.08240112_release.apk"
+            "name": "legado_fu_3.26.08240933_release.apk",
+            "size": 27136946,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.082409/legado_fu_3.26.08240933_release.apk"
           }
         ]
       },
