@@ -1040,7 +1040,7 @@
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
-      toggle.checked = localStorage.getItem('legado_accel') === 'on';
+      toggle.checked = localStorage.getItem('legado_accel') !== 'off';
       bootstrap();
 
       toggle.addEventListener('change', () => {
