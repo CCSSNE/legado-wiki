@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T11:45:54.212Z",
+  "generatedAt": "2026-08-24T13:16:08.929Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 55,
-      "sourceUpdatedAt": "2026-08-24T08:18:51Z",
+      "sourceUpdatedAt": "2026-08-24T13:11:15Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C 3.26.082407c（预发布）",
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2120,
+      "stars": 2119,
       "sourceUpdatedAt": "2026-08-23T16:58:03Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 889,
-      "sourceUpdatedAt": "2026-08-24T10:06:32Z",
+      "stars": 890,
+      "sourceUpdatedAt": "2026-08-24T13:05:32Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26082417",
@@ -562,20 +562,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 64,
-      "sourceUpdatedAt": "2026-08-18T11:33:48Z",
+      "sourceUpdatedAt": "2026-08-24T12:14:37Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.081819",
-        "tagName": "3.26.081819",
+        "name": "legado_ng_3.26.082419",
+        "tagName": "3.26.082419",
         "prerelease": false,
-        "publishedAt": "2026-08-18T11:33:48Z",
-        "createdAt": "2026-08-18T11:19:03Z",
-        "body": "### 更新内容\n* 重构书架界面并迁移关联页面到Compose\n* 修复阅读更多菜单未跟随预设透明度\n* 优化书籍目录抽屉交互体验\n* 提高书架分组网格背景透明度\n* 提高阅读正文选区透明度\n* 过滤选字菜单中的Legado处理项\n* 校正选字划线图标位置\n* 安全更新内置订阅源默认数据\n* 统一RSS页面顶栏与状态栏样式\n* 重构订阅源管理与编辑界面\n* 重构书籍详情及关联页面为Compose\n* 完善书架顶栏与主题预设\n* 修复换源等待框的 Compose 生命周期崩溃\n\n",
+        "publishedAt": "2026-08-24T12:14:37Z",
+        "createdAt": "2026-08-24T05:31:57Z",
+        "body": "### 更新内容\n* 新增书架未分组筛选\n* 阅读目录抽屉补齐VIP与支付图标\n* 安全修补：限制书源文件读写删除和解压范围\n* 修复导出内容图片测试的字符串插值\n* 安全修补：书源仅允许导入白名单应用类\n* 安全修补：限制书源持久修改书籍和章节状态\n* 安全修补：隔离书源Cookie和缓存\n* 安全修补：禁止书源绕过Cookie隔离\n* 安全修补：隔离书源共享脚本运行状态\n* 安全修补：清理WebView回池残留桥\n* 安全修补：空图片不再关闭正文净化\n* 安全修补：脱敏Gemini网络日志密钥\n* 修复书架未分组筛选与目录状态提示\n* 修复章节末尾分页空页崩溃\n* 新增发现页书源管理入口\n* 增加书源导出分享与本地保存抽屉\n* 迁移听书定时与倍速抽屉到Compose\n* 统一听书目录并接入封面色板\n* 重构听书主播放器为Compose\n* 迁移听书模式设置与音色抽屉到Compose\n* 完善首次听书发音人初始化与自动分配\n* 完善听书抽屉与多人朗读配置\n* 完善听书播放器布局与无封面场景\n* 完成角色与声音管理Compose迁移\n* 修复听书抽屉重复弹出\n* 完成分镜管理Compose迁移\n* 统一角色管理页与动态菜单视觉\n* 完成有声书播放器Compose迁移与听书收口\n* 修复正文处理破坏图片标签\n* 完善阅读划线备注气泡交互\n* 优化阅读页全文搜索抽屉视觉\n* 优化书签弹窗视觉与阅读预设材质\n* 统一正文编辑框阅读预设材质\n* 调整阅读点击区域默认布局\n* 修复阅读内听书气泡预设取色\n* 优化有声书跳过片头图标\n* 增加当前书籍朗读缓存清理\n* 统一NG实底按钮白字与圆角规范\n* 优化朗读播放器音色入口与模式反馈\n* 统一设置与听书多角色引擎抽屉\n* 重构我的页面规则与设置分类\n* 优化详情页 useweb 渲染与玻璃材质\n* 统一主题与长列表NG抽屉\n* 统一AI抽屉并优化聊天侧栏\n* 优化AI消息搜索页面\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08181920_release.apk",
-            "size": 26981137,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.081819/legado_NG_3.26.08181920_release.apk"
+            "name": "legado_NG_3.26.08241959_release.apk",
+            "size": 27098438,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.082419/legado_NG_3.26.08241959_release.apk"
           }
         ]
       },
@@ -713,7 +713,7 @@
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork，独立发版。",
       "stars": 6,
-      "sourceUpdatedAt": "2026-08-24T10:54:24Z",
+      "sourceUpdatedAt": "2026-08-24T12:07:33Z",
       "githubArchived": false,
       "release": {
         "name": "legado_fu_3.26.082411",
