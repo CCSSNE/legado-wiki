@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:40:09.596Z",
+  "generatedAt": "2026-08-25T01:54:40.642Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 56,
-      "sourceUpdatedAt": "2026-08-24T23:37:06Z",
+      "sourceUpdatedAt": "2026-08-25T01:16:02Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.082417c（预发布）",
-        "tagName": "v3.26.082417c",
+        "name": "阅读 C 3.26.082500c（预发布）",
+        "tagName": "v3.26.082500c",
         "prerelease": true,
-        "publishedAt": "2026-08-24T17:32:20Z",
-        "createdAt": "2026-08-24T17:20:46Z",
-        "body": "## 阅读 C 3.26.082417c（预发布）\n\n> `3.26.082417c` / versionCode `10736`，基于 `own` 分支提交 `e6124d2` 正式冷编译产出（3m12s，退出码 0）。\n\n### 音频 TXT-ZIP 导出\n\n- **可播放的音频导出包**：导出 TXT-ZIP 时按章节打包已具备的音频媒体，导入后本地直接可播，不再依赖原书源在线拉流。\n- **只导出可用音频章节**：导出不再隐式发起缺失音频媒体的下载，只打包已就绪（可播放）的章节，缺媒体章节明确跳过；导出进度显式化，SAF 归档成功保留发布结果。\n- **归档产物对齐**：音频归档章节产物与正文/字幕侧车、插图侧车对齐，替换导出包按章节配对，不再盲目整包替换。\n\n### 离线缓存与媒体路由统一\n\n- **下载路由统一到媒体通道**：缓存管理页与沉浸听书页的章节下载统一路由到媒体任务，不再落入正文缓存；导入的媒体不混入缓存，旧版正文缓存残留清除。\n- **媒体与字幕生命周期统一**：有声音频的媒体与字幕正文同生命周期管理，媒体产物契约化约束（含离线状态判定与共享提交入口接受批量章节索引）。\n- **入口统一**：阅读页菜单中的「离线缓存」入口移除，统一收敛到缓存管理页。\n\n### 评论缓存修正\n\n- **评论自动下载默认关闭**：阅读或书架刷新时自动下载评论的开关默认改为关闭（已有记录不受影响，可在评论缓存设置中重新开启）。\n- **刷新与操作统一**：评论刷新下载收敛统一入口；有声书缓存页评论控件对齐、操作按钮精简。\n- **快照资源修复**：修复导入评论快照资源的恢复与抓取/回收引用问题；孤儿回收 GC 基准 epoch 钉在排队时刻，堵死排队-执行间 ABA 误删窗口（该修复编译时已并入本包）。\n\n### 说明\n\n- 产物已验证：包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」、targetSdk 36；`apksigner` 校验通过。\n- 发布时 `own` 分支最新提交 `babbf6a`（编译后新增的 docs 说明提交，未包含在本 APK 内）。\n- 本版为预发布（prerelease），源码已推送 `origin/own`。",
+        "publishedAt": "2026-08-25T00:41:09Z",
+        "createdAt": "2026-08-25T00:39:49Z",
+        "body": "## 阅读 C 3.26.082500c（预发布）\n\n> `3.26.082500c` / versionCode `10739`，基于 `own` 分支提交 `d19a50a` 正式冷编译产出（4m45s，退出码 0）。\n\n### 书架快捷键放入合集\n\n- **快捷键入驻合集**：书架快捷方式（虚拟 Book 入口）现在可归入文集（BookCollection），数据库版本 106→107 为 `book_shortcuts` 新增 `collectionId` 字段，删除合集时自动置空；合集内按序展示对应快捷入口。\n- **合集数据流**：合集书籍列表按合集装配快捷键，支持快捷键批量移入合集、移回根；书架各样式（样式一/样式二）同步合集内快捷键展示。\n- **伴随修复**：`toShelfBook` 作为“对象成员 + 扩展”被 Kotlin 禁止取可调用引用导致的 appC 编译错误，已改为 lambda 调用（`d19a50a`），随本包一并交付。\n\n### 说明\n\n- 产物已验证：包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」、targetSdk 36；`apksigner` 校验通过。\n- 发布时 `own` 分支最新提交 `db808fa`（编译后新增的基线记录提交，未包含在本 APK 内）。\n- 本版为预发布（prerelease），源码已推送 `origin/own`。\n",
         "assets": [
           {
-            "name": "legado_app_3.26.082417c_10736.apk",
-            "size": 41736199,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082417c/legado_app_3.26.082417c_10736.apk"
+            "name": "legado_app_3.26.082500c_10739.apk",
+            "size": 41839087,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082500c/legado_app_3.26.082500c_10739.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5828,
+      "stars": 5830,
       "sourceUpdatedAt": "2026-08-24T07:23:21Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2463,
+      "stars": 2464,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2120,
+      "stars": 2121,
       "sourceUpdatedAt": "2026-08-24T22:38:35Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 894,
-      "sourceUpdatedAt": "2026-08-24T22:29:48Z",
+      "stars": 898,
+      "sourceUpdatedAt": "2026-08-25T00:34:53Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26082504",
