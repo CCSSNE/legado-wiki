@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:04:14.531Z",
+  "generatedAt": "2026-08-25T04:56:28.938Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5830,
+      "stars": 5834,
       "sourceUpdatedAt": "2026-08-24T07:23:21Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2464,
+      "stars": 2465,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 900,
+      "stars": 902,
       "sourceUpdatedAt": "2026-08-25T00:34:53Z",
       "githubArchived": false,
       "release": {
@@ -712,27 +712,16 @@
       "repo": "h166278/legado_FU",
       "term": "legado-branch-fu",
       "note": "阅读 NG 下游，非 GitHub fork，独立发版。",
-      "stars": 6,
-      "sourceUpdatedAt": "2026-08-25T03:45:04Z",
+      "stars": null,
+      "sourceUpdatedAt": null,
       "githubArchived": false,
-      "release": {
-        "name": "legado_fu_3.26.082411",
-        "tagName": "3.26.082411",
-        "prerelease": false,
-        "publishedAt": "2026-08-24T03:41:55Z",
-        "createdAt": "2026-08-24T03:28:58Z",
-        "body": "### 更新内容\n### 修复\n\n- 章节标题导入并中文化数字序号\n- 构建错误并完善更新分类\n\n### 更新\n\n- 取消更新日志分类展示\n\n### 新增\n\n- 发布说明分类展示\n\n",
-        "assets": [
-          {
-            "name": "legado_fu_3.26.08241129_release.apk",
-            "size": 27137502,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.082411/legado_fu_3.26.08241129_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
+      "release": null,
+      "errors": [
+        "仓库信息同步失败：GitHub API 404",
+        "版本信息同步失败：GitHub API 404"
+      ],
+      "abandoned": "弃坑",
+      "abandonedReason": "无公开 Release，且源码超过半年未更新"
     }
   ]
 }
