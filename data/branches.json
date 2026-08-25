@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T13:13:45.233Z",
+  "generatedAt": "2026-08-25T14:07:53.438Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47036,
+      "stars": 47037,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 907,
-      "sourceUpdatedAt": "2026-08-25T13:06:34Z",
+      "stars": 908,
+      "sourceUpdatedAt": "2026-08-25T13:57:59Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082520",
+        "name": "legado_app_3.26082521",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-25T12:39:24Z",
-        "body": "<!-- legado-version-code:38226 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/25**\n- 阅读页支持按书籍手动选择替换规则，默认空选并支持全选、取消全选和拖选\n\n",
+        "createdAt": "2026-08-25T13:44:42Z",
+        "body": "<!-- legado-version-code:38229 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/25**\n- 正文行距调节范围扩展至 -2.0 到 +3.0\n- 阅读设置支持独立调节章节名行距（-2.0 到 +3.0），并将章节编号下边距下限扩展到 -50\n- Android 16 实时下载通知在完成或失败后保留可操作的普通结果通知，并支持失败重试\n- 加粗书架封面和列表中的阅读进度条，提升深色主题下的可见性\n- 统一日志、崩溃日志和订阅阅读记录清理操作的图标与主题着色\n- Web 与 MCP 服务支持 Android 16 实时更新通知，开启和关闭状态复用同一通知并保留短暂终态\n- 统一正式版和测试版应用更新弹窗的返回、下载按钮位置\n- 修复换源搜索展开后刷新按钮贴近屏幕边缘的问题\n- 阅读页支持按书籍手动选择替换规则，默认空选并支持全选、取消全选和拖选\n- 修复配置重载异步回调可能在用户滑动后重置阅读位置的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082520_releaseA_vc38226.apk",
-            "size": 20909240,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_releaseA_vc38226.apk"
+            "name": "legado_app_3.26082521_releaseA_vc38229.apk",
+            "size": 20909311,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082521_releaseA_vc38229.apk"
           },
           {
-            "name": "legado_app_3.26082520_release_vc38226.apk",
-            "size": 20909226,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_release_vc38226.apk"
+            "name": "legado_app_3.26082521_release_vc38229.apk",
+            "size": 20909296,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082521_release_vc38229.apk"
           },
           {
-            "name": "legado_app_3.26082520_universal_releaseA_vc38226.apk",
-            "size": 26876415,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_universal_releaseA_vc38226.apk"
+            "name": "legado_app_3.26082521_universal_releaseA_vc38229.apk",
+            "size": 26876486,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082521_universal_releaseA_vc38229.apk"
           },
           {
-            "name": "legado_app_3.26082520_universal_release_vc38226.apk",
-            "size": 26876405,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_universal_release_vc38226.apk"
+            "name": "legado_app_3.26082521_universal_release_vc38229.apk",
+            "size": 26876473,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082521_universal_release_vc38229.apk"
           }
         ]
       },
@@ -561,7 +561,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 64,
+      "stars": 65,
       "sourceUpdatedAt": "2026-08-24T12:14:37Z",
       "githubArchived": false,
       "release": {
