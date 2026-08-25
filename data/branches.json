@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T11:46:47.540Z",
+  "generatedAt": "2026-08-25T13:13:45.233Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47035,
+      "stars": 47036,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5840,
+      "stars": 5841,
       "sourceUpdatedAt": "2026-08-24T07:23:21Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2121,
+      "stars": 2122,
       "sourceUpdatedAt": "2026-08-24T22:38:35Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 906,
-      "sourceUpdatedAt": "2026-08-25T10:09:41Z",
+      "stars": 907,
+      "sourceUpdatedAt": "2026-08-25T13:06:34Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082504",
-        "tagName": "3.26082504",
-        "prerelease": false,
-        "publishedAt": "2026-08-24T20:13:52Z",
-        "createdAt": "2026-08-24T19:04:06Z",
-        "body": "**2026/08/24**\n- 应用更新支持在 cdn.mgz.la、cdn.gigu.edu.kg、cdn.mgz.edu.kg 和 GitHub 之间手动切换下载源\n- 修复目录刷新较晚完成时可能把阅读位置拉回旧位置的问题\n- Android 16 实时下载通知支持显示进度或状态、取消下载，并短暂保留完成、失败和取消结果\n- 替换规则编辑页支持对当前规则输入示例并实时查看替换结果，示例文本按规则保存在本机并随规则导入导出和备份恢复\n- 修复 Cronet 152 在部分 Android 设备上导致书源请求失败或应用闪退的问题\n- Cronet 开关开启时请求严格使用 Cronet，初始化或请求异常会明确报错，不再静默切换到 OkHttp\n- 阅读记录列表显示作者信息，并兼容旧记录及多设备作者集合\n- 统一日志、崩溃日志和书源登录菜单样式并补齐操作图标\n- 升级 Cronet 版本至 152.0.7977.54\n\n",
+        "name": "legado_app_3.26082520",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-08-25T12:39:24Z",
+        "body": "<!-- legado-version-code:38226 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/25**\n- 阅读页支持按书籍手动选择替换规则，默认空选并支持全选、取消全选和拖选\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082504_release.apk",
-            "size": 20892461,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082504/legado_app_3.26082504_release.apk"
+            "name": "legado_app_3.26082520_releaseA_vc38226.apk",
+            "size": 20909240,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_releaseA_vc38226.apk"
           },
           {
-            "name": "legado_app_3.26082504_releaseA.apk",
-            "size": 20892461,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082504/legado_app_3.26082504_releaseA.apk"
+            "name": "legado_app_3.26082520_release_vc38226.apk",
+            "size": 20909226,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_release_vc38226.apk"
           },
           {
-            "name": "legado_app_3.26082504_universal_release.apk",
-            "size": 26859644,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082504/legado_app_3.26082504_universal_release.apk"
+            "name": "legado_app_3.26082520_universal_releaseA_vc38226.apk",
+            "size": 26876415,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_universal_releaseA_vc38226.apk"
           },
           {
-            "name": "legado_app_3.26082504_universal_releaseA.apk",
-            "size": 26859641,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082504/legado_app_3.26082504_universal_releaseA.apk"
+            "name": "legado_app_3.26082520_universal_release_vc38226.apk",
+            "size": 26876405,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082520_universal_release_vc38226.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 482,
+      "stars": 483,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -490,7 +490,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 116,
+      "stars": 117,
       "sourceUpdatedAt": "2026-08-22T13:50:54Z",
       "githubArchived": false,
       "release": {
