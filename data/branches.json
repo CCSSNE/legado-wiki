@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T18:59:48.158Z",
+  "generatedAt": "2026-08-25T19:47:53.488Z",
   "branches": [
     {
       "id": "c",
@@ -157,20 +157,20 @@
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
       "stars": 2122,
-      "sourceUpdatedAt": "2026-08-24T22:38:35Z",
+      "sourceUpdatedAt": "2026-08-25T19:18:51Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.2.6-V1.0.4.8",
-        "tagName": "V1.0.4.8",
+        "name": "V1.0.6.0-V1.0.6.19",
+        "tagName": "V1.0.6.19",
         "prerelease": false,
-        "publishedAt": "2026-08-23T16:58:03Z",
-        "createdAt": "2026-08-21T04:29:41Z",
-        "body": "**V1.0.2.6（2026/8/21）**\r\n1. 恢复阅读器左右点击和音量键翻页\r\n2. 按新版设计恢复沉浸式阅读菜单、目录和阅读设置\r\n3. 恢复听书和自动阅读功能\r\n4. 阅读页面支持整本换源和重新净化正文\r\n5. 恢复分页动画并优化章节切换体验\r\n6. 恢复阅读进度、时间和电量状态显示\r\n\r\n**V1.0.2.7（2026/8/21）**\r\n1. 修复退出阅读和切换书源时听书状态残留的问题\r\n2. 修复听书回调误切换到旧章节的问题\r\n3. 修复快速切换自动阅读和听书时可能继续后台翻页的问题\r\n\r\n**V1.0.2.8（2026/8/21）**\r\n1. 阅读菜单新增分享、加入书架和更多设置入口\r\n2. 换源页面新增书源等级评分、当前书源和响应速度筛选\r\n3. 优化阅读页底部进度、时间和电量状态实时更新\r\n4. 修复退出阅读页后自动阅读仍可能继续的问题\r\n\r\n**V1.0.2.9（2026/8/21）**\r\n1. 换源页面新增按书源等级和分组筛选的底部面板\r\n2. 阅读页底部状态栏按设计稿优化进度、时间和电量显示\r\n3. 修复切换书源时加入书架提示和章节进度显示问题\r\n4. 修复快速切换听书和自动阅读时状态残留的问题\r\n\r\n**V1.0.3.0（2026/8/21）**\r\n1. 修复阅读页无法唤出菜单和点击翻页的问题，恢复设置、换源与听书入口\r\n\r\n**V1.0.3.1（2026/8/21）**\r\n1. 修复字体、排版、背景和更多设置入口混用的问题\r\n2. 恢复阅读页左右滑页和仿真翻页效果\r\n\r\n**V1.0.3.2（2026/8/21）**\r\n1. 修复网页书源登录入口无法打开登录页面的问题\r\n2. 修复从全部分类进入发现列表时可能闪退的问题\r\n\r\n**V1.0.3.3（2026/8/21）**\r\n1. 修复部分 WebDAV 服务登录后无法读取文件目录的问题\r\n\r\n**V1.0.3.4（2026/8/21）**\r\n1. 修复网页订阅源打开后错误跳转到百度的问题\r\n\r\n**V1.0.3.5（2026/8/21）**\r\n1. 优化长章节左右滑页和仿真翻页的内存占用与流畅度\r\n\r\n**V1.0.3.6（2026/8/21）**\r\n1. 修复部分书源和订阅源无法清除站点 Cookie 的问题\r\n\r\n**V1.0.3.7（2026/8/21）**\r\n1. 修复路径型站点 Cookie 清除后仍可能继续生效的问题\r\n\r\n**V1.0.3.8（2026/8/21）**\r\n1. 进一步降低长章节左右滑页和仿真翻页的内存占用\r\n\r\n**V1.0.3.9（2026/8/21）**\r\n1. 修复听书加载后续章节时可能中断的问题\r\n\r\n**V1.0.4.0（2026/8/21）**\r\n1. 优化主页面加载，减少重复页面占用\r\n\r\n**V1.0.4.1（2026/8/22）**\r\n1. 修复 WebDAV 配置重命名时未显示原名称并可能保存为空的问题\r\n\r\n**V1.0.4.2（2026/8/22）**\r\n1. 修复 WebDAV 退出登录时可能误删其他配置的问题\r\n2. 优化 WebDAV 配置重命名，避免同名配置被误改\r\n\r\n**V1.0.4.3（2026/8/22）**\r\n1. 移除版本更新弹窗中仅支持本地书籍的过时提示\r\n\r\n**V1.0.4.4（2026/8/23）**\r\n1. 修复网页订阅源打开后可能显示空白的问题\r\n\r\n**V1.0.4.5（2026/8/23）**\r\n1. 取消本地书源选择后不再误报读取失败\r\n\r\n**V1.0.4.6（2026/8/23）**\r\n1. 移除书籍详情页中暂不可用的编辑入口\r\n\r\n**V1.0.4.7（2026/8/23）**\r\n1. 修复书籍详情页分享按钮点击无响应的问题\r\n\r\n**V1.0.4.8（2026/8/23）**\r\n1. 修复仿真翻页效果不生效的问题",
+        "publishedAt": "2026-08-25T19:18:51Z",
+        "createdAt": "2026-08-24T22:38:34Z",
+        "body": "**V1.0.6.0（2026/8/24）**\r\n\r\n1. 修复阅读页分享本地书籍时误带设备文件路径的问题\r\n2. 修复切换章节或书源后朗读内容可能错乱的问题\r\n3. 修复用户协议和隐私声明页面可能无法打开的问题\r\n4. 修复部分书源章节可能被误判为卷名或付费章节的问题\r\n5. 修复修改订阅源地址后阅读记录可能丢失的问题\r\n6. 修复多次返回首页后订阅批量编辑状态可能失效的问题\r\n7. 修复修改书源地址后书架书籍可能找不到原书源的问题\r\n8. 修复大量分类的书源打开全部分类时可能退回桌面的问题\r\n9. 优化大量书源导入列表，避免导入时卡顿或闪退\r\n10. 优化大量书源导入确认时的数据库处理，减少等待时间并处理重复书源地址\r\n11. 修复部分动态书源无法加载目录和正文的问题\r\n12. 修复仿真翻页状态更新不稳定并明确使用左右翻页的问题\r\n13. 优化仿真翻页的卷页阴影、纸张背面和取消回弹效果\r\n14. 修复阅读页点击区域与菜单、左右翻页设置冲突的问题\r\n15. 修复部分动态书源目录、登录和付费正文无法正常加载的问题\r\n16. 支持按上架版本远程关闭书源和订阅源功能\r\n\r\n**V1.0.6.18（2026/8/25）**\r\n\r\n1. 修复订阅文章、收藏和阅读记录在功能关闭后仍可进入的问题\r\n2. 优化仿真翻页拖动、取消回弹和纸张背面显示效果\r\n3. 修复连续快速翻页时内容空白、状态错乱和闪退的问题\r\n4. 修复调整段落间距后仿真翻页样式未及时更新的问题\r\n5. 优化正文加载，避免未完成登录或购买时误发起请求\r\n6. 修复换源列表排序、停止搜索和书源登录入口显示问题\r\n7. 修复粘贴导入无法读取剪贴板文本或链接的问题\r\n8. 正式上架版本隐藏书源、订阅源及在线搜索入口，保持本地阅读体验\r\n9. 修复阅读页面在切换章节、听书和自动阅读后状态残留的问题\r\n10. 完善网络异常时的页面状态恢复和功能开关同步\r\n11. 修复书源登录页侧滑返回可能闪退以及源名称为空时标题异常的问题\r\n12. 修复普通网页登录页加载时未带静态请求头和移动端标识的问题\r\n13. 修复仿真翻页阴影绘制重复恢复画布状态导致的重影和残影问题\r\n14. 修复夜间模式下阅读菜单、排版设置和目录面板仍显示浅色的问题\r\n\r\n**V1.0.6.19（2026/8/26）**\r\n\r\n1. 修复仅配置动态登录方式的书源被误显示为可用登录入口的问题",
         "assets": [
           {
-            "name": "Legado-1.0.4.8-26082400-01-unsigned.hap",
-            "size": 24172776,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.4.8/Legado-1.0.4.8-26082400-01-unsigned.hap"
+            "name": "Legado-1.0.6.19-26082602-test-unsigned.hap",
+            "size": 24395768,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.19/Legado-1.0.6.19-26082602-test-unsigned.hap"
           }
         ]
       },
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 912,
-      "sourceUpdatedAt": "2026-08-25T18:57:50Z",
+      "sourceUpdatedAt": "2026-08-25T19:34:47Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082601",
+        "name": "legado_app_3.26082603",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-25T17:32:26Z",
-        "body": "<!-- legado-version-code:38243 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/25**\n- 正文行距调节范围扩展至 -2.0 到 +3.0\n- 阅读设置支持独立调节章节名行距（-2.0 到 +3.0），并将章节编号下边距下限扩展到 -50\n- Android 16 实时下载通知在完成或失败后保留可操作的普通结果通知，并支持失败重试\n- 加粗书架封面和列表中的阅读进度条，提升深色主题下的可见性\n- 统一日志、崩溃日志和订阅阅读记录清理操作的图标与主题着色\n- Web 与 MCP 服务支持 Android 16 实时更新通知，开启和关闭状态复用同一通知并保留短暂终态\n- 统一正式版和测试版应用更新弹窗的返回、下载按钮位置\n- 修复换源搜索展开后刷新按钮贴近屏幕边缘的问题\n- 阅读页支持按书籍手动选择替换规则，默认空选并支持全选、取消全选和拖选\n- 修复配置重载异步回调可能在用户滑动后重置阅读位置的问题\n\n",
+        "createdAt": "2026-08-25T19:21:30Z",
+        "body": "<!-- legado-version-code:38245 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/26**\n- 订阅源导入支持替换适配预览，并可从预览页跳转替换管理后自动刷新\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082601_releaseA_vc38243.apk",
-            "size": 20943080,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082601_releaseA_vc38243.apk"
+            "name": "legado_app_3.26082603_releaseA_vc38245.apk",
+            "size": 20943153,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082603_releaseA_vc38245.apk"
           },
           {
-            "name": "legado_app_3.26082601_release_vc38243.apk",
-            "size": 20943089,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082601_release_vc38243.apk"
+            "name": "legado_app_3.26082603_release_vc38245.apk",
+            "size": 20943132,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082603_release_vc38245.apk"
           },
           {
-            "name": "legado_app_3.26082601_universal_releaseA_vc38243.apk",
-            "size": 26893883,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082601_universal_releaseA_vc38243.apk"
+            "name": "legado_app_3.26082603_universal_releaseA_vc38245.apk",
+            "size": 26893958,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082603_universal_releaseA_vc38245.apk"
           },
           {
-            "name": "legado_app_3.26082601_universal_release_vc38243.apk",
-            "size": 26893888,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082601_universal_release_vc38243.apk"
+            "name": "legado_app_3.26082603_universal_release_vc38245.apk",
+            "size": 26893945,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082603_universal_release_vc38245.apk"
           }
         ]
       },
