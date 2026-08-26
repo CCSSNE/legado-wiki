@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T04:57:54.702Z",
+  "generatedAt": "2026-08-26T05:52:13.353Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47034,
+      "stars": 47033,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2471,
+      "stars": 2472,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 915,
+      "stars": 914,
       "sourceUpdatedAt": "2026-08-26T02:33:36Z",
       "githubArchived": false,
       "release": {
@@ -463,7 +463,7 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 183,
-      "sourceUpdatedAt": "2026-08-26T01:10:55Z",
+      "sourceUpdatedAt": "2026-08-26T05:14:11Z",
       "githubArchived": false,
       "release": {
         "name": "多平台测试",
@@ -524,30 +524,35 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 116,
-      "sourceUpdatedAt": "2026-08-18T04:44:43Z",
+      "sourceUpdatedAt": "2026-08-26T05:16:05Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.081812",
-        "tagName": "3.26.081812",
-        "prerelease": false,
-        "publishedAt": "2026-08-18T04:36:13Z",
-        "createdAt": "2026-08-18T04:23:19Z",
-        "body": "更新日志\n\n> ⚠️ **更新前请务必备份数据**，以免升级迁移出现意外导致数据丢失。\n> 本版数据库结构有升级（v87 → v91），首次启动会自动迁移，旧数据无损保留。\n\n## 朗读引擎\n\n- 新增角色化朗读：外部 AI 服务标注旁白和角色，可为每个角色指定朗读引擎及音色\n- 新增角色音色表和可编辑的引擎音色清单，配音方案随书保存\n- 章节标注结果自动缓存；标注或配音解析失败时回落普通朗读\n- HttpTTS 补齐 jsLib 和启用 CookieJar 选项\n\n## 书源/规则\n\n- 登录 UI v2 支持多步流程、下拉选择、和 toggle 登录开关\n- 增强书源网页会话桥接，关联书源的网页可访问source、java、cache\n- js文件源修复下载导入\n- MCP 服务：新增 Bearer Token 鉴权，工具增至 23 个\n- 书源加密兼容层改用 Android/JDK 原生 API，移除 Hutool 依赖\n\n## 阅读与界面\n\n- 高亮新增 5 种背景形态（圆角/马克笔/半高/基线/胶囊）与阴影发光效果\n- 主题自定义配色：日夜双联预览，四色日夜分别调整\n- 图片 URL 支持内联 style 选项，可为单图独立设置排版模式及 width/height\n- 日志面板支持类别色条、过滤、实时刷新和导出分享\n- 书架布局设置改为底部面板，发现页增加分组筛选\n- 辅助按键浮窗支持设置显示行数\n\n## 其他\n\n- 帮助文档支持全文搜索和两级章节目录，重写定时任务帮助\n- 启动时自动检查更新，更新弹窗显示安装包大小和发布日期，并支持忽略版本\n- 修复 Web 代码编辑器在 Android 端的交互问题\n- 代码编辑器语法检查上限放宽至 12 万字符，超限显示暂停提示，不再隐藏语法状态栏\n- 修复口令识别、华为导航栏显示、高亮定位偏移等问题\n\n---\n\n[完整更新历史](https://github.com/skybbk1001/legadoT/blob/master/app/src/main/assets/updateLog.md)\n",
+        "name": "legado_app_3.26.082613",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-26T05:16:06Z",
+        "createdAt": "2026-08-26T03:56:46Z",
+        "body": "## 更新日志\nfix(朗读): 角色化朗读六处加固 净化尾部宽容: 段内空隙重叠仍整段归旁白, 但越界的 e 钳到段尾、 结尾漏字补旁白片段, LLM 对 CJK 下标的尾部偏差不再废掉整段标注; prompt 带出段落字符长度并补末片段对齐约束, 协议版本升 2。 分片失败只丢该片而非整章, 连续两片失败才放弃; 角色名归一化收 旁白/narrator/解说 等同义写法, 免得旁白被当普通角色配音色。 配音变更重排改单点 applyPendingRebuild: 先按旧脚本推进游标再作 废缓存(反序会吞掉本段剩余片段), 并清掉按旧配音生成的队列; 暂停 态改置 pageChanged 待 resume 重建。 角色音色与别名进备份(roleCast/roleAlias.json), 标注缓存不进但 加每书 100 章的启动期清理; 自动配角把引擎默认音色计入占用。 AiClient: response_format 被 4xx 拒收时无 json 模式重试一次, 非 2xx 带出状态码而非报解析失败; mergeRole 返回布尔取代 require 避免协程内抛出崩溃。 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26.081812_arm64-v8a.apk",
-            "size": 15071700,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/3.26.081812/legado_app_3.26.081812_arm64-v8a.apk"
+            "name": "legado_app_3.26.08261304_arm64-v8a_release.apk",
+            "size": 15071953,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08261304_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.081812_armeabi-v7a.apk",
-            "size": 14447714,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/3.26.081812/legado_app_3.26.081812_armeabi-v7a.apk"
+            "name": "legado_app_3.26.08261304_armeabi-v7a_release.apk",
+            "size": 14447965,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08261304_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.081812_universal.apk",
-            "size": 15268397,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/3.26.081812/legado_app_3.26.081812_universal.apk"
+            "name": "legado_app_3.26.08261304_universal_release.apk",
+            "size": 15268642,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08261304_universal_release.apk"
+          },
+          {
+            "name": "version.json",
+            "size": 67,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
           }
         ]
       },
