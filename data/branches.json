@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T09:04:58.768Z",
+  "generatedAt": "2026-08-26T09:59:51.517Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47036,
+      "stars": 47037,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5849,
+      "stars": 5852,
       "sourceUpdatedAt": "2026-08-24T07:23:21Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2473,
+      "stars": 2476,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 916,
+      "stars": 917,
       "sourceUpdatedAt": "2026-08-26T02:33:36Z",
       "githubArchived": false,
       "release": {
@@ -471,12 +471,17 @@
         "prerelease": false,
         "publishedAt": "2026-08-19T11:13:13Z",
         "createdAt": "2026-08-19T03:59:42Z",
-        "body": "多平台测试包（未签名，供侧载/自签验证）：\n\n- **鸿蒙**: entry-default-unsigned.hap（arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签）\n- **iOS**: 未签名 ipa（待远程 action 构建完成后补传，SideStore/AltStore 自签侧载）\n\n⚠️ 均为未签名产物，仅供多平台功能测试。",
+        "body": "多平台测试包（未签名，供侧载/自签验证）：\r\n\r\n- **鸿蒙**: entry-default-unsigned.hap（arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签）\r\n- **iOS**: 未签名 ipa（SideStore/AltStore 自签侧载）\r\n\r\n⚠️ 均为未签名产物，仅供多平台功能测试。",
         "assets": [
           {
             "name": "entry-default-unsigned.hap",
             "size": 71525775,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/entry-default-unsigned.hap"
+          },
+          {
+            "name": "legado-3.26.08261554-ios-unsigned.ipa",
+            "size": 32858937,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.08261554-ios-unsigned.ipa"
           }
         ]
       },
