@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T23:39:45.360Z",
+  "generatedAt": "2026-08-27T09:54:32.185Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 61,
-      "sourceUpdatedAt": "2026-08-26T23:27:31Z",
+      "stars": 64,
+      "sourceUpdatedAt": "2026-08-27T07:42:00Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C 3.26.082500c（预发布）",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5860,
+      "stars": 5868,
       "sourceUpdatedAt": "2026-08-26T17:42:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2485,
+      "stars": 2492,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2124,
+      "stars": 2133,
       "sourceUpdatedAt": "2026-08-26T17:11:43Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 924,
-      "sourceUpdatedAt": "2026-08-26T22:55:15Z",
+      "stars": 933,
+      "sourceUpdatedAt": "2026-08-27T02:40:54Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082623",
-        "tagName": "3.26082623",
-        "prerelease": false,
-        "publishedAt": "2026-08-26T16:05:22Z",
-        "createdAt": "2026-08-26T14:26:23Z",
-        "body": "**2026/08/26**\n- 目录支持按书保存展开/折叠偏好，默认展开并自动展开当前章节所在卷\n- 书架阅读进度条支持隐藏、标准 2dp 和增强 4dp 三档显示设置，并兼容旧版备份偏好\n- 订阅源导入支持替换适配预览，并可从预览页跳转替换管理后自动刷新\n- 统一书源登录头和按域名分组菜单图标，并移除订阅源阅读页朗读菜单的图标预留位\n\n",
+        "name": "legado_app_3.26082710",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-08-27T02:29:16Z",
+        "body": "<!-- legado-version-code:38264 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/27**\n- 阅读页顶部附加区域支持仅显示章节名，默认关闭并保留原有跳转行为\n- 修复正文下划线正文/标题开关布局，并支持 0.5dp 步进及 0dp 关闭线条\n- 阅读页右上角菜单支持自定义显示、排序，并将隐藏功能归入“更多”\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082623_release.apk",
-            "size": 20962994,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082623/legado_app_3.26082623_release.apk"
+            "name": "legado_app_3.26082710_releaseA_vc38264.apk",
+            "size": 20967249,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082710_releaseA_vc38264.apk"
           },
           {
-            "name": "legado_app_3.26082623_releaseA.apk",
-            "size": 20962993,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082623/legado_app_3.26082623_releaseA.apk"
+            "name": "legado_app_3.26082710_release_vc38264.apk",
+            "size": 20967241,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082710_release_vc38264.apk"
           },
           {
-            "name": "legado_app_3.26082623_universal_release.apk",
-            "size": 26913789,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082623/legado_app_3.26082623_universal_release.apk"
+            "name": "legado_app_3.26082710_universal_releaseA_vc38264.apk",
+            "size": 26918038,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082710_universal_releaseA_vc38264.apk"
           },
           {
-            "name": "legado_app_3.26082623_universal_releaseA.apk",
-            "size": 26913797,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26082623/legado_app_3.26082623_universal_releaseA.apk"
+            "name": "legado_app_3.26082710_universal_release_vc38264.apk",
+            "size": 26918028,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082710_universal_release_vc38264.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 489,
+      "stars": 491,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -434,7 +434,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 273,
+      "stars": 274,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -462,8 +462,8 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 185,
-      "sourceUpdatedAt": "2026-08-26T07:53:46Z",
+      "stars": 186,
+      "sourceUpdatedAt": "2026-08-26T23:46:11Z",
       "githubArchived": false,
       "release": {
         "name": "多平台测试",
