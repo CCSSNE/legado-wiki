@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T20:33:43.589Z",
+  "generatedAt": "2026-08-28T05:26:42.349Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 64,
-      "sourceUpdatedAt": "2026-08-27T20:21:00Z",
+      "stars": 65,
+      "sourceUpdatedAt": "2026-08-27T23:24:41Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C 3.26.082500c（预发布）",
-        "tagName": "v3.26.082500c",
+        "name": "阅读 C v3.26.082723c",
+        "tagName": "v3.26.082723c",
         "prerelease": true,
-        "publishedAt": "2026-08-25T00:41:09Z",
-        "createdAt": "2026-08-25T00:39:49Z",
-        "body": "## 阅读 C 3.26.082500c（预发布）\n\n> `3.26.082500c` / versionCode `10739`，基于 `own` 分支提交 `d19a50a` 正式冷编译产出（4m45s，退出码 0）。\n\n### 书架快捷键放入合集\n\n- **快捷键入驻合集**：书架快捷方式（虚拟 Book 入口）现在可归入文集（BookCollection），数据库版本 106→107 为 `book_shortcuts` 新增 `collectionId` 字段，删除合集时自动置空；合集内按序展示对应快捷入口。\n- **合集数据流**：合集书籍列表按合集装配快捷键，支持快捷键批量移入合集、移回根；书架各样式（样式一/样式二）同步合集内快捷键展示。\n- **伴随修复**：`toShelfBook` 作为“对象成员 + 扩展”被 Kotlin 禁止取可调用引用导致的 appC 编译错误，已改为 lambda 调用（`d19a50a`），随本包一并交付。\n\n### 说明\n\n- 产物已验证：包名 `io.legado.app.c`、架构 `arm64-v8a`、中文名「阅读 C」、targetSdk 36；`apksigner` 校验通过。\n- 发布时 `own` 分支最新提交 `db808fa`（编译后新增的基线记录提交，未包含在本 APK 内）。\n- 本版为预发布（prerelease），源码已推送 `origin/own`。\n",
+        "publishedAt": "2026-08-27T23:24:41Z",
+        "createdAt": "2026-08-27T23:19:10Z",
+        "body": "## 阅读 C 3.26.082723c（预发布）\n\n### 修复\n- 修复朗读面板动画在 IO 线程启动导致的 `Animators may only be run on Looper threads` 崩溃。\n\n---\n包名 io.legado.app.c，arm64-v8a，targetSdk 36。\n",
         "assets": [
           {
-            "name": "legado_app_3.26.082500c_10739.apk",
-            "size": 41839087,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082500c/legado_app_3.26.082500c_10739.apk"
+            "name": "legado_app_3.26.082723c_10753.apk",
+            "size": 41859672,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082723c/legado_app_3.26.082723c_10753.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47040,
+      "stars": 47037,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5879,
+      "stars": 5881,
       "sourceUpdatedAt": "2026-08-26T17:42:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2495,
+      "stars": 2497,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2137,
+      "stars": 2138,
       "sourceUpdatedAt": "2026-08-26T17:11:43Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 940,
-      "sourceUpdatedAt": "2026-08-27T18:33:13Z",
+      "stars": 941,
+      "sourceUpdatedAt": "2026-08-28T01:56:43Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26082802",
+        "name": "legado_app_3.26082809",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-08-27T18:19:11Z",
-        "body": "<!-- legado-version-code:38266 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/28**\n- 高亮规则下划线支持独立调节粗细和距离，兼容旧样式配置\n\n",
+        "createdAt": "2026-08-28T01:44:41Z",
+        "body": "<!-- legado-version-code:38268 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/28**\n- 阅读设置支持为章节标题单独选择字体，默认跟随正文字体\n- 高亮规则下划线支持独立调节粗细和距离，兼容旧样式配置\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26082802_releaseA_vc38266.apk",
-            "size": 20968813,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082802_releaseA_vc38266.apk"
+            "name": "legado_app_3.26082809_releaseA_vc38268.apk",
+            "size": 20969363,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082809_releaseA_vc38268.apk"
           },
           {
-            "name": "legado_app_3.26082802_release_vc38266.apk",
-            "size": 20968817,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082802_release_vc38266.apk"
+            "name": "legado_app_3.26082809_release_vc38268.apk",
+            "size": 20969357,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082809_release_vc38268.apk"
           },
           {
-            "name": "legado_app_3.26082802_universal_releaseA_vc38266.apk",
-            "size": 26919607,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082802_universal_releaseA_vc38266.apk"
+            "name": "legado_app_3.26082809_universal_releaseA_vc38268.apk",
+            "size": 26920152,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082809_universal_releaseA_vc38268.apk"
           },
           {
-            "name": "legado_app_3.26082802_universal_release_vc38266.apk",
-            "size": 26919603,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082802_universal_release_vc38266.apk"
+            "name": "legado_app_3.26082809_universal_release_vc38268.apk",
+            "size": 26920144,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26082809_universal_release_vc38268.apk"
           }
         ]
       },
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 313,
+      "stars": 316,
       "sourceUpdatedAt": "2026-08-27T16:45:09Z",
       "githubArchived": false,
       "release": {
