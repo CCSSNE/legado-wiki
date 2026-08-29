@@ -12,8 +12,19 @@ jobs:
       - name: 拉取仓库
         uses: actions/checkout@v4
 
-      - name: 同步 Fork 到备份组织
+      - name: 检测上游历史并同步 Fork 到备份组织
+        id: check
         run: node scripts/fork-versions.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.FORK_TOKEN }}
           FORK_ORG: legado-backup
+
+      - name: Send alert email
+        if: steps.check.outputs.rewritten == 'true'
+        uses: action-pack/send-mail@v1
+        with:
+          connection_url: ${{ secrets.MAIL_CONNECTION }}
+          to: 1220232554@qq.com
+          from: 1365443620@qq.com
+          subject: "警告：上游 Git 历史发生变化"
+          body: "检测到可能的 force push / rebase，本次未同步 fork。"
