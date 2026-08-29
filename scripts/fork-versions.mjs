@@ -32,7 +32,19 @@ for (const branch of data.branches) {
 
   const existing = await api(`/repos/${ORG}/${forkName}`);
   if (existing.status === 200) {
-    results.push({ id: branch.id, repo: branch.repo, status: 'exists', message: `已有 ${ORG}/${forkName}` });
+    const sync = await api(`/repos/${ORG}/${forkName}/merge-upstream`, {
+      method: 'POST',
+      body: JSON.stringify({ branch: existing.body?.default_branch })
+    });
+    if (sync.status === 200) {
+      results.push({ id: branch.id, repo: branch.repo, status: 'synced', message: `${ORG}/${forkName} ${sync.body?.message ?? '已同步'}` });
+    } else if (sync.status === 404 || sync.status === 410) {
+      results.push({ id: branch.id, repo: branch.repo, status: 'gone', message: `上游已删库，等你补档（在 wiki 写上 backupRelease 后自动退出 fork 列表）` });
+    } else if (sync.status === 409) {
+      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `同步冲突 HTTP 409，需人工检查 ${ORG}/${forkName}` });
+    } else {
+      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `同步失败 HTTP ${sync.status}: ${sync.body?.message ?? '未知错误'}` });
+    }
     continue;
   }
 
@@ -57,5 +69,5 @@ for (const r of results) {
   console.log(`[${r.status.padEnd(7)}] ${r.id} (${r.repo}): ${r.message}`);
   if (r.status === 'error') failed += 1;
 }
-console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'exists').length} 已存在, ${results.filter(r => r.status === 'skipped').length} 跳过, ${results.filter(r => r.status === 'gone').length} 上游已删, ${failed} 失败`);
+console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'synced').length} 已同步, ${results.filter(r => r.status === 'skipped').length} 跳过, ${results.filter(r => r.status === 'gone').length} 上游已删, ${failed} 失败`);
 if (failed > 0) process.exitCode = 1;
