@@ -43,6 +43,8 @@ for (const branch of data.branches) {
 
   if (res.status === 202 || res.status === 200) {
     results.push({ id: branch.id, repo: branch.repo, status: 'queued', message: `fork 排队创建中: ${ORG}/${forkName}` });
+  } else if (res.status === 404 || res.status === 410) {
+    results.push({ id: branch.id, repo: branch.repo, status: 'gone', message: '上游已删库，等你补档（在 wiki 写上 backupRelease 后自动退出 fork 列表）' });
   } else {
     results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `HTTP ${res.status}: ${res.body?.message ?? '未知错误'}` });
   }
@@ -55,5 +57,5 @@ for (const r of results) {
   console.log(`[${r.status.padEnd(7)}] ${r.id} (${r.repo}): ${r.message}`);
   if (r.status === 'error') failed += 1;
 }
-console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'exists').length} 已存在, ${results.filter(r => r.status === 'skipped').length} 跳过, ${failed} 失败`);
+console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'exists').length} 已存在, ${results.filter(r => r.status === 'skipped').length} 跳过, ${results.filter(r => r.status === 'gone').length} 上游已删, ${failed} 失败`);
 if (failed > 0) process.exitCode = 1;
