@@ -1,0 +1,19 @@
+name: Fork 备份到组织
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 * * * *'
+
+jobs:
+  fork-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 同步 Fork 到备份组织
+        run: node scripts/fork-versions.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.FORK_TOKEN }}
+          FORK_ORG: legado-backup
