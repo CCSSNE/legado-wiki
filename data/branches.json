@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T09:08:39.860Z",
+  "generatedAt": "2026-08-29T14:31:13.520Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 67,
-      "sourceUpdatedAt": "2026-08-29T07:52:11Z",
+      "stars": 68,
+      "sourceUpdatedAt": "2026-08-29T13:18:34Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C v3.26.082723c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47039,
+      "stars": 47037,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5894,
+      "stars": 5897,
       "sourceUpdatedAt": "2026-08-26T17:42:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2513,
+      "stars": 2517,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,21 +156,21 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2138,
-      "sourceUpdatedAt": "2026-08-28T13:34:56Z",
+      "stars": 2139,
+      "sourceUpdatedAt": "2026-08-29T13:43:35Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.6.46",
-        "tagName": "V1.0.6.46",
+        "name": "V1.0.6.37",
+        "tagName": "V1.0.6.47",
         "prerelease": false,
-        "publishedAt": "2026-08-28T13:34:56Z",
+        "publishedAt": "2026-08-29T13:43:35Z",
         "createdAt": "2026-08-24T22:38:34Z",
-        "body": "V1.0.6.43（2026/8/27）\r\n\r\n1. 修复极端阅读边距下分页测量与仿真翻页渲染不一致导致的正文裁切问题\r\n2. 修复系统深色模式下搜索、书源筛选和设置页面文字对比度不足的问题\r\n3. 修复书源筛选下拉图标尺寸小于鸿蒙界面规范要求的问题\r\n4. 统一书架、导入、弹窗和订阅帮助页面的文字与图标对比度，适配深色模式\r\n5. 修复发现页无书源时顶部提示文字在深色模式下可能对比度不足的问题\r\n6. 修复阅读设置背景取色板在部分设备上超出屏幕的问题\r\n7. 统一阅读器浅色和深色面板的激活文字、图标与加载状态颜色，提升对比度\r\n8. 将阅读页充电状态图标宽度调整为符合鸿蒙规范的最小尺寸\r\n9. 修复书源筛选下拉箭头实际绘制高度不足鸿蒙界面规范的问题\r\n10. 修复发现页分类入口参数缺失导致进入分类页闪退的问题\r\n11. 修复分类页缺少书源或分类地址时发起无效请求的问题\r\n12. 修复我的设置中用户代理入口点击无响应的问题\r\n13. 支持从我的设置应用语言选项并保存语言偏好\r\n14. 支持清除WebView网页缓存、Cookie和网页存储\r\n15. 明确标注鸿蒙版尚未接入的书籍保存位置、图片缓存和Web端口功能\r\n16. 优化本地书籍重复打开，减少重复解析等待时间\r\n17. 修复阅读页长按选字结束后可能自动翻页的问题\r\n\r\n\r\nV1.0.6.46（2026/8/28）\r\n\r\n1. 修复阅读设置首行缩进在重新排版后应用到每行的问题，统一分页测量与显示效果\r\n2. 帮助中心补充 EPUB 本地书籍导入说明\r\n3. 支持新增、重命名和删除自定义书源分组，删除分组时保留组内书源\r\n4. 书源管理、导入、搜索和换源筛选同步自定义及多分组\r\n",
+        "body": "V1.0.6.47（2026/8/29）\r\n1、修复书源搜索",
         "assets": [
           {
-            "name": "Legado-1.0.6.46-26082809-unsigned.hap",
-            "size": 24473892,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.46/Legado-1.0.6.46-26082809-unsigned.hap"
+            "name": "Legado-1.0.6.47-26082921-unsigned.hap",
+            "size": 24474012,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.47/Legado-1.0.6.47-26082921-unsigned.hap"
           }
         ]
       },
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 952,
+      "stars": 957,
       "sourceUpdatedAt": "2026-08-28T21:29:33Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 491,
+      "stars": 493,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -366,6 +366,34 @@
       "abandonedReason": "作者已声明不再维护"
     },
     {
+      "id": "r",
+      "name": "阅读 R",
+      "tag": "r",
+      "repo": "refgd/legado",
+      "term": "legado-branch-r",
+      "stars": 276,
+      "sourceUpdatedAt": "2026-06-21T19:49:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "3.26.062203",
+        "tagName": "3.26.062203",
+        "prerelease": false,
+        "publishedAt": "2026-06-21T19:49:23Z",
+        "createdAt": "2026-06-21T16:02:04Z",
+        "body": "- 修复 TTS 回原位时定位异常的问题\r\n- 修复切换主题后 TTS 浮窗消失的问题\r\n- 优化书籍首次加载速度\r\n- 修复其它BUG",
+        "assets": [
+          {
+            "name": "legado_app_3.26.062203_10489.apk",
+            "size": 32030735,
+            "browserDownloadUrl": "https://github.com/refgd/legado/releases/download/3.26.062203/legado_app_3.26.062203_10489.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Rimchars/legado"
+    },
+    {
       "id": "tauri",
       "name": "阅读 Tauri",
       "tag": "tauri",
@@ -419,40 +447,12 @@
       "abandonedReason": "作者声明删除仓库，停止维护"
     },
     {
-      "id": "r",
-      "name": "阅读 R",
-      "tag": "r",
-      "repo": "refgd/legado",
-      "term": "legado-branch-r",
-      "stars": 274,
-      "sourceUpdatedAt": "2026-06-21T19:49:22Z",
-      "githubArchived": false,
-      "release": {
-        "name": "3.26.062203",
-        "tagName": "3.26.062203",
-        "prerelease": false,
-        "publishedAt": "2026-06-21T19:49:23Z",
-        "createdAt": "2026-06-21T16:02:04Z",
-        "body": "- 修复 TTS 回原位时定位异常的问题\r\n- 修复切换主题后 TTS 浮窗消失的问题\r\n- 优化书籍首次加载速度\r\n- 修复其它BUG",
-        "assets": [
-          {
-            "name": "legado_app_3.26.062203_10489.apk",
-            "size": 32030735,
-            "browserDownloadUrl": "https://github.com/refgd/legado/releases/download/3.26.062203/legado_app_3.26.062203_10489.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Rimchars/legado"
-    },
-    {
       "id": "shutiao",
       "name": "薯条版",
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 188,
+      "stars": 189,
       "sourceUpdatedAt": "2026-08-29T08:15:14Z",
       "githubArchived": false,
       "release": {
@@ -525,6 +525,39 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "jingshiro",
+      "name": "Jingshiro 版",
+      "tag": "jingshiro",
+      "repo": "Jingshiro/legado",
+      "term": "legado-branch-jingshiro",
+      "stars": 117,
+      "sourceUpdatedAt": "2026-08-22T13:50:54Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado 3.26.082221",
+        "tagName": "3.26.082221",
+        "prerelease": false,
+        "publishedAt": "2026-08-22T13:50:55Z",
+        "createdAt": "2026-08-22T13:35:39Z",
+        "body": null,
+        "assets": [
+          {
+            "name": "legado_releaseS_3.26.082221.apk",
+            "size": 23673202,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_releaseS_3.26.082221.apk"
+          },
+          {
+            "name": "legado_release_3.26.082221.apk",
+            "size": 23673214,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_release_3.26.082221.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "t",
       "name": "阅读 T",
       "tag": "t",
@@ -566,39 +599,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "gedoor/legado"
-    },
-    {
-      "id": "jingshiro",
-      "name": "Jingshiro 版",
-      "tag": "jingshiro",
-      "repo": "Jingshiro/legado",
-      "term": "legado-branch-jingshiro",
-      "stars": 116,
-      "sourceUpdatedAt": "2026-08-22T13:50:54Z",
-      "githubArchived": false,
-      "release": {
-        "name": "Legado 3.26.082221",
-        "tagName": "3.26.082221",
-        "prerelease": false,
-        "publishedAt": "2026-08-22T13:50:55Z",
-        "createdAt": "2026-08-22T13:35:39Z",
-        "body": null,
-        "assets": [
-          {
-            "name": "legado_releaseS_3.26.082221.apk",
-            "size": 23673202,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_releaseS_3.26.082221.apk"
-          },
-          {
-            "name": "legado_release_3.26.082221.apk",
-            "size": 23673214,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_release_3.26.082221.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
     },
     {
       "id": "ng",
