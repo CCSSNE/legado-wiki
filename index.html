@@ -480,6 +480,13 @@
       font-size: 12px;
     }
 
+    .repo-desc {
+      flex-basis: 100%;
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
     .release-info {
       padding: 14px;
       border: 1px solid #e1e6df;
@@ -1128,6 +1135,7 @@
                 ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
                 <div class="repo-note">${escapeHtml(updatedText)}</div>
+                ${branch.note ? `<div class="repo-desc">${escapeHtml(branch.note)}</div>` : ''}
                 ${renderRelatedLinks(branch)}
               </div>
               <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
