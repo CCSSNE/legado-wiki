@@ -1,0 +1,23 @@
+name: 测试邮件
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 发送测试邮件
+        uses: action-pack/send-mail@v1
+        with:
+          connection_url: ${{ secrets.MAIL_CONNECTION }}
+          subject: "【测试】legado-wiki 告警邮箱配置验证"
+          to: 1220232554@qq.com
+          from: 1365443620@qq.com
+          body: |
+            这是一封测试邮件，用于验证 MAIL_CONNECTION 告警邮箱配置是否可用。
+
+            - 收件人: 1220232554@qq.com
+            - 触发方式: 手动 workflow_dispatch
+            - 时间: ${{ github.event.repository.updated_at }}
+          nodemailerdebug: true
