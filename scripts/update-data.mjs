@@ -57,12 +57,12 @@ const branches = [
     note: '独立仓库，有自己的 APK 发布。'
   },
   {
-    id: 'max-dandan',
-    name: '阅读 MAX 蛋蛋版',
-    tag: 'max-dandan',
-    repo: 'DandanLLab/Legado_Max',
-    term: 'legado-branch-max-dandan',
-    note: '独立发版，有自己的 APK 发布。'
+    id: 'mr',
+    name: '阅读 MR',
+    tag: 'mr',
+    repo: 'DandanLLab/mr',
+    term: 'legado-branch-mr',
+    note: 'Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。'
   },
   { id: 'r', name: '阅读 R', tag: 'r', repo: 'refgd/legado', term: 'legado-branch-r' },
   { id: 'shutiao', name: '薯条版', tag: 'shutiao', repo: 'huajideshutiao/legado', term: 'legado-branch-shutiao' },

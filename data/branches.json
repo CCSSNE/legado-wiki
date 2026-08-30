@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T01:34:24.822Z",
+  "generatedAt": "2026-08-30T03:51:12.966Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 68,
-      "sourceUpdatedAt": "2026-08-30T01:26:55Z",
+      "stars": 69,
+      "sourceUpdatedAt": "2026-08-30T03:36:09Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C v3.26.082723c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47039,
+      "stars": 47040,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5903,
+      "stars": 5904,
       "sourceUpdatedAt": "2026-08-26T17:42:38Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 960,
-      "sourceUpdatedAt": "2026-08-28T21:29:33Z",
+      "stars": 961,
+      "sourceUpdatedAt": "2026-08-30T02:37:58Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26082823",
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 494,
+      "stars": 495,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -601,6 +601,50 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "mr",
+      "name": "阅读 MR",
+      "tag": "mr",
+      "repo": "DandanLLab/mr",
+      "term": "legado-branch-mr",
+      "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
+      "stars": 90,
+      "sourceUpdatedAt": "2026-08-30T03:12:20Z",
+      "githubArchived": false,
+      "release": {
+        "name": "MR 2608305 (测试版)",
+        "tagName": "v2608305-dev",
+        "prerelease": true,
+        "publishedAt": "2026-08-30T03:12:20Z",
+        "createdAt": "2026-08-30T03:03:22Z",
+        "body": "## MR 2608305\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-30\n\n**版本号**: 26.0830.5（pubspec.yaml 格式）\n\n**构建号**: 1788059015\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "assets": [
+          {
+            "name": "mr_v2608305_dev_2026-08-30_arm64.apk",
+            "size": 22597431,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608305-dev/mr_v2608305_dev_2026-08-30_arm64.apk"
+          },
+          {
+            "name": "mr_v2608305_dev_2026-08-30_ios.ipa",
+            "size": 20960336,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608305-dev/mr_v2608305_dev_2026-08-30_ios.ipa"
+          },
+          {
+            "name": "mr_v2608305_dev_2026-08-30_ohos.hap",
+            "size": 34908149,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608305-dev/mr_v2608305_dev_2026-08-30_ohos.hap"
+          },
+          {
+            "name": "mr_v2608305_dev_2026-08-30_x86_64.apk",
+            "size": 22775063,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608305-dev/mr_v2608305_dev_2026-08-30_x86_64.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "ng",
       "name": "阅读 NG",
       "tag": "ng",
@@ -666,45 +710,6 @@
       "errors": [],
       "fork": false,
       "forkOf": null
-    },
-    {
-      "id": "max-dandan",
-      "name": "阅读 MAX 蛋蛋版",
-      "tag": "max-dandan",
-      "repo": "DandanLLab/Legado_Max",
-      "term": "legado-branch-max-dandan",
-      "note": "独立发版，有自己的 APK 发布。",
-      "stars": 21,
-      "sourceUpdatedAt": "2026-06-01T15:19:40Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.060123",
-        "tagName": "beta-3.26.060123",
-        "prerelease": true,
-        "publishedAt": "2026-06-01T15:19:40Z",
-        "createdAt": "2026-06-01T13:53:42Z",
-        "body": "### 更新内容\n* 修复因ReadBook.kt被修改导致书籍详情页阅读记录章节名未被记录的bug\n* feat：封面图集增加导入和导出zip功能\n* feat：源和正文编辑内容的界面增加View 版滚动条\n* fix：修复帮助界面菜单文字颜色选择\n* feat：恢复选择菜单增加全选全不选功能 优化帮助界面菜单文字颜色\n* 更新\n* 新增功能：视频类书源也能被记录阅读记录\n* 合并上游后对冲突作出调整，重新上传\n* 添加网页搜索文本菜单项\n* 添加阅读页网页搜索面板\n* 添加网页搜索工具栏操作\n* 支持编辑网页搜索引擎\n* 保存网页搜索默认引擎\n* 优化网页搜索引擎管理面板\n* 修复网页搜索夜间模式显示\n* 修复搜索引擎选中项文字颜色\n* fix：字重调整界面实时显示效果\n* 更新\n* fix：长按菜单默认显示7个\n* 优化\n* feat：增加菜单配置功能，长按文字显示\n* 更新\n\n",
-        "assets": [
-          {
-            "name": "legado_beta_3.26.060123_release.apk",
-            "size": 23765769,
-            "browserDownloadUrl": "https://github.com/DandanLLab/Legado_Max/releases/download/beta-3.26.060123/legado_beta_3.26.060123_release.apk"
-          },
-          {
-            "name": "legado_compat_3.26.060123_legacy.apk",
-            "size": 23765753,
-            "browserDownloadUrl": "https://github.com/DandanLLab/Legado_Max/releases/download/beta-3.26.060123/legado_compat_3.26.060123_legacy.apk"
-          },
-          {
-            "name": "legado_plus_3.26.060123_releaseS.apk",
-            "size": 23765703,
-            "browserDownloadUrl": "https://github.com/DandanLLab/Legado_Max/releases/download/beta-3.26.060123/legado_plus_3.26.060123_releaseS.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "youfengknight/Legado_Max"
     },
     {
       "id": "pp",
