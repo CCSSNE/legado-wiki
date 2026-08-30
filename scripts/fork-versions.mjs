@@ -45,6 +45,10 @@ for (const branch of data.branches) {
     results.push({ id: branch.id, repo: branch.repo, status: 'skipped', message: '上游已删库且已手动补档，跳过' });
     continue;
   }
+  if (branch.skipAutoForks) {
+    results.push({ id: branch.id, repo: branch.repo, status: 'skipped', message: 'skipAutoForks：不走 fork 备份（镜像/补档仓库）' });
+    continue;
+  }
   if (!branch.repo) continue;
 
   const [owner, repo] = branch.repo.split('/');

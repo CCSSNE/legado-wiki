@@ -71,7 +71,17 @@ const branches = [
   { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
   { id: 'pp', name: '阅读PP', tag: 'pp', repo: 'damifan3/legadoPP', term: 'legado-branch-pp', note: '阅读 Sigma 分支。' },
   { id: 'x', name: '阅读 X', tag: 'x', repo: 'XziXmn/legado-X', term: 'legado-branch-x', note: '阅读 Sigma 分支。' },
-  { id: 'm', name: '阅读 M', tag: 'm', repo: 'syq17496152/legado', term: 'legado-branch-m' }
+  { id: 'm', name: '阅读 M', tag: 'm', repo: 'syq17496152/legado', term: 'legado-branch-m' },
+  {
+    id: 'iyuedu',
+    name: '阅读 iYueDu',
+    tag: 'iyuedu',
+    repo: 'legado-backup/iyuedu',
+    term: 'legado-branch-iyuedu',
+    skipAutoForks: true,
+    allowNoRelease: true,
+    note: '分叉自 Sigma（Luoyacheng/legado-E）的独立版本，主打朗读脚本 / 角色管理 / AI 生图。无公开 Release，APK 需自行构建；源码镜像自 CNB mingwuyan/iyuedu 并每小时自动同步。'
+  }
 ];
 
 const token = process.env.GITHUB_TOKEN || '';
@@ -154,11 +164,15 @@ async function hydrateBranch(branch) {
     result.abandoned = '弃坑';
     result.abandonedReason = branch.manualAbandoned;
   } else if (!result.release) {
-    const sourceTime = Date.parse(result.sourceUpdatedAt || '');
-    const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > halfYearMs;
-    if (sourceStale) {
-      result.abandoned = '弃坑';
-      result.abandonedReason = '无公开 Release，且源码超过半年未更新';
+    if (branch.allowNoRelease) {
+      // 仅源码收录的镜像仓库无 Release 属预期，不自动判弃坑
+    } else {
+      const sourceTime = Date.parse(result.sourceUpdatedAt || '');
+      const sourceStale = !Number.isFinite(sourceTime) || Date.now() - sourceTime > halfYearMs;
+      if (sourceStale) {
+        result.abandoned = '弃坑';
+        result.abandonedReason = '无公开 Release，且源码超过半年未更新';
+      }
     }
   } else {
     const releaseTime = Date.parse(result.release.publishedAt || result.release.createdAt || '');

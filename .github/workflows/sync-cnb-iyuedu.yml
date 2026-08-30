@@ -1,0 +1,39 @@
+name: 同步 CNB 上游（i阅读镜像）
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 git-filter-repo
+        run: pip install git-filter-repo
+
+      - name: 同步 CNB 上游到镜像仓
+        id: sync
+        run: node scripts/sync-cnb.mjs
+        env:
+          MIRROR_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+      - name: Send alert email
+        if: steps.sync.outputs.alert == 'true'
+        uses: action-pack/send-mail@v1
+        with:
+          connection_url: ${{ secrets.MAIL_CONNECTION }}
+          to: 1220232554@qq.com
+          from: 1365443620@qq.com
+          subject: "警告：CNB 上游异常（历史重写 / 仓库不可达）"
+          body: |
+            本轮 CNB 镜像同步检测到异常，涉及以下类型: ${{ steps.sync.outputs.alert_reason }}
+            - rewritten: CNB 上游历史被重写（force push / rebase），本次未同步镜像
+            - gone: CNB 上游不可达或已删除
+            详见该次 workflow 的运行日志。
