@@ -74,13 +74,13 @@ const branches = [
   { id: 'm', name: '阅读 M', tag: 'm', repo: 'syq17496152/legado', term: 'legado-branch-m' },
   {
     id: 'iyuedu',
-    name: '阅读 iYueDu',
+    name: 'i阅读',
     tag: 'iyuedu',
     repo: 'legado-backup/iyuedu',
     term: 'legado-branch-iyuedu',
     skipAutoForks: true,
     allowNoRelease: true,
-    note: '分叉自 Sigma（Luoyacheng/legado-E）的独立版本，主打朗读脚本 / 角色管理 / AI 生图。无公开 Release，APK 需自行构建；源码镜像自 CNB mingwuyan/iyuedu 并每小时自动同步。'
+    note: 'z阅读的非内置ttsserver版本，不建议独立使用。'
   }
 ];
 
