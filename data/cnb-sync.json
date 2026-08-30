@@ -5,8 +5,8 @@
       "upstream": "https://cnb.cool/mingwuyan/iyuedu.git",
       "upstreamBranch": "main",
       "mirror": "legado-backup/iyuedu",
-      "head": null,
-      "syncedAt": null,
+      "head": "2b82880fb53ffb18df20045db82ec1d2db80cf3b",
+      "syncedAt": "2026-08-30T05:43:51.262Z",
       "note": "镜像历史为上游经 git-filter-repo --strip-blobs-bigger-than 100M 的确定性过滤（剥离 依赖/sdk-packages 等超限文件）；head 记录上游原始 commit。"
     }
   }
