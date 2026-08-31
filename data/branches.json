@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T05:41:47.201Z",
+  "generatedAt": "2026-08-31T13:57:53.275Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 73,
-      "sourceUpdatedAt": "2026-08-31T05:26:41Z",
+      "sourceUpdatedAt": "2026-08-31T10:04:58Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 C v3.26.082723c",
-        "tagName": "v3.26.082723c",
-        "prerelease": false,
-        "publishedAt": "2026-08-27T23:24:41Z",
-        "createdAt": "2026-08-27T23:19:10Z",
-        "body": "## 阅读 C 3.26.082723c（预发布）\n\n### 修复\n- 修复朗读面板动画在 IO 线程启动导致的 `Animators may only be run on Looper threads` 崩溃。\n\n---\n包名 io.legado.app.c，arm64-v8a，targetSdk 36。\n",
+        "name": "v3.26.083107 (pre-release)",
+        "tagName": "v3.26.083107",
+        "prerelease": true,
+        "publishedAt": "2026-08-31T09:22:32Z",
+        "createdAt": "2026-08-30T00:00:00Z",
+        "body": "# 阅读 C v3.26.083107（公开版 pre-release）\n\n## 版本信息\n- **包名**: io.legado.app.c\n- **版本号**: versionCode 10785, versionName 3.26.083107\n- **架构**: arm64-v8a\n- **签名**: debug 签名（与自用版同一把）\n\n## 本次变更\n- 包名身份重映射：公开版统一 io.legado.app.c，自用版独立 io.legado.app.dev，两版可共存于同一设备\n- 签名策略定稿：只允许 release 系构建，统一 debug 签名\n- 修复 TTS 缓存引擎编译：补全 BdTtsCacheSynthesizer 缺失 import（此前仅 oss 剥离路径未暴露此问题）",
         "assets": [
           {
-            "name": "legado_app_3.26.082723c_10753.apk",
-            "size": 41859672,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.082723c/legado_app_3.26.082723c_10753.apk"
+            "name": "legado_oss_3.26.083107_10785.apk",
+            "size": 34676556,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.083107/legado_oss_3.26.083107_10785.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47042,
+      "stars": 47041,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5921,
-      "sourceUpdatedAt": "2026-08-30T19:52:07Z",
+      "stars": 5927,
+      "sourceUpdatedAt": "2026-08-31T11:28:13Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.23",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2528,
+      "stars": 2533,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2141,
+      "stars": 2142,
       "sourceUpdatedAt": "2026-08-29T14:55:31Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 973,
-      "sourceUpdatedAt": "2026-08-30T02:37:58Z",
+      "stars": 980,
+      "sourceUpdatedAt": "2026-08-31T06:30:22Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26082823",
@@ -333,7 +333,7 @@
       "manualAbandoned": "作者已声明不再维护",
       "stars": 283,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
-      "githubArchived": false,
+      "githubArchived": true,
       "release": {
         "name": "legado_app_3.26.061723",
         "tagName": "beta-3.26.061723",
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 190,
+      "stars": 191,
       "sourceUpdatedAt": "2026-08-29T15:18:03Z",
       "githubArchived": false,
       "release": {
@@ -573,7 +573,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 117,
+      "stars": 118,
       "sourceUpdatedAt": "2026-08-22T13:50:54Z",
       "githubArchived": false,
       "release": {
@@ -608,35 +608,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 90,
-      "sourceUpdatedAt": "2026-08-31T00:36:47Z",
+      "sourceUpdatedAt": "2026-08-31T13:17:13Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2608311 (测试版)",
-        "tagName": "v2608311-dev",
+        "name": "MR 2608312 (测试版)",
+        "tagName": "v2608312-dev",
         "prerelease": true,
-        "publishedAt": "2026-08-31T00:36:48Z",
-        "createdAt": "2026-08-31T00:26:33Z",
-        "body": "## MR 2608311\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-31\n\n**版本号**: 26.0831.1（pubspec.yaml 格式）\n\n**构建号**: 1788136011\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-08-31T13:17:13Z",
+        "createdAt": "2026-08-31T13:06:47Z",
+        "body": "## MR 2608312\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-31\n\n**版本号**: 26.0831.2（pubspec.yaml 格式）\n\n**构建号**: 1788181648\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2608311_dev_2026-08-31_arm64.apk",
-            "size": 22600094,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_arm64.apk"
+            "name": "mr_v2608312_dev_2026-08-31_arm64.apk",
+            "size": 22600274,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608312-dev/mr_v2608312_dev_2026-08-31_arm64.apk"
           },
           {
-            "name": "mr_v2608311_dev_2026-08-31_ios.ipa",
-            "size": 20965053,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_ios.ipa"
+            "name": "mr_v2608312_dev_2026-08-31_ios.ipa",
+            "size": 20965318,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608312-dev/mr_v2608312_dev_2026-08-31_ios.ipa"
           },
           {
-            "name": "mr_v2608311_dev_2026-08-31_ohos.hap",
+            "name": "mr_v2608312_dev_2026-08-31_ohos.hap",
             "size": 34908149,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_ohos.hap"
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608312-dev/mr_v2608312_dev_2026-08-31_ohos.hap"
           },
           {
-            "name": "mr_v2608311_dev_2026-08-31_x86_64.apk",
-            "size": 22777965,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_x86_64.apk"
+            "name": "mr_v2608312_dev_2026-08-31_x86_64.apk",
+            "size": 22778323,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608312-dev/mr_v2608312_dev_2026-08-31_x86_64.apk"
           }
         ]
       },
@@ -650,7 +650,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 66,
+      "stars": 67,
       "sourceUpdatedAt": "2026-08-28T08:03:40Z",
       "githubArchived": false,
       "release": {
@@ -790,7 +790,7 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 8,
+      "stars": 9,
       "sourceUpdatedAt": "2026-08-30T20:46:00Z",
       "githubArchived": false,
       "release": {
