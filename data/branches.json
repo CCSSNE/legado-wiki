@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T23:32:58.943Z",
+  "generatedAt": "2026-08-31T05:41:47.201Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 71,
-      "sourceUpdatedAt": "2026-08-30T21:52:54Z",
+      "stars": 73,
+      "sourceUpdatedAt": "2026-08-31T05:26:41Z",
       "githubArchived": false,
       "release": {
         "name": "阅读 C v3.26.082723c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5914,
+      "stars": 5921,
       "sourceUpdatedAt": "2026-08-30T19:52:07Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2526,
+      "stars": 2528,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 972,
+      "stars": 973,
       "sourceUpdatedAt": "2026-08-30T02:37:58Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 319,
+      "stars": 320,
       "sourceUpdatedAt": "2026-08-28T13:48:26Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 189,
+      "stars": 190,
       "sourceUpdatedAt": "2026-08-29T15:18:03Z",
       "githubArchived": false,
       "release": {
@@ -525,6 +525,49 @@
       "forkOf": "gedoor/legado"
     },
     {
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 120,
+      "sourceUpdatedAt": "2026-08-31T03:44:34Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.083111",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-31T03:44:34Z",
+        "createdAt": "2026-08-31T03:31:56Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- ci: 启用 stale bot 并豁免 bug 标签的 issue\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.08311135_arm64-v8a_release.apk",
+            "size": 15017609,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08311135_armeabi-v7a_release.apk",
+            "size": 14393626,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.08311135_universal_release.apk",
+            "size": 15214301,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_universal_release.apk"
+          },
+          {
+            "name": "version.json",
+            "size": 67,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -558,49 +601,6 @@
       "forkOf": null
     },
     {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": 117,
-      "sourceUpdatedAt": "2026-08-30T13:50:55Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.083021",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-08-30T13:50:56Z",
-        "createdAt": "2026-08-30T12:42:27Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- revert(朗读): 回退 AI 角色化朗读整条功能线\n- feat(发现): 选择书源支持长按禁用该书源的发现 #30\n- fix(段评): 正文加载失败时不再渲染段评图标\n- feat(书源): Web 写源支持 JS 源 #29\n- feat(书源): 支持外部打开 .js 文件导入 JS 书源 #28\n- 书源登录js注入book/chapter对象 #28\n- fix(模拟追读): 修复起始日期解析崩溃,LocalDate 统一走类型适配器 #21\n- refactor(段评图标): 移除图标库空态提示\n- feat(封面设置): 默认封面可设置多个，按书名哈希分配 #22\n- beta 发布说明汇总自上次版本以来的全部提交，而非仅最近一次提交\n- fix(加载指示器): 修复加载转圈裁剪半圆与不显示问题 #20\n- feat(段评图标): 段评图标升级为图标库管理,实现 #14\n- chore: gitignore 添加 /tools/\n- feat(全局字体): 支持自定义 App 界面全局字体与切换,实现 #3\n",
-        "assets": [
-          {
-            "name": "legado_app_3.26.08302141_arm64-v8a_release.apk",
-            "size": 15017212,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08302141_arm64-v8a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08302141_armeabi-v7a_release.apk",
-            "size": 14393237,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08302141_armeabi-v7a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.08302141_universal_release.apk",
-            "size": 15213890,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08302141_universal_release.apk"
-          },
-          {
-            "name": "version.json",
-            "size": 67,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
-    },
-    {
       "id": "mr",
       "name": "阅读 MR",
       "tag": "mr",
@@ -608,35 +608,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 90,
-      "sourceUpdatedAt": "2026-08-30T13:17:26Z",
+      "sourceUpdatedAt": "2026-08-31T00:36:47Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2608308 (测试版)",
-        "tagName": "v2608308-dev",
+        "name": "MR 2608311 (测试版)",
+        "tagName": "v2608311-dev",
         "prerelease": true,
-        "publishedAt": "2026-08-30T13:17:26Z",
-        "createdAt": "2026-08-30T13:08:19Z",
-        "body": "## MR 2608308\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-30\n\n**版本号**: 26.0830.8（pubspec.yaml 格式）\n\n**构建号**: 1788095310\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-08-31T00:36:48Z",
+        "createdAt": "2026-08-31T00:26:33Z",
+        "body": "## MR 2608311\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-31\n\n**版本号**: 26.0831.1（pubspec.yaml 格式）\n\n**构建号**: 1788136011\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2608308_dev_2026-08-30_arm64.apk",
-            "size": 22599836,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608308-dev/mr_v2608308_dev_2026-08-30_arm64.apk"
+            "name": "mr_v2608311_dev_2026-08-31_arm64.apk",
+            "size": 22600094,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_arm64.apk"
           },
           {
-            "name": "mr_v2608308_dev_2026-08-30_ios.ipa",
-            "size": 20964323,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608308-dev/mr_v2608308_dev_2026-08-30_ios.ipa"
+            "name": "mr_v2608311_dev_2026-08-31_ios.ipa",
+            "size": 20965053,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_ios.ipa"
           },
           {
-            "name": "mr_v2608308_dev_2026-08-30_ohos.hap",
+            "name": "mr_v2608311_dev_2026-08-31_ohos.hap",
             "size": 34908149,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608308-dev/mr_v2608308_dev_2026-08-30_ohos.hap"
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_ohos.hap"
           },
           {
-            "name": "mr_v2608308_dev_2026-08-30_x86_64.apk",
-            "size": 22777641,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608308-dev/mr_v2608308_dev_2026-08-30_x86_64.apk"
+            "name": "mr_v2608311_dev_2026-08-31_x86_64.apk",
+            "size": 22777965,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608311-dev/mr_v2608311_dev_2026-08-31_x86_64.apk"
           }
         ]
       },
