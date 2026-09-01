@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T18:35:21.041Z",
+  "generatedAt": "2026-09-01T21:49:20.190Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 74,
-      "sourceUpdatedAt": "2026-09-01T18:13:15Z",
+      "sourceUpdatedAt": "2026-09-01T19:51:13Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.090111",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47048,
+      "stars": 47049,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,7 +86,7 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5942,
-      "sourceUpdatedAt": "2026-08-31T11:28:13Z",
+      "sourceUpdatedAt": "2026-09-01T20:33:17Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.23",
@@ -511,30 +511,30 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 120,
-      "sourceUpdatedAt": "2026-09-01T18:00:25Z",
+      "sourceUpdatedAt": "2026-09-01T21:28:37Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.083111",
+        "name": "legado_app_3.26.090205",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-08-31T03:44:34Z",
-        "createdAt": "2026-08-31T03:31:56Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- ci: 启用 stale bot 并豁免 bug 标签的 issue\n",
+        "publishedAt": "2026-09-01T21:28:38Z",
+        "createdAt": "2026-09-01T21:12:14Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- refactor(详情页): 转场从共享元素容器变换切换为整窗 fade-through\n- fix(目录): 分卷展示修复倒序错位并完善卷行交互与详情页分卷样式\n- fix(书源): 登录头仅发送给书源同站请求避免跨域封面被风控拦截\n- fix(书源): JS源编辑器清空脚本后不再闪回声明式表单 #29\n",
         "assets": [
           {
-            "name": "legado_app_3.26.08311135_arm64-v8a_release.apk",
-            "size": 15017609,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.09020519_arm64-v8a_release.apk",
+            "size": 15017676,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09020519_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.08311135_armeabi-v7a_release.apk",
-            "size": 14393626,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.09020519_armeabi-v7a_release.apk",
+            "size": 14393695,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09020519_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.08311135_universal_release.apk",
-            "size": 15214301,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.08311135_universal_release.apk"
+            "name": "legado_app_3.26.09020519_universal_release.apk",
+            "size": 15214356,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09020519_universal_release.apk"
           },
           {
             "name": "version.json",
@@ -587,7 +587,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 90,
+      "stars": 91,
       "sourceUpdatedAt": "2026-09-01T16:29:43Z",
       "githubArchived": false,
       "release": {
