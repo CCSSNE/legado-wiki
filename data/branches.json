@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T05:15:15.139Z",
+  "generatedAt": "2026-09-01T10:12:41.699Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 74,
-      "sourceUpdatedAt": "2026-09-01T05:11:03Z",
+      "sourceUpdatedAt": "2026-09-01T08:58:26Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 v3.26.083119（预发布）",
-        "tagName": "v3.26.083119",
+        "name": "阅读 v3.26.090105（预发布）",
+        "tagName": "v3.26.090105",
         "prerelease": true,
-        "publishedAt": "2026-09-01T02:16:12Z",
+        "publishedAt": "2026-09-01T05:48:23Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 版本信息\n- **包名**: io.legado.app.c\n- **版本号**: versionCode 10790, versionName 3.26.083119\n- **架构**: arm64-v8a\n- **签名**: debug 签名（与自用版同一把）\n\n## 本次变更\n- 合集与分组支持改名：加入合集/加入分组列表长按改名，合集详情页点击标题改名\n- 合集详情页选择模式支持融合与添加快捷方式，融合逻辑抽为共享入口，快捷方式按钮文案缩减为四字\n- 跨页复制触发统一：选区存在时按下直接拖动即延续扩展，删除按下取消选区与重新长按前置\n- 朗读起点规则统一：删除页首按段开关，段中间起读只保留选中朗读；双击按裂段段首起读，pageSplit 有效值单一入口，滚动模式锁定关闭\n- 朗读设置：耳机按键开关文案写明作用域，仅线控/蓝牙生效并标明开关对应行\n- TTS 缓存门控统一：不可用原因收敛到 TtsCacheParams 唯一源头，朗读面板/沉浸页下载按钮/选章弹窗同源引用；入口不可用不再静默，置灰保持可点并弹底部通知说明原因\n\n## 说明\n公开版（io.legado.app.c），可覆盖安装；与自用版（io.legado.app.dev）可共存于同一设备。",
+        "body": "## 版本信息\n- **包名**: io.legado.app.c\n- **版本号**: versionCode 10794, versionName 3.26.090105\n- **架构**: arm64-v8a\n- **签名**: debug 签名（与自用版同一把）\n\n## 本次变更\n- 新增高亮规则：按正则命中的正文文字在排版层自动应用显示效果。效果体系与书签一致（单/双/波浪下划线、高亮、文字变色、删除线，可组合、逐效果独立设色），仅作显示、不影响书签；作用范围与替换规则一致（书名或书籍 URL，全局生效）；多规则命中效果叠加，按排序先到先得\n- 预置阅读 NG 默认对白规则与阅读 Max 内置 11 条规则（书名号高亮、括号标注、标题强调、心理活动、旁白说明、重点强调、诗词引用、省略停顿、数字金额、英文单词、时间日期），版本门控一次性导入，默认全部关闭\n- TXT-ZIP 导出 / 导入支持高亮规则外挂数据：按该书命中的启用规则写入压缩包，导入时同步还原规则\n- 正文长按条新增「搜索」动作：内嵌 WebView 搜索面板，支持自定义搜索引擎管理与多语种搜索\n- 修复新建高亮规则对话框闪退自关导致「+」无反应\n- 修复背景图路径失效导致书籍详情页崩溃：三个背景读取口收敛到统一解析入口，文件不存在一律视为无背景\n- 修复有声书返回阅读页时朗读目标章越界导致的崩溃：失败降级为保持当前章\n\n## 说明\n公开版（io.legado.app.c），可覆盖安装；与自用版（io.legado.app.dev）可共存于同一设备。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.083119_10790.apk",
-            "size": 34682486,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.083119/legado_oss_3.26.083119_10790.apk"
+            "name": "legado_oss_3.26.090105_10794.apk",
+            "size": 34738891,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090105/legado_oss_3.26.090105_10794.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47045,
+      "stars": 47046,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5938,
+      "stars": 5939,
       "sourceUpdatedAt": "2026-08-31T11:28:13Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2541,
+      "stars": 2547,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 991,
+      "stars": 998,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 498,
+      "stars": 500,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -371,7 +371,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 277,
+      "stars": 278,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 192,
+      "stars": 193,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -511,7 +511,7 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 120,
-      "sourceUpdatedAt": "2026-08-31T03:44:34Z",
+      "sourceUpdatedAt": "2026-09-01T07:37:28Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.083111",
@@ -553,7 +553,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 118,
+      "stars": 119,
       "sourceUpdatedAt": "2026-08-22T13:50:54Z",
       "githubArchived": false,
       "release": {
@@ -698,7 +698,7 @@
       "repo": "damifan3/legadoPP",
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
-      "stars": 16,
+      "stars": 17,
       "sourceUpdatedAt": "2026-08-20T15:15:48Z",
       "githubArchived": false,
       "release": {
@@ -770,8 +770,8 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 9,
-      "sourceUpdatedAt": "2026-09-01T04:59:55Z",
+      "stars": 10,
+      "sourceUpdatedAt": "2026-09-01T09:36:32Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.083123",
