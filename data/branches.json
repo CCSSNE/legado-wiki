@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T14:56:55.589Z",
+  "generatedAt": "2026-09-01T18:35:21.041Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 74,
+      "sourceUpdatedAt": "2026-09-01T18:13:15Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.090111",
@@ -27,9 +27,9 @@
           }
         ]
       },
-      "errors": [
-        "仓库信息同步失败：fetch failed"
-      ]
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "original",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5941,
+      "stars": 5942,
       "sourceUpdatedAt": "2026-08-31T11:28:13Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2142,
+      "stars": 2141,
       "sourceUpdatedAt": "2026-08-29T14:55:31Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1001,
+      "stars": 1002,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 500,
+      "stars": 501,
       "sourceUpdatedAt": "2026-08-17T14:14:21Z",
       "githubArchived": false,
       "release": {
@@ -257,65 +257,65 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 322,
-      "sourceUpdatedAt": "2026-08-28T13:48:26Z",
+      "sourceUpdatedAt": "2026-09-01T17:03:12Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.082821",
-        "tagName": "beta-3.26.082821",
+        "name": "legado_app_3.26.090200",
+        "tagName": "beta-3.26.090200",
         "prerelease": true,
-        "publishedAt": "2026-08-28T13:48:26Z",
-        "createdAt": "2026-08-28T13:18:19Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* fix(阅读记录): 修复后台返回时 Glide 回调导致协程重复 resume 的崩溃\n\n",
+        "publishedAt": "2026-09-01T17:03:12Z",
+        "createdAt": "2026-09-01T16:32:44Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* feat(阅读记录): 优化累计阅读成就卡片排版及时长显示\n* fix(阅读记录): 详情页会话统计对齐时间线视图口径合并碎片\n* style(书架): 二级标签栏改为首页排行榜式胶囊样式\n* fix(目录): 修复目录反转后选中章节不一致的问题\n* feat(书籍详情): 详情页改为 standard 启动模式支持返回上一本书\n* feat(书籍详情): 详情页堆叠超过 3 层时淘汰最底层实例\n* fix(书架): 简介为 useweb/usehtml 时列表显示 CSS 源码的问题\n* fix(书架): 修复文件夹布局退出分组时标签栏残留闪烁\n* 更新日志\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.082821_release_arm64-v8a.apk",
-            "size": 22674489,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_beta_3.26.082821_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.090200_release_arm64-v8a.apk",
+            "size": 22691162,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_beta_3.26.090200_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.082821_release_armeabi-v7a.apk",
-            "size": 22034136,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_beta_3.26.082821_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.090200_release_armeabi-v7a.apk",
+            "size": 22050827,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_beta_3.26.090200_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.082821_release_universal.apk",
-            "size": 30689337,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_beta_3.26.082821_release_universal.apk"
+            "name": "legado_beta_3.26.090200_release_universal.apk",
+            "size": 30706017,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_beta_3.26.090200_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.082821_legacy_arm64-v8a.apk",
-            "size": 22674466,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_compat_3.26.082821_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.090200_legacy_arm64-v8a.apk",
+            "size": 22691154,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_compat_3.26.090200_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.082821_legacy_armeabi-v7a.apk",
-            "size": 22034113,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_compat_3.26.082821_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.090200_legacy_armeabi-v7a.apk",
+            "size": 22050800,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_compat_3.26.090200_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.082821_legacy_universal.apk",
-            "size": 30689317,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_compat_3.26.082821_legacy_universal.apk"
+            "name": "legado_compat_3.26.090200_legacy_universal.apk",
+            "size": 30706011,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_compat_3.26.090200_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.082821_releaseS_arm64-v8a.apk",
-            "size": 22674485,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_plus_3.26.082821_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.090200_releaseS_arm64-v8a.apk",
+            "size": 22691175,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_plus_3.26.090200_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.082821_releaseS_armeabi-v7a.apk",
-            "size": 22034128,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_plus_3.26.082821_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.090200_releaseS_armeabi-v7a.apk",
+            "size": 22050824,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_plus_3.26.090200_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.082821_releaseS_universal.apk",
-            "size": 30689339,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_plus_3.26.082821_releaseS_universal.apk"
+            "name": "legado_plus_3.26.090200_releaseS_universal.apk",
+            "size": 30706027,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_plus_3.26.090200_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.082821_universal.apk",
-            "size": 68579245,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.082821/legado_z_debug_3.26.082821_universal.apk"
+            "name": "legado_z_debug_3.26.090200_universal.apk",
+            "size": 68579762,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090200/legado_z_debug_3.26.090200_universal.apk"
           }
         ]
       },
@@ -511,7 +511,7 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 120,
-      "sourceUpdatedAt": "2026-09-01T07:37:28Z",
+      "sourceUpdatedAt": "2026-09-01T18:00:25Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.083111",
@@ -588,35 +588,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 90,
-      "sourceUpdatedAt": "2026-08-31T17:46:17Z",
+      "sourceUpdatedAt": "2026-09-01T16:29:43Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2608314 (测试版)",
-        "tagName": "v2608314-dev",
+        "name": "MR 2609011 (测试版)",
+        "tagName": "v2609011-dev",
         "prerelease": true,
-        "publishedAt": "2026-08-31T17:46:17Z",
-        "createdAt": "2026-08-31T17:36:41Z",
-        "body": "## MR 2608314\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-08-31\n\n**版本号**: 26.0831.4（pubspec.yaml 格式）\n\n**构建号**: 1788197849\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-09-01T16:29:43Z",
+        "createdAt": "2026-09-01T16:20:21Z",
+        "body": "## MR 2609011\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-01\n\n**版本号**: 26.0901.1（pubspec.yaml 格式）\n\n**构建号**: 1788279641\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2608314_dev_2026-08-31_arm64.apk",
-            "size": 22601384,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608314-dev/mr_v2608314_dev_2026-08-31_arm64.apk"
+            "name": "mr_v2609011_dev_2026-09-01_arm64.apk",
+            "size": 22601426,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_arm64.apk"
           },
           {
-            "name": "mr_v2608314_dev_2026-08-31_ios.ipa",
-            "size": 20964567,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608314-dev/mr_v2608314_dev_2026-08-31_ios.ipa"
+            "name": "mr_v2609011_dev_2026-09-01_ios.ipa",
+            "size": 20967047,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_ios.ipa"
           },
           {
-            "name": "mr_v2608314_dev_2026-08-31_ohos.hap",
-            "size": 34908149,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608314-dev/mr_v2608314_dev_2026-08-31_ohos.hap"
+            "name": "mr_v2609011_dev_2026-09-01_ohos.hap",
+            "size": 34924533,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_ohos.hap"
           },
           {
-            "name": "mr_v2608314_dev_2026-08-31_x86_64.apk",
-            "size": 22779723,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2608314-dev/mr_v2608314_dev_2026-08-31_x86_64.apk"
+            "name": "mr_v2609011_dev_2026-09-01_x86_64.apk",
+            "size": 22780035,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_x86_64.apk"
           }
         ]
       },
