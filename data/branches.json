@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T10:12:41.699Z",
+  "generatedAt": "2026-09-01T14:56:55.589Z",
   "branches": [
     {
       "id": "c",
@@ -9,27 +9,27 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 74,
-      "sourceUpdatedAt": "2026-09-01T08:58:26Z",
+      "stars": null,
+      "sourceUpdatedAt": null,
       "githubArchived": false,
       "release": {
-        "name": "阅读 v3.26.090105（预发布）",
-        "tagName": "v3.26.090105",
-        "prerelease": true,
-        "publishedAt": "2026-09-01T05:48:23Z",
-        "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 版本信息\n- **包名**: io.legado.app.c\n- **版本号**: versionCode 10794, versionName 3.26.090105\n- **架构**: arm64-v8a\n- **签名**: debug 签名（与自用版同一把）\n\n## 本次变更\n- 新增高亮规则：按正则命中的正文文字在排版层自动应用显示效果。效果体系与书签一致（单/双/波浪下划线、高亮、文字变色、删除线，可组合、逐效果独立设色），仅作显示、不影响书签；作用范围与替换规则一致（书名或书籍 URL，全局生效）；多规则命中效果叠加，按排序先到先得\n- 预置阅读 NG 默认对白规则与阅读 Max 内置 11 条规则（书名号高亮、括号标注、标题强调、心理活动、旁白说明、重点强调、诗词引用、省略停顿、数字金额、英文单词、时间日期），版本门控一次性导入，默认全部关闭\n- TXT-ZIP 导出 / 导入支持高亮规则外挂数据：按该书命中的启用规则写入压缩包，导入时同步还原规则\n- 正文长按条新增「搜索」动作：内嵌 WebView 搜索面板，支持自定义搜索引擎管理与多语种搜索\n- 修复新建高亮规则对话框闪退自关导致「+」无反应\n- 修复背景图路径失效导致书籍详情页崩溃：三个背景读取口收敛到统一解析入口，文件不存在一律视为无背景\n- 修复有声书返回阅读页时朗读目标章越界导致的崩溃：失败降级为保持当前章\n\n## 说明\n公开版（io.legado.app.c），可覆盖安装；与自用版（io.legado.app.dev）可共存于同一设备。\n",
+        "name": "v3.26.090111",
+        "tagName": "v3.26.090111",
+        "prerelease": false,
+        "publishedAt": "2026-09-01T11:26:31Z",
+        "createdAt": "2026-09-01T11:25:46Z",
+        "body": "## 公开版（oss flavor）`3.26.090111` / `10798`\n\n包名 `io.legado.app.c`，应用名「阅读」（繁中「閱讀」），架构 arm64-v8a，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n\n本次构建为公开版 oss 单编译交付。自用版（阅读 C）与公开版为并行独立构建，互不影响覆盖安装。",
         "assets": [
           {
-            "name": "legado_oss_3.26.090105_10794.apk",
-            "size": 34738891,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090105/legado_oss_3.26.090105_10794.apk"
+            "name": "legado_oss_3.26.090111_10798.apk",
+            "size": 34745829,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090111/legado_oss_3.26.090111_10798.apk"
           }
         ]
       },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
+      "errors": [
+        "仓库信息同步失败：fetch failed"
+      ]
     },
     {
       "id": "original",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47046,
+      "stars": 47048,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5939,
+      "stars": 5941,
       "sourceUpdatedAt": "2026-08-31T11:28:13Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2547,
+      "stars": 2549,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 998,
+      "stars": 1001,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 321,
+      "stars": 322,
       "sourceUpdatedAt": "2026-08-28T13:48:26Z",
       "githubArchived": false,
       "release": {
@@ -630,7 +630,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 70,
+      "stars": 71,
       "sourceUpdatedAt": "2026-08-28T08:03:40Z",
       "githubArchived": false,
       "release": {
@@ -771,30 +771,30 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 10,
-      "sourceUpdatedAt": "2026-09-01T09:36:32Z",
+      "sourceUpdatedAt": "2026-09-01T10:50:49Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.083123",
-        "tagName": "3.26.083123",
+        "name": "3.26.090118",
+        "tagName": "3.26.090118",
         "prerelease": false,
-        "publishedAt": "2026-08-31T16:22:19Z",
-        "createdAt": "2026-08-31T15:28:17Z",
-        "body": "**2026/08/31**\n### 优化\n- 视频嗅探拦截面大幅扩展：响应内容类型检测（视频/音频/m3u8 清单/DASH）+ 新增 .flv/.ts/.mpd 直链识别，此前部分\"页面里明明有视频却嗅探不到\"的源现已可命中\n- 修复特定形态源误杀：以 .html 结尾但实际返回视频内容的地址不再被排除规则拦截（先看视频特征再排除）\n- 多候选智能评分：同一页面嗅探到多个视频地址时按类型权重（m3u8 清单>直链>分片）+时序新近度自动选优，规避广告地址抢先命中\n### 修复\n- HTML 页面形态视频源播放失败降级链修复：嗅探结果为网页时不再清空降级链，保留 m3u8/直连兜底路径",
+        "publishedAt": "2026-09-01T10:47:57Z",
+        "createdAt": "2026-09-01T09:36:14Z",
+        "body": "**2026/09/01**\n### 修复\n- 新版订阅顶栏误导点击：顶栏源名位置此前实为搜索条（提示文字被设为源名），点击源名会误入源内搜索页；现恢复为点击源名弹出源选择列表，搜索功能保留在顶栏搜索按钮\n- 新版订阅分类标签展开后不显示：顶栏\"筛选\"展开分类时透明度动画存在竞态，分类栏已占位却停留在全透明状态；现展开/收起直接生效，点击\"筛选\"即可查看订阅源全部分类\n- 视频订阅源自动选集优先直链线路：部分采集站首线路为网页分享页（需二次解析且常失败）导致黑屏，现自动优先选择含 m3u8 直链的线路起播，首帧更快更稳",
         "assets": [
           {
-            "name": "legado_legacy_app_3.26.083123.apk",
-            "size": 70557668,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.083123/legado_legacy_app_3.26.083123.apk"
+            "name": "legado_legacy_app_3.26.090118.apk",
+            "size": 70608909,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_legacy_app_3.26.090118.apk"
           },
           {
-            "name": "legado_miss_app_3.26.083123.apk",
-            "size": 35836965,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.083123/legado_miss_app_3.26.083123.apk"
+            "name": "legado_miss_app_3.26.090118.apk",
+            "size": 35855148,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_miss_app_3.26.090118.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.083123.apk",
-            "size": 70557685,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.083123/legado_miss_app_debug_3.26.083123.apk"
+            "name": "legado_miss_app_debug_3.26.090118.apk",
+            "size": 70608931,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_miss_app_debug_3.26.090118.apk"
           }
         ]
       },
