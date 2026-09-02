@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T05:52:14.521Z",
+  "generatedAt": "2026-09-02T11:24:05.358Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 75,
-      "sourceUpdatedAt": "2026-09-02T05:13:51Z",
+      "stars": 76,
+      "sourceUpdatedAt": "2026-09-02T09:39:02Z",
       "githubArchived": false,
       "release": {
-        "name": "v3.26.090111",
-        "tagName": "v3.26.090111",
+        "name": "v3.26.090202",
+        "tagName": "v3.26.090202",
         "prerelease": false,
-        "publishedAt": "2026-09-01T11:26:31Z",
-        "createdAt": "2026-09-01T11:25:46Z",
-        "body": "## 公开版（oss flavor）`3.26.090111` / `10798`\n\n包名 `io.legado.app.c`，应用名「阅读」（繁中「閱讀」），架构 arm64-v8a，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n\n本次构建为公开版 oss 单编译交付。自用版（阅读 C）与公开版为并行独立构建，互不影响覆盖安装。",
+        "publishedAt": "2026-09-02T02:32:24Z",
+        "createdAt": "2026-08-30T00:00:00Z",
+        "body": "## 公开版（oss flavor）`3.26.090202` / `10803`\n\n包名 `io.legado.app.c`，应用名「阅读」（繁中「閱讀」），架构 arm64-v8a，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n\n本次构建为公开版 oss 单编译交付。自用版（阅读 C）与公开版为并行独立构建，互不影响覆盖安装。\n\n### 本次更新\n- 新增「缓存楼中楼」开关：评论快照默认包含每条评论的回复（楼中楼）层，关闭后段评/章评/书评快照均不含回复层；章评按章、书评整本仍各只缓存一份，不受此开关影响\n- 默认背景替换：日间/夜间分别内置新壁纸并安装到各自偏好，旧默认背景路径自动迁移后删除\n- 离线评论体验修正：快照内表情点击正确插入保留的 data-code/alt 文本码并联动字数计数；点击发送离线评论立即提示开始条数\n- 离线评论发送不再被页面生命周期取消：批次移入进程级独立作用域，回放加载等待改 deferred 直选消除空等，补齐取消/失败/成功三终局日志",
         "assets": [
           {
-            "name": "legado_oss_3.26.090111_10798.apk",
-            "size": 34745829,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090111/legado_oss_3.26.090111_10798.apk"
+            "name": "legado_oss_3.26.090202_10803.apk",
+            "size": 33471484,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090202/legado_oss_3.26.090202_10803.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47054,
+      "stars": 47056,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5945,
+      "stars": 5950,
       "sourceUpdatedAt": "2026-09-02T01:13:34Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2554,
+      "stars": 2558,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1004,
+      "stars": 1006,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 322,
+      "stars": 323,
       "sourceUpdatedAt": "2026-09-01T17:03:12Z",
       "githubArchived": false,
       "release": {
@@ -415,7 +415,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 273,
+      "stars": 272,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 194,
+      "stars": 195,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -588,35 +588,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 91,
-      "sourceUpdatedAt": "2026-09-02T05:32:37Z",
+      "sourceUpdatedAt": "2026-09-02T11:10:54Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2609022 (测试版)",
-        "tagName": "v2609022-dev",
+        "name": "MR 2609024 (测试版)",
+        "tagName": "v2609024-dev",
         "prerelease": true,
-        "publishedAt": "2026-09-02T05:32:38Z",
-        "createdAt": "2026-09-02T05:23:00Z",
-        "body": "## MR 2609022\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-02\n\n**版本号**: 26.0902.2（pubspec.yaml 格式）\n\n**构建号**: 1788326607\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-09-02T11:10:54Z",
+        "createdAt": "2026-09-02T11:02:12Z",
+        "body": "## MR 2609024\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-02\n\n**版本号**: 26.0902.4（pubspec.yaml 格式）\n\n**构建号**: 1788346946\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2609022_dev_2026-09-02_arm64.apk",
-            "size": 22606200,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609022-dev/mr_v2609022_dev_2026-09-02_arm64.apk"
+            "name": "mr_v2609024_dev_2026-09-02_arm64.apk",
+            "size": 22605517,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609024-dev/mr_v2609024_dev_2026-09-02_arm64.apk"
           },
           {
-            "name": "mr_v2609022_dev_2026-09-02_ios.ipa",
-            "size": 20968962,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609022-dev/mr_v2609022_dev_2026-09-02_ios.ipa"
+            "name": "mr_v2609024_dev_2026-09-02_ios.ipa",
+            "size": 20971767,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609024-dev/mr_v2609024_dev_2026-09-02_ios.ipa"
           },
           {
-            "name": "mr_v2609022_dev_2026-09-02_ohos.hap",
+            "name": "mr_v2609024_dev_2026-09-02_ohos.hap",
             "size": 34924533,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609022-dev/mr_v2609022_dev_2026-09-02_ohos.hap"
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609024-dev/mr_v2609024_dev_2026-09-02_ohos.hap"
           },
           {
-            "name": "mr_v2609022_dev_2026-09-02_x86_64.apk",
-            "size": 22782263,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609022-dev/mr_v2609022_dev_2026-09-02_x86_64.apk"
+            "name": "mr_v2609024_dev_2026-09-02_x86_64.apk",
+            "size": 22781541,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609024-dev/mr_v2609024_dev_2026-09-02_x86_64.apk"
           }
         ]
       },
