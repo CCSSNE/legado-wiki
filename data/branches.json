@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T21:49:20.190Z",
+  "generatedAt": "2026-09-02T00:17:50.287Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47049,
+      "stars": 47051,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2549,
+      "stars": 2550,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1002,
+      "stars": 1003,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -588,35 +588,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 91,
-      "sourceUpdatedAt": "2026-09-01T16:29:43Z",
+      "sourceUpdatedAt": "2026-09-02T00:09:53Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2609011 (测试版)",
-        "tagName": "v2609011-dev",
+        "name": "MR 2609021 (测试版)",
+        "tagName": "v2609021-dev",
         "prerelease": true,
-        "publishedAt": "2026-09-01T16:29:43Z",
-        "createdAt": "2026-09-01T16:20:21Z",
-        "body": "## MR 2609011\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-01\n\n**版本号**: 26.0901.1（pubspec.yaml 格式）\n\n**构建号**: 1788279641\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-09-02T00:09:53Z",
+        "createdAt": "2026-09-02T00:01:11Z",
+        "body": "## MR 2609021\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-02\n\n**版本号**: 26.0902.1（pubspec.yaml 格式）\n\n**构建号**: 1788307356\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2609011_dev_2026-09-01_arm64.apk",
-            "size": 22601426,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_arm64.apk"
+            "name": "mr_v2609021_dev_2026-09-02_arm64.apk",
+            "size": 22602544,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609021-dev/mr_v2609021_dev_2026-09-02_arm64.apk"
           },
           {
-            "name": "mr_v2609011_dev_2026-09-01_ios.ipa",
-            "size": 20967047,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_ios.ipa"
+            "name": "mr_v2609021_dev_2026-09-02_ios.ipa",
+            "size": 20967905,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609021-dev/mr_v2609021_dev_2026-09-02_ios.ipa"
           },
           {
-            "name": "mr_v2609011_dev_2026-09-01_ohos.hap",
+            "name": "mr_v2609021_dev_2026-09-02_ohos.hap",
             "size": 34924533,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_ohos.hap"
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609021-dev/mr_v2609021_dev_2026-09-02_ohos.hap"
           },
           {
-            "name": "mr_v2609011_dev_2026-09-01_x86_64.apk",
-            "size": 22780035,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609011-dev/mr_v2609011_dev_2026-09-01_x86_64.apk"
+            "name": "mr_v2609021_dev_2026-09-02_x86_64.apk",
+            "size": 22779624,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609021-dev/mr_v2609021_dev_2026-09-02_x86_64.apk"
           }
         ]
       },
