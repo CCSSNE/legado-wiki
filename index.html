@@ -1233,11 +1233,27 @@
 
       function renderTreeColumns(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
+        // 家族总数按完整树固定计算：筛选只隐藏节点，不改变排序
+        const familyTotals = new Map();
+        const sumFullTree = node => {
+          if (node.external) return 0;
+          if (node.gray) {
+            const total = (node.children || []).reduce((acc, child) => acc + sumFullTree(child), 0);
+            familyTotals.set(`gray:${node.gray}`, total);
+            return total;
+          }
+          const own = byId.get(node.branch)?.stars ?? 0;
+          const kids = node.children ? node.children.reduce((acc, child) => acc + sumFullTree(child), 0) : 0;
+          const total = own + kids;
+          familyTotals.set(`branch:${node.branch}`, total);
+          return total;
+        };
+        treeLeft.forEach(sumFullTree);
+        treeRight.forEach(sumFullTree);
         const familyStars = node => {
           if (node.external) return 0;
-          const own = byId.get(node.branch)?.stars ?? 0;
-          const kids = node.children ? node.children.reduce((sum, child) => sum + familyStars(child), 0) : 0;
-          return own + kids;
+          if (node.gray) return familyTotals.get(`gray:${node.gray}`) ?? 0;
+          return familyTotals.get(`branch:${node.branch}`) ?? byId.get(node.branch)?.stars ?? 0;
         };
         const byStars = (left, right) => familyStars(right) - familyStars(left);
         const isDashed = (node, parentRepo) => {
