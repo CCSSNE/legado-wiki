@@ -25,18 +25,22 @@
 
 底部包含源仓库。顶部显示交流群 `1004372141`（可点击跳转加群）：提交新软件、补充信息或纠错，也是阅读 C 交流群。原版和 Tauri 使用独立补档仓库的 Release 下载入口。
 
+
+
+# 还没来得及放上去的版本
+
 墨水  https://github.com/radiumCN/inkwell
 夜讀  https://github.com/bennytsai1234/Night-Reader
 墨境  https://github.com/keys-cherish/morealm-reader
 Lumi  https://github.com/huangder/Lumi_Books
 LightNovelReader https://github.com/dmzz-yyhyy/LightNovelReader
+Kototoro https://github.com/Kototoro-app/Kototoro
 
 
 
 开元阅读（半闭源） https://github.com/miloquinn/open-reading
 彩读  https://github.com/ssnangua/ColorTxt
 macOS、Windows 和 Linux。
-
 
 ReadCat https://github.com/read-cat/read-cat
 Windows
