@@ -23,4 +23,32 @@
 
 ## 推荐链接
 
-底部包含源仓库。顶部显示交流群 `1101873338`：提交新软件、补充信息或纠错，也是阅读 C 交流群。原版和 Tauri 使用独立补档仓库的 Release 下载入口。
+底部包含源仓库。顶部显示交流群 `1004372141`（可点击跳转加群）：提交新软件、补充信息或纠错，也是阅读 C 交流群。原版和 Tauri 使用独立补档仓库的 Release 下载入口。
+
+墨水  https://github.com/radiumCN/inkwell
+夜讀  https://github.com/bennytsai1234/Night-Reader
+墨境  https://github.com/keys-cherish/morealm-reader
+Lumi  https://github.com/huangder/Lumi_Books
+LightNovelReader https://github.com/dmzz-yyhyy/LightNovelReader
+
+
+
+开元阅读（半闭源） https://github.com/miloquinn/open-reading
+彩读  https://github.com/ssnangua/ColorTxt
+macOS、Windows 和 Linux。
+
+
+ReadCat https://github.com/read-cat/read-cat
+Windows
+Legado macOS 版本 https://github.com/Kequans/legado-for-mac-pub
+亦搜 https://github.com/mabDc/eso
+ 安卓
+ tv（大白版，感谢大白）
+ ios（需要自签）
+ windows（需安装vc++运行库 内置3个dll，不需要额外安装）
+ Linux（需libsqlite3-dev）
+ Macos
+
+
+漫画阅读器不收 非中文系的不收
+半开源会标注，闭源的也会标注，闭源且付费的也会标注。。
