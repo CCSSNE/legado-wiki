@@ -36,7 +36,15 @@ async function isFastForwardable(upstreamOwner, upstreamBranch, forkFull, forkBr
   return { ok: false, detail: `compare=${cmp.body.status}, behind_by=${cmp.body.behind_by}, ahead_by=${cmp.body.ahead_by}（fork 存在上游已抛弃的历史）` };
 }
 
-const data = JSON.parse(await readFile('data/branches.json', 'utf8'));
+const mainData = JSON.parse(await readFile('data/branches.json', 'utf8'));
+let staticBranches = [];
+try {
+  const staticData = JSON.parse(await readFile('data/branches-static.json', 'utf8'));
+  if (Array.isArray(staticData.branches)) staticBranches = staticData.branches;
+} catch {
+  staticBranches = [];
+}
+const data = { branches: [...mainData.branches, ...staticBranches] };
 const results = [];
 const alerts = new Set(); // 触发过的告警类型: rewritten / default_branch_changed / gone
 
