@@ -1285,7 +1285,7 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}${muted}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        const renderRoots = (roots, hideAndroid) => `<ul class="tree">${roots.map(root => renderNode(root, null, hideAndroid)).join('')}</ul>`;
+        const renderRoots = (roots, hideAndroid) => `<ul class="tree">${[...roots].sort(byStars).map(root => renderNode(root, null, hideAndroid)).join('')}</ul>`;
         return `<div class="tree-columns"><div class="tree-col"><div class="tree-col-title">左树 · 纯 Android</div>${renderRoots(applyTreeFilters(treeLeft), true)}</div><div class="tree-col"><div class="tree-col-title">右树 · 存在任何非安卓平台</div>${renderRoots(applyTreeFilters(treeRight), false)}</div></div>`;
       }
 
