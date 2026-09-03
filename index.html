@@ -1235,35 +1235,31 @@
 
       function renderTreeColumns(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
-        // 家族总数按完整树固定计算：筛选只隐藏节点，不改变排序
+        // 家族血缘（总数唯一依据）：与左右列展示位置无关，搬展示位不影响总数。
+        // 展示树只管放哪列、缩进跟谁；谁是谁的后代只看这里。新增分支若属某家族，在此登记父子。
+        const FAMILY = {
+          original: ['t', 'md3', 'main', 'sigma', 'shutiao', 'mr', 'harmony', 'tauri', 'macos'],
+          sigma: ['archive', 'max', 'ng', 'pp', 'x', 'jingshiro', 'm', 'iyuedu'],
+          archive: ['r'],
+          r: ['c'],
+          max: ['max-sum', 'max-cichen'],
+          ng: ['fu']
+        };
         const familyTotals = new Map();
-        const familyLinks = [];
-        const sumFullTree = node => {
-          if (node.external) return 0;
-          if (node.gray) {
-            const total = (node.children || []).reduce((acc, child) => acc + sumFullTree(child), 0);
-            familyTotals.set(`gray:${node.gray}`, total);
-            if (node.familyOf) familyLinks.push([`gray:${node.gray}`, `branch:${node.familyOf}`]);
-            return total;
-          }
-          const own = byId.get(node.branch)?.stars ?? 0;
-          const kids = node.children ? node.children.reduce((acc, child) => acc + sumFullTree(child), 0) : 0;
+        const sumFamily = id => {
+          if (familyTotals.has(id)) return familyTotals.get(id);
+          familyTotals.set(id, 0); // 占位防环
+          const own = byId.get(id)?.stars ?? 0;
+          const kids = (FAMILY[id] || []).reduce((acc, child) => acc + sumFamily(child), 0);
           const total = own + kids;
-          familyTotals.set(`branch:${node.branch}`, total);
+          familyTotals.set(id, total);
           return total;
         };
-        treeLeft.forEach(sumFullTree);
-        treeRight.forEach(sumFullTree);
-        // 跨列合并：灰组成员同属目标分支家族，两边用同一个家族总数
-        for (const [fromKey, toKey] of familyLinks) {
-          const union = (familyTotals.get(toKey) ?? 0) + (familyTotals.get(fromKey) ?? 0);
-          familyTotals.set(toKey, union);
-          familyTotals.set(fromKey, union);
-        }
+        branches.forEach(branch => sumFamily(branch.id));
         const familyStars = node => {
           if (node.external) return 0;
-          if (node.gray) return familyTotals.get(`gray:${node.gray}`) ?? 0;
-          return familyTotals.get(`branch:${node.branch}`) ?? byId.get(node.branch)?.stars ?? 0;
+          if (node.gray) return node.familyOf ? (familyTotals.get(node.familyOf) ?? 0) : 0;
+          return familyTotals.get(node.branch) ?? byId.get(node.branch)?.stars ?? 0;
         };
         const byStars = (left, right) => familyStars(right) - familyStars(left);
         const isDashed = (node, parentRepo) => {
