@@ -1172,6 +1172,8 @@
       const treeRight = [
         {
           gray: '原版',
+          // 跨列血缘：该组是原版家族的多平台成员，总数计入左列 original 家族
+          familyOf: 'original',
           children: [
             { branch: 'shutiao', platforms: ['android', 'ios', 'harmony', 'mac', 'win', 'linux'] },
             { branch: 'mr', platforms: ['android', 'ios', 'harmony'] },
@@ -1235,11 +1237,13 @@
         const byId = new Map(branches.map(branch => [branch.id, branch]));
         // 家族总数按完整树固定计算：筛选只隐藏节点，不改变排序
         const familyTotals = new Map();
+        const familyLinks = [];
         const sumFullTree = node => {
           if (node.external) return 0;
           if (node.gray) {
             const total = (node.children || []).reduce((acc, child) => acc + sumFullTree(child), 0);
             familyTotals.set(`gray:${node.gray}`, total);
+            if (node.familyOf) familyLinks.push([`gray:${node.gray}`, `branch:${node.familyOf}`]);
             return total;
           }
           const own = byId.get(node.branch)?.stars ?? 0;
@@ -1250,6 +1254,12 @@
         };
         treeLeft.forEach(sumFullTree);
         treeRight.forEach(sumFullTree);
+        // 跨列合并：灰组成员同属目标分支家族，两边用同一个家族总数
+        for (const [fromKey, toKey] of familyLinks) {
+          const union = (familyTotals.get(toKey) ?? 0) + (familyTotals.get(fromKey) ?? 0);
+          familyTotals.set(toKey, union);
+          familyTotals.set(fromKey, union);
+        }
         const familyStars = node => {
           if (node.external) return 0;
           if (node.gray) return familyTotals.get(`gray:${node.gray}`) ?? 0;
