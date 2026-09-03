@@ -419,17 +419,24 @@
     .tree-flag-paid { background: #f7e6e6; color: #8d2727; }
     .tree-flag-incompatible { background: #e9edf2; color: #4a5a68; }
 
-    .tree-link.tree-gray,
-    .tree-link.tree-plain {
+    .tree-link.tree-gray {
       color: var(--muted);
       font-weight: 600;
       cursor: default;
     }
 
-    .tree-link.tree-gray:hover,
-    .tree-link.tree-plain:hover {
+    .tree-link.tree-gray:hover {
       background: none;
       color: var(--muted);
+    }
+
+    .tree-link.tree-plain {
+      cursor: default;
+    }
+
+    .tree-link.tree-plain:hover {
+      background: none;
+      color: #34413d;
     }
 
     .tree-ancestor {
@@ -470,13 +477,13 @@
     .tree-chip span {
       display: inline-flex;
       align-items: center;
-      padding: 2px 10px;
+      padding: 5px 10px;
       border: 1px solid var(--border);
-      border-radius: 999px;
-      background: #fff;
+      border-radius: 5px;
+      background: #f8faf7;
       color: var(--muted);
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 1.5;
       cursor: pointer;
       user-select: none;
@@ -489,12 +496,13 @@
     }
 
     .tree-chip input:checked + span {
-      border-color: var(--accent-strong);
       background: var(--accent-strong);
+      border-color: var(--accent-strong);
       color: #fff;
     }
 
     .tree-chip input:checked + span:hover {
+      background: var(--accent-strong);
       border-color: var(--accent-strong);
       color: #fff;
     }
@@ -508,22 +516,6 @@
       padding-top: 10px;
       border-top: 1px dashed var(--border);
     }
-
-    .tree-footer-title {
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-    }
-
-    .tree-footer-link {
-      color: var(--accent-strong);
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .tree-footer-link:hover { text-decoration: underline; }
 
     .repo-card {
       margin-bottom: 14px;
@@ -1316,7 +1308,7 @@
       function renderTreeNav(branches) {
         const chips = FILTER_SHOW.map(f => `<label class="tree-chip"><input type="checkbox" data-show="${f.key}"><span>${f.label}</span></label>`).join('');
         const hideChips = Object.entries(FLAG_META).map(([key, meta]) => `<label class="tree-chip"><input type="checkbox" data-hide="${key}"><span>${meta.label}</span></label>`).join('');
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库 · ⟨⟩ = 平台 · 灰字 = 未收录条目</span></div><div class="tree-filters"><div class="tree-filter-row"><span class="tree-filter-label">只看</span><label class="tree-chip"><input type="checkbox" data-show="all" checked><span>全部</span></label>${chips}</div><div class="tree-filter-row"><span class="tree-filter-label">不看</span>${hideChips}</div></div>${renderTreeColumns(branches)}<div class="tree-footer"><span class="tree-footer-title">── 推荐链接 ──</span><a class="tree-footer-link" href="https://www.yckceo.com/" target="_blank" rel="noopener">源仓库 ↗</a><a class="tree-footer-link" href="https://momoa.cc.cd/%E4%B8%8B%E8%BD%BD/xz" target="_blank" rel="noopener">全版本集散地 ↗</a><a class="tree-footer-link" href="#traffic">访问趋势</a></div>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库 · ⟨⟩ = 平台</span></div><div class="tree-filters"><div class="tree-filter-row"><span class="tree-filter-label">只看</span><label class="tree-chip"><input type="checkbox" data-show="all" checked><span>全部</span></label>${chips}</div><div class="tree-filter-row"><span class="tree-filter-label">不看</span>${hideChips}</div></div>${renderTreeColumns(branches)}<div class="tree-footer"><a class="tree-link" href="#useful-links">推荐链接</a><a class="tree-link" href="#traffic">访问趋势</a></div>`;
       }
 
       function refreshTree() {
