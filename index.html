@@ -1216,11 +1216,12 @@
         };
         const walk = node => {
           const kids = node.children ? node.children.map(walk).filter(Boolean) : null;
-          const hasKids = !!(kids && kids.length);
+          // 只有存活的分支子节点能把父节点留作祖先；补档（external）只是附件，不算分支
+          const hasBranchKids = !!(kids && kids.some(k => k.branch));
           const own = qualifies(node);
-          if (!own && !hasKids) return null;
+          if (!own && !hasBranchKids) return null;
           const copy = { ...node };
-          if (hasKids) copy.children = kids;
+          if (kids && kids.length) copy.children = kids;
           else delete copy.children;
           copy.filtered = !own;
           return copy;
