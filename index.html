@@ -1267,8 +1267,8 @@
           groups.dashed.sort(byStars);
           return [...groups.external, ...groups.solid, ...groups.plain, ...groups.dashed];
         };
-        const badgeHtml = node => {
-          const plats = (node.platforms || []).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
+        const badgeHtml = (node, platforms) => {
+          const plats = (platforms || []).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
           const flags = (node.flags || []).map(f => {
             const meta = FLAG_META[f];
             return meta ? `<span class="tree-flag ${meta.cls}">${meta.label}</span>` : '';
@@ -1276,14 +1276,15 @@
           return plats + flags;
         };
         let seq = 0;
-        const renderNode = (node, parentRepo) => {
+        const renderNode = (node, parentRepo, hideAndroid) => {
           const ownRepo = node.branch ? byId.get(node.branch)?.repo : undefined;
           const kids = node.children ? sortChildren(node.children, ownRepo) : null;
-          const children = kids ? kids.map(child => renderNode(child, ownRepo)).join('') : '';
+          const children = kids ? kids.map(child => renderNode(child, ownRepo, hideAndroid)).join('') : '';
           const dash = isDashed(node, parentRepo) ? ' dashed' : '';
           const muted = node.filtered ? ' tree-ancestor' : '';
+          const showPlatforms = hideAndroid ? (node.platforms || []).filter(p => p !== 'android') : node.platforms;
           if (node.plain) {
-            return `<li><span class="tree-link tree-plain${muted}">${escapeHtml(node.plain)}${badgeHtml(node)}</span></li>`;
+            return `<li><span class="tree-link tree-plain${muted}">${escapeHtml(node.plain)}${badgeHtml(node, showPlatforms)}</span></li>`;
           }
           if (node.external) {
             const external = node.external;
@@ -1296,7 +1297,7 @@
           const branch = byId.get(node.branch);
           if (!branch || branch.hidden) return '';
           const pin = branch.pinned ? '<span class="tree-pin">站长</span>' : '';
-          const label = `${escapeHtml(branch.name)}${pin}${badgeHtml(node)}`;
+          const label = `${escapeHtml(branch.name)}${pin}${badgeHtml(node, showPlatforms)}`;
           const pinnedClass = branch.pinned ? ' tree-link-pinned' : '';
           if (children) {
             const checkboxId = `tree-node-${seq++}`;
@@ -1304,8 +1305,8 @@
           }
           return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}${muted}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        const renderRoots = roots => `<ul class="tree">${roots.map(root => renderNode(root, null)).join('')}</ul>`;
-        return `<div class="tree-columns"><div class="tree-col"><div class="tree-col-title">左树 · 纯 Android</div>${renderRoots(applyTreeFilters(treeLeft))}</div><div class="tree-col"><div class="tree-col-title">右树 · 存在任何非安卓平台</div>${renderRoots(applyTreeFilters(treeRight))}</div></div>`;
+        const renderRoots = (roots, hideAndroid) => `<ul class="tree">${roots.map(root => renderNode(root, null, hideAndroid)).join('')}</ul>`;
+        return `<div class="tree-columns"><div class="tree-col"><div class="tree-col-title">左树 · 纯 Android</div>${renderRoots(applyTreeFilters(treeLeft), true)}</div><div class="tree-col"><div class="tree-col-title">右树 · 存在任何非安卓平台</div>${renderRoots(applyTreeFilters(treeRight), false)}</div></div>`;
       }
 
       function renderTreeNav(branches) {
