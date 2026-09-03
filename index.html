@@ -1208,10 +1208,12 @@
       function applyTreeFilters(roots) {
         if (!filterShow.size && !filterHide.size) return roots;
         const qualifies = node => {
-          const platforms = node.platforms || [];
           const flags = node.flags || [];
-          const showOk = !filterShow.size || platforms.some(p => filterShow.has(p));
           const hideOk = !flags.some(f => filterHide.has(f));
+          // 补档（external）是附件，跟随父节点显示，不参与平台筛选
+          if (node.external) return hideOk;
+          const platforms = node.platforms || [];
+          const showOk = !filterShow.size || platforms.some(p => filterShow.has(p));
           return showOk && hideOk;
         };
         const walk = node => {
