@@ -1104,6 +1104,8 @@
         web: 'WEB'
       };
 
+      const PLATFORM_ORDER = ['android', 'ios', 'harmony', 'win', 'mac', 'linux', 'tv', 'web'];
+
       const FLAG_META = {
         abandoned: { label: '弃坑', cls: 'tree-flag-abandoned' },
         halfOpen: { label: '半开源', cls: 'tree-flag-halfopen' },
@@ -1251,7 +1253,11 @@
           return [...groups.external, ...groups.solid, ...groups.dashed];
         };
         const badgeHtml = (node, platforms) => {
-          const plats = (platforms || []).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
+          const rank = p => {
+            const index = PLATFORM_ORDER.indexOf(p);
+            return index === -1 ? PLATFORM_ORDER.length : index;
+          };
+          const plats = [...(platforms || [])].sort((a, b) => rank(a) - rank(b)).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
           const flags = (node.flags || []).map(f => {
             const meta = FLAG_META[f];
             return meta ? `<span class="tree-flag ${meta.cls}">${meta.label}</span>` : '';
