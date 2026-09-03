@@ -20,7 +20,7 @@ jobs:
           FORK_ORG: legado-backup
 
       - name: Send alert email
-        if: steps.check.outputs.alert == 'true'
+        if: always() && steps.check.outputs.alert == 'true'
         uses: action-pack/send-mail@v1
         with:
           connection_url: ${{ secrets.MAIL_CONNECTION }}
