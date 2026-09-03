@@ -130,6 +130,9 @@ for (const r of results) {
 const rewritten = results.filter(r => r.status === 'rewritten');
 const gone = results.filter(r => r.status === 'gone');
 const defChanged = results.filter(r => r.status === 'default_branch_changed');
+const errored = results.filter(r => r.status === 'error');
+// 同步失败也要告警：否则像 FORK_TOKEN 缺 workflow 权限这种 422 会连续静默失败
+if (errored.length > 0) alerts.add('sync_error');
 console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'synced').length} 已同步, ${results.filter(r => r.status === 'rewritten').length} 历史被重写未同步, ${results.filter(r => r.status === 'default_branch_changed').length} 默认分支改名, ${results.filter(r => r.status === 'skipped').length} 跳过, ${results.filter(r => r.status === 'gone').length} 上游已删, ${failed} 失败`);
 for (const [label, list] of [['\n被重写列表:', rewritten], ['\n上游删库列表:', gone], ['\n默认分支改名列表:', defChanged]]) {
   if (list.length > 0) {

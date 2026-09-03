@@ -26,10 +26,11 @@ jobs:
           connection_url: ${{ secrets.MAIL_CONNECTION }}
           to: 1220232554@qq.com
           from: 1365443620@qq.com
-          subject: "警告：上游仓库异常（历史重写 / 删库 / 默认分支改名）"
+          subject: "警告：上游仓库异常（历史重写 / 删库 / 默认分支改名 / 同步失败）"
           body: |
             本轮检测到上游异常，涉及以下类型: ${{ steps.check.outputs.alert_reason }}
             - rewritten: 检测到可能的 force push / rebase，本次未同步 fork
             - gone: 上游仓库已删除，本次未同步 fork
             - default_branch_changed: 上游默认分支名已改变，请人工确认
+            - sync_error: 同步失败（常见原因：FORK_TOKEN 缺 workflow 权限 / 网络 / 上游冲突），需人工检查
             详见该次 workflow 的运行日志。
