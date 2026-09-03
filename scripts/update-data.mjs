@@ -69,6 +69,14 @@ const branches = [
   { id: 'jingshiro', name: 'Jingshiro 版', tag: 'jingshiro', repo: 'Jingshiro/legado', term: 'legado-branch-jingshiro' },
   { id: 't', name: '阅读 T', tag: 't', repo: 'skybbk1001/legadoT', term: 'legado-branch-t' },
   { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
+  {
+    id: 'fu',
+    name: '阅融',
+    tag: 'fu',
+    repo: 'h166278/legado_FU',
+    term: 'legado-branch-fu',
+    note: '原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。'
+  },
   { id: 'pp', name: '阅读PP', tag: 'pp', repo: 'damifan3/legadoPP', term: 'legado-branch-pp', note: '阅读 Sigma 分支。' },
   { id: 'x', name: '阅读 X', tag: 'x', repo: 'XziXmn/legado-X', term: 'legado-branch-x', note: '阅读 Sigma 分支。' },
   { id: 'm', name: '阅读 M', tag: 'm', repo: 'syq17496152/legado', term: 'legado-branch-m' },
