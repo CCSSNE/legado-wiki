@@ -284,15 +284,6 @@
       border-top: 1px solid #c4cfca;
     }
 
-    .tree li:not(:has(> label)) > span::before {
-      content: "";
-      position: absolute;
-      top: 13px;
-      left: 5px;
-      width: 11px;
-      border-top: 1px solid #c4cfca;
-    }
-
     .tree li.dashed::before {
       border-left: none;
       width: 1px;
@@ -431,15 +422,6 @@
     .tree-link.tree-gray:hover {
       background: none;
       color: var(--muted);
-    }
-
-    .tree-link.tree-plain {
-      cursor: default;
-    }
-
-    .tree-link.tree-plain:hover {
-      background: none;
-      color: #34413d;
     }
 
     .tree-ancestor {
@@ -1175,12 +1157,12 @@
             }
           ]
         },
-        { plain: '墨水', platforms: ['android'] },
-        { plain: '夜讀', platforms: ['android'] },
-        { plain: '墨境', platforms: ['android'] },
-        { plain: 'Lumi', platforms: ['android'] },
-        { plain: 'Kototoro', platforms: ['android'] },
-        { plain: 'LightNovelReader', platforms: ['android'] }
+        { branch: 'moshui', platforms: ['android'] },
+        { branch: 'yedu', platforms: ['android'] },
+        { branch: 'mojing', platforms: ['android'] },
+        { branch: 'lumi', platforms: ['android'] },
+        { branch: 'kototoro', platforms: ['android'] },
+        { branch: 'lightnovel', platforms: ['android'] }
       ];
 
       const treeRight = [
@@ -1198,14 +1180,14 @@
                 { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
               ]
             },
-            { plain: 'Legado macOS 版', platforms: ['mac'], flags: ['abandoned'] }
+            { branch: 'macos', platforms: ['mac'], flags: ['abandoned'] }
           ]
         },
-        { plain: '亦搜', platforms: ['android', 'tv', 'ios', 'win', 'linux', 'mac'], flags: ['abandoned'] },
-        { plain: '开元阅读', platforms: ['android', 'web', 'ios', 'win', 'linux', 'mac'], flags: ['halfOpen'] },
-        { plain: 'ReadCat', platforms: ['win'], flags: ['abandoned'] },
-        { plain: '彩读', platforms: ['mac', 'win', 'linux'] },
-        { plain: 'Books', platforms: ['win'] }
+        { branch: 'yisou', platforms: ['android', 'tv', 'ios', 'win', 'linux', 'mac'], flags: ['abandoned'] },
+        { branch: 'kaiyuan', platforms: ['android', 'web', 'ios', 'win', 'linux', 'mac'], flags: ['halfOpen'] },
+        { branch: 'readcat', platforms: ['win'], flags: ['abandoned'] },
+        { branch: 'caidu', platforms: ['mac', 'win', 'linux'] },
+        { branch: 'books', platforms: ['win'] }
       ];
 
       const FILTER_SHOW = [
@@ -1245,27 +1227,26 @@
       function renderTreeColumns(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
         const familyStars = node => {
-          if (node.external || node.plain) return 0;
+          if (node.external) return 0;
           const own = byId.get(node.branch)?.stars ?? 0;
           const kids = node.children ? node.children.reduce((sum, child) => sum + familyStars(child), 0) : 0;
           return own + kids;
         };
         const byStars = (left, right) => familyStars(right) - familyStars(left);
         const isDashed = (node, parentRepo) => {
-          if (!parentRepo || node.external || node.plain) return false;
+          if (!parentRepo || node.external) return false;
           const branch = byId.get(node.branch);
           return !(branch && branch.fork === true && branch.forkOf === parentRepo);
         };
         const sortChildren = (children, parentRepo) => {
-          const groups = { external: [], plain: [], solid: [], dashed: [] };
+          const groups = { external: [], solid: [], dashed: [] };
           children.forEach(node => {
             if (node.external) groups.external.push(node);
-            else if (node.plain) groups.plain.push(node);
             else groups[isDashed(node, parentRepo) ? 'dashed' : 'solid'].push(node);
           });
           groups.solid.sort(byStars);
           groups.dashed.sort(byStars);
-          return [...groups.external, ...groups.solid, ...groups.plain, ...groups.dashed];
+          return [...groups.external, ...groups.solid, ...groups.dashed];
         };
         const badgeHtml = (node, platforms) => {
           const plats = (platforms || []).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
@@ -1283,9 +1264,6 @@
           const dash = isDashed(node, parentRepo) ? ' dashed' : '';
           const muted = node.filtered ? ' tree-ancestor' : '';
           const showPlatforms = hideAndroid ? (node.platforms || []).filter(p => p !== 'android') : node.platforms;
-          if (node.plain) {
-            return `<li><span class="tree-link tree-plain${muted}">${escapeHtml(node.plain)}${badgeHtml(node, showPlatforms)}</span></li>`;
-          }
           if (node.external) {
             const external = node.external;
             return `<li class="tree-external${dash}"><a class="tree-link" href="https://github.com/${escapeAttribute(external.repo)}" target="_blank" rel="noopener">${escapeHtml(external.name)}<span class="tree-arrow"> ↗</span></a></li>`;
@@ -1407,7 +1385,26 @@
           }
         }
 
-        activeBranches = [...(data.branches || [])]
+        // 静态条目：一次性探测写入，不进每小时同步；加载失败不影响主数据
+        let staticBranches = [];
+        const staticSources = [
+          `data/branches-static.json?v=${Date.now()}`,
+          `https://raw.githubusercontent.com/CCSSNE/legado-wiki/main/data/branches-static.json?v=${Date.now()}`
+        ];
+
+        for (const url of staticSources) {
+          try {
+            const response = await fetch(url, { headers: { Accept: 'application/json' } });
+            if (!response.ok) throw new Error(`静态数据文件 ${response.status}`);
+            const staticData = await response.json();
+            staticBranches = Array.isArray(staticData.branches) ? staticData.branches : [];
+            break;
+          } catch (error) {
+            staticBranches = [];
+          }
+        }
+
+        activeBranches = [...(data.branches || []), ...staticBranches]
           .filter(branch => !branch.hidden)
           .sort((left, right) => {
             if (left.pinned && !right.pinned) return -1;

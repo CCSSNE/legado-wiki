@@ -1,0 +1,656 @@
+{
+  "generatedAt": "2026-09-03T21:55:16.733Z",
+  "branches": [
+    {
+      "id": "lightnovel",
+      "name": "LightNovelReader",
+      "tag": "lightnovel",
+      "repo": "dmzz-yyhyy/LightNovelReader",
+      "term": "legado-branch-lightnovel",
+      "stars": 2055,
+      "sourceUpdatedAt": "2026-08-31T14:56:14Z",
+      "githubArchived": false,
+      "release": {
+        "name": "1.2.1",
+        "tagName": "1.2.1",
+        "prerelease": false,
+        "publishedAt": "2026-07-17T18:55:08Z",
+        "createdAt": "2026-07-17T18:39:54Z",
+        "body": "## LightNovelReader 1.2.1\r\n\r\nLightNovelReader 1.2.1 提供了书架排序、书本数据管理和插件市场支持，以及优化 EPUB 的导出流程。\r\n\r\n## What's Changed\r\n* 导出 EPUB 优化和bug修复 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/377\r\n  - 修复了部分命名拼写错误\r\n  - 修复导出逻辑没有判断 选择的卷 和 导出图片 设置\r\n  - 新增导出书本时的通知进度可视化\r\n  - 为导出通知增加本地化翻译\r\n  - 修复了一处导出错误\r\n  - 优化书本管理页面的显示\r\n* Add F-Droid badge by @linsui in https://github.com/dmzz-yyhyy/LightNovelReader/pull/400\r\n* 关联插件文件格式 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/401\r\n  - 关联插件格式打开方式\r\n  - 优化安装插件对话框\r\n  - 支持插件图标显示\r\n  - 更新测试更新渠道相关设置项翻译\r\n  - 修复安装插件时未隐藏取消按钮\r\n  - 修复文件类型匹配错误\r\n* 合并字符串文件 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/403\r\n* 添加 Crowdin 配置文件 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/404\r\n* Update version_check.yml by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/406\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/407\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/408\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/409\r\n* 将插件提示移入列表内 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/415\r\n* 插件市场 API 支持 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/411\r\n  - 新增插件安装底栏\r\n  - 修复插件安装缓存文件未删除的错误\r\n  - 更新本地化翻译；支持插件更新检查\r\n  - 迁移请求到 OkHttp\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/413\r\n* 书架排序支持 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/426\r\n  - 修复探索页面保存状态\r\n  - 书架页面排序和手动调整顺序支持\r\n* 实现书本管理与存储空间统计 by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/429\r\n  - 实现书本管理与存储空间统计\r\n  - 移除无效字符串\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/427\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/441\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/443\r\n* Update README.md by @yukonisen in https://github.com/dmzz-yyhyy/LightNovelReader/pull/447\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/450\r\n* New Crowdin updates by @dmzz-yyhyy in https://github.com/dmzz-yyhyy/LightNovelReader/pull/456\r\n\r\n\r\n**Full Changelog**: https://github.com/dmzz-yyhyy/LightNovelReader/compare/1.2.0...1.2.1",
+        "assets": [
+          {
+            "name": "LightNovelReader-1.2.1-release.apk",
+            "size": 5762170,
+            "browserDownloadUrl": "https://github.com/dmzz-yyhyy/LightNovelReader/releases/download/1.2.1/LightNovelReader-1.2.1-release.apk"
+          },
+          {
+            "name": "mapping.zip",
+            "size": 6251672,
+            "browserDownloadUrl": "https://github.com/dmzz-yyhyy/LightNovelReader/releases/download/1.2.1/mapping.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "yisou",
+      "name": "亦搜",
+      "tag": "yisou",
+      "repo": "mabDc/eso",
+      "term": "legado-branch-yisou",
+      "note": "安卓 / tv（大白版）/ iOS（需自签）/ Windows（需 vc++ 运行库，内置 3 个 dll）/ Linux（需 libsqlite3-dev）/ macOS",
+      "stars": 1787,
+      "sourceUpdatedAt": "2023-11-25T06:13:49Z",
+      "githubArchived": false,
+      "release": {
+        "name": "ESO-1.23.6-12306",
+        "tagName": "ESO-1.23.6-12306",
+        "prerelease": false,
+        "publishedAt": "2023-09-06T13:14:52Z",
+        "createdAt": "2023-09-06T12:53:03Z",
+        "body": "### 2023.9.6\r\n- add 更换音频播放器。增加系统状态栏标签，响应系统事件。\r\n- fix 修复备份文件编码问题\r\n- add 选取备份文件增添可以使用系统文件管理器\r\n- 暂时移除搜索界面历史\r\n- 规则和js文本编辑框添加撤销和重做（划掉。旧版flutter不支持）\r\n- 目录分页加载\r\n- 调试时多页目录只加载一页\r\n\r\n### 2023.4.22\r\n- fix 书架分组自动保存\r\n- fix 新发现瀑布流。标识符改成`@@DiscoverRule:`，其用来分隔js和json\r\n- fix 备份，如果写入本地失败 依旧会尝试写入云端\r\n- fix 文件管理器，内置文件管理器增加【新建文件夹】、【使用系统管理器打开】，统一背景选择、字体选择等几处文件选择器\r\n- \r\n\r\n### 2023.4.21\r\n- 调整 书架\r\n- 增加书架分组功能，默认分组为【全部】，长按分组修改\r\n\r\n### 2023.4.16\r\n- 更新版本号\r\n- webview超时改为30s\r\n- 翻页动画完善。\r\n- 滚动效果更像真的\r\n- 增加选项【背景图随动画移动】，关闭后背景图固定位置而不移动，某些翻页效果下更舒服。\r\n- js增加jsencrypt用于rsa编码，可以使用`require(\"jsencrypt\")`或`require(\"jsencrypt.min\")`\r\n\r\n### 2023.4.13\r\n- 修改音频ui\r\n- 修改发现ui\r\n### 2023.4.6\r\n- 完善主题 图标颜色在按钮和开关也生效\r\n- 可复制简介（测试性）\r\n- 完善规则调试，可以输入`搜索::类别::关键字`或者`发现::一级分类名::二级分类名`开始对特定规则测试。默认类别名称使用`默认`二字做标识符。\r\n### 2023.4.2\r\n- add 支持搜索规则多种类型，写起来和发现一样，用起来也和发现一样，形如\r\n   ```\r\n   书名::http://x.com/?key=$keyword&type=bookname\r\n   作者::http://x.com/?key=$keyword&type=zuozhe\r\n   ```\r\n- 增加删除空白规则功能，在规则管理->更多中，判定条件是地址为空或名称为空\r\n\r\n",
+        "assets": [
+          {
+            "name": "ESO-1.23.6-12306-arm64-v8a-release.apk",
+            "size": 20293111,
+            "browserDownloadUrl": "https://github.com/mabDc/eso/releases/download/ESO-1.23.6-12306/ESO-1.23.6-12306-arm64-v8a-release.apk"
+          },
+          {
+            "name": "eso.windows.release.zip",
+            "size": 25212365,
+            "browserDownloadUrl": "https://github.com/mabDc/eso/releases/download/ESO-1.23.6-12306/eso.windows.release.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true,
+      "abandoned": "弃坑",
+      "abandonedReason": "Release 与源码均超过半年未更新"
+    },
+    {
+      "id": "caidu",
+      "name": "彩读",
+      "tag": "caidu",
+      "repo": "ssnangua/ColorTxt",
+      "term": "legado-branch-caidu",
+      "note": "macOS、Windows 和 Linux。",
+      "stars": 1593,
+      "sourceUpdatedAt": "2026-09-03T17:28:36Z",
+      "githubArchived": false,
+      "release": {
+        "name": "3.8.6",
+        "tagName": "v3.8.6",
+        "prerelease": false,
+        "publishedAt": "2026-09-03T17:24:12Z",
+        "createdAt": "2026-09-03T17:07:21Z",
+        "body": "## 3.8\r\n\r\n新功能：\r\n\r\n- **极简视图**：顶栏 / 侧栏 / 底栏默认隐藏，阅读区撑满窗口；鼠标移到窗口边缘唤起相应面板（交互与全屏模式一致） [#58](https://github.com/ssnangua/ColorTxt/issues/58)\r\n  - 入口在工具栏「<img src=\"./src/renderer/src/assets/enter_minimalist_view.svg\" width=\"18\" height=\"18\" alt=\"\"> 极简视图」，默认快捷键 `F10`\r\n- **阅读尺**：适合注意力不容易集中的人（**ADHD**），聚焦阅读行，淡化其他行 [#83](https://github.com/ssnangua/ColorTxt/issues/83)\r\n  - 入口在工具栏「<img src=\"./src/renderer/src/assets/reading_ruler.svg\" width=\"18\" height=\"18\" alt=\"\"> 阅读尺」\r\n  - 「设置 → 阅读 → 阅读尺」可调聚焦行数、非聚焦行不透明度等\r\n  - 启用阅读尺时，翻页行为会变为按「聚焦行数」移动阅读尺；跳转行为会将阅读尺移到视口中间。\r\n- **摸鱼模式**：打开一个无边框透明置顶的阅读窗口 [#50](https://github.com/ssnangua/ColorTxt/issues/50)\r\n  - 入口在更多菜单「<img src=\"./src/renderer/src/assets/emituofo.svg\" width=\"18\" height=\"18\" alt=\"\"> 摸鱼模式」，默认快捷键 `F9`\r\n  - 全局快捷键 `Ctrl` + `↑` / `↓` 翻页、`Ctrl` + `←` / `→` 切章\r\n  - 窗口上 `Ctrl + 滚轮` 改字号，`Shift + 滚轮` 改字体不透明度，`Alt + 滚轮` 改背景不透明度\r\n  - 右键菜单可开关「定时滚动」/「设置」打开独立设置窗口 /「退出摸鱼模式」\r\n- **阅读器配色方案** [#19](https://github.com/ssnangua/ColorTxt/issues/19)\r\n  - 内置配色方案（亮/暗各一套）：`默认` / `素纸` / `羊皮纸` / `护眼` / `毛绒地毯` / `墨竹` / `雪梅` / （仅暗）`星空`\r\n  - 内置方案不支持改色；可通过「新增亮色配色方案」/「新增暗色配色方案」来创建当前主题的自定义方案\r\n  - 开关单独存储，且亮/暗主题共用一份（与色值分开，切换配色方案也只替换色值和背景图，不会影响开关）\r\n  - 支持导入 / 导出配色；也可单独导出当前阅读器配色方案（含自定义背景图时也会一起打包，方便分享）\r\n- **阅读区背景图**：配色 → 阅读器 → 配色表「背景图」\r\n  - 图库全局共用；每张图亮/暗各一套选项（混合模式 / 不透明度 / 填充 / 平铺 / 对齐）。\r\n  - 内置图不支持改选项；可通过「生成副本」来自定义选项\r\n  - 自定义图随 WebDAV 同步（`Main/reader-backgrounds/`，按文件名 + 大小增量上传/下载）\r\n  - 粘性章节标题去掉阴影，避免切开背景图\r\n  - 阅读器多行选区列重叠处不再露出实心底色块（关掉 Monaco 圆角选区抠图），避免盖住背景图\r\n\r\n改进：\r\n\r\n- 拾色器增强：\r\n  - 可切换 **色盘** / **HSL**（HSL 可单独调色相、饱和度、亮度，方便微调）\r\n  - 色值右边增加 **滴管** 按钮，点击可进行全屏取色\r\n- 「设置 → 阅读」增加「字体」配置项（复用工具栏字体弹出菜单）\r\n- 添加 / 编辑高亮词：回车或 Tab 提交；可按 `、` / `,` / `，` / `;` / `；` 切分，一次添加多个词\r\n- 书源「校验设置」可指定「并发数」（默认 4，范围 1–32）；有校验失败的项时，显示「选中失败项」按钮 [#84](https://github.com/ssnangua/ColorTxt/issues/84)\r\n- 有蒙版弹层时只拦截阅读器滚动/切章相关的快捷键，其他快捷键可正常触发\r\n- 焦点在文本框上时，`Esc` 只失焦并吞掉事件\r\n- 新增几个常用快捷键\r\n- 极简视图 / 全屏模式：\r\n  - 「显示/隐藏侧边栏」快捷键改为唤出浮动侧栏，不切换侧栏开关状态\r\n  - `Esc` 按层关闭：输入框失焦 → 蒙版弹层 → 弹出菜单 → 查找栏 → 浮动顶/底/侧栏\r\n  - 全屏改为连按两次 ESC 才退出，避免误触\r\n  - 浮动顶栏 / 底栏 / 侧栏向阅读区一侧投下阴影，收起时与弹出使用相同过渡，不再瞬间消失\r\n  - 只读模式下滚动条随鼠标显隐：光标因静止隐藏时一并淡出，移动鼠标即出现\r\n- 内容上色增强\r\n- …\r\n\r\n修复：\r\n\r\n- 文生图 OpenAI / 兼容接口：`gpt-image-*` 不再发送 `response_format`（`dall-e-*` 仍发 `b64_json`），避免官方与网关 400 [#82](https://github.com/ssnangua/ColorTxt/issues/82)\r\n- 空格键翻页改为窗口事件（不再因阅读区丢焦点而失效）\r\n- 点击模式：\r\n  - 在弹层开着时，点阅读区只关弹层不翻页（仍可拖动）\r\n  - 在窗口失焦后，点阅读区只重新获得焦点不翻页（仍可拖动）\r\n  - 点阅读区会把焦点交回正文，方向键 / 翻页 / 空格可正常滚动\r\n- 极简视图 / 全屏模式优化\r\n- …\r\n\r\n详细信息见 [更新日志 §3.8](https://github.com/ssnangua/ColorTxt/blob/main/CHANGELOG.md#38)",
+        "assets": [
+          {
+            "name": "colortxt-3.8.6-arm64.AppImage",
+            "size": 161065099,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-arm64.AppImage"
+          },
+          {
+            "name": "colortxt-3.8.6-arm64.dmg",
+            "size": 157178722,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-arm64.dmg"
+          },
+          {
+            "name": "colortxt-3.8.6-arm64.dmg.blockmap",
+            "size": 162923,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-arm64.dmg.blockmap"
+          },
+          {
+            "name": "colortxt-3.8.6-Portable.exe",
+            "size": 124531822,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-Portable.exe"
+          },
+          {
+            "name": "colortxt-3.8.6-Setup.exe",
+            "size": 124948052,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-Setup.exe"
+          },
+          {
+            "name": "colortxt-3.8.6-Setup.exe.blockmap",
+            "size": 131928,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-Setup.exe.blockmap"
+          },
+          {
+            "name": "colortxt-3.8.6-x64.dmg",
+            "size": 164039698,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-x64.dmg"
+          },
+          {
+            "name": "colortxt-3.8.6-x64.dmg.blockmap",
+            "size": 168319,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-x64.dmg.blockmap"
+          },
+          {
+            "name": "colortxt-3.8.6-x86_64.AppImage",
+            "size": 162242246,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/colortxt-3.8.6-x86_64.AppImage"
+          },
+          {
+            "name": "latest-arm64-linux-arm64.yml",
+            "size": 380,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/latest-arm64-linux-arm64.yml"
+          },
+          {
+            "name": "latest-arm64-mac.yml",
+            "size": 345,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/latest-arm64-mac.yml"
+          },
+          {
+            "name": "latest-x64-linux.yml",
+            "size": 382,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/latest-x64-linux.yml"
+          },
+          {
+            "name": "latest-x64-mac.yml",
+            "size": 341,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/latest-x64-mac.yml"
+          },
+          {
+            "name": "latest.yml",
+            "size": 345,
+            "browserDownloadUrl": "https://github.com/ssnangua/ColorTxt/releases/download/v3.8.6/latest.yml"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "readcat",
+      "name": "ReadCat",
+      "tag": "readcat",
+      "repo": "read-cat/read-cat",
+      "term": "legado-branch-readcat",
+      "note": "Windows",
+      "stars": 1012,
+      "sourceUpdatedAt": "2024-11-09T10:59:31Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v1.0.0-dev.241109",
+        "tagName": "v1.0.0-dev.241109",
+        "prerelease": true,
+        "publishedAt": "2024-11-09T10:23:48Z",
+        "createdAt": "2024-11-09T07:19:08Z",
+        "body": "### 新增\r\n\r\n- 增加 EdgeTTS开启代理功能\r\n\r\n### 修复\r\n\r\n- 修复 EdgeTTS朗读引擎403错误\r\n\r\n### 优化\r\n\r\n- 优化 Azure TTS 的使用体验 - by [**YogiLiu**](https://github.com/YogiLiu) in #31 (8626b06c9740466f5df9d9a21d0b04340d6b018a)\r\n- 优化 书架无书本时显示的样式\r\n- 优化 书城导航栏滚动条位置\r\n- 优化 插件拖拽导入显示样式\r\n- 优化 朗读引擎获取发音人列表功能\r\n- 优化 FileDrag组件\r\n\r\n### 其他修改\r\n\r\n- 增加沙盒机制，使插件可访问部分底层API\r\n- request增加timeout选项\r\n- websocket支持proxy选项",
+        "assets": [
+          {
+            "name": "ReadCat-darwin-arm64-1.0.0-dev.f63eabac.dmg",
+            "size": 100852235,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-arm64-1.0.0-dev.f63eabac.dmg"
+          },
+          {
+            "name": "ReadCat-darwin-arm64-1.0.0-dev.f63eabac.dmg.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-arm64-1.0.0-dev.f63eabac.dmg.sha256.txt"
+          },
+          {
+            "name": "ReadCat-darwin-arm64-1.0.0-dev.f63eabac.tar.gz",
+            "size": 106331033,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-arm64-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-darwin-arm64-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-arm64-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          },
+          {
+            "name": "ReadCat-darwin-x64-1.0.0-dev.f63eabac.dmg",
+            "size": 105720771,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-x64-1.0.0-dev.f63eabac.dmg"
+          },
+          {
+            "name": "ReadCat-darwin-x64-1.0.0-dev.f63eabac.dmg.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-x64-1.0.0-dev.f63eabac.dmg.sha256.txt"
+          },
+          {
+            "name": "ReadCat-darwin-x64-1.0.0-dev.f63eabac.tar.gz",
+            "size": 112384701,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-x64-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-darwin-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-darwin-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-amd64-1.0.0-dev.f63eabac.deb",
+            "size": 83709072,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-amd64-1.0.0-dev.f63eabac.deb"
+          },
+          {
+            "name": "ReadCat-linux-amd64-1.0.0-dev.f63eabac.deb.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-amd64-1.0.0-dev.f63eabac.deb.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.AppImage",
+            "size": 92729929,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.AppImage"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.AppImage.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.AppImage.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.deb",
+            "size": 79105882,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.deb"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.deb.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.deb.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.tar.gz",
+            "size": 116405900,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-linux-arm64-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-arm64-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-x64-1.0.0-dev.f63eabac.tar.gz",
+            "size": 116406394,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-x64-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-linux-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          },
+          {
+            "name": "ReadCat-linux-x86_64-1.0.0-dev.f63eabac.AppImage",
+            "size": 98182074,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-x86_64-1.0.0-dev.f63eabac.AppImage"
+          },
+          {
+            "name": "ReadCat-linux-x86_64-1.0.0-dev.f63eabac.AppImage.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-linux-x86_64-1.0.0-dev.f63eabac.AppImage.sha256.txt"
+          },
+          {
+            "name": "ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.exe",
+            "size": 80672485,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.exe"
+          },
+          {
+            "name": "ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.exe.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.exe.sha256.txt"
+          },
+          {
+            "name": "ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.tar.gz",
+            "size": 102795350,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-ia32-windows7-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          },
+          {
+            "name": "ReadCat-win32-x64-1.0.0-dev.f63eabac.exe",
+            "size": 94076526,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-x64-1.0.0-dev.f63eabac.exe"
+          },
+          {
+            "name": "ReadCat-win32-x64-1.0.0-dev.f63eabac.exe.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-x64-1.0.0-dev.f63eabac.exe.sha256.txt"
+          },
+          {
+            "name": "ReadCat-win32-x64-1.0.0-dev.f63eabac.tar.gz",
+            "size": 121501296,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-x64-1.0.0-dev.f63eabac.tar.gz"
+          },
+          {
+            "name": "ReadCat-win32-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt",
+            "size": 64,
+            "browserDownloadUrl": "https://github.com/read-cat/read-cat/releases/download/v1.0.0-dev.241109/ReadCat-win32-x64-1.0.0-dev.f63eabac.tar.gz.sha256.txt"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true,
+      "abandoned": "弃坑",
+      "abandonedReason": "Release 与源码均超过半年未更新"
+    },
+    {
+      "id": "kototoro",
+      "name": "Kototoro",
+      "tag": "kototoro",
+      "repo": "Kototoro-app/Kototoro",
+      "term": "legado-branch-kototoro",
+      "stars": 548,
+      "sourceUpdatedAt": "2026-09-03T16:11:57Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v2.0.5",
+        "tagName": "v2.0.5",
+        "prerelease": false,
+        "publishedAt": "2026-09-03T16:32:12Z",
+        "createdAt": "2026-09-03T16:11:20Z",
+        "body": "- chore: bump version to v2.0.5 (59244b865)\n- feat(wizard,details,translate): trim wizard, restore backup on done page, fix menu overlay, preset NanoGPT (5ff9b6ee2)\n- fix(feed): feed the updates snapshot so chip rail and carousel render (bc6544878)\n- fix(ui): stop quick-filter rail auto-scrolling to start on first pick (b13864a83)\n- fix(favourites): don't cache macro-only chips from the empty snapshot (2722cef86)\n- fix(settings): stop losing nav config changes on fast exit (fb08fcaa6)\n- docs(skill): distill the idle-redraw feedback-loop debugging playbook (9228c4180)\n- fix(main): break the self-sustaining top-bar override report loop (46047d6a7)\n- test(debug): add an idle-redraw bisect probe (4a124102e)\n- perf(history): sort the quick filter once per change (a9771ff25)\n- build: vendor backdrop 2.0.0 as a local :backdrop module (5d9c0b778)\n- perf(glass): stop refracting the top-bar filter chips (1168b6b69)\n- fix(main): compare reported top-bar overrides structurally (b8444cd14)\n- perf(glass): drop the accelerometer-driven specular highlight (8e221ac72)\n- chore(tracker): drop the dead binding-facet read (d5efd4d73)\n- perf(favourites): split the tag facet into relations and a dictionary (d8272d526)\n- perf(history): drive the tag facet from the display projections (dbc21aaec)\n- improve cold start perf (c954f751d)\n- fix(explore): keep the browse hero flight on the rect it lands on (d4f06dbf4)\n- fix(hero): restore the cover hero on the search content lists (3d455af69)\n- fix(home): keep the hero cover flight on the rect it lands on (7f31d2a6f)\n- fix(welcome): stop the action bar from squeezing the primary button (cb473f2c6)\n- fix(hero): restore missing shared-element animations on three entry paths (c1002dad6)\n- fix(startup): run local index and ad list refresh via WorkManager (b57988aee)\n- perf(history): split OR+COALESCE facet joins into indexable UNION branches (0e6d27de9)\n- fix(reader): seed bottom chapter title option from settings (3a02dbcdd)\n- docs: add list-architecture and paging research, link favourites plan (d0b24bbd0)\n- feat(details): show tracking metadata properties and simplify relation sections (01fcc1ddf)\n- fix(backup): normalize content_type for non-installable fork source remap (ed5064165)\n- docs: record the history/updates/feed migration handoff (14bb383fc)\n- refactor(history): render the page from the snapshot, remove the paging chain (8c21eaa5d)\n- feat(history): add library snapshot store, deriver and card mapper (a7077952c)\n- refactor(tracker): render the updates page from one shared snapshot (b1387ef1a)\n- feat(tracker): add updates snapshot store and deriver (d1d284dcd)\n- test(tracker): pin feed favourite quick-filter semantics (6dfa363d1)\n- refactor(tracker): render the feed from one shared snapshot (d8ce4c332)\n- refactor(tracker): derive feed visibility window and scope in memory (1271a61fe)\n- feat(tracker): add observable feed snapshot store (ad89253ed)\n- feat(tracker): add feed characterization and narrow read projections (65fc38a3a)\n- docs(favourites): record phase 7 device regression results (f79c51534)\n- refactor(favourites): delete the favourites paging chain (phase 7) (34179adb3)\n- refactor(favourites): render the library from one shared state holder (b2c20e842)\n- docs(favourites): record komikku-alignment phase handoff (47c46a4b3)\n- refactor(favourites): move library state ownership to container (299a24de8)\n- refactor(favourites): derive filters grouping and sorting in memory (e39631e12)\n- feat(favourites): add observable library snapshot store (b6fea487c)\n- feat(favourites): add lightweight library read projections (5ee594ac9)\n- test(favourites): capture library semantics and performance baseline (3dd403f27)\n- fix(list): compare anchor indices in one coordinate space when releasing a snapshot (0013e5d15)\n- fix(entitygraph): keep the preferred local projection owned by its entity (a91254809)\n- fix(backup): map non-installable ExHentai fork sources (ec27022dd)\n- feat(backup): unify compatible backup import and export flows (4524a382f)\n- fix(reader): align the bottom chapter chip and expose the option in settings (36c78a648)\n- feat(reader): option to show the chapter title above the progress dock (dc8694638)\n- fix(entitygraph): absorb import duplicates into existing works and repair drifted anchors (cec8f8fcc)\n- fix(backups): stop swallowing entity consolidation failures (10b433b0a)\n- fix(download): surface real storage failures instead of \"Required value was null.\" (36857c92f)\n- feat(github-mirror): mirror GitHub downloads through a probed, synced list (229f6c0ca)\n- fix(list): stabilize grid position after details return (e6c6da6b0)\n- improve setup wizard (8d0652d66)\n- fix(reader): preserve page across rotation (d45a4ddd0)\n- fix(details): crash when expanding very long titles (baec924da)\n- feat(details): add one-tap copy title button (6fff8260c)\n- feat(favourites): combined filter panel in top-bar source filter popup (0d98c25dc)\n- fix(nav): stop glass pill becoming transparent when glass is off (ba1e0ff0c)\n- fix(welcome): recompute batch-install counts on filter changes (164321d95)\n- fix(reader): distinguish OCR engine failure from empty OCR on MLKit NPE devices (675f70e61)\n- feat(welcome): revamp setup wizard into multi-step onboarding (14a246ca5)\n- feat(bangumi): official default mirror, bangumi.pro mirror, custom API URL (b171c40c5)\n- fix(explore): show enabled Tsundoku sources on the browse page (78c9f7912)\n- feat(history): show compact reading statistics summary card (5e44e0083)\n- feat(feed): add continue reading button to update cards (2518a6eb9)\n- feat(home): per-section display styles with paged config and hero indicator (19cbb0790)\n- perf(feed): page subscriptions without snapshot races (9e1c2b368)\n- feat(extensions): polish recommended packages section (f31f5219f)\n- fix(extensions): show suggested repositories when missing sources uncovered (7f689a129)\n- feat(extensions): recommended package group for missing imported sources (e141cd784)\n- feat(backups): import result dialog with uninstalled-source report (3a165394f)\n- feat(backups): replace/merge choice for current-format backup restore (baa8014d6)\n- feat(entitygraph): consolidate provisional import entities after bulk restore (eadd545ca)\n- feat(backups): bulk external backup import with provisional work entities (8c9f4d3a1)\n- perf(list): bound retained paging snapshots (8434484e6)\n- fix(nav): use hero transition for updated details (b76d455de)\n- fix(nav): keep below labels on narrow floating bars (f4f37a5b7)\n- fix(deps): bump postcss override to 8.5.26 (CVE-2026-69153) (2d87e51c4)",
+        "assets": [
+          {
+            "name": "Kototoro-2.0.5-arm64-v8a-release.apk",
+            "size": 124850439,
+            "browserDownloadUrl": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.0.5/Kototoro-2.0.5-arm64-v8a-release.apk"
+          },
+          {
+            "name": "Kototoro-2.0.5-armeabi-v7a-release.apk",
+            "size": 116958343,
+            "browserDownloadUrl": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.0.5/Kototoro-2.0.5-armeabi-v7a-release.apk"
+          },
+          {
+            "name": "Kototoro-2.0.5-release.apk",
+            "size": 312401327,
+            "browserDownloadUrl": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.0.5/Kototoro-2.0.5-release.apk"
+          },
+          {
+            "name": "Kototoro-2.0.5-x86-release.apk",
+            "size": 139413695,
+            "browserDownloadUrl": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.0.5/Kototoro-2.0.5-x86-release.apk"
+          },
+          {
+            "name": "Kototoro-2.0.5-x86_64-release.apk",
+            "size": 146481787,
+            "browserDownloadUrl": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.0.5/Kototoro-2.0.5-x86_64-release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "kaiyuan",
+      "name": "开元阅读",
+      "tag": "kaiyuan",
+      "repo": "miloquinn/open-reading",
+      "term": "legado-branch-kaiyuan",
+      "note": "半闭源。",
+      "stars": 184,
+      "sourceUpdatedAt": "2026-08-24T02:38:51Z",
+      "githubArchived": false,
+      "release": {
+        "name": "开元阅读 v2.6.2",
+        "tagName": "v2.6.2",
+        "prerelease": false,
+        "publishedAt": "2026-08-24T02:38:51Z",
+        "createdAt": "2026-08-03T06:32:12Z",
+        "body": "# Open Reading v2.6.2\n\nv2.6.2 重点改善在线书源缓存、替换规则执行和跨平台阅读排版，并继续优化漫画与图片阅读体验。\n\n> **说明：漫画阅读功能仍在进一步完善中。** 本版本修复了多项图片解析、连续阅读和模式切换问题，但不同站点的页面结构与图片加载策略差异较大，后续版本还会继续提升兼容性与稳定性。\n\n## 在线书源与缓存\n\n- 发现页推荐、分类与分类浏览统一使用可持久化缓存，覆盖 ORSP 和兼容文字/漫画书源；重复打开时可更快展示已有结果，并按书源配置版本隔离数据。\n- 登录、退出登录或刷新书源后会同步失效相关发现缓存，避免继续展示旧账号或旧配置下的内容。\n- HTTP 缓存支持 ETag 与 Last-Modified 条件重验证；服务端内容未变化时复用本地数据，临时网络或服务端故障时可在限定时间内安全回退到旧缓存。\n- 加强并发请求合并、缓存容量控制和失效写回保护，避免已经清理或更新的缓存被后台旧请求重新覆盖。\n\n## 漫画与图片阅读\n\n- 改进漫画章节图片提取，支持一次规则命中的多张图片地址，并为更多常见漫画容器和旧类型书源提供安全兼容，减少章节只显示第一张图或无法识别图片的问题。\n- 优化纵向连续阅读的章节衔接、拖拽定位、空章节进度和内容高度变化处理，降低跨章节跳动、进度错位与加载后位置被拉回的问题。\n- 完善纵向阅读设置面板以及横向模式切换，避免异步设置读取或旧阅读源回调覆盖当前状态。\n- 漫画阅读功能仍在进一步完善中；后续将继续针对更多站点、长章节和复杂网络环境优化兼容性、内存占用与交互细节。\n\n## 替换规则与阅读稳定性\n\n- 正则替换规则改为异步批处理，并在可终止的隔离执行环境中运行，避免复杂或异常规则长时间阻塞阅读界面。\n- 新增替换超时、输出膨胀、无效正则和工作进程异常保护；规则意外清空正文时会保留原文，并记录可诊断信息。\n- 章节标题与正文会在进入排版前批量完成替换，分页缓存也会跟随规则版本隔离，减少规则变更后的旧页复用、标题闪变和打开卡顿。\n\n## 跨平台阅读排版\n\n- TXT、EPUB 与在线书源统一解析平台默认阅读字体，使测量、分页、正文绘制、设置预览和缓存身份使用同一套字体回退链。\n- Android 默认使用无衬线字体，Apple 平台优先使用苹方，Windows 优先使用微软雅黑；用户明确选择的字体和 EPUB 内嵌字体优先级保持不变。\n\n## 版本信息\n\n- 版本：`2.6.2`\n- 基础构建号：`260824001`\n- 发布日期：`2026-08-24`\n\n## 下载\n\n| 平台 | 下载 |\n| --- | --- |\n| Android | [![Android APK ARM64-v8a](https://img.shields.io/badge/Android-APK%20ARM64--v8a-3DDC84?logo=android&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-arm64-v8a-2.6.2.apk) [![Android APK ARMv7](https://img.shields.io/badge/Android-APK%20ARMv7-69C36D?logo=android&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-armeabi-v7a-2.6.2.apk) [![Android APK x86_64](https://img.shields.io/badge/Android-APK%20x86__64-8BC34A?logo=android&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-x86_64-2.6.2.apk) |\n| iOS | [![iOS IPA unsigned](https://img.shields.io/badge/iOS-IPA%20未签名-6B7280?logo=apple&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-iOS-unsigned-2.6.2.ipa) |\n| Web | [![Open Reading Web](https://img.shields.io/badge/Web-在线阅读-287FCD?logo=googlechrome&logoColor=white)](https://read.xxread.top/) |\n| macOS | [![macOS universal](https://img.shields.io/badge/macOS-universal-555555?logo=apple&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-macOS-universal-2.6.2.zip) |\n| Windows | [![Windows x64](https://img.shields.io/badge/Windows-ZIP%20x64-0078D4?logo=windows&logoColor=white)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Windows-x64-2.6.2.zip) |\n| Linux | [![Linux x64](https://img.shields.io/badge/Linux-tar.gz%20x64-FCC624?logo=linux&logoColor=black)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Linux-x64-2.6.2.tar.gz) |\n\n- Android arm64-v8a 适合绝大多数现代 Android 设备；ARMv7 适合较旧的 32 位设备；x86_64 适合模拟器或少数 x86_64 设备。\n- iOS 未签名 IPA 仅供开发者自行签名或重新打包，不能直接安装；普通测试请使用 TestFlight。\n- Web 版无需下载，在现代浏览器中直接打开即可开始阅读。\n- Windows 解压 ZIP 后运行 `xxread.exe`；Linux 解压后运行 `bundle/open_reading`，需要 GTK 3 运行环境。\n- [![SHA-256 checksums](https://img.shields.io/badge/SHA--256-校验清单-4B8BBE)](https://github.com/miloquinn/open-reading/releases/download/v2.6.2/SHA256SUMS.txt)\n- **macOS universal**：支持 Apple Silicon 与 Intel，应用已使用 Developer ID 签名并通过 Apple 公证\n\n此 Release 由内部发布流水线从 Tag `v2.6.2` 自动构建；本仓库仅承载公开发行资产。\n",
+        "assets": [
+          {
+            "name": "OpenReading-Android-arm64-v8a-2.6.2.apk",
+            "size": 39516715,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-arm64-v8a-2.6.2.apk"
+          },
+          {
+            "name": "OpenReading-Android-armeabi-v7a-2.6.2.apk",
+            "size": 39022853,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-armeabi-v7a-2.6.2.apk"
+          },
+          {
+            "name": "OpenReading-Android-x86_64-2.6.2.apk",
+            "size": 40968380,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Android-x86_64-2.6.2.apk"
+          },
+          {
+            "name": "OpenReading-iOS-unsigned-2.6.2.ipa",
+            "size": 21430236,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-iOS-unsigned-2.6.2.ipa"
+          },
+          {
+            "name": "OpenReading-Linux-x64-2.6.2.tar.gz",
+            "size": 23066872,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Linux-x64-2.6.2.tar.gz"
+          },
+          {
+            "name": "OpenReading-macOS-universal-2.6.2.zip",
+            "size": 37907584,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-macOS-universal-2.6.2.zip"
+          },
+          {
+            "name": "OpenReading-Windows-x64-2.6.2.zip",
+            "size": 27366854,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/OpenReading-Windows-x64-2.6.2.zip"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "size": 737,
+            "browserDownloadUrl": "https://github.com/miloquinn/open-reading/releases/download/v2.6.2/SHA256SUMS.txt"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "mojing",
+      "name": "墨境",
+      "tag": "mojing",
+      "repo": "keys-cherish/morealm-reader",
+      "term": "legado-branch-mojing",
+      "stars": 167,
+      "sourceUpdatedAt": "2026-08-19T14:31:21Z",
+      "githubArchived": false,
+      "release": {
+        "name": "MoRealm v2.0",
+        "tagName": "v2.0",
+        "prerelease": false,
+        "publishedAt": "2026-08-19T14:31:22Z",
+        "createdAt": "2026-08-19T14:26:22Z",
+        "body": "# MoRealm v2.0\r\n\r\nv2.0 是一次跨版本的阅读工作流升级。本版不只增加入口，而是把图片、TXT 替换、系统朗读、主题与长目录这些高频动作放回阅读现场；同时修复已确认的 EPUB 大字号行高回归，并为后续加密资源 provider、新解析输入和更多 EPUB 能力建立更稳定的底层打开边界。\r\n\r\n## 阅读体验\r\n\r\n- 图片长按进入预览后，再次长按可直接保存或分享当前图片。\r\n- 阅读界面可直接选择设备上已安装的系统 TTS 引擎，不再需要退出阅读器并进入手机系统设置切换。\r\n- 修复阅读设置中的主题列表无法继续横向滑动的问题。\r\n- 长章节目录新增右侧比例滚动条，支持点击轨道和拖动滑块快速定位。\r\n- 连续从文件管理器“打开方式”导入或打开多本书时，会清理旧阅读页返回栈；返回操作不再依次穿过之前打开的书。\r\n\r\n## TXT 搜索替换\r\n\r\n- 长按选中文字后的“替换”会真正写回 TXT 源文件，不再只是新增一条数据库替换规则。\r\n- 写入完成后重新解析并刷新当前阅读内容，无需退出阅读器再重新打开。\r\n- 保留原有搜索替换工作流，同时让“替换”行为符合直接修改本地文本文件的用户直觉。\r\n\r\n> 写回源文件属于真实文件修改。建议对重要 TXT 保留备份，并确认应用对目标文件拥有可写权限。\r\n\r\n## EPUB 修复与地基\r\n\r\n- 修复 `font-size: 1.6em` 等大字号配合百分比 `line-height` 时，多行文字相互覆盖的问题。\r\n- CSS 声明行高仍按原始字号计算，最终行盒同时保证能够容纳实际绘制字形，避免用简单倍乘破坏原书语义。\r\n- 增加可分类的 EPUB 资源输入与打开结果边界，降低底层修改向解析、排版和宿主层扩散回归的风险。\r\n- 为后续密码 EPUB、加密资源 provider 和新的解析输入预留稳定接点。\r\n- 本版完成的是底层接入地基，不宣称已经实现完整 DRM / ADEPT 解密。\r\n\r\n## 导入、设置与下载\r\n\r\n- 系统文件选择器会记住上次选择位置的父目录，连续导入文件更方便。\r\n- 保留百度网盘和夸克网盘入口；链接未配置时仍按原逻辑隐藏对应入口。\r\n\r\n## 工程质量\r\n\r\n- pre-commit 新增源文件行数门禁：达到 1,500 行给出拆分提示。\r\n- 新文件、首次跨线文件或历史超限文件继续增长到 2,000 行以上时阻止提交。\r\n- 历史超限文件采用渐进式治理，不要求一次性大拆分，但不允许继续增加债务。\r\n- 增加目录滚动条比例、位置、短列表隐藏和边界钳制测试。\r\n- 增加 EPUB 大字号行盒和资源打开边界回归验证。\r\n- 更新无宽度声明图片测试，使其与“按固有 CSS 尺寸显示、只缩不放”的当前排版契约一致。\r\n\r\n## 安装说明\r\n\r\n- 支持 Android 5.0（API 21）及以上系统。\r\n- APK 包含 `arm64-v8a`、`armeabi-v7a` 与 `x86_64` ABI。\r\n- 使用与现有正式版一致的 MoRealm 签名，可直接覆盖安装；安装前仍建议备份重要书库、TXT 文件与设置。\r\n- 如系统阻止安装，请在系统设置中允许当前浏览器或文件管理器安装未知来源应用。\r\n\r\n",
+        "assets": [
+          {
+            "name": "MoRealm-v2.0.apk",
+            "size": 22910770,
+            "browserDownloadUrl": "https://github.com/keys-cherish/morealm-reader/releases/download/v2.0/MoRealm-v2.0.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "lumi",
+      "name": "Lumi",
+      "tag": "lumi",
+      "repo": "huangder/Lumi_Books",
+      "term": "legado-branch-lumi",
+      "stars": 153,
+      "sourceUpdatedAt": "2026-09-02T06:12:46Z",
+      "githubArchived": false,
+      "release": {
+        "name": "2.0.9.1",
+        "tagName": "2.0.9.1",
+        "prerelease": false,
+        "publishedAt": "2026-09-02T05:12:39Z",
+        "createdAt": "2026-09-01T17:24:47Z",
+        "body": "修复了一些已知问题。\r\nFixed some known issues.",
+        "assets": [
+          {
+            "name": "LUMI-2.0.9.1.apk",
+            "size": 27876060,
+            "browserDownloadUrl": "https://github.com/huangder/Lumi_Books/releases/download/2.0.9.1/LUMI-2.0.9.1.apk"
+          },
+          {
+            "name": "LUMI-2.0.9.1.WebDAV.apk",
+            "size": 27876060,
+            "browserDownloadUrl": "https://github.com/huangder/Lumi_Books/releases/download/2.0.9.1/LUMI-2.0.9.1.WebDAV.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "macos",
+      "name": "Legado macOS 版",
+      "tag": "macos",
+      "repo": "Kequans/legado-for-mac-pub",
+      "term": "legado-branch-macos",
+      "stars": 64,
+      "sourceUpdatedAt": "2025-12-30T04:10:36Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado for Mac v1.0.1",
+        "tagName": "1.0.1",
+        "prerelease": false,
+        "publishedAt": "2025-12-30T04:09:39Z",
+        "createdAt": "2025-12-30T04:06:31Z",
+        "body": "2025-12-30 - 自定义快捷键功能\r\n新增功能\r\n✅ 自定义快捷键 - 支持自定义章节翻页快捷键\r\n在阅读设置中配置上一章/下一章快捷键\r\n支持录制任意按键组合（包括修饰键）\r\n支持箭头键、Page Up/Down、字母键等\r\n快捷键配置自动保存，重启后保持\r\n默认快捷键：← 上一章，→ 下一章\r\n使用方法\r\n打开任意书籍进入阅读界面\r\n点击底部工具栏的设置按钮（⚙️）\r\n在\"快捷键\"分组中：\r\n点击\"录制\"按钮\r\n按下您想要的快捷键组合\r\n系统自动保存新快捷键\r\n点击\"重置\"可恢复默认快捷键\r\n支持的快捷键\r\n箭头键: ←, →, ↑, ↓\r\n翻页键: Page Up, Page Down\r\n字母键: A-Z（可配合修饰键）\r\n修饰键: ⌘ Command, ⌥ Option, ⌃ Control, ⇧ Shift\r\n特殊键: Space, Return, Esc",
+        "assets": [
+          {
+            "name": "Legado.app.zip",
+            "size": 4978798,
+            "browserDownloadUrl": "https://github.com/Kequans/legado-for-mac-pub/releases/download/1.0.1/Legado.app.zip"
+          },
+          {
+            "name": "Legado.dmg",
+            "size": 5454482,
+            "browserDownloadUrl": "https://github.com/Kequans/legado-for-mac-pub/releases/download/1.0.1/Legado.dmg"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true,
+      "abandoned": "弃坑",
+      "abandonedReason": "Release 与源码均超过半年未更新"
+    },
+    {
+      "id": "moshui",
+      "name": "墨水",
+      "tag": "moshui",
+      "repo": "radiumCN/inkwell",
+      "term": "legado-branch-moshui",
+      "stars": 16,
+      "sourceUpdatedAt": "2026-08-31T03:25:26Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v0.2.13",
+        "tagName": "v0.2.13",
+        "prerelease": false,
+        "publishedAt": "2026-08-31T03:30:05Z",
+        "createdAt": "2026-08-31T01:55:15Z",
+        "body": "更新内容\n\n优化：封面与列表配图加载更稳\n",
+        "assets": [
+          {
+            "name": "inkwell-v0.2.13.apk",
+            "size": 8826759,
+            "browserDownloadUrl": "https://github.com/radiumCN/inkwell/releases/download/v0.2.13/inkwell-v0.2.13.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "tag": "books",
+      "repo": "user-A100/books-reader",
+      "term": "legado-branch-books",
+      "note": "开源阅读的电脑版（Windows）。",
+      "stars": 9,
+      "sourceUpdatedAt": "2026-08-29T16:30:48Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Books 2.4.7 (Tauri/Rust 版)",
+        "tagName": "v2.4.7-tauri.2",
+        "prerelease": true,
+        "publishedAt": "2026-08-29T16:11:31Z",
+        "createdAt": "2026-08-29T16:07:35Z",
+        "body": "**Rust + Tauri 重构版**（预览），与 Electron 正式版（v2.4.7 Latest）相互独立，请勿混淆。\n\n## 本版本包含\n\n- Tauri 2 + Rust 后端的完整迁移（存储 / 数据库 / 窗口 / 云同步等）\n- 修复：应用背景与书籍背景在 Tauri 下无法显示\n  - 背景图存储从 localforage 改为 Rust 原生存储（Electron/Tauri 均走磁盘）\n  - 修复 WebView2 CSSOM 静默丢弃超大样式值导致大图背景失效的问题（改用 blob URL）\n- 修复 release 构建缺少 devtools feature 导致的编译失败\n\n## 附件\n\n| 文件 | 说明 |\n|---|---|\n| `Koodo Reader Tauri Probe_2.4.7_x64-setup.exe` | NSIS 安装包（推荐） |\n| `KoodoReader-2.4.7-tauri-portable.exe` | 绿色便携版，免安装 |\n\n## 注意\n\n- 未签名，Windows SmartScreen 可能提示，选择\"仍要运行\"\n- 依赖系统 WebView2（Windows 11 自带）\n- 数据目录独立于 Electron 版：`%APPDATA%\\com.usera100.booksreader.tauri-probe`",
+        "assets": [
+          {
+            "name": "Koodo.Reader.Tauri.Probe_2.4.7_x64-setup.exe",
+            "size": 10322945,
+            "browserDownloadUrl": "https://github.com/user-A100/books-reader/releases/download/v2.4.7-tauri.2/Koodo.Reader.Tauri.Probe_2.4.7_x64-setup.exe"
+          },
+          {
+            "name": "KoodoReader-2.4.7-tauri-portable.exe",
+            "size": 21711360,
+            "browserDownloadUrl": "https://github.com/user-A100/books-reader/releases/download/v2.4.7-tauri.2/KoodoReader-2.4.7-tauri-portable.exe"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    },
+    {
+      "id": "yedu",
+      "name": "夜讀",
+      "tag": "yedu",
+      "repo": "bennytsai1234/Night-Reader",
+      "term": "legado-branch-yedu",
+      "stars": 8,
+      "sourceUpdatedAt": "2026-08-26T00:56:54Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v0.2.147",
+        "tagName": "v0.2.147",
+        "prerelease": false,
+        "publishedAt": "2026-08-26T01:06:20Z",
+        "createdAt": "2026-08-26T00:55:03Z",
+        "body": "**Full Changelog**: https://github.com/bennytsai1234/Night-Reader/compare/v0.2.146...v0.2.147",
+        "assets": [
+          {
+            "name": "app-arm64-v8a-release.apk",
+            "size": 30750744,
+            "browserDownloadUrl": "https://github.com/bennytsai1234/Night-Reader/releases/download/v0.2.147/app-arm64-v8a-release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "static": true,
+      "skipAutoForks": true
+    }
+  ]
+}
