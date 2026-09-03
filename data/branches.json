@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T16:29:12.528Z",
+  "generatedAt": "2026-09-03T19:53:06.005Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 79,
-      "sourceUpdatedAt": "2026-09-03T09:29:49Z",
+      "stars": 80,
+      "sourceUpdatedAt": "2026-09-03T19:00:15Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090304（预发布）",
-        "tagName": "v3.26.090304",
+        "name": "阅读C v3.26.090318（预发布）",
+        "tagName": "v3.26.090318",
         "prerelease": true,
-        "publishedAt": "2026-09-03T05:10:32Z",
+        "publishedAt": "2026-09-03T18:40:37Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 公开版（oss flavor）`3.26.090304` / `10816`\n\n包名 `io.legado.app.c`，应用名「阅读C」，架构 `arm64-v8a`，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n本次构建为公开版 oss 单编译交付（预发布）。自用版（阅读C-自用）与公开版为并行独立构建，应用名与包名不同，可同时安装。\n\n### 本次更新（相对上版公开版 `3.26.090202` / `10803`）\n\n**聚合物主页（新功能）**\n- 新增聚合主页：移植自主页聚合版，UI 按本项目设计语言重新实现；主页改为模块化卡片（榜单排行、书源发现等），支持在模块管理中配置。\n- 聚合主页新增切换布局与源模块详情页两 tab 结构，对标聚合原版交互。\n- 模块管理完善：模块支持可编辑布局配置与拖拽排序；书源发现页「选择分页 / 选择分类」两个入口保持纯按钮，不再回显选中态。\n\n**纸模糊背景（新功能）**\n- 新增「纸模糊背景」开关（默认开启）：弹窗与菜单的模糊背景只取纸面（页面背景 / EPUB 页面背景），文字、图片、书签标签、气泡等一切纸上内容均不参与模糊；模糊采集改为离屏渲染无文字版本，按模糊采样率只缩一次再模糊放大。\n- 弹窗叠弹窗：玻璃表面登记独立窗口根视图（弱引用），上层表面离屏采集时按显示顺序叠画下层弹窗窗口本体；叠画时剥离下层玻璃面 tint 与模糊底图，消除叠层弹窗透明度逐层变实心与光晕。\n\n**外观主题与套件**\n- 主题导入支持上游外观套件包：识别 `appearance_kit.json` 并分发可导入组件。\n- 外观套件配置层继续落地：顶栏与封面集合配置接入，套件导入即全组件生效。\n- 兼容上游外观主题扩展字段：面板背景图、扩展表面色与弹窗透明度接入统一内核。\n- 主题管理支持删除应用中的主题：删除时该模式外观恢复默认并清理主题包。\n\n**发现页**\n- 长按源名弹出完整分类弹窗（继承上游特性）。\n- 修复大分类误判：纯符号装饰分隔条目不再当成大分类标题；纯符号与超长标题的异常大分类改为「分类N」分组收纳子类。\n- 发现页布局默认值改为三宫格（未配置时默认三列网格）。\n\n**段评与评论快照**\n- 段评支持任意段落：无泡段落接入选区菜单段评按钮，走既有链路打开评论页，零评论段可直接发评。\n- 评论快照补全：穷尽展开楼中楼并兜底强展，新增章评 / 书评 tab 补充快照；楼中楼默认收起，查看端点击 toggle 再展开。\n- 评论快照增量下载：重复下载已缓存章节时增量补充新增评论并合入原快照，不翻页重抓历史、不整页覆盖、不删除已缓存评论。\n\n**图标与默认背景**\n- 切换图标新增样式并更换默认启动图标；修复自适应前景自引用 mipmap 导致桌面图标加载无限递归的缺陷，修复切换图标弹窗在中文环境数组越界崩溃。\n- 日间 / 夜间分别内置新默认壁纸并安装到各自偏好，旧默认背景路径自动迁移后删除。\n\n**其他**\n- 关于页整合日志设置项：新增保存崩溃日志，迁入普通日志模块并调整命名；移除开局三个弹窗机制（隐私协议 / 版本日志 / 设置本地密码）。\n- 正文长按菜单：修复弹窗高度多出空行，编辑入口改为行尾图标按钮；「添加书签」改为「书签」并缩减按钮宽度。\n\n**修复**\n- 修复按住不松手来回滑翻页被下拉书签手势误抢导致卡死：按事件步长判定方向，横向主导即重置下拉纵向锚点。\n- 修复仿真翻页来回拉动时卡在中间：新按下中断回拉动画时无条件重绘，不再停留在中断瞬间的半卷页帧。",
+        "body": "## 公开版（oss flavor）`3.26.090318` / `10819`\n\n包名 `io.legado.app.c`，应用名「阅读C」，架构 `arm64-v8a`，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n本次构建为公开版 oss 单编译交付（预发布）。自用版（阅读C-自用）与公开版为并行独立构建，应用名与包名不同，可同时安装。\n\n### 本次更新（相对上版公开版 `3.26.090304` / `10816`）\n\n- 启动图标与启动画面：两枚启动图标与瓷贴全部由成品帧重制（仅图片资源，不改代码与 Manifest）；统一系统启动画面并修复夜间首帧；覆盖应用更新后的首次启动主题同步。\n- 关于页：新增普通日志入口显示；QQ 群号与加群链接更换。\n- 文档与法务：README 更新记录与截图、交流群号更新；恢复网页端两次修改的 GPL-PLUS 许可证。\n- 说明：今日中间的启动图标与欢迎页代码改动已整体撤回，本次公开版不含那些欢迎页行为变更。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.090304_10816.apk",
-            "size": 34182522,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090304/legado_oss_3.26.090304_10816.apk"
+            "name": "legado_oss_3.26.090318_10819.apk",
+            "size": 34498970,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090318/legado_oss_3.26.090318_10819.apk"
           }
         ]
       },
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5970,
-      "sourceUpdatedAt": "2026-09-02T17:46:12Z",
+      "sourceUpdatedAt": "2026-09-03T18:32:36Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.25",
-        "tagName": "3.26.16-beta.25",
+        "name": "Pre-release 3.26.16-beta.26",
+        "tagName": "3.26.16-beta.26",
         "prerelease": true,
-        "publishedAt": "2026-09-02T17:45:57Z",
-        "createdAt": "2026-09-02T17:23:07Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 章节边界加载占位页与阅读渲染优化\n* fix: 听书换章复读与停止\n* feat: 欢迎页\n* refactor: 消除编译弃用警告（421→72）",
+        "publishedAt": "2026-09-03T18:32:24Z",
+        "createdAt": "2026-09-03T18:16:48Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* refactor: 清理 View 体系死代码，遗留弹层迁移 Compose\n* fix: 阅读器相关\n* fix: 听书定时读完本章、脱离提示与翻页跟随",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.25-arm64-v8a.apk",
-            "size": 19619751,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.26-arm64-v8a.apk",
+            "size": 19527896,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.26/legado-3.26.16-beta.26-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.25-armeabi-v7a.apk",
-            "size": 19159587,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.26-armeabi-v7a.apk",
+            "size": 19067724,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.26/legado-3.26.16-beta.26-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.25.apk",
-            "size": 26192245,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25.apk"
+            "name": "legado-3.26.16-beta.26.apk",
+            "size": 26100376,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.26/legado-3.26.16-beta.26.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 265053915,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/mapping.txt"
+            "size": 263553628,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.26/mapping.txt"
           }
         ]
       },
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2569,
+      "stars": 2571,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1035,
+      "stars": 1036,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -771,7 +771,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 10,
-      "sourceUpdatedAt": "2026-09-03T09:36:16Z",
+      "sourceUpdatedAt": "2026-09-03T17:24:56Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090118",
