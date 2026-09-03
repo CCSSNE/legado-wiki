@@ -398,10 +398,13 @@
     }
 
     .tree-plat {
-      margin-left: 3px;
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 600;
+      margin-left: 4px;
+      padding: 0 5px;
+      border-radius: 4px;
+      background: #e8efe9;
+      color: var(--accent-strong);
+      font-size: 10px;
+      font-weight: 700;
       white-space: nowrap;
     }
 
@@ -1265,7 +1268,7 @@
           return [...groups.external, ...groups.solid, ...groups.plain, ...groups.dashed];
         };
         const badgeHtml = node => {
-          const plats = (node.platforms || []).map(p => `<span class="tree-plat">⟨${escapeHtml(PLATFORM_LABELS[p] || p)}⟩</span>`).join('');
+          const plats = (node.platforms || []).map(p => `<span class="tree-plat">${escapeHtml(PLATFORM_LABELS[p] || p)}</span>`).join('');
           const flags = (node.flags || []).map(f => {
             const meta = FLAG_META[f];
             return meta ? `<span class="tree-flag ${meta.cls}">${meta.label}</span>` : '';
@@ -1308,7 +1311,7 @@
       function renderTreeNav(branches) {
         const chips = FILTER_SHOW.map(f => `<label class="tree-chip"><input type="checkbox" data-show="${f.key}"><span>${f.label}</span></label>`).join('');
         const hideChips = Object.entries(FLAG_META).map(([key, meta]) => `<label class="tree-chip"><input type="checkbox" data-hide="${key}"><span>${meta.label}</span></label>`).join('');
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库 · ⟨⟩ = 平台</span></div><div class="tree-filters"><div class="tree-filter-row"><span class="tree-filter-label">只看</span><label class="tree-chip"><input type="checkbox" data-show="all" checked><span>全部</span></label>${chips}</div><div class="tree-filter-row"><span class="tree-filter-label">不看</span>${hideChips}</div></div>${renderTreeColumns(branches)}<div class="tree-footer"><a class="tree-link" href="#useful-links">推荐链接</a><a class="tree-link" href="#traffic">访问趋势</a></div>`;
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库 · 绿标 = 平台</span></div><div class="tree-filters"><div class="tree-filter-row"><span class="tree-filter-label">只看</span><label class="tree-chip"><input type="checkbox" data-show="all" checked><span>全部</span></label>${chips}</div><div class="tree-filter-row"><span class="tree-filter-label">不看</span>${hideChips}</div></div>${renderTreeColumns(branches)}<div class="tree-footer"><a class="tree-link" href="#useful-links">推荐链接</a><a class="tree-link" href="#traffic">访问趋势</a></div>`;
       }
 
       function refreshTree() {
