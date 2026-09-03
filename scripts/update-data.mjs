@@ -92,7 +92,7 @@ const branches = [
   }
 ];
 
-const token = process.env.GITHUB_TOKEN || '';
+const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const headers = {
   Accept: 'application/vnd.github+json',
   'User-Agent': 'legado-wiki-data-updater'

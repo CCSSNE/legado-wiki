@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T07:23:40.726Z",
+  "generatedAt": "2026-09-03T07:36:04.753Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 78,
-      "sourceUpdatedAt": "2026-09-03T07:09:01Z",
+      "sourceUpdatedAt": "2026-09-03T07:32:33Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090304（预发布）",
@@ -44,7 +44,8 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "error": "GitHub API 403"
+          "stars": 11,
+          "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
       "backupRelease": {
@@ -79,6 +80,320 @@
       "abandonedReason": "上游仓库已删除，作者停止维护"
     },
     {
+      "id": "md3",
+      "name": "阅读 MD3",
+      "tag": "md3",
+      "repo": "HapeLee/legado-with-MD3",
+      "term": "legado-branch-md3",
+      "stars": 5965,
+      "sourceUpdatedAt": "2026-09-02T17:46:12Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Pre-release 3.26.16-beta.25",
+        "tagName": "3.26.16-beta.25",
+        "prerelease": true,
+        "publishedAt": "2026-09-02T17:45:57Z",
+        "createdAt": "2026-09-02T17:23:07Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 章节边界加载占位页与阅读渲染优化\n* fix: 听书换章复读与停止\n* feat: 欢迎页\n* refactor: 消除编译弃用警告（421→72）",
+        "assets": [
+          {
+            "name": "legado-3.26.16-beta.25-arm64-v8a.apk",
+            "size": 19619751,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25-arm64-v8a.apk"
+          },
+          {
+            "name": "legado-3.26.16-beta.25-armeabi-v7a.apk",
+            "size": 19159587,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25-armeabi-v7a.apk"
+          },
+          {
+            "name": "legado-3.26.16-beta.25.apk",
+            "size": 26192245,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/legado-3.26.16-beta.25.apk"
+          },
+          {
+            "name": "mapping.txt",
+            "size": 265053915,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.25/mapping.txt"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "sigma",
+      "name": "阅读 Sigma / 阅读 Plus",
+      "tag": "plus",
+      "repo": "Luoyacheng/legado-E",
+      "term": "legado-branch-sigma",
+      "stars": 2565,
+      "sourceUpdatedAt": "2026-08-01T05:19:41Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.080113",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-01T05:19:41Z",
+        "createdAt": "2026-08-01T05:07:58Z",
+        "body": "### 更新内容\n* 优化工作流文件\n\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.08011308_release.apk",
+            "size": 20304637,
+            "browserDownloadUrl": "https://github.com/Luoyacheng/legado-E/releases/download/beta/legado_beta_3.26.08011308_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "harmony",
+      "name": "阅读 鸿蒙版",
+      "tag": "harmony",
+      "repo": "mgz0227/legado-Harmony",
+      "term": "legado-branch-harmony",
+      "stars": 2142,
+      "sourceUpdatedAt": "2026-08-29T14:55:31Z",
+      "githubArchived": false,
+      "release": {
+        "name": "V1.0.6.48",
+        "tagName": "V1.0.6.48",
+        "prerelease": false,
+        "publishedAt": "2026-08-29T13:43:35Z",
+        "createdAt": "2026-08-24T22:38:34Z",
+        "body": "V1.0.6.48（2026/8/29）\r\n1、修复书源搜索\r\n2、同步Github代码",
+        "assets": [
+          {
+            "name": "Legado-1.0.6.48-26082922-unsigned.hap",
+            "size": 30656429,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.48/Legado-1.0.6.48-26082922-unsigned.hap"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "main",
+      "name": "阅读Beta / 喵公子版",
+      "tag": "beta",
+      "repo": "LegadoTeam/legado",
+      "term": "legado-branch-main",
+      "stars": 1025,
+      "sourceUpdatedAt": "2026-08-31T15:50:56Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26083123",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-08-31T15:41:00Z",
+        "body": "<!-- legado-version-code:38270 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/31**\n- 修复模拟追读起始日期损坏或缺失时打开设置和计算进度崩溃的问题\n\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26083123_releaseA_vc38270.apk",
+            "size": 20985794,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26083123_releaseA_vc38270.apk"
+          },
+          {
+            "name": "legado_app_3.26083123_release_vc38270.apk",
+            "size": 20985791,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26083123_release_vc38270.apk"
+          },
+          {
+            "name": "legado_app_3.26083123_universal_releaseA_vc38270.apk",
+            "size": 26936581,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26083123_universal_releaseA_vc38270.apk"
+          },
+          {
+            "name": "legado_app_3.26083123_universal_release_vc38270.apk",
+            "size": 26936587,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26083123_universal_release_vc38270.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "archive",
+      "name": "阅读 Archive",
+      "tag": "archive",
+      "repo": "Rimchars/legado",
+      "term": "legado-branch-archive",
+      "stars": 503,
+      "sourceUpdatedAt": "2026-08-17T14:14:21Z",
+      "githubArchived": false,
+      "release": {
+        "name": "阅读 Archive 第十一版 EPUB 引擎更新",
+        "tagName": "archive-v3-3.26.08172114",
+        "prerelease": false,
+        "publishedAt": "2026-08-17T14:14:21Z",
+        "createdAt": "2026-08-07T04:53:35Z",
+        "body": "第十一版更新\n\n- EPUB 阅读引擎更替为纯 WebView 渲染引擎\n- EPUB 纯文本模式回归 Legado 原版文本处理逻辑",
+        "assets": [
+          {
+            "name": "legado_app_3.26.08172114_29782314.apk",
+            "size": 40224764,
+            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.08172114/legado_app_3.26.08172114_29782314.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
+    },
+    {
+      "id": "max-sum",
+      "name": "阅读 MAX SUM版",
+      "tag": "max-sum",
+      "repo": "Suml-1/Legado_Max",
+      "term": "legado-branch-max-sum",
+      "note": "独立发版，目前 MAX 家族最活跃的版本。",
+      "stars": 324,
+      "sourceUpdatedAt": "2026-09-02T16:27:47Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.090300",
+        "tagName": "beta-3.26.090300",
+        "prerelease": true,
+        "publishedAt": "2026-09-02T16:27:48Z",
+        "createdAt": "2026-09-02T16:12:14Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* style(书架): 二级标签栏未选中样式与首页排行榜Tab统一\n* style(书架): 分组名颜色逻辑与右上角菜单图标统一\n* fix(顶栏): 默认文字颜色按顶栏实际背景亮度取色\n* fix(顶栏): Fragment 首次创建时应用顶栏配置\n* fix(阅读页): 修复文本菜单配置在版本更新后重置为默认值的问题\n* fix(发现): 修复分类查询对话框加载中被关闭导致的崩溃\n* fix(工具): 修复 Toast 静态引用持有已销毁 Activity 的内存泄漏\n* fix(主界面): 消除返回主界面时的底栏与背景重复重建卡顿\n* ci(构建): matrix strategy 改max-parallel:为 4\n* 更新日志\n\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.090300_release_arm64-v8a.apk",
+            "size": 22691138,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_beta_3.26.090300_release_arm64-v8a.apk"
+          },
+          {
+            "name": "legado_beta_3.26.090300_release_armeabi-v7a.apk",
+            "size": 22050786,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_beta_3.26.090300_release_armeabi-v7a.apk"
+          },
+          {
+            "name": "legado_beta_3.26.090300_release_universal.apk",
+            "size": 30706000,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_beta_3.26.090300_release_universal.apk"
+          },
+          {
+            "name": "legado_compat_3.26.090300_legacy_arm64-v8a.apk",
+            "size": 22691112,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_compat_3.26.090300_legacy_arm64-v8a.apk"
+          },
+          {
+            "name": "legado_compat_3.26.090300_legacy_armeabi-v7a.apk",
+            "size": 22050770,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_compat_3.26.090300_legacy_armeabi-v7a.apk"
+          },
+          {
+            "name": "legado_compat_3.26.090300_legacy_universal.apk",
+            "size": 30705978,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_compat_3.26.090300_legacy_universal.apk"
+          },
+          {
+            "name": "legado_plus_3.26.090300_releaseS_arm64-v8a.apk",
+            "size": 22691121,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_plus_3.26.090300_releaseS_arm64-v8a.apk"
+          },
+          {
+            "name": "legado_plus_3.26.090300_releaseS_armeabi-v7a.apk",
+            "size": 22050776,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_plus_3.26.090300_releaseS_armeabi-v7a.apk"
+          },
+          {
+            "name": "legado_plus_3.26.090300_releaseS_universal.apk",
+            "size": 30705986,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_plus_3.26.090300_releaseS_universal.apk"
+          },
+          {
+            "name": "legado_z_debug_3.26.090300_universal.apk",
+            "size": 68596209,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090300/legado_z_debug_3.26.090300_universal.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "youfengknight/Legado_Max"
+    },
+    {
+      "id": "max",
+      "name": "阅读 MAX",
+      "tag": "max",
+      "repo": "youfengknight/Legado_Max",
+      "term": "legado-branch-max",
+      "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
+      "manualAbandoned": "作者已声明不再维护",
+      "stars": 283,
+      "sourceUpdatedAt": "2026-06-18T16:23:25Z",
+      "githubArchived": true,
+      "release": {
+        "name": "legado_app_3.26.061723",
+        "tagName": "beta-3.26.061723",
+        "prerelease": true,
+        "publishedAt": "2026-06-17T15:43:18Z",
+        "createdAt": "2026-06-05T14:19:50Z",
+        "body": "### 更新内容\r\n#### 此版本有崩溃bug，该项目不再维护。\r\n* fix：普通朗读模式下按返回可以关闭朗读\r\n* 优化悬浮播放关闭按钮\r\n* 页眉和页脚上下边距最大值从100dp改为200dp\r\n* 封装Compose dialog\r\n* 优化与封装Compose的AppConfirmDialog的dialog\r\n* fix：调试模式改为调试工具\r\n* 文档：补充调试专属日志设计说明\r\n* 文档：修正调试专属日志设计说明中的 putNotSave 描述\r\n* 文档：补充调试专属日志功能实现计划\r\n* 调试日志：新增调试专属日志模式的 PreferKey 常量\r\n* 调试日志：新增 AppConfig.debugLogOnlyCategories 测试\r\n* 调试日志：回滚 AppConfig.debugLogOnlyCategories 测试\r\n* 调试日志：新增 AppConfig 的专属开关和分类配置\r\n* 完善调试专属日志分流与配置入口\r\n* feat：离线缓存界面增加文件大小，字典规则界面增加快速滚动条\r\n* fix：多个界面默认显示快速滚动条\r\n* fix：去除300ms防抖延迟造成文字上下跳动，选择恢复文件界面优化按钮颜色\r\n* fix：选择恢复内容界面优化\r\n\r\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.061723_release.apk",
+            "size": 24152888,
+            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_beta_3.26.061723_release.apk"
+          },
+          {
+            "name": "legado_compat_3.26.061723_legacy.apk",
+            "size": 24152799,
+            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_compat_3.26.061723_legacy.apk"
+          },
+          {
+            "name": "legado_plus_3.26.061723_releaseS.apk",
+            "size": 24152835,
+            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_plus_3.26.061723_releaseS.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E",
+      "abandoned": "弃坑",
+      "abandonedReason": "作者已声明不再维护"
+    },
+    {
+      "id": "r",
+      "name": "阅读 R",
+      "tag": "r",
+      "repo": "refgd/legado",
+      "term": "legado-branch-r",
+      "stars": 280,
+      "sourceUpdatedAt": "2026-06-21T19:49:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "3.26.062203",
+        "tagName": "3.26.062203",
+        "prerelease": false,
+        "publishedAt": "2026-06-21T19:49:23Z",
+        "createdAt": "2026-06-21T16:02:04Z",
+        "body": "- 修复 TTS 回原位时定位异常的问题\r\n- 修复切换主题后 TTS 浮窗消失的问题\r\n- 优化书籍首次加载速度\r\n- 修复其它BUG",
+        "assets": [
+          {
+            "name": "legado_app_3.26.062203_10489.apk",
+            "size": 32030735,
+            "browserDownloadUrl": "https://github.com/refgd/legado/releases/download/3.26.062203/legado_app_3.26.062203_10489.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Rimchars/legado"
+    },
+    {
       "id": "tauri",
       "name": "阅读 Tauri",
       "tag": "tauri",
@@ -91,7 +406,8 @@
           "name": "CCSSNE/Legado-Tauri",
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
-          "error": "GitHub API 403"
+          "stars": 3,
+          "updatedAt": "2026-08-13T16:47:51Z"
         }
       ],
       "backupRelease": {
@@ -99,157 +415,170 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 271,
+      "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403",
-        "补档版本同步失败：GitHub API 403"
-      ],
+      "release": {
+        "name": "Legado Tauri v0.9.9 APK 安装包备份",
+        "tagName": "v0.9.9-20260528195115-b00000093",
+        "prerelease": false,
+        "publishedAt": "2026-08-11T02:12:48Z",
+        "createdAt": "2026-05-28T11:43:26Z",
+        "body": "复刻自官方下载仓库 LegadoTeam/Legado-Tauri-Release 的发布资产。\n\n- 对应备份源码提交：376d65df06ada21ccfecb52322a6241f3ff275e3\n- 原始 Release：v0.9.9-20260528195115-b00000093\n- 构建时间：2026-05-28 19:51:15 CST\n- 发布产物：Windows + Android\n\n这是独立备份仓库的 Release，不是 GitHub fork。\n\nJenkins 自动构建测试版。\n\nTauri 版本：v0.9.9\n构建版本：v0.9.9+20260528195115.00000093\n共享构建 ID：00000093\n构建目标：win-android\n发布产物：windows+android\n",
+        "assets": [
+          {
+            "name": "app-universal-release-0.9.9-20260528195115-b00000093-android.apk",
+            "size": 49038157,
+            "browserDownloadUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/download/v0.9.9-20260528195115-b00000093/app-universal-release-0.9.9-20260528195115-b00000093-android.apk"
+          },
+          {
+            "name": "legado_tauri-0.9.9-20260528195115-b00000093-windows.exe",
+            "size": 52059648,
+            "browserDownloadUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/download/v0.9.9-20260528195115-b00000093/legado_tauri-0.9.9-20260528195115-b00000093-windows.exe"
+          }
+        ],
+        "sourceRepo": "CCSSNE/Legado-Tauri",
+        "sourceUrl": "https://github.com/CCSSNE/Legado-Tauri/releases/tag/v0.9.9-20260528195115-b00000093"
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
       "abandoned": "弃坑",
       "abandonedReason": "作者声明删除仓库，停止维护"
     },
     {
-      "id": "harmony",
-      "name": "阅读 鸿蒙版",
-      "tag": "harmony",
-      "repo": "mgz0227/legado-Harmony",
-      "term": "legado-branch-harmony",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "id": "shutiao",
+      "name": "薯条版",
+      "tag": "shutiao",
+      "repo": "huajideshutiao/legado",
+      "term": "legado-branch-shutiao",
+      "stars": 199,
+      "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "3.26.090112",
+        "tagName": "3.26.090112",
+        "prerelease": false,
+        "publishedAt": "2026-09-01T04:32:45Z",
+        "createdAt": "2026-09-01T04:04:20Z",
+        "body": "## 更新日志\n\n- Bump web v3.26.090112                                                    (4f0ad9072)\n- fix(desktop,web): 修复桌面端 WebView 初始化时序与 Web 构建产物同步路径   (f3820b29f)\n- fix(web): 规范书源 Raw DTO 与领域模型类型分层，修复 CI type-check 报错   (22137ef41)\n- refactor: 统一视频全屏与路由直达分发机制，优化 WebView 与书架排序        (4600aa0b1)\n- refactor: 统一跨平台 UA 获取与回退逻辑，优化 DWM 任务栏卡片性能并修复跳.. (830932aac)\n- fix: 修复桌面文件选择器与主题模式状态联动，优化书架管理并发流            (c8ad272af)\n- refactor: 统一跨平台主题与配置Provider，优化Web书源编辑与鸿蒙平台交互    (bbae1f2f5)\n- feat: 接入跨平台系统媒体播控中枢，重构能力层与漫画渲染管线并适配鸿蒙 R.. (7bc374006)\n- perf: 优化漫画阅读体验与 Skia 图像解码内存复用，修复 WebKitGTK 内存泄漏  (51ca8551d)\n- fix(cinterop): 升级 quickjs-ng 至 v0.16.2 并修复 iOS cinterop 类型绑定   (4d18cb53e)\n- refactor: 数据库 schema 升级 v87 并统一跨平台字符串资源                  (be3cb7d27)\n- refactor: 优化跨平台支持与代码规范                                       (50dcb22d8)\n- refactor: 统一跨平台书籍加载与阅读菜单逻辑                               (8a44efc7f)\n- feat: 统一视频播放器宿主容器并优化书架布局与Push动画                     (cfa37b505)\n- refactor: 重构漫画阅读器平台层与图片处理模块                             (221f50bda)\n- fix(ios): prevent Compose plist sanity-check crash (#13)                 (d6d850295)\n- fix(ui): 补全漫画进度/鸿蒙生命周期/动画选择器/本地书导入/重定向链/RSS桥.. (711713256)\n- fix(ui): 对齐原版补齐平台空实现 (GIF 翻页/漫画三件套/阅读生命周期/视频.. (5fc24a076)\n- fix(manga): 补齐 iOS/鸿蒙漫画预加载, 四端行为一致                        (770806a42)\n- fix(ui): 对话框长按文本跨窗口崩溃+主界面底栏/返回键死流+Android漫画预加.. (904222e6f)\n- fix(ios) chore(ohos): 补链 libsqlite3, K/N 生成头文件移出 git            (649082019)\n- fix(ios): framework 显式关闭 K/N 优化, 修复 CI 链接 OOM                  (ce35f09ad)\n- fix(ci): MinGW GCC 分支关闭 LTO, 修复 CI Windows native 库链接失败       (ac77562e8)\n- fix(ci): 修复三端 quickjs native 库构建失败与 macOS 校验错位             (022e846e4)\n- feat(book): 封面图集化字节数特征值命名与统一烘焙                         (4b7a5f13b)\n- *……还有 28 条提交未显示*\n\n[查看完整提交记录 →](https://github.com/huajideshutiao/legado/compare/38b4c7fdf5671a14b876565bc1594e0885c7ed5d...HEAD)\n",
+        "assets": [
+          {
+            "name": "legado-3.26.090112-1.x86_64.rpm",
+            "size": 135332680,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado-3.26.090112-1.x86_64.rpm"
+          },
+          {
+            "name": "legado-3.26.090112-ios-unsigned.ipa",
+            "size": 33073185,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado-3.26.090112-ios-unsigned.ipa"
+          },
+          {
+            "name": "legado-3.26.090112.dmg",
+            "size": 154474107,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado-3.26.090112.dmg"
+          },
+          {
+            "name": "legado_3.26.090112-1_amd64.deb",
+            "size": 115265738,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado_3.26.090112-1_amd64.deb"
+          },
+          {
+            "name": "legado_3.26.090112-app-arm64-v8a-release.apk",
+            "size": 11046431,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado_3.26.090112-app-arm64-v8a-release.apk"
+          },
+          {
+            "name": "legado_3.26.090112-app-armeabi-v7a-release.apk",
+            "size": 10329345,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado_3.26.090112-app-armeabi-v7a-release.apk"
+          },
+          {
+            "name": "legado_3.26.090112-app-universal-release.apk",
+            "size": 18128970,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.090112/legado_3.26.090112-app-universal-release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
     },
     {
-      "id": "md3",
-      "name": "阅读 MD3",
-      "tag": "md3",
-      "repo": "HapeLee/legado-with-MD3",
-      "term": "legado-branch-md3",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 122,
+      "sourceUpdatedAt": "2026-09-03T06:02:53Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "legado_app_3.26.090313",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-03T06:02:54Z",
+        "createdAt": "2026-09-03T05:37:36Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- feat(书源): 登录 JS 上下文支持 refreshBookInfo/refreshBookToc/refreshContent\n- feat(书源): 回调 JS 增加 open 页面跳转调度\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.09031353_arm64-v8a_release.apk",
+            "size": 15018015,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.09031353_armeabi-v7a_release.apk",
+            "size": 14394036,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.09031353_universal_release.apk",
+            "size": 15214704,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_universal_release.apk"
+          },
+          {
+            "name": "version.json",
+            "size": 67,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
     },
     {
-      "id": "sigma",
-      "name": "阅读 Sigma / 阅读 Plus",
-      "tag": "plus",
-      "repo": "Luoyacheng/legado-E",
-      "term": "legado-branch-sigma",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "id": "jingshiro",
+      "name": "Jingshiro 版",
+      "tag": "jingshiro",
+      "repo": "Jingshiro/legado",
+      "term": "legado-branch-jingshiro",
+      "stars": 119,
+      "sourceUpdatedAt": "2026-08-22T13:50:54Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "main",
-      "name": "阅读Beta / 喵公子版",
-      "tag": "beta",
-      "repo": "LegadoTeam/legado",
-      "term": "legado-branch-main",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "archive",
-      "name": "阅读 Archive",
-      "tag": "archive",
-      "repo": "Rimchars/legado",
-      "term": "legado-branch-archive",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "max",
-      "name": "阅读 MAX",
-      "tag": "max",
-      "repo": "youfengknight/Legado_Max",
-      "term": "legado-branch-max",
-      "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
-      "manualAbandoned": "作者已声明不再维护",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "作者已声明不再维护"
-    },
-    {
-      "id": "max-sum",
-      "name": "阅读 MAX SUM版",
-      "tag": "max-sum",
-      "repo": "Suml-1/Legado_Max",
-      "term": "legado-branch-max-sum",
-      "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "max-cichen",
-      "name": "阅读 MAX 辞晨版",
-      "tag": "max-cichen",
-      "repo": "GEd520/legados",
-      "term": "legado-branch-max-cichen",
-      "note": "独立仓库，有自己的 APK 发布。",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "Legado 3.26.082221",
+        "tagName": "3.26.082221",
+        "prerelease": false,
+        "publishedAt": "2026-08-22T13:50:55Z",
+        "createdAt": "2026-08-22T13:35:39Z",
+        "body": null,
+        "assets": [
+          {
+            "name": "legado_releaseS_3.26.082221.apk",
+            "size": 23673202,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_releaseS_3.26.082221.apk"
+          },
+          {
+            "name": "legado_release_3.26.082221.apk",
+            "size": 23673214,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_release_3.26.082221.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "mr",
@@ -258,84 +587,42 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 91,
+      "sourceUpdatedAt": "2026-09-02T20:46:09Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "r",
-      "name": "阅读 R",
-      "tag": "r",
-      "repo": "refgd/legado",
-      "term": "legado-branch-r",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "shutiao",
-      "name": "薯条版",
-      "tag": "shutiao",
-      "repo": "huajideshutiao/legado",
-      "term": "legado-branch-shutiao",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "jingshiro",
-      "name": "Jingshiro 版",
-      "tag": "jingshiro",
-      "repo": "Jingshiro/legado",
-      "term": "legado-branch-jingshiro",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
-    },
-    {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "MR 2609029 (测试版)",
+        "tagName": "v2609029-dev",
+        "prerelease": true,
+        "publishedAt": "2026-09-02T14:45:51Z",
+        "createdAt": "2026-09-02T14:37:38Z",
+        "body": "## MR 2609029\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-02\n\n**版本号**: 26.0902.9（pubspec.yaml 格式）\n\n**构建号**: 1788359871\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "assets": [
+          {
+            "name": "mr_v2609029_dev_2026-09-02_arm64.apk",
+            "size": 22604265,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609029-dev/mr_v2609029_dev_2026-09-02_arm64.apk"
+          },
+          {
+            "name": "mr_v2609029_dev_2026-09-02_ios.ipa",
+            "size": 20971762,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609029-dev/mr_v2609029_dev_2026-09-02_ios.ipa"
+          },
+          {
+            "name": "mr_v2609029_dev_2026-09-02_ohos.hap",
+            "size": 34924533,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609029-dev/mr_v2609029_dev_2026-09-02_ohos.hap"
+          },
+          {
+            "name": "mr_v2609029_dev_2026-09-02_x86_64.apk",
+            "size": 22781158,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609029-dev/mr_v2609029_dev_2026-09-02_x86_64.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "ng",
@@ -343,34 +630,66 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 71,
+      "sourceUpdatedAt": "2026-08-28T08:03:40Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "legado_ng_3.26.082815",
+        "tagName": "3.26.082815",
+        "prerelease": false,
+        "publishedAt": "2026-08-28T08:03:41Z",
+        "createdAt": "2026-08-28T07:48:26Z",
+        "body": "### 更新内容\r\n* 在Release开放视觉体系切换\r\n* 修复听书字幕同步与跨章流式播放\r\n* 修复书架朗读胶囊自动收纳\r\n* 修复订阅源管理手势与批量底栏\r\n* 新增听书播放动效并优化播放器状态\r\n* 接入NG透明与液态玻璃视觉体系\r\n* 收口主界面听书胶囊并避免双播放\r\n* 保存听书卡通动效本机试装代码\r\n* 优化听书与有声书播放器显示\r\n* 统一听书与有声书播放器外观设置\r\n* 发布内置动态主题并收录场景素材\r\n* 完善液态玻璃材质与背景采样\r\n* 修复阅读菜单打开时正文重排\r\n* 修复替换规则并发刷新重复加载\r\n* 增加阅读排版滑条微调按钮\r\n* 完善网格入口与分组浮层液态玻璃\r\n\r\n\r\n\r\n\r\n",
+        "assets": [
+          {
+            "name": "legado_NG_3.26.08281549_release.apk",
+            "size": 33522579,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.082815/legado_NG_3.26.08281549_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
-      "id": "fu",
-      "name": "阅融",
-      "tag": "fu",
-      "repo": "h166278/legado_FU",
-      "term": "legado-branch-fu",
-      "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "id": "max-cichen",
+      "name": "阅读 MAX 辞晨版",
+      "tag": "max-cichen",
+      "repo": "GEd520/legados",
+      "term": "legado-branch-max-cichen",
+      "note": "独立仓库，有自己的 APK 发布。",
+      "stars": 64,
+      "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "最新版8.2",
+        "tagName": "beta-3.26.080214",
+        "prerelease": true,
+        "publishedAt": "2026-07-29T12:54:34Z",
+        "createdAt": "2026-07-12T03:55:56Z",
+        "body": "**2026/08/02**\r\n- 修复书籍详情页 useWeb 简介渲染污染 showBrowser 页面显示的问题：两者共用 WebViewPool 的 GLOBAL 池导致复用污染（杀后台后池清空故正常）。新增 Scope.INLINE，BookInfoActivity useWeb 渲染改从 INLINE 池获取与 showBrowser 隔离，BackstageWebView 同步补全 INLINE 分支。\r\n- 新增应用主题「导入应用主题设置」选项：三点菜单新增导入设置入口，勾选要导入的组件（主题/顶栏/底栏/封面图集）后持久化保存，后续导入自动套用，未勾选的跳过。同时修复导入后主题管理列表不显示——restoreThemeAsset 漏调 ThemeConfig.addConfig 注册主题，补齐注册逻辑。\r\n- 优化气泡管理列表项排版，对齐应用主题三按键布局：单个「应用」按键重构为 buttonRow（textBox 信息区底部）含应用/编辑/更多三按键，bg_action_button 背景 + Space 分隔；整行点击与 tvMore 弹 showActions，长按进多选。同时修复 foreground 在 API 21-22 崩溃（加版本判断）。\r\n- 优化气泡颜色渲染：普通颜色作用于边框、强调颜色作用于数字。默认 SVG 模板 `${color}` 拆为 `${borderColor}`/`${textColor}`；内置气泡 emphasisColor 改为 normalColor 使边框数字同色，本地气泡默认边框灰数字红；渲染保留 `${color}` 兼容旧模板，cacheKey 同步含两颜色。\r\n- 优化强制气泡渲染：移植参考版 ParagraphBubbleRenderer 增强，URL 支持 displayText 覆盖数字文本、displayColor 覆盖数字颜色；新增 replaceBubbleValue 用正则匹配 `${name}`/`$name`/`{{name}}` 三种占位符格式并支持多别名（borderColor/color、textColor/displayColor、displayText/num），queryValue 参数名忽略大小写；保留边框普通色/数字强调色的分色逻辑，displayColor 只覆盖数字颜色不影响边框。\r\n- 新增图片文件夹导入漫画：本地导入界面长按文件夹弹出「导入漫画」菜单，以文件夹名为书名、子文件夹为章节（无子文件夹则整文件夹为一章），图片按文件名自然排序生成 `<img>` 正文。ImageFolderBook 解析器支持 content:// 和 file:// URI，ImageProvider 通过 ImageFolderBook.getImage 加载本地图片流。\r\n- 修复本地图片书从书架或详情页重新进入时变回文本模式：Fragment.startActivityForBook 和 BookInfoActivity 的路由判断含 `!book.isLocal` 限制，本地图片书被排除出 ReadMangaActivity；移除该限制使三处入口（Context/Fragment/BookInfoActivity）统一为 `book.isImage && AppConfig.showMangaUi`。\r\n\r\n**2026/08/01** \r\n- 修复播放界面通过自定义按钮回调跳转后再播放新视频，旧视频仍在继续播放的问题：VideoPlayerActivity 启动模式由 singleTask 改为 standard，新实例创建时自动 finish 旧实例并释放其播放器；新增 startNewSession 方法在启动新视频前停止旧播放、重置状态；onDestroy 在被替换时跳过操作 VideoPlay 单例（避免影响新实例），onResume 新会话启动时跳过恢复旧视频。返回栈支持逐级返回，不管跳转多少次按返回键都能回到上一个界面。\r\n- 修复视频播放通知标题显示对象引用而非视频标题的问题：字符串插值 `$VideoPlay.videoTitle` 实际插值的是 VideoPlay 对象，`.videoTitle` 变成字面文本，改为 `${VideoPlay.videoTitle ?: \"\"}`。\r\n- 修复 ExoPlayer 并发请求时 HTTP 请求头全局串改竞态：resolvingDataSource 原先通过 `okhttpDataFactory.setDefaultRequestProperties` 全局修改共享工厂的请求头，多请求并发时 headers 相互覆盖；改为使用 `DataSpec.withRequestHeaders` 将请求头绑定到每个请求，彻底消除竞态。\r\n- 修复 VideoPlay.isLoading 时序错误导致 releaseAllVideos 状态重置失效：原代码在 startPlay 末尾同步设置 `isLoading = false`，但加载协程异步运行尚未完成；且 singleUrl/rss 两条路径有 return 永远不会执行到该行。改为在每个协程的成功/错误回调中设置。\r\n- 修复切换视频时旧实例 onDestroy 触发 releaseAllVideos 误重新实例播放器的问题：旧 Activity 被新实例替换时，playerView.release() → releaseVideos() → releaseAllVideos() 会操作已指向新实例的 videoManager，导致新实例的播放器被释放、加载协程被取消。新增 skipReleaseAllVideos 标志，被替换时设置该标志使 releaseAllVideos 直接返回，仅由 GSY 框架释放旧实例自身的 surface 资源。\r\n- 修复 saveRead 自动获取进度时未实际播放（pos<=0）仍保存进度覆盖有效记录的问题：自动模式（参数为 null）下 pos<=0 跳过保存，显式传 0（切集重置）仍正常保存。\r\n- 修复弹幕 FileInputStream 泄漏：createParser 中 FileInputStream 传给 loader 后永不关闭，改为 readBytes 读入内存后用 ByteArrayInputStream 交给 loader，文件流即时关闭。\r\n- 修复切换章节后弹幕仍显示旧内容、新解析器无法激活的问题：initDanmaku 切集时未释放旧弹幕实例，DanmakuView.isPrepared 仍为 true 导致 onPrepareDanmaku 中的 prepare 调用被跳过；新增 initDanmaku 开头先 release 旧弹幕并清空 mParser。\r\n- 修复 BiliDanmukuParser 安全与健壮性问题：新增 XXE 防护（禁用 DTD 声明和外部实体解析）；SAX characters 多次调用导致文本截断，改用 StringBuilder 累积后在 endElement 统一处理；单条弹幕属性解析或特殊弹幕处理异常时跳过该条不影响整体解析；删除 SAX 已解码的冗余 XML 实体二次解码；修复空文本弹幕被错误添加到结果集的问题。\r\n- 修复 ExoPlayer 重建前旧实例未释放导致内存泄漏：Exo2MediaPlayer 创建新 ExoPlayer 前先 release 旧实例；ExoPlayerManager 初始化失败时不再误调 initSuccess，Surface/SurfaceControl 释放顺序修正为先 VideoSurface 后 SurfaceControl。\r\n- 修复 InputStreamDataSource skip 不准确导致 seek 偏移：实现 skipFully 循环确保跳过完整字节数，异常时正确关闭流，始终回调 bytesTransferred。\r\n- 修复 ExoPlayerHelper 窗口时长硬编码 3000ms 的问题：改为 C.TIME_UNSET 让 ExoPlayer 自动计算；CacheDataSource 设置 FLAG_IGNORE_CACHE_ON_ERROR 避免缓存错误时中断播放。\r\n- 修复 VideoPlayService Android 14 前台服务崩溃：MediaSession 初始化移至 super.onCreate 之前，确保 startForeground 时已有活跃 session；修复 null intent 未 stopSelf 的问题；修正 onDestroy 资源释放顺序。\r\n- 修复 ChoiceEpisodeDialog / ChoiceSpeedDialog 回调未设置时 NPE 崩溃：`!!` 改为 `?.` 空安全调用。\r\n- 修复 ChapterAdapter 越界崩溃：添加 NO_POSITION 守卫，position 超出 chapters 范围时不绑定数据。\r\n- 修复全屏模式选集列表背景过白遮挡文字的问题：card_bg_water 颜色值 alpha 从 F2/E6（95%/90%几乎不透明）改为 69（41%半透明），card_border_water 对应调整，使对话框深色底色透过卡片背景，白色文字清晰可读。\r\n\r\n**2026/07/31**\r\n- 修复书籍缓存选择界面底部「保存选择/导出选中」按钮被系统导航键遮挡的问题：edge-to-edge 模式下给 bottomBar 补上 navigationBarsPadding，按钮不再沉到导航栏下方。\r\n\r\n**2026/07/30**\r\n- 内置 CryptoJS 加解密库（参考 legadoT）：规则与 JS 源中可直接使用 `CryptoJS`，无需在 jsLib 重复引入；支持 MD5/SHA1/SHA256/SHA512/SHA3、HmacMD5/HmacSHA1/HmacSHA256/HmacSHA512、AES/DES/TripleDES/RC4/Rabbit/Blowfish、PBKDF2，以及 enc/mode/pad 编码与分组模式。无 jsLib 的 JSON 书源规则自动回退到 CryptoJS 作用域。\r\n- 修复书架阅读进度开关关闭时间距异常：列表项 tv_last 的 goneMarginBottom 由 8dp 改回 4dp，与原版一致，关闭开关时书架布局不再因进度条控件而偏移。\r\n- 书架新增显示阅读进度功能（参考 legadoT 实现）：列表布局在书籍项底部显示进度条与百分比，网格布局在封面底部叠加进度条；书架配置对话框新增「显示阅读进度」开关，默认关闭，进度条使用主题强调色支持换肤。\r\n- 修复订阅源长按保存图片未携带订阅源请求头的问题：保存网页图片时改为带上当前订阅源的 headerMap，避免需要请求头才能访问的图片下载失败。\r\n- 修复网页类型订阅源误应用静音播放设置的问题：WebView 内 h5 video/audio 的静音处理改为仅对视频类型（type==2）订阅源生效，网页类型（type==0）不再受静音播放开关控制。\r\n- 修复视频播放切换章节后静音状态不立即生效的问题：创建新播放器后立即应用当前静音设置，并重写 setNeedMute 使其立即作用到播放器，静音开关切换后无需重新进入即可生效。\r\n- 优化气泡管理的导出与分享入口：条目菜单从「应用/编辑/导出/文件分享/直链分享/删除」精简为「应用/编辑/导出/删除」，点「导出」弹出二级菜单，统一提供「导出到文件」（系统文件保存选择器）、「文件分享」（系统分享面板分享 zip）、「直链分享」（上传后分享下载链接）三项，操作层级更清晰。\r\n",
+        "assets": [
+          {
+            "name": "legado_._3.26.080214_legacy.apk",
+            "size": 23891035,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_legacy.apk"
+          },
+          {
+            "name": "legado_._3.26.080214_release.apk",
+            "size": 23891038,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_release.apk"
+          },
+          {
+            "name": "legado_._3.26.080214_releaseS.apk",
+            "size": 23891069,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_releaseS.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "pp",
@@ -379,16 +698,42 @@
       "repo": "damifan3/legadoPP",
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 17,
+      "sourceUpdatedAt": "2026-08-20T15:15:48Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "legado_app_beta_3.26.082023",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-20T15:15:49Z",
+        "createdAt": "2026-08-20T15:15:47Z",
+        "body": "### 更新内容\n* [修复]：进入未缓存正文快速退出导致“正在下载”数量卡死及状态泄漏的问题\n\n- **Bug现象**：\n  一本书全本下载后，进入未缓存章节的正文页，如果还没缓存完就快速退出了正文页，就会一直显示正在下载：3，即使整本缓存结束，还是显示3。\n\n- **核心修复 (Coroutine.kt)**：\n  修复了在协程被动取消（如 `scope.cancelChildren()`）时，`onCancel` 清理回调因为上次commit新增的防御机制被错误丢弃的 Bug。\n  原因：原代码依赖 `job.invokeOnCompletion` 触发 `cancel()` 方法，但由于此时 `job.isCompleted` 必定为 true，导致被 `cancel()` 内部的安全检查直接拦截。\n  解决：在 `invokeOnCompletion` 监听到被动取消（`CancellationException`）时，绕开 `cancel()` 方法的生命周期拦截，直接派发执行清理闭包，确保僵尸任务得到妥善处理。\n\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.08202305_release.apk",
+            "size": 20498657,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08202305_release.apk"
+          },
+          {
+            "name": "legado_beta_a_3.26.08202305_releaseA.apk",
+            "size": 20498730,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08202305_releaseA.apk"
+          },
+          {
+            "name": "legado_beta_plus_3.26.08202305_releaseS.apk",
+            "size": 20498735,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08202305_releaseS.apk"
+          },
+          {
+            "name": "legado_beta_pp_3.26.08202305_releasePP.apk",
+            "size": 20498715,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08202305_releasePP.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "x",
@@ -397,16 +742,27 @@
       "repo": "XziXmn/legado-X",
       "term": "legado-branch-x",
       "note": "阅读 Sigma 分支。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 10,
+      "sourceUpdatedAt": "2026-09-03T01:00:22Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "legado_3.26.090308_beta",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-03T01:00:22Z",
+        "createdAt": "2026-09-03T00:49:28Z",
+        "body": "### 更新内容\n* docs: 在 README 中关联配套后端 LegadoHub\n\n\n包名：`io.legado.app.beta`（测试版「阅读·测试」，不覆盖正式版）\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.09030849.apk",
+            "size": 19835914,
+            "browserDownloadUrl": "https://github.com/XziXmn/legado-X/releases/download/beta/legado_beta_3.26.09030849.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "m",
@@ -414,16 +770,71 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 10,
+      "sourceUpdatedAt": "2026-09-03T06:46:34Z",
       "githubArchived": false,
-      "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ],
-      "abandoned": "弃坑",
-      "abandonedReason": "无公开 Release，且源码超过半年未更新"
+      "release": {
+        "name": "3.26.090118",
+        "tagName": "3.26.090118",
+        "prerelease": false,
+        "publishedAt": "2026-09-01T10:47:57Z",
+        "createdAt": "2026-09-01T09:36:14Z",
+        "body": "**2026/09/01**\n### 修复\n- 新版订阅顶栏误导点击：顶栏源名位置此前实为搜索条（提示文字被设为源名），点击源名会误入源内搜索页；现恢复为点击源名弹出源选择列表，搜索功能保留在顶栏搜索按钮\n- 新版订阅分类标签展开后不显示：顶栏\"筛选\"展开分类时透明度动画存在竞态，分类栏已占位却停留在全透明状态；现展开/收起直接生效，点击\"筛选\"即可查看订阅源全部分类\n- 视频订阅源自动选集优先直链线路：部分采集站首线路为网页分享页（需二次解析且常失败）导致黑屏，现自动优先选择含 m3u8 直链的线路起播，首帧更快更稳",
+        "assets": [
+          {
+            "name": "legado_legacy_app_3.26.090118.apk",
+            "size": 70608909,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_legacy_app_3.26.090118.apk"
+          },
+          {
+            "name": "legado_miss_app_3.26.090118.apk",
+            "size": 35855148,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_miss_app_3.26.090118.apk"
+          },
+          {
+            "name": "legado_miss_app_debug_3.26.090118.apk",
+            "size": 70608931,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090118/legado_miss_app_debug_3.26.090118.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "fu",
+      "name": "阅融",
+      "tag": "fu",
+      "repo": "h166278/legado_FU",
+      "term": "legado-branch-fu",
+      "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
+      "stars": 1,
+      "sourceUpdatedAt": "2026-09-01T10:48:23Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_fu_3.26.090118",
+        "tagName": "3.26.090118",
+        "prerelease": false,
+        "publishedAt": "2026-09-01T10:35:42Z",
+        "createdAt": "2026-09-01T10:25:20Z",
+        "body": "### 更新内容\n### 优化\n\n- 目录当前章节选中样式\n\n",
+        "assets": [
+          {
+            "name": "legado_fu_3.26.09011825_release.apk",
+            "size": 27164241,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090118/legado_fu_3.26.09011825_release.apk"
+          },
+          {
+            "name": "legado_fu_3.26.09011848_release.apk",
+            "size": 27164299,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090118/legado_fu_3.26.09011848_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "iyuedu",
@@ -434,14 +845,13 @@
       "skipAutoForks": true,
       "allowNoRelease": true,
       "note": "z阅读的非内置ttsserver版本，不建议独立使用。",
-      "stars": null,
-      "sourceUpdatedAt": null,
+      "stars": 0,
+      "sourceUpdatedAt": "2026-08-30T05:38:21Z",
       "githubArchived": false,
       "release": null,
-      "errors": [
-        "仓库信息同步失败：GitHub API 403",
-        "版本信息同步失败：GitHub API 403"
-      ]
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     }
   ]
 }
