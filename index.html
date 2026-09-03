@@ -1433,6 +1433,7 @@
 
       function renderCardShell(branch) {
         const repoUrl = branch.upstreamUrl || branch.repoUrl || `https://github.com/${branch.repo}`;
+        const repoLabel = branch.upstreamUrl ? branch.upstreamUrl.replace(/^https?:\/\//, '') : branch.repo;
         const starText = branch.stars === null ? 'Star 同步失败' : `${formatCompactNumber(branch.stars)} Star`;
         const updatedText = branch.sourceUpdatedAt ? `源码更新：${formatDate(new Date(branch.sourceUpdatedAt))}` : '源码更新时间未知';
         return `
@@ -1441,7 +1442,7 @@
               <div class="repo-heading">
                 <h2>${escapeHtml(branch.name)}</h2>
                 <span class="tag">${escapeHtml(branch.tag)}</span>
-                <span class="repo-tag">${escapeHtml(branch.repo)}</span>
+                <span class="repo-tag">${escapeHtml(repoLabel)}</span>
                 <span class="star-tag">${escapeHtml(starText)}</span>
                 ${branch.pinned ? '<span class="pin-tag">站长开发</span>' : ''}
                 ${branch.abandoned ? `<span class="state-tag">${escapeHtml(branch.abandoned)}</span>` : ''}
