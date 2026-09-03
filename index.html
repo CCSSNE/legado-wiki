@@ -284,6 +284,15 @@
       border-top: 1px solid #c4cfca;
     }
 
+    .tree li:not(:has(> label)) > span::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 5px;
+      width: 11px;
+      border-top: 1px solid #c4cfca;
+    }
+
     .tree li.dashed::before {
       border-left: none;
       width: 1px;
@@ -370,6 +379,151 @@
       background: var(--accent-strong);
       color: #fff;
     }
+
+    .tree-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      column-gap: 30px;
+    }
+
+    .tree-col-title {
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed var(--border);
+      color: var(--accent-strong);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .tree-plat {
+      margin-left: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .tree-flag {
+      margin-left: 4px;
+      padding: 0 5px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .tree-flag-abandoned { background: #f7e6e6; color: #8d2727; }
+    .tree-flag-halfopen { background: var(--warm-soft); color: #8b4c15; }
+    .tree-flag-paid { background: #f7e6e6; color: #8d2727; }
+    .tree-flag-incompatible { background: #e9edf2; color: #4a5a68; }
+
+    .tree-link.tree-gray,
+    .tree-link.tree-plain {
+      color: var(--muted);
+      font-weight: 600;
+      cursor: default;
+    }
+
+    .tree-link.tree-gray:hover,
+    .tree-link.tree-plain:hover {
+      background: none;
+      color: var(--muted);
+    }
+
+    .tree-ancestor {
+      color: var(--muted) !important;
+      font-weight: 600;
+    }
+
+    .tree-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+
+    .tree-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .tree-filter-label {
+      flex-shrink: 0;
+      margin-right: 2px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .tree-chip input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .tree-chip span {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.15s;
+    }
+
+    .tree-chip span:hover {
+      border-color: #abc3bb;
+      color: var(--accent-strong);
+    }
+
+    .tree-chip input:checked + span {
+      border-color: var(--accent-strong);
+      background: var(--accent-strong);
+      color: #fff;
+    }
+
+    .tree-chip input:checked + span:hover {
+      border-color: var(--accent-strong);
+      color: #fff;
+    }
+
+    .tree-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 14px;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .tree-footer-title {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .tree-footer-link {
+      color: var(--accent-strong);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .tree-footer-link:hover { text-decoration: underline; }
 
     .repo-card {
       margin-bottom: 14px;
@@ -818,6 +972,7 @@
       .header-group { text-align:left; }
       .group-desc { white-space:normal; }
       .tree-nav { padding: 12px 12px 14px; }
+      .tree-columns { grid-template-columns: 1fr; row-gap: 16px; }
       .accel-row { align-items: flex-start; flex-direction: column; }
       .repo-card { padding: 14px; }
       .repo-header { align-items: stretch; flex-direction: column; }
@@ -884,10 +1039,6 @@
         <a class="resource-link" href="https://momoa.cc.cd/%E4%B8%8B%E8%BD%BD/xz" target="_blank" rel="noopener">
           <span class="resource-name">全版本集散地</span>
           <span class="resource-desc">阅读多分支下载入口</span>
-        </a>
-        <a class="resource-link" href="https://github.com/user-A100/books-reader" target="_blank" rel="noopener">
-          <span class="resource-name">books-reader</span>
-          <span class="resource-desc">开源阅读的电脑版</span>
         </a>
       </div>
     </section>
@@ -960,104 +1111,220 @@
       const sourceSel = document.getElementById('accelSource');
       let activeBranches = [];
       let trafficChart = null;
+      let filterShow = new Set();
+      let filterHide = new Set();
 
-      const forkTree = [
+      const PLATFORM_LABELS = {
+        android: '安卓',
+        ios: 'iOS',
+        harmony: '鸿蒙',
+        win: 'Win',
+        mac: 'mac',
+        linux: 'Linux',
+        tv: 'TV',
+        web: 'WEB'
+      };
+
+      const FLAG_META = {
+        abandoned: { label: '弃坑', cls: 'tree-flag-abandoned' },
+        halfOpen: { label: '半开源', cls: 'tree-flag-halfopen' },
+        paid: { label: '收费', cls: 'tree-flag-paid' },
+        incompatible: { label: '不兼容书源', cls: 'tree-flag-incompatible' }
+      };
+
+      const treeLeft = [
         {
           branch: 'original',
+          platforms: ['android'],
+          flags: ['abandoned'],
           children: [
             { external: { name: '原版补档', repo: 'CCSSNE/legado' } },
-            { branch: 'shutiao' },
-            { branch: 't' },
+            { branch: 't', platforms: ['android'] },
+            { branch: 'md3', platforms: ['android'] },
+            { branch: 'main', platforms: ['android'] },
             {
               branch: 'sigma',
+              platforms: ['android'],
               children: [
                 {
                   branch: 'archive',
+                  platforms: ['android'],
                   children: [
                     {
                       branch: 'r',
-                      children: [{ branch: 'c' }]
+                      platforms: ['android'],
+                      children: [{ branch: 'c', platforms: ['android'] }]
                     }
                   ]
                 },
                 {
                   branch: 'max',
+                  platforms: ['android'],
+                  flags: ['abandoned'],
                   children: [
-                    { branch: 'max-sum' },
-                    { branch: 'max-cichen' }
+                    { branch: 'max-sum', platforms: ['android'] },
+                    { branch: 'max-cichen', platforms: ['android'] }
                   ]
                 },
                 {
                   branch: 'ng',
-                  children: [{ branch: 'fu' }]
+                  platforms: ['android'],
+                  children: [{ branch: 'fu', platforms: ['android'] }]
                 },
-                { branch: 'pp' },
-                { branch: 'x' },
-                { branch: 'jingshiro' },
-                { branch: 'm' },
-                { branch: 'iyuedu' }
-              ]
-            },
-            { branch: 'md3' },
-            { branch: 'main' },
-            { branch: 'harmony' },
-            { branch: 'mr' },
-            {
-              branch: 'tauri',
-              children: [
-                { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
+                { branch: 'pp', platforms: ['android'] },
+                { branch: 'x', platforms: ['android'] },
+                { branch: 'jingshiro', platforms: ['android'] },
+                { branch: 'm', platforms: ['android'] },
+                { branch: 'iyuedu', platforms: ['android'] }
               ]
             }
           ]
-        }
+        },
+        { plain: '墨水', platforms: ['android'] },
+        { plain: '夜讀', platforms: ['android'] },
+        { plain: '墨境', platforms: ['android'] },
+        { plain: 'Lumi', platforms: ['android'] },
+        { plain: 'Kototoro', platforms: ['android'] },
+        { plain: 'LightNovelReader', platforms: ['android'] }
       ];
 
-      function renderTreeNav(branches) {
+      const treeRight = [
+        {
+          gray: '原版',
+          children: [
+            { branch: 'shutiao', platforms: ['android', 'ios', 'harmony', 'mac', 'win', 'linux'] },
+            { branch: 'mr', platforms: ['android', 'ios', 'harmony'] },
+            { branch: 'harmony', platforms: ['harmony'] },
+            {
+              branch: 'tauri',
+              platforms: ['win', 'android'],
+              flags: ['halfOpen', 'abandoned'],
+              children: [
+                { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
+              ]
+            },
+            { plain: 'Legado macOS 版', platforms: ['mac'], flags: ['abandoned'] }
+          ]
+        },
+        { plain: '亦搜', platforms: ['android', 'tv', 'ios', 'win', 'linux', 'mac'], flags: ['abandoned'] },
+        { plain: '开元阅读', platforms: ['android', 'web', 'ios', 'win', 'linux', 'mac'], flags: ['halfOpen'] },
+        { plain: 'ReadCat', platforms: ['win'], flags: ['abandoned'] },
+        { plain: '彩读', platforms: ['mac', 'win', 'linux'] },
+        { plain: 'Books', platforms: ['win'] }
+      ];
+
+      const FILTER_SHOW = [
+        { key: 'android', label: '安卓' },
+        { key: 'ios', label: 'iOS' },
+        { key: 'harmony', label: '鸿蒙' },
+        { key: 'win', label: 'WIN' },
+        { key: 'mac', label: 'MAC' },
+        { key: 'linux', label: 'LINUX' },
+        { key: 'tv', label: 'TV' },
+        { key: 'web', label: 'WEB' }
+      ];
+
+      function applyTreeFilters(roots) {
+        if (!filterShow.size && !filterHide.size) return roots;
+        const qualifies = node => {
+          const platforms = node.platforms || [];
+          const flags = node.flags || [];
+          const showOk = !filterShow.size || platforms.some(p => filterShow.has(p));
+          const hideOk = !flags.some(f => filterHide.has(f));
+          return showOk && hideOk;
+        };
+        const walk = node => {
+          const kids = node.children ? node.children.map(walk).filter(Boolean) : null;
+          const hasKids = !!(kids && kids.length);
+          const own = qualifies(node);
+          if (!own && !hasKids) return null;
+          const copy = { ...node };
+          if (hasKids) copy.children = kids;
+          else delete copy.children;
+          copy.filtered = !own;
+          return copy;
+        };
+        return roots.map(walk).filter(Boolean);
+      }
+
+      function renderTreeColumns(branches) {
         const byId = new Map(branches.map(branch => [branch.id, branch]));
         const familyStars = node => {
-          if (node.external) return 0;
+          if (node.external || node.plain) return 0;
           const own = byId.get(node.branch)?.stars ?? 0;
           const kids = node.children ? node.children.reduce((sum, child) => sum + familyStars(child), 0) : 0;
           return own + kids;
         };
         const byStars = (left, right) => familyStars(right) - familyStars(left);
         const isDashed = (node, parentRepo) => {
-          if (!parentRepo || node.external) return false;
+          if (!parentRepo || node.external || node.plain) return false;
           const branch = byId.get(node.branch);
           return !(branch && branch.fork === true && branch.forkOf === parentRepo);
         };
         const sortChildren = (children, parentRepo) => {
-          const groups = { external: [], solid: [], dashed: [] };
+          const groups = { external: [], plain: [], solid: [], dashed: [] };
           children.forEach(node => {
             if (node.external) groups.external.push(node);
+            else if (node.plain) groups.plain.push(node);
             else groups[isDashed(node, parentRepo) ? 'dashed' : 'solid'].push(node);
           });
           groups.solid.sort(byStars);
           groups.dashed.sort(byStars);
-          return [...groups.external, ...groups.solid, ...groups.dashed];
+          return [...groups.external, ...groups.solid, ...groups.plain, ...groups.dashed];
+        };
+        const badgeHtml = node => {
+          const plats = (node.platforms || []).map(p => `<span class="tree-plat">⟨${escapeHtml(PLATFORM_LABELS[p] || p)}⟩</span>`).join('');
+          const flags = (node.flags || []).map(f => {
+            const meta = FLAG_META[f];
+            return meta ? `<span class="tree-flag ${meta.cls}">${meta.label}</span>` : '';
+          }).join('');
+          return plats + flags;
         };
         let seq = 0;
         const renderNode = (node, parentRepo) => {
-          const ownRepo = byId.get(node.branch)?.repo;
+          const ownRepo = node.branch ? byId.get(node.branch)?.repo : undefined;
           const kids = node.children ? sortChildren(node.children, ownRepo) : null;
           const children = kids ? kids.map(child => renderNode(child, ownRepo)).join('') : '';
           const dash = isDashed(node, parentRepo) ? ' dashed' : '';
+          const muted = node.filtered ? ' tree-ancestor' : '';
+          if (node.plain) {
+            return `<li><span class="tree-link tree-plain${muted}">${escapeHtml(node.plain)}${badgeHtml(node)}</span></li>`;
+          }
           if (node.external) {
             const external = node.external;
             return `<li class="tree-external${dash}"><a class="tree-link" href="https://github.com/${escapeAttribute(external.repo)}" target="_blank" rel="noopener">${escapeHtml(external.name)}<span class="tree-arrow"> ↗</span></a></li>`;
           }
+          if (node.gray) {
+            const checkboxId = `tree-node-${seq++}`;
+            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><span class="tree-link tree-gray">${escapeHtml(node.gray)}</span><ul>${children}</ul></li>`;
+          }
           const branch = byId.get(node.branch);
           if (!branch || branch.hidden) return '';
           const pin = branch.pinned ? '<span class="tree-pin">站长</span>' : '';
-          const label = `${escapeHtml(branch.name)}${pin}`;
+          const label = `${escapeHtml(branch.name)}${pin}${badgeHtml(node)}`;
           const pinnedClass = branch.pinned ? ' tree-link-pinned' : '';
           if (children) {
             const checkboxId = `tree-node-${seq++}`;
-            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><a class="tree-link${pinnedClass}" href="#repo-${escapeAttribute(branch.id)}">${label}</a><ul>${children}</ul></li>`;
+            return `<li class="tree-branch${dash}"><input type="checkbox" id="${checkboxId}" checked><label class="tree-toggle" for="${checkboxId}"><span class="tree-badge"></span></label><a class="tree-link${pinnedClass}${muted}" href="#repo-${escapeAttribute(branch.id)}">${label}</a><ul>${children}</ul></li>`;
           }
-          return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
+          return `<li class="${dash.trim()}"><a class="tree-link${pinnedClass}${muted}" href="#repo-${escapeAttribute(branch.id)}">${label}</a></li>`;
         };
-        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库</span></div><ul class="tree">${forkTree.map(root => renderNode(root, null)).join('')}<li><a class="tree-link" href="#useful-links">推荐链接</a></li><li><a class="tree-link" href="#traffic">访问趋势</a></li></ul>`;
+        const renderRoots = roots => `<ul class="tree">${roots.map(root => renderNode(root, null)).join('')}</ul>`;
+        return `<div class="tree-columns"><div class="tree-col"><div class="tree-col-title">左树 · 纯 Android</div>${renderRoots(applyTreeFilters(treeLeft))}</div><div class="tree-col"><div class="tree-col-title">右树 · 存在任何非安卓平台</div>${renderRoots(applyTreeFilters(treeRight))}</div></div>`;
+      }
+
+      function renderTreeNav(branches) {
+        const chips = FILTER_SHOW.map(f => `<label class="tree-chip"><input type="checkbox" data-show="${f.key}"><span>${f.label}</span></label>`).join('');
+        const hideChips = Object.entries(FLAG_META).map(([key, meta]) => `<label class="tree-chip"><input type="checkbox" data-hide="${key}"><span>${meta.label}</span></label>`).join('');
+        return `<div class="tree-nav-title">分支关系树<span class="tree-hint">实线 = GitHub fork · 虚线 = 同源非 fork · ↗ = 外部仓库 · ⟨⟩ = 平台 · 灰字 = 未收录条目</span></div><div class="tree-filters"><div class="tree-filter-row"><span class="tree-filter-label">只看</span><label class="tree-chip"><input type="checkbox" data-show="all" checked><span>全部</span></label>${chips}</div><div class="tree-filter-row"><span class="tree-filter-label">不看</span>${hideChips}</div></div>${renderTreeColumns(branches)}<div class="tree-footer"><span class="tree-footer-title">── 推荐链接 ──</span><a class="tree-footer-link" href="https://www.yckceo.com/" target="_blank" rel="noopener">源仓库 ↗</a><a class="tree-footer-link" href="https://momoa.cc.cd/%E4%B8%8B%E8%BD%BD/xz" target="_blank" rel="noopener">全版本集散地 ↗</a><a class="tree-footer-link" href="#traffic">访问趋势</a></div>`;
+      }
+
+      function refreshTree() {
+        const columns = nav.querySelector('.tree-columns');
+        if (!columns || !activeBranches.length) return;
+        const template = document.createElement('div');
+        template.innerHTML = renderTreeColumns(activeBranches);
+        columns.replaceWith(template.firstElementChild);
       }
 
       sourceSel.value = localStorage.getItem('legado_proxy') || 'https://gh-proxy.com/';
@@ -1072,6 +1339,39 @@
       sourceSel.addEventListener('change', () => {
         localStorage.setItem('legado_proxy', sourceSel.value);
         patchLinks();
+      });
+
+      nav.addEventListener('change', event => {
+        const input = event.target;
+        if (!input || input.type !== 'checkbox') return;
+        if (input.dataset.show !== undefined) {
+          if (input.dataset.show === 'all') {
+            if (!input.checked) {
+              input.checked = true;
+            } else {
+              filterShow.clear();
+              nav.querySelectorAll('input[data-show]').forEach(chip => {
+                if (chip !== input) chip.checked = false;
+              });
+            }
+          } else {
+            if (input.checked) {
+              const allChip = nav.querySelector('input[data-show="all"]');
+              if (allChip) allChip.checked = false;
+            }
+            filterShow = new Set([...nav.querySelectorAll('input[data-show]:checked')].map(chip => chip.dataset.show));
+            if (!filterShow.size) {
+              const allChip = nav.querySelector('input[data-show="all"]');
+              if (allChip) allChip.checked = true;
+            }
+          }
+          refreshTree();
+          return;
+        }
+        if (input.dataset.hide !== undefined) {
+          filterHide = new Set([...nav.querySelectorAll('input[data-hide]:checked')].map(chip => chip.dataset.hide));
+          refreshTree();
+        }
       });
 
       const backTop = document.getElementById('backTop');
