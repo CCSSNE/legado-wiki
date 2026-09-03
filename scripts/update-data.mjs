@@ -88,6 +88,7 @@ const branches = [
     term: 'legado-branch-iyuedu',
     skipAutoForks: true,
     allowNoRelease: true,
+    upstreamUrl: 'https://cnb.cool/mingwuyan/iyuedu',
     note: 'z阅读的非内置ttsserver版本，不建议独立使用。'
   }
 ];

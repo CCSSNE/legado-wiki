@@ -1432,7 +1432,7 @@
       }
 
       function renderCardShell(branch) {
-        const repoUrl = `https://github.com/${branch.repo}`;
+        const repoUrl = branch.upstreamUrl || branch.repoUrl || `https://github.com/${branch.repo}`;
         const starText = branch.stars === null ? 'Star 同步失败' : `${formatCompactNumber(branch.stars)} Star`;
         const updatedText = branch.sourceUpdatedAt ? `源码更新：${formatDate(new Date(branch.sourceUpdatedAt))}` : '源码更新时间未知';
         return `
@@ -1449,7 +1449,7 @@
                 ${branch.note ? `<div class="repo-desc">${escapeHtml(branch.note)}</div>` : ''}
                 ${renderRelatedLinks(branch)}
               </div>
-              <a class="repo-open" href="${repoUrl}" target="_blank" rel="noopener">仓库</a>
+              <a class="repo-open" href="${escapeAttribute(repoUrl)}" target="_blank" rel="noopener">仓库</a>
             </div>
             <div class="release-slot">${renderReleaseSlot(branch)}</div>
             ${renderComments(branch)}
@@ -1477,6 +1477,10 @@
 
       function renderRelatedLinks(branch) {
         const rows = [];
+        if (branch.upstreamUrl) {
+          const mirrorUrl = `https://github.com/${branch.repo}`;
+          rows.push(`<div class="forks-row">GitHub 镜像：<a class="fork-chip" href="${escapeAttribute(mirrorUrl)}" target="_blank" rel="noopener">${escapeHtml(branch.repo)}</a></div>`);
+        }
         const formatRepoLink = item => {
           const name = item.label || String(item.name || item.repo || '').split('/').pop() || item.name || item.repo;
           const stars = Number.isFinite(item.stars) ? ` ${formatCompactNumber(item.stars)} Star` : '';
