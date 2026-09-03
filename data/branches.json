@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T19:53:06.005Z",
+  "generatedAt": "2026-09-03T22:37:35.693Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 80,
-      "sourceUpdatedAt": "2026-09-03T19:00:15Z",
+      "sourceUpdatedAt": "2026-09-03T22:34:13Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090318（预发布）",
@@ -228,20 +228,20 @@
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
       "stars": 503,
-      "sourceUpdatedAt": "2026-08-17T14:14:21Z",
+      "sourceUpdatedAt": "2026-09-03T19:58:36Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 Archive 第十一版 EPUB 引擎更新",
-        "tagName": "archive-v3-3.26.08172114",
+        "name": "阅读 Archive 第十二版",
+        "tagName": "archive-v3-3.26.09040230",
         "prerelease": false,
-        "publishedAt": "2026-08-17T14:14:21Z",
+        "publishedAt": "2026-09-03T19:58:36Z",
         "createdAt": "2026-08-07T04:53:35Z",
-        "body": "第十一版更新\n\n- EPUB 阅读引擎更替为纯 WebView 渲染引擎\n- EPUB 纯文本模式回归 Legado 原版文本处理逻辑",
+        "body": "本版为 arm64-v8a 正式版，重点更新阅读体验、EPUB 引擎和定时任务能力。\n\n## 新增\n\n- 新增 EPUB 嵌入式页眉与页脚，并与普通正文保持统一配置。\n  - 页脚支持常驻显示，页眉支持在章节首页自动隐藏。\n  - 支持章节标题、时间、电量、页码、阅读进度等信息。\n  - 支持自定义颜色、分隔线和边距。\n  - 页眉页脚参与 EPUB 页面排版和翻页动画，不遮挡 EPUB 原有背景和正文。\n- 新增定时任务功能，支持创建、编辑、启用、停用、删除、导入和导出任务，可按计划执行书籍更新、目录刷新及通知等操作。\n  - 定时任务功能感谢明月大佬的贡献与支持。\n\n## 优化\n\n- EPUB 阅读引擎更替为纯 WebView 引擎，直接使用 EPUB 原始 XHTML、CSS 和页面结构，提升原生排版还原度。\n- 优化 EPUB 章节加载、分页、前后章节切换和连续翻页流程，减少切章等待、页面跳动和渲染闪动。\n- 优化 EPUB 翻页动画响应速度和动画快照清晰度，改善快速连续翻页时的跟手性。\n- 优化 EPUB 自定义字体加载、字体重排和页面布局稳定性。\n- EPUB 普通正文排版与出版方复杂 CSS、背景图片等内容进一步隔离，避免阅读器排版设置覆盖原始页面效果。\n- EPUB 纯文本模式回归 Legado 原版文本处理逻辑，保持与原版一致的文本提取和阅读体验。\n- 优化 EPUB 自动翻页与朗读流程，改善章节边界、段落顺序和连续阅读体验。\n- 书架下拉刷新默认只更新目录，不在刷新过程中重复缓存章节正文，减少网络请求和无效加载。\n- 移除启动时的品牌 Splash，缩短应用进入时间。\n\n## 修复\n\n- 修复阅读配置导入或备份恢复后，普通正文和 EPUB 页眉页脚颜色可能被错误重置为白色的问题。\n- 修复部分 EPUB 封面无法识别、封面延迟显示以及封面资源提取失败的问题。\n- 修复共享 XHTML、目录片段和复杂章节结构处理不正确，导致章节拆分异常或章节内容重复的问题。\n- 修复无效片段边界可能导致 EPUB 打开失败的问题。\n- 修复 EPUB 章节切换时随机跳页、上一页闪回、首页空白和旧页面残留的问题。\n- 修复快速连续翻页时的残影、空白区域和目标页显示不完整问题。\n- 修复切换翻页动画或阅读设置后，动画偶尔失效或无法继续翻页的问题。\n- 修复部分 EPUB 出版方媒体控件恢复异常的问题。",
         "assets": [
           {
-            "name": "legado_app_3.26.08172114_29782314.apk",
-            "size": 40224764,
-            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.08172114/legado_app_3.26.08172114_29782314.apk"
+            "name": "legado_app_3.26.09040230_29807670.apk",
+            "size": 40538297,
+            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.09040230/legado_app_3.26.09040230_29807670.apk"
           }
         ]
       },
