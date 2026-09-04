@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T11:23:23.066Z",
+  "generatedAt": "2026-09-04T16:25:27.124Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 82,
-      "sourceUpdatedAt": "2026-09-04T05:46:31Z",
+      "sourceUpdatedAt": "2026-09-04T16:20:16Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090400（预发布）",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5973,
+      "stars": 5975,
       "sourceUpdatedAt": "2026-09-03T18:32:36Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1044,
+      "stars": 1046,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -331,7 +331,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 283,
+      "stars": 282,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -692,50 +692,6 @@
       "forkOf": null
     },
     {
-      "id": "pp",
-      "name": "阅读PP",
-      "tag": "pp",
-      "repo": "damifan3/legadoPP",
-      "term": "legado-branch-pp",
-      "note": "阅读 Sigma 分支。",
-      "stars": 17,
-      "sourceUpdatedAt": "2026-08-20T15:15:48Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_beta_3.26.082023",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-08-20T15:15:49Z",
-        "createdAt": "2026-08-20T15:15:47Z",
-        "body": "### 更新内容\n* [修复]：进入未缓存正文快速退出导致“正在下载”数量卡死及状态泄漏的问题\n\n- **Bug现象**：\n  一本书全本下载后，进入未缓存章节的正文页，如果还没缓存完就快速退出了正文页，就会一直显示正在下载：3，即使整本缓存结束，还是显示3。\n\n- **核心修复 (Coroutine.kt)**：\n  修复了在协程被动取消（如 `scope.cancelChildren()`）时，`onCancel` 清理回调因为上次commit新增的防御机制被错误丢弃的 Bug。\n  原因：原代码依赖 `job.invokeOnCompletion` 触发 `cancel()` 方法，但由于此时 `job.isCompleted` 必定为 true，导致被 `cancel()` 内部的安全检查直接拦截。\n  解决：在 `invokeOnCompletion` 监听到被动取消（`CancellationException`）时，绕开 `cancel()` 方法的生命周期拦截，直接派发执行清理闭包，确保僵尸任务得到妥善处理。\n\n",
-        "assets": [
-          {
-            "name": "legado_beta_3.26.08202305_release.apk",
-            "size": 20498657,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08202305_release.apk"
-          },
-          {
-            "name": "legado_beta_a_3.26.08202305_releaseA.apk",
-            "size": 20498730,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08202305_releaseA.apk"
-          },
-          {
-            "name": "legado_beta_plus_3.26.08202305_releaseS.apk",
-            "size": 20498735,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08202305_releaseS.apk"
-          },
-          {
-            "name": "legado_beta_pp_3.26.08202305_releasePP.apk",
-            "size": 20498715,
-            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08202305_releasePP.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
-    },
-    {
       "id": "m",
       "name": "阅读 M",
       "tag": "m",
@@ -853,6 +809,50 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "pp",
+      "name": "阅读PP",
+      "tag": "pp",
+      "repo": "damifan3/legadoPP",
+      "term": "legado-branch-pp",
+      "note": "阅读 Sigma 分支。",
+      "stars": null,
+      "sourceUpdatedAt": null,
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_beta_3.26.082023",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-08-20T15:15:49Z",
+        "createdAt": "2026-08-20T15:15:47Z",
+        "body": "### 更新内容\n* [修复]：进入未缓存正文快速退出导致“正在下载”数量卡死及状态泄漏的问题\n\n- **Bug现象**：\n  一本书全本下载后，进入未缓存章节的正文页，如果还没缓存完就快速退出了正文页，就会一直显示正在下载：3，即使整本缓存结束，还是显示3。\n\n- **核心修复 (Coroutine.kt)**：\n  修复了在协程被动取消（如 `scope.cancelChildren()`）时，`onCancel` 清理回调因为上次commit新增的防御机制被错误丢弃的 Bug。\n  原因：原代码依赖 `job.invokeOnCompletion` 触发 `cancel()` 方法，但由于此时 `job.isCompleted` 必定为 true，导致被 `cancel()` 内部的安全检查直接拦截。\n  解决：在 `invokeOnCompletion` 监听到被动取消（`CancellationException`）时，绕开 `cancel()` 方法的生命周期拦截，直接派发执行清理闭包，确保僵尸任务得到妥善处理。\n\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.08202305_release.apk",
+            "size": 20498657,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_3.26.08202305_release.apk"
+          },
+          {
+            "name": "legado_beta_a_3.26.08202305_releaseA.apk",
+            "size": 20498730,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_a_3.26.08202305_releaseA.apk"
+          },
+          {
+            "name": "legado_beta_plus_3.26.08202305_releaseS.apk",
+            "size": 20498735,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_plus_3.26.08202305_releaseS.apk"
+          },
+          {
+            "name": "legado_beta_pp_3.26.08202305_releasePP.apk",
+            "size": 20498715,
+            "browserDownloadUrl": "https://github.com/damifan3/legadoPP/releases/download/beta/legado_beta_pp_3.26.08202305_releasePP.apk"
+          }
+        ]
+      },
+      "errors": [
+        "仓库信息同步失败：fetch failed"
+      ]
     }
   ]
 }
