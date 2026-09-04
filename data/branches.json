@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T22:37:35.693Z",
+  "generatedAt": "2026-09-04T01:01:31.134Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 80,
-      "sourceUpdatedAt": "2026-09-03T22:34:13Z",
+      "stars": 81,
+      "sourceUpdatedAt": "2026-09-04T00:57:22Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090318（预发布）",
-        "tagName": "v3.26.090318",
+        "name": "阅读C v3.26.090400（预发布）",
+        "tagName": "v3.26.090400",
         "prerelease": true,
-        "publishedAt": "2026-09-03T18:40:37Z",
+        "publishedAt": "2026-09-04T00:49:49Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 公开版（oss flavor）`3.26.090318` / `10819`\n\n包名 `io.legado.app.c`，应用名「阅读C」，架构 `arm64-v8a`，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n本次构建为公开版 oss 单编译交付（预发布）。自用版（阅读C-自用）与公开版为并行独立构建，应用名与包名不同，可同时安装。\n\n### 本次更新（相对上版公开版 `3.26.090304` / `10816`）\n\n- 启动图标与启动画面：两枚启动图标与瓷贴全部由成品帧重制（仅图片资源，不改代码与 Manifest）；统一系统启动画面并修复夜间首帧；覆盖应用更新后的首次启动主题同步。\n- 关于页：新增普通日志入口显示；QQ 群号与加群链接更换。\n- 文档与法务：README 更新记录与截图、交流群号更新；恢复网页端两次修改的 GPL-PLUS 许可证。\n- 说明：今日中间的启动图标与欢迎页代码改动已整体撤回，本次公开版不含那些欢迎页行为变更。\n",
+        "body": "## 公开版（oss flavor）`3.26.090400` / `10827`\n\n包名 `io.legado.app.c`，应用名「阅读C」，架构 `arm64-v8a`，统一 debug 签名。对应 GitHub 源码分支 own（清洗镜像）。\n本次构建为公开版 oss 单编译交付（预发布）。自用版（阅读C-自用）与公开版为并行独立构建，应用名与包名不同，可同时安装。\n\n### 本次更新（相对上版公开版 `3.26.090318` / `10819`）\n\n- 聚合主页：发现页选择入口改多选/单选，模块类型按单选多选过滤；网格排行榜分页卡片、序号卡片、按钮组等宽网格、骨架屏与加载更多/错误卡片重绘对齐；排行榜 Tab 行显隐收敛统一管理；取消单选多选区分，统一分类入口与 Tab 头（任意类型支持 1 到 N 个分类切换）；加载更多按类型分流（横幅横滑到底自动加载、无限网格随下滑自动加载）；卡片间距/边距与书籍卡片小圆角对齐封面；按钮组两列换行修复；单分类/多分类标题行与 Tab 行显隐对称。\n- 欢迎页：启动屏 logo 缩小一半，按 AOSP 管线公式修正尺寸并加保护注释。\n- 文档：截图更新，清理冗余图片。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.090318_10819.apk",
-            "size": 34498970,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090318/legado_oss_3.26.090318_10819.apk"
+            "name": "legado_oss_3.26.090400_10827.apk",
+            "size": 34532895,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090400/legado_oss_3.26.090400_10827.apk"
           }
         ]
       },
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 11,
+          "stars": 12,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2143,
+      "stars": 2144,
       "sourceUpdatedAt": "2026-08-29T14:55:31Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1036,
+      "stars": 1038,
       "sourceUpdatedAt": "2026-08-31T15:50:56Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 324,
+      "stars": 325,
       "sourceUpdatedAt": "2026-09-03T11:22:47Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 201,
+      "stars": 202,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -631,20 +631,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 71,
-      "sourceUpdatedAt": "2026-08-28T08:03:40Z",
+      "sourceUpdatedAt": "2026-09-03T23:39:33Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.082815",
-        "tagName": "3.26.082815",
+        "name": "legado_ng_3.26.090407",
+        "tagName": "3.26.090407",
         "prerelease": false,
-        "publishedAt": "2026-08-28T08:03:41Z",
-        "createdAt": "2026-08-28T07:48:26Z",
-        "body": "### 更新内容\r\n* 在Release开放视觉体系切换\r\n* 修复听书字幕同步与跨章流式播放\r\n* 修复书架朗读胶囊自动收纳\r\n* 修复订阅源管理手势与批量底栏\r\n* 新增听书播放动效并优化播放器状态\r\n* 接入NG透明与液态玻璃视觉体系\r\n* 收口主界面听书胶囊并避免双播放\r\n* 保存听书卡通动效本机试装代码\r\n* 优化听书与有声书播放器显示\r\n* 统一听书与有声书播放器外观设置\r\n* 发布内置动态主题并收录场景素材\r\n* 完善液态玻璃材质与背景采样\r\n* 修复阅读菜单打开时正文重排\r\n* 修复替换规则并发刷新重复加载\r\n* 增加阅读排版滑条微调按钮\r\n* 完善网格入口与分组浮层液态玻璃\r\n\r\n\r\n\r\n\r\n",
+        "publishedAt": "2026-09-03T23:39:33Z",
+        "createdAt": "2026-09-03T23:24:04Z",
+        "body": "### 更新内容\n* 完善书源管理Compose流程与单文件JS书源支持\n* 升级HtmlUnit Rhino并保持书源安全兼容\n* 修复主页面底栏跨页内容残留\n* 统一管理页浮栏并规范分镜章号\n* 完成规则管理Compose重构\n* 完成AI设置Compose迁移\n* 完成朗读设置Compose迁移并统一悬浮顶栏\n* 优化我的页面顶部布局\n* 完成书签页面Compose迁移与搜索\n* 优化阅读记录界面与默认封面\n* 迁移文件管理到Compose并重构界面\n* 迁移服务管理到Compose\n* 迁移并重构关于页面\n* 迁移并重构备份恢复页面\n* 收口关于页玻璃与日志文本抽屉\n* 统一管理页面悬浮顶栏与菜单\n* 恢复设置Compose已验收基线\n* 完善服务端口编辑与地址操作\n* 迁移备份恢复业务弹层到Compose\n* 迁移更新详情弹窗并完善调试入口\n* 迁移我的根页到Compose并移除退出\n* 原样迁移内置文件选择器到Compose\n* 完成朗读引擎页面Compose迁移\n* 完善AI设置界面与模型选择交互\n* 实现柔光主题模式与液态玻璃适配\n* 合并主线后续UI更新\n* 新增柔光流影光场并移除通用动效\n* 恢复流影超宽暗场覆盖\n* 移除流影双弧并改为单向前沿\n* 新增若竹青森霁樱霞柔光色调\n* 调整流影为亮色上行暗色下行\n* 隔离阅读界面与柔光主题配色\n* 新增动态场景专属模式\n* 提升柔光背景文字可读性\n* 为AI与TTS表单增加玻璃容器\n* 新增夏日童趣日夜主题\n* 优化夜间列表卡片通透度\n* 修复阅读抽屉弹出位置异常\n* 修复替换净化重复刷新抖动\n* 拆分换源窗口宿主并统一主题\n* 优化阅读目录抽屉预设材质\n* 修复听书多人引擎卡夜间串色\n* 适配书架抽屉夜间卡片\n* 统一非播放器NG抽屉夜间卡片\n* 修复多人朗读章末纯标点不切章\n* 支持有声书真实音频缓存与目录操作\n* 新增隔离式QuickJS执行沙箱\n* 为JS书源接入QuickJS窄门面\n* 加强书源请求敏感信息脱敏\n* 修复柔光渐变下阅读浮层跟随取色\n* 新增阅读日夜三态切换\n* 独立阅读高亮规则并支持全局浮窗配色\n* 优化阅读目录当前章高亮\n* 压缩夏日童趣日夜主题背景\n* 修复柔光渐变实体顶栏内容不可见\n* 支持书源与订阅源共享受限缓存\n* 完善项目说明与界面展示\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.08281549_release.apk",
-            "size": 33522579,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.082815/legado_NG_3.26.08281549_release.apk"
+            "name": "legado_NG_3.26.09040726_release.apk",
+            "size": 36392690,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.090407/legado_NG_3.26.09040726_release.apk"
           }
         ]
       },
@@ -736,42 +736,13 @@
       "forkOf": "Luoyacheng/legado-E"
     },
     {
-      "id": "x",
-      "name": "阅读 X",
-      "tag": "x",
-      "repo": "XziXmn/legado-X",
-      "term": "legado-branch-x",
-      "note": "阅读 Sigma 分支。",
-      "stars": 10,
-      "sourceUpdatedAt": "2026-09-03T01:00:22Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_3.26.090308_beta",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-09-03T01:00:22Z",
-        "createdAt": "2026-09-03T00:49:28Z",
-        "body": "### 更新内容\n* docs: 在 README 中关联配套后端 LegadoHub\n\n\n包名：`io.legado.app.beta`（测试版「阅读·测试」，不覆盖正式版）\n",
-        "assets": [
-          {
-            "name": "legado_beta_3.26.09030849.apk",
-            "size": 19835914,
-            "browserDownloadUrl": "https://github.com/XziXmn/legado-X/releases/download/beta/legado_beta_3.26.09030849.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
-    },
-    {
       "id": "m",
       "name": "阅读 M",
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 10,
-      "sourceUpdatedAt": "2026-09-03T17:24:56Z",
+      "stars": 11,
+      "sourceUpdatedAt": "2026-09-03T23:56:25Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090118",
@@ -801,6 +772,35 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "x",
+      "name": "阅读 X",
+      "tag": "x",
+      "repo": "XziXmn/legado-X",
+      "term": "legado-branch-x",
+      "note": "阅读 Sigma 分支。",
+      "stars": 10,
+      "sourceUpdatedAt": "2026-09-03T01:00:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_3.26.090308_beta",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-03T01:00:22Z",
+        "createdAt": "2026-09-03T00:49:28Z",
+        "body": "### 更新内容\n* docs: 在 README 中关联配套后端 LegadoHub\n\n\n包名：`io.legado.app.beta`（测试版「阅读·测试」，不覆盖正式版）\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.09030849.apk",
+            "size": 19835914,
+            "browserDownloadUrl": "https://github.com/XziXmn/legado-X/releases/download/beta/legado_beta_3.26.09030849.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "fu",
