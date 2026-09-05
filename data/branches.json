@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T21:17:56.499Z",
+  "generatedAt": "2026-09-05T23:56:08.591Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 87,
-      "sourceUpdatedAt": "2026-09-05T20:46:01Z",
+      "sourceUpdatedAt": "2026-09-05T22:45:47Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090420",
-        "tagName": "v3.26.090420",
+        "name": "v3.26.090522",
+        "tagName": "v3.26.090522",
         "prerelease": false,
-        "publishedAt": "2026-09-04T20:50:19Z",
+        "publishedAt": "2026-09-05T22:44:05Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.090420（10837）\r\n\r\n### AI创作\r\n\r\n- 存量参数值升级时全量消毒重置默认值，读取时失效值回落默认不再崩溃。\r\n- 新进入创作界面时清空提示词页下框最终提示词。\r\n- 修复预览页返回跳到不存在的 page2 导致空白异常，改为回提示词页。\r\n- 插入媒体备注预填内嵌工作流 JSON 完整原文，不再只提取 prompt。\r\n\r\n### 修复\r\n\r\n- 文本选择菜单按内容宽度收缩并居中，不再占满整窗。\r\n",
+        "body": "## 阅读C v3.26.090522（10851）\n\n### 模型与管理\n\n- 供应商管理改短按设当前、长按编辑，删除收进编辑页，图片/视频管理补充删除。\n- 模型与 MCP 管理改短按主操作、长按编辑，删除收进编辑页，MCP 合并为单一管理入口。\n\n### AI创作\n\n- 提示词编辑器改用 Vditor 即时渲染，提示词页加图入口与发送图片分辨率设置。\n- 插图弹窗可选版式与总高度，多选按宫格表格排框。\n- 生图补随机种子、视频补请求编号，工作流记录图片 base64。\n- 图片/视频/分镜/选角/净化各走各的请求体模板，缺位直接报错。\n- 供应商增加多模态开关（ZEN 默认关闭），无多模态能力时转文字占位。\n- 破坏性版本变更自检：按应用版本号逐字比对，升级时回出厂配置并弹窗汇总。\n- 工作流文本出口脱敏、补记 LLM 返回；排版备注解构每图备注四宫格各写各的。\n- 插图/缓存管理可查看工作流（只读全屏脱敏 JSON）；四处 MD 预览统一 WebView，卡片保存 MD 时连带图片。\n\n### 修复\n\n- 查看工作流高亮改用已注册 source.js，修复未注册 source.json 导致崩溃。\n- 生成媒体三处菜单补插入，正文插图预填暂存用完清空。",
         "assets": [
           {
-            "name": "legado_oss_3.26.090420_10837.apk",
-            "size": 34592960,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090420/legado_oss_3.26.090420_10837.apk"
+            "name": "legado_oss_3.26.090522_10851.apk",
+            "size": 35598307,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090522/legado_oss_3.26.090522_10851.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5987,
+      "stars": 5988,
       "sourceUpdatedAt": "2026-09-05T20:55:47Z",
       "githubArchived": false,
       "release": {
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 1055,
-      "sourceUpdatedAt": "2026-09-05T21:08:33Z",
+      "sourceUpdatedAt": "2026-09-05T22:00:29Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090603",
+        "name": "legado_app_3.26090605",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-05T19:40:15Z",
-        "body": "<!-- legado-version-code:38306 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n\n",
+        "createdAt": "2026-09-05T21:08:30Z",
+        "body": "<!-- legado-version-code:38307 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n- 修复搜索详情换源到文件书源时缺少下载链接导致 LoadWebFileError\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090603_releaseA_vc38306.apk",
-            "size": 21024380,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_releaseA_vc38306.apk"
+            "name": "legado_app_3.26090605_releaseA_vc38307.apk",
+            "size": 21024414,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_releaseA_vc38307.apk"
           },
           {
-            "name": "legado_app_3.26090603_release_vc38306.apk",
-            "size": 21024374,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_release_vc38306.apk"
+            "name": "legado_app_3.26090605_release_vc38307.apk",
+            "size": 21024413,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_release_vc38307.apk"
           },
           {
-            "name": "legado_app_3.26090603_universal_releaseA_vc38306.apk",
-            "size": 26975160,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_universal_releaseA_vc38306.apk"
+            "name": "legado_app_3.26090605_universal_releaseA_vc38307.apk",
+            "size": 26975214,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_universal_releaseA_vc38307.apk"
           },
           {
-            "name": "legado_app_3.26090603_universal_release_vc38306.apk",
-            "size": 26975157,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_universal_release_vc38306.apk"
+            "name": "legado_app_3.26090605_universal_release_vc38307.apk",
+            "size": 26975199,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_universal_release_vc38307.apk"
           }
         ]
       },
@@ -588,7 +588,7 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-05T20:37:29Z",
+      "sourceUpdatedAt": "2026-09-05T21:35:34Z",
       "githubArchived": false,
       "release": {
         "name": "MR 2609059 (测试版)",
