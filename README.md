@@ -31,7 +31,7 @@ GitHub 下载加速条（开关 + 代理源选择，记忆在 localStorage）
 这是本站的核心导航，一眼看出“谁是谁的下游”。
 
 - **左右两列**：左树只放纯 Android 分支；右树放“存在任何非安卓平台”的分支（Android/iOS/鸿蒙/Win/Mac/Linux/TV/WEB 的任意组合）。
-  左列根是 `原版 → T / MD3 / Beta喵公子 / Sigma…`；右列根是 `原版（灰组，多平台成员）/ 亦搜 / 开元 / ReadCat / 彩读 / Books`。纯 Android 的新分支放左树，有桌面/苹果/鸿蒙/TV/WEB 的放右树。
+  左列根是 `原版 → T / Beta喵公子 / Sigma…`；右列根是 `原版（灰组，多平台成员：MD3 / 薯条 / MR / 鸿蒙 / Tauri / macOS）/ 亦搜 / 开元 / ReadCat / 彩读 / Books`。纯 Android 的新分支放左树，有桌面/苹果/鸿蒙/TV/WEB 的放右树。
 - **实线 / 虚线 / ↗**：实线 = GitHub 承认的 fork 关系（`fork === true` 且 `forkOf` 等于父仓库）；虚线 = 同源但不是 GitHub fork（重写、改名、换组织后独立发版）；`↗` = 外部仓库（补档库，不是分支本身）。
 - **血缘 vs 展示位置**：谁是谁的后代只看 `index.html` 里的 `FAMILY` 表（`original → t/md3/main/sigma/shutiao/mr/harmony/tauri/macos`，`sigma → archive/max/ng/pp/x/jingshiro/m/i阅读`，`archive → r → c`，`max → max-sum/max-cichen`，`ng → 阅融`），跟放在左列还是右列无关。搬展示位不影响家族 Star 总数。右列顶上的灰色“原版”组通过 `familyOf: 'original'` 把 Star 计入原版家族。
 - **排序**：补档节点（`external`）永远置顶；然后先实线后虚线；每组内部按**家族 Star（自身 + 全部后代 Star 之和）**降序。家族总数是展示无关的唯一依据，筛选只隐藏节点、不重排。
