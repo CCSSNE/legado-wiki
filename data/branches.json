@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T16:51:16.914Z",
+  "generatedAt": "2026-09-05T19:04:08.464Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 87,
-      "sourceUpdatedAt": "2026-09-05T13:54:21Z",
+      "sourceUpdatedAt": "2026-09-05T18:16:22Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090420",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5985,
+      "stars": 5987,
       "sourceUpdatedAt": "2026-09-04T20:04:22Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2585,
+      "stars": 2586,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1054,
-      "sourceUpdatedAt": "2026-09-05T16:48:55Z",
+      "stars": 1055,
+      "sourceUpdatedAt": "2026-09-05T18:54:40Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090523",
+        "name": "legado_app_3.26090602",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-05T15:48:37Z",
-        "body": "<!-- legado-version-code:38302 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/05**\n- 阅读内容编辑新增普通文本与正则搜索、大小写开关、循环定位及匹配计数，支持独立拖动正文位置并在编辑后更新\n- 发现列表新增全局“显示全部分类”开关，最多三行横向滚动切换分类，保留返回时的分类与页码并支持备份\n- 将主题背景图解码移到后台线程，减少启动时的纯背景空窗\n- 修复书源通过 `@js:` 包装 data 书籍地址时无法加入书架的问题\n- 阅读记录保存最后阅读章节、进度和封面快照，删除书籍后仍可保留历史展示数据\n- 修复听书界面无字幕时章节标题和总集数信息回落到屏幕顶部的问题\n- 修复听书源字幕为空或仅含头信息时显示 null，以及切换章节时旧字幕覆盖新字幕的问题\n- 修复阅读记录写入时设备标识为空导致本机记录重复及旧备份恢复归属错误的问题\n- 升级 jsoup 至 1.23.2，兼容元素索引排除及旧书源脚本赋值行为\n- 回退 Cronet 至 152.0.7977.54，修复 Cronet 153 导致的组件不可用问题\n- 书源跨域资源请求不再默认携带登录认证头，降低第三方 CDN 风控拦截\n- 修复首次进入阅读页时迟到的正文布局回调可能覆盖用户滑动位置的问题\n- 主题设置新增禁用预测性返回动画开关\n- 修复关闭跟随壁纸配色后不会恢复开启前颜色的问题\n- 修复关闭 Cronet 后当前进程仍继续使用 Cronet 导致检查更新失败的问题\n- 修复快速重复点击段评或自定义评审按钮时弹出重复弹窗的问题\n- 修复书源脚本打开相同网页段评时仍会叠加弹窗的问题，保留不同页面及关闭后重新打开\n\n",
+        "createdAt": "2026-09-05T18:44:07Z",
+        "body": "<!-- legado-version-code:38305 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090523_releaseA_vc38302.apk",
-            "size": 21024155,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090523_releaseA_vc38302.apk"
+            "name": "legado_app_3.26090602_releaseA_vc38305.apk",
+            "size": 21024307,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_releaseA_vc38305.apk"
           },
           {
-            "name": "legado_app_3.26090523_release_vc38302.apk",
-            "size": 21024140,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090523_release_vc38302.apk"
+            "name": "legado_app_3.26090602_release_vc38305.apk",
+            "size": 21024300,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_release_vc38305.apk"
           },
           {
-            "name": "legado_app_3.26090523_universal_releaseA_vc38302.apk",
-            "size": 26974935,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090523_universal_releaseA_vc38302.apk"
+            "name": "legado_app_3.26090602_universal_releaseA_vc38305.apk",
+            "size": 26975083,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_universal_releaseA_vc38305.apk"
           },
           {
-            "name": "legado_app_3.26090523_universal_release_vc38302.apk",
-            "size": 26974924,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090523_universal_release_vc38302.apk"
+            "name": "legado_app_3.26090602_universal_release_vc38305.apk",
+            "size": 26975087,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_universal_release_vc38305.apk"
           }
         ]
       },
@@ -588,7 +588,7 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-05T16:45:22Z",
+      "sourceUpdatedAt": "2026-09-05T18:50:32Z",
       "githubArchived": false,
       "release": {
         "name": "MR 2609059 (测试版)",
@@ -630,7 +630,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 77,
+      "stars": 78,
       "sourceUpdatedAt": "2026-09-04T10:50:06Z",
       "githubArchived": false,
       "release": {
@@ -741,8 +741,8 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 13,
-      "sourceUpdatedAt": "2026-09-05T13:13:33Z",
+      "stars": 14,
+      "sourceUpdatedAt": "2026-09-05T17:10:46Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090520",
