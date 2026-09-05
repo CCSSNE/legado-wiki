@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T22:23:07.900Z",
+  "generatedAt": "2026-09-05T01:00:57.444Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47073,
+      "stars": 47074,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2146,
+      "stars": 2147,
       "sourceUpdatedAt": "2026-08-29T14:55:31Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1047,
-      "sourceUpdatedAt": "2026-09-04T22:16:23Z",
+      "stars": 1049,
+      "sourceUpdatedAt": "2026-09-05T00:58:01Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090505",
+        "name": "legado_app_3.26090508",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-04T21:54:45Z",
-        "body": "<!-- legado-version-code:38271 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/08/31**\n- 修复模拟追读起始日期损坏或缺失时打开设置和计算进度崩溃的问题\n- 正文加载失败时不再在错误提示上显示段评图标\n\n",
+        "createdAt": "2026-09-05T00:42:22Z",
+        "body": "<!-- legado-version-code:38282 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/05**\n- 书源跨域资源请求不再默认携带登录认证头，降低第三方 CDN 风控拦截\n- 修复首次进入阅读页时迟到的正文布局回调可能覆盖用户滑动位置的问题\n- 主题设置新增禁用预测性返回动画开关\n- 修复关闭跟随壁纸配色后不会恢复开启前颜色的问题\n- 修复关闭 Cronet 后当前进程仍继续使用 Cronet 导致检查更新失败的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090505_releaseA_vc38271.apk",
-            "size": 20985831,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090505_releaseA_vc38271.apk"
+            "name": "legado_app_3.26090508_releaseA_vc38282.apk",
+            "size": 20986692,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_releaseA_vc38282.apk"
           },
           {
-            "name": "legado_app_3.26090505_release_vc38271.apk",
-            "size": 20985817,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090505_release_vc38271.apk"
+            "name": "legado_app_3.26090508_release_vc38282.apk",
+            "size": 20986704,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_release_vc38282.apk"
           },
           {
-            "name": "legado_app_3.26090505_universal_releaseA_vc38271.apk",
-            "size": 26936618,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090505_universal_releaseA_vc38271.apk"
+            "name": "legado_app_3.26090508_universal_releaseA_vc38282.apk",
+            "size": 26937486,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_universal_releaseA_vc38282.apk"
           },
           {
-            "name": "legado_app_3.26090505_universal_release_vc38271.apk",
-            "size": 26936615,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090505_universal_release_vc38271.apk"
+            "name": "legado_app_3.26090508_universal_release_vc38282.apk",
+            "size": 26937491,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_universal_release_vc38282.apk"
           }
         ]
       },
