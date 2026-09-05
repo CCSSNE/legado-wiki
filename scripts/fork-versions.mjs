@@ -45,6 +45,7 @@ try {
   staticBranches = [];
 }
 const data = { branches: [...mainData.branches, ...staticBranches] };
+// 注意：hidden 预备项目也在 branches.json 里，前端不显示不计数，但这里照常 fork/同步防跑路。
 const results = [];
 const alerts = new Set(); // 触发过的告警类型: rewritten / default_branch_changed / gone
 

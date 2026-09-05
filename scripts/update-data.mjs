@@ -93,6 +93,21 @@ const branches = [
   }
 ];
 
+// 预备观察名单：还不符合收录标准，仅挂工作流防跑路备份。
+// hidden=true → 写进 branches.json 但前端不显示、不计数；fork-versions 照常 fork/同步。
+const watchlist = [
+  {
+    id: 'k',
+    name: '阅读 K',
+    tag: 'k',
+    repo: 'stwy0716/legado-K',
+    term: 'legado-branch-k',
+    hidden: true,
+    allowNoRelease: true,
+    note: '预备观察，未达收录标准，仅防跑路备份，不展示不计数。'
+  }
+];
+
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const headers = {
   Accept: 'application/vnd.github+json',
@@ -276,7 +291,7 @@ async function hydrateBranch(branch) {
 }
 
 const hydrated = [];
-for (const branch of branches) {
+for (const branch of [...branches, ...watchlist]) {
   hydrated.push(await hydrateBranch(branch));
 }
 

@@ -63,6 +63,7 @@ GitHub 下载加速条（开关 + 代理源选择，记忆在 localStorage）
 | 事项 | 人工（长期固定，改代码才变） | 自动（每小时跑，数据文件里变） |
 |---|---|---|
 | 收录谁 | ✅ `scripts/update-data.mjs` 的 `branches[]` 名单 + `data/branches-static.json`（一次性探测的非 Legado 系代表作）。加新软件就是在这里加一行 | — |
+| 预备观察（隐藏） | ✅ `scripts/update-data.mjs` 的 `watchlist[]`（`hidden:true`，如 `stwy0716/legado-K`）。写进 `branches.json` 但前端过滤，不显示、不计数、不进树；`fork-versions` 照常备份防跑路。转正即移到 `branches[]` 并去 `index.html` 挂树 | — |
 | 放左树还是右树、跟谁缩进 | ✅ `index.html` 的 `treeLeft / treeRight`（含 `platforms / flags / external / gray`） | — |
 | 谁是谁的后代（家族 Star 怎么算） | ✅ `index.html` 的 `FAMILY` 表 + 灰组 `familyOf` | 自动按表求和、排序 |
 | 实线还是虚线 | 人工定父子，机器判线型 | ✅ 实线当且仅当 GitHub API 说 `fork:true` 且 `parent` 等于树上父仓库，否则虚线 |
