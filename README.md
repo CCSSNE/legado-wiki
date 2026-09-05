@@ -137,19 +137,6 @@ data/cnb-sync.json          # 半自动：CNB 镜像映射 + 上游 HEAD 记录
 
 ---
 
-## 还没来得及放上去的版本（候选清单）
-
-以下是在 README / 群里先记下来的候选，收录状态以页面为准：
-
-- 纯 Android 新作：墨水 https://github.com/radiumCN/inkwell、夜讀 https://github.com/bennytsai1234/Night-Reader、墨境 https://github.com/keys-cherish/morealm-reader、Lumi https://github.com/huangder/Lumi_Books、LightNovelReader https://github.com/dmzz-yyhyy/LightNovelReader、Kototoro https://github.com/Kototoro-app/Kototoro（部分已进 `branches-static.json`，其余陆续收录）
-- 开元阅读（半闭源）https://github.com/miloquinn/open-reading
-- 彩读 https://github.com/ssnangua/ColorTxt（macOS、Windows 和 Linux）
-- ReadCat https://github.com/read-cat/read-cat（Windows）
-- Legado macOS 版本 https://github.com/Kequans/legado-for-mac-pub
-- 亦搜 https://github.com/mabDc/eso（安卓 / tv 大白版 / iOS 需自签 / Windows 需装 vc++ 运行库内置 3 个 dll / Linux 需 libsqlite3-dev / macOS）
-
----
-
 ## 交流与纠错
 
 - 提交新软件、补充信息或纠错：加 QQ 群 `1004372141`（也是阅读 C 交流群），或到本站开源地址 https://github.com/CCSSNE/legado-wiki 提 Issue / Discussion。
