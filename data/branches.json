@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T01:00:57.444Z",
+  "generatedAt": "2026-09-05T05:44:47.530Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 83,
-      "sourceUpdatedAt": "2026-09-04T20:51:16Z",
+      "stars": 84,
+      "sourceUpdatedAt": "2026-09-05T05:26:11Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090420",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47074,
+      "stars": 47072,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5978,
+      "stars": 5981,
       "sourceUpdatedAt": "2026-09-04T20:04:22Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2576,
+      "stars": 2577,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1049,
-      "sourceUpdatedAt": "2026-09-05T00:58:01Z",
+      "stars": 1050,
+      "sourceUpdatedAt": "2026-09-05T05:32:22Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090508",
+        "name": "legado_app_3.26090513",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-05T00:42:22Z",
-        "body": "<!-- legado-version-code:38282 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/05**\n- 书源跨域资源请求不再默认携带登录认证头，降低第三方 CDN 风控拦截\n- 修复首次进入阅读页时迟到的正文布局回调可能覆盖用户滑动位置的问题\n- 主题设置新增禁用预测性返回动画开关\n- 修复关闭跟随壁纸配色后不会恢复开启前颜色的问题\n- 修复关闭 Cronet 后当前进程仍继续使用 Cronet 导致检查更新失败的问题\n\n",
+        "createdAt": "2026-09-05T05:21:23Z",
+        "body": "<!-- legado-version-code:38290 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/05**\n- 升级 jsoup 至 1.23.2，兼容元素索引排除及旧书源脚本赋值行为\n- 回退 Cronet 至 152.0.7977.54，修复 Cronet 153 导致的组件不可用问题\n- 书源跨域资源请求不再默认携带登录认证头，降低第三方 CDN 风控拦截\n- 修复首次进入阅读页时迟到的正文布局回调可能覆盖用户滑动位置的问题\n- 主题设置新增禁用预测性返回动画开关\n- 修复关闭跟随壁纸配色后不会恢复开启前颜色的问题\n- 修复关闭 Cronet 后当前进程仍继续使用 Cronet 导致检查更新失败的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090508_releaseA_vc38282.apk",
-            "size": 20986692,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_releaseA_vc38282.apk"
+            "name": "legado_app_3.26090513_releaseA_vc38290.apk",
+            "size": 21021428,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090513_releaseA_vc38290.apk"
           },
           {
-            "name": "legado_app_3.26090508_release_vc38282.apk",
-            "size": 20986704,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_release_vc38282.apk"
+            "name": "legado_app_3.26090513_release_vc38290.apk",
+            "size": 21021439,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090513_release_vc38290.apk"
           },
           {
-            "name": "legado_app_3.26090508_universal_releaseA_vc38282.apk",
-            "size": 26937486,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_universal_releaseA_vc38282.apk"
+            "name": "legado_app_3.26090513_universal_releaseA_vc38290.apk",
+            "size": 26972218,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090513_universal_releaseA_vc38290.apk"
           },
           {
-            "name": "legado_app_3.26090508_universal_release_vc38282.apk",
-            "size": 26937491,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090508_universal_release_vc38282.apk"
+            "name": "legado_app_3.26090513_universal_release_vc38290.apk",
+            "size": 26972226,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090513_universal_release_vc38290.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 503,
+      "stars": 504,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -630,7 +630,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 74,
+      "stars": 75,
       "sourceUpdatedAt": "2026-09-04T10:50:06Z",
       "githubArchived": false,
       "release": {
@@ -741,7 +741,7 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 11,
+      "stars": 12,
       "sourceUpdatedAt": "2026-09-04T02:14:12Z",
       "githubArchived": false,
       "release": {
@@ -801,6 +801,42 @@
       "errors": [],
       "fork": true,
       "forkOf": "Luoyacheng/legado-E"
+    },
+    {
+      "id": "k",
+      "name": "阅读 K",
+      "tag": "k",
+      "repo": "stwy0716/legado-K",
+      "term": "legado-branch-k",
+      "hidden": true,
+      "allowNoRelease": true,
+      "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
+      "stars": 3,
+      "sourceUpdatedAt": "2026-09-05T03:16:38Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado MD3 v3.26.7-20260905-031636 (预发布)",
+        "tagName": "v3.26.7-20260905-031636",
+        "prerelease": true,
+        "publishedAt": "2026-09-05T03:16:38Z",
+        "createdAt": "2026-09-05T03:08:33Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: 60891eda1fee402a3d8f7d685ddac8766bd38404\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "assets": [
+          {
+            "name": "app-arm64-release.apk",
+            "size": 23106721,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260905-031636/app-arm64-release.apk"
+          },
+          {
+            "name": "app-universal-release.apk",
+            "size": 39563015,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260905-031636/app-universal-release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
     },
     {
       "id": "fu",
