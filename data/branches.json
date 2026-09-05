@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T19:04:08.464Z",
+  "generatedAt": "2026-09-05T21:17:56.499Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 87,
-      "sourceUpdatedAt": "2026-09-05T18:16:22Z",
+      "sourceUpdatedAt": "2026-09-05T20:46:01Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090420",
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 5987,
-      "sourceUpdatedAt": "2026-09-04T20:04:22Z",
+      "sourceUpdatedAt": "2026-09-05T20:55:47Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.27",
-        "tagName": "3.26.16-beta.27",
+        "name": "Pre-release 3.26.16-beta.28",
+        "tagName": "3.26.16-beta.28",
         "prerelease": true,
-        "publishedAt": "2026-09-04T20:04:09Z",
-        "createdAt": "2026-09-04T18:38:39Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 阅读器相关优化",
+        "publishedAt": "2026-09-05T20:22:51Z",
+        "createdAt": "2026-09-05T20:09:39Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 漫画阅读器相关优化与修复\n* feat: 阅读器相关优化与修复",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.27-arm64-v8a.apk",
-            "size": 19527912,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.27/legado-3.26.16-beta.27-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.28-arm64-v8a.apk",
+            "size": 19527903,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.28/legado-3.26.16-beta.28-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.27-armeabi-v7a.apk",
-            "size": 19067744,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.27/legado-3.26.16-beta.27-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.28-armeabi-v7a.apk",
+            "size": 19067734,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.28/legado-3.26.16-beta.28-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.27.apk",
-            "size": 26100390,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.27/legado-3.26.16-beta.27.apk"
+            "name": "legado-3.26.16-beta.28.apk",
+            "size": 26100370,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.28/legado-3.26.16-beta.28.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 263811679,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.27/mapping.txt"
+            "size": 263809285,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.28/mapping.txt"
           }
         ]
       },
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 1055,
-      "sourceUpdatedAt": "2026-09-05T18:54:40Z",
+      "sourceUpdatedAt": "2026-09-05T21:08:33Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090602",
+        "name": "legado_app_3.26090603",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-05T18:44:07Z",
-        "body": "<!-- legado-version-code:38305 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n\n",
+        "createdAt": "2026-09-05T19:40:15Z",
+        "body": "<!-- legado-version-code:38306 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090602_releaseA_vc38305.apk",
-            "size": 21024307,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_releaseA_vc38305.apk"
+            "name": "legado_app_3.26090603_releaseA_vc38306.apk",
+            "size": 21024380,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_releaseA_vc38306.apk"
           },
           {
-            "name": "legado_app_3.26090602_release_vc38305.apk",
-            "size": 21024300,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_release_vc38305.apk"
+            "name": "legado_app_3.26090603_release_vc38306.apk",
+            "size": 21024374,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_release_vc38306.apk"
           },
           {
-            "name": "legado_app_3.26090602_universal_releaseA_vc38305.apk",
-            "size": 26975083,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_universal_releaseA_vc38305.apk"
+            "name": "legado_app_3.26090603_universal_releaseA_vc38306.apk",
+            "size": 26975160,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_universal_releaseA_vc38306.apk"
           },
           {
-            "name": "legado_app_3.26090602_universal_release_vc38305.apk",
-            "size": 26975087,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090602_universal_release_vc38305.apk"
+            "name": "legado_app_3.26090603_universal_release_vc38306.apk",
+            "size": 26975157,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090603_universal_release_vc38306.apk"
           }
         ]
       },
@@ -588,7 +588,7 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-05T18:50:32Z",
+      "sourceUpdatedAt": "2026-09-05T20:37:29Z",
       "githubArchived": false,
       "release": {
         "name": "MR 2609059 (测试版)",
