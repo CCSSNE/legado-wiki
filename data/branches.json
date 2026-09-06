@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T04:44:41.178Z",
+  "generatedAt": "2026-09-06T09:28:44.978Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 89,
-      "sourceUpdatedAt": "2026-09-06T00:47:15Z",
+      "stars": 90,
+      "sourceUpdatedAt": "2026-09-06T09:19:35Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.090522",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 13,
+          "stars": 14,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47072,
+      "stars": 47071,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 5994,
+      "stars": 5999,
       "sourceUpdatedAt": "2026-09-05T20:55:47Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2587,
+      "stars": 2590,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1057,
-      "sourceUpdatedAt": "2026-09-05T22:00:29Z",
+      "stars": 1058,
+      "sourceUpdatedAt": "2026-09-06T09:24:45Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090605",
+        "name": "legado_app_3.26090615",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-05T21:08:30Z",
-        "body": "<!-- legado-version-code:38307 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n- 修复搜索详情换源到文件书源时缺少下载链接导致 LoadWebFileError\n\n",
+        "createdAt": "2026-09-06T07:23:04Z",
+        "body": "<!-- legado-version-code:38309 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n- 修复搜索详情换源到文件书源时缺少下载链接导致 LoadWebFileError\n- 修复连续解析书源规则时意外删除 HTML 节点，导致书籍链接误指向作者主页或发现页的问题\n- 修复定时任务登录 URL 输入框无法换行及使用代码编辑器的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090605_releaseA_vc38307.apk",
-            "size": 21024414,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_releaseA_vc38307.apk"
+            "name": "legado_app_3.26090615_releaseA_vc38309.apk",
+            "size": 21024492,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090615_releaseA_vc38309.apk"
           },
           {
-            "name": "legado_app_3.26090605_release_vc38307.apk",
-            "size": 21024413,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_release_vc38307.apk"
+            "name": "legado_app_3.26090615_release_vc38309.apk",
+            "size": 21024471,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090615_release_vc38309.apk"
           },
           {
-            "name": "legado_app_3.26090605_universal_releaseA_vc38307.apk",
-            "size": 26975214,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_universal_releaseA_vc38307.apk"
+            "name": "legado_app_3.26090615_universal_releaseA_vc38309.apk",
+            "size": 26975275,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090615_universal_releaseA_vc38309.apk"
           },
           {
-            "name": "legado_app_3.26090605_universal_release_vc38307.apk",
-            "size": 26975199,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090605_universal_release_vc38307.apk"
+            "name": "legado_app_3.26090615_universal_release_vc38309.apk",
+            "size": 26975258,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090615_universal_release_vc38309.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 506,
+      "stars": 508,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -324,6 +324,34 @@
       "forkOf": "youfengknight/Legado_Max"
     },
     {
+      "id": "r",
+      "name": "阅读 R",
+      "tag": "r",
+      "repo": "refgd/legado",
+      "term": "legado-branch-r",
+      "stars": 282,
+      "sourceUpdatedAt": "2026-06-21T19:49:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "3.26.062203",
+        "tagName": "3.26.062203",
+        "prerelease": false,
+        "publishedAt": "2026-06-21T19:49:23Z",
+        "createdAt": "2026-06-21T16:02:04Z",
+        "body": "- 修复 TTS 回原位时定位异常的问题\r\n- 修复切换主题后 TTS 浮窗消失的问题\r\n- 优化书籍首次加载速度\r\n- 修复其它BUG",
+        "assets": [
+          {
+            "name": "legado_app_3.26.062203_10489.apk",
+            "size": 32030735,
+            "browserDownloadUrl": "https://github.com/refgd/legado/releases/download/3.26.062203/legado_app_3.26.062203_10489.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Rimchars/legado"
+    },
+    {
       "id": "max",
       "name": "阅读 MAX",
       "tag": "max",
@@ -364,34 +392,6 @@
       "forkOf": "Luoyacheng/legado-E",
       "abandoned": "弃坑",
       "abandonedReason": "作者已声明不再维护"
-    },
-    {
-      "id": "r",
-      "name": "阅读 R",
-      "tag": "r",
-      "repo": "refgd/legado",
-      "term": "legado-branch-r",
-      "stars": 281,
-      "sourceUpdatedAt": "2026-06-21T19:49:22Z",
-      "githubArchived": false,
-      "release": {
-        "name": "3.26.062203",
-        "tagName": "3.26.062203",
-        "prerelease": false,
-        "publishedAt": "2026-06-21T19:49:23Z",
-        "createdAt": "2026-06-21T16:02:04Z",
-        "body": "- 修复 TTS 回原位时定位异常的问题\r\n- 修复切换主题后 TTS 浮窗消失的问题\r\n- 优化书籍首次加载速度\r\n- 修复其它BUG",
-        "assets": [
-          {
-            "name": "legado_app_3.26.062203_10489.apk",
-            "size": 32030735,
-            "browserDownloadUrl": "https://github.com/refgd/legado/releases/download/3.26.062203/legado_app_3.26.062203_10489.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Rimchars/legado"
     },
     {
       "id": "tauri",
@@ -554,25 +554,25 @@
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
       "stars": 120,
-      "sourceUpdatedAt": "2026-08-22T13:50:54Z",
+      "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado 3.26.082221",
-        "tagName": "3.26.082221",
+        "name": "Legado 3.26.090617",
+        "tagName": "3.26.090617",
         "prerelease": false,
-        "publishedAt": "2026-08-22T13:50:55Z",
-        "createdAt": "2026-08-22T13:35:39Z",
+        "publishedAt": "2026-09-06T09:25:50Z",
+        "createdAt": "2026-09-06T09:09:44Z",
         "body": null,
         "assets": [
           {
-            "name": "legado_releaseS_3.26.082221.apk",
-            "size": 23673202,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_releaseS_3.26.082221.apk"
+            "name": "legado_releaseS_3.26.090617.apk",
+            "size": 23678357,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_releaseS_3.26.090617.apk"
           },
           {
-            "name": "legado_release_3.26.082221.apk",
-            "size": 23673214,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.082221/legado_release_3.26.082221.apk"
+            "name": "legado_release_3.26.090617.apk",
+            "size": 23678394,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_release_3.26.090617.apk"
           }
         ]
       },
@@ -587,7 +587,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 92,
+      "stars": 93,
       "sourceUpdatedAt": "2026-09-05T21:35:34Z",
       "githubArchived": false,
       "release": {
@@ -812,7 +812,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-09-06T00:59:23Z",
+      "sourceUpdatedAt": "2026-09-06T06:06:48Z",
       "githubArchived": false,
       "release": {
         "name": "Legado MD3 v3.26.7-20260906-005921 (预发布)",
