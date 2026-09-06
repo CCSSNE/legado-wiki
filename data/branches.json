@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T13:41:59.093Z",
+  "generatedAt": "2026-09-06T17:06:27.355Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 91,
-      "sourceUpdatedAt": "2026-09-06T13:02:18Z",
+      "stars": 92,
+      "sourceUpdatedAt": "2026-09-06T15:41:28Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.090522",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47073,
+      "stars": 47075,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6001,
+      "stars": 6002,
       "sourceUpdatedAt": "2026-09-05T20:55:47Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1059,
-      "sourceUpdatedAt": "2026-09-06T13:39:41Z",
+      "stars": 1064,
+      "sourceUpdatedAt": "2026-09-06T16:21:30Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090621",
+        "name": "legado_app_3.26090623",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-06T13:04:03Z",
-        "body": "<!-- legado-version-code:38318 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 修复封面竖排书名超过四列时错落、回填和溢出的问题，超出部分使用竖向省略号\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 恢复发现列表分类标签的横向留白，避免长分类名显示拥挤\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n- 修复搜索详情换源到文件书源时缺少下载链接导致 LoadWebFileError\n- 修复连续解析书源规则时意外删除 HTML 节点，导致书籍链接误指向作者主页或发现页的问题\n- 修复启用 Cronet 时订阅正文视频、图片等子资源仍绕过应用网络请求的问题\n- 修复 Android 13+ 禁用预测性返回动画时绕过页面返回处理导致阅读页灰屏无响应的问题\n- 修复 Android 16 上非原生段评底部网页弹窗使用浮动窗口导致高度变化时底部悬空的问题\n- 修复 Android 16 订阅源打开网页时后台 WebView 子资源回调读取页面状态导致闪退的问题\n- 修复 Android 10 段评图片校验调用高版本 ImageDecoder 接口导致崩溃的问题\n- 修复定时任务登录 URL 输入框无法换行及使用代码编辑器的问题\n- 登录 JS 与普通 JS 书源统一支持刷新书籍详情、目录和正文\n\n",
+        "createdAt": "2026-09-06T15:47:36Z",
+        "body": "<!-- legado-version-code:38324 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/06**\n- 修复正文接口返回字面量 `\\n` 或 `\\r\\n` 时未换行导致的排版问题\n- 竖排默认封面书名恢复为原版错落布局，横排布局保持不变\n- 优化发现列表多行分类的垂直间距，并修复向上翻页时页码显示不同步的问题\n- 恢复发现列表分类标签的横向留白，避免长分类名显示拥挤\n- 修复替换规则长文本编辑可能卡死或崩溃的问题，退出编辑时提示未保存内容，并支持分享所选替换、目录和字典规则\n- Cronet 动态库首次下载或校验失败后允许在当前进程有限重试一次，避免后续请求永久提示组件不可用\n- 修复搜索详情换源到文件书源时缺少下载链接导致 LoadWebFileError\n- 修复连续解析书源规则时意外删除 HTML 节点，导致书籍链接误指向作者主页或发现页的问题\n- 修复启用 Cronet 时订阅正文视频、图片等子资源仍绕过应用网络请求的问题\n- 修复 Android 13+ 禁用预测性返回动画时绕过页面返回处理导致阅读页灰屏无响应的问题\n- 修复 Android 16 上非原生段评底部网页弹窗使用浮动窗口导致高度变化时底部悬空的问题\n- 修复 Android 16 订阅源打开网页时后台 WebView 子资源回调读取页面状态导致闪退的问题\n- 修复 Android 10 段评图片校验调用高版本 ImageDecoder 接口导致崩溃的问题\n- 统一测试版与正式版更新下载方式，测试版更新改用系统下载器\n- 修复横向页面动画滑动过程中反向拖动无法切换方向的问题\n- 修复定时任务登录 URL 输入框无法换行及使用代码编辑器的问题\n- 登录 JS 与普通 JS 书源统一支持刷新书籍详情、目录和正文\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090621_releaseA_vc38318.apk",
-            "size": 21025022,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090621_releaseA_vc38318.apk"
+            "name": "legado_app_3.26090623_releaseA_vc38324.apk",
+            "size": 21025093,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090623_releaseA_vc38324.apk"
           },
           {
-            "name": "legado_app_3.26090621_release_vc38318.apk",
-            "size": 21025010,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090621_release_vc38318.apk"
+            "name": "legado_app_3.26090623_release_vc38324.apk",
+            "size": 21025085,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090623_release_vc38324.apk"
           },
           {
-            "name": "legado_app_3.26090621_universal_releaseA_vc38318.apk",
-            "size": 26975798,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090621_universal_releaseA_vc38318.apk"
+            "name": "legado_app_3.26090623_universal_releaseA_vc38324.apk",
+            "size": 26975870,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090623_universal_releaseA_vc38324.apk"
           },
           {
-            "name": "legado_app_3.26090621_universal_release_vc38318.apk",
-            "size": 26975785,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090621_universal_release_vc38318.apk"
+            "name": "legado_app_3.26090623_universal_release_vc38324.apk",
+            "size": 26975872,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090623_universal_release_vc38324.apk"
           }
         ]
       },
@@ -257,7 +257,7 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 329,
-      "sourceUpdatedAt": "2026-09-04T09:45:53Z",
+      "sourceUpdatedAt": "2026-09-06T16:52:47Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.090417",
@@ -742,7 +742,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-06T11:54:05Z",
+      "sourceUpdatedAt": "2026-09-06T15:05:42Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090520",
