@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T21:25:51.696Z",
+  "generatedAt": "2026-09-06T23:58:28.048Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-06T21:17:58Z",
+      "sourceUpdatedAt": "2026-09-06T22:54:23Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.090522",
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1065,
-      "sourceUpdatedAt": "2026-09-06T21:25:08Z",
+      "stars": 1066,
+      "sourceUpdatedAt": "2026-09-06T23:51:15Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090704",
+        "name": "legado_app_3.26090707",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-06T20:50:34Z",
-        "body": "<!-- legado-version-code:38329 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n\n",
+        "createdAt": "2026-09-06T23:01:46Z",
+        "body": "<!-- legado-version-code:38338 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- Web 调试 JavaScript 书源时先通过脚本接口解析保存，确保调试使用提取后的源\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 登录 UI v2 的脚本登录时注入当前书籍和章节上下文\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n- 优化关闭欢迎页或从已有任务返回时的启动中转窗口，避免首帧闪现主题背景\n- 修复系统文件选择器筛选 JavaScript 书源时 MIME 类型兼容性\n- Web 新建 JavaScript 书源时加载与 App 同源的脚本模板\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090704_releaseA_vc38329.apk",
-            "size": 21025637,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090704_releaseA_vc38329.apk"
+            "name": "legado_app_3.26090707_releaseA_vc38338.apk",
+            "size": 21044662,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_releaseA_vc38338.apk"
           },
           {
-            "name": "legado_app_3.26090704_release_vc38329.apk",
-            "size": 21025618,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090704_release_vc38329.apk"
+            "name": "legado_app_3.26090707_release_vc38338.apk",
+            "size": 21028275,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_release_vc38338.apk"
           },
           {
-            "name": "legado_app_3.26090704_universal_releaseA_vc38329.apk",
-            "size": 26976413,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090704_universal_releaseA_vc38329.apk"
+            "name": "legado_app_3.26090707_universal_releaseA_vc38338.apk",
+            "size": 26995429,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_universal_releaseA_vc38338.apk"
           },
           {
-            "name": "legado_app_3.26090704_universal_release_vc38329.apk",
-            "size": 26976403,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090704_universal_release_vc38329.apk"
+            "name": "legado_app_3.26090707_universal_release_vc38338.apk",
+            "size": 26979057,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_universal_release_vc38338.apk"
           }
         ]
       },
@@ -803,6 +803,35 @@
       "forkOf": "Luoyacheng/legado-E"
     },
     {
+      "id": "fu",
+      "name": "阅融",
+      "tag": "fu",
+      "repo": "h166278/legado_FU",
+      "term": "legado-branch-fu",
+      "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
+      "stars": 4,
+      "sourceUpdatedAt": "2026-09-06T12:36:49Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_fu_3.26.090619",
+        "tagName": "3.26.090619",
+        "prerelease": false,
+        "publishedAt": "2026-09-06T12:36:49Z",
+        "createdAt": "2026-09-06T11:50:07Z",
+        "body": "### 更新内容\n### 优化\n\n- 目录当前章节选中样式\n\n### 更新\n\n- 合并 legado_NG 最新主线，保留 FU 三项独有功能\n\n### 新增\n\n- FU 的包名、签名与更新通道\n\n",
+        "assets": [
+          {
+            "name": "legado_fu_3.26.09061950_release.apk",
+            "size": 36552778,
+            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090619/legado_fu_3.26.09061950_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "k",
       "name": "阅读 K",
       "tag": "k",
@@ -831,35 +860,6 @@
             "name": "app-universal-release.apk",
             "size": 40166684,
             "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260906-005921/app-universal-release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
-      "id": "fu",
-      "name": "阅融",
-      "tag": "fu",
-      "repo": "h166278/legado_FU",
-      "term": "legado-branch-fu",
-      "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
-      "stars": 3,
-      "sourceUpdatedAt": "2026-09-06T12:36:49Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_fu_3.26.090619",
-        "tagName": "3.26.090619",
-        "prerelease": false,
-        "publishedAt": "2026-09-06T12:36:49Z",
-        "createdAt": "2026-09-06T11:50:07Z",
-        "body": "### 更新内容\n### 优化\n\n- 目录当前章节选中样式\n\n### 更新\n\n- 合并 legado_NG 最新主线，保留 FU 三项独有功能\n\n### 新增\n\n- FU 的包名、签名与更新通道\n\n",
-        "assets": [
-          {
-            "name": "legado_fu_3.26.09061950_release.apk",
-            "size": 36552778,
-            "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090619/legado_fu_3.26.09061950_release.apk"
           }
         ]
       },
