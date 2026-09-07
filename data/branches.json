@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T20:36:58.603Z",
+  "generatedAt": "2026-09-07T23:32:21.074Z",
   "branches": [
     {
       "id": "c",
@@ -185,35 +185,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 1078,
-      "sourceUpdatedAt": "2026-09-07T20:36:31Z",
+      "sourceUpdatedAt": "2026-09-07T23:13:19Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090803",
+        "name": "legado_app_3.26090806",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-07T19:53:50Z",
-        "body": "<!-- legado-version-code:38362 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/08**\n- 本地 PDF 支持双指缩放和放大后拖动，单页、双页及滚动阅读沿用点击区域操作，翻页保持缩放并按可见区域重新渲染细节\n- 修复漫画相邻章节并发加载时旧页面列表可能覆盖新列表的问题\n- 漫画横向阅读新增默认关闭的从右到左翻页，手势、点击区、按键、自动翻页和章节导航保持一致，支持保留进度与设置备份\n- 同名不同作者的阅读记录分别统计，封面、章节、打开和删除操作按作者区分，保留旧记录与备份恢复数据\n- 修复文字、漫画和听书快速切换作者时未保存的阅读时长可能被旧累计值覆盖的问题\n\n",
+        "createdAt": "2026-09-07T22:45:12Z",
+        "body": "<!-- legado-version-code:38365 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/08**\n- 阅读设置新增默认关闭的备忘入口，支持半屏编辑和 Markdown 显示，跟随书籍换源迁移并随书架备份恢复\n- 修复漫画及 PDF 跳转章节时旧页面的滚动回调可能覆盖目标阅读位置的问题\n- Cronet 回退至 152.0.7977.54，恢复按设备架构下载组件，移除安装包内的多架构 Cronet 原生库以减少手机占用\n- 本地 PDF 支持双指缩放和放大后拖动，单页、双页及滚动阅读沿用点击区域操作，翻页保持缩放并按可见区域重新渲染细节\n- 修复漫画相邻章节并发加载时旧页面列表可能覆盖新列表的问题\n- 漫画横向阅读新增默认关闭的从右到左翻页，手势、点击区、按键、自动翻页和章节导航保持一致，支持保留进度与设置备份\n- 同名不同作者的阅读记录分别统计，封面、章节、打开和删除操作按作者区分，保留旧记录与备份恢复数据\n- 修复文字、漫画和听书快速切换作者时未保存的阅读时长可能被旧累计值覆盖的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090803_releaseA_vc38362.apk",
-            "size": 34446541,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090803_releaseA_vc38362.apk"
+            "name": "legado_app_3.26090806_releaseA_vc38365.apk",
+            "size": 23014546,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090806_releaseA_vc38365.apk"
           },
           {
-            "name": "legado_app_3.26090803_release_vc38362.apk",
-            "size": 34446524,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090803_release_vc38362.apk"
+            "name": "legado_app_3.26090806_release_vc38365.apk",
+            "size": 23014539,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090806_release_vc38365.apk"
           },
           {
-            "name": "legado_app_3.26090803_universal_releaseA_vc38362.apk",
-            "size": 55356297,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090803_universal_releaseA_vc38362.apk"
+            "name": "legado_app_3.26090806_universal_releaseA_vc38365.apk",
+            "size": 28965380,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090806_universal_releaseA_vc38365.apk"
           },
           {
-            "name": "legado_app_3.26090803_universal_release_vc38362.apk",
-            "size": 55356283,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090803_universal_release_vc38362.apk"
+            "name": "legado_app_3.26090806_universal_release_vc38365.apk",
+            "size": 28965380,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090806_universal_release_vc38365.apk"
           }
         ]
       },
