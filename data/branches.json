@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T23:58:28.048Z",
+  "generatedAt": "2026-09-07T04:48:11.572Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-06T22:54:23Z",
+      "sourceUpdatedAt": "2026-09-07T04:43:06Z",
       "githubArchived": false,
       "release": {
-        "name": "v3.26.090522",
-        "tagName": "v3.26.090522",
-        "prerelease": false,
-        "publishedAt": "2026-09-05T22:44:05Z",
+        "name": "阅读C v3.26.090702（预发布）",
+        "tagName": "v3.26.090702",
+        "prerelease": true,
+        "publishedAt": "2026-09-07T02:11:33Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.090522（10851）\n\n### 模型与管理\n\n- 供应商管理改短按设当前、长按编辑，删除收进编辑页，图片/视频管理补充删除。\n- 模型与 MCP 管理改短按主操作、长按编辑，删除收进编辑页，MCP 合并为单一管理入口。\n\n### AI创作\n\n- 提示词编辑器改用 Vditor 即时渲染，提示词页加图入口与发送图片分辨率设置。\n- 插图弹窗可选版式与总高度，多选按宫格表格排框。\n- 生图补随机种子、视频补请求编号，工作流记录图片 base64。\n- 图片/视频/分镜/选角/净化各走各的请求体模板，缺位直接报错。\n- 供应商增加多模态开关（ZEN 默认关闭），无多模态能力时转文字占位。\n- 破坏性版本变更自检：按应用版本号逐字比对，升级时回出厂配置并弹窗汇总。\n- 工作流文本出口脱敏、补记 LLM 返回；排版备注解构每图备注四宫格各写各的。\n- 插图/缓存管理可查看工作流（只读全屏脱敏 JSON）；四处 MD 预览统一 WebView，卡片保存 MD 时连带图片。\n\n### 修复\n\n- 查看工作流高亮改用已注册 source.js，修复未注册 source.json 导致崩溃。\n- 生成媒体三处菜单补插入，正文插图预填暂存用完清空。",
+        "body": "## 阅读C v3.26.090702（10867）\n\n### 可热更新 JS Agent\n\n- 落地全插件式 Agent 核心：完整工具调用与上下文管理，支持 MCP 与 Skill，内置 MCP Server 对外开放，插件可热更新。\n- 统一 MCP、陪读记忆、运行诊断与迁移备份；插件快照不可变、运行状态原子更新。\n- 支持记忆系统、联网工具、书架整理、全文搜索等 19 个内置 MCP 工具。\n- Agent 数据按版本门管理：版本升级即重置旧数据，并移除单行大小限制。\n\n### AI 聊天\n\n- 阅读页问 AI 悬浮窗与大界面统一为同一套会话，支持全屏跳转；悬浮窗对齐大界面的模型显示、更多菜单、空态、输入状态与历史操作。\n- 新增提示词注入与工具调用折叠卡；上下文注入卡只显示真实存在项并全文呈现。\n- 每轮回复下方新增可折叠用量统计与会话总计卡；口径修正：轮为会话轮数、步为模型请求次数，只在总计卡显示，总计卡首行改为英文格式 N-Turn N-Step | LLM-x Tool-x。\n- 输出速度按请求总时长计算，修复静默思考导致的虚高。\n- 上下文治理：历史硬保留预算默认 10K 可配置，默认仅注入核心工具、工具目录按需加载，超长工具结果留头尾剪枝，工具模型名改为可读 ID。\n- AI 对话菜单新增导出对话：info、协议消息与运行事件全量原始 JSON 经分享面板存取，全事件保留并流式写入。\n- 阅读页问 AI：选中正文改为预填输入框，等待手动发送。\n\n### AI创作\n\n- 新增内置本地画图供应商 Local Dream：连接本机画图后端，无需鉴权，模型由后端启动时选定，支持 SSE 流式响应解析。\n- Local Dream 参数补全：重绘幅度、画面比例与 OpenCL 加速开关；纯文生图请求自动省略图片字段。\n\n### 修复\n\n- 修复关于页更新日志、空历史开局、全屏 AI 新对话、Agent 迁移悬空选择等多处崩溃。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.090522_10851.apk",
-            "size": 35598307,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090522/legado_oss_3.26.090522_10851.apk"
+            "name": "legado_oss_3.26.090702_10867.apk",
+            "size": 35785097,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090702/legado_oss_3.26.090702_10867.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6004,
+      "stars": 6005,
       "sourceUpdatedAt": "2026-09-06T20:18:56Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2595,
+      "stars": 2599,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1066,
-      "sourceUpdatedAt": "2026-09-06T23:51:15Z",
+      "stars": 1069,
+      "sourceUpdatedAt": "2026-09-07T04:43:59Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090707",
+        "name": "legado_app_3.26090711",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-06T23:01:46Z",
-        "body": "<!-- legado-version-code:38338 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- Web 调试 JavaScript 书源时先通过脚本接口解析保存，确保调试使用提取后的源\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 登录 UI v2 的脚本登录时注入当前书籍和章节上下文\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n- 优化关闭欢迎页或从已有任务返回时的启动中转窗口，避免首帧闪现主题背景\n- 修复系统文件选择器筛选 JavaScript 书源时 MIME 类型兼容性\n- Web 新建 JavaScript 书源时加载与 App 同源的脚本模板\n\n",
+        "createdAt": "2026-09-07T03:23:38Z",
+        "body": "<!-- legado-version-code:38341 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- 阅读记录新增可选增强布局与按天统计，展示累计阅读成就、封面和最后章节\n- 阅读记录独立保留封面快照，支持可选封面备份，并修复恢复旧备份时章节快照回退\n- Web 调试 JavaScript 书源时先通过脚本接口解析保存，确保调试使用提取后的源\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 登录 UI v2 的脚本登录时注入当前书籍和章节上下文\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n- 优化关闭欢迎页或从已有任务返回时的启动中转窗口，避免首帧闪现主题背景\n- 修复系统文件选择器筛选 JavaScript 书源时 MIME 类型兼容性\n- Web 新建 JavaScript 书源时加载与 App 同源的脚本模板\n- 修复 Android 16 冷启动时欢迎页透明导致桌面或系统启动图标与欢迎内容重叠的问题\n- 修复阅读高亮下划线绘制在文字上方的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090707_releaseA_vc38338.apk",
-            "size": 21044662,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_releaseA_vc38338.apk"
+            "name": "legado_app_3.26090711_releaseA_vc38341.apk",
+            "size": 21050924,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_releaseA_vc38341.apk"
           },
           {
-            "name": "legado_app_3.26090707_release_vc38338.apk",
-            "size": 21028275,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_release_vc38338.apk"
+            "name": "legado_app_3.26090711_release_vc38341.apk",
+            "size": 21050925,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_release_vc38341.apk"
           },
           {
-            "name": "legado_app_3.26090707_universal_releaseA_vc38338.apk",
-            "size": 26995429,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_universal_releaseA_vc38338.apk"
+            "name": "legado_app_3.26090711_universal_releaseA_vc38341.apk",
+            "size": 27001717,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_universal_releaseA_vc38341.apk"
           },
           {
-            "name": "legado_app_3.26090707_universal_release_vc38338.apk",
-            "size": 26979057,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090707_universal_release_vc38338.apk"
+            "name": "legado_app_3.26090711_universal_release_vc38341.apk",
+            "size": 27001720,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_universal_release_vc38341.apk"
           }
         ]
       },
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 329,
+      "stars": 330,
       "sourceUpdatedAt": "2026-09-06T17:07:49Z",
       "githubArchived": false,
       "release": {
@@ -329,7 +329,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 283,
+      "stars": 284,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 204,
+      "stars": 205,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -742,7 +742,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-06T15:05:42Z",
+      "sourceUpdatedAt": "2026-09-07T04:39:39Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090520",
