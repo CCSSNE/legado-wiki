@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T04:48:11.572Z",
+  "generatedAt": "2026-09-07T10:24:05.020Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 92,
-      "sourceUpdatedAt": "2026-09-07T04:43:06Z",
+      "sourceUpdatedAt": "2026-09-07T09:59:55Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090702（预发布）",
-        "tagName": "v3.26.090702",
+        "name": "阅读C v3.26.090704（预发布）",
+        "tagName": "v3.26.090704",
         "prerelease": true,
-        "publishedAt": "2026-09-07T02:11:33Z",
+        "publishedAt": "2026-09-07T05:30:05Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.090702（10867）\n\n### 可热更新 JS Agent\n\n- 落地全插件式 Agent 核心：完整工具调用与上下文管理，支持 MCP 与 Skill，内置 MCP Server 对外开放，插件可热更新。\n- 统一 MCP、陪读记忆、运行诊断与迁移备份；插件快照不可变、运行状态原子更新。\n- 支持记忆系统、联网工具、书架整理、全文搜索等 19 个内置 MCP 工具。\n- Agent 数据按版本门管理：版本升级即重置旧数据，并移除单行大小限制。\n\n### AI 聊天\n\n- 阅读页问 AI 悬浮窗与大界面统一为同一套会话，支持全屏跳转；悬浮窗对齐大界面的模型显示、更多菜单、空态、输入状态与历史操作。\n- 新增提示词注入与工具调用折叠卡；上下文注入卡只显示真实存在项并全文呈现。\n- 每轮回复下方新增可折叠用量统计与会话总计卡；口径修正：轮为会话轮数、步为模型请求次数，只在总计卡显示，总计卡首行改为英文格式 N-Turn N-Step | LLM-x Tool-x。\n- 输出速度按请求总时长计算，修复静默思考导致的虚高。\n- 上下文治理：历史硬保留预算默认 10K 可配置，默认仅注入核心工具、工具目录按需加载，超长工具结果留头尾剪枝，工具模型名改为可读 ID。\n- AI 对话菜单新增导出对话：info、协议消息与运行事件全量原始 JSON 经分享面板存取，全事件保留并流式写入。\n- 阅读页问 AI：选中正文改为预填输入框，等待手动发送。\n\n### AI创作\n\n- 新增内置本地画图供应商 Local Dream：连接本机画图后端，无需鉴权，模型由后端启动时选定，支持 SSE 流式响应解析。\n- Local Dream 参数补全：重绘幅度、画面比例与 OpenCL 加速开关；纯文生图请求自动省略图片字段。\n\n### 修复\n\n- 修复关于页更新日志、空历史开局、全屏 AI 新对话、Agent 迁移悬空选择等多处崩溃。\n",
+        "body": "## 阅读C v3.26.090704（10874）\n\n### AI 设置\n\n- 新增「模型上下文设置」：上下文超过模型上限时从最新往回整轮裁剪历史（默认 200K token 触发、裁到 50K），可选裁剪超长工具输出（保留头尾/仅头/仅尾，默认 8K 字符），聊天流内显示「上下文触发裁剪」提示卡。\n- 移除旧的固定上下文预算（历史硬保留、12 万字自动摘要等），上下文与压缩策略统一改为设置页可配。\n- 「高级设置」开关移到 AI 设置末尾并扩大管辖：关闭时同时隐藏 Agent、AI 分角色、模型上下文设置与发送图片最大分辨率分组。\n- AI 设置文案精简；编辑供应商与模型点删除不再二次确认，直接删除。\n\n### AI 创作\n\n- Local Dream 接受控协议：支持接口拉取模型列表，生成前自动拉起本机后端。\n- 生图请求改用不限时长超时，分钟级长生成不再被全局 60 秒超时掐断。\n- Local Dream 参数默认值按 Anima 模型实测修正；图生图输入图按请求宽高中心裁剪缩放后发送。\n\n### 修复\n\n- 修复在线评论页展开回复无响应。\n- 打开书籍的加载提前到布局完成时执行，不再排队等待后台事件，进书更快。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.090702_10867.apk",
-            "size": 35785097,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090702/legado_oss_3.26.090702_10867.apk"
+            "name": "legado_oss_3.26.090704_10874.apk",
+            "size": 35829060,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090704/legado_oss_3.26.090704_10874.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47075,
+      "stars": 47072,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6005,
-      "sourceUpdatedAt": "2026-09-06T20:18:56Z",
+      "stars": 6009,
+      "sourceUpdatedAt": "2026-09-07T07:13:53Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.29",
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2147,
+      "stars": 2148,
       "sourceUpdatedAt": "2026-08-29T14:55:31Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1069,
-      "sourceUpdatedAt": "2026-09-07T04:43:59Z",
+      "stars": 1073,
+      "sourceUpdatedAt": "2026-09-07T10:12:16Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090711",
+        "name": "legado_app_3.26090717",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-07T03:23:38Z",
-        "body": "<!-- legado-version-code:38341 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- 阅读记录新增可选增强布局与按天统计，展示累计阅读成就、封面和最后章节\n- 阅读记录独立保留封面快照，支持可选封面备份，并修复恢复旧备份时章节快照回退\n- Web 调试 JavaScript 书源时先通过脚本接口解析保存，确保调试使用提取后的源\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 登录 UI v2 的脚本登录时注入当前书籍和章节上下文\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n- 优化关闭欢迎页或从已有任务返回时的启动中转窗口，避免首帧闪现主题背景\n- 修复系统文件选择器筛选 JavaScript 书源时 MIME 类型兼容性\n- Web 新建 JavaScript 书源时加载与 App 同源的脚本模板\n- 修复 Android 16 冷启动时欢迎页透明导致桌面或系统启动图标与欢迎内容重叠的问题\n- 修复阅读高亮下划线绘制在文字上方的问题\n\n",
+        "createdAt": "2026-09-07T09:41:13Z",
+        "body": "<!-- legado-version-code:38345 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/07**\n- 修复 HTML 解析器升级后部分旧书源的自闭合标签导致正文提取为空的问题\n- 更新 Cronet 网络内核至 153.0.8010.27，内置对应原生库，修复新版无法使用自定义加载器导致网络请求失败的问题\n- 书源检验状态独立保存，支持中断后筛选未完成项，Android 和 Web 可叠加状态筛选并重新检验\n- 修复 Web 书源管理首次打开时快捷键初始化导致页面空白，以及隐藏选中项影响筛选结果导出的问题\n- 阅读记录新增可选增强布局与按天统计，展示累计阅读成就、封面和最后章节\n- 阅读记录独立保留封面快照，支持可选封面备份，并修复恢复旧备份时章节快照回退\n- Web 调试 JavaScript 书源时先通过脚本接口解析保存，确保调试使用提取后的源\n- 支持从外部文件管理器打开 JavaScript 书源文件并进入书源导入流程\n- 修复部分非原生段评弹窗设置非全屏高度时顶部贴边、底部悬空的问题\n- 优化代码预览弹窗，增加垂直滚动定位条，长规则可快速定位\n- 修复 Android 16 预测性返回时替换规则编辑未显示未保存提示导致灰屏无响应的问题\n- 修复代码编辑器放弃修改返回替换规则时误报文本框光标焦点丢失的问题\n- 登录 UI v2 的脚本登录时注入当前书籍和章节上下文\n- 批量推送源时 JavaScript 书源逐条通过脚本接口校验保存，声明式源继续使用批量接口\n- 优化关闭欢迎页或从已有任务返回时的启动中转窗口，避免首帧闪现主题背景\n- 修复系统文件选择器筛选 JavaScript 书源时 MIME 类型兼容性\n- Web 新建 JavaScript 书源时加载与 App 同源的脚本模板\n- 修复 Android 16 冷启动时欢迎页透明导致桌面或系统启动图标与欢迎内容重叠的问题\n- 修复阅读高亮下划线绘制在文字上方的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090711_releaseA_vc38341.apk",
-            "size": 21050924,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_releaseA_vc38341.apk"
+            "name": "legado_app_3.26090717_releaseA_vc38345.apk",
+            "size": 32515384,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090717_releaseA_vc38345.apk"
           },
           {
-            "name": "legado_app_3.26090711_release_vc38341.apk",
-            "size": 21050925,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_release_vc38341.apk"
+            "name": "legado_app_3.26090717_release_vc38345.apk",
+            "size": 32515383,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090717_release_vc38345.apk"
           },
           {
-            "name": "legado_app_3.26090711_universal_releaseA_vc38341.apk",
-            "size": 27001717,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_universal_releaseA_vc38341.apk"
+            "name": "legado_app_3.26090717_universal_releaseA_vc38345.apk",
+            "size": 53425125,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090717_universal_releaseA_vc38345.apk"
           },
           {
-            "name": "legado_app_3.26090711_universal_release_vc38341.apk",
-            "size": 27001720,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090711_universal_release_vc38341.apk"
+            "name": "legado_app_3.26090717_universal_release_vc38345.apk",
+            "size": 53425122,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090717_universal_release_vc38345.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 509,
+      "stars": 510,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 205,
+      "stars": 204,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -511,7 +511,7 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 124,
-      "sourceUpdatedAt": "2026-09-03T06:02:53Z",
+      "sourceUpdatedAt": "2026-09-07T05:49:13Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.090313",
@@ -630,7 +630,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 79,
+      "stars": 80,
       "sourceUpdatedAt": "2026-09-06T10:41:09Z",
       "githubArchived": false,
       "release": {
@@ -742,7 +742,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-07T04:39:39Z",
+      "sourceUpdatedAt": "2026-09-07T10:23:46Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090520",
