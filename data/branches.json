@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T09:45:37.580Z",
+  "generatedAt": "2026-09-08T14:36:14.328Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 95,
-      "sourceUpdatedAt": "2026-09-08T01:51:10Z",
+      "sourceUpdatedAt": "2026-09-08T09:54:32Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090704（预发布）",
-        "tagName": "v3.26.090704",
+        "name": "阅读C v3.26.090809（预发布）",
+        "tagName": "v3.26.090809",
         "prerelease": true,
-        "publishedAt": "2026-09-07T05:30:05Z",
+        "publishedAt": "2026-09-08T09:53:11Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.090704（10874）\n\n### AI 设置\n\n- 新增「模型上下文设置」：上下文超过模型上限时从最新往回整轮裁剪历史（默认 200K token 触发、裁到 50K），可选裁剪超长工具输出（保留头尾/仅头/仅尾，默认 8K 字符），聊天流内显示「上下文触发裁剪」提示卡。\n- 移除旧的固定上下文预算（历史硬保留、12 万字自动摘要等），上下文与压缩策略统一改为设置页可配。\n- 「高级设置」开关移到 AI 设置末尾并扩大管辖：关闭时同时隐藏 Agent、AI 分角色、模型上下文设置与发送图片最大分辨率分组。\n- AI 设置文案精简；编辑供应商与模型点删除不再二次确认，直接删除。\n\n### AI 创作\n\n- Local Dream 接受控协议：支持接口拉取模型列表，生成前自动拉起本机后端。\n- 生图请求改用不限时长超时，分钟级长生成不再被全局 60 秒超时掐断。\n- Local Dream 参数默认值按 Anima 模型实测修正；图生图输入图按请求宽高中心裁剪缩放后发送。\n\n### 修复\n\n- 修复在线评论页展开回复无响应。\n- 打开书籍的加载提前到布局完成时执行，不再排队等待后台事件，进书更快。\n",
+        "body": "## 阅读C v3.26.090809（10878）\n\n### 问AI悬浮窗\n\n- 支持四边四角拖拽调大小，右下角增加抓柄，尺寸变化实时生效\n- 问AI加入正文菜单默认项，选中文字可直接问AI\n- 修复悬浮窗布局 inflate 参数调用\n\n### AI 聊天\n\n- 新增 AI 思考过程实时横条展示：流式跟尾冒字加扫光，可展开查看完整思考，结束后永久保留\n\n### AI 创作（Local Dream）\n\n- 图片测试连接接上生成进度与拉起状态提示，与书内生图同口径\n- 空占位符字段按值定位删除，修复空 image 字段误发\n- 修复图生图输入图解码长度传参，缩放从未生效的问题\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.090704_10874.apk",
-            "size": 35829060,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090704/legado_oss_3.26.090704_10874.apk"
+            "name": "legado_oss_3.26.090809_10878.apk",
+            "size": 35837061,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090809/legado_oss_3.26.090809_10878.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47077,
+      "stars": 47079,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6017,
-      "sourceUpdatedAt": "2026-09-07T19:35:56Z",
+      "stars": 6019,
+      "sourceUpdatedAt": "2026-09-08T10:27:57Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.30",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2608,
+      "stars": 2609,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2152,
+      "stars": 2151,
       "sourceUpdatedAt": "2026-09-08T09:26:59Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1082,
-      "sourceUpdatedAt": "2026-09-08T09:35:40Z",
+      "stars": 1084,
+      "sourceUpdatedAt": "2026-09-08T14:05:48Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090816",
+        "name": "legado_app_3.26090821",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-08T08:08:50Z",
-        "body": "<!-- legado-version-code:38374 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/08**\n- 统一正式版和测试版更新按钮为“立即更新”\n- 修复切换“总是使用默认封面”后书架未立即刷新封面的问题\n- 测试版更新对话框新增右上角“浏览器下载”备用入口\n- 修复代码编辑器长按会缩小已有选区的问题，选中文字的操作栏新增分享\n- 修复首次恢复备份时自动备份可能清空恢复文件的问题，备份与恢复串行执行，WebDAV 恢复使用独立下载文件\n- 修复开启 Cronet 时订阅正文图片加载完成后可能变为破图的问题\n- 书源管理新增默认关闭的“显示检验状态”开关，关闭时隐藏状态与筛选栏，设置随备份恢复\n- 阅读设置新增默认关闭的备忘入口，支持半屏编辑和 Markdown 显示，跟随书籍换源迁移并随书架备份恢复\n- 修复漫画及 PDF 跳转章节时旧页面的滚动回调可能覆盖目标阅读位置的问题\n- 朗读新增播放控件设置：暂停与定位操作互斥，支持尺寸、背景不透明度、自动隐藏、拖动贴边及位置恢复，新增开关默认关闭并随偏好备份\n- Cronet 回退至 152.0.7977.54，恢复按设备架构下载组件，移除安装包内的多架构 Cronet 原生库以减少手机占用\n- 本地 PDF 支持双指缩放和放大后拖动，单页、双页及滚动阅读沿用点击区域操作，翻页保持缩放并按可见区域重新渲染细节\n- 修复漫画相邻章节并发加载时旧页面列表可能覆盖新列表的问题\n- 漫画横向阅读新增默认关闭的从右到左翻页，手势、点击区、按键、自动翻页和章节导航保持一致，支持保留进度与设置备份\n- 同名不同作者的阅读记录分别统计，封面、章节、打开和删除操作按作者区分，保留旧记录与备份恢复数据\n- 修复文字、漫画和听书快速切换作者时未保存的阅读时长可能被旧累计值覆盖的问题\n- 高亮规则支持分组、按分组筛选、重命名，以及删除分组时选择删除规则或移动到其他分组\n\n",
+        "createdAt": "2026-09-08T13:52:36Z",
+        "body": "<!-- legado-version-code:38376 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/08**\n- 修复代码编辑器已有选区时长按其他位置无法重新选中的问题，选区内长按仍保留选区并显示操作栏\n- 修复部分非原生段评弹窗启用嵌套滚动后无法下滑关闭，并污染后续弹窗手势的问题\n- 统一正式版和测试版更新按钮为“立即更新”\n- 修复切换“总是使用默认封面”后书架未立即刷新封面的问题\n- 测试版更新对话框新增右上角“浏览器下载”备用入口\n- 修复代码编辑器长按会缩小已有选区的问题，选中文字的操作栏新增分享\n- 修复首次恢复备份时自动备份可能清空恢复文件的问题，备份与恢复串行执行，WebDAV 恢复使用独立下载文件\n- 修复开启 Cronet 时订阅正文图片加载完成后可能变为破图的问题\n- 书源管理新增默认关闭的“显示检验状态”开关，关闭时隐藏状态与筛选栏，设置随备份恢复\n- 阅读设置新增默认关闭的备忘入口，支持半屏编辑和 Markdown 显示，跟随书籍换源迁移并随书架备份恢复\n- 修复漫画及 PDF 跳转章节时旧页面的滚动回调可能覆盖目标阅读位置的问题\n- 朗读新增播放控件设置：暂停与定位操作互斥，支持尺寸、背景不透明度、自动隐藏、拖动贴边及位置恢复，新增开关默认关闭并随偏好备份\n- Cronet 回退至 152.0.7977.54，恢复按设备架构下载组件，移除安装包内的多架构 Cronet 原生库以减少手机占用\n- 本地 PDF 支持双指缩放和放大后拖动，单页、双页及滚动阅读沿用点击区域操作，翻页保持缩放并按可见区域重新渲染细节\n- 修复漫画相邻章节并发加载时旧页面列表可能覆盖新列表的问题\n- 漫画横向阅读新增默认关闭的从右到左翻页，手势、点击区、按键、自动翻页和章节导航保持一致，支持保留进度与设置备份\n- 同名不同作者的阅读记录分别统计，封面、章节、打开和删除操作按作者区分，保留旧记录与备份恢复数据\n- 修复文字、漫画和听书快速切换作者时未保存的阅读时长可能被旧累计值覆盖的问题\n- 高亮规则支持分组、按分组筛选、重命名，以及删除分组时选择删除规则或移动到其他分组\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090816_releaseA_vc38374.apk",
-            "size": 23038054,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090816_releaseA_vc38374.apk"
+            "name": "legado_app_3.26090821_releaseA_vc38376.apk",
+            "size": 23038129,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090821_releaseA_vc38376.apk"
           },
           {
-            "name": "legado_app_3.26090816_release_vc38374.apk",
-            "size": 23038051,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090816_release_vc38374.apk"
+            "name": "legado_app_3.26090821_release_vc38376.apk",
+            "size": 23038132,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090821_release_vc38376.apk"
           },
           {
-            "name": "legado_app_3.26090816_universal_releaseA_vc38374.apk",
-            "size": 28988877,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090816_universal_releaseA_vc38374.apk"
+            "name": "legado_app_3.26090821_universal_releaseA_vc38376.apk",
+            "size": 28988947,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090821_universal_releaseA_vc38376.apk"
           },
           {
-            "name": "legado_app_3.26090816_universal_release_vc38374.apk",
-            "size": 28988875,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090816_universal_release_vc38374.apk"
+            "name": "legado_app_3.26090821_universal_release_vc38376.apk",
+            "size": 28988938,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090821_universal_release_vc38376.apk"
           }
         ]
       },
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 512,
+      "stars": 511,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 205,
+      "stars": 206,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -630,7 +630,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 81,
+      "stars": 83,
       "sourceUpdatedAt": "2026-09-06T10:41:09Z",
       "githubArchived": false,
       "release": {
@@ -742,30 +742,30 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-08T06:08:51Z",
+      "sourceUpdatedAt": "2026-09-08T13:41:40Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.090520",
-        "tagName": "3.26.090520",
+        "name": "3.26.090820",
+        "tagName": "3.26.090820",
         "prerelease": false,
-        "publishedAt": "2026-09-05T13:13:34Z",
-        "createdAt": "2026-09-05T12:40:44Z",
-        "body": "**2026/09/05**\n（书架刷新与源仓库导入修复）\n### 修复\n- 书架文件夹布局下拉刷新出现两个转圈且其一永不消失：书架页残留一层无监听无复位的外层下拉刷新组件（与内层刷新组件双层嵌套），下拉手势触发它的转圈后无人收圈导致常驻；已删除冗余外层，书架刷新回归单层（仅内层，触发即收圈）\n- 导入书源/订阅源合集长时间无响应：合集链接（sourceUrls 格式）原为串行逐个下载子链接且全程无进度反馈，改为限流并行下载并实时显示\"获取中 x/y\"进度；单个子链接失败不再中断整体（自动聚合成功项并记录失败日志）\n- 大体积书源合集（数 MB）导入卡住不显示：导入比对阶段对数千条书源逐条查询数据库（每条一个事务）耗时数十秒，改为分批批量查询后秒级完成\n- 部分第三方合集解析失败导致导入永远转圈：源仓库合集常用 0/1 数字表达布尔字段（enabled 等），严格解析直接整包失败且界面无提示；布尔解析已宽松化兼容数字/字符串写法\n- 真机导入大合集超时：导入下载链路存在两处与原版的网络差异——Cronet 拦截器在部分网络环境对 302 跳转+大文件引入超时、公共 DoH 解析器缺少运营商 CDN 调度导致解析到不可达节点（连接卡死打爆超时）；导入已改用纯净 OkHttp 客户端（系统 DNS 直连），实测同 URL 从卡死降为 7 秒内完成\n- 应用内检查更新失效：更新检查源硬编码指向上游原版仓库，检测到的永远是原版版本而非本应用发版；已改为 Gitee 为主源（国内网络稳定）+ GitHub 兜底的双源检查——Gitee 请求失败或发布滞后时自动降级 GitHub，两源均无更新才提示\"已是最新版本\"\n\n**2026/09/04（播放器异常释放修复）**\n### 修复\n- 播放中播放器被莫名整体回收导致黑屏死画面（自动重试同时失效）：音频焦点丢失策略从\"整体释放播放器\"改为\"仅暂停\"（GSY 官方开关），播放/悬浮窗播放器统一生效；释放入口新增调用栈诊断日志，便于复现时精确定位触发源\n- 书架下拉刷新转圈永不消失（须退出重进）：转圈机制对齐 archive 版语义重构——下拉触发瞬间立即收圈，目录更新在后台静默完成，列表自动刷新，转圈不再跟随数据更新状态（旧方案经重组链同步收圈，在嵌套渲染场景失效导致指示器常驻）\n- 书架页打开闪退：刷新指示器颜色误用资源 ID 接口传入颜色值导致 ResourcesNotFoundException，改为颜色值接口并加主题兜底\n\n**2026/09/04（书架下拉刷新修复）**\n### 修复\n- 书架内容多时下滑误触发刷新：PullToRefreshBox 无 enabled 参数，改为根据滚动位置条件化渲染，仅列表/网格回顶（canScrollBackward == false）时包裹下拉刷新组件，非顶部直接渲染内容，对齐 archive SwipeRefreshLayout.setOnChildScrollUpCallback 行为\n- 刷新图标一直不消失：非顶部不再渲染 PullToRefreshBox，从根源消除指示器残留问题\n\n**2026/09/04（传统布局修复）**\n### 修复\n- 传统布局全屏返回后下部封面/简介/功能按钮区消失：退出全屏统一恢复全部信息区\n- 视频订阅源传统布局缺「上一部/下一部」：接入订阅源文章列表切换（书源队列优先），边界提示；按钮并入功能按钮区（信息区/按钮随线路选集数据到达即时刷新）\n- 视频订阅源集数模式信息区空白：封面/简介自动从收藏与阅读记录实体带过来\n- 视频订阅源播放页封面缺失：进入播放时从订阅文章库补齐图片信息（列表查询性能优化导致的字段缺失已回填）\n- 视频类型书源从发现/搜索打开改为先进书籍详情页（含加入书架/开始播放按钮），不再直接进播放器并自动加入书架\n- 书架下拉刷新与滚动重叠：修复内容较多时下滑误触发刷新的问题，修复刷新图标不消失的问题（含切标签页返回后指示器常驻、转圈秒收圈两处竞态）\n\n**2026/09/03（视频播放器双布局）**\n### 新增\n- 视频播放器双布局模式：在「我的 → 其它设置 → 视频播放器设置」中新增\"布局模式\"选择，支持沉浸式（默认，全屏竖滑）与传统布局（上播放器+下部视频信息区）两种形态，传统布局含封面/名称/简介/线路/选集平铺展示、\"下一部\"快捷入口与功能按钮区（下载/收藏/悬浮窗/设置）\n- 视频播放器设置中心化：新增视频播放器全局设置页，布局模式、播放器类型、自动播放、缓存、预加载、画质增强默认参数等持久配置统一在此设置；播放页内设置面板精简为仅保留画面比例、音轨、布局即时切换等当前播放即时生效项\n### 优化\n- 播放页内切换布局无需退出重进：在播放页设置面板切换沉浸式/传统布局后自动重建并续播当前影片与进度\n- 传统布局全屏按钮常显于播放器右下角（倍速前），支持全屏进出；选集/线路直接页内平铺（去掉二级目录页）\n- 传统布局信息自动对接：订阅源无简介/图片时自动从列表内容提取（正文去标签纯文本兜底）并显示播放位置计数\n- 传统布局与沉浸式共用同一嗅探与播放内核，切换布局不影响播放能力；其它设置内的视频设置入口改为直达全局设置页\n\n**2026/09/03（二）**\n### 修复\n- 管理页背景透明度设置底图不显示：透明度语义修正为 0=不透明（默认原状）、100=完全透明透出底图，恢复书源/订阅源管理头部与中间可见底图，全部管理页与设置页统一生效\n### 修复\n- 发现页/搜索/书架打开视频后上滑误报\"已是最后一个视频\"：播放队列注入在版本回退中丢失，现全部恢复，非末部影片上滑正常续播\n- 书架下拉误触发整架刷新：仅列表回顶才允许刷新；刷新/加载期间不再跳变滚动位置，斜滑不再误切底部页签\n- 发现页头部标签点击时整条闪烁、右侧箭头透明一下：消除顶栏透明度动画副作用与重复动画\n- 管理页背景减淡只有个别页面生效、调低后发灰：减淡模型重做为不透明预混色，全部管理页与设置页统一生效\n- txt 目录规则等子页面浅色主题顶栏白色断层：顶栏基色与页面底色对齐\n### 优化\n- txt 目录规则、词典规则、高亮规则、文件管理、存储管理、下载管理、书籍信息管理、角色管理等十余个管理子页面统一为与书源管理一致的管理壳（顶栏/搜索/多选/底栏一套组件）",
+        "publishedAt": "2026-09-08T13:35:33Z",
+        "createdAt": "2026-09-08T10:45:34Z",
+        "body": "**2026/09/08（第十八批）**\n（顶栏组件归一：我的页头部与书架/发现/订阅同组件）\n### 修复\n- \"我的\"页头部使用另一套顶栏组件、与书架/发现/订阅三大栏观感行为不一致的问题：现统一为与其他三大栏完全相同的顶栏组件，壁纸透出、样式跟随、图标体系、标题交互全部同轨",
         "assets": [
           {
-            "name": "legado_legacy_app_3.26.090520.apk",
-            "size": 70764935,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090520/legado_legacy_app_3.26.090520.apk"
+            "name": "legado_legacy_app_3.26.090820.apk",
+            "size": 71666767,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090820/legado_legacy_app_3.26.090820.apk"
           },
           {
-            "name": "legado_miss_app_3.26.090520.apk",
-            "size": 35895905,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090520/legado_miss_app_3.26.090520.apk"
+            "name": "legado_miss_app_3.26.090820.apk",
+            "size": 36746828,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090820/legado_miss_app_3.26.090820.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.090520.apk",
-            "size": 70764956,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090520/legado_miss_app_debug_3.26.090520.apk"
+            "name": "legado_miss_app_debug_3.26.090820.apk",
+            "size": 71666779,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.090820/legado_miss_app_debug_3.26.090820.apk"
           }
         ]
       },
@@ -809,8 +809,8 @@
       "repo": "h166278/legado_FU",
       "term": "legado-branch-fu",
       "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
-      "stars": 4,
-      "sourceUpdatedAt": "2026-09-06T12:36:49Z",
+      "stars": 5,
+      "sourceUpdatedAt": "2026-09-08T09:59:50Z",
       "githubArchived": false,
       "release": {
         "name": "legado_fu_3.26.090619",
