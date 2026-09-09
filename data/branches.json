@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T11:29:03.475Z",
+  "generatedAt": "2026-09-09T16:42:10.888Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 106,
-      "sourceUpdatedAt": "2026-09-09T11:24:39Z",
+      "stars": 108,
+      "sourceUpdatedAt": "2026-09-09T16:40:09Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090809（预发布）",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6028,
+      "stars": 6033,
       "sourceUpdatedAt": "2026-09-08T19:45:30Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2614,
+      "stars": 2616,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,21 +156,26 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2151,
-      "sourceUpdatedAt": "2026-09-08T15:23:07Z",
+      "stars": 2153,
+      "sourceUpdatedAt": "2026-09-09T13:23:52Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.6.48",
-        "tagName": "V1.0.6.48",
+        "name": "V1.0.6.158",
+        "tagName": "V1.0.6.158",
         "prerelease": false,
-        "publishedAt": "2026-08-29T13:43:35Z",
-        "createdAt": "2026-08-24T22:38:34Z",
-        "body": "V1.0.6.48（2026/8/29）\r\n1、修复书源搜索\r\n2、同步Github代码",
+        "publishedAt": "2026-09-09T12:19:16Z",
+        "createdAt": "2026-09-08T15:23:05Z",
+        "body": "V1.0.6.158（2026/9/9）\r\n\r\n1. 修复书源名称过长时右侧更多操作按钮被挤出页面的问题\r\n2. 修复阅读设置中的阅读颜色选项卡超出面板边界的问题\r\n3. 修复 WebDAV 登录后立即备份仍提示上传失败的问题\r\n4. 兼容不支持 MOVE 方法的 WebDAV 服务，避免备份留下临时文件\r\n5. 进一步优化漫画书源的大页面解析，减少连续浏览时的卡顿和无响应\r\n6. 修复仿真翻页时章节标题的字距、行高和粗细与阅读设置不一致的问题\r\n7. 优化订阅文章的后台解析，避免加载较大订阅内容时界面卡住或无响应\r\n8. 优化多书源搜索结果的合并效率，减少搜索过程中的界面卡顿\r\n9. 优化大量搜索结果的列表加载，减少内存占用，并保持刷新后的书籍信息和书源数量及时更新\r\n10. 修复发现页切换分类或刷新时书源错位、加载状态异常的问题，减少重复加载\r\n11. 优化发现页连续切换书源时的内存占用，及时停止已关闭页面的刷新与内容解析\r\n12. 优化漫画等书源发现列表的后台解析，减少加载大页面时的界面卡顿，并保持搜索结果正常显示\r\n13. 优化长章节在调整阅读布局时的分页响应，避免重复排版，并保持切章、返回阅读时的进度正确\r\n14. 减少动态书源列表的重复解析，提升漫画等书源结果加载时的响应速度\r\n15. 优化发现页大量书源标题的加载与浏览，刷新后保持选中的书源位置\r\n16. 修复部分书源规则读取到其他书籍信息的问题，并减少重复解析\r\n17. 优化部分书源中含大量换行的正文与书籍信息提取，减少加载时的卡顿\r\n18. 修正云备份帮助中的自动备份频率说明，与每天一次的设置保持一致\r\n19. 优化云备份按钮在不同主题下的文字清晰度，并显示准备、压缩、保存和上传等实际备份阶段\r\n20. 云盘入口显示已保存的名称及连接结果，区分已配置与连接成功，避免重复点击时重复连接\r\n21. 修复替换规则窗口右上角新增按钮与关闭按钮重叠的问题\r\n",
         "assets": [
           {
-            "name": "Legado-1.0.6.48-26082922-unsigned.hap",
-            "size": 30656429,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.48/Legado-1.0.6.48-26082922-unsigned.hap"
+            "name": "Legado-1.0.6.158-26090920-signed.hap",
+            "size": 27984326,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.158/Legado-1.0.6.158-26090920-signed.hap"
+          },
+          {
+            "name": "Legado-1.0.6.158-26090920-unsigned.hap",
+            "size": 27822843,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.158/Legado-1.0.6.158-26090920-unsigned.hap"
           }
         ]
       },
@@ -184,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1092,
-      "sourceUpdatedAt": "2026-09-09T11:26:30Z",
+      "stars": 1093,
+      "sourceUpdatedAt": "2026-09-09T16:41:07Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090914",
+        "name": "legado_app_3.26091000",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-09T06:42:07Z",
-        "body": "<!-- legado-version-code:38388 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/09**\n- 反转正文保留图片、评论气泡和 HTML 标记，菜单显示当前章节状态，刷新或编辑正文后取消选中\n- 封面设置新增默认开启的“书名首行/列自适应”，关闭后首行或首列使用大字号，支持备份恢复\n- 朗读悬浮控件支持整体缩放，长条最小宽度 85dp，文字、触摸范围和暂停圆钮同步调整\n- 朗读小圆钮的图标缩放至内部可用空间，默认不透明度改为 90%，保留已设置的数值\n- 目录菜单显示反转顺序的选中状态\n- 朗读圆形播放控件支持长按停止，播放和暂停时均有效，保留短按切换及拖动定位\n- 修复反转目录后标题错乱、阅读位置和分卷归属变化的问题，反转显示保留章节编号及书签、正文缓存\n- 修复发现页分类中的搜索输入框被软键盘遮挡的问题\n- 修复从朗读弹窗返回阅读主菜单后悬浮播放控件遮挡菜单的问题\n- 修复发现页内部按钮和下拉分类刷新时列表跳动的问题，展开或收起分类保持当前位置\n- 修复关闭朗读悬浮控件的拖动开关后位置被重置的问题，保留最近一次手动定位\n\n",
+        "createdAt": "2026-09-09T16:17:17Z",
+        "body": "<!-- legado-version-code:38397 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/09**\n- 修复阅读进度等待写入时切换书籍，可能将新书章节、位置或书源回调关联到旧书的问题\n- 修复 Android 16 侧滑返回无法关闭自定义网页弹窗，返回依次退出全屏、后退网页或关闭弹窗，外部点击开关独立生效\n- 备份支持选择仅本地或本地和 WebDav，自动备份可设置间隔天数并保存偏好；本地密码移至备份设置，默认路径显示实际目录\n- 阅读记录汇总卡片跟随当前背景色，空白封面使用相近但有明暗差别的颜色并保留细描边；增强列表左右留白稍加大，与圆角卡片协调\n- 修复从滚动切换到覆盖等翻页模式后正文下半页空白或阅读位置回退的问题，按完整正文的段落和字符位置换算缩进变化，重复句子也保持原阅读位置\n- 阅读记录新增默认开启的“显示秒数”开关，关闭后显示到分钟，支持备份恢复；汇总卡片增大圆角并微调阴影\n- 高亮规则的更多菜单统一使用文字条目，移除本地导入项的单独图标\n- 修复阅读记录较多时打开页面长时间空白的问题，优化查询并避免显示记录时重复保存整个书架的快照，保留章节、封面和阅读统计\n- 修复高亮胶囊首尾文字贴住或穿过弧形边框的问题，左右留白随字号调整，保留文字排版\n- 反转正文保留图片、评论气泡和 HTML 标记，菜单显示当前章节状态，刷新或编辑正文后取消选中\n- 封面设置新增默认开启的“书名首行/列自适应”，关闭后首行或首列使用大字号，支持备份恢复\n- 朗读悬浮控件支持整体缩放，长条最小宽度 85dp，文字、触摸范围和暂停圆钮同步调整\n- 朗读小圆钮的图标缩放至内部可用空间，默认不透明度改为 90%，保留已设置的数值\n- 目录菜单显示反转顺序的选中状态\n- 朗读圆形播放控件支持长按停止，播放和暂停时均有效，保留短按切换及拖动定位\n- 修复反转目录后标题错乱、阅读位置和分卷归属变化的问题，反转显示保留章节编号及书签、正文缓存\n- 修复发现页分类中的搜索输入框被软键盘遮挡的问题\n- 修复从朗读弹窗返回阅读主菜单后悬浮播放控件遮挡菜单的问题\n- 修复发现页内部按钮和下拉分类刷新时列表跳动的问题，展开或收起分类保持当前位置\n- 修复关闭朗读悬浮控件的拖动开关后位置被重置的问题，保留最近一次手动定位\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090914_releaseA_vc38388.apk",
-            "size": 23039617,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_releaseA_vc38388.apk"
+            "name": "legado_app_3.26091000_releaseA_vc38397.apk",
+            "size": 23042953,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_releaseA_vc38397.apk"
           },
           {
-            "name": "legado_app_3.26090914_release_vc38388.apk",
-            "size": 23039611,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_release_vc38388.apk"
+            "name": "legado_app_3.26091000_release_vc38397.apk",
+            "size": 23042943,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_release_vc38397.apk"
           },
           {
-            "name": "legado_app_3.26090914_universal_releaseA_vc38388.apk",
-            "size": 28990438,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_universal_releaseA_vc38388.apk"
+            "name": "legado_app_3.26091000_universal_releaseA_vc38397.apk",
+            "size": 28993779,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_universal_releaseA_vc38397.apk"
           },
           {
-            "name": "legado_app_3.26090914_universal_release_vc38388.apk",
-            "size": 28990437,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_universal_release_vc38388.apk"
+            "name": "legado_app_3.26091000_universal_release_vc38397.apk",
+            "size": 28993758,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_universal_release_vc38397.apk"
           }
         ]
       },
@@ -257,65 +262,65 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 335,
-      "sourceUpdatedAt": "2026-09-08T16:43:31Z",
+      "sourceUpdatedAt": "2026-09-09T16:31:07Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.090900",
-        "tagName": "beta-3.26.090900",
+        "name": "legado_app_3.26.091000",
+        "tagName": "beta-3.26.091000",
         "prerelease": true,
-        "publishedAt": "2026-09-08T16:43:32Z",
-        "createdAt": "2026-09-08T16:23:59Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* fix(阅读记录): 修复合并会话后章节名停留在开始阅读章节的问题\n* fix(备份): 修复阅读记录时间线数据备份后恢复丢失的问题\n* feat(高亮规则): 支持为高亮规则选择独立字体\n* fix(高亮规则): 修复高亮字体排版测量不一致与字体弹窗全局副作用\n* style(高亮规则): 字体选择移至文字颜色设置之前\n* feat(主题): 新增内置默认应用主题\n* 更新日志\n\n",
+        "publishedAt": "2026-09-09T16:31:07Z",
+        "createdAt": "2026-09-09T16:15:30Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* fix(高亮规则): 保留数据类字段名防止混淆致导出备份键名异常\n* fix(高亮规则): 自动重置混淆版本遗留的损坏规则数据\n* fix(高亮规则): 恢复备份时兜底混淆版本旧备份的字段缺失\n* fix(屏蔽规则): 保留数据类字段名并清理混淆版本遗留损坏数据\n* fix(高亮规则): 修复预览摘要中字体名显示为 URL 编码的问题\n* feat(书籍详情): 设置标签对话框改为取消/确认按钮布局\n* fix(首页): 修复模块管理与屏蔽规则弹窗滑动时上下抖动的问题\n* feat(书架): 新增书籍\"显示阅读进度\"功能\n* style(书架): 调整阅读进度显示位置到分类信息之前\n* 更新日志\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.090900_release_arm64-v8a.apk",
-            "size": 22704235,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_beta_3.26.090900_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.091000_release_arm64-v8a.apk",
+            "size": 22705793,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_beta_3.26.091000_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.090900_release_armeabi-v7a.apk",
-            "size": 22063877,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_beta_3.26.090900_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.091000_release_armeabi-v7a.apk",
+            "size": 22065450,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_beta_3.26.091000_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.090900_release_universal.apk",
-            "size": 30719080,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_beta_3.26.090900_release_universal.apk"
+            "name": "legado_beta_3.26.091000_release_universal.apk",
+            "size": 30720653,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_beta_3.26.091000_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.090900_legacy_arm64-v8a.apk",
-            "size": 22704215,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_compat_3.26.090900_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.091000_legacy_arm64-v8a.apk",
+            "size": 22705768,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_compat_3.26.091000_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.090900_legacy_armeabi-v7a.apk",
-            "size": 22063868,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_compat_3.26.090900_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.091000_legacy_armeabi-v7a.apk",
+            "size": 22065434,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_compat_3.26.091000_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.090900_legacy_universal.apk",
-            "size": 30719055,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_compat_3.26.090900_legacy_universal.apk"
+            "name": "legado_compat_3.26.091000_legacy_universal.apk",
+            "size": 30720636,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_compat_3.26.091000_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.090900_releaseS_arm64-v8a.apk",
-            "size": 22704229,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_plus_3.26.090900_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.091000_releaseS_arm64-v8a.apk",
+            "size": 22705795,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_plus_3.26.091000_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.090900_releaseS_armeabi-v7a.apk",
-            "size": 22063878,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_plus_3.26.090900_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.091000_releaseS_armeabi-v7a.apk",
+            "size": 22065445,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_plus_3.26.091000_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.090900_releaseS_universal.apk",
-            "size": 30719080,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_plus_3.26.090900_releaseS_universal.apk"
+            "name": "legado_plus_3.26.091000_releaseS_universal.apk",
+            "size": 30720654,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_plus_3.26.091000_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.090900_universal.apk",
-            "size": 68625917,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.090900/legado_z_debug_3.26.090900_universal.apk"
+            "name": "legado_z_debug_3.26.091000_universal.apk",
+            "size": 68643973,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.091000/legado_z_debug_3.26.091000_universal.apk"
           }
         ]
       },
@@ -742,7 +747,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-09T09:28:01Z",
+      "sourceUpdatedAt": "2026-09-09T11:51:16Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090820",
