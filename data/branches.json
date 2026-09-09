@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T06:01:50.043Z",
+  "generatedAt": "2026-09-09T11:29:03.475Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 95,
-      "sourceUpdatedAt": "2026-09-09T02:38:28Z",
+      "stars": 106,
+      "sourceUpdatedAt": "2026-09-09T11:24:39Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090809（预发布）",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6026,
+      "stars": 6028,
       "sourceUpdatedAt": "2026-09-08T19:45:30Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2611,
+      "stars": 2614,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1089,
-      "sourceUpdatedAt": "2026-09-09T05:25:20Z",
+      "stars": 1092,
+      "sourceUpdatedAt": "2026-09-09T11:26:30Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26090911",
+        "name": "legado_app_3.26090914",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-09T03:10:43Z",
-        "body": "<!-- legado-version-code:38386 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/09**\n- 反转正文保留图片、评论气泡和 HTML 标记，菜单显示当前章节状态，刷新或编辑正文后取消选中\n- 朗读悬浮控件支持整体缩放，长条最小宽度 85dp，文字、触摸范围和暂停圆钮同步调整\n- 朗读小圆钮的图标缩放至内部可用空间，默认不透明度改为 90%，保留已设置的数值\n- 目录菜单显示反转顺序的选中状态\n- 朗读圆形播放控件支持长按停止，播放和暂停时均有效，保留短按切换及拖动定位\n- 修复反转目录后标题错乱、阅读位置和分卷归属变化的问题，反转显示保留章节编号及书签、正文缓存\n- 修复发现页分类中的搜索输入框被软键盘遮挡的问题\n- 修复从朗读弹窗返回阅读主菜单后悬浮播放控件遮挡菜单的问题\n- 修复发现页内部按钮和下拉分类刷新时列表跳动的问题，展开或收起分类保持当前位置\n- 修复关闭朗读悬浮控件的拖动开关后位置被重置的问题，保留最近一次手动定位\n\n",
+        "createdAt": "2026-09-09T06:42:07Z",
+        "body": "<!-- legado-version-code:38388 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/09**\n- 反转正文保留图片、评论气泡和 HTML 标记，菜单显示当前章节状态，刷新或编辑正文后取消选中\n- 封面设置新增默认开启的“书名首行/列自适应”，关闭后首行或首列使用大字号，支持备份恢复\n- 朗读悬浮控件支持整体缩放，长条最小宽度 85dp，文字、触摸范围和暂停圆钮同步调整\n- 朗读小圆钮的图标缩放至内部可用空间，默认不透明度改为 90%，保留已设置的数值\n- 目录菜单显示反转顺序的选中状态\n- 朗读圆形播放控件支持长按停止，播放和暂停时均有效，保留短按切换及拖动定位\n- 修复反转目录后标题错乱、阅读位置和分卷归属变化的问题，反转显示保留章节编号及书签、正文缓存\n- 修复发现页分类中的搜索输入框被软键盘遮挡的问题\n- 修复从朗读弹窗返回阅读主菜单后悬浮播放控件遮挡菜单的问题\n- 修复发现页内部按钮和下拉分类刷新时列表跳动的问题，展开或收起分类保持当前位置\n- 修复关闭朗读悬浮控件的拖动开关后位置被重置的问题，保留最近一次手动定位\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26090911_releaseA_vc38386.apk",
-            "size": 23039090,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090911_releaseA_vc38386.apk"
+            "name": "legado_app_3.26090914_releaseA_vc38388.apk",
+            "size": 23039617,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_releaseA_vc38388.apk"
           },
           {
-            "name": "legado_app_3.26090911_release_vc38386.apk",
-            "size": 23039094,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090911_release_vc38386.apk"
+            "name": "legado_app_3.26090914_release_vc38388.apk",
+            "size": 23039611,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_release_vc38388.apk"
           },
           {
-            "name": "legado_app_3.26090911_universal_releaseA_vc38386.apk",
-            "size": 28989922,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090911_universal_releaseA_vc38386.apk"
+            "name": "legado_app_3.26090914_universal_releaseA_vc38388.apk",
+            "size": 28990438,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_universal_releaseA_vc38388.apk"
           },
           {
-            "name": "legado_app_3.26090911_universal_release_vc38386.apk",
-            "size": 28989919,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090911_universal_release_vc38386.apk"
+            "name": "legado_app_3.26090914_universal_release_vc38388.apk",
+            "size": 28990437,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26090914_universal_release_vc38388.apk"
           }
         ]
       },
@@ -256,7 +256,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 336,
+      "stars": 335,
       "sourceUpdatedAt": "2026-09-08T16:43:31Z",
       "githubArchived": false,
       "release": {
@@ -452,7 +452,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 208,
+      "stars": 209,
       "sourceUpdatedAt": "2026-09-01T04:32:45Z",
       "githubArchived": false,
       "release": {
@@ -510,7 +510,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 126,
+      "stars": 127,
       "sourceUpdatedAt": "2026-09-07T05:49:13Z",
       "githubArchived": false,
       "release": {
@@ -588,35 +588,35 @@
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
       "stars": 94,
-      "sourceUpdatedAt": "2026-09-09T00:31:31Z",
+      "sourceUpdatedAt": "2026-09-09T08:57:45Z",
       "githubArchived": false,
       "release": {
-        "name": "MR 2609091 (测试版)",
-        "tagName": "v2609091-dev",
+        "name": "MR 2609094 (测试版)",
+        "tagName": "v2609094-dev",
         "prerelease": true,
-        "publishedAt": "2026-09-09T00:31:31Z",
-        "createdAt": "2026-09-09T00:22:12Z",
-        "body": "## MR 2609091\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-09\n\n**版本号**: 26.0909.1（pubspec.yaml 格式）\n\n**构建号**: 1788913347\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
+        "publishedAt": "2026-09-09T08:57:45Z",
+        "createdAt": "2026-09-09T08:35:00Z",
+        "body": "## MR 2609094\n\n**打包类型**: 测试版 (dev)\n\n**构建日期**: 2026-09-09\n\n**版本号**: 26.0909.4（pubspec.yaml 格式）\n\n**构建号**: 1788943679\n\n---\n\n### Android\n- `.apk` 文件直接安装\n- `.zip` 文件为压缩包，解压后安装\n- 安装方法：下载 APK → 允许未知来源 → 安装\n\n### iOS\n- `.ipa` 文件需通过侧载工具安装（AltStore/Sideloadly/TrollStore）\n- 未签名版本，需自签或使用侧载工具\n- 安装方法：下载 IPA → 使用侧载工具安装\n\n### HarmonyOS（鸿蒙）\n- `.hap` 文件为鸿蒙安装包\n- 安装方法：通过 hdc 工具安装 `hdc install xxx.hap`，或推送到设备后用文件管理器安装\n- 需在鸿蒙系统设置中允许未知来源应用安装\n\n\n",
         "assets": [
           {
-            "name": "mr_v2609091_dev_2026-09-09_arm64.apk",
-            "size": 22610965,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609091-dev/mr_v2609091_dev_2026-09-09_arm64.apk"
+            "name": "mr_v2609094_dev_2026-09-09_arm64.apk",
+            "size": 22610061,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609094-dev/mr_v2609094_dev_2026-09-09_arm64.apk"
           },
           {
-            "name": "mr_v2609091_dev_2026-09-09_ios.ipa",
-            "size": 20977274,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609091-dev/mr_v2609091_dev_2026-09-09_ios.ipa"
+            "name": "mr_v2609094_dev_2026-09-09_ios.ipa",
+            "size": 20975231,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609094-dev/mr_v2609094_dev_2026-09-09_ios.ipa"
           },
           {
-            "name": "mr_v2609091_dev_2026-09-09_ohos.hap",
+            "name": "mr_v2609094_dev_2026-09-09_ohos.hap",
             "size": 35795916,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609091-dev/mr_v2609091_dev_2026-09-09_ohos.hap"
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609094-dev/mr_v2609094_dev_2026-09-09_ohos.hap"
           },
           {
-            "name": "mr_v2609091_dev_2026-09-09_x86_64.apk",
-            "size": 22786923,
-            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609091-dev/mr_v2609091_dev_2026-09-09_x86_64.apk"
+            "name": "mr_v2609094_dev_2026-09-09_x86_64.apk",
+            "size": 22786364,
+            "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609094-dev/mr_v2609094_dev_2026-09-09_x86_64.apk"
           }
         ]
       },
@@ -742,7 +742,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-08T19:50:40Z",
+      "sourceUpdatedAt": "2026-09-09T09:28:01Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090820",
@@ -809,7 +809,7 @@
       "repo": "h166278/legado_FU",
       "term": "legado-branch-fu",
       "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
-      "stars": 5,
+      "stars": 6,
       "sourceUpdatedAt": "2026-09-08T09:59:50Z",
       "githubArchived": false,
       "release": {
