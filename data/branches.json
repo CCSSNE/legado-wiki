@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T16:42:10.888Z",
+  "generatedAt": "2026-09-09T19:48:23.074Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 108,
-      "sourceUpdatedAt": "2026-09-09T16:40:09Z",
+      "sourceUpdatedAt": "2026-09-09T19:35:25Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.090809（预发布）",
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6033,
-      "sourceUpdatedAt": "2026-09-08T19:45:30Z",
+      "stars": 6035,
+      "sourceUpdatedAt": "2026-09-09T19:30:00Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.31",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2616,
+      "stars": 2615,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,21 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1093,
-      "sourceUpdatedAt": "2026-09-09T16:41:07Z",
+      "stars": 1095,
+      "sourceUpdatedAt": "2026-09-09T19:47:25Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26091000",
-        "tagName": "beta",
+        "name": "Cronet 153 手机独立测试包",
+        "tagName": "cronet153-phone-20260910",
         "prerelease": true,
-        "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-09T16:17:17Z",
-        "body": "<!-- legado-version-code:38397 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/09**\n- 修复阅读进度等待写入时切换书籍，可能将新书章节、位置或书源回调关联到旧书的问题\n- 修复 Android 16 侧滑返回无法关闭自定义网页弹窗，返回依次退出全屏、后退网页或关闭弹窗，外部点击开关独立生效\n- 备份支持选择仅本地或本地和 WebDav，自动备份可设置间隔天数并保存偏好；本地密码移至备份设置，默认路径显示实际目录\n- 阅读记录汇总卡片跟随当前背景色，空白封面使用相近但有明暗差别的颜色并保留细描边；增强列表左右留白稍加大，与圆角卡片协调\n- 修复从滚动切换到覆盖等翻页模式后正文下半页空白或阅读位置回退的问题，按完整正文的段落和字符位置换算缩进变化，重复句子也保持原阅读位置\n- 阅读记录新增默认开启的“显示秒数”开关，关闭后显示到分钟，支持备份恢复；汇总卡片增大圆角并微调阴影\n- 高亮规则的更多菜单统一使用文字条目，移除本地导入项的单独图标\n- 修复阅读记录较多时打开页面长时间空白的问题，优化查询并避免显示记录时重复保存整个书架的快照，保留章节、封面和阅读统计\n- 修复高亮胶囊首尾文字贴住或穿过弧形边框的问题，左右留白随字号调整，保留文字排版\n- 反转正文保留图片、评论气泡和 HTML 标记，菜单显示当前章节状态，刷新或编辑正文后取消选中\n- 封面设置新增默认开启的“书名首行/列自适应”，关闭后首行或首列使用大字号，支持备份恢复\n- 朗读悬浮控件支持整体缩放，长条最小宽度 85dp，文字、触摸范围和暂停圆钮同步调整\n- 朗读小圆钮的图标缩放至内部可用空间，默认不透明度改为 90%，保留已设置的数值\n- 目录菜单显示反转顺序的选中状态\n- 朗读圆形播放控件支持长按停止，播放和暂停时均有效，保留短按切换及拖动定位\n- 修复反转目录后标题错乱、阅读位置和分卷归属变化的问题，反转显示保留章节编号及书签、正文缓存\n- 修复发现页分类中的搜索输入框被软键盘遮挡的问题\n- 修复从朗读弹窗返回阅读主菜单后悬浮播放控件遮挡菜单的问题\n- 修复发现页内部按钮和下拉分类刷新时列表跳动的问题，展开或收起分类保持当前位置\n- 修复关闭朗读悬浮控件的拖动开关后位置被重置的问题，保留最近一次手动定位\n\n",
+        "publishedAt": "2026-09-09T19:12:03Z",
+        "createdAt": "2026-09-09T18:58:24Z",
+        "body": "这是 Cronet 153 的独立手机测试包，用于验证单架构组件下载、真实网络请求和重启后的文件占用。\n\n应用名称为“阅读·153测试”，包名为 `com.legado.cronet153phone.release`，可以和现有阅读共存。基于 #1229 的 153 候选提交，使用测试签名，不是正式 Beta 更新。请只在本测试应用中导入一两个常用书源进行验证。\n\n测试步骤：\n1. 打开测试版，在“我的 → 其他设置”开启 Cronet。导入常用书源，联网测试搜索、目录、正文和 RSS 图片；条件允许时分别试 Wi-Fi 和移动网络。\n2. 回到书架，从右上角菜单打开“日志”，再用日志菜单的“导出”保存首次使用的日志。日志中的 `CRONET_PHONE` 会记录手机型号、系统版本、真实引擎版本、已加载路径和组件占用。\n3. 从手机系统应用信息中强行停止“阅读·153测试”，重新打开，再请求一次目录或正文并导出第二份日志。不要清除应用数据或缓存。\n\n请反馈两份日志及搜索、目录、正文、RSS 图片是否正常。组件验收检查真实引擎为 153、仅保存当前架构的一份原始库、没有遗留下载副本，并核对重启前后的大小和修改时间。引擎初始化记录本身不等于所有网络功能均正常，仍需实际操作结果。\n\nARM64 官方原始组件大小为 7,193,160 字节，比 152 的 7,100,216 字节增加 92,944 字节。APK 不内置 Cronet 原生库，不使用压缩后解压方案。\n\n构建验证：[GitHub Actions 34392262255](https://github.com/LegadoTeam/legado/actions/runs/34392262255) 全部通过，提交 `1776e93a421c5fb50a5f83896ce271094f2b92ca`。实际 APK 已核验独立包名与显示名称、v1/v2/v3 测试签名、Android 6 起的安装声明、ARM32/ARM64 架构、精确版本/源码资产、未内置 Cronet 原生库、未压缩其他原生库及未包含自动测试入口。尚待真实手机运行结果。\n\n下载文件大小：23,039,007 字节（约 23.04 MB）。SHA-256：`55ac9adf689d56ec788870fb8f8d54540e51de0f5c94dd4a3555d597c0ee9652`。\r\n",
         "assets": [
           {
-            "name": "legado_app_3.26091000_releaseA_vc38397.apk",
-            "size": 23042953,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_releaseA_vc38397.apk"
-          },
-          {
-            "name": "legado_app_3.26091000_release_vc38397.apk",
-            "size": 23042943,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_release_vc38397.apk"
-          },
-          {
-            "name": "legado_app_3.26091000_universal_releaseA_vc38397.apk",
-            "size": 28993779,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_universal_releaseA_vc38397.apk"
-          },
-          {
-            "name": "legado_app_3.26091000_universal_release_vc38397.apk",
-            "size": 28993758,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091000_universal_release_vc38397.apk"
+            "name": "legado-cronet153-phone-1776e93.apk",
+            "size": 23039007,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/cronet153-phone-20260910/legado-cronet153-phone-1776e93.apk"
           }
         ]
       },
