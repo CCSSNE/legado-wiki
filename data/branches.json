@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T01:07:23.460Z",
+  "generatedAt": "2026-09-10T06:01:29.024Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 109,
+      "stars": 110,
       "sourceUpdatedAt": "2026-09-09T21:01:51Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47079,
+      "stars": 47078,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6035,
-      "sourceUpdatedAt": "2026-09-09T20:49:29Z",
+      "stars": 6039,
+      "sourceUpdatedAt": "2026-09-10T05:53:00Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.33",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2615,
+      "stars": 2618,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1096,
-      "sourceUpdatedAt": "2026-09-10T01:05:40Z",
+      "stars": 1097,
+      "sourceUpdatedAt": "2026-09-10T05:59:32Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26091008",
+        "name": "legado_app_3.26091012",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-10T00:40:44Z",
-        "body": "<!-- legado-version-code:38410 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/10**\n- 高亮操作新增双击唤起，首次点击不翻页、长按仍可选择文字；高亮规则弹窗新增“高亮规则”管理入口\n- 修复自定义按钮关闭弹窗后再次快速点击，在回调已完成或命中缓存时仍可能重复弹窗的问题\n- 阅读资源刷新立即显示加载提示，后台下载期间保留当前页面，成功或失败后自动结束提示\n- 修复高亮胶囊背景侵入透明段评图标的问题，保留首尾文字留白和原有排版\n- 阅读主题颜色或样式变化后刷新会重取本章正文和图片，长按刷新新增“刷新全部数据”以重取本章及前后预加载资源；全部下载成功后切换，失败保留旧正文和图片，保留阅读位置并阻止旧请求覆盖新缓存\n- 修复首次开启 Cronet 后必须重启应用才会切换网络引擎的问题，开关即时生效\n- 备份目录选择弹窗仅显示“默认路径”，选择后在设置页显示实际目录，避免弹窗内容拥挤\n- 修复高亮规则“分享选中源”点击无反应，分享文件保留所选规则和完整样式，可重新导入\n- 修复自定义按钮首次回调尚未完成时连续点击，可能重复加载并弹出多个动态网页窗口的问题\n- 阅读记录更多菜单的“清除”改为“清除记录”\n- 修复高亮规则导出后没有显示链接的问题，导出所选或全部成功后显示链接或文件路径，并支持复制\n- 阅读记录空白封面恢复固定白色，深色背景下汇总卡片稍加提亮以区分边界，保留浅色效果及原圆角和阴影\n- 支持通过系统分享导入书单、高亮规则备份、本地 TXT/EPUB/PDF 和完整备份 ZIP，导入数据前保留确认步骤\n\n",
+        "createdAt": "2026-09-10T04:58:32Z",
+        "body": "<!-- legado-version-code:38416 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/10**\n- 优化代码预览输入：没有补全列表时不再反复分词，有补全时只检查光标附近的当前词，避免每次输入都复制整份长代码\n- 资源刷新统一使用原有页面中央的加载提示，等待期间保持页面固定，下载失败恢复旧正文和滚动位置，成功后显示新数据\n- 朗读实时状态、暂停/播放和原进度/从本页听控件可独立开关，默认开启；返回当前朗读页可自动恢复跟随和段落高亮，保留已有开关与控件参数并支持备份还原\n- 正文反转时同步镜像左右成对标点和箭头，保留图片、段评及 HTML 标签代码；修复段首缩进移到段评气泡前造成多余空格的问题\n- 修复代码编辑器保存大文本时未使用调用方指定的文件传递方式，避免将长代码直接放入返回消息\n- 阅读记录新增默认开启的“固定卡片”，关闭后卡片随列表滚动；支持单独设置日间和夜间默认记录封面，未设置时保留白色，设置、排序和封面支持备份恢复\n- 高亮操作新增双击唤起，首次点击不翻页、长按仍可选择文字；高亮规则弹窗新增“高亮规则”管理入口\n- 修复自定义按钮关闭弹窗后再次快速点击，在回调已完成或命中缓存时仍可能重复弹窗的问题\n- 修复高亮胶囊背景侵入透明段评图标的问题，保留首尾文字留白和原有排版\n- 阅读主题颜色或样式变化后刷新会重取本章正文和图片，长按刷新新增“刷新全部数据”以重取本章及前后预加载资源；全部下载成功后切换，失败保留旧正文和图片，保留阅读位置并阻止旧请求覆盖新缓存\n- 修复首次开启 Cronet 后必须重启应用才会切换网络引擎的问题，开关即时生效\n- 备份目录选择弹窗仅显示“默认路径”，选择后在设置页显示实际目录，避免弹窗内容拥挤\n- 修复高亮规则“分享选中源”点击无反应，分享文件保留所选规则和完整样式，可重新导入\n- 修复自定义按钮首次回调尚未完成时连续点击，可能重复加载并弹出多个动态网页窗口的问题\n- 阅读记录更多菜单的“清除”改为“清除记录”\n- 修复高亮规则导出后没有显示链接的问题，导出所选或全部成功后显示链接或文件路径，并支持复制\n- 阅读记录空白封面恢复固定白色，深色背景下汇总卡片稍加提亮以区分边界，保留浅色效果及原圆角和阴影\n- 支持通过系统分享导入书单、高亮规则备份、本地 TXT/EPUB/PDF 和完整备份 ZIP，导入数据前保留确认步骤\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26091008_releaseA_vc38410.apk",
-            "size": 23060538,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_releaseA_vc38410.apk"
+            "name": "legado_app_3.26091012_releaseA_vc38416.apk",
+            "size": 23062345,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091012_releaseA_vc38416.apk"
           },
           {
-            "name": "legado_app_3.26091008_release_vc38410.apk",
-            "size": 23060538,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_release_vc38410.apk"
+            "name": "legado_app_3.26091012_release_vc38416.apk",
+            "size": 23062328,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091012_release_vc38416.apk"
           },
           {
-            "name": "legado_app_3.26091008_universal_releaseA_vc38410.apk",
-            "size": 29011363,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_universal_releaseA_vc38410.apk"
+            "name": "legado_app_3.26091012_universal_releaseA_vc38416.apk",
+            "size": 29013162,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091012_universal_releaseA_vc38416.apk"
           },
           {
-            "name": "legado_app_3.26091008_universal_release_vc38410.apk",
-            "size": 29011369,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_universal_release_vc38410.apk"
+            "name": "legado_app_3.26091012_universal_release_vc38416.apk",
+            "size": 29013148,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091012_universal_release_vc38416.apk"
           }
         ]
       },
@@ -334,7 +334,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 285,
+      "stars": 284,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -636,20 +636,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 85,
-      "sourceUpdatedAt": "2026-09-09T23:21:55Z",
+      "sourceUpdatedAt": "2026-09-10T02:49:29Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.090618",
-        "tagName": "3.26.090618",
+        "name": "legado_ng_3.26.091010",
+        "tagName": "3.26.091010",
         "prerelease": false,
-        "publishedAt": "2026-09-06T10:41:09Z",
-        "createdAt": "2026-09-06T10:22:33Z",
-        "body": "### 更新内容\n* 修复换源结果重复链接崩溃\n* 支持外部导入JS书源与朗读引擎\n* 完善TTS合成参数与发音人独立调节\n* 修复多人TTS发音人倍率切换爆音\n* 修复软件绘制液态玻璃崩溃\n* 新增全局系统导航栏隐藏并修复抽屉适配\n\n",
+        "publishedAt": "2026-09-10T02:49:30Z",
+        "createdAt": "2026-09-10T02:24:37Z",
+        "body": "### 更新内容\n* 修复V2登录弹窗按钮状态与关闭入口\n* 修复大型JS书源编辑传输崩溃\n* 修正书源导入取消按钮材质\n* 补全网络日志CSRF令牌脱敏\n* 完善JS书源段评与登录支持\n* 修复书源段评抽屉到顶下拉关闭\n* 优化阅读页电量显示\n* 新增页眉返回按钮并调整起点阅读预设\n* 拦截全空书源导入并更新项目说明\n* 修复大文件书源导入内存溢出\n* 新增书架AI右滑开关\n* 优化阅读信息弹窗显示\n* 完善高亮规则预览与复制并优化预设编辑\n* 完善阅读目录菜单与分卷折叠\n* 新增高亮规则九宫格切图调节\n* 优化阅读选字配色与划线浮窗避让\n* 支持阅读工具浮窗排序开关并统一抽屉下滑关闭\n* 完善阅读预设与高亮规则的完整资源导入导出\n* 支持界面字体切换与紧凑字体卡片\n* 支持按模块备份并补齐主题与阅读资源\n* 恢复书源上传链接导出并支持复制链接\n* 完善书签操作并修复滚动朗读行为\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.09061823_release.apk",
-            "size": 36425036,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.090618/legado_NG_3.26.09061823_release.apk"
+            "name": "legado_NG_3.26.09101030_release.apk",
+            "size": 36646404,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.091010/legado_NG_3.26.09101030_release.apk"
           }
         ]
       },
@@ -747,7 +747,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 14,
-      "sourceUpdatedAt": "2026-09-09T11:51:16Z",
+      "sourceUpdatedAt": "2026-09-10T04:28:44Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.090820",
