@@ -23,12 +23,17 @@ const STRIP_BIGGER_THAN = '100M';
 const token = process.env.MIRROR_TOKEN || process.env.GITHUB_TOKEN || '';
 const mirrorOrg = process.env.MIRROR_ORG || 'legado-backup';
 
-const outputs = { updated: 'false', pushed: 'false', rewritten: 'false', gone: 'false', alert: 'false', alert_reason: '', head: '', mirror_head: '' };
+const outputs = { updated: 'false', pushed: 'false', rewritten: 'false', gone: 'false', alert: 'false', alert_reason: '', alert_body: '', head: '', mirror_head: '' };
+const alertLines = [];
 
 function emitOutputs() {
   if (process.env.GITHUB_OUTPUT) {
     for (const [k, v] of Object.entries(outputs)) {
-      appendFileSync(process.env.GITHUB_OUTPUT, `${k}=${v}\n`);
+      if (k === 'alert_body') {
+        appendFileSync(process.env.GITHUB_OUTPUT, `alert_body<<EOF\n${v}\nEOF\n`);
+      } else {
+        appendFileSync(process.env.GITHUB_OUTPUT, `${k}=${v}\n`);
+      }
     }
   }
 }
@@ -97,6 +102,7 @@ for (const [id, entry] of Object.entries(entries)) {
   if (ls.code !== 0 || !ls.out) {
     outputs.gone = 'true';
     anyError = true;
+    alertLines.push(`${id} ${upstream}：上游不可达/已删，未同步`);
     log(`[gone] 无法读取上游 ${upstream}（已删除或网络不可达）`);
     continue;
   }
@@ -116,6 +122,7 @@ for (const [id, entry] of Object.entries(entries)) {
     const clone = gitAllowFail('.', ['clone', '--bare', mirrorUrl, mirrorDir]);
     if (clone.code !== 0) {
       anyError = true;
+      alertLines.push(`${id} ${mirrorFull}：镜像克隆失败，未同步（${(clone.out || '').slice(-120).replace(/\n/g, ' ') || '无权限/不存在'}）`);
       log(`[error] 克隆镜像仓 ${mirrorFull} 失败（不存在或无权限）：\n${(clone.out || '').slice(-500)}`);
       continue;
     }
@@ -146,6 +153,7 @@ for (const [id, entry] of Object.entries(entries)) {
 
     if (!ffOk) {
       outputs.rewritten = 'true';
+      alertLines.push(`${id} ${upstream}：上游强推，未同步（上游 ${upstreamHead.slice(0, 7)}）`);
       log('[rewritten] 过滤后的上游历史与镜像不构成快进（疑似 force push / 历史重写），本次不推送，等待人工确认。');
       continue; // 不更新 head 记录，下轮重新检测
     }
@@ -185,10 +193,13 @@ if (process.env.GITHUB_ACTIONS === 'true' && changedConfig) {
   }
 }
 
-const alert = outputs.rewritten === 'true' || outputs.gone === 'true';
+const syncError = anyError && outputs.rewritten !== 'true' && outputs.gone !== 'true';
+const alert = outputs.rewritten === 'true' || outputs.gone === 'true' || syncError;
 outputs.alert = alert ? 'true' : 'false';
-outputs.alert_reason = [outputs.rewritten === 'true' ? 'rewritten' : null, outputs.gone === 'true' ? 'gone' : null]
+outputs.alert_reason = [outputs.rewritten === 'true' ? 'rewritten' : null, outputs.gone === 'true' ? 'gone' : null, syncError ? 'sync_error' : null]
   .filter(Boolean).join(',');
+outputs.alert_body = [...new Set(alertLines)].slice(0, 20).join('\n');
 log(`\n结果: updated=${outputs.updated} pushed=${outputs.pushed} rewritten=${outputs.rewritten} gone=${outputs.gone} alert=${outputs.alert}`);
+if (outputs.alert_body) log(`告警明细:\n${outputs.alert_body}`);
 emitOutputs();
 if (anyError && !alert) process.exitCode = 1;

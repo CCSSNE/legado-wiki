@@ -25,15 +25,13 @@ jobs:
           MIRROR_TOKEN: ${{ secrets.FORK_TOKEN }}
 
       - name: Send alert email
-        if: steps.sync.outputs.alert == 'true'
+        if: always() && steps.sync.outputs.alert == 'true'
         uses: action-pack/send-mail@v1
         with:
           connection_url: ${{ secrets.MAIL_CONNECTION }}
           to: 1220232554@qq.com
           from: 1365443620@qq.com
-          subject: "警告：CNB 上游异常（历史重写 / 仓库不可达）"
+          subject: "CNB镜像告警：${{ steps.sync.outputs.alert_reason }}"
           body: |
-            本轮 CNB 镜像同步检测到异常，涉及以下类型: ${{ steps.sync.outputs.alert_reason }}
-            - rewritten: CNB 上游历史被重写（force push / rebase），本次未同步镜像
-            - gone: CNB 上游不可达或已删除
-            详见该次 workflow 的运行日志。
+            ${{ steps.sync.outputs.alert_body }}
+            详见 workflow 日志。

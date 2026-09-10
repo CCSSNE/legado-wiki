@@ -153,11 +153,24 @@ for (const [label, list] of [['\n被重写列表:', rewritten], ['\n上游删库
 if (failed > 0) process.exitCode = 1;
 
 // 写入 GITHUB_OUTPUT，供 workflow 判断是否发告警邮件
+// alert_body: 每行一项精确失败原因（带上游 repo 名），直接用作邮件正文，不过多解释。
 if (process.env.GITHUB_OUTPUT) {
   const fs = await import('node:fs');
+  const short = (s, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
+  const lines = [
+    ...rewritten.map(r => `${r.id} ${r.repo}：上游强推，未同步（${short(r.message.replace(/^.*：/, ''), 100)}）`),
+    ...gone.map(r => `${r.id} ${r.repo}：上游已删库，未同步`),
+    ...defChanged.map(r => `${r.id} ${r.repo}：${short(r.message, 120)}`),
+    ...errored.map(r => `${r.id} ${r.repo || ''}：${short(r.message, 120)}`),
+  ];
+  // 去重 + 截断，避免邮件过长
+  const uniq = [...new Set(lines)].slice(0, 20);
+  if (lines.length > 20) uniq.push(`…等共 ${lines.length} 项，详见日志`);
   const alert = alerts.size > 0 ? 'true' : 'false';
   const reason = [...alerts].join(',');
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `alert=${alert}\n`);
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `alert_reason=${reason}\n`);
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `rewritten=${alerts.has('rewritten') ? 'true' : 'false'}\n`);
+  const out = process.env.GITHUB_OUTPUT;
+  fs.appendFileSync(out, `alert=${alert}\n`);
+  fs.appendFileSync(out, `alert_reason=${reason}\n`);
+  fs.appendFileSync(out, `rewritten=${alerts.has('rewritten') ? 'true' : 'false'}\n`);
+  fs.appendFileSync(out, `alert_body<<EOF\n${uniq.join('\n')}\nEOF\n`);
 }
