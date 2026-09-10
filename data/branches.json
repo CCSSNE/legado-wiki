@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T19:45:00.007Z",
+  "generatedAt": "2026-09-10T22:38:07.678Z",
   "branches": [
     {
       "id": "c",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2623,
+      "stars": 2624,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -190,35 +190,35 @@
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
       "stars": 1109,
-      "sourceUpdatedAt": "2026-09-10T19:41:27Z",
+      "sourceUpdatedAt": "2026-09-10T22:34:43Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26091103",
+        "name": "legado_app_3.26091105",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-10T19:28:20Z",
-        "body": "<!-- legado-version-code:38437 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/11**\n- 代码编辑器关闭 EmojiCompat 的整篇兼容处理，避免修改短字段时连带重排大型内嵌图标，原文与系统表情显示保持可用\n- 朗读设置新增“首次朗读起始设置”，可选页首或句首，默认句首并随备份保留；高亮从实际起读字符开始，修正句首回退后的页码和跨页进度，系统朗读预先排队页边界以连续跟随\n- 修复跨章节返回朗读位置时从当前页开头重新朗读的问题，保留正在播放或暂停的进度，下载正文后也可恢复跟随\n- 修复发现页分类控件的刷新回调可能被提前回收，导致切换后分类列表不更新的问题\n\n",
+        "createdAt": "2026-09-10T21:50:51Z",
+        "body": "<!-- legado-version-code:38442 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/11**\n- 修复高亮方框、下划线、删除线及着重号覆盖段首缩进的问题，保留正文空格、悬挂标点和章节定位\n- 阅读菜单新增“重新导入本书书源”，复用已安装书源的替换与预览；确认后下一次未缓存请求使用更新规则，取消保留原书源，阅读进度不变\n- 代码编辑器关闭 EmojiCompat 的整篇兼容处理，避免修改短字段时连带重排大型内嵌图标，原文与系统表情显示保持可用\n- 调小并减细书源管理“禁止网页跳转”图标，使其与相邻菜单图标更协调\n- 书源管理显示当前书架中的使用数量，删除书籍或切换书源后实时更新，排除临时阅读、本地书籍和历史记录，保留筛选、勾选和排序\n- 朗读设置新增“首次朗读起始设置”，可选页首或句首，默认句首并随备份保留；高亮从实际起读字符开始，修正句首回退后的页码和跨页进度，系统朗读预先排队页边界以连续跟随\n- 修复跨章节返回朗读位置时从当前页开头重新朗读的问题，保留正在播放或暂停的进度，下载正文后也可恢复跟随\n- 修复发现页分类控件的刷新回调可能被提前回收，导致切换后分类列表不更新的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26091103_releaseA_vc38437.apk",
-            "size": 23122999,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091103_releaseA_vc38437.apk"
+            "name": "legado_app_3.26091105_releaseA_vc38442.apk",
+            "size": 23123761,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091105_releaseA_vc38442.apk"
           },
           {
-            "name": "legado_app_3.26091103_release_vc38437.apk",
-            "size": 23123007,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091103_release_vc38437.apk"
+            "name": "legado_app_3.26091105_release_vc38442.apk",
+            "size": 23123770,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091105_release_vc38442.apk"
           },
           {
-            "name": "legado_app_3.26091103_universal_releaseA_vc38437.apk",
-            "size": 29073831,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091103_universal_releaseA_vc38437.apk"
+            "name": "legado_app_3.26091105_universal_releaseA_vc38442.apk",
+            "size": 29074577,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091105_universal_releaseA_vc38442.apk"
           },
           {
-            "name": "legado_app_3.26091103_universal_release_vc38437.apk",
-            "size": 29073832,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091103_universal_release_vc38437.apk"
+            "name": "legado_app_3.26091105_universal_release_vc38442.apk",
+            "size": 29074592,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091105_universal_release_vc38442.apk"
           }
         ]
       },
