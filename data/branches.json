@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T22:35:28.221Z",
+  "generatedAt": "2026-09-10T01:07:23.460Z",
   "branches": [
     {
       "id": "c",
@@ -189,21 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1095,
-      "sourceUpdatedAt": "2026-09-09T22:35:00Z",
+      "stars": 1096,
+      "sourceUpdatedAt": "2026-09-10T01:05:40Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读·153测试 v2（开关即时生效）",
-        "tagName": "cronet153-phone-v2-20260910",
+        "name": "legado_app_3.26091008",
+        "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-09-09T20:10:16Z",
-        "createdAt": "2026-09-09T19:56:05Z",
-        "body": "这是“阅读·153测试”第二版，修复首次开启 Cronet 后现有网络客户端仍使用旧传输、重启才切换的问题。番茄书源保持原样，继续验证首次开启后目录请求是否恢复。\n\n应用包名仍为 `com.legado.cronet153phone.release`，可直接覆盖上一版“阅读·153测试”并保留数据，与正式阅读共存。测试签名与上一版相同；正式发布仍保留 Cronet 152。\n\n请按以下顺序复测，不清除数据或缓存：\n1. 安装本 APK，进入测试版的“我的 → 其他设置”，关闭 Cronet，并开启“记录 HTTP 请求”。\n2. 从系统应用信息强行停止“阅读·153测试”，然后重新打开。\n3. 开启 Cronet，立即刷新番茄目录；此时不要重启应用。随后检查正文请求，并导出应用日志中的 CRONET_PHONE 记录。\n4. 如果仍出现目录错误，先不要强行停止：在日志中点开目录路径 `/reading/bookapi/directory/all_items/v/` 对应的 `[HTTP#...]` 条目，复制完整详情。普通日志导出只有 HTTP 摘要，重启会丢失内存中的详情。\n\n构建：[GitHub Actions 34398020316](https://github.com/LegadoTeam/legado/actions/runs/34398020316) 两个变体通过，提交 `1c86ea17b1cea0db11269178334bfc7470e001a3`。实际普通 APK 为 `3.26091003 / 38411`，已核对独立包名、名称、v1/v2/v3 签名、Android 6 起安装声明、ARM32/ARM64、17 个 Web 资源与当前源码、无自动测试入口。APK 不携带 Cronet 原生库，其他原生库未压缩；仍按手机架构保留一份原始 Cronet 153 组件。\n\n对应生产逻辑提交 `d5a688152c309f6d0c7ea2bd87103cc0771d7bd3` 的 [原生回归 34398013997](https://github.com/LegadoTeam/legado/actions/runs/34398013997) 在 Android 6、10、12、16 全部通过，已核验四组原始结果：实际启动客户端在同进程关闭、开启、关闭、再开启，真实请求与引擎选择正确；冷启动和重启均仅一份组件，文件大小和修改时间保持一致。此结果不替代本 APK 的番茄手机复测。\n\n下载文件：23,043,306 字节。SHA-256：`74935b2ed93cea86684b8235ebd1817bf942ffaa0be537ba6c65f5f4f5f9da11`。\n",
+        "publishedAt": "2026-08-11T18:18:40Z",
+        "createdAt": "2026-09-10T00:40:44Z",
+        "body": "<!-- legado-version-code:38410 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/10**\n- 高亮操作新增双击唤起，首次点击不翻页、长按仍可选择文字；高亮规则弹窗新增“高亮规则”管理入口\n- 修复自定义按钮关闭弹窗后再次快速点击，在回调已完成或命中缓存时仍可能重复弹窗的问题\n- 阅读资源刷新立即显示加载提示，后台下载期间保留当前页面，成功或失败后自动结束提示\n- 修复高亮胶囊背景侵入透明段评图标的问题，保留首尾文字留白和原有排版\n- 阅读主题颜色或样式变化后刷新会重取本章正文和图片，长按刷新新增“刷新全部数据”以重取本章及前后预加载资源；全部下载成功后切换，失败保留旧正文和图片，保留阅读位置并阻止旧请求覆盖新缓存\n- 修复首次开启 Cronet 后必须重启应用才会切换网络引擎的问题，开关即时生效\n- 备份目录选择弹窗仅显示“默认路径”，选择后在设置页显示实际目录，避免弹窗内容拥挤\n- 修复高亮规则“分享选中源”点击无反应，分享文件保留所选规则和完整样式，可重新导入\n- 修复自定义按钮首次回调尚未完成时连续点击，可能重复加载并弹出多个动态网页窗口的问题\n- 阅读记录更多菜单的“清除”改为“清除记录”\n- 修复高亮规则导出后没有显示链接的问题，导出所选或全部成功后显示链接或文件路径，并支持复制\n- 阅读记录空白封面恢复固定白色，深色背景下汇总卡片稍加提亮以区分边界，保留浅色效果及原圆角和阴影\n- 支持通过系统分享导入书单、高亮规则备份、本地 TXT/EPUB/PDF 和完整备份 ZIP，导入数据前保留确认步骤\n\n",
         "assets": [
           {
-            "name": "legado-cronet153-phone-v2-1c86ea1.apk",
-            "size": 23043306,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/cronet153-phone-v2-20260910/legado-cronet153-phone-v2-1c86ea1.apk"
+            "name": "legado_app_3.26091008_releaseA_vc38410.apk",
+            "size": 23060538,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_releaseA_vc38410.apk"
+          },
+          {
+            "name": "legado_app_3.26091008_release_vc38410.apk",
+            "size": 23060538,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_release_vc38410.apk"
+          },
+          {
+            "name": "legado_app_3.26091008_universal_releaseA_vc38410.apk",
+            "size": 29011363,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_universal_releaseA_vc38410.apk"
+          },
+          {
+            "name": "legado_app_3.26091008_universal_release_vc38410.apk",
+            "size": 29011369,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091008_universal_release_vc38410.apk"
           }
         ]
       },
@@ -543,7 +558,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 121,
+      "stars": 122,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -620,8 +635,8 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 84,
-      "sourceUpdatedAt": "2026-09-06T10:41:09Z",
+      "stars": 85,
+      "sourceUpdatedAt": "2026-09-09T23:21:55Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.090618",
