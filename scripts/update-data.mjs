@@ -28,6 +28,14 @@ const branches = [
   },
   { id: 'harmony', name: '阅读 鸿蒙版', tag: 'harmony', repo: 'mgz0227/legado-Harmony', term: 'legado-branch-harmony' },
   { id: 'md3', name: '阅读 MD3', tag: 'md3', repo: 'HapeLee/legado-with-MD3', term: 'legado-branch-md3' },
+  {
+    id: 'moben',
+    name: '墨本阅读',
+    tag: 'moben',
+    repo: 'Mupceet/EssentialReader',
+    term: 'legado-branch-moben',
+    note: 'MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。'
+  },
   { id: 'sigma', name: '阅读 Sigma / 阅读 Plus', tag: 'plus', repo: 'Luoyacheng/legado-E', term: 'legado-branch-sigma' },
   { id: 'main', name: '阅读Beta / 喵公子版', tag: 'beta', repo: 'LegadoTeam/legado', term: 'legado-branch-main' },
   { id: 'archive', name: '阅读 Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },

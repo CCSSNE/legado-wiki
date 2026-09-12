@@ -1123,7 +1123,11 @@
           children: [
             { external: { name: '原版补档', repo: 'CCSSNE/legado' } },
             { branch: 't', platforms: ['android'] },
-            { branch: 'md3', platforms: ['android'] },
+            {
+              branch: 'md3',
+              platforms: ['android'],
+              children: [{ branch: 'moben', platforms: ['android'] }]
+            },
             { branch: 'main', platforms: ['android'] },
             {
               branch: 'sigma',
@@ -1241,6 +1245,7 @@
         // 展示树只管放哪列、缩进跟谁；谁是谁的后代只看这里。新增分支若属某家族，在此登记父子。
         const FAMILY = {
           original: ['t', 'md3', 'main', 'sigma', 'shutiao', 'mr', 'harmony', 'tauri', 'macos'],
+          md3: ['moben'],
           sigma: ['archive', 'max', 'ng', 'pp', 'x', 'jingshiro', 'm', 'iyuedu'],
           archive: ['r'],
           r: ['c'],
