@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T19:25:48.795Z",
+  "generatedAt": "2026-09-12T22:21:05.923Z",
   "branches": [
     {
       "id": "c",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2633,
+      "stars": 2634,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1121,
+      "stars": 1122,
       "sourceUpdatedAt": "2026-09-11T00:22:46Z",
       "githubArchived": false,
       "release": {
@@ -864,35 +864,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 5,
-      "sourceUpdatedAt": "2026-09-12T16:34:06Z",
+      "sourceUpdatedAt": "2026-09-12T20:31:15Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.8",
-        "tagName": "3.26.17-beta.8",
+        "name": "Pre-release 3.26.17-beta.9",
+        "tagName": "3.26.17-beta.9",
         "prerelease": true,
-        "publishedAt": "2026-09-12T05:28:54Z",
-        "createdAt": "2026-09-12T04:53:17Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta.7（预发布）\n\n本次更新完善墨水屏阅读界面的划线、想法与书签，并修好一批实机反馈的问题：\n\n### 新增\n\n* 墨水屏界面接入「外观字体」设置：在设置里更换字体后，墨水屏的书架、目录、样式面板等界面文字同步生效\n\n### 优化\n\n* 墨水屏界面文字档位重排：正文、书名、按钮与列表信息的字号字重统一成一套阶梯，大字体倍率下书架列表行高不再被截断\n* 目录页顶部「目录 / 书签 / 笔记」改为无边框文字标签：选中项用黑色下划线标注、文字加粗，点按不再整块反色\n* 跨页续选更顺手：向下选到页底、向上翻回上一页都能接着扩选，手指往回收能收窄范围，越过起点后区间收成「移动端 → 起点」，与单页内反向拖动一致\n\n### 修复\n\n* 修复跨页选择时范围错乱、翻到下一页后翻不回上一页，以及拖动过程中闪退的问题\n* 修复从笔记列表点开一条笔记、修改想法后提示「保存失败」的问题\n* 修复跨段选择时段首缩进也被灰底和下划线覆盖的问题\n* 修复备份与恢复不包含划线笔记（book_marks）的问题\n* 修复阅读界面切换深色 / 浅色后不立即生效的问题",
+        "publishedAt": "2026-09-12T20:31:04Z",
+        "createdAt": "2026-09-12T16:32:53Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏阅读界面带来云端进度同步与段评查看：\n\n### 新增\n\n* 云端进度同步：进入/退出阅读时自动与 WebDAV 云端同步阅读进度，云端进度比本地新时会先询问再恢复，换设备接着读不用手动找位置\n* 「我的」页新增「同步阅读进度」开关，与完整模式同键共享，随时开关同步\n* 段评查看：书源支持段评的书，点正文里的段评气泡可以打开评论页；底部「上一页 / 关闭 / 下一页」控制条按半屏步进翻页，上下文连着看；评论页进出即时无过渡动画，墨水屏不残留",
         "assets": [
           {
-            "name": "legado-3.26.17-beta.8-arm64-v8a.apk",
-            "size": 19922848,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.8/legado-3.26.17-beta.8-arm64-v8a.apk"
+            "name": "legado-3.26.17-beta.9-arm64-v8a.apk",
+            "size": 19923608,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.9/legado-3.26.17-beta.9-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.17-beta.8-armeabi-v7a.apk",
-            "size": 19462663,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.8/legado-3.26.17-beta.8-armeabi-v7a.apk"
+            "name": "legado-3.26.17-beta.9-armeabi-v7a.apk",
+            "size": 19463438,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.9/legado-3.26.17-beta.9-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.17-beta.8.apk",
-            "size": 26495295,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.8/legado-3.26.17-beta.8.apk"
+            "name": "legado-3.26.17-beta.9.apk",
+            "size": 26496078,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.9/legado-3.26.17-beta.9.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 273927209,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.8/mapping.txt"
+            "size": 274206289,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.9/mapping.txt"
           }
         ]
       },
