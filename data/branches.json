@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T01:04:03.055Z",
+  "generatedAt": "2026-09-13T06:15:23.497Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 119,
-      "sourceUpdatedAt": "2026-09-10T17:19:05Z",
+      "stars": 120,
+      "sourceUpdatedAt": "2026-09-13T02:45:00Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.090809（预发布）",
-        "tagName": "v3.26.090809",
+        "name": "阅读C v3.26.091216（预发布）",
+        "tagName": "v3.26.091216",
         "prerelease": true,
-        "publishedAt": "2026-09-08T09:53:11Z",
+        "publishedAt": "2026-09-13T02:08:31Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.090809（10878）\n\n### 问AI悬浮窗\n\n- 支持四边四角拖拽调大小，右下角增加抓柄，尺寸变化实时生效\n- 问AI加入正文菜单默认项，选中文字可直接问AI\n- 修复悬浮窗布局 inflate 参数调用\n\n### AI 聊天\n\n- 新增 AI 思考过程实时横条展示：流式跟尾冒字加扫光，可展开查看完整思考，结束后永久保留\n\n### AI 创作（Local Dream）\n\n- 图片测试连接接上生成进度与拉起状态提示，与书内生图同口径\n- 空占位符字段按值定位删除，修复空 image 字段误发\n- 修复图生图输入图解码长度传参，缩放从未生效的问题\n",
+        "body": "## 阅读C v3.26.091216（10895）\n\n### 章节状态与重试\n- 让状态异常章节显示失败重试按钮\n- 缺失状态的评论章节进入普通重试链路\n- 修复缓存管理无法展示缺少状态的评论快照\n\n### 离线评论快照\n- 离线评论快照弹窗直接展开，避免发送栏被折叠裁切\n- 按实际绘制位置动态锚定离线评论栏，回写底部安全区，修复底栏被底部弹窗裁切\n- 优化缓存管理加载：复用正文清单并建立评论轻量索引\n- 移除评论资源总量门槛并正确传递缓存取消\n- 修复评论状态弹窗销毁后协程访问失效视图\n\n### 导出\n- 重构 TXT 与 ZIP 为尽力导出并内置失败报告\n- 统一 TXT 与 ZIP 完整导出及事务保存并显式报告失败\n- 自播媒体缓存占用存储时允许删除，不再要求完整章节计数\n\n### AI\n- 修复内联思考块正则缺少第二捕获组导致的崩溃\n- 出厂默认添加 local-core 第二供应商，无默认模型的老机器自动补齐\n- 关闭 Agent 时保留普通 AI 对话\n- 修复普通 AI 对话系统提示词断裂",
         "assets": [
           {
-            "name": "legado_oss_3.26.090809_10878.apk",
-            "size": 35837061,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.090809/legado_oss_3.26.090809_10878.apk"
+            "name": "legado_oss_3.26.091216_10895.apk",
+            "size": 35877257,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.091216/legado_oss_3.26.091216_10895.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47072,
+      "stars": 47071,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6071,
+      "stars": 6075,
       "sourceUpdatedAt": "2026-09-12T16:56:33Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2635,
+      "stars": 2636,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2157,
+      "stars": 2159,
       "sourceUpdatedAt": "2026-09-09T13:23:52Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1126,
+      "stars": 1129,
       "sourceUpdatedAt": "2026-09-11T00:22:46Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 523,
+      "stars": 525,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 340,
+      "stars": 341,
       "sourceUpdatedAt": "2026-09-12T16:33:56Z",
       "githubArchived": false,
       "release": {
@@ -364,7 +364,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 280,
+      "stars": 279,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -411,7 +411,7 @@
           "name": "CCSSNE/Legado-Tauri",
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
-          "stars": 3,
+          "stars": 4,
           "updatedAt": "2026-08-13T16:47:51Z"
         }
       ],
@@ -420,7 +420,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 271,
+      "stars": 270,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -767,7 +767,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 15,
-      "sourceUpdatedAt": "2026-09-12T14:05:10Z",
+      "sourceUpdatedAt": "2026-09-13T03:25:06Z",
       "githubArchived": false,
       "release": {
         "name": "阅读M v3.26.091219",
@@ -910,25 +910,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-09-11T14:20:21Z",
+      "sourceUpdatedAt": "2026-09-13T03:19:11Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.26.7-20260911-142015 (预发布)",
-        "tagName": "v3.26.7-20260911-142015",
+        "name": "Legado MD3 v3.26.7-20260913-031908 (预发布)",
+        "tagName": "v3.26.7-20260913-031908",
         "prerelease": true,
-        "publishedAt": "2026-09-11T14:20:21Z",
-        "createdAt": "2026-09-11T14:12:30Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: 809c06511ca106e05a328d863a8ab828d23b240c\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-09-13T03:19:11Z",
+        "createdAt": "2026-09-13T02:50:37Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: 31427e634151109ad30503f540cd072842a6feb4\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 23887795,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260911-142015/app-arm64-release.apk"
+            "size": 23905292,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260913-031908/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 41901387,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260911-142015/app-universal-release.apk"
+            "size": 41989108,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260913-031908/app-universal-release.apk"
           }
         ]
       },
