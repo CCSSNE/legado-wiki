@@ -74,7 +74,7 @@ GitHub 下载加速条（开关 + 代理源选择，记忆在 localStorage）
 | 弃坑标 | ✅ 作者声明停更的手写 `manualAbandoned` 直接判弃坑 | ✅ 无手写时按规则判：无公开 Release（且源码超半年没动，`allowNoRelease` 除外）算弃坑；或 Release 与源码**都**超半年没更新算弃坑（半年 = 183 天） |
 | 卡片顺序 | ✅ 站长（`pinned`）置顶是人工的 | ✅ 其余按实时 Star 自动排 |
 | fork 备份（`legado-backup` 组织） | ✅ 名单来自收录表（`backupRelease / skipAutoForks` 的跳过） | ✅ 每小时 `fork-versions.mjs`：没有就新建 fork，有就 `merge-upstream` 快进；上游历史被重写 / 删库 / 默认分支改名则**不碰备份 + 发邮件告警** |
-| i阅读 CNB 镜像 | ✅ `data/cnb-sync.json` 的映射关系手写 | ✅ 每小时 `sync-cnb.mjs` 匿名读 CNB 上游 HEAD，经 `git-filter-repo --strip-blobs-bigger-than 100M` 过滤后快进式推到 `legado-backup/iyuedu`；重写/不可达则告警 |
+| 非 GitHub 上游镜像（i阅读 CNB / E-ink Gitee） | ✅ `data/cnb-sync.json` 的映射关系手写 | ✅ 每小时 `sync-cnb.mjs` 匿名读上游 HEAD，经 `git-filter-repo --strip-blobs-bigger-than 100M` 过滤后快进式推到 GitHub 镜像仓（`legado-backup/iyuedu`、`legado-backup/eink`，仓不存在自动创建）；重写/不可达则告警 |
 | 访问趋势 | ✅ 展示逻辑（总量/增量，总/分站）手写 | ✅ 每小时 `update-stats.mjs` 分别查两站不蒜子累计值，记一条 `data/stats.json`；前端用 `原始值 − runs` 扣掉自动化查询自带的虚增 |
 | 页脚规则文字 | ✅ 收录/弃坑/删除/血缘/排序/排除/标注文案手写 | “最后同步”时间自动填 `branches.json.generatedAt`（北京时间） |
 
@@ -117,15 +117,15 @@ GitHub 下载加速条（开关 + 代理源选择，记忆在 localStorage）
 index.html                  # 全部页面：树定义 + 渲染 + 筛选 + 评论 + 图表（唯一需要手改的前端）
 scripts/update-data.mjs     # 收录名单（branches[]）+ 每小时回填 Star/Release/fork/弃坑 → data/branches.json
 scripts/fork-versions.mjs   # 每小时把收录仓 fork/同步到 legado-backup 组织（备份），异常发邮件
-scripts/sync-cnb.mjs        # 每小时把 CNB 上游同步到 GitHub 镜像仓（当前只有 i阅读）
+scripts/sync-cnb.mjs        # 每小时把非 GitHub 上游（CNB/Gitee）同步到 GitHub 镜像仓（i阅读 / E-ink）
 scripts/update-stats.mjs    # 每小时记一条两站访问量快照 → data/stats.json
 data/branches.json          # 自动生成：主名单实时数据（generatedAt 是最后同步时间）
 data/branches-static.json   # 手工维护：非 Legado 系代表作，一次性探测写入，不进每小时同步
 data/stats.json             # 自动累积：每小时一条 {time, runs, pv, uv, github:{}, edgeone:{}}
-data/cnb-sync.json          # 半自动：CNB 镜像映射 + 上游 HEAD 记录
+data/cnb-sync.json          # 半自动：非 GitHub 镜像映射（CNB/Gitee）+ 上游 HEAD 记录
 .github/workflows/update-data.yml    # cron 17 * * * *：update-data + update-stats + 提交
 .github/workflows/fork-versions.yml  # cron 41 * * * *：fork 备份 + 异常邮件
-.github/workflows/sync-cnb-iyuedu.yml # cron 23 * * * *：CNB 镜像 + 异常邮件
+.github/workflows/sync-mirrors.yml # cron 23 * * * *：非 GitHub 上游镜像（i阅读 / E-ink）+ 异常邮件
 ```
 
 本地没有构建步骤，改完 `index.html / scripts / data/branches-static.json` 直接提交推送即可；`data/branches.json / data/stats.json / data/cnb-sync.json` 由 Action 每小时自己提交。

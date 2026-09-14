@@ -57,6 +57,36 @@ function gitAllowFail(cwd, args) {
   }
 }
 
+// 镜像仓不存在时用 token 自动创建（org 优先，其次当前用户），创建成功返回 true。
+// 新分支（如 Gitee 的 阅读E-ink）第一次跑同步前不需要手工建仓。
+async function tryCreateMirror(owner, repo) {
+  if (!token) {
+    alertLines.push(`无镜像写 token，无法自动创建 ${owner}/${repo}`);
+    return false;
+  }
+  const payload = JSON.stringify({
+    name: repo,
+    description: 'legado-wiki 非 GitHub 上游镜像（CNB/Gitee）防跑路备份',
+    private: false,
+    auto_init: false,
+    has_issues: false,
+    has_wiki: false
+  });
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'legado-wiki-cnb-sync',
+    'Content-Type': 'application/json'
+  };
+  const orgRes = await fetch(`https://api.github.com/orgs/${owner}/repos`, { method: 'POST', headers, body: payload });
+  if (orgRes.status === 201 || orgRes.status === 202) return true;
+  const userRes = await fetch('https://api.github.com/user/repos', { method: 'POST', headers, body: payload });
+  if (userRes.status === 201 || userRes.status === 202) return true;
+  const orgText = (await orgRes.text()).slice(-120).replace(/\n/g, ' ');
+  log(`[create] 自动创建镜像仓失败 org=${orgRes.status} user=${userRes.status}（${orgText || '未知'}）`);
+  return false;
+}
+
 function runFilterRepo(cwd, ref) {
   const args = ['--strip-blobs-bigger-than', STRIP_BIGGER_THAN, '--refs', ref, '--force'];
   try {
@@ -115,11 +145,22 @@ for (const [id, entry] of Object.entries(entries)) {
     continue;
   }
 
-  // 2. bare 克隆镜像仓
+  // 2. bare 克隆镜像仓（不存在则自动创建后重试一次）
   const work = mkdtempSync(path.join(tmpdir(), `cnb-sync-${id}-`));
   try {
-    const mirrorDir = path.join(work, 'mirror.git');
-    const clone = gitAllowFail('.', ['clone', '--bare', mirrorUrl, mirrorDir]);
+    async function cloneMirror() {
+      const dir = path.join(work, 'mirror.git');
+      const c = gitAllowFail('.', ['clone', '--bare', mirrorUrl, dir]);
+      return { dir, c };
+    }
+    let { dir: mirrorDir, c: clone } = await cloneMirror();
+    if (clone.code !== 0) {
+      const created = await tryCreateMirror(owner, repo);
+      if (created) {
+        log('[create] 镜像仓不存在，已自动创建，重试克隆。');
+        ({ dir: mirrorDir, c: clone } = await cloneMirror());
+      }
+    }
     if (clone.code !== 0) {
       anyError = true;
       alertLines.push(`${id} ${mirrorFull}：镜像克隆失败，未同步（${(clone.out || '').slice(-120).replace(/\n/g, ' ') || '无权限/不存在'}）`);
@@ -183,7 +224,7 @@ if (process.env.GITHUB_ACTIONS === 'true' && changedConfig) {
     git('.', ['config', 'user.name', 'legado-wiki-bot']);
     git('.', ['config', 'user.email', 'actions@users.noreply.github.com']);
     git('.', ['add', CONFIG_PATH]);
-    const commit = gitAllowFail('.', ['commit', '-m', `CNB 镜像同步记录: ${(outputs.head || '').slice(0, 10)}`]);
+    const commit = gitAllowFail('.', ['commit', '-m', `镜像同步记录: ${(outputs.head || '').slice(0, 10)}`]);
     if (commit.code === 0) {
       git('.', ['push', 'origin', process.env.GITHUB_REF_NAME || 'main']);
       log('已提交同步记录回 wiki 仓库。');

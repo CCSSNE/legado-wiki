@@ -98,6 +98,18 @@ const branches = [
     allowNoRelease: true,
     upstreamUrl: 'https://cnb.cool/mingwuyan/iyuedu',
     note: 'z阅读的非内置ttsserver版本，不建议独立使用。'
+  },
+  {
+    id: 'eink',
+    name: '阅读E-ink',
+    tag: 'eink',
+    repo: 'legado-backup/eink',
+    term: 'legado-branch-eink',
+    skipAutoForks: true,
+    allowNoRelease: true,
+    gitee: 'lyj09x/legado',
+    upstreamUrl: 'https://gitee.com/lyj09x/legado',
+    note: '墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。'
   }
 ];
 
@@ -155,40 +167,113 @@ async function githubJson(path) {
   return response.json();
 }
 
+// Gitee 上游（非 GitHub 分支，如 阅读E-ink）：匿名 API + 重试，超时防卡 Action
+async function giteeJson(path) {
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const response = await fetch(`https://gitee.com/api/v5${path}`, {
+        headers: { 'User-Agent': 'legado-wiki-data-updater' },
+        signal: AbortSignal.timeout(20000)
+      });
+      if (!response.ok) throw new Error(`Gitee API ${response.status}`);
+      return response.json();
+    } catch (error) {
+      lastError = error;
+      await sleep(2000);
+    }
+  }
+  throw lastError;
+}
+
+// Gitee 资产不带 size，用 HEAD 补 Content-Length；失败留空（前端显示 0 B）
+async function headContentLength(url) {
+  if (!url) return null;
+  try {
+    const response = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(15000) });
+    if (!response.ok) return null;
+    const length = Number(response.headers.get('content-length'));
+    return Number.isFinite(length) && length > 0 ? length : null;
+  } catch {
+    return null;
+  }
+}
+
+async function normalizeGiteeRelease(release) {
+  const assets = [];
+  for (const asset of release.assets || []) {
+    assets.push({
+      name: asset.name,
+      size: asset.size ?? await headContentLength(asset.browser_download_url),
+      browserDownloadUrl: asset.browser_download_url
+    });
+  }
+  return {
+    name: release.name,
+    tagName: release.tag_name,
+    prerelease: Boolean(release.prerelease),
+    publishedAt: release.created_at,
+    createdAt: release.created_at,
+    body: release.body || null,
+    assets
+  };
+}
+
 async function hydrateBranch(branch) {
   const result = { ...branch, stars: null, sourceUpdatedAt: null, githubArchived: false, release: null, errors: [] };
 
-  try {
-    const repo = await githubJson(`/repos/${branch.repo}`);
-    result.stars = repo.stargazers_count;
-    result.sourceUpdatedAt = repo.pushed_at;
-    result.githubArchived = repo.archived;
-    result.fork = repo.fork;
-    result.forkOf = repo.parent?.full_name ?? null;
-  } catch (error) {
-    result.errors.push(`仓库信息同步失败：${error.message}`);
-  }
-
-  await sleep(250);
-
-  try {
-    const releases = await githubJson(`/repos/${branch.repo}/releases?per_page=1`);
-    if (Array.isArray(releases) && releases.length > 0) {
-      result.release = normalizeRelease(releases[0]);
-    }
-  } catch (error) {
-    result.errors.push(`版本信息同步失败：${error.message}`);
-  }
-
-  if (!result.release && branch.backupRelease) {
-    await sleep(250);
+  if (branch.gitee) {
+    // 非 GitHub 上游（Gitee）：元数据与 Release 走 Gitee API；镜像仓仅作备份，不查 GitHub
     try {
-      const release = await githubJson(`/repos/${branch.backupRelease.repo}/releases/tags/${branch.backupRelease.tag}`);
-      result.release = normalizeRelease(release);
-      result.release.sourceRepo = branch.backupRelease.repo;
-      result.release.sourceUrl = release.html_url;
+      const repo = await giteeJson(`/repos/${branch.gitee}`);
+      result.stars = repo.stargazers_count ?? 0;
+      result.sourceUpdatedAt = repo.pushed_at ?? null;
+      result.githubArchived = false;
     } catch (error) {
-      result.errors.push(`补档版本同步失败：${error.message}`);
+      result.errors.push(`仓库信息同步失败：${error.message}`);
+    }
+
+    await sleep(250);
+
+    try {
+      const release = await giteeJson(`/repos/${branch.gitee}/releases/latest`);
+      result.release = await normalizeGiteeRelease(release);
+    } catch (error) {
+      result.errors.push(`版本信息同步失败：${error.message}`);
+    }
+  } else {
+    try {
+      const repo = await githubJson(`/repos/${branch.repo}`);
+      result.stars = repo.stargazers_count;
+      result.sourceUpdatedAt = repo.pushed_at;
+      result.githubArchived = repo.archived;
+      result.fork = repo.fork;
+      result.forkOf = repo.parent?.full_name ?? null;
+    } catch (error) {
+      result.errors.push(`仓库信息同步失败：${error.message}`);
+    }
+
+    await sleep(250);
+
+    try {
+      const releases = await githubJson(`/repos/${branch.repo}/releases?per_page=1`);
+      if (Array.isArray(releases) && releases.length > 0) {
+        result.release = normalizeRelease(releases[0]);
+      }
+    } catch (error) {
+      result.errors.push(`版本信息同步失败：${error.message}`);
+    }
+
+    if (!result.release && branch.backupRelease) {
+      await sleep(250);
+      try {
+        const release = await githubJson(`/repos/${branch.backupRelease.repo}/releases/tags/${branch.backupRelease.tag}`);
+        result.release = normalizeRelease(release);
+        result.release.sourceRepo = branch.backupRelease.repo;
+        result.release.sourceUrl = release.html_url;
+      } catch (error) {
+        result.errors.push(`补档版本同步失败：${error.message}`);
+      }
     }
   }
 

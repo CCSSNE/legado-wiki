@@ -1,4 +1,4 @@
-name: 同步 CNB 上游（i阅读镜像）
+name: 同步非 GitHub 上游镜像（i阅读 / E-ink）
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
       - name: 安装 git-filter-repo
         run: pip install git-filter-repo
 
-      - name: 同步 CNB 上游到镜像仓
+      - name: 同步上游（CNB/Gitee）到镜像仓
         id: sync
         run: node scripts/sync-cnb.mjs
         env:
@@ -31,7 +31,7 @@ jobs:
           connection_url: ${{ secrets.MAIL_CONNECTION }}
           to: 1220232554@qq.com
           from: 1365443620@qq.com
-          subject: "CNB镜像告警：${{ steps.sync.outputs.alert_reason }}"
+          subject: "镜像同步告警：${{ steps.sync.outputs.alert_reason }}"
           body: |
             ${{ steps.sync.outputs.alert_body }}
             详见 workflow 日志。

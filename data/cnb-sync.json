@@ -8,6 +8,14 @@
       "head": "2b82880fb53ffb18df20045db82ec1d2db80cf3b",
       "syncedAt": "2026-08-30T05:43:51.262Z",
       "note": "镜像历史为上游经 git-filter-repo --strip-blobs-bigger-than 100M 的确定性过滤（剥离 依赖/sdk-packages 等超限文件）；head 记录上游原始 commit。"
+    },
+    "eink": {
+      "name": "阅读E-ink",
+      "upstream": "https://gitee.com/lyj09x/legado.git",
+      "upstreamBranch": "main",
+      "mirror": "legado-backup/eink",
+      "head": "",
+      "note": "Gitee 上游镜像（lyj09x/legado）：历史经 git-filter-repo --strip-blobs-bigger-than 100M 确定性过滤；head 记录上游原始 commit。镜像仓不存在时同步脚本会自动创建。"
     }
   }
 }
