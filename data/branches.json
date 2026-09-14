@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T01:10:09.774Z",
+  "generatedAt": "2026-09-14T06:22:55.871Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 120,
-      "sourceUpdatedAt": "2026-09-13T02:45:00Z",
+      "sourceUpdatedAt": "2026-09-14T04:19:39Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.091216（预发布）",
-        "tagName": "v3.26.091216",
-        "prerelease": true,
-        "publishedAt": "2026-09-13T02:08:31Z",
+        "name": "阅读C v3.26.091403（10897）",
+        "tagName": "v3.26.091403",
+        "prerelease": false,
+        "publishedAt": "2026-09-14T04:18:29Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.091216（10895）\n\n### 章节状态与重试\n- 让状态异常章节显示失败重试按钮\n- 缺失状态的评论章节进入普通重试链路\n- 修复缓存管理无法展示缺少状态的评论快照\n\n### 离线评论快照\n- 离线评论快照弹窗直接展开，避免发送栏被折叠裁切\n- 按实际绘制位置动态锚定离线评论栏，回写底部安全区，修复底栏被底部弹窗裁切\n- 优化缓存管理加载：复用正文清单并建立评论轻量索引\n- 移除评论资源总量门槛并正确传递缓存取消\n- 修复评论状态弹窗销毁后协程访问失效视图\n\n### 导出\n- 重构 TXT 与 ZIP 为尽力导出并内置失败报告\n- 统一 TXT 与 ZIP 完整导出及事务保存并显式报告失败\n- 自播媒体缓存占用存储时允许删除，不再要求完整章节计数\n\n### AI\n- 修复内联思考块正则缺少第二捕获组导致的崩溃\n- 出厂默认添加 local-core 第二供应商，无默认模型的老机器自动补齐\n- 关闭 Agent 时保留普通 AI 对话\n- 修复普通 AI 对话系统提示词断裂",
+        "body": "## 阅读C v3.26.091403（10897）\n\n### 评论数据分页抓取与下载控制\n\n- 评论下载接入分页抓取并拆分各阶段独立控制：数据接口支持 idea_comment 段评及楼中楼分页，章评、书评自动选择网页快照，可选强制数据接口或网页快照，执行失败不自动切换引擎。\n- 新增评论下载设置：评论数据、楼中楼、离线资源、网页快照页面、快照重处理五路并发配额，评论/回复每页请求数量、网页稳定检测间隔与确认轮数、各阶段超时、请求失败重试次数与退避方式（固定/线性/指数）均可调。\n- 新增下载要求开关：头像、评论图片、样式表、字体失败即标记部分快照，可关闭；支持复用接口内嵌完整回复与已缓存公共资源。\n- 书源新增评论数据协议声明（snapshotProtocol：留空自动识别，idea_comment 支持段评及楼中楼）。\n\n交流群 1101873338，好用的话点个 star，谢谢啦。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.091216_10895.apk",
-            "size": 35877257,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.091216/legado_oss_3.26.091216_10895.apk"
+            "name": "legado_oss_3.26.091403_10897.apk",
+            "size": 35917656,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.091403/legado_oss_3.26.091403_10897.apk"
           }
         ]
       },
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6088,
+      "stars": 6091,
       "sourceUpdatedAt": "2026-09-12T16:56:33Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2643,
+      "stars": 2646,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2159,
+      "stars": 2161,
       "sourceUpdatedAt": "2026-09-09T13:23:52Z",
       "githubArchived": false,
       "release": {
@@ -189,8 +189,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1138,
-      "sourceUpdatedAt": "2026-09-13T14:34:54Z",
+      "stars": 1146,
+      "sourceUpdatedAt": "2026-09-14T05:36:55Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26091322",
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 525,
+      "stars": 526,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 342,
+      "stars": 344,
       "sourceUpdatedAt": "2026-09-13T17:28:57Z",
       "githubArchived": false,
       "release": {
@@ -334,7 +334,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 287,
+      "stars": 289,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -457,7 +457,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 218,
+      "stars": 219,
       "sourceUpdatedAt": "2026-09-12T12:03:53Z",
       "githubArchived": false,
       "release": {
@@ -612,7 +612,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 96,
+      "stars": 97,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -655,7 +655,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 90,
+      "stars": 91,
       "sourceUpdatedAt": "2026-09-10T02:49:29Z",
       "githubArchived": false,
       "release": {
@@ -767,7 +767,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 15,
-      "sourceUpdatedAt": "2026-09-13T03:25:06Z",
+      "sourceUpdatedAt": "2026-09-14T02:33:49Z",
       "githubArchived": false,
       "release": {
         "name": "阅读M v3.26.091219",
@@ -835,7 +835,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 7,
-      "sourceUpdatedAt": "2026-09-14T00:17:46Z",
+      "sourceUpdatedAt": "2026-09-14T01:19:08Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.9",
@@ -937,24 +937,6 @@
       "forkOf": null
     },
     {
-      "id": "iyuedu",
-      "name": "i阅读",
-      "tag": "iyuedu",
-      "repo": "legado-backup/iyuedu",
-      "term": "legado-branch-iyuedu",
-      "skipAutoForks": true,
-      "allowNoRelease": true,
-      "upstreamUrl": "https://cnb.cool/mingwuyan/iyuedu",
-      "note": "z阅读的非内置ttsserver版本，不建议独立使用。",
-      "stars": 0,
-      "sourceUpdatedAt": "2026-08-30T05:38:21Z",
-      "githubArchived": false,
-      "release": null,
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "eink",
       "name": "阅读E-ink",
       "tag": "eink",
@@ -964,7 +946,7 @@
       "allowNoRelease": true,
       "gitee": "lyj09x/legado",
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
-      "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 legado-backup/eink 作备份。",
+      "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 1,
       "sourceUpdatedAt": "2026-09-10T15:11:35+08:00",
       "githubArchived": false,
@@ -998,6 +980,22 @@
           }
         ]
       },
+      "errors": []
+    },
+    {
+      "id": "iyuedu",
+      "name": "i阅读",
+      "tag": "iyuedu",
+      "repo": "legado-backup/iyuedu",
+      "term": "legado-branch-iyuedu",
+      "skipAutoForks": true,
+      "allowNoRelease": true,
+      "upstreamUrl": "https://cnb.cool/mingwuyan/iyuedu",
+      "note": "z阅读的非内置ttsserver版本，不建议独立使用。",
+      "stars": 0,
+      "sourceUpdatedAt": "2026-08-30T05:38:21Z",
+      "githubArchived": false,
+      "release": null,
       "errors": [],
       "fork": false,
       "forkOf": null
