@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:25:50.669Z",
+  "generatedAt": "2026-09-16T06:05:51.694Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 128,
+      "stars": 129,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47074,
+      "stars": 47072,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6113,
+      "stars": 6118,
       "sourceUpdatedAt": "2026-09-14T19:23:42Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2661,
+      "stars": 2665,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2163,
+      "stars": 2164,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1171,
+      "stars": 1177,
       "sourceUpdatedAt": "2026-09-14T15:41:56Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 532,
+      "stars": 533,
       "sourceUpdatedAt": "2026-09-04T06:46:01Z",
       "githubArchived": false,
       "release": {
@@ -457,7 +457,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 222,
+      "stars": 223,
       "sourceUpdatedAt": "2026-09-15T04:31:47Z",
       "githubArchived": false,
       "release": {
@@ -772,7 +772,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 15,
-      "sourceUpdatedAt": "2026-09-15T11:36:33Z",
+      "sourceUpdatedAt": "2026-09-16T05:42:46Z",
       "githubArchived": false,
       "release": {
         "name": "阅读M v3.26.091219",
@@ -840,35 +840,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 9,
-      "sourceUpdatedAt": "2026-09-15T15:29:07Z",
+      "sourceUpdatedAt": "2026-09-16T05:49:49Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.12",
-        "tagName": "3.26.17-beta.12",
+        "name": "Pre-release 3.26.17-beta.13",
+        "tagName": "3.26.17-beta.13",
         "prerelease": true,
-        "publishedAt": "2026-09-15T15:28:54Z",
-        "createdAt": "2026-09-15T15:08:38Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新让段评气泡可以一键隐藏，并为墨水屏阅读带来可自定义的点击区域：\n\n### 新增\n\n* 阅读设置新增「段评气泡」开关：默认开启；关闭后段评气泡不再排版显示，正文更清爽（完整模式与墨水屏模式一致生效，墨水屏也可在「其它设置」面板直接切换）\n* 墨水屏阅读页新增「点击区域设置」（其它设置面板进入）：九宫格点按分区可自定义——中心固定唤出菜单，其余各格在上一页/下一页间切换，退出设置即生效\n\n### 修复\n\n* 修复关闭段评气泡后，气泡所在行残留空行的问题",
+        "publishedAt": "2026-09-16T05:49:37Z",
+        "createdAt": "2026-09-16T05:33:29Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新重做墨水屏模式入口——「我的」页一键开关即达，并同步上游完整模式的修复与优化：\n\n### 新增\n\n* 「我的」页顶部新增「墨水屏模式」开关：打开即进入墨水屏界面，退出时自动关闭；开关打开期间冷启动自动回到墨水屏（条目显隐由实验室「启用实验室」+「墨水屏显示」双开关控制）\n* 升级迁移：原实验室「墨水屏显示」的开启状态自动继承为新模式开关状态，存量用户冷启动行为不变\n\n### 优化\n\n* 实验室「墨水屏显示」开关回归上游行为：打开只保存偏好，不再直接切换界面，也不再强制切换「电子书」主题；「电子书」主题在主题列表的显隐恢复上游门控\n* 同步上游：封面持久化缓存与离线加载、目录字数统计剔除富文本、书架滚动性能、书源管理删除确认与操作提示、AI 朗读推理级别开关（默认关闭思考）、全文搜索历史只记录确认过的查询、听书界面改版等\n* 恢复与上游一致的系统版本要求：minSdk 回到 26（Android 8.0）\n\n### 修复\n\n* 修复 Rhino 脚本入口未先安装上下文工厂时，书源登录页脚本执行崩溃的问题（上游 #2258）",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 275960428,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.12/mapping.txt"
+            "size": 276041883,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.12-arm64-v8a.apk",
-            "size": 20115033,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.12/moben-3.26.17-beta.12-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.13-arm64-v8a.apk",
+            "size": 19997859,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.12-armeabi-v7a.apk",
-            "size": 19654855,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.12/moben-3.26.17-beta.12-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.13-armeabi-v7a.apk",
+            "size": 19537682,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.12.apk",
-            "size": 26687513,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.12/moben-3.26.17-beta.12.apk"
+            "name": "moben-3.26.17-beta.13.apk",
+            "size": 26570331,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13.apk"
           }
         ]
       },
