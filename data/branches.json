@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T01:29:19.782Z",
+  "generatedAt": "2026-09-17T07:44:50.919Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 130,
+      "stars": 131,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6128,
+      "stars": 6133,
       "sourceUpdatedAt": "2026-09-16T12:08:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2670,
+      "stars": 2672,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1185,
+      "stars": 1192,
       "sourceUpdatedAt": "2026-09-16T08:54:22Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 533,
+      "stars": 534,
       "sourceUpdatedAt": "2026-09-16T19:23:51Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 291,
+      "stars": 293,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -462,7 +462,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 226,
+      "stars": 229,
       "sourceUpdatedAt": "2026-09-15T04:31:47Z",
       "githubArchived": false,
       "release": {
@@ -694,7 +694,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 69,
+      "stars": 70,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -845,35 +845,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 9,
-      "sourceUpdatedAt": "2026-09-16T05:49:49Z",
+      "sourceUpdatedAt": "2026-09-17T03:09:42Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.13",
-        "tagName": "3.26.17-beta.13",
+        "name": "Pre-release 3.26.17-beta.14",
+        "tagName": "3.26.17-beta.14",
         "prerelease": true,
-        "publishedAt": "2026-09-16T05:49:37Z",
-        "createdAt": "2026-09-16T05:33:29Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新重做墨水屏模式入口——「我的」页一键开关即达，并同步上游完整模式的修复与优化：\n\n### 新增\n\n* 「我的」页顶部新增「墨水屏模式」开关：打开即进入墨水屏界面，退出时自动关闭；开关打开期间冷启动自动回到墨水屏（条目显隐由实验室「启用实验室」+「墨水屏显示」双开关控制）\n* 升级迁移：原实验室「墨水屏显示」的开启状态自动继承为新模式开关状态，存量用户冷启动行为不变\n\n### 优化\n\n* 实验室「墨水屏显示」开关回归上游行为：打开只保存偏好，不再直接切换界面，也不再强制切换「电子书」主题；「电子书」主题在主题列表的显隐恢复上游门控\n* 同步上游：封面持久化缓存与离线加载、目录字数统计剔除富文本、书架滚动性能、书源管理删除确认与操作提示、AI 朗读推理级别开关（默认关闭思考）、全文搜索历史只记录确认过的查询、听书界面改版等\n* 恢复与上游一致的系统版本要求：minSdk 回到 26（Android 8.0）\n\n### 修复\n\n* 修复 Rhino 脚本入口未先安装上下文工厂时，书源登录页脚本执行崩溃的问题（上游 #2258）",
+        "publishedAt": "2026-09-17T03:09:30Z",
+        "createdAt": "2026-09-17T02:46:56Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式书架带来分组浏览能力：\n\n### 新增\n\n* 墨水屏书架顶栏「书架」旁新增当前分组显示，点开即可在分组面板中切换：分组以标签平铺展示（组名与书数一屏尽览），点选即切换并收起；选中分组与完整模式记忆互通，两边切换书架分组状态一致\n* 分组列表跟随完整模式的分组设置：隐藏空分组、分组排序（order）实时同步\n\n### 说明\n\n* 分组的管理操作（新建、重命名、删除、书籍归组、调整顺序）仍在完整模式进行；墨水屏模式专注浏览与切换",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 276041883,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/mapping.txt"
+            "size": 276516616,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.14/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.13-arm64-v8a.apk",
-            "size": 19997859,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.14-arm64-v8a.apk",
+            "size": 20013874,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.14/moben-3.26.17-beta.14-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.13-armeabi-v7a.apk",
-            "size": 19537682,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.14-armeabi-v7a.apk",
+            "size": 19553707,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.14/moben-3.26.17-beta.14-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.13.apk",
-            "size": 26570331,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.13/moben-3.26.17-beta.13.apk"
+            "name": "moben-3.26.17-beta.14.apk",
+            "size": 26586353,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.14/moben-3.26.17-beta.14.apk"
           }
         ]
       },
