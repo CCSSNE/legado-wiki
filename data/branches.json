@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T05:58:53.678Z",
+  "generatedAt": "2026-09-18T11:22:18.708Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47070,
+      "stars": 47069,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2678,
+      "stars": 2682,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2165,
+      "stars": 2164,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1202,
+      "stars": 1204,
       "sourceUpdatedAt": "2026-09-16T08:54:22Z",
       "githubArchived": false,
       "release": {
@@ -462,7 +462,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 230,
+      "stars": 228,
       "sourceUpdatedAt": "2026-09-17T09:11:41Z",
       "githubArchived": false,
       "release": {
@@ -772,7 +772,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 15,
-      "sourceUpdatedAt": "2026-09-18T01:11:43Z",
+      "sourceUpdatedAt": "2026-09-18T09:59:44Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.091720",
@@ -840,35 +840,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 10,
-      "sourceUpdatedAt": "2026-09-18T03:15:50Z",
+      "sourceUpdatedAt": "2026-09-18T08:27:00Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.15",
-        "tagName": "3.26.17-beta.15",
+        "name": "Pre-release 3.26.17-beta.16",
+        "tagName": "3.26.17-beta.16",
         "prerelease": true,
-        "publishedAt": "2026-09-17T14:47:47Z",
-        "createdAt": "2026-09-17T13:16:53Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式书架带来分组浏览能力：\n\n### 新增\n\n* 墨水屏书架顶栏「书架」旁新增当前分组显示，点开即可在分组面板中切换：分组以标签平铺展示（组名与书数一屏尽览），点选即切换并收起；选中分组与完整模式记忆互通，两边切换书架分组状态一致\n* 分组列表跟随完整模式的分组设置：隐藏空分组、分组排序（order）实时同步\n\n### 说明\n\n* 分组的管理操作（新建、重命名、删除、书籍归组、调整顺序）仍在完整模式进行；墨水屏模式专注浏览与切换",
+        "publishedAt": "2026-09-18T08:26:48Z",
+        "createdAt": "2026-09-18T07:51:26Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式带来书架分组浏览、阅读字体分级选择与更新下载体验改进：\n\n### 新增\n\n* 墨水屏书架顶栏「书架」旁新增当前分组显示，点开即可在分组面板中切换：分组以标签平铺展示（组名与书数一屏尽览），点选即切换并收起；选中分组与完整模式记忆互通，两边切换书架分组状态一致\n* 分组列表跟随完整模式的分组设置：隐藏空分组、分组排序（order）实时同步\n* 阅读字体选择改为两级交互：一级面板收敛为「预设字体 + 当前字体 + 更多字体入口」，字体较多时进入全屏分页浮层，单列整行显示完整字体名，可滑动翻页并一键「定位到当前字体」\n* 启动时自动检查更新：沿用完整模式的「启动时检查更新」开关，两种模式合计每个进程只自动检查一次；更新弹层提升到应用根层，书架与阅读页都能弹出\n* 更新检查与下载内置 gh-proxy.com 加速：优先走加速地址，失败自动回退直连\n* 更新弹框内嵌下载进度行，未授予通知权限时也能看到实时下载进度\n\n### 优化\n\n* 墨水屏书架手动刷新按当前选中分组进行，与完整模式口径一致\n* 分组选择面板内容左右边距加宽至 16dp，移除常驻页脚翻页区，仅多页分组时才渲染翻页\n* 按真机反馈收敛细节：选中分组描边由 2dp 收细为 1dp；字体浮层顶栏避开状态栏，标题与字体列表行对齐目录界面口径，换文件夹图标改为空心描边样式\n\n### 说明\n\n* 分组的管理操作（新建、重命名、删除、书籍归组、调整顺序）仍在完整模式进行；墨水屏模式专注浏览与切换",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 276884696,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.15/mapping.txt"
+            "size": 277271114,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.16/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.15-arm64-v8a.apk",
-            "size": 20031018,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.15/moben-3.26.17-beta.15-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.16-arm64-v8a.apk",
+            "size": 20015092,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.16/moben-3.26.17-beta.16-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.15-armeabi-v7a.apk",
-            "size": 19570846,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.15/moben-3.26.17-beta.15-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.16-armeabi-v7a.apk",
+            "size": 19554923,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.16/moben-3.26.17-beta.16-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.15.apk",
-            "size": 26603506,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.15/moben-3.26.17-beta.15.apk"
+            "name": "moben-3.26.17-beta.16.apk",
+            "size": 26587574,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.16/moben-3.26.17-beta.16.apk"
           }
         ]
       },
@@ -915,25 +915,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-09-13T03:19:11Z",
+      "sourceUpdatedAt": "2026-09-18T09:12:00Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.26.7-20260913-031908 (预发布)",
-        "tagName": "v3.26.7-20260913-031908",
+        "name": "Legado MD3 v3.26.7-20260918-091155 (预发布)",
+        "tagName": "v3.26.7-20260918-091155",
         "prerelease": true,
-        "publishedAt": "2026-09-13T03:19:11Z",
-        "createdAt": "2026-09-13T02:50:37Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: 31427e634151109ad30503f540cd072842a6feb4\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-09-18T09:12:00Z",
+        "createdAt": "2026-09-18T09:05:14Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: 3a9064520c3461761aea2f335272e68e8db253d8\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 23905292,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260913-031908/app-arm64-release.apk"
+            "size": 23905293,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260918-091155/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 41989108,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260913-031908/app-universal-release.apk"
+            "size": 41989107,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.26.7-20260918-091155/app-universal-release.apk"
           }
         ]
       },
@@ -952,7 +952,7 @@
       "gitee": "lyj09x/legado",
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
-      "stars": 1,
+      "stars": 2,
       "sourceUpdatedAt": "2026-09-10T15:11:35+08:00",
       "githubArchived": false,
       "release": {
