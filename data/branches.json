@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T19:30:29.236Z",
+  "generatedAt": "2026-09-20T22:29:50.160Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47083,
+      "stars": 47081,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 6178,
-      "sourceUpdatedAt": "2026-09-19T16:52:20Z",
+      "sourceUpdatedAt": "2026-09-20T20:41:38Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.38",
-        "tagName": "3.26.16-beta.38",
+        "name": "Pre-release 3.26.16-beta.39",
+        "tagName": "3.26.16-beta.39",
         "prerelease": true,
-        "publishedAt": "2026-09-18T16:53:28Z",
-        "createdAt": "2026-09-18T16:42:04Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\r\n### [发布页](https://t.me/materado)\r\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\r\n\r\n### 更新内容\r\n\r\n* feat: 油滑\r\n* feat: 适配Android 17的ACCESS_LOCAL_NETWORK权限\r\n* fix: 收掉 main 上的 CI 红灯并修正 Web 产物自动提交触发器 (#2281)\r\n* Bump web v3.26.091821\r\n* fix(web): 自动翻页章末与交互边界修正\r\n* fix(reader): Latin 换行回退不再制造行尾禁则违规\r\n* feat: 听书增加按章节定时，默认后台播放，全局播放胶囊等神秘功能\r\n* feat: 听书相关问题\r\n* feat: 增强章节编辑功能\r\n* Bump web v3.26.091800\r\n* feat: 添加 Xbox 手柄 LB 和 RB 按键支持，增加翻页功能\r\n* feat: 漫画条漫模式时的细线问题\r\n* feat: 阅读界面神必问题\r\n* fix(reader): preserve Latin word boundaries when wrapping\r\n* feat(reader): 预置 excludeActionImages 排版能力——带动作脚本的图片（段评气泡）可在测量层整体剔除\r\n* fix(app): 崩溃重启改走 launcher 组件解析——图标别名切换会禁用 MainActivity，显式 Intent 启动即崩\r\n* feat(web): 补全 BookChapter.vue 自动翻页核心逻辑（rAF 滚动 + 暂停恢复状态机）\r\n* feat(web): 阅读界面新增自动翻页功能（滚动模式）\r\n\r\n## What's Changed\r\n* feat(web)：阅读界面新增\"自动翻页\"功能（滚动模式） by @rinnki-L in https://github.com/HapeLee/legado-with-MD3/pull/2263\r\n* fix(app): 崩溃重启改走 launcher 组件解析——图标别名切换会禁用 MainActivity，显式 Intent 启动即崩 by @Mupceet in https://github.com/HapeLee/legado-with-MD3/pull/2266\r\n* feat(reader): 预置 excludeActionImages 排版能力——带动作脚本的图片（段评气泡）可在测量层整体剔除 by @Mupceet in https://github.com/HapeLee/legado-with-MD3/pull/2267\r\n* fix(reader): 修复英文/Latin 单词异常断行 by @ViqUey in https://github.com/HapeLee/legado-with-MD3/pull/2274\r\n* Add Xbox controller LB/RB support and paging feature by @mobeicanyue in https://github.com/HapeLee/legado-with-MD3/pull/2280\r\n* fix: 收掉 main 上的 CI 红灯（API 26 崩溃 / 规则引擎快捷路径 / lint / 文档死链） by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2281\r\n\r\n## New Contributors\r\n* @rinnki-L made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2263\r\n* @ViqUey made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2274\r\n\r\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.37...3.26.16-beta.38",
+        "publishedAt": "2026-09-20T20:41:28Z",
+        "createdAt": "2026-09-20T20:25:02Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* fix(reader): preserve word selection until drag starts (#2288)\n* feat: 优化章节载入\n* feat: 优化换源与新书冲突\n* feat: 选择模式相关\n* feat: 高亮规则修复与预设\n* feat: 一些书源兼容性\n* feat: 神秘界面优化和依赖更新\n* feat: 听书底部按钮\n* feat: 详情页Web渲染\n* feat: 翻页速度\n* feat: 笔记样式优化\n* feat: 分组管理样式优化\n* fix(search): 从书籍详情返回后保留搜索关键词与结果列表\n* feat: 神秘黑客技能（很黑客）",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.38-arm64-v8a.apk",
-            "size": 19730155,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.38/legado-3.26.16-beta.38-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.39-arm64-v8a.apk",
+            "size": 19836219,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.39/legado-3.26.16-beta.39-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.38-armeabi-v7a.apk",
-            "size": 19269982,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.38/legado-3.26.16-beta.38-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.39-armeabi-v7a.apk",
+            "size": 19376048,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.39/legado-3.26.16-beta.39-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.38.apk",
-            "size": 26302634,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.38/legado-3.26.16-beta.38.apk"
+            "name": "legado-3.26.16-beta.39.apk",
+            "size": 26408709,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.39/legado-3.26.16-beta.39.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 267696842,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.38/mapping.txt"
+            "size": 268730794,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.39/mapping.txt"
           }
         ]
       },
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2703,
+      "stars": 2705,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -617,20 +617,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 103,
-      "sourceUpdatedAt": "2026-09-10T02:49:29Z",
+      "sourceUpdatedAt": "2026-09-20T20:33:09Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.091010",
-        "tagName": "3.26.091010",
+        "name": "legado_ng_3.26.092104",
+        "tagName": "3.26.092104",
         "prerelease": false,
-        "publishedAt": "2026-09-10T02:49:30Z",
-        "createdAt": "2026-09-10T02:24:37Z",
-        "body": "### 更新内容\n* 修复V2登录弹窗按钮状态与关闭入口\n* 修复大型JS书源编辑传输崩溃\n* 修正书源导入取消按钮材质\n* 补全网络日志CSRF令牌脱敏\n* 完善JS书源段评与登录支持\n* 修复书源段评抽屉到顶下拉关闭\n* 优化阅读页电量显示\n* 新增页眉返回按钮并调整起点阅读预设\n* 拦截全空书源导入并更新项目说明\n* 修复大文件书源导入内存溢出\n* 新增书架AI右滑开关\n* 优化阅读信息弹窗显示\n* 完善高亮规则预览与复制并优化预设编辑\n* 完善阅读目录菜单与分卷折叠\n* 新增高亮规则九宫格切图调节\n* 优化阅读选字配色与划线浮窗避让\n* 支持阅读工具浮窗排序开关并统一抽屉下滑关闭\n* 完善阅读预设与高亮规则的完整资源导入导出\n* 支持界面字体切换与紧凑字体卡片\n* 支持按模块备份并补齐主题与阅读资源\n* 恢复书源上传链接导出并支持复制链接\n* 完善书签操作并修复滚动朗读行为\n\n",
+        "publishedAt": "2026-09-20T20:33:09Z",
+        "createdAt": "2026-09-20T20:22:13Z",
+        "body": "### 更新内容\n* 优化书源合集导入空地址容错并提示跳过数量\n* 修复书架封面圆角并将封面书名改为左侧竖排\n* 修复高亮气泡九宫格绘制与排版\n* 清理死代码与无用资源\n* 统一本地和远程书籍页面顶栏与内容宽度\n* 统一书架排序菜单样式并修正分组菜单对齐\n* 新增书架列表阅读进度显示开关\n* 新增网格背景容器并动态避让底栏\n* 调整搜索并发跟随设置并将默认线程数设为64\n* 修复既有回归测试的缺失导入\n* 完善界面字体覆盖并修复字体重载\n* 修复订阅源参数弹窗生命周期崩溃\n* 重构订阅源编辑布局并完善编辑辅助\n* 调整订阅源管理玻璃材质与删除图标\n* 修复阅读记录弹窗圆角并统一窗口布局\n* 备份时保留内置资源引用并避免重复打包\n* 恢复详情分组操作并统一未分组管理\n* 新增书架集中设置并支持横滑配置\n* 增加书架未读强调开关并恢复下拉刷新反馈\n* 支持选中文字定位编辑并重构全屏正文编辑器\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.09101030_release.apk",
-            "size": 36646404,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.091010/legado_NG_3.26.09101030_release.apk"
+            "name": "legado_NG_3.26.09210422_release.apk",
+            "size": 36689254,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.092104/legado_NG_3.26.09210422_release.apk"
           }
         ]
       },
@@ -772,7 +772,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 15,
-      "sourceUpdatedAt": "2026-09-20T19:22:29Z",
+      "sourceUpdatedAt": "2026-09-20T21:28:47Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.091910",
