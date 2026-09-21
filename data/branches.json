@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T01:10:22.325Z",
+  "generatedAt": "2026-09-21T06:26:03.018Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 135,
+      "stars": 136,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 15,
+          "stars": 16,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6178,
+      "stars": 6183,
       "sourceUpdatedAt": "2026-09-20T20:41:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2706,
+      "stars": 2710,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2169,
+      "stars": 2170,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,8 +189,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1233,
-      "sourceUpdatedAt": "2026-09-16T08:54:22Z",
+      "stars": 1239,
+      "sourceUpdatedAt": "2026-09-21T05:44:48Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26091322",
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 541,
+      "stars": 542,
       "sourceUpdatedAt": "2026-09-16T19:23:51Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 355,
+      "stars": 356,
       "sourceUpdatedAt": "2026-09-19T16:18:26Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 294,
+      "stars": 296,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -462,71 +462,46 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 228,
-      "sourceUpdatedAt": "2026-09-20T03:44:39Z",
+      "stars": 230,
+      "sourceUpdatedAt": "2026-09-21T02:30:36Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.09171700",
+        "name": "3.26.09211016",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-09-17T09:11:41Z",
-        "createdAt": "2026-09-17T08:59:30Z",
-        "body": "## 更新日志\n- fix(desktop): deb/rpm 补拉 app image, 修 Linux 包缺 QuickJS native       (0ab2cc1b6)",
+        "publishedAt": "2026-09-21T02:30:36Z",
+        "createdAt": "2026-09-21T01:56:25Z",
+        "body": "## 更新日志\n- refactor(storage): 将备份封面目录与存储引用重命名为oldCovers             (90f770d63)\n- fix(app): 改日志文件为按需延迟创建以防生成空文件                         (5e26ee48c)\n- chore(build): 关闭 AGP 依赖约束对齐并清理废弃配置                        (cfe7e0e9b)\n- refactor(quickjs): 抽取 quickjs-test 模块共享测试套件                    (e19e72a6d)\n- fix(bookshelf): 接入统一返回链以支持桌面ESC退出分组并补齐iOS退出口       (7014aa419)\n- feat(backup): 下沉自动备份调度并全端对齐生命周期触发                     (97df218e2)\n- perf(desktop): 延后TTS后端探测至首屏显示后阶段3                          (f2ec60d1a)\n- perf(app): 做实启动期封面与JS真预热并精简字符串预读                      (dfbfc20a3)\n- refactor(data): 清理 DAO 未使用方法并融合重复接口                        (b5ec413ae)\n- fix(storage): WebDAV 进度同步改为仅局部更新同步时间戳                    (f987bdae7)\n- fix(model): 阅读记录归属日改为会话开始日                                 (f09d78d54)\n- refactor(config): 移除其他设置中自创的清除封面缓存入口                   (b8c56274c)\n- perf(storage): 阅读记录备份融合区间并压缩碎片                            (66a435c91)\n- perf(storage): 批量化备份恢复写入并忽略废弃视频进度                      (eb62ee7a4)\n- perf(navigation): 导航栈静止态只组合栈顶页并规范页面状态保存             (6f2c4e60a)\n- fix(window): 状态栏与系统栏避让统一为应有高度并清理假冻结机制            (c188b150d)\n- fix(about): 修复统计热力图测量崩溃并规范记录封面尺寸                     (76649001b)\n- refactor(bookshelf): 统一书籍与分组封面管线并规范尺寸约束                (bbd4b4840)\n- chore(deps): 通过元数据规则排除 coil 的 skiko 依赖                       (7aa08a329)\n- build(desktop): 优化本地构建逻辑并清偿配置缓存违规                       (b3af7d7af)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 18349644,
+            "size": 17299217,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 18349644,
+            "size": 17299221,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 11267009,
+            "size": 10232206,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 11267009,
+            "size": 10232210,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 10550531,
+            "size": 9517792,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 10550531,
+            "size": 9517796,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
-          },
-          {
-            "name": "linux_x64.deb",
-            "size": 98987100,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
-          },
-          {
-            "name": "linux_x64.rpm",
-            "size": 105740558,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
-          },
-          {
-            "name": "macos_arm64.dmg",
-            "size": 110433725,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
-          },
-          {
-            "name": "windows_x64.msi",
-            "size": 101520000,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
-          },
-          {
-            "name": "windows_x64_portable.zip",
-            "size": 100299405,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
       },
@@ -616,7 +591,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 103,
+      "stars": 105,
       "sourceUpdatedAt": "2026-09-20T20:33:09Z",
       "githubArchived": false,
       "release": {
@@ -772,7 +747,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 16,
-      "sourceUpdatedAt": "2026-09-21T00:42:20Z",
+      "sourceUpdatedAt": "2026-09-21T06:18:23Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.091910",
