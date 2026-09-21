@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:26:03.018Z",
+  "generatedAt": "2026-09-21T14:15:32.535Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 16,
+          "stars": 17,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47080,
+      "stars": 47079,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6183,
-      "sourceUpdatedAt": "2026-09-20T20:41:38Z",
+      "stars": 6188,
+      "sourceUpdatedAt": "2026-09-21T07:20:19Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.39",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2710,
+      "stars": 2714,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1239,
+      "stars": 1245,
       "sourceUpdatedAt": "2026-09-21T05:44:48Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 542,
+      "stars": 543,
       "sourceUpdatedAt": "2026-09-16T19:23:51Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 356,
+      "stars": 357,
       "sourceUpdatedAt": "2026-09-19T16:18:26Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 296,
+      "stars": 295,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -591,7 +591,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 105,
+      "stars": 104,
       "sourceUpdatedAt": "2026-09-20T20:33:09Z",
       "githubArchived": false,
       "release": {
@@ -620,7 +620,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 99,
+      "stars": 100,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -747,7 +747,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 16,
-      "sourceUpdatedAt": "2026-09-21T06:18:23Z",
+      "sourceUpdatedAt": "2026-09-21T13:07:23Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.091910",
@@ -815,35 +815,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 10,
-      "sourceUpdatedAt": "2026-09-20T10:42:00Z",
+      "sourceUpdatedAt": "2026-09-21T13:59:09Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.19",
-        "tagName": "3.26.17-beta.19",
+        "name": "Pre-release 3.26.17-beta.20",
+        "tagName": "3.26.17-beta.20",
         "prerelease": true,
-        "publishedAt": "2026-09-20T10:36:53Z",
-        "createdAt": "2026-09-20T10:19:55Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta.17（预发布）\n\n本次更新为墨水屏模式带来目录刷新追更、调参实时预览与详情定位的改进，并合并上游完整模式的多项功能更新：\n\n### 新增\n\n* 墨水屏目录页自动跟随新章：追更拉取到新章节后，目录页即时跟进显示，无需退出重进或手动刷新\n* 合并上游完整模式更新：听书新增按章节定时关闭、默认后台播放与全局播放胶囊；章节编辑功能增强；Web 端阅读界面新增自动翻页；Xbox 手柄 LB/RB 键翻页\n\n### 修复\n\n* 修复墨水屏边距调整弹框中「页眉」页签边距变化无法实时预览的问题：阅读页状态栏显示改为严格跟随「隐藏状态栏」开关，不再随菜单/弹层开合来回出现，页眉（时间/电量）在调整时保持可见；信息配置中「页眉模式」的预览同样受益\n* 修复墨水屏详情页同名多记录时可能打开错误条目的问题：从书架长按哪条进入就定位哪条，不再被同名记录干扰\n* 修复切换应用图标别名后崩溃重启的问题（上游）\n\n### 优化\n\n* 墨水屏阅读菜单「刷新」按钮语义改为「刷新本章」：仅重载当前章内容，不再触发整书目录刷新；目录刷新增加 10 分钟限频，减少对书源的重复请求",
+        "publishedAt": "2026-09-21T13:58:57Z",
+        "createdAt": "2026-09-21T13:24:23Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新聚焦墨水屏界面的细节打磨：阅读菜单交互调整、状态栏与顶栏显示修复、字体配置体验优化。\n\n### 新增\n\n* 退出阅读时若书籍尚未加入书架，弹框提示「加入书架」，避免漏加；阅读顶栏不再提供加/移书架按钮，书架管理统一在书籍详情页完成\n* 字体配置记住最近选中的字体文件：从文件字体切回系统字体后，弹框内一键切回，无需重新翻找\n\n### 修复\n\n* 修复开启「隐藏状态栏」后展开阅读菜单时，顶部操作条图标落进状态栏区域无法点击的问题：菜单展开期间状态栏自动显示并让位，收起菜单后恢复隐藏；设置面板等二级菜单仍跟随开关\n\n### 优化\n\n* 「音量键翻页」开关移至阅读菜单「其它设置」面板，与阅读相关设置集中一处\n* 阅读顶栏操作按钮改为方形触摸区；界面跳转指示「>」统一更换为标准箭头图标；「我的」页条目增加按压反色反馈\n* 阅读设置滑条去除刻度线，滑块提示省去单位后缀，进度滑条直接显示「当前页/总页数」\n* 自动翻页间隔新增 12/14/16/18 秒档位\n* 字体配置字重设置重排：「细体/常规/粗体」独立一行，点「自定义」原位展开拖动条，窄屏显示完整且切换不跳动\n* 阅读界面图标全量更换为 Material Symbols 规格图标",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 278703059,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.19/mapping.txt"
+            "size": 278724041,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.20/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.19-arm64-v8a.apk",
-            "size": 20068602,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.19/moben-3.26.17-beta.19-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.20-arm64-v8a.apk",
+            "size": 20071756,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.20/moben-3.26.17-beta.20-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.19-armeabi-v7a.apk",
-            "size": 19608433,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.19/moben-3.26.17-beta.19-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.20-armeabi-v7a.apk",
+            "size": 19611587,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.20/moben-3.26.17-beta.20-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.19.apk",
-            "size": 26641082,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.19/moben-3.26.17-beta.19.apk"
+            "name": "moben-3.26.17-beta.20.apk",
+            "size": 26644242,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.20/moben-3.26.17-beta.20.apk"
           }
         ]
       },
