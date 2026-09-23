@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T06:02:48.143Z",
+  "generatedAt": "2026-09-23T11:44:13.008Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47085,
+      "stars": 47087,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6217,
+      "stars": 6218,
       "sourceUpdatedAt": "2026-09-22T21:57:45Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2727,
+      "stars": 2730,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2173,
+      "stars": 2174,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1260,
+      "stars": 1263,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -772,7 +772,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 17,
-      "sourceUpdatedAt": "2026-09-23T03:20:40Z",
+      "sourceUpdatedAt": "2026-09-23T11:24:51Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.092311",
@@ -799,42 +799,13 @@
       "forkOf": null
     },
     {
-      "id": "x",
-      "name": "阅读 X",
-      "tag": "x",
-      "repo": "XziXmn/legado-X",
-      "term": "legado-branch-x",
-      "note": "阅读 Sigma 分支。",
-      "stars": 11,
-      "sourceUpdatedAt": "2026-09-03T01:00:22Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_3.26.090308_beta",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-09-03T01:00:22Z",
-        "createdAt": "2026-09-03T00:49:28Z",
-        "body": "### 更新内容\n* docs: 在 README 中关联配套后端 LegadoHub\n\n\n包名：`io.legado.app.beta`（测试版「阅读·测试」，不覆盖正式版）\n",
-        "assets": [
-          {
-            "name": "legado_beta_3.26.09030849.apk",
-            "size": 19835914,
-            "browserDownloadUrl": "https://github.com/XziXmn/legado-X/releases/download/beta/legado_beta_3.26.09030849.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
-    },
-    {
       "id": "moben",
       "name": "墨本阅读",
       "tag": "moben",
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 10,
+      "stars": 11,
       "sourceUpdatedAt": "2026-09-23T04:14:33Z",
       "githubArchived": false,
       "release": {
@@ -870,6 +841,35 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "x",
+      "name": "阅读 X",
+      "tag": "x",
+      "repo": "XziXmn/legado-X",
+      "term": "legado-branch-x",
+      "note": "阅读 Sigma 分支。",
+      "stars": 11,
+      "sourceUpdatedAt": "2026-09-03T01:00:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_3.26.090308_beta",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-03T01:00:22Z",
+        "createdAt": "2026-09-03T00:49:28Z",
+        "body": "### 更新内容\n* docs: 在 README 中关联配套后端 LegadoHub\n\n\n包名：`io.legado.app.beta`（测试版「阅读·测试」，不覆盖正式版）\n",
+        "assets": [
+          {
+            "name": "legado_beta_3.26.09030849.apk",
+            "size": 19835914,
+            "browserDownloadUrl": "https://github.com/XziXmn/legado-X/releases/download/beta/legado_beta_3.26.09030849.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "fu",
