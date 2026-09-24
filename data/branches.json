@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T15:11:50.585Z",
+  "generatedAt": "2026-09-24T19:14:11.224Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47102,
+      "stars": 47101,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,7 +86,7 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 6231,
-      "sourceUpdatedAt": "2026-09-24T15:07:12Z",
+      "sourceUpdatedAt": "2026-09-24T19:09:38Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.40",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2745,
+      "stars": 2746,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2179,
+      "stars": 2180,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1280,
+      "stars": 1281,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -233,25 +233,25 @@
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
       "stars": 551,
-      "sourceUpdatedAt": "2026-09-16T19:23:51Z",
+      "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读 Archive 第十四版",
-        "tagName": "archive-v3-3.26.09160852-smooth",
+        "name": "阅读 Archive 第十五版",
+        "tagName": "archive-v3-3.26.09242230",
         "prerelease": false,
-        "publishedAt": "2026-09-16T19:22:45Z",
-        "createdAt": "2026-09-16T19:08:33Z",
-        "body": "# 阅读 Archive 第十四版\n\n版本：`3.26.09160852-smooth` · versionCode：`29825332` · 架构：`arm64-v8a`\n\n本次集中更新正文排版、高亮规则、页面模板与共用素材，并继续优化 EPUB 连续翻页和章节切换体验。更新内容覆盖第十三版之后的累计改动。\n\n## 新增\n\n- **普通正文支持 EPUB 渲染**：TXT 和书源正文可选择原生或 EPUB 排版，分别保存阅读设置，并保留原书目录、书签和阅读进度。\n- **Reeden 高亮规则**：支持导入本地 `.red` 文件，提供搜索、启停、排序、编辑、预览、作用范围设置，以及全部或搜索结果导出。\n- **高亮字体与图片选择**：可从素材库选择字体和背景图片，选择字体后自动更新样式中的 `font-family`。\n- **自定义页面模板**：普通正文的 EPUB 模式可编辑首页 HTML、续页 HTML、CSS 和 JavaScript，支持预览、导入导出与独立备份。\n- **内置横排、竖排示例**：提供「星幕月相」和「古籍竖排」，可复制后继续修改。\n- **统一阅读素材管理**：支持浏览本地文件夹、导入图片和字体、搜索分类、预览、重命名、导出及复制引用；高亮规则和页面模板可以共用素材。\n- **网络与 DNS 设置**：支持按功能选择 DoH 或系统 DNS，提供域名例外、预设与自定义服务及测速。\n\n## 优化\n\n- **优先保证翻页流畅**：扩大相邻章节预加载和页面缓存，流畅模式最多预热 4 章，极致模式最多预热 6 章，减少切换章节时的等待。\n- **减少重复排版**：同章相邻页复用已排版的 WebView，减少长章节翻页时的重复文字扫描；手指按下时暂缓启动新的后台章节排版。\n- **改善页面上下衔接**：优先接入能够完整放下的下一行，再均匀调整剩余间距，减少页底忽高忽低、末段间距突兀和内容裁切。\n- **完善图片与气泡显示**：兼容更多行内图片、SVG、动态图片及软件气泡，优化缩放比例、资源加载和文字对齐。\n- **完善模板与动效**：首页章名适配长标题和大字号，动效随当前页面状态暂停、恢复与清理。\n- **改善详情页设置**：定时检测更新的文字和点击区域更清晰，沉浸式详情页提供入口；编辑书籍信息和标签弹窗支持完整滚动。\n\n## 修复\n\n- 修复沉浸式详情页自定义标签漏显、数量截断、长标签显示不完整，以及部分主题下对比度不足的问题。\n- 修复多行高亮图案头尾缺失、边缘错位，以及标点或引号换行时左侧不齐的问题。\n- 修复部分图片气泡偏大、偏下，或与对应文字被拆到两页的问题。\n- 修复合法 JPG 素材被误报缺少结束符的问题。\n- 修复高亮规则筛选排序、旧编辑结果覆盖新状态、已删除规则重新出现，以及重复导入未修复缺失图片的问题。\n- 修复异常高亮匹配、损坏资源和失败恢复对现有阅读配置的影响；完善素材引用检查，减少误删仍在使用的图片或字体。\n- 修复部分段评 WebView 关闭与复用时影响正文，以及切书后迟到的图片或排版结果覆盖当前页面的问题。\n\n## 使用说明\n\n- 高亮规则通过本地 `.red` 文件导入；复杂图片图案与 CSS 效果使用 EPUB 渲染，原生正文支持基础文字高亮。\n- 普通正文的 EPUB 模式当前不启用段落规则与 `pclick`；原始图片 `click` 和替换净化继续支持。\n- 页面模板用于普通正文的 EPUB 模式，提供独立备份；短章末页、强制分页和复杂插图保留自然布局。\n- DoH 默认关闭，修改后需重启应用生效；WebView 网页自身请求和系统／第三方 TTS 不会自动使用原生网络分流设置。\n\n本次提供 arm64-v8a 安装包。已完成自动化回归、浏览器渲染比较及安装包校验，尚未完成 Android 真机显示与触控手感验收。\n\n安装包 SHA256：`61dd7f5b5c93d1e0932449bc6248c17246940849bbe8561d83dc5da6446a2527`\n",
+        "publishedAt": "2026-09-24T15:36:04Z",
+        "createdAt": "2026-09-24T15:31:30Z",
+        "body": "# 阅读 Archive 第十五版\n\n版本：`3.26.09242230` · `arm64-v8a`\n\n- 新增 Minecraft、明日香、诡秘之主、哆啦 A 梦四套阅读主题，以及四周固定、正文滚动的模板。\n- 新增可自定义的 EPUB 加载模板，默认「山茶花」，背景覆盖状态栏，适配日夜模式。\n- 优化分页、连续翻页和跨章加载，修复引号、反引号等导致的提前跳页和大片留白。\n- 优化详情页加载、刷新与简介显示，定时任务入口统一放到「更多」菜单。\n\n[完整更新记录](https://github.com/Rimchars/legado/blob/archive-v3-3.26.09242230/docs/releases/2026-09-24-v15.md)\n",
         "assets": [
           {
-            "name": "legado_app_3.26.09160852-smooth_29825332.apk",
-            "size": 41254363,
-            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.09160852-smooth/legado_app_3.26.09160852-smooth_29825332.apk"
+            "name": "legado_app_3.26.09242230_29837670.apk",
+            "size": 43622341,
+            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.09242230/legado_app_3.26.09242230_29837670.apk"
           },
           {
             "name": "SHA256SUMS.txt",
-            "size": 112,
-            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.09160852-smooth/SHA256SUMS.txt"
+            "size": 104,
+            "browserDownloadUrl": "https://github.com/Rimchars/legado/releases/download/archive-v3-3.26.09242230/SHA256SUMS.txt"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 365,
+      "stars": 366,
       "sourceUpdatedAt": "2026-09-22T16:18:23Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 297,
+      "stars": 296,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -617,7 +617,7 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 106,
-      "sourceUpdatedAt": "2026-09-24T11:53:04Z",
+      "sourceUpdatedAt": "2026-09-24T18:26:26Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.092104",
@@ -728,7 +728,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 19,
-      "sourceUpdatedAt": "2026-09-24T14:57:14Z",
+      "sourceUpdatedAt": "2026-09-24T18:16:28Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.092311",
@@ -948,35 +948,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 2,
-      "sourceUpdatedAt": "2026-09-22T22:11:03+08:00",
+      "sourceUpdatedAt": "2026-09-24T23:19:13+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.092221",
-        "tagName": "阅读_E-ink_3.26.092221",
+        "name": "阅读_E-ink_3.26.092422",
+        "tagName": "阅读_E-ink_3.26.092422",
         "prerelease": false,
-        "publishedAt": "2026-09-22T22:11:03+08:00",
-        "createdAt": "2026-09-22T22:11:03+08:00",
-        "body": "- 修改一下图标而已啦~",
+        "publishedAt": "2026-09-24T23:19:13+08:00",
+        "createdAt": "2026-09-24T23:19:13+08:00",
+        "body": "- 同步掌阅瀑布翻页\r\n- 新增波纹反转功能",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.092221.apk",
+            "name": "阅读_E-ink_3.26.092422.apk",
             "size": 20895871,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092221/%E9%98%85%E8%AF%BB_E-ink_3.26.092221.apk"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092422/%E9%98%85%E8%AF%BB_E-ink_3.26.092422.apk"
           },
           {
-            "name": "阅读_magisk_3.26.092221.zip",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092221/%E9%98%85%E8%AF%BB_magisk_3.26.092221.zip"
+            "name": "阅读_magisk_3.26.092422.zip",
+            "size": 22646270,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092422/%E9%98%85%E8%AF%BB_magisk_3.26.092422.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092221.zip",
+            "name": "阅读_E-ink_3.26.092422.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092221.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092422.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092221.tar.gz",
+            "name": "阅读_E-ink_3.26.092422.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092221.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092422.tar.gz"
           }
         ]
       },
