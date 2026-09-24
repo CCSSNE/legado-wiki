@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T04:58:03.598Z",
+  "generatedAt": "2026-09-24T10:07:03.465Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 142,
+      "stars": 143,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 17,
+          "stars": 18,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47098,
+      "stars": 47099,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6227,
-      "sourceUpdatedAt": "2026-09-24T04:54:05Z",
+      "stars": 6229,
+      "sourceUpdatedAt": "2026-09-24T05:20:26Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.40",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2736,
+      "stars": 2739,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2177,
+      "stars": 2179,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1269,
+      "stars": 1274,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 547,
+      "stars": 549,
       "sourceUpdatedAt": "2026-09-16T19:23:51Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 364,
+      "stars": 365,
       "sourceUpdatedAt": "2026-09-22T16:18:23Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 296,
+      "stars": 297,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -462,60 +462,60 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 240,
-      "sourceUpdatedAt": "2026-09-22T18:13:05Z",
+      "stars": 243,
+      "sourceUpdatedAt": "2026-09-24T05:35:41Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.09230200",
+        "name": "3.26.09241322",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-09-22T18:13:06Z",
-        "createdAt": "2026-09-22T17:17:27Z",
-        "body": "## 更新日志\n- feat(navigation): 引入页面级生命周期并迁移各页副作用                     (932647ccd)\n- perf(navigation): 被盖页保留组合并固化转场状态机契约                     (443156e6b)\n- fix(transition): 共享元素配对键改页面区块条目三元组派生                  (7a1a577b8)",
+        "publishedAt": "2026-09-24T05:35:41Z",
+        "createdAt": "2026-09-24T04:21:22Z",
+        "body": "## 更新日志\n- fix(data): 消除 URL 构造的 typealias 展开弃用告警                        (6598682e7)\n- fix(shared): 资源读取改为生成器派生, 清偿模块拆分遗留                    (625f1b523)\n- fix(textfield): 文本字段超高撑爆 Constraints 改字段内滚动                (4fd3f64d8)\n- refactor(analyzeRule): 恢复 ruleUrl 属性名对齐原版                       (7dbcecba6)\n- feat(navigation): 引入页面级生命周期并迁移各页副作用                     (932647ccd)\n- perf(navigation): 被盖页保留组合并固化转场状态机契约                     (443156e6b)\n- fix(transition): 共享元素配对键改页面区块条目三元组派生                  (7a1a577b8)\n- fix(build): 修正 app/desktop proguard 对已删 :shared consumer-rules 的.. (768502908)\n- perf(app): 移除冗余重量级锁并缩小测量标定临界区                          (129df5082)\n- build(ohos): 鸿蒙 Release 切 -O3 激进优化并提升 LLVM codegen 并行度      (d1679af43)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 17298061,
+            "size": 17298077,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 17298061,
+            "size": 17298077,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 10231050,
+            "size": 10231066,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 10231050,
+            "size": 10231066,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 9516636,
+            "size": 9516652,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 9516636,
+            "size": 9516652,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
           },
           {
             "name": "linux_x64.deb",
-            "size": 98675158,
+            "size": 98717010,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
           },
           {
             "name": "linux_x64.rpm",
-            "size": 105432239,
+            "size": 105439966,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
           },
           {
             "name": "macos_arm64.dmg",
-            "size": 110144593,
+            "size": 110171965,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
           },
           {
@@ -525,7 +525,7 @@
           },
           {
             "name": "windows_x64_portable.zip",
-            "size": 99999714,
+            "size": 100003670,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
@@ -540,7 +540,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 131,
+      "stars": 132,
       "sourceUpdatedAt": "2026-09-07T05:49:13Z",
       "githubArchived": false,
       "release": {
@@ -583,7 +583,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 124,
+      "stars": 125,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -616,7 +616,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 105,
+      "stars": 106,
       "sourceUpdatedAt": "2026-09-21T17:02:55Z",
       "githubArchived": false,
       "release": {
@@ -645,7 +645,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 102,
+      "stars": 103,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -689,7 +689,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 70,
+      "stars": 71,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -728,7 +728,7 @@
       "repo": "damifan3/legadoPP",
       "term": "legado-branch-pp",
       "note": "阅读 Sigma 分支。",
-      "stars": 17,
+      "stars": 18,
       "sourceUpdatedAt": "2026-08-20T15:15:48Z",
       "githubArchived": false,
       "release": {
@@ -771,8 +771,8 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 17,
-      "sourceUpdatedAt": "2026-09-24T04:52:41Z",
+      "stars": 18,
+      "sourceUpdatedAt": "2026-09-24T09:40:42Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.092311",
@@ -805,7 +805,7 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 11,
+      "stars": 12,
       "sourceUpdatedAt": "2026-09-24T02:30:04Z",
       "githubArchived": false,
       "release": {
@@ -849,7 +849,7 @@
       "repo": "XziXmn/legado-X",
       "term": "legado-branch-x",
       "note": "阅读 Sigma 分支。",
-      "stars": 11,
+      "stars": 12,
       "sourceUpdatedAt": "2026-09-03T01:00:22Z",
       "githubArchived": false,
       "release": {
@@ -878,7 +878,7 @@
       "repo": "h166278/legado_FU",
       "term": "legado-branch-fu",
       "note": "原名阅读 FU，集成各版本优点，基于阅读 NG（同源非 fork）。",
-      "stars": 7,
+      "stars": 8,
       "sourceUpdatedAt": "2026-09-22T09:56:59Z",
       "githubArchived": false,
       "release": {
