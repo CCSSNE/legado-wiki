@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T23:50:11.575Z",
+  "generatedAt": "2026-09-24T04:58:03.598Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 140,
+      "stars": 142,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47092,
+      "stars": 47098,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6225,
-      "sourceUpdatedAt": "2026-09-23T21:56:52Z",
+      "stars": 6227,
+      "sourceUpdatedAt": "2026-09-24T04:54:05Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.40",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2733,
+      "stars": 2736,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2176,
+      "stars": 2177,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1267,
+      "stars": 1269,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -462,7 +462,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 239,
+      "stars": 240,
       "sourceUpdatedAt": "2026-09-22T18:13:05Z",
       "githubArchived": false,
       "release": {
@@ -772,7 +772,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 17,
-      "sourceUpdatedAt": "2026-09-23T23:47:01Z",
+      "sourceUpdatedAt": "2026-09-24T04:52:41Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.092311",
@@ -806,35 +806,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 11,
-      "sourceUpdatedAt": "2026-09-23T22:43:04Z",
+      "sourceUpdatedAt": "2026-09-24T02:30:04Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.21",
-        "tagName": "3.26.17-beta.21",
+        "name": "Pre-release 3.26.17-beta.22",
+        "tagName": "3.26.17-beta.22",
         "prerelease": true,
-        "publishedAt": "2026-09-22T05:11:45Z",
-        "createdAt": "2026-09-22T04:33:01Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新重排墨水屏书籍详情页并补齐阅读反馈细节，同时合并上游完整模式的多项功能更新。\n\n### 新增\n\n* 书籍详情页重排：移除顶部操作条，操作集中到底部操作栏（阅读、加/移书架，屏幕足够宽时目录与换源同栏展示）；窄屏时目录与换源以小号按钮排在章节信息下方\n* 书籍详情页翻页改为连续滚动：第一次下翻封面整块移出，书名、作者、章节信息固定在顶部，简介在其下逐页翻阅；简介较短时到头即止，不再产生空页\n* 书首/书末再翻页时提示「没有上一页/下一页」，与完整模式一致\n\n### 修复\n\n* 修复墨水屏页内翻页不计阅读时长、章节预下载推迟的问题\n* 修复「刷新本章」点按后无反馈的问题：刷新期间正文区让位显示「加载数据中…」，旧正文不再残留\n* 修复自动翻页进度条走满后悬挂一秒才回零的问题\n* 进一步修复展开阅读菜单时顶部操作条被状态栏顶下、图标无法点击的问题\n\n### 优化\n\n* 书籍详情页加/移书架图标更换为 Material Symbols 规格\n* 合并上游完整模式更新：章节载入与翻页速度优化、换源与新书冲突处理、选择模式增强、高亮规则修复与预设、笔记与分组管理样式优化、书籍详情返回后保留搜索关键词等",
+        "publishedAt": "2026-09-24T02:29:51Z",
+        "createdAt": "2026-09-24T01:39:31Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新合并上游完整模式的隐私模式等一批功能与性能更新，墨水屏模式新增云端备份提示并升级换源管线。\n\n### 新增\n\n* 墨水屏模式：启动时检测云端是否有较新备份，确认后恢复并反馈结果\n* 完整模式：隐私模式——私密分组与单本私密书：分组内书籍不在公开书架显示、进入需验证；私密书留在书架但封面与文字会被遮挡，验证后显示；支持本地密码与生物识别快捷解锁，可配置验证时机与保持时长\n* 完整模式：阅读目录页新增「使用替换规则」开关，可在目录中快速切换替换净化\n\n### 修复\n\n* 完整模式：修复阅读界面偶发不刷新的问题\n* 完整模式：修复阅读中电量百分比不刷新的问题\n\n### 优化\n\n* 墨水屏模式：换源改走与完整模式一致的替换管线，备注、缓存目录、阅读时长随书迁移并刷新云端备份，避免从旧备份恢复时带回旧源同名书\n* 墨水屏模式：换源搜索逐源结果落库缓存，与完整模式共享\n* 完整模式：阅读电量图标改用与旧版一致的电池矢量样式\n* 完整模式：启动速度与章节排版性能优化\n\n### 说明\n\n* 隐私模式仅在完整模式生效，墨水屏模式暂未适配：墨水屏书架与阅读不经过隐私验证与遮挡",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 279515879,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.21/mapping.txt"
+            "size": 281451023,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.22/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.21-arm64-v8a.apk",
-            "size": 20178663,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.21/moben-3.26.17-beta.21-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.22-arm64-v8a.apk",
+            "size": 20375037,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.22/moben-3.26.17-beta.22-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.21-armeabi-v7a.apk",
-            "size": 19718485,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.21/moben-3.26.17-beta.21-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.22-armeabi-v7a.apk",
+            "size": 19914865,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.22/moben-3.26.17-beta.22-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.21.apk",
-            "size": 26751137,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.21/moben-3.26.17-beta.21.apk"
+            "name": "moben-3.26.17-beta.22.apk",
+            "size": 26947509,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.22/moben-3.26.17-beta.22.apk"
           }
         ]
       },
