@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:40:52.046Z",
+  "generatedAt": "2026-09-25T22:25:19.383Z",
   "branches": [
     {
       "id": "c",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2753,
+      "stars": 2754,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -462,15 +462,15 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 245,
-      "sourceUpdatedAt": "2026-09-25T17:46:29Z",
+      "stars": 246,
+      "sourceUpdatedAt": "2026-09-25T20:31:05Z",
       "githubArchived": false,
       "release": {
         "name": "多平台测试",
         "tagName": "multiplatform-test",
         "prerelease": false,
         "publishedAt": "2026-08-19T11:13:13Z",
-        "createdAt": "2026-09-25T15:17:04Z",
+        "createdAt": "2026-09-25T20:02:15Z",
         "body": "多平台测试包（未签名，供侧载/自签验证）：\r\n\r\n- **鸿蒙**: legado-3.26.090110-ohos-unsigned.hap（arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签）\r\n- **iOS**: legado-3.26.08280041-ios-unsigned.ipa（SideStore/AltStore 自签侧载）\r\n\r\n⚠️ 均为未签名产物，仅供多平台功能测试。",
         "assets": [
           {
@@ -482,6 +482,11 @@
             "name": "legado-3.26.092523-unsigned.hap",
             "size": 66689695,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.092523-unsigned.hap"
+          },
+          {
+            "name": "legado-3.26.092604-unsigned.hap",
+            "size": 66150174,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.092604-unsigned.hap"
           }
         ]
       },
