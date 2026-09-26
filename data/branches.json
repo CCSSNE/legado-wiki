@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T07:47:51.065Z",
+  "generatedAt": "2026-09-26T13:10:11.652Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 144,
+      "stars": 145,
       "sourceUpdatedAt": "2026-09-15T07:43:31Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47098,
+      "stars": 47097,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6246,
+      "stars": 6247,
       "sourceUpdatedAt": "2026-09-25T04:22:09Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2757,
+      "stars": 2760,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1299,
+      "stars": 1302,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 368,
+      "stars": 370,
       "sourceUpdatedAt": "2026-09-25T16:57:46Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 298,
+      "stars": 299,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -462,8 +462,8 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 248,
-      "sourceUpdatedAt": "2026-09-26T04:24:03Z",
+      "stars": 249,
+      "sourceUpdatedAt": "2026-09-26T09:33:45Z",
       "githubArchived": false,
       "release": {
         "name": "多平台测试",
@@ -471,22 +471,17 @@
         "prerelease": false,
         "publishedAt": "2026-08-19T11:13:13Z",
         "createdAt": "2026-09-25T20:02:15Z",
-        "body": "多平台测试包（未签名，供侧载/自签验证）：\r\n\r\n- **鸿蒙**: legado-3.26.090110-ohos-unsigned.hap（arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签）\r\n- **iOS**: legado-3.26.08280041-ios-unsigned.ipa（SideStore/AltStore 自签侧载）\r\n\r\n⚠️ 均为未签名产物，仅供多平台功能测试。",
+        "body": "多平台测试包（未签名，供侧载/自签验证）：\r\n\r\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\r\n- **iOS**: SideStore/AltStore 自签侧载\r\n\r\n⚠️ 均为未签名产物，仅供多平台功能测试。",
         "assets": [
-          {
-            "name": "legado-3.26.08280041-ios-unsigned.ipa",
-            "size": 32913940,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.08280041-ios-unsigned.ipa"
-          },
-          {
-            "name": "legado-3.26.092523-unsigned.hap",
-            "size": 66689695,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.092523-unsigned.hap"
-          },
           {
             "name": "legado-3.26.092604-unsigned.hap",
             "size": 66150174,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.092604-unsigned.hap"
+          },
+          {
+            "name": "legado-3.26.09261734-ios-unsigned.ipa",
+            "size": 31579655,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.09261734-ios-unsigned.ipa"
           }
         ]
       },
@@ -688,7 +683,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 19,
-      "sourceUpdatedAt": "2026-09-26T07:35:55Z",
+      "sourceUpdatedAt": "2026-09-26T13:01:55Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.092311",
@@ -908,35 +903,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 2,
-      "sourceUpdatedAt": "2026-09-25T23:54:41+08:00",
+      "sourceUpdatedAt": "2026-09-26T20:30:32+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.092523",
-        "tagName": "阅读_E-ink_3.26.092523",
+        "name": "阅读_E-ink_3.26.092620",
+        "tagName": "阅读_E-ink_3.26.092620",
         "prerelease": false,
-        "publishedAt": "2026-09-25T23:54:41+08:00",
-        "createdAt": "2026-09-25T23:54:41+08:00",
-        "body": "- 祝各位中秋快乐安康\r\n- 漫画掌阅新增水波纹",
+        "publishedAt": "2026-09-26T20:30:32+08:00",
+        "createdAt": "2026-09-26T20:30:32+08:00",
+        "body": "- 新增点击页眉页脚返回书架",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.092523.apk",
+            "name": "阅读_E-ink_3.26.092620.apk",
             "size": 20895871,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092523/%E9%98%85%E8%AF%BB_E-ink_3.26.092523.apk"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092620/%E9%98%85%E8%AF%BB_E-ink_3.26.092620.apk"
           },
           {
-            "name": "阅读_magisk_3.26.092523.zip",
-            "size": 22645782,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092523/%E9%98%85%E8%AF%BB_magisk_3.26.092523.zip"
+            "name": "阅读_magisk_3.26.092620.zip",
+            "size": 22645924,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092620/%E9%98%85%E8%AF%BB_magisk_3.26.092620.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092523.zip",
+            "name": "阅读_E-ink_3.26.092620.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092523.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092620.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092523.tar.gz",
+            "name": "阅读_E-ink_3.26.092620.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092523.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092620.tar.gz"
           }
         ]
       },
