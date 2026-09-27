@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T01:31:32.447Z",
+  "generatedAt": "2026-09-27T08:16:24.807Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 146,
-      "sourceUpdatedAt": "2026-09-15T07:43:31Z",
+      "stars": 147,
+      "sourceUpdatedAt": "2026-09-27T07:43:33Z",
       "githubArchived": false,
       "release": {
         "name": "阅读C v3.26.091403（10897）",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6251,
+      "stars": 6255,
       "sourceUpdatedAt": "2026-09-26T20:20:57Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1303,
+      "stars": 1305,
       "sourceUpdatedAt": "2026-09-21T15:06:02Z",
       "githubArchived": false,
       "release": {
@@ -463,25 +463,70 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 249,
-      "sourceUpdatedAt": "2026-09-26T09:33:45Z",
+      "sourceUpdatedAt": "2026-09-27T07:59:35Z",
       "githubArchived": false,
       "release": {
-        "name": "多平台测试",
-        "tagName": "multiplatform-test",
-        "prerelease": false,
-        "publishedAt": "2026-08-19T11:13:13Z",
-        "createdAt": "2026-09-25T20:02:15Z",
-        "body": "多平台测试包（未签名，供侧载/自签验证）：\r\n\r\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\r\n- **iOS**: SideStore/AltStore 自签侧载\r\n\r\n⚠️ 均为未签名产物，仅供多平台功能测试。",
+        "name": "3.26.09271544",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-27T07:59:35Z",
+        "createdAt": "2026-09-27T07:31:43Z",
+        "body": "## 更新日志\n- fix(changesource): 换源后会话键改写为新书, 重进换源页不再随机重搜        (022a0e9cc)",
         "assets": [
           {
-            "name": "legado-3.26.092604-unsigned.hap",
-            "size": 66150174,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.092604-unsigned.hap"
+            "name": "all.apk",
+            "size": 17298069,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
-            "name": "legado-3.26.09261734-ios-unsigned.ipa",
-            "size": 31579655,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.09261734-ios-unsigned.ipa"
+            "name": "all_releaseA.apk",
+            "size": 17298069,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
+          },
+          {
+            "name": "arm64.apk",
+            "size": 10231058,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
+          },
+          {
+            "name": "arm64_releaseA.apk",
+            "size": 10231058,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
+          },
+          {
+            "name": "armv7.apk",
+            "size": 9516644,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
+          },
+          {
+            "name": "armv7_releaseA.apk",
+            "size": 9516644,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
+          },
+          {
+            "name": "linux_x64.deb",
+            "size": 98673190,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
+          },
+          {
+            "name": "linux_x64.rpm",
+            "size": 105447748,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
+          },
+          {
+            "name": "macos_arm64.dmg",
+            "size": 110183113,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
+          },
+          {
+            "name": "windows_x64.msi",
+            "size": 101237424,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
+          },
+          {
+            "name": "windows_x64_portable.zip",
+            "size": 100009185,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
       },
@@ -538,7 +583,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 126,
+      "stars": 127,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -571,7 +616,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 106,
+      "stars": 108,
       "sourceUpdatedAt": "2026-09-25T17:55:57Z",
       "githubArchived": false,
       "release": {
@@ -683,25 +728,25 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 19,
-      "sourceUpdatedAt": "2026-09-27T00:27:58Z",
+      "sourceUpdatedAt": "2026-09-27T07:32:24Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.092311",
-        "tagName": "3.26.092311",
+        "name": "3.26.092712",
+        "tagName": "3.26.092712",
         "prerelease": false,
-        "publishedAt": "2026-09-23T03:18:14Z",
-        "createdAt": "2026-09-23T03:17:11Z",
-        "body": "3.26.091910 → 3.26.092311\n\n**2026/09/23（精简发版）**\n### 调整\n- 发版仅保留测试包与正式包，取消共存包\n### 修复\n- 修复正式包无法检测到新版本的问题\n\n**2026/09/22（子页面优化）**\n### 优化\n- 网络一键导入显示下载进度与三步状态，成功可直达管理页，失败可重试\n- 书源编辑必填项标星号，保存失败直接定位到该字段\n- 段落规则与自定义按键编辑保存失败直接定位，返回时先确认未保存\n- 段落规则与自定义按键编辑顶栏只留常用按钮，其余收进更多菜单\n- 详情页新增现代样式：卡片信息块、简介目录一体、目录面板\n- 详情页管理新增现代样式页签，三种样式说明与行为一致\n### 修复\n- 部分订阅源检查与源解析设置项在中文下显示英文\n- 修复视频配置弹框内播放控制按钮点击无反应\n- 修复摘录分享模板页面打开即报错，恢复正常显示与图片预览\n- 修复回收站、段落规则等页面点帮助报错，补齐缺失帮助文档\n- 修复多人朗读开启后点朗读立即报错无法播报\n- 修复缓存管理、音频缓存包导入、云缓存的章节与条目读取失败\n- 修复书库容器导入与书籍信息快捷动作设置读取失败\n- 修复书架设置标签后点击标签筛选不生效\n- 现已生效，此前设置无作用\n\n**2026/09/21（子页面优化）**\n### 优化\n- 书架角标显示更新章数，网格显示进度与继续阅读，目录更新显示进度与结果\n- 书架空态给出添加入口，标签超宽右缘渐隐，更多与批量菜单按用途分组\n- 订阅源编辑必填项标星号、保存失败自动定位、菜单按用途分组\n- 段落规则带拖拽手柄与模板，导入显示进度，调试结果分三段可复制\n- 沉浸式播放显示手势引导与集数；按键管理显示效果预览\n- 音视频播放：长按停止先确认，定时倍速统一弹层，选集显示进度\n- 发现页搜索栏常驻套件名，横排与瀑布流可换一批，列表可放入书架\n- 搜书结果显示实时命中与多源聚合数，可切换精准与紧凑\n- 全文搜索可按章直达，设置搜索高亮并精确匹配置顶\n- 替换规则可粘贴样本试运行；订阅搜索显示条数并可停止\n- 订阅阅读下滚收起顶栏、朗读显示状态；图片刷新显示进度\n- 智能音频分组可一键展开、音轨可试听、导入 ZIP 显示进度\n- AI 供应商与世界书管理可搜索、无结果可清除，对话空态给出示例\n- 消耗记录摘要分行显示并按模型统计，选中后浮出批量删除导出\n- 我的页恢复资产概览头部；代码编辑器显示未保存与只读状态\n- 书籍信息页弹窗统一风格，删除时可一并删源文件；证书失败直接放行\n- 文件关联导入先看摘要再选目录，成功失败改为结果卡\n### 修复\n- 修复世界书与条目删除未确认、消耗记录与按键重开后闪退\n- 修复图片浏览刷新后同一批图片重复出现\n- 修复替换规则超时填非数字保存崩溃\n\n**2026/09/20（稳定性修复）**\n### 优化\n- 顶栏套装下载显示进度与全局生效提示，底栏套装样式改动即时预览\n- 发现套件列表非当前套件可直接设为当前\n- 套件透明度倍率调节时即时显示面板效果\n- 删除套件前提示将一并删除的控件数量\n- 控件保存校验就地提示，套件行显示控件类型摘要\n- 订阅页分组与源标签分层，卡片显示源数量与未读标记\n- 阅读记录增加续读链接、热力图摘要与达标徽标\n- 日志页搜索高亮并显示命中数可清除筛选，详情支持逐条翻阅\n- 订阅分类菜单按用途分组，清除缓存前先确认\n- 订阅分类多行默认收起可一键展开，标签选中态补底色\n- 内嵌浏览器证书与禁用源操作需确认标红，返回一页，验证模式带引导\n- 扫码页显示对准与全屏识别引导，相册识别有等待、成功与重试提示\n- 证书默认放行，登录页与内嵌浏览器可切换为失败时确认\n- 登录页顶栏改「完成登录」不再自动关闭，失败报错可复制重试，密码可切换\n- 裁剪页显示图片比例与保存中提示，失败可原地重试\n- 没有收藏时显示引导与去订阅源入口\n- 收藏夹「删除所有」标红并分组，单分组显示分组名\n- 订阅分类标签显示未读数量\n- 订阅文章列表加载失败显示原因并可点开重试\n### 修复\n- 修复发现套件新建后列表不显示已保存套件\n- 修复换源与换目录源搜索多源返回同一本书时闪退\n- 修复书籍详情长简介不出现「展开全文」入口\n- 修复阅读记录最近在读信息间的分隔符显示错误\n- 修复扫码页权限被拒或无二维码时直接退出\n\n**2026/09/19（子页面优化与发版说明）**\n### 新增\n- 设置页支持页内搜索筛选\n- 语音选角编辑器支持添加与置顶规则\n- 书籍目录显示未读章节数与「新」标记\n- 书源与体检结果页显示可用、失效、未校验计数\n### 优化\n- 更新日志与发版说明按天合并\n- 破坏操作红色与主题色统一；设置弹框统一样式\n- AI 默认模型摘要按角色分行；语音选角模板标识使用中\n- 阅读记录页筛选合并一行\n- 书籍信息管理沉浸样式补结构示意\n- 书源调试结束显示结论条；图片保存显示落点\n- 世界书条目编辑按内容/关键词/注入分组\n- 高亮规则用开关启停，空态给预设与恢复默认\n- 文件选择各入口标注来源与能力说明\n- 关于页无新版时行内提示\n- 跳转确认展示链接与风险；验证码提示大小写与失败引导\n- 体检结果页删除后给出备份路径并可复制\n- 书源/订阅源无结果时给出添加或导入引导\n- 订阅源列表显示上次更新时间\n- 书籍详情简介默认折叠可展开，最新章可点直达并显示新章数\n- 离线缓存页顶部显示缓存进度可取消\n- 角色管理支持按名称/身份/技能搜索，空分组可直接添加角色\n- 角色卡片空区块折叠收纳，并可直接查看该角色的关系网\n- 角色编辑表单分基础/设定/朗读三节，名称标必填\n- 关系网记住上次中心角色，关系名称提供常用词快捷填入\n- 主题管理加载中显示骨架卡、失败可重试，卡片显示来源徽标\n### 修复\n- 修复订阅源列表开关与批量启用后界面不刷新\n- 修复主题恢复后自选文字色被覆盖、仅用日间主题者被强制切夜间",
+        "publishedAt": "2026-09-27T04:54:48Z",
+        "createdAt": "2026-09-27T04:30:56Z",
+        "body": "3.26.092311 → 3.26.092712\n\n**2026/09/27（体验优化）**\n### 优化\n- 回收站列表改为与其他管理页一致的卡片行样式\n- 字典规则的删除收进「更多」菜单，拖拽排序不再误触删除\n### 修复\n- 恢复书源管理「回收站」入口，可找回误删的书源与规则\n\n**2026/09/26（体验优化）**\n### 新增\n- AI 供应商可配置余额接口并查询余额\n- 选中文字可用 AI 净化，去除广告、乱码与错别字\n- 阅读页可选显示页眉返回按钮\n### 优化\n- 统一「我的」各页顶栏与列表行样式（字典/TXT目录/自动任务等）\n- 优化部分网络下书源与图片首次加载等待过久的问题\n- 导入书源时自动忽略没有任何配置内容的空书源\n- 书架切分组或冷启动时先展示上次列表，减少白屏\n- 书源校验过程显示当前阶段，完成后给出统计与平均分\n### 修复\n- 修复阅读菜单按键页顶栏无标题且无法重置布局的问题\n- 修复从搜索打开的书重启后被清掉、丢失阅读进度的问题\n- 修复正文加载失败时把错误提示当成正文显示的问题\n- 修复从搜索直接播放的视频退出时不询问是否加入书架的问题\n- 修复订阅文章列表首页不足一屏时无法继续加载的问题\n\n**2026/09/25（体验优化）**\n### 修复\n- 修复封面图集页顶栏下多余按钮挤占内容区的问题\n- 修复部分页面「更多」菜单项缺少图标的问题\n- 修复日志管理多选时返回位未显示关闭图标的问题\n\n**2026/09/24（体验优化）**\n### 优化\n- 清理缓存后书架封面不再重新下载\n- 朗读与听书不会同时出声，切换时自动接替\n- 高亮规则可导出为规则包文件，导入前自动校验完整性\n- 书源搜索页头部改用全站统一搜索栏，并新增返回按钮\n### 修复\n- 修复书架、订阅与发现列表滚到底被底栏遮挡的问题\n- 修复听书歌词时间轴字色不随主题变化\n- 修复更新角标底色不随主题变化\n- 修复备份内容中「阅读分享配置」勾选后不生效\n- 备份内容不再列出无效的「章节目录」选项\n- 修复下载管理页切换分类不生效、列表上滑后消失的问题\n\n**2026/09/23（精简发版）**\n### 调整\n- 发版仅保留测试包与正式包，取消共存包\n### 优化\n- 页眉页脚可选自定义模板，点选变量插入占位符并实时预览\n- 选中正文文字后可从菜单直接编辑此处，编辑器定位到选中位置\n- 翻页按键新增手柄预设，一键适配常见手柄，键码冲突会先提示\n- 书架可选「未读用强调色」，未读书名以主题强调色显示\n- 备份前可按内容类别勾选，未勾选的类别不进入备份产物\n- 阅读样式的边距与页眉页脚合并进「版面设置」，一次进入即可调整\n### 修复\n- 修复正式包无法检测到新版本的问题\n- 修复部分标签与角标不随主题色变化，换主题色后即时刷新\n- 修复标签栏与芯片底色不随主题色联动（改按主题背景推导）\n- 修复改主题或换外观套件后重启会被还原的问题\n- 修复定时规则按步进设置（如每15分钟）不按预期触发\n- 修复导出书籍时正文为空的章节会写入 null 文字\n- 适配新版安卓本地网络权限，局域网的源可正常访问\n- 修复自动任务在重启或换时区后不再触发的问题\n- 自动任务规则现在可随备份保存与恢复\n- 修复更新目录时新增章节数统计不准的问题\n- 修复自动任务耗时过长导致后续任务被系统中断",
         "assets": [
           {
-            "name": "legado_miss_app_3.26.092311.apk",
-            "size": 26004638,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092311/legado_miss_app_3.26.092311.apk"
+            "name": "legado_miss_app_3.26.092712.apk",
+            "size": 25990430,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092712/legado_miss_app_3.26.092712.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.092311.apk",
-            "size": 40650654,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092311/legado_miss_app_debug_3.26.092311.apk"
+            "name": "legado_miss_app_debug_3.26.092712.apk",
+            "size": 40844944,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092712/legado_miss_app_debug_3.26.092712.apk"
           }
         ]
       },
@@ -903,35 +948,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 2,
-      "sourceUpdatedAt": "2026-09-26T22:08:01+08:00",
+      "sourceUpdatedAt": "2026-09-27T10:21:25+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.092621",
-        "tagName": "阅读_E-ink_3.26.092621",
+        "name": "阅读_E-ink_3.26.092709",
+        "tagName": "阅读_E-ink_3.26.092709",
         "prerelease": false,
-        "publishedAt": "2026-09-26T22:08:01+08:00",
-        "createdAt": "2026-09-26T22:08:01+08:00",
-        "body": "- 新增页眉页脚点击返回",
+        "publishedAt": "2026-09-27T09:52:59+08:00",
+        "createdAt": "2026-09-27T09:52:59+08:00",
+        "body": "- 此版本为最近迭代完整正式版\r\n- 新增了掌阅水波纹和其他适配\r\n- 新增了点击页脚页眉返回书架\r\n- 可以打开禁止返回配合上一条\r\n- 修改了图标使用全新设计视觉\r\n- 漫画和正文都添加了掌阅特性",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.092621.apk",
+            "name": "阅读_E-ink_3.26.092709.apk",
             "size": 20895871,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092621/%E9%98%85%E8%AF%BB_E-ink_3.26.092621.apk"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092709/%E9%98%85%E8%AF%BB_E-ink_3.26.092709.apk"
           },
           {
-            "name": "阅读_magisk_3.26.092621.zip",
-            "size": 22645762,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092621/%E9%98%85%E8%AF%BB_magisk_3.26.092621.zip"
+            "name": "阅读_magisk_3.26.092709.zip",
+            "size": 22645754,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092709/%E9%98%85%E8%AF%BB_magisk_3.26.092709.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092621.zip",
+            "name": "阅读_E-ink_3.26.092709.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092621.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092709.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.092621.tar.gz",
+            "name": "阅读_E-ink_3.26.092709.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092621.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.092709.tar.gz"
           }
         ]
       },
