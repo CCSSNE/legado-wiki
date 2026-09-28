@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T00:53:49.296Z",
+  "generatedAt": "2026-09-28T07:00:06.307Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 150,
+      "stars": 151,
       "sourceUpdatedAt": "2026-09-27T07:43:33Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47104,
+      "stars": 47105,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6258,
+      "stars": 6263,
       "sourceUpdatedAt": "2026-09-27T16:41:42Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2763,
+      "stars": 2770,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,8 +189,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1312,
-      "sourceUpdatedAt": "2026-09-21T15:06:02Z",
+      "stars": 1315,
+      "sourceUpdatedAt": "2026-09-28T06:11:29Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26091322",
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 561,
+      "stars": 564,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -339,7 +339,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 300,
+      "stars": 301,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -416,7 +416,7 @@
           "name": "CCSSNE/Legado-Tauri",
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
-          "stars": 4,
+          "stars": 5,
           "updatedAt": "2026-08-13T16:47:51Z"
         }
       ],
@@ -462,7 +462,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 249,
+      "stars": 251,
       "sourceUpdatedAt": "2026-09-27T07:59:35Z",
       "githubArchived": false,
       "release": {
@@ -722,6 +722,39 @@
       "forkOf": null
     },
     {
+      "id": "m",
+      "name": "阅读 M",
+      "tag": "m",
+      "repo": "syq17496152/legado",
+      "term": "legado-branch-m",
+      "stars": 21,
+      "sourceUpdatedAt": "2026-09-28T05:45:47Z",
+      "githubArchived": false,
+      "release": {
+        "name": "3.26.092809",
+        "tagName": "3.26.092809",
+        "prerelease": false,
+        "publishedAt": "2026-09-28T01:32:36Z",
+        "createdAt": "2026-09-28T01:28:59Z",
+        "body": "3.26.092712 → 3.26.092809\n\n**2026/09/28（问题修复）**\n### 修复\n- 从阅读历史或收藏打开订阅视频，也能上下滑动切换上一条下一条\n- 图片加载中显示进度，加载失败可就地重试，不再一片漆黑\n- 修复书源编辑页六个标签下的编辑项全部不显示的问题\n\n**2026/09/27（体验优化）**\n### 新增\n- 订阅正文含视频时自动打开内置播放器，可在设置或阅读菜单关闭\n- 漫画长按可保存或分享当前页图片\n- 可开启文章图片预下载，之后离线也能看图\n### 优化\n- 回收站列表改为与其他管理页一致的卡片行样式\n- 字典规则的删除收进「更多」菜单，拖拽排序不再误触删除\n- 移除底栏悬浮搜索按钮，搜索入口统一到顶栏与侧边栏\n- 万条书源合集导入更省内存，超限会提前提示\n- 网页订阅解析出视频地址时直接播放，不再等待嗅探\n- 视频播放失败自动切换下一条线路，无需手动切\n- 听书遇网络抖动会自动续播，不再直接停下\n- 朗读可按段落续读，重进不再回到段首\n- 订阅可一键把全部/当前源/分组标为已读\n- 订阅源支持 OPML 导入导出（可与其他阅读器互通）\n- 订阅已读记录纳入备份与恢复\n- 漫画可双指缩放，长条图加载更省内存\n- 图片分享改为直接发送图片文件\n- 保存的图片按来源与序号命名，不再重名覆盖\n- 图片浏览统一为一套手势，长图与普通图体验一致\n### 修复\n- 恢复书源管理「回收站」入口，可找回误删的书源与规则\n- 备份与恢复补齐封面图集、高亮规则、背景图、书籍缓存\n- 修复备份失败时提示可能为空的问题\n- 改善部分中文站点的正文乱码\n- 修复含视频的订阅文章打开内置播放器后不播放的问题\n- 修复订阅视频在播放器内上下滑动切换上一个下一个失效\n- 修复订阅瀑布流列表间距过大、卡片偏窄的问题",
+        "assets": [
+          {
+            "name": "legado_miss_app_3.26.092809.apk",
+            "size": 26046215,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092809/legado_miss_app_3.26.092809.apk"
+          },
+          {
+            "name": "legado_miss_app_debug_3.26.092809.apk",
+            "size": 40917161,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092809/legado_miss_app_debug_3.26.092809.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "pp",
       "name": "阅读PP",
       "tag": "pp",
@@ -764,39 +797,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "Luoyacheng/legado-E"
-    },
-    {
-      "id": "m",
-      "name": "阅读 M",
-      "tag": "m",
-      "repo": "syq17496152/legado",
-      "term": "legado-branch-m",
-      "stars": 19,
-      "sourceUpdatedAt": "2026-09-28T00:52:28Z",
-      "githubArchived": false,
-      "release": {
-        "name": "3.26.092712",
-        "tagName": "3.26.092712",
-        "prerelease": false,
-        "publishedAt": "2026-09-27T04:54:48Z",
-        "createdAt": "2026-09-27T04:30:56Z",
-        "body": "3.26.092311 → 3.26.092712\n\n**2026/09/27（体验优化）**\n### 优化\n- 回收站列表改为与其他管理页一致的卡片行样式\n- 字典规则的删除收进「更多」菜单，拖拽排序不再误触删除\n### 修复\n- 恢复书源管理「回收站」入口，可找回误删的书源与规则\n\n**2026/09/26（体验优化）**\n### 新增\n- AI 供应商可配置余额接口并查询余额\n- 选中文字可用 AI 净化，去除广告、乱码与错别字\n- 阅读页可选显示页眉返回按钮\n### 优化\n- 统一「我的」各页顶栏与列表行样式（字典/TXT目录/自动任务等）\n- 优化部分网络下书源与图片首次加载等待过久的问题\n- 导入书源时自动忽略没有任何配置内容的空书源\n- 书架切分组或冷启动时先展示上次列表，减少白屏\n- 书源校验过程显示当前阶段，完成后给出统计与平均分\n### 修复\n- 修复阅读菜单按键页顶栏无标题且无法重置布局的问题\n- 修复从搜索打开的书重启后被清掉、丢失阅读进度的问题\n- 修复正文加载失败时把错误提示当成正文显示的问题\n- 修复从搜索直接播放的视频退出时不询问是否加入书架的问题\n- 修复订阅文章列表首页不足一屏时无法继续加载的问题\n\n**2026/09/25（体验优化）**\n### 修复\n- 修复封面图集页顶栏下多余按钮挤占内容区的问题\n- 修复部分页面「更多」菜单项缺少图标的问题\n- 修复日志管理多选时返回位未显示关闭图标的问题\n\n**2026/09/24（体验优化）**\n### 优化\n- 清理缓存后书架封面不再重新下载\n- 朗读与听书不会同时出声，切换时自动接替\n- 高亮规则可导出为规则包文件，导入前自动校验完整性\n- 书源搜索页头部改用全站统一搜索栏，并新增返回按钮\n### 修复\n- 修复书架、订阅与发现列表滚到底被底栏遮挡的问题\n- 修复听书歌词时间轴字色不随主题变化\n- 修复更新角标底色不随主题变化\n- 修复备份内容中「阅读分享配置」勾选后不生效\n- 备份内容不再列出无效的「章节目录」选项\n- 修复下载管理页切换分类不生效、列表上滑后消失的问题\n\n**2026/09/23（精简发版）**\n### 调整\n- 发版仅保留测试包与正式包，取消共存包\n### 优化\n- 页眉页脚可选自定义模板，点选变量插入占位符并实时预览\n- 选中正文文字后可从菜单直接编辑此处，编辑器定位到选中位置\n- 翻页按键新增手柄预设，一键适配常见手柄，键码冲突会先提示\n- 书架可选「未读用强调色」，未读书名以主题强调色显示\n- 备份前可按内容类别勾选，未勾选的类别不进入备份产物\n- 阅读样式的边距与页眉页脚合并进「版面设置」，一次进入即可调整\n### 修复\n- 修复正式包无法检测到新版本的问题\n- 修复部分标签与角标不随主题色变化，换主题色后即时刷新\n- 修复标签栏与芯片底色不随主题色联动（改按主题背景推导）\n- 修复改主题或换外观套件后重启会被还原的问题\n- 修复定时规则按步进设置（如每15分钟）不按预期触发\n- 修复导出书籍时正文为空的章节会写入 null 文字\n- 适配新版安卓本地网络权限，局域网的源可正常访问\n- 修复自动任务在重启或换时区后不再触发的问题\n- 自动任务规则现在可随备份保存与恢复\n- 修复更新目录时新增章节数统计不准的问题\n- 修复自动任务耗时过长导致后续任务被系统中断",
-        "assets": [
-          {
-            "name": "legado_miss_app_3.26.092712.apk",
-            "size": 25990430,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092712/legado_miss_app_3.26.092712.apk"
-          },
-          {
-            "name": "legado_miss_app_debug_3.26.092712.apk",
-            "size": 40844944,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092712/legado_miss_app_debug_3.26.092712.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
     },
     {
       "id": "moben",
@@ -947,7 +947,7 @@
       "gitee": "lyj09x/legado",
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
-      "stars": 2,
+      "stars": 3,
       "sourceUpdatedAt": "2026-09-27T23:44:53+08:00",
       "githubArchived": false,
       "release": {
