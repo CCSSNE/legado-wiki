@@ -142,6 +142,14 @@ const branches = [
     repo: 'huage2580/yuedu_hd',
     term: 'legado-branch-sanmu',
     note: 'Flutter 重写的阅读 HD 版，发布 Android / Windows 安装包。'
+  },
+  {
+    id: 'manxia',
+    name: '漫匣阅读',
+    tag: 'manxia',
+    repo: 'DaLongZhuaZi/manxia',
+    term: 'legado-branch-manxia',
+    note: '阅读原版重构，鸿蒙 Next 版。'
   }
 ];
 

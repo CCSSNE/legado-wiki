@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T01:10:38.502Z",
+  "generatedAt": "2026-09-30T01:19:03.750Z",
   "branches": [
     {
       "id": "c",
@@ -779,6 +779,35 @@
             "name": "legado_._3.26.080214_releaseS.apk",
             "size": 23891069,
             "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_releaseS.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "manxia",
+      "name": "漫匣阅读",
+      "tag": "manxia",
+      "repo": "DaLongZhuaZi/manxia",
+      "term": "legado-branch-manxia",
+      "note": "阅读原版重构，鸿蒙 Next 版。",
+      "stars": 56,
+      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
+      "githubArchived": false,
+      "release": {
+        "name": "阶段性构建 v0.1.4 · 08ef5b2",
+        "tagName": "latest",
+        "prerelease": false,
+        "publishedAt": "2026-09-28T15:54:47Z",
+        "createdAt": "2026-09-28T15:48:04Z",
+        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
+        "assets": [
+          {
+            "name": "entry-default-unsigned.hap",
+            "size": 123088042,
+            "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
           }
         ]
       },
