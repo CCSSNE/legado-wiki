@@ -1201,7 +1201,8 @@
                 { external: { name: 'Tauri 补档', repo: 'CCSSNE/Legado-Tauri' } }
               ]
             },
-            { branch: 'macos', platforms: ['mac'], flags: ['abandoned'] }
+            { branch: 'macos', platforms: ['mac'], flags: ['abandoned'] },
+            { branch: 'sanmu', platforms: ['android', 'win'], flags: ['abandoned'] }
           ]
         },
         { branch: 'yisou', platforms: ['android', 'tv', 'ios', 'win', 'linux', 'mac'], flags: ['abandoned'] },
@@ -1253,7 +1254,7 @@
         // 家族血缘（总数唯一依据）：与左右列展示位置无关，搬展示位不影响总数。
         // 展示树只管放哪列、缩进跟谁；谁是谁的后代只看这里。新增分支若属某家族，在此登记父子。
         const FAMILY = {
-          original: ['t', 'md3', 'main', 'xuanjuan', 'aikanshu', 'sigma', 'shutiao', 'mr', 'harmony', 'tauri', 'macos'],
+          original: ['t', 'md3', 'main', 'xuanjuan', 'aikanshu', 'sigma', 'shutiao', 'mr', 'harmony', 'tauri', 'macos', 'sanmu'],
           md3: ['moben'],
           sigma: ['archive', 'max', 'ng', 'pp', 'x', 'jingshiro', 'm', 'iyuedu', 'eink'],
           archive: ['r'],

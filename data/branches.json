@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T01:06:31.098Z",
+  "generatedAt": "2026-09-30T01:10:38.502Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6290,
+      "stars": 6291,
       "sourceUpdatedAt": "2026-09-28T21:09:05Z",
       "githubArchived": false,
       "release": {
@@ -562,6 +562,42 @@
       "errors": [],
       "fork": true,
       "forkOf": "gedoor/legado"
+    },
+    {
+      "id": "sanmu",
+      "name": "三目阅读",
+      "tag": "sanmu",
+      "repo": "huage2580/yuedu_hd",
+      "term": "legado-branch-sanmu",
+      "note": "Flutter 重写的阅读 HD 版，发布 Android / Windows 安装包。",
+      "stars": 136,
+      "sourceUpdatedAt": "2022-03-30T07:07:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v2.3.0",
+        "tagName": "v2.3.0",
+        "prerelease": false,
+        "publishedAt": "2022-03-09T07:04:00Z",
+        "createdAt": "2022-03-09T06:55:21Z",
+        "body": "😀  \r\n使用flutter 2.10打包;  \r\n修复Windows 问题； ",
+        "assets": [
+          {
+            "name": "yuedu-v230.apk",
+            "size": 28227435,
+            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-v230.apk"
+          },
+          {
+            "name": "yuedu-windows-v230_fix2.zip",
+            "size": 30732801,
+            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-windows-v230_fix2.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "abandoned": "弃坑",
+      "abandonedReason": "Release 与源码均超过半年未更新"
     },
     {
       "id": "t",

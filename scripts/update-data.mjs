@@ -134,6 +134,14 @@ const branches = [
     repo: 'leetomlee123/book',
     term: 'legado-branch-aikanshu',
     note: 'Flutter 重写的小说阅读器，发布 Android 安装包。'
+  },
+  {
+    id: 'sanmu',
+    name: '三目阅读',
+    tag: 'sanmu',
+    repo: 'huage2580/yuedu_hd',
+    term: 'legado-branch-sanmu',
+    note: 'Flutter 重写的阅读 HD 版，发布 Android / Windows 安装包。'
   }
 ];
 
