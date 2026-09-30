@@ -150,6 +150,38 @@ const branches = [
     repo: 'DaLongZhuaZi/manxia',
     term: 'legado-branch-manxia',
     note: '阅读原版重构，鸿蒙 Next 版。'
+  },
+  {
+    id: 'cmbok',
+    name: 'Cmbok',
+    tag: 'cmbok',
+    repo: 'hlning/cmbok_app',
+    term: 'legado-branch-cmbok',
+    note: '独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。'
+  },
+  {
+    id: 'nexhub',
+    name: 'NexHub',
+    tag: 'nexhub',
+    repo: 'nexhub-app/Nexhub',
+    term: 'legado-branch-nexhub',
+    note: '独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。'
+  },
+  {
+    id: 'lightread',
+    name: 'LightRead 轻阅',
+    tag: 'lightread',
+    repo: 'yzfly/LightRead',
+    term: 'legado-branch-lightread',
+    note: '独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。'
+  },
+  {
+    id: 'moread',
+    name: '墨知 MoRead',
+    tag: 'moread',
+    repo: 'ovo066/MoRead',
+    term: 'legado-branch-moread',
+    note: '原生 Android 本地小说阅读器 + AI 伴读。'
   }
 ];
 

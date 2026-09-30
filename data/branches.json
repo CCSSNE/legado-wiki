@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T01:19:03.750Z",
+  "generatedAt": "2026-09-30T02:52:27.360Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6291,
+      "stars": 6293,
       "sourceUpdatedAt": "2026-09-28T21:09:05Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1331,
+      "stars": 1332,
       "sourceUpdatedAt": "2026-09-28T06:11:29Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 573,
+      "stars": 574,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -295,7 +295,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 372,
+      "stars": 374,
       "sourceUpdatedAt": "2026-09-29T17:46:18Z",
       "githubArchived": false,
       "release": {
@@ -363,12 +363,56 @@
       "forkOf": "youfengknight/Legado_Max"
     },
     {
+      "id": "cmbok",
+      "name": "Cmbok",
+      "tag": "cmbok",
+      "repo": "hlning/cmbok_app",
+      "term": "legado-branch-cmbok",
+      "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
+      "stars": 368,
+      "sourceUpdatedAt": "2026-09-20T06:16:08Z",
+      "githubArchived": false,
+      "release": {
+        "name": "V2.0.7版本",
+        "tagName": "V2.0.7",
+        "prerelease": false,
+        "publishedAt": "2026-09-19T12:32:27Z",
+        "createdAt": "2026-09-19T12:30:50Z",
+        "body": "V2.0.7正式版发布，请仔细阅读版本更新内容\r\n\r\n！！！漫画源旧版本改为失效，需要获取新的漫画源到官网-网盘获取，此外最新所有漫画源只放光鸭网盘，其他网盘只放基础的！！！\r\n\r\n[√] 漫画源新增：SF漫画、漫画客、W漫画、追更漫画、韩小肆韩漫、嬉皮漫画、香香腐宅\r\n[√] 兼容阅读书源，现在还有不少不能兼容，不要问为什么，因为做不到也没有那么多精力一个个测试调整\r\n[√] 书源页：发现界面点击或长摁书源进入登录界面\r\n[√] 书源仓库：多选删除、分享\r\n[√] 书源页/仓库：分组功能\r\n[√] 书源：在线阅读，添加书源登录功能和换源功能\r\n[√] 书源编辑\r\n[√] 书源变量\r\n[√] 在线书源：阅读段评功能\r\n[√] 书源体检功能，检查书源是否可用\r\n[√] 阅读界面：点击顶上的书名，进入详情页，刷新内容，刷新本章内容\r\n[√] 阅读器：自定义段评/章节气泡\r\n\r\n[√] 添加网络代理功能，支持z站和每个源独立设置（只支持socks5）\r\n[√] 代理扫描二维码导入\r\n[√] 双击朗读可进入引擎设置，亮度上面加朗读引擎按钮\r\n[√] z站同时登录多账号\r\n[√] 新增扫码功能，在线传输、webdav、排版设置支持扫码\r\n[√] 导入的漫画图书支持移到漫画本地书架\r\n[√] 18禁每次更新源都要重新开启\r\n[√] 手机横屏：操作面板放右边竖排显示\r\n[√] 漫画/书源聚搜/复搜，搜索失败的不显示\r\n[√] 收藏：状态分组\r\n[√] 同步与备份：webdav扫描漫画/图书导入书架\r\n\r\n[√] 我的-显示设置：漫画/书源/图书，堆叠按钮可配置显示\r\n[√] 我的-显示设置：新增缺省封面\r\n\r\n[√] 书架：正在读/已读完移动到其他书架后，不会再自动放到这两个书架\r\n[√] 书架：长按松手进入详情，多选改导航栏上滑\r\n\r\n[√] 阅读设置：书架/收藏页自动检查更新，默认关闭，可以在阅读设置中开启自动检查\r\n[√] 阅读器：目录右缘拖动\r\n[√] 阅读器：点击区域设置，添加无操作选项\r\n[√] 阅读器单手模式，屏幕休眠\r\n[√] 阅读器排版分享\r\n[√] 图书阅读器，新增一键切换白天/夜间按钮\r\n[√] 图书阅读器，仿真翻页优化\r\n[√] 图书阅读器：点击标题跳转到详情，在线书源新增刷新本章功能\r\n[√] 图书阅读器：点击插图放大查看\r\n\r\n[√] 漫画源支持删除，自定义添加\r\n[√] 漫画在线读默认5话自动进正在读书架，改成配置化\r\n[√] 漫画阅读器：新增左右横屏拼页连续模式；需左右/右左+拼页+双页一起打开\r\n[√] 漫画详情：添加目录抽屉\r\n[√] 漫画阅读器：拼页模式添加滑块换页\r\n\r\n修复\r\n[√] 图书阅读器，深色模式不能设置背景\r\n[√] 漫画阅读器，本地导入的漫画拼页之间有空白\r\n[√，未复现] ios高版本，本地导入无法确认文件夹\r\n[√，未复现，合并需要等待，不是立马就合并成功] pdf未合并\r\n[√，未复现] ios，阅读器没法沉浸状态栏\r\n[√，未复现] ios，pdf没法打开\r\n\r\n优化\r\n[√] 大量优化",
+        "assets": [
+          {
+            "name": "Cmbok-reader.apk",
+            "size": 67201640,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.7/Cmbok-reader.apk"
+          },
+          {
+            "name": "Cmbok.apk",
+            "size": 70430702,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.7/Cmbok.apk"
+          },
+          {
+            "name": "Cmbok_setup_2.0.7.exe",
+            "size": 24639638,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.7/Cmbok_setup_2.0.7.exe"
+          },
+          {
+            "name": "cmbok_unsigned_e82f5f0.ipa",
+            "size": 34066957,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.7/cmbok_unsigned_e82f5f0.ipa"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "r",
       "name": "阅读 R",
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 301,
+      "stars": 300,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -681,7 +725,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 109,
+      "stars": 110,
       "sourceUpdatedAt": "2026-09-25T17:55:57Z",
       "githubArchived": false,
       "release": {
@@ -740,6 +784,35 @@
             "name": "mr_v2609127_dev_2026-09-12_x86_64.apk",
             "size": 22803598,
             "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609127-dev/mr_v2609127_dev_2026-09-12_x86_64.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "moread",
+      "name": "墨知 MoRead",
+      "tag": "moread",
+      "repo": "ovo066/MoRead",
+      "term": "legado-branch-moread",
+      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
+      "stars": 80,
+      "sourceUpdatedAt": "2026-09-25T09:21:07Z",
+      "githubArchived": false,
+      "release": {
+        "name": "墨知 1.2.0",
+        "tagName": "v1.2.0",
+        "prerelease": false,
+        "publishedAt": "2026-09-25T09:21:37Z",
+        "createdAt": "2026-09-25T09:21:02Z",
+        "body": "# MoRead · 墨知 1.2.0\n\n## 中文\n\n### 插图、人物与画风\n\n- 新增插图工作室，为每本书保存统一画风，支持内置画风、参考图片与人物定妆。\n- 新增独立 DIY 画风编辑页，可从空白开始或复制现有画风，设置名称、描述、参考图及高级参数，保存为跨书复用的模板。\n- 人物支持上传参考图、生成三视图候选，并按章节保存形象版本；生图时结合已读原文和所选人物的外貌资料。\n- 保存生成配方，支持同配方重来、调整后生成，以及将结果用于人物定妆、画风参考、封面或伴读头像。\n- 新增章节批量插图队列：预览场景与人物后开始，支持暂停、继续和单项失败重试；应用重启后不会自动重发状态未知的付费请求。\n- 接入 OpenAI 图生图与受支持的 NovelAI 参考/Vibe 能力，参考资料随完整备份保存。各模型的参考图能力与一致性效果有所不同。\n\n### 听书与音色\n\n- 新增 Gemini TTS，支持预设及在线音色浏览，系统 TTS 可选择引擎提供的音色。\n- 新增音色设计，可通过 AI 对话或手动描述创建候选，试听后保存到音色库。\n- 改进有声书对白归属、人物音色分配与保存，减少重新处理章节时的配音变化。\n\n### 阅读与界面\n\n- 支持 EPUB 从右向左竖排、Unicode 竖排字向、竖排标点与纵中横，并适配选词、批注和翻页。\n- 扩展受支持的 CSS 渐变、边框、文字阴影与定位，改进特殊字体和高亮文本的测量。\n- 优化阅读主题的文字对比度，以及划线与笔记的筛选、字体、全屏翻阅与分享体验。\n- 统一底部弹层的滚动边界与主题，改善导航列表越界、页签切换和进度刷新时的稳定性。\n- 新增应用内语言选择。英文翻译仍在逐步补齐，未翻译的页面会继续显示中文。\n\n正式安装包：`mozhi-1.2.0-vc78.apk`，Android 8.0 及以上。使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n### Illustrations, characters, and styles\n\n- Add a book illustration studio with saved book styles, built-in presets, reference images, and character appearance profiles.\n- Create reusable style templates in a dedicated DIY editor, starting from a blank style or a copy, with descriptions, reference images, and optional advanced settings.\n- Upload character references or generate turnaround candidates, with appearance versions scoped to chapters and source evidence limited to reading progress.\n- Save generation recipes, regenerate or adjust results, and reuse images as character references, style references, covers, or companion avatars.\n- Preview and run chapter illustration queues with pause, resume, and individual retries. Requests with uncertain completion are not automatically replayed after restart.\n- Support OpenAI image editing and model-specific NovelAI reference/Vibe features. Full backups include reference assets; available controls and consistency vary by model.\n\n### Speech and voice design\n\n- Add Gemini TTS, preset and online voice browsing, and voice selection for system TTS engines.\n- Design voices through an AI conversation or manual descriptions, preview candidates, and save selected voices to the voice library.\n- Improve dialogue attribution and persistent character voice assignments for audiobooks.\n\n### Reading and interface\n\n- Support right-to-left vertical EPUB writing, Unicode vertical orientation, vertical punctuation, and upright text combinations, including selection, annotations, and page turns.\n- Extend supported CSS gradients, borders, text shadows, and positioning; improve font and highlighted-text measurement.\n- Refine automatic text contrast, highlights-and-notes filtering, fonts, full-screen browsing, and sharing.\n- Unify bottom-sheet themes and scroll boundaries; improve navigation stability during overscroll, tab changes, and progress updates.\n- Add in-app language selection. English coverage remains partial, with untranslated pages falling back to Chinese.\n\nOfficial package: `mozhi-1.2.0-vc78.apk`, for Android 8.0 or later. Signed with the official release certificate and compatible with existing official installations.\n",
+        "assets": [
+          {
+            "name": "mozhi-1.2.0-vc78.apk",
+            "size": 20367325,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.2.0/mozhi-1.2.0-vc78.apk"
           }
         ]
       },
@@ -808,6 +881,154 @@
             "name": "entry-default-unsigned.hap",
             "size": 123088042,
             "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "nexhub",
+      "name": "NexHub",
+      "tag": "nexhub",
+      "repo": "nexhub-app/Nexhub",
+      "term": "legado-branch-nexhub",
+      "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
+      "stars": 35,
+      "sourceUpdatedAt": "2026-09-29T10:40:32Z",
+      "githubArchived": false,
+      "release": {
+        "name": "NexHub v3.0.0-beta.1",
+        "tagName": "v3.0.0-beta.1",
+        "prerelease": true,
+        "publishedAt": "2026-09-29T11:20:10Z",
+        "createdAt": "2026-09-29T10:35:16Z",
+        "body": "# NexHub v3.0.0-beta.1（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 预发布说明\n\nNexHub **3.0.0 的第一个预发布测试版（beta.1）** 来了。这是一次**体量很大的更新**——把整个界面搬到 Material 3 设计系统，并引入了全新的**漫画动态效果**。\n\n> - **这是什么阶段**：相对 2.0.3 是一次大版本跨越，包含全应用 MD3 视觉重构、设计系统对齐、毛玻璃与导入预览，以及全新的漫画动态效果。它仍处于测试阶段，可能有个别体验问题。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——收藏 / 进度 / 书签 / 历史 / 分组 / 评分 / 短评可直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥，可直接覆盖安装。\n> - **建议**：想抢先体验 MD3 与动态效果的朋友欢迎升级并反馈；追求绝对稳定的可继续用 2.0.3 正式版。\n> - **运行要求**：漫画动态效果依赖新引擎，动效渲染、功耗感知等依赖真机能力，需你本机验证。\n\n### 🌟 特别致谢\n\n感谢 **mobai0z0** 贡献了本次的**漫画动态效果**能力（分层动效引擎），让静态漫画页也能拥有视差 / 呼吸 / 天气 / 光效 / 漫画动势等动态表现。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次相较 v2.0.3 的核心变化\n\n### 🎨 MD3 视觉体系全面落地\n\n- **全动态取色 + 9 种调色板风格**：主题跟随系统壁纸提取莫奈和谐调色板，并提供 9 种预设风格，亮 / 暗 / 跟随一键切换。\n- **全应用设计系统对齐**：设置页统一为「连体卡」+ 行样式；三级设置页（全局 / 模块 / 子项）视觉与交互统一；阅读设置全部折叠，小说 / 漫画 / 视频三端内联面板接入设计系统。\n\n### 🌫️ 毛玻璃与导入体验\n\n- **侧栏 / 底栏毛玻璃**：可自定义的毛玻璃效果，信息层更通透。\n- **本地 / 网络导入独立预览页**：导入源、本地内容前可在独立预览页查看，导入决策更直观。\n\n### ✨ 漫画动态效果（mobai0z0 贡献 · 实验性）\n\n- **分层动效引擎**：静态漫画页 → 深度分层 → 32 种分层动效（视差 / 呼吸 / 天气 / 光效 / 漫画动势）→ 导出 GIF。\n- **阅读器内可调**：在「设置 → 漫画阅读器」中开关与调节动态效果，功耗感知静帧，低端机友好。\n- ⚠️ **尚不完善**：当前仍在打磨中，部分机型 / 场景的表现可能不稳定，后续版本会继续优化与扩充动效种类。\n\n### 🔧 底层与依赖（工程）\n\n- **material_ui 1.4.0 迁移**：329 处 import + l10n delegates + 兼容桥，统一到 material_ui 设计组件。\n- **dynamic_color 解钉 1.8.1 → 2.1.0**：莫奈（Material You）取色链路验证通过，动态配色更稳。\n- **弃用 API 迁移**：RadioGroup、vector_math、Color.toARGB32 等弃用 API 全量迁移，面向 Flutter 3.47+ 对齐。\n- **震动反馈收尾**：统一走官方 HapticFeedback，移除原生振动通道，触感更一致。\n- **注释与文档统一中性表述**：清理内部任务编号与示例源站名，教程改用中性示例。\n\n---\n\n## 🔞 年龄限制与免责说明\n\nNexHub 默认开启**年龄限制保护**：标记为 **18+（成人 / mature）** 的源在默认设置下**自动隐藏**，不会出现在浏览、搜索与源列表中。如需访问，须在「设置 → 内容分级」中手动开启「显示限制级内容」，并确认你已年满法定成年年龄。\n\n- **源作者责任**：请在源 JSON 中如实填写 `ageRating` 字段（`general` 全年龄 / `teen` 青少年 16+ / `mature` 成人 18+，支持 `all`/`16`/`r18`/`nsfw` 等别名，缺省 `general`）。应用仅依据该字段自动分级与隐藏，**最终的内容合规性与年龄适宜性由源的提供方与使用方负责**。\n- **内容责任**：NexHub 为开源技术演示项目，本身**不提供、不存储、不中转任何内容**，所有内容均来自用户自行导入的源。对于源所提供内容的版权、合法性及适宜性，NexHub 不做任何形式的担保或背书。\n- **合规提示**：若你所在地区法律禁止访问此类内容，或你未满法定成年年龄，请勿开启限制级内容显示。使用本软件即表示你已阅读、理解并同意仓库内完整的《免责声明》（依据中华人民共和国相关法律法规拟定）。\n\n> 源字段完整说明见网站文档「源编写教程 · 源字段完整参考」一节，或仓库 `lib/core/models/plugin_config.dart`。\n\n---\n\n## 🛠️ 构建与发布\n\n- CI 四平台（Android / Windows / Linux / macOS）build 命令均注入 `--dart-define=BANGUMI_CLIENT_ID` 与 `BANGUMI_CLIENT_SECRET`（来自仓库 Secrets），官方 Release 包的 Bangumi OAuth 登录开箱可用。\n- Gradle 仓库顺序沿用既有修复（`google()` / `mavenCentral()` 优先、阿里云兜底），四平台均可正常出包。\n- 本版新增依赖 `comic_motion` / `comic_motion_flutter`（漫画动态效果引擎，已发布到 pub.dev），CI 需能正常解析。\n\n---\n\n## 📦 下载说明\n\n- **Android**：APK 按 CPU 架构分包，绝大多数手机请选 **`arm64-v8a`**；很旧的机型选 `armeabi-v7a`；模拟器 / x86 平板选 `x86_64`。装错架构会提示「安装包无效」。也提供 **`app-release.apk`** 通用包（单文件全架构，无需挑架构，体积较大）。\n- **Windows**：`NexHub-setup-*.exe` 为安装包（支持中英文、非管理员安装），`NexHub-windows-x64.zip` 为免安装便携版。若被 SmartScreen 拦截，点「更多信息 → 仍要运行」。\n- **Linux**：`NexHub-linux-x64.tar.gz` 为免安装版（解压即运行）；`NexHub-linux-x64.deb` 为 Debian / Ubuntu 系安装包；`NexHub-linux-x64.AppImage` 为单文件便携版（赋予可执行权限后双击运行）。\n- **macOS**：`NexHub-macos.zip` 为免安装版，`NexHub-macos.dmg` 为磁盘镜像（挂载后拖入「应用程序」）。首次打开需在「系统设置 → 隐私与安全性」中放行。\n\n---\n\n## ⚠️ 已知限制\n\n- **漫画动态效果仍在打磨**：动效种类与稳定性会持续迭代，当前版本可能在部分机型上表现不稳定，请在「设置 → 漫画阅读器」中按需开关。\n- **ECH 暂不生效**：Dart TLS 栈无 ECH API、无可用插件，直连暂不可行；替代路径：代理模式选手动指向支持 ECH 的本地内核，或开启系统安全 DNS 由 WebView 路径自动启用 ECH。\n- **SNI 运行时可控但仍受栈限制**：现可在网络设置中配置「域名 → SNI 映射」与「免 SNI（绕 SNI 封锁）」，仅对直连 https 生效；走外部代理时由代理自理；部分站点仍需实测。\n- **自建构建的 Bangumi OAuth 不可用**：未注入凭据时请改用 Access Token 登录，或自行到 [bgm.tv/dev/app/create](https://bgm.tv/dev/app/create) 注册应用（回调地址 `nexhub://oauth/callback`）；\n- **Bangumi 吐槽仅只读**；源站评论的可用操作取决于源 JSON 声明了哪些路由；\n- 遇到问题优先到 Issues 反馈。\n\n---\n\n## 🙏 参与共创\n\n- 反馈 Bug → [Issues](https://github.com/nexhub-app/Nexhub/issues)\n- 路线规划 / 新功能想法 → [Discussions](https://github.com/nexhub-app/Nexhub/discussions)\n- 写源 / 改引擎 → 欢迎 Pull Request\n- 漫画动态效果等特性由社区贡献者共建，感谢每一位参与的人。\n\n> NexHub 不内置任何内容源。首次安装后需要自行导入源，才能看到内容。\n",
+        "assets": [
+          {
+            "name": "app-arm64-v8a-release.apk",
+            "size": 56755681,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/app-arm64-v8a-release.apk"
+          },
+          {
+            "name": "app-armeabi-v7a-release.apk",
+            "size": 55402463,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/app-armeabi-v7a-release.apk"
+          },
+          {
+            "name": "app-release.apk",
+            "size": 158557878,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/app-release.apk"
+          },
+          {
+            "name": "app-x86_64-release.apk",
+            "size": 62054630,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/app-x86_64-release.apk"
+          },
+          {
+            "name": "NexHub-linux-x64.AppImage",
+            "size": 115055096,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-linux-x64.AppImage"
+          },
+          {
+            "name": "NexHub-linux-x64.deb",
+            "size": 14014970,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-linux-x64.deb"
+          },
+          {
+            "name": "NexHub-linux-x64.tar.gz",
+            "size": 17725004,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-linux-x64.tar.gz"
+          },
+          {
+            "name": "NexHub-macos.dmg",
+            "size": 60365132,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-macos.dmg"
+          },
+          {
+            "name": "NexHub-macos.zip",
+            "size": 52432473,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-macos.zip"
+          },
+          {
+            "name": "NexHub-setup-3.0.0-beta.1.exe",
+            "size": 32450748,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-setup-3.0.0-beta.1.exe"
+          },
+          {
+            "name": "NexHub-windows-x64.zip",
+            "size": 44654209,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.1/NexHub-windows-x64.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "lightread",
+      "name": "LightRead 轻阅",
+      "tag": "lightread",
+      "repo": "yzfly/LightRead",
+      "term": "legado-branch-lightread",
+      "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
+      "stars": 26,
+      "sourceUpdatedAt": "2026-09-25T00:56:20Z",
+      "githubArchived": false,
+      "release": {
+        "name": "LightRead 轻阅 v1.1.18",
+        "tagName": "v1.1.18",
+        "prerelease": false,
+        "publishedAt": "2026-09-24T16:26:20Z",
+        "createdAt": "2026-09-24T16:16:10Z",
+        "body": "release: v1.1.18\n\n## 安卓适配修复\n- **旧款手机不再压在状态栏下**：在 Android 12 等较老系统上（如 Redmi K30 Pro），页面顶部会和状态栏重叠、底部标签栏被手势条挡住。现在藏书、论文、书源、设置、阅读器等所有页面都会正确让出状态栏和手势条。\n- **深色模式状态栏看得清**：应用选了深色而手机是浅色（或反过来）时，状态栏的时间、电量图标会跟着页面自动变白或变黑；阅读器用夜间正文时同样适配。底部导航栏改为透明，与页面背景一致。\n- 设置「关于」在安卓上显示为「安卓版」。",
+        "assets": [
+          {
+            "name": "LightRead-1.1.18-1.x86_64.rpm",
+            "size": 28513481,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead-1.1.18-1.x86_64.rpm"
+          },
+          {
+            "name": "LightRead_1.1.18_aarch64.dmg",
+            "size": 21887159,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_1.1.18_aarch64.dmg"
+          },
+          {
+            "name": "LightRead_1.1.18_amd64.AppImage",
+            "size": 104385016,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_1.1.18_amd64.AppImage"
+          },
+          {
+            "name": "LightRead_1.1.18_amd64.deb",
+            "size": 28513756,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_1.1.18_amd64.deb"
+          },
+          {
+            "name": "LightRead_1.1.18_x64-setup.exe",
+            "size": 16603737,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_1.1.18_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_1.1.18_x64.dmg",
+            "size": 23146712,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_1.1.18_x64.dmg"
+          },
+          {
+            "name": "LightRead_aarch64.app.tar.gz",
+            "size": 21804834,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_aarch64.app.tar.gz"
+          },
+          {
+            "name": "LightRead_v1.1.18_android_arm64.apk",
+            "size": 70776024,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_v1.1.18_android_arm64.apk"
+          },
+          {
+            "name": "LightRead_x64.app.tar.gz",
+            "size": 23094298,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.1.18/LightRead_x64.app.tar.gz"
           }
         ]
       },
