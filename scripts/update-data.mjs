@@ -110,6 +110,14 @@ const branches = [
     gitee: 'lyj09x/legado',
     upstreamUrl: 'https://gitee.com/lyj09x/legado',
     note: '墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。'
+  },
+  {
+    id: 'sk',
+    name: '阅读 SK',
+    tag: 'sk',
+    repo: 'skxingyu/legado-sk',
+    term: 'legado-branch-sk',
+    note: '阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。'
   }
 ];
 

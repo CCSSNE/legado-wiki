@@ -1140,7 +1140,13 @@
                     {
                       branch: 'r',
                       platforms: ['android'],
-                      children: [{ branch: 'c', platforms: ['android'] }]
+                      children: [
+                        {
+                          branch: 'c',
+                          platforms: ['android'],
+                          children: [{ branch: 'sk', platforms: ['android'] }]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1250,6 +1256,7 @@
           sigma: ['archive', 'max', 'ng', 'pp', 'x', 'jingshiro', 'm', 'iyuedu', 'eink'],
           archive: ['r'],
           r: ['c'],
+          c: ['sk'],
           max: ['max-sum', 'max-cichen'],
           ng: ['fu']
         };
