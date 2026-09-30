@@ -79,7 +79,7 @@ const branches = [
   { id: 'ng', name: '阅读 NG', tag: 'ng', repo: 'joestar817/legado_NG', term: 'legado-branch-ng' },
   {
     id: 'fu',
-    name: '阅融',
+    name: '阅融Fu',
     tag: 'fu',
     repo: 'h166278/legado_FU',
     term: 'legado-branch-fu',
