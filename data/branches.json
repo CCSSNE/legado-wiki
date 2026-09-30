@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T06:47:57.021Z",
+  "generatedAt": "2026-09-30T13:49:48.316Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6295,
+      "stars": 6300,
       "sourceUpdatedAt": "2026-09-30T06:21:01Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2778,
+      "stars": 2780,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2185,
+      "stars": 2186,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1334,
+      "stars": 1339,
       "sourceUpdatedAt": "2026-09-28T06:11:29Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 576,
+      "stars": 577,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 374,
+      "stars": 375,
       "sourceUpdatedAt": "2026-09-29T17:46:18Z",
       "githubArchived": false,
       "release": {
@@ -340,7 +340,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 368,
+      "stars": 369,
       "sourceUpdatedAt": "2026-09-20T06:16:08Z",
       "githubArchived": false,
       "release": {
@@ -507,69 +507,69 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 252,
-      "sourceUpdatedAt": "2026-09-30T06:39:00Z",
+      "sourceUpdatedAt": "2026-09-30T12:23:22Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.09301356",
+        "name": "3.26.09302003",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-09-30T06:11:22Z",
-        "createdAt": "2026-09-30T05:56:12Z",
-        "body": "## 更新日志\n- ci(ios): 新增 VNC 远程会话工作流, 移除模拟器冒烟档                       (ba059a3ff)\n- fix(security): 禁止 JS 改写 enableDangerousApi 堵住书源自提权            (39521cd17)\n- perf(string): 去除判定型 trim 的整串副本与逐次正则编译                   (ce3eeac75)\n- fix(debug): 去掉查看源码弹窗的耗时前缀                                   (f7a90c625)",
+        "publishedAt": "2026-09-30T12:23:22Z",
+        "createdAt": "2026-09-30T09:17:18Z",
+        "body": "## 更新日志\n- ci(ios): 新增 simulator 独立 stage 并脱离 release 流水线                 (75f5e3e75)\n- docs(read): 修正排版缓存并发域注释                                       (7868750d9)\n- fix(ios): 修复预下载调度遍历并发修改崩溃                                 (52e9fa535)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 17350924,
+            "size": 17367304,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 17350924,
+            "size": 17367308,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 10283913,
+            "size": 10300293,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 10283913,
+            "size": 10300297,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 9569499,
+            "size": 9585879,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 9569499,
+            "size": 9585883,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
           },
           {
             "name": "linux_x64.deb",
-            "size": 98907670,
+            "size": 98922632,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
           },
           {
             "name": "linux_x64.rpm",
-            "size": 105681856,
+            "size": 105690576,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
           },
           {
             "name": "macos_arm64.dmg",
-            "size": 110367336,
+            "size": 110426352,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
           },
           {
             "name": "windows_x64.msi",
-            "size": 101470928,
+            "size": 101479120,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
           },
           {
             "name": "windows_x64_portable.zip",
-            "size": 100250684,
+            "size": 100254680,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
@@ -696,7 +696,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 111,
+      "stars": 112,
       "sourceUpdatedAt": "2026-09-25T17:55:57Z",
       "githubArchived": false,
       "release": {
@@ -946,60 +946,60 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 29,
-      "sourceUpdatedAt": "2026-09-30T04:48:52Z",
+      "sourceUpdatedAt": "2026-09-30T08:13:44Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.2.0",
-        "tagName": "v1.2.0",
+        "name": "LightRead 轻阅 v1.3.0",
+        "tagName": "v1.3.0",
         "prerelease": false,
-        "publishedAt": "2026-09-30T04:58:16Z",
-        "createdAt": "2026-09-30T04:48:51Z",
-        "body": "release: v1.2.0\n\n## 多端同步（WebDAV）\n- **换设备接着读**：在「设置 → WebDAV 同步与备份」填好坚果云、Nextcloud 等网盘后点「立即同步」，阅读进度、划线笔记、书签、书单、阅读时长和自定义书源会在各台设备之间同步。\n- **书也跟着走**：开启「同步书籍文件」（默认开启）后，在另一台设备同步一次，书就会自动下载到书架。每本书在网盘上只存一份，不重复上传。关闭后只同步进度与笔记，在别的设备导入同一本书时会按文件内容自动匹配。\n- **自动同步**：打开「自动同步」后，启动、切到后台、退出阅读器时以及每 5 分钟会自动同步一次。\n- **不怕冲突**：进度以最后一次阅读为准，阅读时长各设备分别累计后相加；在一台设备上删除的书和笔记会同步删除。设备第一次同步只做合并、以网盘上的为准，不会删除任何东西。\n- 网页版连接坚果云需要在「书源代理」里配置跨域代理；桌面版和安卓版可直接使用。\n- 原有的整库备份与恢复保持不变。",
+        "publishedAt": "2026-09-30T07:53:50Z",
+        "createdAt": "2026-09-30T07:44:27Z",
+        "body": "release: v1.3.0\n\n## 轻阅账号：登录即可多端同步\n- **邮箱验证码登录**：在「设置 → 账号与同步」输入邮箱，收到 6 位验证码即可登录，第一次登录自动注册，不需要密码。\n- **进度、笔记跨设备同步**：登录同一账号的手机、电脑、网页之间，会同步阅读进度、划线笔记、书签、书单和阅读时长。登录后自动开启同步，启动、切到后台、退出阅读器时以及每 5 分钟同步一次，也可以随时点「立即同步」。\n- **书籍文件不上传**：账号只保存同步记录，不存书的文件。在另一台设备导入同一本书时，会按文件内容自动认出来并接上进度和笔记。想让书本身也跟着同步，可以再配置 WebDAV 网盘，两者可以同时使用。\n- **随时注销**：可退出登录，也可以注销账号，注销会删除云端账号和全部同步记录，本机书库不受影响。\n- 不登录也能完整使用轻阅，账号完全可选。",
         "assets": [
           {
-            "name": "LightRead-1.2.0-1.x86_64.rpm",
-            "size": 28529414,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead-1.2.0-1.x86_64.rpm"
+            "name": "LightRead-1.3.0-1.x86_64.rpm",
+            "size": 28528494,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead-1.3.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.2.0_aarch64.dmg",
-            "size": 21897654,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_1.2.0_aarch64.dmg"
+            "name": "LightRead_1.3.0_aarch64.dmg",
+            "size": 21903272,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_1.3.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.2.0_amd64.AppImage",
-            "size": 104372728,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_1.2.0_amd64.AppImage"
+            "name": "LightRead_1.3.0_amd64.AppImage",
+            "size": 104401400,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_1.3.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.2.0_amd64.deb",
-            "size": 28529820,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_1.2.0_amd64.deb"
+            "name": "LightRead_1.3.0_amd64.deb",
+            "size": 28528478,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_1.3.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.2.0_x64-setup.exe",
-            "size": 16613652,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_1.2.0_x64-setup.exe"
+            "name": "LightRead_1.3.0_x64-setup.exe",
+            "size": 16624237,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_1.3.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.2.0_x64.dmg",
-            "size": 23158613,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_1.2.0_x64.dmg"
+            "name": "LightRead_1.3.0_x64.dmg",
+            "size": 23161333,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_1.3.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 21811305,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_aarch64.app.tar.gz"
+            "size": 21820049,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.2.0_android_arm64.apk",
-            "size": 70788584,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_v1.2.0_android_arm64.apk"
+            "name": "LightRead_v1.3.0_android_arm64.apk",
+            "size": 70792456,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_v1.3.0_android_arm64.apk"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23100071,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.2.0/LightRead_x64.app.tar.gz"
+            "size": 23109437,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.3.0/LightRead_x64.app.tar.gz"
           }
         ]
       },
@@ -1259,25 +1259,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-09-26T02:41:46Z",
+      "sourceUpdatedAt": "2026-09-30T13:36:55Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.30.0-20260925-015218 (预发布)",
-        "tagName": "v3.30.0-20260925-015218",
-        "prerelease": true,
-        "publishedAt": "2026-09-25T01:52:21Z",
-        "createdAt": "2026-09-25T01:44:07Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: a7268234f159852b438fbc66212163031e576418\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "name": "Legado MD3 v1.0.0 正式版",
+        "tagName": "v1.0.0",
+        "prerelease": false,
+        "publishedAt": "2026-09-30T13:36:00Z",
+        "createdAt": "2026-09-30T13:21:00Z",
+        "body": "## Legado MD3 v1.0.0 正式版\n\n- 提交: a868179e4d3da9481ac5147bc4c3b65b1b9b6bd7\n- 框架: Flutter 3.24（Android / iOS 双端）\n\n### Android 下载\n- `app-universal-release.apk` — 通用包（所有架构）\n- `app-arm64-release.apk` — arm64 专用（体积更小）\n\n### iOS\niOS 端由 CI 在 macOS 上编译校验并产出未签名 `Runner.app`（见本次构建的 Artifacts）。\n安装到 iPhone 或上架 App Store 需在 macOS + Xcode 中配置 Apple 开发者签名后归档。\n\n> 本项目基于 GPL-3.0 开源。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 24446771,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.30.0-20260925-015218/app-arm64-release.apk"
+            "size": 24089455,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-Klys/releases/download/v1.0.0/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 42929706,
-            "browserDownloadUrl": "https://github.com/stwy0716/legado-K/releases/download/v3.30.0-20260925-015218/app-universal-release.apk"
+            "size": 42362308,
+            "browserDownloadUrl": "https://github.com/stwy0716/legado-Klys/releases/download/v1.0.0/app-universal-release.apk"
           }
         ]
       },
@@ -1309,12 +1309,12 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.092723.apk",
-            "size": 20895814,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092723/%E9%98%85%E8%AF%BB_E-ink_3.26.092723.apk"
           },
           {
             "name": "阅读_magisk_3.26.092723.zip",
-            "size": 22644170,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092723/%E9%98%85%E8%AF%BB_magisk_3.26.092723.zip"
           },
           {
