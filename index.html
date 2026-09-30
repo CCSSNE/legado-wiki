@@ -1128,8 +1128,7 @@
               platforms: ['android'],
               children: [{ branch: 'moben', platforms: ['android'] }]
             },
-            { branch: 'main', platforms: ['android'] },
-            { branch: 'xuanjuan', platforms: ['android'] },
+            { branch: 'main', platforms: ['android'], children: [{ branch: 'xuanjuan', platforms: ['android'] }] },
             { branch: 'aikanshu', platforms: ['android'] },
             {
               branch: 'sigma',
@@ -1259,7 +1258,8 @@
         // 家族血缘（总数唯一依据）：与左右列展示位置无关，搬展示位不影响总数。
         // 展示树只管放哪列、缩进跟谁；谁是谁的后代只看这里。新增分支若属某家族，在此登记父子。
         const FAMILY = {
-          original: ['t', 'md3', 'main', 'xuanjuan', 'aikanshu', 'sigma', 'shutiao', 'mr', 'harmony', 'manxia', 'tauri', 'macos', 'sanmu'],
+          original: ['t', 'md3', 'main', 'aikanshu', 'sigma', 'shutiao', 'mr', 'harmony', 'manxia', 'tauri', 'macos', 'sanmu'],
+          main: ['xuanjuan'],
           md3: ['moben'],
           sigma: ['archive', 'max', 'ng', 'pp', 'x', 'jingshiro', 'm', 'iyuedu', 'eink'],
           archive: ['r', 'moread'],
