@@ -128,14 +128,6 @@ const branches = [
     note: '基于 Legado 定制的网文小助手。'
   },
   {
-    id: 'aikanshu',
-    name: '爱看书',
-    tag: 'aikanshu',
-    repo: 'leetomlee123/book',
-    term: 'legado-branch-aikanshu',
-    note: 'Flutter 重写的小说阅读器，发布 Android 安装包。'
-  },
-  {
     id: 'sanmu',
     name: '三目阅读',
     tag: 'sanmu',
