@@ -41,7 +41,7 @@ const branches = [
   { id: 'archive', name: '阅读 Archive', tag: 'archive', repo: 'Rimchars/legado', term: 'legado-branch-archive' },
   {
     id: 'max',
-    name: '阅读 MAX患疯版',
+    name: '阅读 MAX怣疯版',
     tag: 'max',
     repo: 'youfengknight/Legado_Max',
     term: 'legado-branch-max',
