@@ -118,6 +118,14 @@ const branches = [
     repo: 'skxingyu/legado-sk',
     term: 'legado-branch-sk',
     note: '阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。'
+  },
+  {
+    id: 'xuanjuan',
+    name: '玄卷',
+    tag: 'xuanjuan',
+    repo: '24257/novel-helper',
+    term: 'legado-branch-xuanjuan',
+    note: '基于 Legado 定制的网文小助手。'
   }
 ];
 
