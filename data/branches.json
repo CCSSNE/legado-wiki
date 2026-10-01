@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:35:18.939Z",
+  "generatedAt": "2026-10-01T23:56:08.743Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6309,
+      "stars": 6310,
       "sourceUpdatedAt": "2026-09-30T19:48:20Z",
       "githubArchived": false,
       "release": {
@@ -502,70 +502,25 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 254,
-      "sourceUpdatedAt": "2026-10-01T19:25:43Z",
+      "sourceUpdatedAt": "2026-10-01T21:19:50Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.100113",
-        "tagName": "3.26.100113",
+        "name": "multiplatform-test",
+        "tagName": "multiplatform-test",
         "prerelease": false,
-        "publishedAt": "2026-10-01T05:09:24Z",
-        "createdAt": "2026-09-30T21:21:47Z",
-        "body": "## 更新日志\n\n- ci(ios-remote): 改用 noVNC 免注册隧道修复 VNC 可用性                     (c290beb18)\n- fix(ios): 修复 SnapshotEntry 缺失 setValue 致 iOS 编译失败               (9c60e29d2)\n- ci(ios): 新增 simulator 独立 stage 并脱离 release 流水线                 (75f5e3e75)\n- docs(read): 修正排版缓存并发域注释                                       (7868750d9)\n- fix(ios): 修复预下载调度遍历并发修改崩溃                                 (52e9fa535)\n- ci(ios-remote): 改用官方归档与 PyPI 供 noVNC 依赖 [skip ci]              (ae7879329)\n- ci(ios-remote): 删除 hosted runner 必失败的 dscl 改密兜底 [skip ci]      (7a55c61be)\n- docs(http): 明示 iOS Darwin 引擎不支持连接超时                           (cf4b63c45)\n- fix(ios): 改用 Darwin 引擎并修复下载重试竞争与缓存假成功                 (a24108612)\n- ci(ios): 新增 VNC 远程会话工作流, 移除模拟器冒烟档                       (ba059a3ff)\n- fix(security): 禁止 JS 改写 enableDangerousApi 堵住书源自提权            (39521cd17)\n- perf(string): 去除判定型 trim 的整串副本与逐次正则编译                   (ce3eeac75)\n- fix(debug): 去掉查看源码弹窗的耗时前缀                                   (f7a90c625)\n- feat(debug): 调试日志支持 showTime 开关                                  (786a702b7)\n- build(ci): 测试发布改用 secrets 注入正式签名密钥                         (d7b4721c8)\n- feat(ui): JSON 树条目可查看子树并就地聚焦                                (27976235c)\n- fix(js): 拆除书源JS包装器, evalJS直绑源实例恢复全成员访问                (59683b90d)\n- fix(association): 修外部打开与深链导入报格式不对, file:// 读取下沉到入口 (b0cdcc3c5)\n- feat(video): 视频播放支持系统画中画                                      (f1218ccd5)\n- feat(toolbox): 新增书源工具箱页面, 支持请求/规则/JS 调试                 (b06abd2d6)\n- fix(desktop): 修复 debug 运行任务栏图标丢失                              (9ea88f55d)\n- chore(app): 收录真机基线轮廓, 46259 条规则                               (a05833e57)\n- refactor(build): 内嵌库 rjpath 移出 foundation 独立成模块                (4915aaaa6)\n- feat(ui): 书源调试源码可树形查看并长按复制 JSONPath                      (9758f6960)\n- fix(ui): 日志文本选区提升至列表级支持跨行拖选                            (9f3eba21f)\n- *……还有 157 条提交未显示*\n\n[查看完整提交记录 →](https://github.com/huajideshutiao/legado/compare/f49687dda3bd039d28d7b9c0698b57f8b7015b41...HEAD)\n",
+        "publishedAt": "2026-10-01T19:48:11Z",
+        "createdAt": "2026-10-01T19:23:02Z",
+        "body": "多平台测试包（未签名，供侧载/自签验证）：\n\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\n- **iOS**: SideStore/AltStore 自签侧载\n\n⚠️ 均为未签名产物，仅供多平台功能测试。",
         "assets": [
           {
-            "name": "all.apk",
-            "size": 17367304,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/all.apk"
+            "name": "legado-3.26.10020326-ios-unsigned.ipa",
+            "size": 31921675,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.10020326-ios-unsigned.ipa"
           },
           {
-            "name": "all_releaseA.apk",
-            "size": 17367304,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/all_releaseA.apk"
-          },
-          {
-            "name": "arm64.apk",
-            "size": 10300293,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/arm64.apk"
-          },
-          {
-            "name": "arm64_releaseA.apk",
-            "size": 10300293,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/arm64_releaseA.apk"
-          },
-          {
-            "name": "armv7.apk",
-            "size": 9585879,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/armv7.apk"
-          },
-          {
-            "name": "armv7_releaseA.apk",
-            "size": 9585879,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/armv7_releaseA.apk"
-          },
-          {
-            "name": "linux_x64.deb",
-            "size": 98922280,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/linux_x64.deb"
-          },
-          {
-            "name": "linux_x64.rpm",
-            "size": 105690657,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/linux_x64.rpm"
-          },
-          {
-            "name": "macos_arm64.dmg",
-            "size": 110426386,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/macos_arm64.dmg"
-          },
-          {
-            "name": "windows_x64.msi",
-            "size": 101479120,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/windows_x64.msi"
-          },
-          {
-            "name": "windows_x64_portable.zip",
-            "size": 100254690,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.100113/windows_x64_portable.zip"
+            "name": "legado-3.26.100205-unsigned.hap",
+            "size": 67714951,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.100205-unsigned.hap"
           }
         ]
       },
