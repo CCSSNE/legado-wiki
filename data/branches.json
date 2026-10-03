@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:27:47.649Z",
+  "generatedAt": "2026-10-03T17:59:57.428Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 155,
+      "stars": 157,
       "sourceUpdatedAt": "2026-09-27T07:43:33Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 22,
+          "stars": 23,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47108,
+      "stars": 47106,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6328,
+      "stars": 6336,
       "sourceUpdatedAt": "2026-10-02T17:31:41Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2802,
+      "stars": 2804,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1363,
+      "stars": 1366,
       "sourceUpdatedAt": "2026-09-28T06:11:29Z",
       "githubArchived": false,
       "release": {
@@ -311,65 +311,65 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 378,
-      "sourceUpdatedAt": "2026-10-03T08:33:03Z",
+      "sourceUpdatedAt": "2026-10-03T16:13:25Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.100316",
-        "tagName": "beta-3.26.100316",
+        "name": "legado_app_3.26.100323",
+        "tagName": "beta-3.26.100323",
         "prerelease": true,
-        "publishedAt": "2026-10-03T08:33:03Z",
-        "createdAt": "2026-10-03T08:15:26Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* feat(发现): 新版发现的发现页管理支持 toggle 分类项\n* refactor(发现): 布局与列数新旧版共用按书源记忆\n* docs(发现): updateLog 补 toggle 支持与布局列数按源记忆条目并调整日志\n* fix(发现): 发现页管理表单每项宽度吃书源 style 的 flex 声明\n* docs(发现): updateLog 补发现页管理表单宽度条目\n* fix(发现): 代码审查修复——表单刷新信号、标签条类型过滤与请求代际补强\n* fix(发现): 修正分类列表页 Compose 文本行高，恢复一屏条目数\n* fix(订阅): 新版订阅补齐单 URL / 无文章规则源的网页打开处理\n* docs(订阅): 更新日志补充新版订阅单 URL / 无文章规则源的打开入口\n* fix(订阅): 修复 startHtml 启动页网页上传文件等交互无反应\n* docs(订阅): 更新日志补充 startHtml 工具页上传无反应的修复\n* fix(订阅): 修复 java.open(\"sort\") 指定分类被异步初始化覆盖的回归\n* fix(发现): 修复改动无关书源误刷当前展示源的发现\n* fix(详情页): 目录加载失败时回退到本地缓存目录\n* 更新日志\n\n",
+        "publishedAt": "2026-10-03T16:13:25Z",
+        "createdAt": "2026-10-03T15:57:42Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* 更新日志\n* fix(发现): 新版发现补齐登录入口、刷新真正重拉书源并收敛胶囊间距\n* fix(订阅): 新版订阅换分类不再停在页末，列表底部不再被底栏遮挡\n* fix(封面): 列表封面请求失败或挂起后自动重试，不再永久停在占位封面\n* docs(规范): 补充主界面内嵌 Compose 内容的底部内边距口径\n* fix(封面): Compose 封面不依赖图片固有尺寸，图集取图失败按优先级继续回退\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.100316_release_arm64-v8a.apk",
-            "size": 23017787,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_beta_3.26.100316_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.100323_release_arm64-v8a.apk",
+            "size": 23034667,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.100316_release_armeabi-v7a.apk",
-            "size": 22377436,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_beta_3.26.100316_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.100323_release_armeabi-v7a.apk",
+            "size": 22394312,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.100316_release_universal.apk",
-            "size": 31032659,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_beta_3.26.100316_release_universal.apk"
+            "name": "legado_beta_3.26.100323_release_universal.apk",
+            "size": 31049529,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.100316_legacy_arm64-v8a.apk",
-            "size": 23017775,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_compat_3.26.100316_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.100323_legacy_arm64-v8a.apk",
+            "size": 23034641,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.100316_legacy_armeabi-v7a.apk",
-            "size": 22377417,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_compat_3.26.100316_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.100323_legacy_armeabi-v7a.apk",
+            "size": 22394286,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.100316_legacy_universal.apk",
-            "size": 31032641,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_compat_3.26.100316_legacy_universal.apk"
+            "name": "legado_compat_3.26.100323_legacy_universal.apk",
+            "size": 31049503,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.100316_releaseS_arm64-v8a.apk",
-            "size": 23017795,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_plus_3.26.100316_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.100323_releaseS_arm64-v8a.apk",
+            "size": 23034679,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.100316_releaseS_armeabi-v7a.apk",
-            "size": 22377441,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_plus_3.26.100316_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.100323_releaseS_armeabi-v7a.apk",
+            "size": 22394317,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.100316_releaseS_universal.apk",
-            "size": 31032663,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_plus_3.26.100316_releaseS_universal.apk"
+            "name": "legado_plus_3.26.100323_releaseS_universal.apk",
+            "size": 31049540,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.100316_universal.apk",
-            "size": 69512697,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100316/legado_z_debug_3.26.100316_universal.apk"
+            "name": "legado_z_debug_3.26.100323_universal.apk",
+            "size": 69529619,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_z_debug_3.26.100323_universal.apk"
           }
         ]
       },
@@ -618,7 +618,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 126,
+      "stars": 127,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -651,7 +651,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 113,
+      "stars": 114,
       "sourceUpdatedAt": "2026-09-25T17:55:57Z",
       "githubArchived": false,
       "release": {
@@ -821,71 +821,71 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 37,
+      "stars": 38,
       "sourceUpdatedAt": "2026-10-03T12:26:36Z",
       "githubArchived": false,
       "release": {
-        "name": "NexHub v3.0.0-beta.3",
-        "tagName": "v3.0.0-beta.3",
+        "name": "NexHub v3.0.0-beta.4",
+        "tagName": "v3.0.0-beta.4",
         "prerelease": true,
-        "publishedAt": "2026-10-03T07:53:54Z",
-        "createdAt": "2026-10-03T07:27:16Z",
-        "body": "# NexHub v3.0.0-beta.3（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 预发布说明\n\nNexHub **3.0.0 的第三个预发布测试版（beta.3）** 来了。本次主线是**界面可定制性**与**网络连通性**：全局字体设置、详情页外观自定义、源管理列表重做，以及此前预留的 **ECH 加密握手现已实装可用**；同时媒体服务器浏览与性能、嗅探器、桌面端体验继续打磨。\n\n> - **这是什么阶段**：相对 beta.2 是一次以「界面个性化 + 网络增强 + 源 / 媒体服务器打磨」为主的功能型更新，仍处测试阶段，可能有个别体验问题。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——收藏 / 进度 / 书签 / 历史 / 分组 / 评分 / 短评可直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥，可直接覆盖安装。\n> - **建议**：想抢先体验字体 / 详情外观自定义与 ECH 连通增强的朋友欢迎升级并反馈；追求绝对稳定的可继续用 2.0.3 正式版。\n> - **运行要求**：ECH 由内置原生引擎驱动，当前主要随 Android APK 生效；非 Android 平台或缺失原生库时自动降级为直连，不影响其他功能。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次相较 v3.0.0-beta.2 的核心变化\n\n### 🌐 网络：ECH 加密握手实装可用\n\n此前版本中 ECH 仅是「预留开关」，本次移植了原生 ECH 引擎并真正接通，对直连 HTTPS 生效，不再依赖外部代理：\n\n- **三档作用域**：应用级（接管任意 https 域，不支持 ECH 的站点由原生侧逐域自适应回落，不会搞断正常站点）、源级（只接管该源 `site.baseUrl` 的 host，可在源 JSON `network.ech` 或 UI 覆盖里单独开关）、Bangumi 专用。\n- **自动降级**：原生库缺失（非 Android / 未打包）时整套自动回退为直连，不拖垮其他网络功能。\n- 源作者可在源 JSON 的 `network.ech` 声明推荐配置，跟随源一键生效。\n\n### 🎨 界面与主题\n\n- **全局字体设置**：新增「跟随系统 / 三款内置 OFL 开源字体 / 自定义导入字体」三档，界面文字风格由你定。\n- **详情页外观设置**：封面动态强调色（从封面取主色做点缀）+ 封面模糊背景，详情页更有氛围感。\n\n### 📄 详情页交互\n\n- 窄屏下章节列表支持滑动操作，全类型内容支持网格模式，信息 chips 精简，浏览更顺手。\n- 在线浏览的「换源」改为标题底部弹窗，移除了原先占位置的源 chip 栏，顶部更干净。\n\n### 🗂️ 源管理\n\n- 源列表统一为连体卡片样式，并支持拖拽排序，常用源随手置顶。\n\n### 🔍 嗅探器\n\n- 嗅探结果面板高度支持拖拽自定义，且初始默认折叠，不抢画面。\n\n### 🖥️ 媒体服务器（Emby / Jellyfin）\n\n- **浏览与性能**：海报分辨率按屏幕密度自适应 + backdrop 预取，新增合集浏览，搜索历史与防串台，统计面板加入媒体服务器数据维度。\n- **桌面端**：支持鼠标拖动横向滚动；源管理里的媒体服务器区块随列表一起滚动。\n\n### 🐛 源修复与文档\n\n- 部分受 Cloudflare 保护的动漫源工程化修复：验证墙重抛机制、WebView2 代理支持、失效域名迁移、标签数组筛选，抓取更稳。\n- 文档：媒体服务器能力并入核心特色详解（中 / 英）。\n\n### 🔧 工程与文档（内部）\n\n- 代码注释、提交信息与文档延续中性表述清理。\n- 本版无新增第三方依赖，CI 四平台构建配置沿用。\n\n---\n\n## 🔞 年龄限制与免责说明\n\nNexHub 默认开启**年龄限制保护**：标记为 **18+（成人 / mature）** 的源在默认设置下**自动隐藏**，不会出现在浏览、搜索与源列表中。如需访问，须在「设置 → 内容分级」中手动开启「显示限制级内容」，并确认你已年满法定成年年龄。\n\n- **源作者责任**：请在源 JSON 中如实填写 `ageRating` 字段（`general` 全年龄 / `teen` 青少年 16+ / `mature` 成人 18+，支持 `all`/`16`/`r18`/`nsfw` 等别名，缺省 `general`）。应用仅依据该字段自动分级与隐藏，**最终的内容合规性与年龄适宜性由源的提供方与使用方负责**。\n- **内容责任**：NexHub 为开源技术演示项目，本身**不提供、不存储、不中转任何内容**，所有内容均来自用户自行导入的源或用户自行连接的媒体服务器。对于相应内容的版权、合法性及适宜性，NexHub 不做任何形式的担保或背书。\n- **合规提示**：若你所在地区法律禁止访问此类内容，或你未满法定成年年龄，请勿开启限制级内容显示。使用本软件即表示你已阅读、理解并同意仓库内完整的《免责声明》（依据中华人民共和国相关法律法规拟定）。\n\n> 源字段完整说明见网站文档「源编写教程 · 源字段完整参考」一节，或仓库 `lib/core/models/plugin_config.dart`。\n\n---\n\n## 🛠️ 构建与发布\n\n- CI 四平台（Android / Windows / Linux / macOS）build 命令均注入 `--dart-define=BANGUMI_CLIENT_ID` 与 `BANGUMI_CLIENT_SECRET`（来自仓库 Secrets），官方 Release 包的 Bangumi OAuth 登录开箱可用。\n- Gradle 仓库顺序沿用既有修复（`google()` / `mavenCentral()` 优先、阿里云兜底），四平台均可正常出包。\n- 本版无新增依赖，构建链与 beta.2 一致。\n\n---\n\n## 📦 下载说明\n\n- **Android**：APK 按 CPU 架构分包，绝大多数手机请选 **`arm64-v8a`**；很旧的机型选 `armeabi-v7a`；模拟器 / x86 平板选 `x86_64`。装错架构会提示「安装包无效」。也提供 **`app-release.apk`** 通用包（单文件全架构，无需挑架构，体积较大）。\n- **Windows**：`NexHub-setup-*.exe` 为安装包（支持中英文、非管理员安装），`NexHub-windows-x64.zip` 为免安装便携版。若被 SmartScreen 拦截，点「更多信息 → 仍要运行」。\n- **Linux**：`NexHub-linux-x64.tar.gz` 为免安装版（解压即运行）；`NexHub-linux-x64.deb` 为 Debian / Ubuntu 系安装包；`NexHub-linux-x64.AppImage` 为单文件便携版（赋予可执行权限后双击运行）。\n- **macOS**：`NexHub-macos.zip` 为免安装版，`NexHub-macos.dmg` 为磁盘镜像（挂载后拖入「应用程序」）。首次打开需在「系统设置 → 隐私与安全性」中放行。\n\n---\n\n## ⚠️ 已知限制\n\n- **媒体服务器依赖自建环境**：需要你自己部署并可访问的 Emby / Jellyfin 服务器；公网地址的可达性取决于服务器自身的网络配置与账号权限，应用侧不做穿透与内网代建。\n- **漫画动态效果仍在打磨**：动效种类与稳定性会持续迭代，当前版本可能在部分机型上表现不稳定，请在「设置 → 漫画阅读器」中按需开关。\n- **ECH 当前随 Android APK 生效**：非 Android 平台或缺失原生库时自动降级为直连；其余（代理 / DNS / Hosts / SNI）依旧全部真实生效。\n- **SNI 运行时可控但仍受栈限制**：现可在网络设置中配置「域名 → SNI 映射」与「免 SNI（绕 SNI 封锁）」，仅对直连 https 生效；走外部代理时由代理自理；部分站点仍需实测。\n- **自建构建的 Bangumi OAuth 不可用**：未注入凭据时请改用 Access Token 登录，或自行到 [bgm.tv/dev/app/create](https://bgm.tv/dev/app/create) 注册应用（回调地址 `nexhub://oauth/callback`）；\n- **Bangumi 吐槽仅只读**；源站评论的可用操作取决于源 JSON 声明了哪些路由；\n- 遇到问题优先到 Issues 反馈。\n\n---\n\n## 🙏 参与共创\n\n- 反馈 Bug → [Issues](https://github.com/nexhub-app/Nexhub/issues)\n- 路线规划 / 新功能想法 → [Discussions](https://github.com/nexhub-app/Nexhub/discussions)\n- 写源 / 改引擎 → 欢迎 Pull Request\n- 漫画动态效果等特性由社区贡献者共建，感谢每一位参与的人。\n\n> NexHub 不内置任何内容源。首次安装后需要自行导入源，才能看到内容。\n",
+        "publishedAt": "2026-10-03T13:31:25Z",
+        "createdAt": "2026-10-03T12:24:22Z",
+        "body": "# NexHub v3.0.0-beta.4（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 预发布说明\n\nNexHub **3.0.0 的第四个预发布测试版（beta.4）** 来了。本次主线是**网络连通性加固**与**细节打磨**：ECH 加密握手引擎完成**多平台化**（Android 三架构 + Windows 桌面），代理 / Hosts / WebView 一整条链路打通；源编辑页拆分为五页签、筛选面板与源编辑页折叠懒加载更顺手；刘海屏沉浸全屏黑边修复；应用内更新弹窗终于能完整展示发布说明（自建轻量 markdown 渲染，不再被截断）。\n\n> - **这是什么阶段**：相对 beta.3 是一次以「网络链路加固 + 界面细节打磨 + 更新弹窗修复」为主的小幅更新，仍处测试阶段，可能有个别体验问题。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——收藏 / 进度 / 书签 / 历史 / 分组 / 评分 / 短评可直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥，可直接覆盖安装。\n> - **建议**：想在 Windows 桌面端也用上 ECH，或遇到过更新弹窗发布说明被截断、刘海屏黑边的朋友欢迎升级并反馈；追求绝对稳定的可继续用 2.0.3 正式版。\n> - **运行要求**：ECH 由内置原生引擎（OpenSSL）驱动，现已随 **Android APK（arm64-v8a / armeabi-v7a / x86_64 三架构）与 Windows 桌面端** 打包生效；**macOS / Linux 暂未打包原生库，会自动降级为直连**，不影响其他功能。其余（代理 / DNS / Hosts / SNI）依旧全部真实生效。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次相较 v3.0.0-beta.3 的核心变化\n\n### 🌐 网络：ECH 多平台化 + 代理 / Hosts / WebView 全链路打通\n\n- **ECH 引擎多平台化**：原生 ECH 引擎（OpenSSL）现已覆盖 **Android 三架构（arm64-v8a / armeabi-v7a / x86_64）+ Windows 桌面端（FFI 接入）**；Bangumi 的 ECH 并入连接模式「三选一」统一开关。\n  - **作用域不变**：应用级（接管任意 https 域、逐域自适应回落）/ 源级（`network.ech` 可在源 JSON 或 UI 覆盖单独开关）/ Bangumi 专用三档。\n  - **自动降级**：macOS / Linux 未打包原生库时整套自动回退为直连，不拖垮其他网络功能。\n- **源内置 Hosts 全通路生效**：源 JSON 里声明的 `hosts` 现在真正接入 **WebView / 嗅探 / 下载** 三条链路，并补上**多 IP 故障转移**（DNS 解析出多个 IP 时逐个重试，修复「浏览器能开、应用超时」）。\n- **静态代理规则跟随**：Android WebView 现在跟随改走静态代理规则（ProxyConfig 不支持 PAC，自动识别并避开 PAC）。\n- **Windows DIRECT 兜底修根因**：WebView2 的 `host-resolver-rules` 加引号防止命令行被空格切碎——这是此前 Windows 端 DIRECT 兜底**从未真正生效**的根因，现修复。\n\n### 🗂️ 源编辑页重构\n\n- **拆分五页签**：源编辑页按「基本信息 / 网络 / 解析 / 筛选 / 高级」拆分为五个页签，长表单不再一屏滚到天荒地老。\n- **模块化折叠**：结合下方筛选面板的折叠懒加载能力，源编辑页各模块支持按需折叠，结构更清晰、加载更轻。\n\n### 🔍 筛选面板\n\n- **分组折叠懒加载**：筛选面板的分组支持折叠，且折叠态不渲染内容（懒加载），分组多、条目长的源打开更快、更省内存。\n\n### 📱 Android 刘海屏\n\n- **沉浸全屏黑边修复**：主题新增 `windowLayoutInDisplayCutoutMode=shortEdges`，阅读器等沉浸全屏场景的顶部黑边消除，刘海 / 挖孔屏不再被遮挡或留黑。\n\n### 🔒 隐私\n\n- **隐藏源历史展示层过滤**：隐藏源（如限制级）不再在「历史」展示层露出。\n- **无痕判定口径统一**：无痕模式的判定逻辑统一收敛，避免不同入口口径不一致；无痕状态在菜单中**文字化**呈现，状态一眼可见。\n\n### 🔄 应用内更新\n\n- **发布说明完整展示**：更新弹窗不再被「6 行截断」，自建轻量 markdown 渲染器，能正确展示标题、列表、加粗等基础排版，长发布说明也能读全。\n\n### 🔧 工程与文档（内部）\n\n- 代码注释、提交信息与文档延续中性表述清理。\n- 本版无新增第三方依赖，CI 四平台构建配置沿用。\n\n---\n\n## 🔞 年龄限制与免责说明\n\nNexHub 默认开启**年龄限制保护**：标记为 **18+（成人 / mature）** 的源在默认设置下**自动隐藏**，不会出现在浏览、搜索与源列表中。如需访问，须在「设置 → 内容分级」中手动开启「显示限制级内容」，并确认你已年满法定成年年龄。\n\n- **源作者责任**：请在源 JSON 中如实填写 `ageRating` 字段（`general` 全年龄 / `teen` 青少年 16+ / `mature` 成人 18+，支持 `all`/`16`/`r18`/`nsfw` 等别名，缺省 `general`）。应用仅依据该字段自动分级与隐藏，**最终的内容合规性与年龄适宜性由源的提供方与使用方负责**。\n- **内容责任**：NexHub 为开源技术演示项目，本身**不提供、不存储、不中转任何内容**，所有内容均来自用户自行导入的源或用户自行连接的媒体服务器。对于相应内容的版权、合法性及适宜性，NexHub 不做任何形式的担保或背书。\n- **合规提示**：若你所在地区法律禁止访问此类内容，或你未满法定成年年龄，请勿开启限制级内容显示。使用本软件即表示你已阅读、理解并同意仓库内完整的《免责声明》（依据中华人民共和国相关法律法规拟定）。\n\n> 源字段完整说明见网站文档「源编写教程 · 源字段完整参考」一节，或仓库 `lib/core/models/plugin_config.dart`。\n\n---\n\n## 🛠️ 构建与发布\n\n- CI 四平台（Android / Windows / Linux / macOS）build 命令均注入 `--dart-define=BANGUMI_CLIENT_ID` 与 `BANGUMI_CLIENT_SECRET`（来自仓库 Secrets），官方 Release 包的 Bangumi OAuth 登录开箱可用。\n- Gradle 仓库顺序沿用既有修复（`google()` / `mavenCentral()` 优先、阿里云兜底），四平台均可正常出包。\n- 本版无新增依赖，构建链与 beta.3 一致。\n\n---\n\n## 📦 下载说明\n\n- **Android**：APK 按 CPU 架构分包，绝大多数手机请选 **`arm64-v8a`**；很旧的机型选 `armeabi-v7a`；模拟器 / x86 平板选 `x86_64`。装错架构会提示「安装包无效」。也提供 **`app-release.apk`** 通用包（单文件全架构，无需挑架构，体积较大）。\n- **Windows**：`NexHub-setup-*.exe` 为安装包（支持中英文、非管理员安装），`NexHub-windows-x64.zip` 为免安装便携版。若被 SmartScreen 拦截，点「更多信息 → 仍要运行」。\n- **Linux**：`NexHub-linux-x64.tar.gz` 为免安装版（解压即运行）；`NexHub-linux-x64.deb` 为 Debian / Ubuntu 系安装包；`NexHub-linux-x64.AppImage` 为单文件便携版（赋予可执行权限后双击运行）。\n- **macOS**：`NexHub-macos.zip` 为免安装版，`NexHub-macos.dmg` 为磁盘镜像（挂载后拖入「应用程序」）。首次打开需在「系统设置 → 隐私与安全性」中放行。\n\n---\n\n## ⚠️ 已知限制\n\n- **媒体服务器依赖自建环境**：需要你自己部署并可访问的 Emby / Jellyfin 服务器；公网地址的可达性取决于服务器自身的网络配置与账号权限，应用侧不做穿透与内网代建。\n- **漫画动态效果仍在打磨**：动效种类与稳定性会持续迭代，当前版本可能在部分机型上表现不稳定，请在「设置 → 漫画阅读器」中按需开关。\n- **ECH 多平台进度**：现已随 **Android（三架构）与 Windows 桌面端** 生效；**macOS / Linux 暂未打包原生库，自动降级为直连**；其余（代理 / DNS / Hosts / SNI）依旧全部真实生效。\n- **SNI 运行时可控但仍受栈限制**：现可在网络设置中配置「域名 → SNI 映射」与「免 SNI（绕 SNI 封锁）」，仅对直连 https 生效；走外部代理时由代理自理；部分站点仍需实测。\n- **自建构建的 Bangumi OAuth 不可用**：未注入凭据时请改用 Access Token 登录，或自行到 [bgm.tv/dev/app/create](https://bgm.tv/dev/app/create) 注册应用（回调地址 `nexhub://oauth/callback`）；\n- **Bangumi 吐槽仅只读**；源站评论的可用操作取决于源 JSON 声明了哪些路由；\n- 遇到问题优先到 Issues 反馈。\n\n---\n\n## 🙏 参与共创\n\n- 反馈 Bug → [Issues](https://github.com/nexhub-app/Nexhub/issues)\n- 路线规划 / 新功能想法 → [Discussions](https://github.com/nexhub-app/Nexhub/discussions)\n- 写源 / 改引擎 → 欢迎 Pull Request\n- 漫画动态效果等特性由社区贡献者共建，感谢每一位参与的人。\n\n> NexHub 不内置任何内容源。首次安装后需要自行导入源，才能看到内容。\n",
         "assets": [
           {
             "name": "app-arm64-v8a-release.apk",
-            "size": 81968509,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/app-arm64-v8a-release.apk"
+            "size": 82039449,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/app-arm64-v8a-release.apk"
           },
           {
             "name": "app-armeabi-v7a-release.apk",
-            "size": 73127733,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/app-armeabi-v7a-release.apk"
+            "size": 78163097,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/app-armeabi-v7a-release.apk"
           },
           {
             "name": "app-release.apk",
-            "size": 184835666,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/app-release.apk"
+            "size": 198046717,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/app-release.apk"
           },
           {
             "name": "app-x86_64-release.apk",
-            "size": 79763516,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/app-x86_64-release.apk"
+            "size": 87879067,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/app-x86_64-release.apk"
           },
           {
             "name": "NexHub-linux-x64.AppImage",
-            "size": 131885560,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-linux-x64.AppImage"
+            "size": 131918328,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-linux-x64.AppImage"
           },
           {
             "name": "NexHub-linux-x64.deb",
-            "size": 28363570,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-linux-x64.deb"
+            "size": 28384654,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-linux-x64.deb"
           },
           {
             "name": "NexHub-linux-x64.tar.gz",
-            "size": 35121377,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-linux-x64.tar.gz"
+            "size": 35155968,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-linux-x64.tar.gz"
           },
           {
             "name": "NexHub-macos.dmg",
-            "size": 78661187,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-macos.dmg"
+            "size": 78757219,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-macos.dmg"
           },
           {
             "name": "NexHub-macos.zip",
-            "size": 70044810,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-macos.zip"
+            "size": 70139218,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-macos.zip"
           },
           {
-            "name": "NexHub-setup-3.0.0-beta.3.exe",
-            "size": 45806417,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-setup-3.0.0-beta.3.exe"
+            "name": "NexHub-setup-3.0.0-beta.4.exe",
+            "size": 45849497,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-setup-3.0.0-beta.4.exe"
           },
           {
             "name": "NexHub-windows-x64.zip",
-            "size": 62083627,
-            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.3/NexHub-windows-x64.zip"
+            "size": 62120535,
+            "browserDownloadUrl": "https://github.com/nexhub-app/Nexhub/releases/download/v3.0.0-beta.4/NexHub-windows-x64.zip"
           }
         ]
       },
@@ -969,25 +969,25 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 22,
-      "sourceUpdatedAt": "2026-10-03T12:59:14Z",
+      "sourceUpdatedAt": "2026-10-03T14:53:16Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.092809",
-        "tagName": "3.26.092809",
+        "name": "3.26.100321",
+        "tagName": "3.26.100321",
         "prerelease": false,
-        "publishedAt": "2026-09-28T01:32:36Z",
-        "createdAt": "2026-09-28T01:28:59Z",
-        "body": "3.26.092712 → 3.26.092809\n\n**2026/09/28（问题修复）**\n### 修复\n- 从阅读历史或收藏打开订阅视频，也能上下滑动切换上一条下一条\n- 图片加载中显示进度，加载失败可就地重试，不再一片漆黑\n- 修复书源编辑页六个标签下的编辑项全部不显示的问题\n\n**2026/09/27（体验优化）**\n### 新增\n- 订阅正文含视频时自动打开内置播放器，可在设置或阅读菜单关闭\n- 漫画长按可保存或分享当前页图片\n- 可开启文章图片预下载，之后离线也能看图\n### 优化\n- 回收站列表改为与其他管理页一致的卡片行样式\n- 字典规则的删除收进「更多」菜单，拖拽排序不再误触删除\n- 移除底栏悬浮搜索按钮，搜索入口统一到顶栏与侧边栏\n- 万条书源合集导入更省内存，超限会提前提示\n- 网页订阅解析出视频地址时直接播放，不再等待嗅探\n- 视频播放失败自动切换下一条线路，无需手动切\n- 听书遇网络抖动会自动续播，不再直接停下\n- 朗读可按段落续读，重进不再回到段首\n- 订阅可一键把全部/当前源/分组标为已读\n- 订阅源支持 OPML 导入导出（可与其他阅读器互通）\n- 订阅已读记录纳入备份与恢复\n- 漫画可双指缩放，长条图加载更省内存\n- 图片分享改为直接发送图片文件\n- 保存的图片按来源与序号命名，不再重名覆盖\n- 图片浏览统一为一套手势，长图与普通图体验一致\n### 修复\n- 恢复书源管理「回收站」入口，可找回误删的书源与规则\n- 备份与恢复补齐封面图集、高亮规则、背景图、书籍缓存\n- 修复备份失败时提示可能为空的问题\n- 改善部分中文站点的正文乱码\n- 修复含视频的订阅文章打开内置播放器后不播放的问题\n- 修复订阅视频在播放器内上下滑动切换上一个下一个失效\n- 修复订阅瀑布流列表间距过大、卡片偏窄的问题",
+        "publishedAt": "2026-10-03T14:53:16Z",
+        "createdAt": "2026-10-03T13:51:51Z",
+        "body": "3.26.092809 → 3.26.100321\n\n**2026/10/03（问题修复）**\n### 修复\n- 修复部分订阅源列表加载失败、图片查看页图片显示不全的问题\n\n**2026/10/02（问题修复）**\n### 修复\n- 修复部分网站因重定向未跟随导致订阅列表一直转圈、加载不出来的问题\n- 修复编辑书源与订阅源时列表上滑，内容叠到上方标签栏的问题\n### 优化\n- 书架「继续阅读」提示改为紧贴底栏上沿、与底栏同款磨砂配色的悬浮条\n\n**2026/10/01（问题修复）**\n### 修复\n- 修复订阅列表翻页到第二页后无法继续、页脚一直转圈\n- 修复订阅列表翻页时右上角页码不跟随变化\n- 修复瀑布布局滚动时封面图片花屏或变形\n- 修复书架底部「继续阅读」提示被底栏遮挡看不见\n### 优化\n- 订阅源支持自定义分页表达式（如随机页码）自动翻页\n\n**2026/09/29（新增）**\n### 新增\n- 网页控制台新增侧边导航，书架与漫画视频调试台等一处直达\n- 新增「Web 服务与 AI 接入」设置页：看地址、生成令牌、改端口、安全开关\n- AI 网页服务执行危险操作前，需在手机上确认\n- 网页控制台支持按需下载安装，未安装时自动引导，也可本地导入\n- 网页控制台装新版后可一键回退到上一版本\n- 新增《网页服务 + MCP》使用帮助，附各家 AI 客户端接入步骤\n- 网页控制台可生成各 AI 客户端接入配置，并一键自检连接问题所在\n- 网页订阅可收藏文章、管理分组并导入导出 OPML\n- 网页设置可改应用偏好与主题模式，并支持检索设置项\n- 设置页新增公网中继卡片与「一键断电」，可停止服务并吊销全部令牌\n### 修复\n- 修复控制台本地导入包始终提示结构不完整、无法安装的问题\n- 修复未配置云存储时网页看缓存列表报服务器错误的问题\n### 优化\n- 网页控制台可查看与删除名场面书签、书签和朗读引擎\n- 网页控制台可查看并设置阅读目标（与手机阅读记录页同步）\n- 网页阅读器可一键切到经典阅读器续读\n- 网页列表页改左右同屏并支持键盘操作，窄窗口自动换成卡片\n- 生成读写/完全访问令牌前会二次确认，避免误发高权限令牌\n- 端口与后台唤醒锁设置移到该页，其他设置页保留入口不丢功能\n- 备份超时后不再卡住后续备份与恢复\n- 网页版新增访问令牌填写入口，未授权时提示获取方式\n\n**2026/09/28（问题修复）**\n### 新增\n- 新增名场面书签：一键收藏精彩瞬间，AI 自动生成描述，名场面库统一回看\n### 优化\n- 网页服务写操作与敏感接口需携带访问令牌，防止同网络他人改数据\n- 网页接口出错返回真实状态码，网页端提示更明确\n- 修正网页静态资源类型识别，字体与图片加载更可靠\n- 网页推送源会跳过结构残缺的源，并提示失败数量\n### 修复\n- 从阅读历史或收藏打开订阅视频，也能上下滑动切换上一条下一条\n- 图片加载中显示进度，加载失败可就地重试，不再一片漆黑\n- 修复书源编辑页六个标签下的编辑项全部不显示的问题\n- 订阅列表快速下滑翻页更跟手，不再一直转圈",
         "assets": [
           {
-            "name": "legado_miss_app_3.26.092809.apk",
-            "size": 26046215,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092809/legado_miss_app_3.26.092809.apk"
+            "name": "legado_miss_app_3.26.100321.apk",
+            "size": 26564225,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100321/legado_miss_app_3.26.100321.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.092809.apk",
-            "size": 40917161,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.092809/legado_miss_app_debug_3.26.092809.apk"
+            "name": "legado_miss_app_debug_3.26.100321.apk",
+            "size": 41805772,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100321/legado_miss_app_debug_3.26.100321.apk"
           }
         ]
       },
@@ -1047,35 +1047,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 15,
-      "sourceUpdatedAt": "2026-10-03T05:12:07Z",
+      "sourceUpdatedAt": "2026-10-03T14:35:08Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.23",
-        "tagName": "3.26.17-beta.23",
+        "name": "Pre-release 3.26.17-beta.24",
+        "tagName": "3.26.17-beta.24",
         "prerelease": true,
-        "publishedAt": "2026-10-03T05:11:53Z",
-        "createdAt": "2026-10-03T04:51:29Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新合并上游完整模式的听书悬浮胶囊、书架副本管理等大批更新，墨水屏模式落地首屏封面预热并修复多项阅读与换源细节。\n\n### 新增\n\n* 墨水屏模式：书架首屏封面预热——进入墨水屏模式即后台预载第一页封面，冷启动书架少一轮「文字占位→封面到位」的全页重绘\n* 墨水屏模式：阅读页眉时间按分钟自动走字（此前仅随翻页刷新），电量显示随之更新\n* 完整模式：听书/有声书全局悬浮胶囊与播放器改版——悬浮窗与主页悬浮底栏两种模式下的胶囊布局，胶囊支持长按操作\n* 完整模式：书架副本管理——加入书架时提示同名同作者疑似重复，删除已入架书籍时展示并跳转其他副本，「书架操作」Sheet 集中副本/分组/删除\n* 完整模式：换源保留选项新增「作者」（墨水屏换源走宿主同管线，同样生效）\n\n### 修复\n\n* 墨水屏模式：修复阅读页脚长章节标题下缘被裁切的问题\n* 墨水屏模式：修复目录页持续缓存新书时缓存角标不更新的问题\n* 墨水屏模式：云端进度同步同章位置微差不再重复弹确认框\n* 墨水屏模式：换源默认删除旧源已下载章节缓存，避免沿用坏正文；目录拉取与首章正文错峰请求，降低书源限流导致的首次加载失败\n* 完整模式：修复朗读两处崩溃\n* 完整模式：修复阅读记录跨午夜时长统计与会话删除问题\n* 完整模式：修复阅读菜单云端进度入口因初始化时序而不显示的问题\n* 完整模式：漫画阅读修复一批（区域解码、显式下载保留、阅读进度保持、条漫分块渲染）\n\n### 优化\n\n* 完整模式：启动速度与章节排版性能优化，启动基线配置更新\n* 墨水屏模式：阅读记录会话导入改内存集判重，大备份导入显著提速\n* 构建工具链升级（Gradle 9.8 / AGP 9.4.1）\n\n### 说明\n\n* 私密功能现在默认关闭，可在完整模式设置中开启\n* 隐私模式仅在完整模式生效，墨水屏模式暂未适配：墨水屏书架与阅读不经过隐私验证与遮挡",
+        "publishedAt": "2026-10-03T14:34:55Z",
+        "createdAt": "2026-10-03T13:34:00Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新合并上游完整模式的听书悬浮胶囊、书架副本管理等大批更新，墨水屏模式落地首屏封面预热与掌阅设备水波纹翻页，并修复多项阅读与换源细节。\n\n### 新增\n\n* 墨水屏模式：书架首屏封面预热——进入墨水屏模式即后台预载第一页封面，冷启动书架少一轮「文字占位→封面到位」的全页重绘\n* 墨水屏模式：掌阅设备水波纹翻页动画——阅读「其它设置」新增档位（关/慢速/标准/快速），前进与后退翻页的波纹扫入方向相反，档位即点即生效；按品牌与固件能力自动判定，非掌阅设备不显示该设置\n* 墨水屏模式：阅读页眉时间按分钟自动走字（此前仅随翻页刷新），电量显示随之更新\n* 完整模式：听书/有声书全局悬浮胶囊与播放器改版——悬浮窗与主页悬浮底栏两种模式下的胶囊布局，胶囊支持长按操作\n* 完整模式：书架副本管理——加入书架时提示同名同作者疑似重复，删除已入架书籍时展示并跳转其他副本，「书架操作」Sheet 集中副本/分组/删除\n* 完整模式：换源保留选项新增「作者」（墨水屏换源走宿主同管线，同样生效）\n\n### 修复\n\n* 墨水屏模式：修复阅读页脚长章节标题下缘被裁切的问题\n* 墨水屏模式：修复目录页持续缓存新书时缓存角标不更新的问题\n* 墨水屏模式：云端进度同步同章位置微差不再重复弹确认框\n* 墨水屏模式：换源默认删除旧源已下载章节缓存，避免沿用坏正文；目录拉取与首章正文错峰请求，降低书源限流导致的首次加载失败\n* 完整模式：修复朗读两处崩溃\n* 完整模式：修复阅读记录跨午夜时长统计与会话删除问题\n* 完整模式：修复阅读菜单云端进度入口因初始化时序而不显示的问题\n* 完整模式：漫画阅读修复一批（区域解码、显式下载保留、阅读进度保持、条漫分块渲染）\n\n### 优化\n\n* 完整模式：启动速度与章节排版性能优化，启动基线配置更新\n* 墨水屏模式：阅读记录会话导入改内存集判重，大备份导入显著提速\n* 墨水屏模式：阅读「其它设置」面板行按功能分组重排（翻页交互/界面显示/阅读区手势相邻成块）\n\n### 说明\n\n* 私密功能现在默认关闭，可在完整模式设置中开启\n* 隐私模式仅在完整模式生效，墨水屏模式暂未适配：墨水屏书架与阅读不经过隐私验证与遮挡",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 290908142,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.23/mapping.txt"
+            "size": 291021975,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.24/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.23-arm64-v8a.apk",
-            "size": 20465565,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.23/moben-3.26.17-beta.23-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.24-arm64-v8a.apk",
+            "size": 20482094,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.24/moben-3.26.17-beta.24-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.23-armeabi-v7a.apk",
-            "size": 20005383,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.23/moben-3.26.17-beta.23-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.24-armeabi-v7a.apk",
+            "size": 20021910,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.24/moben-3.26.17-beta.24-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.23.apk",
-            "size": 27038038,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.23/moben-3.26.17-beta.23.apk"
+            "name": "moben-3.26.17-beta.24.apk",
+            "size": 27054571,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.24/moben-3.26.17-beta.24.apk"
           }
         ]
       },
