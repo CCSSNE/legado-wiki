@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T17:39:28.190Z",
+  "generatedAt": "2026-10-04T21:33:17.181Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6353,
+      "stars": 6354,
       "sourceUpdatedAt": "2026-10-02T17:31:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1381,
-      "sourceUpdatedAt": "2026-10-04T17:17:55Z",
+      "stars": 1382,
+      "sourceUpdatedAt": "2026-10-04T20:15:36Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26091322",
+        "name": "legado_app_3.26100504",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-09-13T14:13:06Z",
-        "body": "<!-- legado-version-code:38446 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/09/11**\n- 我的页面支持自定义，将选中功能移入更多并随配置备份保存；检查更新和检查测试版更新可选择显示在我的页面\n- 高亮样式支持独立调整字号和字距，随规则保存并可恢复默认；换行、行高及装饰同步使用调整后的字体尺寸\n- 修复正文及 HTML 中组合表情被拆开绘制的问题，保留表情字形和字符定位\n- 修复高亮方框、下划线、删除线及着重号覆盖段首缩进的问题，保留正文空格、悬挂标点和章节定位\n- 阅读菜单新增“重新导入本书书源”，复用已安装书源的替换与预览；确认后下一次未缓存请求使用更新规则，取消保留原书源，阅读进度不变\n- 代码编辑器关闭 EmojiCompat 的整篇兼容处理，避免修改短字段时连带重排大型内嵌图标，原文与系统表情显示保持可用\n- 书源和订阅源导入预览及单条代码菜单支持查看起效规则和手动替换；关闭导入时自动替换即可手动选择书源规则，开启自动替换时禁用手动入口，切换模式和编辑后从原文重新计算，保留筛选、勾选和页面重建后的规则列表\n- 调小并减细书源管理“禁止网页跳转”图标，继续缩小圆形图案并保持线宽；内容编辑开关简化为“仅显示正文”\n- 书源管理显示当前书架中的使用数量，删除书籍或切换书源后实时更新，排除临时阅读、本地书籍和历史记录，保留筛选、勾选和排序\n- 朗读设置新增“首次朗读起始设置”，可选页首或句首，默认句首并随备份保留；高亮从实际起读字符开始，修正句首回退后的页码和跨页进度，系统朗读预先排队页边界以连续跟随\n- 修复跨章节返回朗读位置时从当前页开头重新朗读的问题，保留正在播放或暂停的进度，下载正文后也可恢复跟随\n- 修复发现页分类控件的刷新回调可能被提前回收，导致切换后分类列表不更新的问题\n\n",
+        "createdAt": "2026-10-04T20:04:08Z",
+        "body": "<!-- legado-version-code:38448 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/05**\n- 修复 Cronet 跨站下载时仍携带原站认证的问题，避免 WebDAV 跳转下载发生认证冲突，并正确延续多次跳转后的请求状态\n- Cronet 回退至 152.0.7977.54，保留 Android 6 支持及开关即时生效；继续只保存当前设备架构的一份组件，清理旧组件，安装包不内置 Cronet 原生库\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26091322_releaseA_vc38446.apk",
-            "size": 23141270,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091322_releaseA_vc38446.apk"
+            "name": "legado_app_3.26100504_releaseA_vc38448.apk",
+            "size": 23141365,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_releaseA_vc38448.apk"
           },
           {
-            "name": "legado_app_3.26091322_release_vc38446.apk",
-            "size": 23141262,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091322_release_vc38446.apk"
+            "name": "legado_app_3.26100504_release_vc38448.apk",
+            "size": 23141378,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_release_vc38448.apk"
           },
           {
-            "name": "legado_app_3.26091322_universal_releaseA_vc38446.apk",
-            "size": 29092102,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091322_universal_releaseA_vc38446.apk"
+            "name": "legado_app_3.26100504_universal_releaseA_vc38448.apk",
+            "size": 29092192,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_universal_releaseA_vc38448.apk"
           },
           {
-            "name": "legado_app_3.26091322_universal_release_vc38446.apk",
-            "size": 29092097,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26091322_universal_release_vc38446.apk"
+            "name": "legado_app_3.26100504_universal_release_vc38448.apk",
+            "size": 29092202,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_universal_release_vc38448.apk"
           }
         ]
       },
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 592,
+      "stars": 593,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
