@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T13:15:18.464Z",
+  "generatedAt": "2026-10-04T17:39:28.190Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 23,
+          "stars": 24,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47108,
+      "stars": 47107,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6352,
+      "stars": 6353,
       "sourceUpdatedAt": "2026-10-02T17:31:41Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2806,
+      "stars": 2807,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2193,
+      "stars": 2194,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,8 +189,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1378,
-      "sourceUpdatedAt": "2026-09-28T06:11:29Z",
+      "stars": 1381,
+      "sourceUpdatedAt": "2026-10-04T17:17:55Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26091322",
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 590,
+      "stars": 592,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -310,66 +310,66 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 378,
-      "sourceUpdatedAt": "2026-10-03T16:13:25Z",
+      "stars": 379,
+      "sourceUpdatedAt": "2026-10-04T17:02:09Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.100323",
-        "tagName": "beta-3.26.100323",
+        "name": "legado_app_3.26.100500",
+        "tagName": "beta-3.26.100500",
         "prerelease": true,
-        "publishedAt": "2026-10-03T16:13:25Z",
-        "createdAt": "2026-10-03T15:57:42Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* 更新日志\n* fix(发现): 新版发现补齐登录入口、刷新真正重拉书源并收敛胶囊间距\n* fix(订阅): 新版订阅换分类不再停在页末，列表底部不再被底栏遮挡\n* fix(封面): 列表封面请求失败或挂起后自动重试，不再永久停在占位封面\n* docs(规范): 补充主界面内嵌 Compose 内容的底部内边距口径\n* fix(封面): Compose 封面不依赖图片固有尺寸，图集取图失败按优先级继续回退\n\n",
+        "publishedAt": "2026-10-04T17:02:09Z",
+        "createdAt": "2026-10-04T16:39:44Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* fix(封面): 首页封面补失败兜底，取图失败不再留白\n* fix(发现): 前导分类归「其它」分组，展开弹窗吃书源 flex 声明\n* fix(发现): 只声明 flexGrow 的分类不再被误当成大分组标题\n* fix(主界面): 修复系统重建后部分标签页整页空白\n* fix(发现): 分组条不再显示没有可加载分类的空分组\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.100323_release_arm64-v8a.apk",
-            "size": 23034667,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.100500_release_arm64-v8a.apk",
+            "size": 23035196,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_beta_3.26.100500_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.100323_release_armeabi-v7a.apk",
-            "size": 22394312,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.100500_release_armeabi-v7a.apk",
+            "size": 22394840,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_beta_3.26.100500_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.100323_release_universal.apk",
-            "size": 31049529,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_beta_3.26.100323_release_universal.apk"
+            "name": "legado_beta_3.26.100500_release_universal.apk",
+            "size": 31050066,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_beta_3.26.100500_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.100323_legacy_arm64-v8a.apk",
-            "size": 23034641,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.100500_legacy_arm64-v8a.apk",
+            "size": 23035185,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_compat_3.26.100500_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.100323_legacy_armeabi-v7a.apk",
-            "size": 22394286,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.100500_legacy_armeabi-v7a.apk",
+            "size": 22394835,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_compat_3.26.100500_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.100323_legacy_universal.apk",
-            "size": 31049503,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_compat_3.26.100323_legacy_universal.apk"
+            "name": "legado_compat_3.26.100500_legacy_universal.apk",
+            "size": 31050059,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_compat_3.26.100500_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.100323_releaseS_arm64-v8a.apk",
-            "size": 23034679,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.100500_releaseS_arm64-v8a.apk",
+            "size": 23035205,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_plus_3.26.100500_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.100323_releaseS_armeabi-v7a.apk",
-            "size": 22394317,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.100500_releaseS_armeabi-v7a.apk",
+            "size": 22394847,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_plus_3.26.100500_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.100323_releaseS_universal.apk",
-            "size": 31049540,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_plus_3.26.100323_releaseS_universal.apk"
+            "name": "legado_plus_3.26.100500_releaseS_universal.apk",
+            "size": 31050067,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_plus_3.26.100500_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.100323_universal.apk",
-            "size": 69529619,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100323/legado_z_debug_3.26.100323_universal.apk"
+            "name": "legado_z_debug_3.26.100500_universal.apk",
+            "size": 69530240,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.100500/legado_z_debug_3.26.100500_universal.apk"
           }
         ]
       },
@@ -901,75 +901,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-04T09:42:24Z",
+      "sourceUpdatedAt": "2026-10-04T14:18:45Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.5.0",
-        "tagName": "v1.5.0",
+        "name": "LightRead 轻阅 v1.5.1",
+        "tagName": "v1.5.1",
         "prerelease": false,
-        "publishedAt": "2026-10-04T09:03:28Z",
-        "createdAt": "2026-10-04T08:51:41Z",
-        "body": "release: v1.5.0\n\n轻阅 v1.5.0 新增阅读记录，改善旧设备兼容性和离线听书的流畅度。\n\n### 新增：阅读记录（#7）\n- 新的「阅读记录」页：今日阅读时长与每日目标（默认 30 分钟，可关闭）、连续阅读天数、累计阅读天数、近一年阅读热力图，点某一天可查看当天读过的书。\n- 周 / 月 / 年统计：柱状图、总时长、日均、阅读天数及本期读过的书，点书名可直接继续阅读。\n- 藏书页顶部显示「今日 X 分钟」，侧栏与手机底部标签栏增加入口。\n- 计时更准确：页面在前台且有翻页等操作才计时，5 分钟无操作停表；听书计入，但无人操作超过 60 分钟后不再累计；跨零点自动分到对应日期。\n- 登录轻阅账号或配置 WebDAV 后，各设备的阅读记录自动合并；藏书包导出/导入时一并备份。此前版本只有每本书的累计时长，每日记录从本版本开始。\n\n### 兼容性（#9 等设备差异）\n- 支持的最低环境明确为 Chrome / Android System WebView 89、Safari 15，并补齐旧 WebView 缺少的一批接口与样式回退，改善华为/鸿蒙及较旧手机、旧 Safari 上的导入与阅读。\n- WebView 过旧无法运行时显示「请更新系统 WebView」提示，不再白屏。\n- 修复阅读器换章或快速退出时偶发的报错。\n\n### 离线听书（#8）\n- 离线语音按句切分合成，首句合成后立即开始播放；电子书提前合成后两段（此前不预取，导致每段结束后停顿），PDF 跨页预取。\n- 打开朗读面板时预加载语音模型，首次加载显示「正在加载语音模型」；推理线程按 CPU 核数调整，为界面保留计算资源。\n\n### 升级说明\n- 桌面端（macOS / Windows / Linux）任何旧版本都可在「设置 → 关于」检查更新并直接下载安装新版，藏书与设置保留。\n- Android v1.4.0 起使用固定签名，可直接覆盖升级到 v1.5.0，数据保留。\n- Android v1.4.0 之前的安装（v1.1.18、v1.3.0 等）使用的是已无法恢复的临时签名，系统不允许直接覆盖安装。请先保留旧应用：在旧版「设置 → 数据」导出藏书包并确认文件已保存到应用外，或使用轻阅账号 / WebDAV 同步；确认备份可用后再卸载旧版、安装新版并导入或同步恢复。详见 README 的 Android 备份/恢复说明。\n\n### 验证与已知限制\n- 阅读记录 20 项、旧 WebView 兼容 18 项、听书调度 11 项、Rust 离线语音 5 项及同步、藏书包等既有单测通过；35 步阅读器冒烟连续 4 次无页面错误；模拟缺失 Chrome 89 / Safari 15 以上接口的环境中 EPUB 与 CBZ 导入阅读通过。\n- 各历史版本（v0.2.2–v1.4.0）的更新检查规则已逐一核对，均能识别本版本各平台安装包。\n- 华为鸿蒙 4.2 原设备与 Windows 实机离线听书耗时尚待复验；系统 WebView 低于 89 的设备无法运行，需要更新 WebView。\n\n",
+        "publishedAt": "2026-10-04T14:17:43Z",
+        "createdAt": "2026-10-04T14:00:22Z",
+        "body": "release: v1.5.1\n\n轻阅 v1.5.1 修复坚果云等 WebDAV 同步缓慢、迟迟不同步的问题，并改版阅读记录页与同步设置。\n\n### 同步修复\n- 电脑版与安卓版上传书籍改为原生直接读取文件上传，大文件不再卡顿（实测 28.5MB 从 33 秒降到 14 秒）。\n- 先同步阅读进度、笔记、书单，再在后台上传书籍文件：其他设备几秒内就能看到进度变化，不必等所有书传完（实测 46 秒 → 4.5 秒）。\n- 网络请求加超时，偶发卡住的上传不会再让同步一直挂着。\n- 修复坚果云新用户首次同步必定失败的问题。\n- 网页版现在可以连接坚果云 / Koofr（经轻阅同步服务中转，只转发、不保存账号密码）。\n\n### 同步设置更简单\n- 选择服务商即可：坚果云、Koofr、自建 NAS（Nextcloud / 群晖 / Alist）或其他 WebDAV；选坚果云无需填写服务器地址。\n- 一键打开坚果云「生成应用密码」页面；填好账号与应用密码，点「连接」即自动校验、保存、开启自动同步并完成首次同步。\n- 连接后显示简洁的状态卡（服务商、账号、上次同步时间、立即同步、断开），备份与恢复等收进「更多操作」。\n- 出错时说明具体原因与处理办法（如应使用应用密码而非登录密码）。\n- 轻阅账号验证码输满 6 位自动登录。\n\n### 阅读记录改版\n- 首屏显示今日阅读分钟数与目标进度、连续阅读天数，并可一键「继续阅读」最近读的书。\n- 本周 7 天目标完成情况；周 / 月 / 年趋势与上一期同期对比，点柱子查看当天，年视图可下钻到月；可按书籍 / 论文筛选。\n- 阅读日历：电脑上是全年热力图，手机上是月历；点任意一天查看当天读了哪些书。\n- 里程碑：累计时长、阅读天数、最长连续、单日最长、读得最久的一本。\n\n### 升级说明\n- 桌面端任何旧版本都可在「设置 → 关于」检查更新并直接安装。\n- Android v1.4.0 及以后可直接覆盖升级，数据保留；v1.4.0 之前的安装需按 README 备份后重装（历史临时签名无法覆盖）。\n\n### 验证与已知限制\n- 全部单测、Rust 55 项、阅读器冒烟 35 步（无页面错误）、WebDAV 同步 e2e 8 步、账号同步 e2e 6 步通过。\n- K30（Android 12）真机：同签名覆盖安装后藏书保留；连接坚果云同步 3 本 PDF（39.6MB）整次 25 秒，另一设备完整拉取。\n- 坚果云免费版有上传流量与频率限制，书很多时首次上传仍需较长时间，但进度与笔记会先同步完成。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.5.0-1.x86_64.rpm",
-            "size": 28580990,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead-1.5.0-1.x86_64.rpm"
+            "name": "LightRead-1.5.1-1.x86_64.rpm",
+            "size": 28786022,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead-1.5.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.5.0_aarch64.dmg",
-            "size": 21973784,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_1.5.0_aarch64.dmg"
+            "name": "LightRead_1.5.1_aarch64.dmg",
+            "size": 22181103,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.5.0_amd64.AppImage",
-            "size": 104409592,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_1.5.0_amd64.AppImage"
+            "name": "LightRead_1.5.1_amd64.AppImage",
+            "size": 104638968,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.5.0_amd64.deb",
-            "size": 28582168,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_1.5.0_amd64.deb"
+            "name": "LightRead_1.5.1_amd64.deb",
+            "size": 28786220,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_amd64.deb"
           },
           {
-            "name": "LightRead_1.5.0_x64-setup.exe",
-            "size": 16672913,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_1.5.0_x64-setup.exe"
+            "name": "LightRead_1.5.1_x64-setup.exe",
+            "size": 16837507,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.5.0_x64.dmg",
-            "size": 23222333,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_1.5.0_x64.dmg"
+            "name": "LightRead_1.5.1_x64.dmg",
+            "size": 23419262,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 21900966,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_aarch64.app.tar.gz"
+            "size": 22104553,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.5.0_android_arm64.apk",
-            "size": 69495648,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_v1.5.0_android_arm64.apk"
+            "name": "LightRead_v1.5.1_android_arm64.apk",
+            "size": 70213808,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.5.0_android_arm64.apk.json",
+            "name": "LightRead_v1.5.1_android_arm64.apk.json",
             "size": 388,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_v1.5.0_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.5.0_android_arm64.apk.sha256",
+            "name": "LightRead_v1.5.1_android_arm64.apk.sha256",
             "size": 101,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_v1.5.0_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23170538,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/LightRead_x64.app.tar.gz"
+            "size": 23365394,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1065,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/SHA256SUMS"
           }
         ]
       },
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 22,
-      "sourceUpdatedAt": "2026-10-04T06:55:38Z",
+      "sourceUpdatedAt": "2026-10-04T14:19:29Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100321",
@@ -1061,7 +1061,7 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 15,
+      "stars": 16,
       "sourceUpdatedAt": "2026-10-04T09:19:44Z",
       "githubArchived": false,
       "release": {
