@@ -203,9 +203,16 @@
       "upstreamRepo": "nexhub-app/Nexhub",
       "upstreamBranch": "main",
       "backupRepo": "legado-backup/legado-nexhub",
-      "activeBranch": "main",
-      "generation": 1,
-      "retired": [],
+      "activeBranch": "backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "main",
+          "head": "9942da70bcbf12587b2b212fc0c72494a65c641b",
+          "retiredAt": "2026-10-05T16:22:00.381Z",
+          "reason": "unrelated"
+        }
+      ],
       "status": "active"
     },
     "lightread": {
@@ -792,14 +799,19 @@
       "repo": "nexhub-app/Nexhub",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T01:29:52.103Z",
+      "since": "2026-10-05T16:22:02.026Z",
       "backupRepo": "legado-backup/legado-nexhub",
-      "activeBranch": "main",
+      "activeBranch": "backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b",
       "events": [
         {
           "at": "2026-10-05T01:29:52.103Z",
           "type": "synced",
           "message": "nexhub-app/Nexhub:main → legado-backup/legado-nexhub:main 已同步"
+        },
+        {
+          "at": "2026-10-05T16:22:02.026Z",
+          "type": "rotated",
+          "message": "历史 unrelated：旧分支已保留，legado-backup/legado-nexhub/backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b 接收新历史"
         }
       ]
     },
@@ -1188,5 +1200,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-05T07:39:23.601Z"
+  "checkedAt": "2026-10-05T16:22:29.472Z"
 }
