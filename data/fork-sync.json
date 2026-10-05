@@ -1,4 +1,1192 @@
 {
   "version": 1,
-  "projects": {}
+  "projects": {
+    "c": {
+      "upstreamId": 1329665466,
+      "upstreamRepo": "CCSSNE/legadoC",
+      "upstreamBranch": "own",
+      "backupRepo": "legado-backup/legado-c",
+      "activeBranch": "own",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "md3": {
+      "upstreamId": 1046496211,
+      "upstreamRepo": "HapeLee/legado-with-MD3",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-md3",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "sigma": {
+      "upstreamId": 1026050069,
+      "upstreamRepo": "Luoyacheng/legado-E",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-sigma",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "harmony": {
+      "upstreamId": 787898999,
+      "upstreamRepo": "mgz0227/legado-Harmony",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-harmony",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "main": {
+      "upstreamId": 1086925662,
+      "upstreamRepo": "LegadoTeam/legado",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-main",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "archive": {
+      "upstreamId": 1218348252,
+      "upstreamRepo": "Rimchars/legado",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-archive",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "cmbok": {
+      "upstreamId": 1320797493,
+      "upstreamRepo": "hlning/cmbok_app",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-cmbok",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "max-sum": {
+      "upstreamId": 1248245134,
+      "upstreamRepo": "Suml-1/Legado_Max",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-max-sum",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "r": {
+      "upstreamId": 1231609746,
+      "upstreamRepo": "refgd/legado",
+      "upstreamBranch": "own",
+      "backupRepo": "legado-backup/legado-r",
+      "activeBranch": "own",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "max": {
+      "upstreamId": 1101715049,
+      "upstreamRepo": "youfengknight/Legado_Max",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-max",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "shutiao": {
+      "upstreamId": 1011663307,
+      "upstreamRepo": "huajideshutiao/legado",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-shutiao",
+      "activeBranch": "backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "master",
+          "head": "2903707a577fce69c00f000eb4ea81e762cef6a5",
+          "retiredAt": "2026-10-05T01:29:44.159Z",
+          "reason": "diverged"
+        }
+      ],
+      "status": "active"
+    },
+    "sanmu": {
+      "upstreamId": 312976323,
+      "upstreamRepo": "huage2580/yuedu_hd",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-sanmu",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "t": {
+      "upstreamId": 1245961873,
+      "upstreamRepo": "skybbk1001/legadoT",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-t",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "jingshiro": {
+      "upstreamId": 1209054828,
+      "upstreamRepo": "Jingshiro/legado",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-jingshiro",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "ng": {
+      "upstreamId": 1197114715,
+      "upstreamRepo": "joestar817/legado_NG",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-ng",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "mr": {
+      "upstreamId": 1256999101,
+      "upstreamRepo": "DandanLLab/mr",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-mr",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "moread": {
+      "upstreamId": 1320110114,
+      "upstreamRepo": "ovo066/MoRead",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-moread",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "max-cichen": {
+      "upstreamId": 1298800078,
+      "upstreamRepo": "GEd520/legados",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-max-cichen",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "manxia": {
+      "upstreamId": 1079553523,
+      "upstreamRepo": "DaLongZhuaZi/manxia",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-manxia",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "nexhub": {
+      "upstreamId": 1297899561,
+      "upstreamRepo": "nexhub-app/Nexhub",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-nexhub",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "lightread": {
+      "upstreamId": 1289796105,
+      "upstreamRepo": "yzfly/LightRead",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-lightread",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "m": {
+      "upstreamId": 1120136219,
+      "upstreamRepo": "syq17496152/legado",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-m",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "pp": {
+      "upstreamId": 1191699933,
+      "upstreamRepo": "damifan3/legadoPP",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-pp",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "moben": {
+      "upstreamId": 1332164366,
+      "upstreamRepo": "Mupceet/EssentialReader",
+      "upstreamBranch": "eink/port/md3/modules",
+      "backupRepo": "legado-backup/legado-moben",
+      "activeBranch": "md3/port/eink",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "sk": {
+      "upstreamId": 1332571007,
+      "upstreamRepo": "skxingyu/legado-sk",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-sk",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "x": {
+      "upstreamId": 1308257593,
+      "upstreamRepo": "XziXmn/legado-X",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-x",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "xuanjuan": {
+      "upstreamId": 1351490085,
+      "upstreamRepo": "24257/novel-helper",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-xuanjuan",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "fu": {
+      "upstreamId": 1330579159,
+      "upstreamRepo": "h166278/legado_FU",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-fu",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "k": {
+      "upstreamId": 1352051626,
+      "upstreamRepo": "stwy0716/legado-Klys",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-k",
+      "activeBranch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "main",
+          "head": "809c06511ca106e05a328d863a8ab828d23b240c",
+          "retiredAt": "2026-10-05T01:30:00.089Z",
+          "reason": "unrelated"
+        }
+      ],
+      "status": "active"
+    },
+    "lightnovel": {
+      "upstreamId": 637782909,
+      "upstreamRepo": "dmzz-yyhyy/LightNovelReader",
+      "upstreamBranch": "dev/1.3",
+      "backupRepo": "legado-backup/legado-lightnovel",
+      "activeBranch": "refactoring",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "yisou": {
+      "upstreamId": 211473139,
+      "upstreamRepo": "mabDc/eso",
+      "upstreamBranch": "eso_from_gitlab",
+      "backupRepo": "legado-backup/legado-yisou",
+      "activeBranch": "eso_from_gitlab",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "caidu": {
+      "upstreamId": 1200553275,
+      "upstreamRepo": "ssnangua/ColorTxt",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-caidu",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "readcat": {
+      "upstreamId": 783724141,
+      "upstreamRepo": "read-cat/read-cat",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-readcat",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "kototoro": {
+      "upstreamId": 1084806728,
+      "upstreamRepo": "Kototoro-app/Kototoro",
+      "upstreamBranch": "devel",
+      "backupRepo": "legado-backup/legado-kototoro",
+      "activeBranch": "devel",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "kaiyuan": {
+      "upstreamId": 1296204068,
+      "upstreamRepo": "miloquinn/origo-x",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-kaiyuan",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "mojing": {
+      "upstreamId": 1220492779,
+      "upstreamRepo": "keys-cherish/morealm-reader",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-mojing",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "lumi": {
+      "upstreamId": 1283168520,
+      "upstreamRepo": "huangder/Lumi_Books",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-lumi",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "macos": {
+      "upstreamId": 1124764420,
+      "upstreamRepo": "Kequans/legado-for-mac-pub",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-macos",
+      "activeBranch": "backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "main",
+          "head": "954317db82e78f3b81072ee483d205730ffb54b9",
+          "retiredAt": "2026-10-05T01:30:09.295Z",
+          "reason": "unrelated"
+        }
+      ],
+      "status": "active"
+    },
+    "moshui": {
+      "upstreamId": 1298750764,
+      "upstreamRepo": "radiumCN/inkwell",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-moshui",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "books": {
+      "upstreamId": 1331907921,
+      "upstreamRepo": "user-A100/books-reader",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-books",
+      "activeBranch": "main",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    },
+    "yedu": {
+      "upstreamId": 1224708413,
+      "upstreamRepo": "bennytsai1234/Night-Reader",
+      "upstreamBranch": "main",
+      "backupRepo": "legado-backup/legado-yedu",
+      "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "main",
+          "head": "6a4de1ab27e26ca56df1fc133c08d8bb988b54bc",
+          "retiredAt": "2026-10-05T01:30:15.892Z",
+          "reason": "diverged"
+        }
+      ],
+      "status": "active"
+    },
+    "aikanshu": {
+      "upstreamId": 248399992,
+      "upstreamRepo": "leetomlee123/book",
+      "upstreamBranch": "master",
+      "backupRepo": "legado-backup/legado-aikanshu",
+      "activeBranch": "master",
+      "generation": 1,
+      "retired": [],
+      "status": "active"
+    }
+  },
+  "statuses": {
+    "c": {
+      "name": "阅读 C",
+      "repo": "CCSSNE/legadoC",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:34.954Z",
+      "backupRepo": "legado-backup/legado-c",
+      "activeBranch": "own",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:34.954Z",
+          "type": "synced",
+          "message": "CCSSNE/legadoC:own → legado-backup/legado-c:own 已同步"
+        }
+      ]
+    },
+    "original": {
+      "name": "阅读 原版",
+      "repo": "gedoor/legado",
+      "status": "skipped",
+      "message": "人工配置跳过 Fork 备份（补档／镜像仓）",
+      "since": "2026-10-05T01:29:34.958Z",
+      "backupRepo": null,
+      "activeBranch": null,
+      "events": [
+        {
+          "at": "2026-10-05T01:29:34.958Z",
+          "type": "skipped",
+          "message": "人工配置跳过 Fork 备份（补档／镜像仓）"
+        }
+      ]
+    },
+    "md3": {
+      "name": "阅读 MD3",
+      "repo": "HapeLee/legado-with-MD3",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:35.622Z",
+      "backupRepo": "legado-backup/legado-md3",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:35.622Z",
+          "type": "synced",
+          "message": "HapeLee/legado-with-MD3:main → legado-backup/legado-md3:main 已同步"
+        }
+      ]
+    },
+    "sigma": {
+      "name": "阅读 Sigma / 阅读 Plus / 洛娅橙版 / lyc版",
+      "repo": "Luoyacheng/legado-E",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:36.289Z",
+      "backupRepo": "legado-backup/legado-sigma",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:36.289Z",
+          "type": "synced",
+          "message": "Luoyacheng/legado-E:main → legado-backup/legado-sigma:main 已同步"
+        }
+      ]
+    },
+    "harmony": {
+      "name": "阅读 鸿蒙版",
+      "repo": "mgz0227/legado-Harmony",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:37.026Z",
+      "backupRepo": "legado-backup/legado-harmony",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:37.026Z",
+          "type": "synced",
+          "message": "mgz0227/legado-Harmony:main → legado-backup/legado-harmony:main 已同步"
+        }
+      ]
+    },
+    "main": {
+      "name": "阅读Beta / 喵公子版",
+      "repo": "LegadoTeam/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:37.757Z",
+      "backupRepo": "legado-backup/legado-main",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:37.757Z",
+          "type": "synced",
+          "message": "LegadoTeam/legado:master → legado-backup/legado-main:master 已同步"
+        }
+      ]
+    },
+    "archive": {
+      "name": "阅读 Archive",
+      "repo": "Rimchars/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:38.506Z",
+      "backupRepo": "legado-backup/legado-archive",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:38.506Z",
+          "type": "synced",
+          "message": "Rimchars/legado:main → legado-backup/legado-archive:main 已同步"
+        }
+      ]
+    },
+    "cmbok": {
+      "name": "Cmbok",
+      "repo": "hlning/cmbok_app",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:39.479Z",
+      "backupRepo": "legado-backup/legado-cmbok",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:39.479Z",
+          "type": "synced",
+          "message": "hlning/cmbok_app:main → legado-backup/legado-cmbok:main 已同步"
+        }
+      ]
+    },
+    "max-sum": {
+      "name": "阅读 MAX SUM版",
+      "repo": "Suml-1/Legado_Max",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:40.218Z",
+      "backupRepo": "legado-backup/legado-max-sum",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:40.218Z",
+          "type": "synced",
+          "message": "Suml-1/Legado_Max:main → legado-backup/legado-max-sum:main 已同步"
+        }
+      ]
+    },
+    "r": {
+      "name": "阅读 R",
+      "repo": "refgd/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:40.932Z",
+      "backupRepo": "legado-backup/legado-r",
+      "activeBranch": "own",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:40.932Z",
+          "type": "synced",
+          "message": "refgd/legado:own → legado-backup/legado-r:own 已同步"
+        }
+      ]
+    },
+    "max": {
+      "name": "阅读 MAX怣疯版",
+      "repo": "youfengknight/Legado_Max",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:41.717Z",
+      "backupRepo": "legado-backup/legado-max",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:41.717Z",
+          "type": "synced",
+          "message": "youfengknight/Legado_Max:main → legado-backup/legado-max:main 已同步"
+        }
+      ]
+    },
+    "tauri": {
+      "name": "阅读 Tauri",
+      "repo": "LegadoTeam/Legado-Tauri",
+      "status": "skipped",
+      "message": "人工配置跳过 Fork 备份（补档／镜像仓）",
+      "since": "2026-10-05T01:29:41.717Z",
+      "backupRepo": null,
+      "activeBranch": null,
+      "events": [
+        {
+          "at": "2026-10-05T01:29:41.717Z",
+          "type": "skipped",
+          "message": "人工配置跳过 Fork 备份（补档／镜像仓）"
+        }
+      ]
+    },
+    "shutiao": {
+      "name": "薯条版",
+      "repo": "huajideshutiao/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:45.630Z",
+      "backupRepo": "legado-backup/legado-shutiao",
+      "activeBranch": "backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:45.630Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-shutiao/backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f 接收新历史"
+        }
+      ]
+    },
+    "sanmu": {
+      "name": "三目阅读",
+      "repo": "huage2580/yuedu_hd",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:46.336Z",
+      "backupRepo": "legado-backup/legado-sanmu",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:46.336Z",
+          "type": "synced",
+          "message": "huage2580/yuedu_hd:master → legado-backup/legado-sanmu:master 已同步"
+        }
+      ]
+    },
+    "t": {
+      "name": "阅读 T",
+      "repo": "skybbk1001/legadoT",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:47.092Z",
+      "backupRepo": "legado-backup/legado-t",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:47.092Z",
+          "type": "synced",
+          "message": "skybbk1001/legadoT:master → legado-backup/legado-t:master 已同步"
+        }
+      ]
+    },
+    "jingshiro": {
+      "name": "Jingshiro 版",
+      "repo": "Jingshiro/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:47.816Z",
+      "backupRepo": "legado-backup/legado-jingshiro",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:47.816Z",
+          "type": "synced",
+          "message": "Jingshiro/legado:main → legado-backup/legado-jingshiro:main 已同步"
+        }
+      ]
+    },
+    "ng": {
+      "name": "阅读 NG",
+      "repo": "joestar817/legado_NG",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:48.544Z",
+      "backupRepo": "legado-backup/legado-ng",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:48.544Z",
+          "type": "synced",
+          "message": "joestar817/legado_NG:main → legado-backup/legado-ng:main 已同步"
+        }
+      ]
+    },
+    "mr": {
+      "name": "阅读 MR",
+      "repo": "DandanLLab/mr",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:49.224Z",
+      "backupRepo": "legado-backup/legado-mr",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:49.224Z",
+          "type": "synced",
+          "message": "DandanLLab/mr:master → legado-backup/legado-mr:master 已同步"
+        }
+      ]
+    },
+    "moread": {
+      "name": "墨知 MoRead",
+      "repo": "ovo066/MoRead",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:49.907Z",
+      "backupRepo": "legado-backup/legado-moread",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:49.907Z",
+          "type": "synced",
+          "message": "ovo066/MoRead:main → legado-backup/legado-moread:main 已同步"
+        }
+      ]
+    },
+    "max-cichen": {
+      "name": "阅读 MAX 辞晨版",
+      "repo": "GEd520/legados",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:50.646Z",
+      "backupRepo": "legado-backup/legado-max-cichen",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:50.646Z",
+          "type": "synced",
+          "message": "GEd520/legados:main → legado-backup/legado-max-cichen:main 已同步"
+        }
+      ]
+    },
+    "manxia": {
+      "name": "漫匣阅读",
+      "repo": "DaLongZhuaZi/manxia",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:51.314Z",
+      "backupRepo": "legado-backup/legado-manxia",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:51.314Z",
+          "type": "synced",
+          "message": "DaLongZhuaZi/manxia:main → legado-backup/legado-manxia:main 已同步"
+        }
+      ]
+    },
+    "nexhub": {
+      "name": "NexHub",
+      "repo": "nexhub-app/Nexhub",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:52.103Z",
+      "backupRepo": "legado-backup/legado-nexhub",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:52.103Z",
+          "type": "synced",
+          "message": "nexhub-app/Nexhub:main → legado-backup/legado-nexhub:main 已同步"
+        }
+      ]
+    },
+    "lightread": {
+      "name": "LightRead 轻阅",
+      "repo": "yzfly/LightRead",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:52.779Z",
+      "backupRepo": "legado-backup/legado-lightread",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:52.779Z",
+          "type": "synced",
+          "message": "yzfly/LightRead:main → legado-backup/legado-lightread:main 已同步"
+        }
+      ]
+    },
+    "m": {
+      "name": "阅读 M",
+      "repo": "syq17496152/legado",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:53.497Z",
+      "backupRepo": "legado-backup/legado-m",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:53.497Z",
+          "type": "synced",
+          "message": "syq17496152/legado:master → legado-backup/legado-m:master 已同步"
+        }
+      ]
+    },
+    "pp": {
+      "name": "阅读PP",
+      "repo": "damifan3/legadoPP",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:54.191Z",
+      "backupRepo": "legado-backup/legado-pp",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:54.191Z",
+          "type": "synced",
+          "message": "damifan3/legadoPP:main → legado-backup/legado-pp:main 已同步"
+        }
+      ]
+    },
+    "moben": {
+      "name": "墨本阅读",
+      "repo": "Mupceet/EssentialReader",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:54.886Z",
+      "backupRepo": "legado-backup/legado-moben",
+      "activeBranch": "md3/port/eink",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:54.886Z",
+          "type": "synced",
+          "message": "Mupceet/EssentialReader:eink/port/md3/modules → legado-backup/legado-moben:md3/port/eink 已同步"
+        }
+      ]
+    },
+    "sk": {
+      "name": "阅读 SK",
+      "repo": "skxingyu/legado-sk",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:55.544Z",
+      "backupRepo": "legado-backup/legado-sk",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:55.544Z",
+          "type": "synced",
+          "message": "skxingyu/legado-sk:main → legado-backup/legado-sk:main 已同步"
+        }
+      ]
+    },
+    "x": {
+      "name": "阅读 X",
+      "repo": "XziXmn/legado-X",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:56.299Z",
+      "backupRepo": "legado-backup/legado-x",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:56.299Z",
+          "type": "synced",
+          "message": "XziXmn/legado-X:main → legado-backup/legado-x:main 已同步"
+        }
+      ]
+    },
+    "xuanjuan": {
+      "name": "玄卷",
+      "repo": "24257/novel-helper",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:56.983Z",
+      "backupRepo": "legado-backup/legado-xuanjuan",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:56.983Z",
+          "type": "synced",
+          "message": "24257/novel-helper:main → legado-backup/legado-xuanjuan:main 已同步"
+        }
+      ]
+    },
+    "fu": {
+      "name": "阅融Fu",
+      "repo": "h166278/legado_FU",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:29:57.675Z",
+      "backupRepo": "legado-backup/legado-fu",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:29:57.675Z",
+          "type": "synced",
+          "message": "h166278/legado_FU:main → legado-backup/legado-fu:main 已同步"
+        }
+      ]
+    },
+    "k": {
+      "name": "阅读 K",
+      "repo": "stwy0716/legado-Klys",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:01.177Z",
+      "backupRepo": "legado-backup/legado-k",
+      "activeBranch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:01.177Z",
+          "type": "rotated",
+          "message": "历史 unrelated：旧分支已保留，legado-backup/legado-k/backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042 接收新历史"
+        }
+      ]
+    },
+    "eink": {
+      "name": "阅读E-ink",
+      "repo": "legado-backup/eink",
+      "status": "skipped",
+      "message": "人工配置跳过 Fork 备份（补档／镜像仓）",
+      "since": "2026-10-05T01:30:01.177Z",
+      "backupRepo": null,
+      "activeBranch": null,
+      "events": [
+        {
+          "at": "2026-10-05T01:30:01.177Z",
+          "type": "skipped",
+          "message": "人工配置跳过 Fork 备份（补档／镜像仓）"
+        }
+      ]
+    },
+    "iyuedu": {
+      "name": "i阅读",
+      "repo": "legado-backup/iyuedu",
+      "status": "skipped",
+      "message": "人工配置跳过 Fork 备份（补档／镜像仓）",
+      "since": "2026-10-05T01:30:01.177Z",
+      "backupRepo": null,
+      "activeBranch": null,
+      "events": [
+        {
+          "at": "2026-10-05T01:30:01.177Z",
+          "type": "skipped",
+          "message": "人工配置跳过 Fork 备份（补档／镜像仓）"
+        }
+      ]
+    },
+    "lightnovel": {
+      "name": "LightNovelReader",
+      "repo": "dmzz-yyhyy/LightNovelReader",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:01.891Z",
+      "backupRepo": "legado-backup/legado-lightnovel",
+      "activeBranch": "refactoring",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:01.891Z",
+          "type": "synced",
+          "message": "dmzz-yyhyy/LightNovelReader:dev/1.3 → legado-backup/legado-lightnovel:refactoring 已同步"
+        }
+      ]
+    },
+    "yisou": {
+      "name": "亦搜",
+      "repo": "mabDc/eso",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:02.625Z",
+      "backupRepo": "legado-backup/legado-yisou",
+      "activeBranch": "eso_from_gitlab",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:02.625Z",
+          "type": "synced",
+          "message": "mabDc/eso:eso_from_gitlab → legado-backup/legado-yisou:eso_from_gitlab 已同步"
+        }
+      ]
+    },
+    "caidu": {
+      "name": "彩读",
+      "repo": "ssnangua/ColorTxt",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:03.372Z",
+      "backupRepo": "legado-backup/legado-caidu",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:03.372Z",
+          "type": "synced",
+          "message": "ssnangua/ColorTxt:main → legado-backup/legado-caidu:main 已同步"
+        }
+      ]
+    },
+    "readcat": {
+      "name": "ReadCat",
+      "repo": "read-cat/read-cat",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:04.067Z",
+      "backupRepo": "legado-backup/legado-readcat",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:04.067Z",
+          "type": "synced",
+          "message": "read-cat/read-cat:main → legado-backup/legado-readcat:main 已同步"
+        }
+      ]
+    },
+    "kototoro": {
+      "name": "Kototoro",
+      "repo": "Kototoro-app/Kototoro",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:04.857Z",
+      "backupRepo": "legado-backup/legado-kototoro",
+      "activeBranch": "devel",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:04.857Z",
+          "type": "synced",
+          "message": "Kototoro-app/Kototoro:devel → legado-backup/legado-kototoro:devel 已同步"
+        }
+      ]
+    },
+    "kaiyuan": {
+      "name": "开元阅读",
+      "repo": "miloquinn/origo-x",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:05.531Z",
+      "backupRepo": "legado-backup/legado-kaiyuan",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:05.531Z",
+          "type": "synced",
+          "message": "miloquinn/origo-x:main → legado-backup/legado-kaiyuan:main 已同步"
+        }
+      ]
+    },
+    "mojing": {
+      "name": "墨境 MoRealm",
+      "repo": "keys-cherish/morealm-reader",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:06.349Z",
+      "backupRepo": "legado-backup/legado-mojing",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:06.349Z",
+          "type": "synced",
+          "message": "keys-cherish/morealm-reader:main → legado-backup/legado-mojing:main 已同步"
+        }
+      ]
+    },
+    "lumi": {
+      "name": "Lumi",
+      "repo": "huangder/Lumi_Books",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:07.116Z",
+      "backupRepo": "legado-backup/legado-lumi",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:07.116Z",
+          "type": "synced",
+          "message": "huangder/Lumi_Books:main → legado-backup/legado-lumi:main 已同步"
+        }
+      ]
+    },
+    "macos": {
+      "name": "Legado macOS 版",
+      "repo": "Kequans/legado-for-mac-pub",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:10.754Z",
+      "backupRepo": "legado-backup/legado-macos",
+      "activeBranch": "backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:10.754Z",
+          "type": "rotated",
+          "message": "历史 unrelated：旧分支已保留，legado-backup/legado-macos/backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002 接收新历史"
+        }
+      ]
+    },
+    "moshui": {
+      "name": "墨水",
+      "repo": "radiumCN/inkwell",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:11.463Z",
+      "backupRepo": "legado-backup/legado-moshui",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:11.463Z",
+          "type": "synced",
+          "message": "radiumCN/inkwell:main → legado-backup/legado-moshui:main 已同步"
+        }
+      ]
+    },
+    "books": {
+      "name": "books-reader",
+      "repo": "user-A100/books-reader",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:12.224Z",
+      "backupRepo": "legado-backup/legado-books",
+      "activeBranch": "main",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:12.224Z",
+          "type": "synced",
+          "message": "user-A100/books-reader:main → legado-backup/legado-books:main 已同步"
+        }
+      ]
+    },
+    "yedu": {
+      "name": "夜讀",
+      "repo": "bennytsai1234/Night-Reader",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:17.292Z",
+      "backupRepo": "legado-backup/legado-yedu",
+      "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:17.292Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-yedu/backup/v2-2334a9869949008425524664eadd1d084859ca35 接收新历史"
+        }
+      ]
+    },
+    "aikanshu": {
+      "name": "爱看书",
+      "repo": "leetomlee123/book",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-05T01:30:17.930Z",
+      "backupRepo": "legado-backup/legado-aikanshu",
+      "activeBranch": "master",
+      "events": [
+        {
+          "at": "2026-10-05T01:30:17.930Z",
+          "type": "synced",
+          "message": "leetomlee123/book:master → legado-backup/legado-aikanshu:master 已同步"
+        }
+      ]
+    }
+  },
+  "checkedAt": "2026-10-05T01:30:17.930Z"
 }
