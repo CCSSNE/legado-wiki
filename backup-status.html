@@ -21,29 +21,38 @@
 <body>
   <a href="./">← 返回分支索引</a>
   <h1>备份同步状态</h1>
-  <p>旧历史保留，新历史自动换分支。上游暂时不可见时继续探测，恢复后继续同步。展开记录可查看异常、换代、改名与恢复时间。</p>
+  <p>旧历史保留，新历史自动换分支。上游暂时不可见时继续探测，恢复后继续同步。展开记录可查看异常、换代、改名与恢复时间。Release 的说明和附件独立备份；历史发布分批补齐，上游覆盖发布后保留旧快照。</p>
   <p id="updated">正在加载状态…</p>
   <div class="toolbar"><input id="search" type="search" aria-label="搜索仓库" placeholder="搜索名称或仓库"><label><input id="abnormal" type="checkbox" style="width:auto"> 只看异常</label></div>
-  <div class="table-wrap"><table><thead><tr><th>仓库</th><th>当前状态与历史记录</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <div class="table-wrap"><table><thead><tr><th>仓库</th><th>代码同步与历史记录</th><th>Release 备份</th></tr></thead><tbody id="rows"></tbody></table></div>
   <script>
     const labels={normal:'正常同步',error:'同步异常',unavailable:'上游不可见，继续探测',queued:'等待建立备份',skipped:'人工配置跳过'};
     const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     const date=s=>s?new Date(s).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false}):'—';
-    let data;
+    let data, releases;
+    const releaseError=id=>releases?.projects?.[id]?.status==='error';
+    function releaseCell(id){
+      const p=releases?.projects?.[id];
+      if(!p)return releases?'<small>等待首次探测</small>':'<small>Release 状态暂不可用</small>';
+      const label={normal:'正常',pending:'历史补档中',error:'备份异常'}[p.status]||p.status;
+      const events=(p.events||[]).slice().reverse();
+      return `<span class="badge ${p.status==='error'?'error':p.status==='normal'?'normal':''}">${esc(label)}</span><small>${esc(p.message)}</small><small><a href="https://github.com/${esc(p.backupRepo)}/releases" target="_blank" rel="noopener">查看发布备份</a></small><time>${esc(date(p.lastCheckedAt))}</time><details><summary>发布记录（${events.length} 条）</summary><ol>${events.map(e=>`<li><time>${esc(date(e.at))}</time>${esc(e.message)}</li>`).join('')}</ol></details>`;
+    }
     function render(){
       const query=document.getElementById('search').value.toLowerCase();
       const abnormal=document.getElementById('abnormal').checked;
-      const entries=Object.entries(data.statuses||{}).filter(([id,r])=>(!abnormal||['error','unavailable'].includes(r.status))&&`${id} ${r.name} ${r.repo}`.toLowerCase().includes(query));
+      const entries=Object.entries(data.statuses||{}).filter(([id,r])=>(!abnormal||(['error','unavailable'].includes(r.status)||releaseError(id)))&&`${id} ${r.name} ${r.repo}`.toLowerCase().includes(query));
       entries.sort((a,b)=>Number(['error','unavailable'].includes(b[1].status))-Number(['error','unavailable'].includes(a[1].status))||a[1].name.localeCompare(b[1].name,'zh-CN'));
       document.getElementById('rows').innerHTML=entries.map(([id,r])=>{
         const project=data.projects?.[id];
         const backup=r.backupRepo?`https://github.com/${r.backupRepo}/tree/${encodeURIComponent(r.activeBranch)}`:null;
         const events=(r.events||[]).slice().reverse();
-        return `<tr><td><strong>${esc(r.name)}</strong><small><a href="https://github.com/${esc(r.repo)}" target="_blank" rel="noopener">${esc(r.repo)}</a></small>${backup?`<small><a href="${esc(backup)}" target="_blank" rel="noopener">当前备份 · ${esc(r.activeBranch)}</a></small>`:''}${project?.retired?.length?`<small>保留旧历史 ${project.retired.length} 代</small>`:''}</td><td><span class="badge ${['normal','error','unavailable'].includes(r.status)?r.status:''}">${esc(labels[r.status]||r.status)}</span><time>状态更新：${esc(date(r.since))}（北京时间）</time>${r.status==='normal'?'':`<div class="message">${esc(r.message)}</div>`}<details><summary>历史记录（${events.length} 条）</summary><ol>${events.map(e=>`<li><time>${esc(date(e.at))}</time>${esc(e.message)}</li>`).join('')}</ol></details></td></tr>`;
-      }).join('')||'<tr><td colspan="2">暂无匹配记录；首次工作流运行后生成状态。</td></tr>';
+        return `<tr><td><strong>${esc(r.name)}</strong><small><a href="https://github.com/${esc(r.repo)}" target="_blank" rel="noopener">${esc(r.repo)}</a></small>${backup?`<small><a href="${esc(backup)}" target="_blank" rel="noopener">当前备份 · ${esc(r.activeBranch)}</a></small>`:''}${project?.retired?.length?`<small>保留旧历史 ${project.retired.length} 代</small>`:''}</td><td><span class="badge ${['normal','error','unavailable'].includes(r.status)?r.status:''}">${esc(labels[r.status]||r.status)}</span><time>状态更新：${esc(date(r.since))}（北京时间）</time>${r.status==='normal'?'':`<div class="message">${esc(r.message)}</div>`}<details><summary>历史记录（${events.length} 条）</summary><ol>${events.map(e=>`<li><time>${esc(date(e.at))}</time>${esc(e.message)}</li>`).join('')}</ol></details></td><td>${releaseCell(id)}</td></tr>`;
+      }).join('')||'<tr><td colspan="3">暂无匹配记录；首次工作流运行后生成状态。</td></tr>';
     }
     document.getElementById('search').addEventListener('input',()=>data&&render());
     document.getElementById('abnormal').addEventListener('change',()=>data&&render());
+    fetch('data/release-sync.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error();return r.json();}).then(d=>{releases=d;if(data)render();}).catch(()=>{});
     fetch('data/fork-sync.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(d=>{data=d;document.getElementById('updated').textContent=d.checkedAt?`最后探测：${date(d.checkedAt)}（北京时间）`:'尚未运行首次探测';render();}).catch(e=>{document.getElementById('updated').textContent=`状态加载失败：${e.message}`;});
   </script>
 </body>

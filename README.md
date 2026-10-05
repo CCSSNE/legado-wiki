@@ -74,6 +74,7 @@ GitHub 下载加速条（开关 + 代理源选择，记忆在 localStorage）
 | 弃坑标 | ✅ 作者声明停更的手写 `manualAbandoned` 直接判弃坑 | ✅ 无手写时按规则判：无公开 Release（且源码超半年没动，`allowNoRelease` 除外）算弃坑；或 Release 与源码**都**超半年没更新算弃坑（半年 = 183 天） |
 | 卡片顺序 | ✅ 站长（`pinned`）置顶是人工的 | ✅ 其余按实时 Star 自动排 |
 | fork 备份（`legado-backup` 组织） | ✅ 名单来自收录表（`backupRelease / skipAutoForks` 的跳过） | ✅ 每小时 `fork-versions.mjs`：正常历史安全快进；历史变化自动新建分支保留旧历史；按仓库 ID 跟随改名；不可见仍持续探测，恢复自动同步。连接/权限失败报错，状态与事件见 [备份同步状态](backup-status.html) 和 [规则说明](docs/fork-backup-generations.md) |
+| Release 附件备份 | ✅ 沿用已建立的 GitHub Fork 备份名单 | ✅ 每小时独立备份公开 Release 的说明、标签与全部附件；覆盖发布时保存新快照，旧快照保留；历史分批补档，失败续传。见 [规则说明](docs/release-backups.md) |
 | 非 GitHub 上游镜像（i阅读 CNB / E-ink Gitee） | ✅ `data/cnb-sync.json` 的映射关系手写 | ✅ 每小时 `sync-cnb.mjs` 匿名读上游 HEAD，经 `git-filter-repo --strip-blobs-bigger-than 100M` 过滤后快进式推到 GitHub 镜像仓（`legado-backup/iyuedu`、`legado-backup/eink`，仓不存在自动创建）；重写/不可达则告警 |
 | 访问趋势 | ✅ 展示逻辑（总量/增量，总/分站）手写 | ✅ 每小时 `update-stats.mjs` 分别查两站不蒜子累计值，记一条 `data/stats.json`；前端用 `原始值 − runs` 扣掉自动化查询自带的虚增 |
 | 页脚规则文字 | ✅ 收录/弃坑/删除/血缘/排序/排除/标注文案手写 | “最后同步”时间自动填 `branches.json.generatedAt`（北京时间） |

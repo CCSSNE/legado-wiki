@@ -1,0 +1,37 @@
+name: Release 附件备份
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-backups.yml'
+      - 'scripts/release-*.mjs'
+      - 'tests/release-backup.test.mjs'
+  workflow_dispatch:
+  schedule:
+    - cron: '51 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-backup-sync
+  cancel-in-progress: false
+
+jobs:
+  releases:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: 验证 Release 备份规则
+        run: node --test tests/release-backup.test.mjs
+      - name: 备份 Release 说明、标签与全部附件
+        env:
+          GITHUB_TOKEN: ${{ secrets.FORK_TOKEN }}
+        run: node scripts/release-versions.mjs
