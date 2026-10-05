@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:59:54.504Z",
+  "generatedAt": "2026-10-05T07:08:37.752Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 157,
+      "stars": 158,
       "sourceUpdatedAt": "2026-09-27T07:43:33Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 24,
+          "stars": 25,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47107,
+      "stars": 47106,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6354,
-      "sourceUpdatedAt": "2026-10-02T17:31:41Z",
+      "stars": 6356,
+      "sourceUpdatedAt": "2026-10-05T07:07:15Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.44",
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1384,
+      "stars": 1388,
       "sourceUpdatedAt": "2026-10-04T20:15:36Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 593,
+      "stars": 595,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 383,
+      "stars": 385,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -310,7 +310,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 379,
+      "stars": 380,
       "sourceUpdatedAt": "2026-10-04T17:02:09Z",
       "githubArchived": false,
       "release": {
@@ -383,7 +383,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 303,
+      "stars": 305,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -506,7 +506,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 257,
+      "stars": 258,
       "sourceUpdatedAt": "2026-10-03T08:55:56Z",
       "githubArchived": false,
       "release": {
@@ -526,6 +526,49 @@
             "name": "legado-3.26.10031638-ios-unsigned.ipa",
             "size": 32651041,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.10031638-ios-unsigned.ipa"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 136,
+      "sourceUpdatedAt": "2026-09-07T05:49:13Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.090313",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-09-03T06:02:54Z",
+        "createdAt": "2026-09-03T05:37:36Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- feat(书源): 登录 JS 上下文支持 refreshBookInfo/refreshBookToc/refreshContent\n- feat(书源): 回调 JS 增加 open 页面跳转调度\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.09031353_arm64-v8a_release.apk",
+            "size": 15018015,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.09031353_armeabi-v7a_release.apk",
+            "size": 14394036,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.09031353_universal_release.apk",
+            "size": 15214704,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_universal_release.apk"
+          },
+          {
+            "name": "version.json",
+            "size": 67,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
           }
         ]
       },
@@ -570,49 +613,6 @@
       "abandonedReason": "Release 与源码均超过半年未更新"
     },
     {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": 134,
-      "sourceUpdatedAt": "2026-09-07T05:49:13Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.090313",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-09-03T06:02:54Z",
-        "createdAt": "2026-09-03T05:37:36Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- feat(书源): 登录 JS 上下文支持 refreshBookInfo/refreshBookToc/refreshContent\n- feat(书源): 回调 JS 增加 open 页面跳转调度\n",
-        "assets": [
-          {
-            "name": "legado_app_3.26.09031353_arm64-v8a_release.apk",
-            "size": 15018015,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_arm64-v8a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.09031353_armeabi-v7a_release.apk",
-            "size": 14394036,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_armeabi-v7a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.09031353_universal_release.apk",
-            "size": 15214704,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_universal_release.apk"
-          },
-          {
-            "name": "version.json",
-            "size": 67,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
-    },
-    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -651,7 +651,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 116,
+      "stars": 118,
       "sourceUpdatedAt": "2026-09-25T17:55:57Z",
       "githubArchived": false,
       "release": {
@@ -724,7 +724,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 83,
+      "stars": 84,
       "sourceUpdatedAt": "2026-10-04T08:28:07Z",
       "githubArchived": false,
       "release": {
@@ -753,7 +753,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 73,
+      "stars": 74,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -901,75 +901,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-05T00:57:23Z",
+      "sourceUpdatedAt": "2026-10-05T05:10:53Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.5.1",
-        "tagName": "v1.5.1",
+        "name": "LightRead 轻阅 v1.7.0",
+        "tagName": "v1.7.0",
         "prerelease": false,
-        "publishedAt": "2026-10-04T14:17:43Z",
-        "createdAt": "2026-10-04T14:00:22Z",
-        "body": "release: v1.5.1\n\n轻阅 v1.5.1 修复坚果云等 WebDAV 同步缓慢、迟迟不同步的问题，并改版阅读记录页与同步设置。\n\n### 同步修复\n- 电脑版与安卓版上传书籍改为原生直接读取文件上传，大文件不再卡顿（实测 28.5MB 从 33 秒降到 14 秒）。\n- 先同步阅读进度、笔记、书单，再在后台上传书籍文件：其他设备几秒内就能看到进度变化，不必等所有书传完（实测 46 秒 → 4.5 秒）。\n- 网络请求加超时，偶发卡住的上传不会再让同步一直挂着。\n- 修复坚果云新用户首次同步必定失败的问题。\n- 网页版现在可以连接坚果云 / Koofr（经轻阅同步服务中转，只转发、不保存账号密码）。\n\n### 同步设置更简单\n- 选择服务商即可：坚果云、Koofr、自建 NAS（Nextcloud / 群晖 / Alist）或其他 WebDAV；选坚果云无需填写服务器地址。\n- 一键打开坚果云「生成应用密码」页面；填好账号与应用密码，点「连接」即自动校验、保存、开启自动同步并完成首次同步。\n- 连接后显示简洁的状态卡（服务商、账号、上次同步时间、立即同步、断开），备份与恢复等收进「更多操作」。\n- 出错时说明具体原因与处理办法（如应使用应用密码而非登录密码）。\n- 轻阅账号验证码输满 6 位自动登录。\n\n### 阅读记录改版\n- 首屏显示今日阅读分钟数与目标进度、连续阅读天数，并可一键「继续阅读」最近读的书。\n- 本周 7 天目标完成情况；周 / 月 / 年趋势与上一期同期对比，点柱子查看当天，年视图可下钻到月；可按书籍 / 论文筛选。\n- 阅读日历：电脑上是全年热力图，手机上是月历；点任意一天查看当天读了哪些书。\n- 里程碑：累计时长、阅读天数、最长连续、单日最长、读得最久的一本。\n\n### 升级说明\n- 桌面端任何旧版本都可在「设置 → 关于」检查更新并直接安装。\n- Android v1.4.0 及以后可直接覆盖升级，数据保留；v1.4.0 之前的安装需按 README 备份后重装（历史临时签名无法覆盖）。\n\n### 验证与已知限制\n- 全部单测、Rust 55 项、阅读器冒烟 35 步（无页面错误）、WebDAV 同步 e2e 8 步、账号同步 e2e 6 步通过。\n- K30（Android 12）真机：同签名覆盖安装后藏书保留；连接坚果云同步 3 本 PDF（39.6MB）整次 25 秒，另一设备完整拉取。\n- 坚果云免费版有上传流量与频率限制，书很多时首次上传仍需较长时间，但进度与笔记会先同步完成。\n\n",
+        "publishedAt": "2026-10-05T05:10:12Z",
+        "createdAt": "2026-10-05T04:50:43Z",
+        "body": "release: v1.7.0\n\n轻阅 v1.7.0 带来「点睛阅读」、一整套阅读模式、背景音和应用内使用手册，并默认使用更快的 AI 模型。\n\n### 点睛阅读（新）\n- AI 先读一遍，在原文里标出要句（朱红下划线）、概念（青墨点线）和注释；点一下概念，按本书上下文给出解释，可展开或翻译。\n- 每章开头显示「要义」；「脉络」面板列出全书要点与概念；「速读」视图只看要句和要义，可跳回原文（适合预览和复习，不能代替细读）。\n- 标记密度三档（默认只标约 8% 的文字）；觉得不对可以一键「不用标这个」，觉得好可以收为自己的划线。\n- 小说自动防剧透：解释与总结只用你已读到的内容。\n- 默认关闭，首次开启会说明书的正文会发送给 AI 服务；内置通道每台设备每天 10 万字，也可以用自己的密钥或本机 Ollama。\n\n### 阅读模式\n- 「阅读模式」面板重新整理为：显示（夜间、护眼、墨水屏、大字）、版面（沉浸、双栏）、带读（自动翻页、打字机、歌词、听书）、实验（仿生阅读）。\n- 歌词（新）：像音乐歌词一样，当前行停在屏幕上方 40% 处，其余行淡显；可按速度自动走、跟着听书走或手动。\n- 大字（新）：一键放大字号、行距和字距，单栏、大按钮，关闭即恢复原设置。\n- 墨水屏（新）：纯黑白、无翻页动画，适合墨水屏设备。\n- 护眼：应用内调暗、20 分钟休息提醒；夜间模式可定时。\n- 沉浸：Android 隐藏状态栏和导航栏并保持常亮。\n- 仿生阅读（实验）：词首强调 / 分词着色，默认关闭；研究没有发现它能提速，只作为个人偏好。\n- 打字机速度可以直接输入数值，并显示进度与预计读完时间。\n\n### 声音\n- 背景音（新）：本机合成的雨夜书房、林间风声、专注噪音、夜曲铺底，无需下载；另有窗边雨、咖啡馆、壁炉、林间鸟鸣、海边、夏夜虫鸣、钢琴夜曲等 CC0 录音按需下载。听书时自动压低音量，跟随定时关闭淡出。\n- 听书默认音色改为曉臻（台湾腔女声）；离线模型会提示使用本机算力，卡顿时可一键改用在线模型。\n\n### AI\n- 内置 AI 通道默认使用 DeepSeek-V4-Flash，免配置可用；AI 助手里可一键切换到内置通道。\n- 论文阅读器的「AI 辅读」改名为「论文 Agent」。\n\n### 体验打磨\n- 应用内使用手册：设置 → 关于 → 使用手册，含读书方法与阅读故事。\n- 「笔记」面板统一命名；主题按钮有名称；图标统一为矢量图标；PDF「自动阅读」改称「自动翻页」；自动翻页与听书不再同时运行。\n\n### 升级说明\n- 桌面端任何旧版本都可在「设置 → 关于」检查更新并直接安装。\n- Android v1.4.0 及以后可直接覆盖升级，数据保留；v1.4.0 之前的安装需按 README 备份后重装。\n- 旧版本的内置 AI 通道继续可用；升级后自动切换到新通道。\n\n### 验证与已知限制\n- 前端单测 20 套全部通过（新增点睛 19 项、阅读模式 33 项、背景音 24 项）；阅读器冒烟 35 步通过、无页面错误；完整 e2e 文本阅读器部分全部通过；EPUB 兼容 e2e 通过。\n- 浏览器实测：点睛阅读经内置通道出标记并点概念出解释；歌词、大字、墨水屏、沉浸开关与恢复；背景音播放与录音下载缓存。\n- 尚未在真机验收：背景音与听书的听感、Android 沉浸隐藏系统栏；点睛与打字机 / 听书 / 歌词的细粒度联动（要句放慢、停顿）留待后续版本。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.5.1-1.x86_64.rpm",
-            "size": 28786022,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead-1.5.1-1.x86_64.rpm"
+            "name": "LightRead-1.7.0-1.x86_64.rpm",
+            "size": 28971716,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead-1.7.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.5.1_aarch64.dmg",
-            "size": 22181103,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_aarch64.dmg"
+            "name": "LightRead_1.7.0_aarch64.dmg",
+            "size": 22343130,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_1.7.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.5.1_amd64.AppImage",
-            "size": 104638968,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_amd64.AppImage"
+            "name": "LightRead_1.7.0_amd64.AppImage",
+            "size": 104827384,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_1.7.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.5.1_amd64.deb",
-            "size": 28786220,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_amd64.deb"
+            "name": "LightRead_1.7.0_amd64.deb",
+            "size": 28972196,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_1.7.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.5.1_x64-setup.exe",
-            "size": 16837507,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_x64-setup.exe"
+            "name": "LightRead_1.7.0_x64-setup.exe",
+            "size": 17001231,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_1.7.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.5.1_x64.dmg",
-            "size": 23419262,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_1.5.1_x64.dmg"
+            "name": "LightRead_1.7.0_x64.dmg",
+            "size": 23592891,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_1.7.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 22104553,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_aarch64.app.tar.gz"
+            "size": 22273122,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.5.1_android_arm64.apk",
-            "size": 70213808,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk"
+            "name": "LightRead_v1.7.0_android_arm64.apk",
+            "size": 70407720,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_v1.7.0_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.5.1_android_arm64.apk.json",
+            "name": "LightRead_v1.7.0_android_arm64.apk.json",
             "size": 388,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_v1.7.0_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.5.1_android_arm64.apk.sha256",
+            "name": "LightRead_v1.7.0_android_arm64.apk.sha256",
             "size": 101,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_v1.5.1_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_v1.7.0_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23365394,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/LightRead_x64.app.tar.gz"
+            "size": 23532530,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1065,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.5.1/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.7.0/SHA256SUMS"
           }
         ]
       },
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 22,
-      "sourceUpdatedAt": "2026-10-04T14:19:29Z",
+      "sourceUpdatedAt": "2026-10-05T05:43:50Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100321",
@@ -1105,7 +1105,7 @@
       "repo": "skxingyu/legado-sk",
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
-      "stars": 13,
+      "stars": 14,
       "sourceUpdatedAt": "2026-09-30T06:13:55Z",
       "githubArchived": false,
       "release": {
@@ -1279,7 +1279,7 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.092723.apk",
-            "size": 20895814,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092723/%E9%98%85%E8%AF%BB_E-ink_3.26.092723.apk"
           },
           {
