@@ -42,13 +42,17 @@ try {
   const forks = JSON.parse(await readFile('data/fork-sync.json', 'utf8'));
   const entries = Object.entries(forks.projects).filter(([, p]) => p.upstreamId && p.backupRepo);
   const start = state.nextIndex % entries.length;
+  const order = Array.from({ length: entries.length }, (_, i) => (start + i) % entries.length);
+  order.sort((a, b) => Number(state.projects[entries[b][0]]?.status === 'error') - Number(state.projects[entries[a][0]]?.status === 'error'));
   const transport = releaseTransport(token);
   let completed = 0;
+  let nextStart;
   for (let offset = 0; offset < entries.length; offset++) {
-    const index = (start + offset) % entries.length;
+    const index = order[offset];
     const [id, fork] = entries[index];
     if (Date.now() >= deadline) { state.nextIndex = index; break; }
     const p = state.projects[id] ||= { repo: fork.upstreamRepo, backupRepo: fork.backupRepo, snapshots: {} };
+    let attempting;
     try {
       // ID lookup follows GitHub renames. A 404 is retried next run, never disables monitoring.
       const source = await api(`/repositories/${fork.upstreamId}`);
@@ -72,25 +76,39 @@ try {
       if (pending.length && completed < maxSnapshots && Date.now() < deadline) {
         const { release, object } = pending[0];
         release.assets = await listAll(api, `/repos/${p.repo}/releases/${release.id}/assets`);
+        attempting = releaseFingerprint(release, object.sha);
         await backupRelease({ sourceRepo: p.repo, backupRepo: p.backupRepo, release, tagObject: object,
-          snapshots: p.snapshots, api, ...transport, shouldContinue: () => Date.now() < deadline });
+          snapshots: p.snapshots, api, ...transport, shouldContinue: () => Date.now() < deadline,
+          verifySource: async fingerprint => {
+            const current = await api(`/repos/${p.repo}/releases/${release.id}`);
+            const tag = await api(`/repos/${p.repo}/git/ref/tags/${encodeURIComponent(release.tag_name)}`);
+            if (current.status !== 200 || tag.status !== 200) throw new Error('上传期间上游发布或标签不可访问，下轮重新探测');
+            current.body.assets = await listAll(api, `/repos/${p.repo}/releases/${release.id}/assets`);
+            if (releaseFingerprint(current.body, tag.body.object.sha) !== fingerprint) throw new Error('上传期间上游发布已改变，保留草稿，下轮备份新版本');
+          } });
         completed++;
+        if (completed === maxSnapshots) nextStart = (index + 1) % entries.length;
         p.pending--;
       }
       p.completedCount = Object.values(p.snapshots).filter(s => s.complete).length;
       if (missing.length) throw new Error(`Release 标签不存在：${missing.join(', ')}；保留已有快照，继续探测`);
+      if (p.failedFingerprint && pending.some(({ release, object }) => releaseFingerprint(release, object.sha) === p.failedFingerprint) && !p.snapshots[p.failedFingerprint]?.complete) {
+        throw new Error(p.message);
+      }
+      delete p.failedFingerprint;
       record(p, p.pending ? 'pending' : 'normal', releases.length
         ? `已保留 ${p.completedCount} 个快照，当前发布待备份 ${p.pending} 个`
         : '上游暂无公开 Release，继续探测');
     } catch (e) {
+      if (attempting && e.code !== 'BUDGET') p.failedFingerprint = attempting;
       p.completedCount = Object.values(p.snapshots).filter(s => s.complete).length;
       record(p, e.code === 'BUDGET' ? 'pending' : 'error', e.message);
       if (e.code !== 'BUDGET') errors.push(`${p.repo}: ${e.message}`);
     }
     // Move past sources that received a turn, even when their upstream is unavailable.
     state.nextIndex = (index + 1) % entries.length;
-    if (completed >= maxSnapshots) break;
   }
+  if (nextStart !== undefined) state.nextIndex = nextStart;
   state.checkedAt = new Date().toISOString();
 } catch (e) { errors.push(e.message); }
 finally {

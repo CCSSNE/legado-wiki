@@ -23,15 +23,31 @@ export function releaseTransport(token) {
       const directory = await mkdtemp(join(tmpdir(), 'legado-release-'));
       const file = join(directory, 'asset.bin');
       try {
-        const r = await fetch(`https://api.github.com/repos/${sourceRepo}/releases/assets/${asset.id}`, {
-          headers: { ...headers, Accept: 'application/octet-stream' }, signal: AbortSignal.timeout(600000)
-        });
-        if (!r.ok || !r.body) throw new Error(`下载附件 ${asset.name} HTTP ${r.status}`);
-        const hash = createHash('sha256');
-        const checksum = new Transform({ transform(chunk, encoding, callback) { hash.update(chunk); callback(null, chunk); } });
-        await pipeline(Readable.fromWeb(r.body), checksum, createWriteStream(file));
+        let digest;
+        let downloadError;
+        for (let attempt = 0; attempt < 4; attempt++) {
+          try {
+            const publicUrl = asset.browser_download_url && new URL(asset.browser_download_url);
+            const fallback = attempt === 3 && publicUrl?.origin === 'https://github.com' &&
+              publicUrl.pathname.startsWith(`/${sourceRepo}/releases/download/`);
+            const r = await fetch(fallback ? publicUrl.href : `https://api.github.com/repos/${sourceRepo}/releases/assets/${asset.id}`, {
+              headers: fallback ? { 'User-Agent': headers['User-Agent'] } : { ...headers, Accept: 'application/octet-stream' },
+              signal: AbortSignal.timeout(120000)
+            });
+            if (!r.ok || !r.body) throw new Error(`下载附件 ${asset.name} HTTP ${r.status}`);
+            const hash = createHash('sha256');
+            const checksum = new Transform({ transform(chunk, encoding, callback) { hash.update(chunk); callback(null, chunk); } });
+            await pipeline(Readable.fromWeb(r.body), checksum, createWriteStream(file));
+            digest = `sha256:${hash.digest('hex')}`;
+            downloadError = null;
+            break;
+          } catch (e) {
+            downloadError = e;
+            if (attempt < 3) await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+          }
+        }
+        if (downloadError) throw downloadError;
         const size = (await stat(file)).size;
-        const digest = `sha256:${hash.digest('hex')}`;
         if (size !== asset.size || (asset.digest && asset.digest !== digest)) throw new Error(`下载附件 ${asset.name} 的大小或 SHA256 不匹配`);
         const uploaded = await upload(backupRepo, releaseId, asset.name, createReadStream(file), size,
           asset.content_type || 'application/octet-stream');

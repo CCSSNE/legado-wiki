@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { backupRelease, releaseFingerprint, listAll, resolveTagCommit } from '../scripts/release-backup.mjs';
+import { releaseTransport } from '../scripts/release-assets.mjs';
 
 const release = { id: 1, tag_name: 'beta', name: 'Beta', body: '说明', prerelease: true,
   published_at: '2026-01-01', updated_at: '2026-01-02', assets: [
@@ -104,6 +105,12 @@ test('size or checksum mismatch never publishes', async () => {
   await assert.rejects(backupRelease(f.args), /验证失败/);
   assert.equal(f.target.draft, true);
 });
+test('source replacement during transfer keeps the snapshot unpublished', async () => {
+  const f = fixture();
+  await assert.rejects(backupRelease({ ...f.args, verifySource: async () => { throw new Error('source changed'); } }), /source changed/);
+  assert.equal(f.target.draft, true);
+  assert.equal(Object.values(f.args.snapshots)[0].complete, false);
+});
 test('recover published snapshot after loss of local state without modifying it', async () => {
   const f = fixture();
   await backupRelease(f.args);
@@ -129,4 +136,32 @@ test('pagination includes the second page and propagates unavailable upstream', 
   const items = await listAll(async path => ({ status: 200, body: path.endsWith('page=1') ? Array(100).fill(1) : [2] }), '/releases');
   assert.equal(items.length, 101);
   await assert.rejects(listAll(async () => ({ status: 404, body: {} }), '/releases'), /HTTP 404/);
+});
+test('streamed download and upload validate content and retry a transient download error', async () => {
+  const realFetch = globalThis.fetch;
+  const content = Buffer.from('test binary');
+  const digest = `sha256:${createHash('sha256').update(content).digest('hex')}`;
+  let downloads = 0;
+  let uploads = 0;
+  globalThis.fetch = async (url, init) => {
+    if (String(url).startsWith('https://api.github.com/')) {
+      downloads++;
+      return downloads === 1 ? new Response('temporary', { status: 500 }) : new Response(content);
+    }
+    uploads++;
+    const chunks = [];
+    for await (const chunk of init.body) chunks.push(chunk);
+    assert.deepEqual(Buffer.concat(chunks), content);
+    return Response.json({ id: 5, state: 'uploaded', size: content.length, digest }, { status: 201 });
+  };
+  try {
+    const t = releaseTransport('test-token');
+    await t.transfer({ sourceRepo: 'source/project', backupRepo: 'backup/project', releaseId: 3,
+      asset: { id: 2, name: 'app.apk', size: content.length, digest } });
+    assert.equal(downloads, 2);
+    assert.equal(uploads, 1);
+    await assert.rejects(t.transfer({ sourceRepo: 'source/project', backupRepo: 'backup/project', releaseId: 3,
+      asset: { id: 2, name: 'app.apk', size: content.length, digest: 'sha256:wrong' } }), /不匹配/);
+    assert.equal(uploads, 1);
+  } finally { globalThis.fetch = realFetch; }
 });

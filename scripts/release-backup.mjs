@@ -41,7 +41,7 @@ export function assetMatches(source, backup) {
 
 // An immutable snapshot has its own tag and release. No published backup is overwritten.
 export async function backupRelease({ sourceRepo, backupRepo, release, tagObject, snapshots, api, transfer, uploadManifest,
-  now = () => new Date().toISOString(), shouldContinue = () => true }) {
+  now = () => new Date().toISOString(), shouldContinue = () => true, verifySource = async () => {} }) {
   const fingerprint = releaseFingerprint(release, tagObject.sha);
   const tag = `backup-release/${release.id}-${fingerprint}`;
   const commit = await resolveTagCommit(api, sourceRepo, tagObject);
@@ -116,6 +116,8 @@ export async function backupRelease({ sourceRepo, backupRepo, release, tagObject
     if (!assetMatches(expectedManifest, uploaded)) throw new Error('来源清单上传验证失败');
   }
   if (target.draft) {
+    // A mutable beta may be replaced during a long transfer. Keep the draft unpublished.
+    await verifySource(fingerprint);
     target = await requireResponse(api, `/repos/${backupRepo}/releases/${target.id}`, {
       method: 'PATCH', body: JSON.stringify({ draft: false, make_latest: 'false' })
     });
