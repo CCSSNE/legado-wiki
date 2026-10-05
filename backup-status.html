@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>备份同步状态 · 开源阅读分支索引</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,sans-serif;background:#f5f6fa;color:#202636}
+    body{max-width:1120px;margin:0 auto;padding:28px 18px}a{color:#3158cc}h1{font-size:27px;margin:20px 0 10px}
+    p{line-height:1.7;color:#657087}.toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:24px 0}
+    input{padding:10px 12px;border:1px solid #cbd2df;border-radius:8px;background:transparent;color:inherit;width:min(300px,85vw)}
+    .table-wrap{overflow:auto;border:1px solid #dce1ea;border-radius:12px;background:white}table{border-collapse:collapse;width:100%}
+    th,td{text-align:left;vertical-align:top;padding:16px;border-bottom:1px solid #e6e9f0}th{font-size:13px;color:#657087;background:#f8f9fc}
+    th:first-child{width:30%}td{font-size:14px;line-height:1.6}small{display:block;color:#657087;overflow-wrap:anywhere}
+    .badge{display:inline-block;border-radius:20px;padding:2px 10px;background:#e9edf4}.normal{color:#177444;background:#e8f6ed}
+    .error,.unavailable{color:#a73737;background:#fff0ed}.message{margin:8px 0;overflow-wrap:anywhere}details{margin-top:12px}
+    summary{cursor:pointer;color:#657087}ol{padding-left:22px}li{margin:12px 0}time{display:block;color:#657087;font-size:12px}
+    @media(prefers-color-scheme:dark){:root{background:#121722;color:#e6eaf3}.table-wrap{background:#1a2230;border-color:#344054}th{background:#202a3a}th,td{border-color:#344054}p,small,summary,time{color:#a6b1c5}a{color:#98b1ff}.badge{background:#303c50}.normal{background:#173a2b;color:#9ce7b5}.error,.unavailable{background:#462a29;color:#ffb6a7}}
+  </style>
+</head>
+<body>
+  <a href="./">← 返回分支索引</a>
+  <h1>备份同步状态</h1>
+  <p>旧历史保留，新历史自动换分支。上游暂时不可见时继续探测，恢复后继续同步。展开记录可查看异常、换代、改名与恢复时间。</p>
+  <p id="updated">正在加载状态…</p>
+  <div class="toolbar"><input id="search" type="search" aria-label="搜索仓库" placeholder="搜索名称或仓库"><label><input id="abnormal" type="checkbox" style="width:auto"> 只看异常</label></div>
+  <div class="table-wrap"><table><thead><tr><th>仓库</th><th>当前状态与历史记录</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <script>
+    const labels={normal:'正常同步',error:'同步异常',unavailable:'上游不可见，继续探测',queued:'等待建立备份',skipped:'人工配置跳过'};
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const date=s=>s?new Date(s).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false}):'—';
+    let data;
+    function render(){
+      const query=document.getElementById('search').value.toLowerCase();
+      const abnormal=document.getElementById('abnormal').checked;
+      const entries=Object.entries(data.statuses||{}).filter(([id,r])=>(!abnormal||['error','unavailable'].includes(r.status))&&`${id} ${r.name} ${r.repo}`.toLowerCase().includes(query));
+      entries.sort((a,b)=>Number(['error','unavailable'].includes(b[1].status))-Number(['error','unavailable'].includes(a[1].status))||a[1].name.localeCompare(b[1].name,'zh-CN'));
+      document.getElementById('rows').innerHTML=entries.map(([id,r])=>{
+        const project=data.projects?.[id];
+        const backup=r.backupRepo?`https://github.com/${r.backupRepo}/tree/${encodeURIComponent(r.activeBranch)}`:null;
+        const events=(r.events||[]).slice().reverse();
+        return `<tr><td><strong>${esc(r.name)}</strong><small><a href="https://github.com/${esc(r.repo)}" target="_blank" rel="noopener">${esc(r.repo)}</a></small>${backup?`<small><a href="${esc(backup)}" target="_blank" rel="noopener">当前备份 · ${esc(r.activeBranch)}</a></small>`:''}${project?.retired?.length?`<small>保留旧历史 ${project.retired.length} 代</small>`:''}</td><td><span class="badge ${['normal','error','unavailable'].includes(r.status)?r.status:''}">${esc(labels[r.status]||r.status)}</span><time>状态更新：${esc(date(r.since))}（北京时间）</time>${r.status==='normal'?'':`<div class="message">${esc(r.message)}</div>`}<details><summary>历史记录（${events.length} 条）</summary><ol>${events.map(e=>`<li><time>${esc(date(e.at))}</time>${esc(e.message)}</li>`).join('')}</ol></details></td></tr>`;
+      }).join('')||'<tr><td colspan="2">暂无匹配记录；首次工作流运行后生成状态。</td></tr>';
+    }
+    document.getElementById('search').addEventListener('input',()=>data&&render());
+    document.getElementById('abnormal').addEventListener('change',()=>data&&render());
+    fetch('data/fork-sync.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(d=>{data=d;document.getElementById('updated').textContent=d.checkedAt?`最后探测：${date(d.checkedAt)}（北京时间）`:'尚未运行首次探测';render();}).catch(e=>{document.getElementById('updated').textContent=`状态加载失败：${e.message}`;});
+  </script>
+</body>
+</html>

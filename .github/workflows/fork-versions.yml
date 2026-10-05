@@ -1,16 +1,37 @@
 name: Fork 备份到组织
 
 on:
+  push:
+    paths:
+      - '.github/workflows/fork-versions.yml'
+      - 'scripts/fork-versions.mjs'
+      - 'scripts/fork-sync.mjs'
+      - 'scripts/backup-status.mjs'
+      - 'tests/fork-sync.test.mjs'
   workflow_dispatch:
   schedule:
     - cron: '41 * * * *'
 
+permissions:
+  contents: write
+
+concurrency:
+  group: fork-backup-sync
+  cancel-in-progress: false
+
 jobs:
   fork-versions:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: 拉取仓库
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 验证备份同步规则
+        run: node --test tests/fork-sync.test.mjs
 
       - name: 检测上游历史并同步 Fork 到备份组织
         id: check

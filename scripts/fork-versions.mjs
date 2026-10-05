@@ -1,176 +1,103 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile, appendFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+import { syncBackup } from './fork-sync.mjs';
+import { recordStatus } from './backup-status.mjs';
 
 const ORG = process.env.FORK_ORG || 'legado-backup';
 const TOKEN = process.env.GITHUB_TOKEN;
-
-const headers = {
-  Authorization: `Bearer ${TOKEN}`,
-  Accept: 'application/vnd.github+json',
-  'X-GitHub-Api-Version': '2022-11-28',
-  'User-Agent': 'legado-wiki-fork-bot',
-  'Content-Type': 'application/json'
-};
+const STATE_PATH = 'data/fork-sync.json';
+const results = [];
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function api(path, init = {}) {
-  const res = await fetch(`https://api.github.com${path}`, { headers, ...init });
-  const text = await res.text();
-  return { status: res.status, body: text ? JSON.parse(text) : null };
+  const method = init.method || 'GET';
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const res = await fetch(`https://api.github.com${path}`, {
+        ...init, signal: AbortSignal.timeout(30000),
+        headers: {
+          Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'legado-wiki-fork-bot',
+          'Content-Type': 'application/json'
+        }
+      });
+      const text = await res.text();
+      let body;
+      try { body = text ? JSON.parse(text) : null; } catch { body = { message: `非 JSON 响应（HTTP ${res.status}）` }; }
+      if (method === 'GET' && (res.status >= 500 || res.status === 429) && attempt < 2) {
+        await sleep(1000 * (attempt + 1));
+        continue;
+      }
+      return { status: res.status, body };
+    } catch (error) {
+      if (method !== 'GET' || attempt === 2) throw new Error(`GitHub 连接失败：${error.message}`);
+      await sleep(1000 * (attempt + 1));
+    }
+  }
 }
 
-// 判断上游默认分支相对 fork 默认分支是否为"线性可快进"（安全同步）。
-// 若 fork 存在上游已没有的 commit（即上游历史被 force push / rebase / reset 重写过），
-// return false，此时应保住 fork 不做同步。
-async function isFastForwardable(upstreamOwner, upstreamBranch, forkFull, forkBranch) {
-  const [forkOwner, forkRepo] = forkFull.split('/');
-  const cmp = await api(
-    `/repos/${forkOwner}/${forkRepo}/compare/${upstreamOwner}:${upstreamBranch}...${forkOwner}:${forkBranch}`
-  );
-  if (cmp.status !== 200 || !cmp.body) {
-    return { ok: null, detail: `compare HTTP ${cmp.status}: ${cmp.body?.message ?? '未知错误'}` };
-  }
-  // base=上游, head=fork。ahead_by = fork 有而上游没有的 commit 数。
-  if (cmp.body.ahead_by === 0) {
-    // fork 的历史完全包含在上游历史里，可安全快进
-    return { ok: true, detail: `compare=${cmp.body.status}, behind_by=${cmp.body.behind_by}, ahead_by=${cmp.body.ahead_by}` };
-  }
-  return { ok: false, detail: `compare=${cmp.body.status}, behind_by=${cmp.body.behind_by}, ahead_by=${cmp.body.ahead_by}（fork 存在上游已抛弃的历史）` };
-}
-
-const mainData = JSON.parse(await readFile('data/branches.json', 'utf8'));
-let staticBranches = [];
+let state;
+let original;
 try {
-  const staticData = JSON.parse(await readFile('data/branches-static.json', 'utf8'));
-  if (Array.isArray(staticData.branches)) staticBranches = staticData.branches;
-} catch {
-  staticBranches = [];
-}
-const data = { branches: [...mainData.branches, ...staticBranches] };
-// 注意：hidden 预备项目也在 branches.json 里，前端不显示不计数，但这里照常 fork/同步防跑路。
-const results = [];
-const alerts = new Set(); // 触发过的告警类型: rewritten / default_branch_changed / gone
-
-for (const branch of data.branches) {
-  if (branch.backupRelease) {
-    results.push({ id: branch.id, repo: branch.repo, status: 'skipped', message: '上游已删库且已手动补档，跳过' });
-    continue;
-  }
-  if (branch.skipAutoForks) {
-    results.push({ id: branch.id, repo: branch.repo, status: 'skipped', message: 'skipAutoForks：不走 fork 备份（镜像/补档仓库）' });
-    continue;
-  }
-  if (!branch.repo) continue;
-
-  const [owner, repo] = branch.repo.split('/');
-  const forkName = `legado-${branch.id}`;
-
-  const existing = await api(`/repos/${ORG}/${forkName}`);
-  if (existing.status === 200) {
-    const forkBranch = existing.body?.default_branch || 'main';
-
-    // 查询上游，检测「删库」和「默认分支改名」
-    const upstream = await api(`/repos/${owner}/${repo}`);
-    if (upstream.status === 404 || upstream.status === 410) {
-      alerts.add('gone');
-      results.push({ id: branch.id, repo: branch.repo, status: 'gone', message: `上游 ${owner}/${repo} 已删库，保住 fork 备份，等你补档（在 wiki 写上 backupRelease 后自动退出 fork 列表）` });
+  if (!TOKEN) throw new Error('缺少 FORK_TOKEN / GITHUB_TOKEN');
+  original = await readFile(STATE_PATH, 'utf8');
+  state = JSON.parse(original);
+  if (state.version !== 1 || !state.projects || Array.isArray(state.projects)) throw new Error('备份状态格式无效，拒绝重置');
+  const main = JSON.parse(await readFile('data/branches.json', 'utf8'));
+  const extra = JSON.parse(await readFile('data/branches-static.json', 'utf8'));
+  const branches = [...new Map([...main.branches, ...extra.branches].map(b => [b.id, b])).values()];
+  for (const branch of branches) {
+    if (!branch.repo || branch.backupRelease || branch.skipAutoForks) {
+      const result = { id: branch.id, repo: branch.repo, status: 'skipped', message: '人工配置跳过 Fork 备份（补档／镜像仓）' };
+      results.push(result);
+      recordStatus(state, branch, result);
       continue;
     }
-    if (upstream.status !== 200) {
-      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `查询上游 HTTP ${upstream.status}: ${upstream.body?.message ?? '未知错误'}` });
-      continue;
+    let result;
+    try {
+      result = { id: branch.id, repo: branch.repo, ...await syncBackup({ branch, state, org: ORG, api }) };
+    } catch (error) {
+      result = { id: branch.id, repo: branch.repo, status: 'error', message: error.message };
     }
-    const upstreamBranch = upstream.body?.default_branch || 'main';
-
-    if (upstreamBranch !== forkBranch) {
-      alerts.add('default_branch_changed');
-      results.push({ id: branch.id, repo: branch.repo, status: 'default_branch_changed', message: `上游默认分支由 ${forkBranch} 改为 ${upstreamBranch}，请人工确认是否要跟随` });
-    }
-
-    const ff = await isFastForwardable(owner, upstreamBranch, `${ORG}/${forkName}`, forkBranch);
-    if (ff.ok === false) {
-      // 上游历史被重写 → 不同步，保住 fork，并标记以便发邮件告警
-      alerts.add('rewritten');
-      results.push({ id: branch.id, repo: branch.repo, status: 'rewritten', message: `检测到上游历史被重写，本次未同步：${ff.detail}` });
-      continue;
-    }
-    if (ff.ok === null) {
-      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `无法判断上游历史：${ff.detail}` });
-      continue;
-    }
-
-    const sync = await api(`/repos/${ORG}/${forkName}/merge-upstream`, {
-      method: 'POST',
-      body: JSON.stringify({ branch: forkBranch })
-    });
-    if (sync.status === 200) {
-      results.push({ id: branch.id, repo: branch.repo, status: 'synced', message: `${ORG}/${forkName} ${sync.body?.message ?? '已同步'}` });
-    } else if (sync.status === 404 || sync.status === 410) {
-      alerts.add('gone');
-      results.push({ id: branch.id, repo: branch.repo, status: 'gone', message: `上游已删库，保住 fork 备份，等你补档（在 wiki 写上 backupRelease 后自动退出 fork 列表）` });
-    } else if (sync.status === 409) {
-      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `同步冲突 HTTP 409，需人工检查 ${ORG}/${forkName}` });
-    } else {
-      results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `同步失败 HTTP ${sync.status}: ${sync.body?.message ?? '未知错误'}` });
-    }
-    continue;
+    if (['error', 'unavailable'].includes(state.statuses?.[branch.id]?.status) && ['synced', 'renamed', 'rotated'].includes(result.status)) result.notify = true;
+    results.push(result);
+    recordStatus(state, branch, result);
   }
-
-  const res = await api(`/repos/${owner}/${repo}/forks`, {
-    method: 'POST',
-    body: JSON.stringify({ organization: ORG, name: forkName, default_branch_only: false })
-  });
-
-  if (res.status === 202 || res.status === 200) {
-    results.push({ id: branch.id, repo: branch.repo, status: 'queued', message: `fork 排队创建中: ${ORG}/${forkName}` });
-  } else if (res.status === 404 || res.status === 410) {
-    alerts.add('gone');
-    results.push({ id: branch.id, repo: branch.repo, status: 'gone', message: `上游 ${owner}/${repo} 已删库，等你补档（在 wiki 写上 backupRelease 后自动退出 fork 列表）` });
-  } else {
-    results.push({ id: branch.id, repo: branch.repo, status: 'error', message: `HTTP ${res.status}: ${res.body?.message ?? '未知错误'}` });
+  state.checkedAt = new Date().toISOString();
+  const serialized = `${JSON.stringify(state, null, 2)}\n`;
+  if (serialized !== original) {
+    await writeFile(STATE_PATH, serialized);
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      const git = args => execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+      git(['config', 'user.name', 'github-actions[bot]']);
+      git(['config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
+      git(['add', STATE_PATH]);
+      git(['commit', '-m', '记录 Fork 备份分支及历史换代']);
+      let pushed = false;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try { git(['push', 'origin', 'HEAD:main']); pushed = true; break; }
+        catch {
+          // Another data workflow can commit while this workflow is running.
+          git(['fetch', 'origin', 'main']);
+          git(['rebase', 'origin/main']);
+        }
+      }
+      if (!pushed) throw new Error('备份状态提交失败，下轮将核验已有分支后重试');
+    }
   }
-
-  await new Promise(resolve => setTimeout(resolve, 1500));
+} catch (error) {
+  results.push({ id: 'workflow', repo: 'CCSSNE/legado-wiki', status: 'error', message: error.message });
 }
 
-let failed = 0;
-for (const r of results) {
-  console.log(`[${r.status.padEnd(22)}] ${r.id} (${r.repo}): ${r.message}`);
-  if (r.status === 'error') failed += 1;
-}
-const rewritten = results.filter(r => r.status === 'rewritten');
-const gone = results.filter(r => r.status === 'gone');
-const defChanged = results.filter(r => r.status === 'default_branch_changed');
-const errored = results.filter(r => r.status === 'error');
-// 同步失败也要告警：否则像 FORK_TOKEN 缺 workflow 权限这种 422 会连续静默失败
-if (errored.length > 0) alerts.add('sync_error');
-console.log(`\n共 ${results.length} 项: ${results.filter(r => r.status === 'queued').length} 新建排队, ${results.filter(r => r.status === 'synced').length} 已同步, ${results.filter(r => r.status === 'rewritten').length} 历史被重写未同步, ${results.filter(r => r.status === 'default_branch_changed').length} 默认分支改名, ${results.filter(r => r.status === 'skipped').length} 跳过, ${results.filter(r => r.status === 'gone').length} 上游已删, ${failed} 失败`);
-for (const [label, list] of [['\n被重写列表:', rewritten], ['\n上游删库列表:', gone], ['\n默认分支改名列表:', defChanged]]) {
-  if (list.length > 0) {
-    console.log(label);
-    for (const r of list) console.log(`  - ${r.id} (${r.repo})`);
-  }
-}
-
-if (failed > 0) process.exitCode = 1;
-
-// 写入 GITHUB_OUTPUT，供 workflow 判断是否发告警邮件
-// alert_body: 每行一项精确失败原因（带上游 repo 名），直接用作邮件正文，不过多解释。
+for (const r of results) console.log(`[${r.status.padEnd(12)}] ${r.id} (${r.repo || ''}): ${r.message}`);
+const errors = results.filter(r => r.status === 'error');
+const notifications = results.filter(r => r.notify);
+const lines = [...errors, ...notifications].map(r => `${r.id} ${r.repo || ''}：${r.message}`);
+console.log(`\n共 ${results.length} 项：${results.filter(r => r.status === 'synced').length} 同步，${results.filter(r => r.status === 'rotated').length} 换代，${errors.length} 失败`);
+if (errors.length) process.exitCode = 1;
 if (process.env.GITHUB_OUTPUT) {
-  const fs = await import('node:fs');
-  const short = (s, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
-  const lines = [
-    ...rewritten.map(r => `${r.id} ${r.repo}：上游强推，未同步（${short(r.message.replace(/^.*：/, ''), 100)}）`),
-    ...gone.map(r => `${r.id} ${r.repo}：上游已删库，未同步`),
-    ...defChanged.map(r => `${r.id} ${r.repo}：${short(r.message, 120)}`),
-    ...errored.map(r => `${r.id} ${r.repo || ''}：${short(r.message, 120)}`),
-  ];
-  // 去重 + 截断，避免邮件过长
-  const uniq = [...new Set(lines)].slice(0, 20);
-  if (lines.length > 20) uniq.push(`…等共 ${lines.length} 项，详见日志`);
-  const alert = alerts.size > 0 ? 'true' : 'false';
-  const reason = [...alerts].join(',');
-  const out = process.env.GITHUB_OUTPUT;
-  fs.appendFileSync(out, `alert=${alert}\n`);
-  fs.appendFileSync(out, `alert_reason=${reason}\n`);
-  fs.appendFileSync(out, `rewritten=${alerts.has('rewritten') ? 'true' : 'false'}\n`);
-  fs.appendFileSync(out, `alert_body<<EOF\n${uniq.join('\n')}\nEOF\n`);
+  const reason = errors.length ? 'sync_error' : notifications.length ? 'auto_handled' : '';
+  const delimiter = `BODY_${crypto.randomUUID()}`;
+  await appendFile(process.env.GITHUB_OUTPUT,
+    `alert=${lines.length > 0}\nalert_reason=${reason}\nalert_body<<${delimiter}\n${lines.join('\n')}\n${delimiter}\n`);
 }
