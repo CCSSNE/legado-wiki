@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:25:55.812Z",
+  "generatedAt": "2026-10-06T17:15:03.803Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 158,
+      "stars": 160,
       "sourceUpdatedAt": "2026-10-05T07:33:42Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 27,
+          "stars": 28,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47116,
+      "stars": 47114,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6377,
+      "stars": 6385,
       "sourceUpdatedAt": "2026-10-05T07:08:43Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2817,
+      "stars": 2820,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2195,
+      "stars": 2194,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1398,
+      "stars": 1402,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 599,
+      "stars": 600,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 395,
+      "stars": 396,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -310,7 +310,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 382,
+      "stars": 383,
       "sourceUpdatedAt": "2026-10-05T16:52:10Z",
       "githubArchived": false,
       "release": {
@@ -469,7 +469,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 270,
+      "stars": 269,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -506,7 +506,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 257,
+      "stars": 260,
       "sourceUpdatedAt": "2026-10-03T08:55:56Z",
       "githubArchived": false,
       "release": {
@@ -821,7 +821,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 39,
+      "stars": 40,
       "sourceUpdatedAt": "2026-10-05T14:06:06Z",
       "githubArchived": false,
       "release": {
@@ -901,75 +901,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-06T08:24:38Z",
+      "sourceUpdatedAt": "2026-10-06T10:56:03Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.10.1",
-        "tagName": "v1.10.1",
+        "name": "LightRead 轻阅 v1.11.0",
+        "tagName": "v1.11.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T08:02:05Z",
-        "createdAt": "2026-10-06T07:44:45Z",
-        "body": "release: v1.10.1\n\n## 改进\n\n- **上传到私人书库改为后台任务**：点「开始上传」后可以直接关掉窗口、切换到其他页面，上传在后台继续进行。右下角（手机在底部标签栏上方）显示进度卡片：当前正在上传或转换的书、已处理数量、每本明细，可以「取消剩余」，结束后可「重试失败」。上传过程中还能继续添加书籍，会接在同一个队列后面。全部完成后弹出提示（已添加 / 书库已有 / 失败各几本），书源页自动刷新。网页版在上传中关闭标签页会先提醒。\n\n## 验证\n\n- 26 组单元测试全部通过（新增后台上传队列 5 项：顺序处理、运行中追加与去重、先转 EPUB、取消与重试、不支持格式不阻塞队列）；类型检查、构建通过。\n- 端到端：冒烟测试通过；上传私人书库测试改为后台流程（开始上传后关窗口、切到设置页，进度卡片持续显示，完成提示与重试失败正确），9 步全部通过。\n\n## 已知限制\n\n- 正在上传的那一本无法中途取消，传完后才停止。\n- 应用被系统彻底结束（或关闭网页标签页）后，后台上传会中断，需要重新开始。\n- Android 仍为实验性 arm64 包。\n\n",
+        "publishedAt": "2026-10-06T10:45:17Z",
+        "createdAt": "2026-10-06T10:29:27Z",
+        "body": "release: v1.11.0\n\n## 新功能\n\n- **哲学文库**：公共书源新增「哲学文库」，默认参与搜索。收录约 8400 部作品：marxists.org（马克思主义文库）的英文电子书与中文 PDF / 单页作品，以及 Early Modern Texts、Standard Ebooks 的哲学类书籍。搜索在本机离线索引中进行，书名完全一致的排最前、EPUB 优先，繁简体都能搜到。安装版可直接下载导入；网页版下载 marxists.org 的书会在浏览器中打开下载。\n- **私人书库随账号同步**：在一台设备上添加、编辑、删除私人书库（自建 OPDS 书库，含账号密码），同步后其他设备跟着变化。两台设备各自添加同一个书库不会重复，以最后一次修改为准，删除后不会再冒出来。书源卡片新增「编辑」，同步完成后书源页自动刷新。\n- **Windows 安装包跟随系统语言**：中文系统显示简体或繁体中文，其他系统显示英文（以前只有英文）。安装版首次启动时，界面语言也跟随系统（已有设置不变；macOS 仍默认中文）。\n\n## 改进\n\n- 去掉「中文维基文库」书源（很少能搜到完整的书）。\n- 设置里的「论文 Agent」默认收起，标题行直接显示当前引擎和状态；展开后每个引擎是一张卡片，可用状态、路径、版本一目了然。\n- 左下角的更新按钮重新设计：有新版本时显示小圆点提示，悬停展开为「更新 vX.Y.Z」，下载时显示环形进度。手机上「设置」标签也会显示更新提示。\n\n## 验证\n\n- 26 组单元测试全部通过（新增哲学文库搜索、私人书库同步的合并与引擎测试、系统语言检测）；类型检查、构建通过。\n- 端到端：冒烟 35 项、WebDAV 两设备同步 11 步（A 添加私人书库 → B 收到 → B 改名 → A 收到 → 删除不复活）、公共书源（含哲学文库下载导入）、上传私人书库 9 步全部通过。\n- 哲学文库实测：「共产党宣言」「资本论」「Capital」「Hegel」等查询结果正确，抽查 43 个下载地址均可访问。\n\n## 已知限制\n\n- 哲学文库未收录分成多个网页的作品（如网页版《资本论》），这类作品可通过收录的 PDF / EPUB 版本阅读。\n- 私人书库的账号密码随同步保存在你的同步存储中（WebDAV 或账号存储，仅本人可读）；整库备份仍不导出密码。\n- Windows 安装包的语言切换尚未在 Windows 实机上验证。\n- Android 仍为实验性 arm64 包。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.10.1-1.x86_64.rpm",
-            "size": 28908725,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead-1.10.1-1.x86_64.rpm"
+            "name": "LightRead-1.11.0-1.x86_64.rpm",
+            "size": 29096334,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead-1.11.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.10.1_aarch64.dmg",
-            "size": 22335434,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_aarch64.dmg"
+            "name": "LightRead_1.11.0_aarch64.dmg",
+            "size": 22510149,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_1.11.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.10.1_amd64.AppImage",
-            "size": 104741368,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_amd64.AppImage"
+            "name": "LightRead_1.11.0_amd64.AppImage",
+            "size": 104970744,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_1.11.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.10.1_amd64.deb",
-            "size": 28910044,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_amd64.deb"
+            "name": "LightRead_1.11.0_amd64.deb",
+            "size": 29097328,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_1.11.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.10.1_x64-setup.exe",
-            "size": 17041507,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_x64-setup.exe"
+            "name": "LightRead_1.11.0_x64-setup.exe",
+            "size": 17238486,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_1.11.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.10.1_x64.dmg",
-            "size": 23581535,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_x64.dmg"
+            "name": "LightRead_1.11.0_x64.dmg",
+            "size": 23760870,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_1.11.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 22258091,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_aarch64.app.tar.gz"
+            "size": 22442525,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.10.1_android_arm64.apk",
-            "size": 70584688,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk"
+            "name": "LightRead_v1.11.0_android_arm64.apk",
+            "size": 70802604,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_v1.11.0_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.10.1_android_arm64.apk.json",
+            "name": "LightRead_v1.11.0_android_arm64.apk.json",
             "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_v1.11.0_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.10.1_android_arm64.apk.sha256",
+            "name": "LightRead_v1.11.0_android_arm64.apk.sha256",
             "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_v1.11.0_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23528051,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_x64.app.tar.gz"
+            "size": 23712829,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1074,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.11.0/SHA256SUMS"
           }
         ]
       },
@@ -1284,7 +1284,7 @@
           },
           {
             "name": "阅读_magisk_3.26.092723.zip",
-            "size": null,
+            "size": 22644170,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092723/%E9%98%85%E8%AF%BB_magisk_3.26.092723.zip"
           },
           {
