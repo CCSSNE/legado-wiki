@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T03:03:29.952Z",
+  "generatedAt": "2026-10-06T10:25:55.812Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 26,
+          "stars": 27,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47115,
+      "stars": 47116,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6371,
+      "stars": 6377,
       "sourceUpdatedAt": "2026-10-05T07:08:43Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2815,
+      "stars": 2817,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 598,
+      "stars": 599,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 391,
+      "stars": 395,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -413,7 +413,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 278,
+      "stars": 277,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -901,75 +901,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-06T02:44:06Z",
+      "sourceUpdatedAt": "2026-10-06T08:24:38Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.10.0",
-        "tagName": "v1.10.0",
+        "name": "LightRead 轻阅 v1.10.1",
+        "tagName": "v1.10.1",
         "prerelease": false,
-        "publishedAt": "2026-10-06T03:01:27Z",
-        "createdAt": "2026-10-06T02:44:04Z",
-        "body": "release: v1.10.0\n\n## 新功能\n\n- **转换为 EPUB**：藏书里的 MOBI、AZW、AZW3、FB2、FBZ、TXT、Markdown、HTML 可以一键转换成 EPUB（书卡按钮，或在「管理」中批量转换）。转出的新书沿用书名、作者、封面、标签和书单，阅读进度按百分比带过去，原书保留（划线笔记留在原书）。带 DRM 或损坏的文件会给出明确提示。\n- **添加书籍**：藏书「添加书籍」支持多选或拖入 EPUB、PDF、AZW/AZW3、MOBI；在书单中添加时自动收入该书单。\n- **上传到私人书库**：可把设备上的文件或已有藏书（按书单、置顶、书名筛选）上传到自建书库，支持单本、多选和整个书单，逐本显示进度，失败可单独重试，相同内容只存一份。可转换的格式默认先转成 EPUB 再上传。自建服务端的上传协议见 library-server/README.md 与《自建书库指南》。\n\n## 搜书更准\n\n- 中文维基文库只返回书名匹配的作品，不再出现判决书、公告、法规等文书；章节页归并到整本书，有多个版本的作品引导到原站选择。\n- 书名号《》和全角标点不再影响搜索。\n- Internet Archive 只保留书名或作者匹配的结果并按热度排序；Open Library 修复两个字的书名（活着、三体等）搜索报错；古登堡保持搜索顺序；GitHub 书名完全一致的排在最前。\n- 结果页：显示「搜索中」，没有结果的来源合并为一行，匹配更好的来源排在前面，限流和网络错误合并成一句提示，换词搜索不会混入上一次的结果。\n\n## 修复\n\n- 只有一个主题词的 EPUB 打开时报错。\n- 只有阅读百分比、没有具体位置的书，现在按百分比打开。\n- 手机上书卡菜单展开后不再遮挡删除按钮。\n\n## 验证\n\n- 26 组单元测试、Rust 上传测试 8 项、服务端上传测试全部通过；类型检查、构建通过。\n- 端到端：冒烟、WebDAV 同步、账号同步、格式转换、上传私人书库、公共书源六套全部通过。\n- 转换出的 EPUB 经 epubcheck 校验 0 错误 0 警告；11MB 的 FB2 约 3 秒转完。\n\n## 已知限制\n\n- PDF、DjVu、漫画是固定版式，不提供转换。\n- 格式转换在桌面版和 Android 上尚未做真机验证。\n- 公共书源中，简体搜索还找不到古登堡上的繁体中文书；在世作者的新书通常只能在自建书库中找到。\n- Android 仍为实验性 arm64 包。\n\n",
+        "publishedAt": "2026-10-06T08:02:05Z",
+        "createdAt": "2026-10-06T07:44:45Z",
+        "body": "release: v1.10.1\n\n## 改进\n\n- **上传到私人书库改为后台任务**：点「开始上传」后可以直接关掉窗口、切换到其他页面，上传在后台继续进行。右下角（手机在底部标签栏上方）显示进度卡片：当前正在上传或转换的书、已处理数量、每本明细，可以「取消剩余」，结束后可「重试失败」。上传过程中还能继续添加书籍，会接在同一个队列后面。全部完成后弹出提示（已添加 / 书库已有 / 失败各几本），书源页自动刷新。网页版在上传中关闭标签页会先提醒。\n\n## 验证\n\n- 26 组单元测试全部通过（新增后台上传队列 5 项：顺序处理、运行中追加与去重、先转 EPUB、取消与重试、不支持格式不阻塞队列）；类型检查、构建通过。\n- 端到端：冒烟测试通过；上传私人书库测试改为后台流程（开始上传后关窗口、切到设置页，进度卡片持续显示，完成提示与重试失败正确），9 步全部通过。\n\n## 已知限制\n\n- 正在上传的那一本无法中途取消，传完后才停止。\n- 应用被系统彻底结束（或关闭网页标签页）后，后台上传会中断，需要重新开始。\n- Android 仍为实验性 arm64 包。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.10.0-1.x86_64.rpm",
-            "size": 28905575,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead-1.10.0-1.x86_64.rpm"
+            "name": "LightRead-1.10.1-1.x86_64.rpm",
+            "size": 28908725,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead-1.10.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.10.0_aarch64.dmg",
-            "size": 22331175,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_aarch64.dmg"
+            "name": "LightRead_1.10.1_aarch64.dmg",
+            "size": 22335434,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.10.0_amd64.AppImage",
-            "size": 104745464,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_amd64.AppImage"
+            "name": "LightRead_1.10.1_amd64.AppImage",
+            "size": 104741368,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.10.0_amd64.deb",
-            "size": 28906062,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_amd64.deb"
+            "name": "LightRead_1.10.1_amd64.deb",
+            "size": 28910044,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_amd64.deb"
           },
           {
-            "name": "LightRead_1.10.0_x64-setup.exe",
-            "size": 17038315,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_x64-setup.exe"
+            "name": "LightRead_1.10.1_x64-setup.exe",
+            "size": 17041507,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.10.0_x64.dmg",
-            "size": 23577596,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_x64.dmg"
+            "name": "LightRead_1.10.1_x64.dmg",
+            "size": 23581535,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_1.10.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 22256705,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_aarch64.app.tar.gz"
+            "size": 22258091,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.10.0_android_arm64.apk",
-            "size": 70580840,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk"
+            "name": "LightRead_v1.10.1_android_arm64.apk",
+            "size": 70584688,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.10.0_android_arm64.apk.json",
+            "name": "LightRead_v1.10.1_android_arm64.apk.json",
             "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.10.0_android_arm64.apk.sha256",
+            "name": "LightRead_v1.10.1_android_arm64.apk.sha256",
             "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_v1.10.1_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23521555,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_x64.app.tar.gz"
+            "size": 23528051,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1074,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.1/SHA256SUMS"
           }
         ]
       },
@@ -1062,35 +1062,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-06T01:00:11Z",
+      "sourceUpdatedAt": "2026-10-06T04:44:44Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.25",
-        "tagName": "3.26.17-beta.25",
+        "name": "Pre-release 3.26.17-beta.26",
+        "tagName": "3.26.17-beta.26",
         "prerelease": true,
-        "publishedAt": "2026-10-04T09:19:32Z",
-        "createdAt": "2026-10-04T04:45:15Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式新增阅读正文简繁转换，并修复恢复备份与批量导入的两处问题。\n\n### 新增\n\n* 墨水屏模式：阅读正文支持简繁转换——在「排版 → 字体配置」中选择 关闭/繁转简/简转繁，点选后正文立即切换；与完整模式里同一个设置互通，改哪边两边都生效\n\n### 修复\n\n* 恢复备份：从备份恢复时，同一本书不再因为来源不同被重复添加成多本；在一台设备上换过源的书，恢复到其他设备后仍保持换源后的结果\n* 完整模式：修复一次性导入大量书籍（几千本）时可能闪退的问题",
+        "publishedAt": "2026-10-06T04:44:34Z",
+        "createdAt": "2026-10-06T03:52:25Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式优化了换源与字体选择列表，并新增汉王设备后台免疫模块（需 LSPosed）。\n\n### 新增\n\n* 墨水屏模式：换源列表第一位常驻当前书源——打开换源即可看到当前正在使用的书源（带「当前源」标记），重新搜索也不会消失；点击它会提示已是当前书源，搜索结果中也不再重复出现当前书源\n* 墨水屏模式：字体选择列表所见即所得——列表中每个字体都用它自己的字形显示名称和一段中英文示例文字，选中项有醒目的标记；列表按名称排序，更容易比较和找到想要的字体\n* 墨水屏模式：应用内置 LSPosed 模块「墨本阅读」——汉王设备上配合 LSPosed 启用本模块（作用域勾选 设置 + 桌面，重启后生效），回到桌面应用不再被桌面强制清理后台",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 290980057,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.25/mapping.txt"
+            "size": 291119077,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.25-arm64-v8a.apk",
-            "size": 20481202,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.25/moben-3.26.17-beta.25-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.26-arm64-v8a.apk",
+            "size": 20482228,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.25-armeabi-v7a.apk",
-            "size": 20021022,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.25/moben-3.26.17-beta.25-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.26-armeabi-v7a.apk",
+            "size": 20022048,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.25.apk",
-            "size": 27053665,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.25/moben-3.26.17-beta.25.apk"
+            "name": "moben-3.26.17-beta.26.apk",
+            "size": 27054690,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26.apk"
           }
         ]
       },
@@ -1284,7 +1284,7 @@
           },
           {
             "name": "阅读_magisk_3.26.092723.zip",
-            "size": 22644170,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.092723/%E9%98%85%E8%AF%BB_magisk_3.26.092723.zip"
           },
           {
