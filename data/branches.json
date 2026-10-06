@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T22:42:27.565Z",
+  "generatedAt": "2026-10-06T03:03:29.952Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47114,
+      "stars": 47115,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6367,
+      "stars": 6371,
       "sourceUpdatedAt": "2026-10-05T07:08:43Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2813,
+      "stars": 2815,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2194,
+      "stars": 2195,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1394,
+      "stars": 1398,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 388,
+      "stars": 391,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -413,7 +413,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 277,
+      "stars": 278,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -901,75 +901,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-05T09:56:14Z",
+      "sourceUpdatedAt": "2026-10-06T02:44:06Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.8.1",
-        "tagName": "v1.8.1",
+        "name": "LightRead 轻阅 v1.10.0",
+        "tagName": "v1.10.0",
         "prerelease": false,
-        "publishedAt": "2026-10-05T10:25:57Z",
-        "createdAt": "2026-10-05T09:56:12Z",
-        "body": "release: v1.8.1\n\n## 用户可见变化\n\n- 离线语音包下载：\n  - 在后台进行，离开阅读器不会中断，回到页面能看到当前进度（百分比和进度条），下完后在任何页面都会提示。\n  - 支持断点续传：中断后按钮显示「继续下载（已下 X/Y MB）」，换线路、换下载源、重启应用后都接着下，最后整体校验 SHA256。\n- 下载离线语音前会先评估设备：内存不足 6GB、处理器少于 4 线程、不支持 AVX2，或磁盘剩余不足 1GB 时，说明原因并建议使用在线语音，不提供下载。\n- 国内镜像生效：应用内更新和离线语音包在 GitHub 连不上时，自动改从 GitCode（gitcode.com/langgpt/LightRead）下载，所有文件都按 SHA256 校验。\n\n## 修复\n\n- Windows 上加载离线语音闪退后，再次打开应用仍然闪退：\n  - 现在下次启动会自动改用在线朗读，不再加载离线模型，并提示原因；听书面板可以「再试一次」或「改用在线语音」。\n  - 离线语音包残缺（例如上次解压被打断）时会被识别为未安装，不再加载坏文件；解压改为先放到临时目录，校验通过后再整体替换。\n  - Windows 用户名含中文时，离线语音引擎读不到模型文件的问题。\n  - 语音引擎改在更大栈的独立线程运行，避免长句导致崩溃。\n- 离开页面再回来重新下载语音包时，会同时开出两个下载，导致进度显示错乱。\n\n## 验证\n\n- 单元测试 23 组、Rust 测试 64 项全部通过，构建和三套 e2e（冒烟、WebDAV 同步、账号同步）通过。\n- 真实网络测试：\n  - 下到 73MB 时中断，续传完成并通过 SHA256 校验；\n  - 下载后解压到含中文的目录、替换残缺安装，合成正常；\n  - GitCode 镜像支持断点续传，v1.8.0 与离线语音包镜像都已逐个回下载校验。\n- Windows / macOS 的平台相关代码已做交叉编译检查。\n\n## 已知限制\n\n- 语音引擎内部的崩溃仍无法在进程内拦截，目前靠「闪退后自动停用并恢复」兜底；后续可把引擎放到独立子进程中彻底隔离。\n- 如果旧版本一打开就闪退，无法使用应用内更新，需要从 GitHub 或 GitCode 手动下载安装包覆盖安装；新版会自动识别并跳过残缺的语音包。\n- Android 仍为实验性 arm64 构建，只有使用固定签名的 v1.4.0 及之后的版本之间可以覆盖升级。\n\n",
+        "publishedAt": "2026-10-06T03:01:27Z",
+        "createdAt": "2026-10-06T02:44:04Z",
+        "body": "release: v1.10.0\n\n## 新功能\n\n- **转换为 EPUB**：藏书里的 MOBI、AZW、AZW3、FB2、FBZ、TXT、Markdown、HTML 可以一键转换成 EPUB（书卡按钮，或在「管理」中批量转换）。转出的新书沿用书名、作者、封面、标签和书单，阅读进度按百分比带过去，原书保留（划线笔记留在原书）。带 DRM 或损坏的文件会给出明确提示。\n- **添加书籍**：藏书「添加书籍」支持多选或拖入 EPUB、PDF、AZW/AZW3、MOBI；在书单中添加时自动收入该书单。\n- **上传到私人书库**：可把设备上的文件或已有藏书（按书单、置顶、书名筛选）上传到自建书库，支持单本、多选和整个书单，逐本显示进度，失败可单独重试，相同内容只存一份。可转换的格式默认先转成 EPUB 再上传。自建服务端的上传协议见 library-server/README.md 与《自建书库指南》。\n\n## 搜书更准\n\n- 中文维基文库只返回书名匹配的作品，不再出现判决书、公告、法规等文书；章节页归并到整本书，有多个版本的作品引导到原站选择。\n- 书名号《》和全角标点不再影响搜索。\n- Internet Archive 只保留书名或作者匹配的结果并按热度排序；Open Library 修复两个字的书名（活着、三体等）搜索报错；古登堡保持搜索顺序；GitHub 书名完全一致的排在最前。\n- 结果页：显示「搜索中」，没有结果的来源合并为一行，匹配更好的来源排在前面，限流和网络错误合并成一句提示，换词搜索不会混入上一次的结果。\n\n## 修复\n\n- 只有一个主题词的 EPUB 打开时报错。\n- 只有阅读百分比、没有具体位置的书，现在按百分比打开。\n- 手机上书卡菜单展开后不再遮挡删除按钮。\n\n## 验证\n\n- 26 组单元测试、Rust 上传测试 8 项、服务端上传测试全部通过；类型检查、构建通过。\n- 端到端：冒烟、WebDAV 同步、账号同步、格式转换、上传私人书库、公共书源六套全部通过。\n- 转换出的 EPUB 经 epubcheck 校验 0 错误 0 警告；11MB 的 FB2 约 3 秒转完。\n\n## 已知限制\n\n- PDF、DjVu、漫画是固定版式，不提供转换。\n- 格式转换在桌面版和 Android 上尚未做真机验证。\n- 公共书源中，简体搜索还找不到古登堡上的繁体中文书；在世作者的新书通常只能在自建书库中找到。\n- Android 仍为实验性 arm64 包。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.8.1-1.x86_64.rpm",
-            "size": 28882760,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead-1.8.1-1.x86_64.rpm"
+            "name": "LightRead-1.10.0-1.x86_64.rpm",
+            "size": 28905575,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead-1.10.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.8.1_aarch64.dmg",
-            "size": 22299511,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_1.8.1_aarch64.dmg"
+            "name": "LightRead_1.10.0_aarch64.dmg",
+            "size": 22331175,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.8.1_amd64.AppImage",
-            "size": 104733176,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_1.8.1_amd64.AppImage"
+            "name": "LightRead_1.10.0_amd64.AppImage",
+            "size": 104745464,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.8.1_amd64.deb",
-            "size": 28884306,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_1.8.1_amd64.deb"
+            "name": "LightRead_1.10.0_amd64.deb",
+            "size": 28906062,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.8.1_x64-setup.exe",
-            "size": 17009611,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_1.8.1_x64-setup.exe"
+            "name": "LightRead_1.10.0_x64-setup.exe",
+            "size": 17038315,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.8.1_x64.dmg",
-            "size": 23546765,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_1.8.1_x64.dmg"
+            "name": "LightRead_1.10.0_x64.dmg",
+            "size": 23577596,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_1.10.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 22225431,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_aarch64.app.tar.gz"
+            "size": 22256705,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.8.1_android_arm64.apk",
-            "size": 70542640,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_v1.8.1_android_arm64.apk"
+            "name": "LightRead_v1.10.0_android_arm64.apk",
+            "size": 70580840,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.8.1_android_arm64.apk.json",
-            "size": 388,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_v1.8.1_android_arm64.apk.json"
+            "name": "LightRead_v1.10.0_android_arm64.apk.json",
+            "size": 390,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.8.1_android_arm64.apk.sha256",
-            "size": 101,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_v1.8.1_android_arm64.apk.sha256"
+            "name": "LightRead_v1.10.0_android_arm64.apk.sha256",
+            "size": 102,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_v1.10.0_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23493508,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/LightRead_x64.app.tar.gz"
+            "size": 23521555,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
-            "size": 1065,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.8.1/SHA256SUMS"
+            "size": 1074,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.10.0/SHA256SUMS"
           }
         ]
       },
@@ -1062,7 +1062,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-05T16:29:15Z",
+      "sourceUpdatedAt": "2026-10-06T01:00:11Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.25",
