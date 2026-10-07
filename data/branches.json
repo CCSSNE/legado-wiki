@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T16:35:22.495Z",
+  "generatedAt": "2026-10-07T22:02:17.345Z",
   "branches": [
     {
       "id": "c",
@@ -9,21 +9,21 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 161,
-      "sourceUpdatedAt": "2026-10-07T16:20:37Z",
+      "stars": 162,
+      "sourceUpdatedAt": "2026-10-07T17:31:53Z",
       "githubArchived": false,
       "release": {
-        "name": "v3.26.100716",
-        "tagName": "v3.26.100716",
+        "name": "v3.26.100717",
+        "tagName": "v3.26.100717",
         "prerelease": false,
-        "publishedAt": "2026-10-07T16:13:47Z",
+        "publishedAt": "2026-10-07T17:14:03Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "阅读C 本次更新（bug 修复与必要更新合集，无新增功能）：\n\n备份与恢复\n- 备份打包清单只含实际落盘文件，空表不再导致整次备份失败；备份加密失败即中止，不再写出半加密包。\n- 恢复 DB 段整体事务化，任一步失败整库回滚，杜绝半恢复态；损坏的备份条目直接报错中止，不再静默跳过。\n- 恢复书籍按身份（书名+作者+媒体类型）收敛，两台设备选了不同书源的同一本书不再出现重复条目；配图按最终落库重映射，跨源配图丢弃。\n\n阅读进度同步\n- 云端进度拉取区分“云端无文件”与“拉取失败”，网络抖动不再用本地旧进度反向覆盖云端新进度。\n- 下载成功但内容损坏的进度文件不再被当成无进度；数字字段严格校验，错误类型不再被静默归零。\n- 阅读进度仅在上传成功后推进同步水位；“拉取/覆盖云端进度”菜单项改常驻，不再时有时无。\n\n日夜切换\n- 日夜间切换整体修复，夜间覆盖与后续界面解析始终同步；阅读页跟随系统日夜翻转就地刷新，不再重建。\n\n朗读\n- 朗读跟随四点修复：确认切换后短路防双击拽页、翻页动画中不跟随、跟随进度落库、滚动模式不重置页偏移。\n- 朗读服务启动改为串行准备并在主线程确认令牌，关闭旧请求压掉新请求状态的竞态；书源音频速度非法输入改为提示不再崩溃服务进程。\n- 朗读悬浮窗非法位置改为清除陈旧避让区并重算，不再崩溃或残留避让。\n\n评论\n- 评论楼中楼兜底强展：结构定位加文本兜底两段式展开，防重入标记，连续无新展开即收口。\n- 阅读刷新真正提交评论下载任务，不再只打待刷新标记等自动下载顺带消费。\n\n换源\n- 换源对话框点击当前书源行改为 toast 提示，不再静默无反应；书源已被删除时提示并返回，不再无反应。\n- 批量换源书籍与目录原子保存，补删旧记录，不再残留重复书；同址更新不再触发级联清空章节。\n\n主题与设置\n- 日夜同名主题按名称加夜间标志双键匹配，不再互相覆盖丢配色。\n- 偏好行文字明暗按卡片实际绘制表面判定，中灰主题不再白字配浅卡。\n\n其它\n- 本地书 Mobi 描述符统一关闭，解析失败不再滞留文件句柄；文本目录并发补锁；截图迟到回调回收位图；同书址刷目录改走更新，保留章节与快捷入口；删除 4 处已证伪的死代码与零引用字符串。\n",
+        "body": "阅读C 本次更新（bug 修复与必要更新合集，无新增功能）：\n\n签名变更\n- 公开版正式 APK 改用仓库 signing/debug.keystore 签名，不再使用 SDK 自带 debug 签名；官方证书 SHA-256 见 README 签名说明，可用 apksigner verify --print-certs 核对。\n- 签名已更换，旧版（SDK 签名）无法直接覆盖安装新版，需先卸载旧版再安装；v3.26.100716（SDK 签名）已下架。\n\n\n备份与恢复\n- 备份打包清单只含实际落盘文件，空表不再导致整次备份失败；备份加密失败即中止，不再写出半加密包。\n- 恢复 DB 段整体事务化，任一步失败整库回滚，杜绝半恢复态；损坏的备份条目直接报错中止，不再静默跳过。\n- 恢复书籍按身份（书名+作者+媒体类型）收敛，两台设备选了不同书源的同一本书不再出现重复条目；配图按最终落库重映射，跨源配图丢弃。\n\n阅读进度同步\n- 云端进度拉取区分“云端无文件”与“拉取失败”，网络抖动不再用本地旧进度反向覆盖云端新进度。\n- 下载成功但内容损坏的进度文件不再被当成无进度；数字字段严格校验，错误类型不再被静默归零。\n- 阅读进度仅在上传成功后推进同步水位；“拉取/覆盖云端进度”菜单项改常驻，不再时有时无。\n\n日夜切换\n- 日夜间切换整体修复，夜间覆盖与后续界面解析始终同步；阅读页跟随系统日夜翻转就地刷新，不再重建。\n\n朗读\n- 朗读跟随四点修复：确认切换后短路防双击拽页、翻页动画中不跟随、跟随进度落库、滚动模式不重置页偏移。\n- 朗读服务启动改为串行准备并在主线程确认令牌，关闭旧请求压掉新请求状态的竞态；书源音频速度非法输入改为提示不再崩溃服务进程。\n- 朗读悬浮窗非法位置改为清除陈旧避让区并重算，不再崩溃或残留避让。\n\n评论\n- 评论楼中楼兜底强展：结构定位加文本兜底两段式展开，防重入标记，连续无新展开即收口。\n- 阅读刷新真正提交评论下载任务，不再只打待刷新标记等自动下载顺带消费。\n\n换源\n- 换源对话框点击当前书源行改为 toast 提示，不再静默无反应；书源已被删除时提示并返回，不再无反应。\n- 批量换源书籍与目录原子保存，补删旧记录，不再残留重复书；同址更新不再触发级联清空章节。\n\n主题与设置\n- 日夜同名主题按名称加夜间标志双键匹配，不再互相覆盖丢配色。\n- 偏好行文字明暗按卡片实际绘制表面判定，中灰主题不再白字配浅卡。\n\n其它\n- 本地书 Mobi 描述符统一关闭，解析失败不再滞留文件句柄；文本目录并发补锁；截图迟到回调回收位图；同书址刷目录改走更新，保留章节与快捷入口；删除 4 处已证伪的死代码与零引用字符串。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.100716_10898.apk",
-            "size": 39598838,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.100716/legado_oss_3.26.100716_10898.apk"
+            "name": "legado_oss_3.26.100717_10901.apk",
+            "size": 39598825,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.100717/legado_oss_3.26.100717_10901.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47111,
+      "stars": 47110,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,36 +85,36 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6397,
-      "sourceUpdatedAt": "2026-10-07T13:56:02Z",
+      "stars": 6399,
+      "sourceUpdatedAt": "2026-10-07T21:25:56Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.44",
-        "tagName": "3.26.16-beta.44",
+        "name": "Pre-release 3.26.16-beta.45",
+        "tagName": "3.26.16-beta.45",
         "prerelease": true,
-        "publishedAt": "2026-10-02T17:31:28Z",
-        "createdAt": "2026-10-02T17:17:59Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 一直发beta好舒服啊\n* feat: 朗读的另外一个崩溃问题",
+        "publishedAt": "2026-10-07T21:25:41Z",
+        "createdAt": "2026-10-07T21:02:42Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 阅读优化\n* feat: AI 供应商支持自定义请求头\n* feat: 发现优化\n* feat: 优化了和阅读兄弟姐妹的备份兼容性\n* build: google-services.json 回到官方那一份\n* fix(readaloud): 胶囊与配音页挑的音色要写进绑定，池要写进本书记忆\n* fix(ai): 流式回包停在半路时取消要真能取消\n* Bump web v3.26.100623\n* feat: 添加章节切换冷却时间，防止十字键抖动导致连切多章\n* fix(search): 修复书源人机验证后搜索中断未继续搜索的问题\n* test(整本书翻页估算): 等过期精确页数删除落地后再断言\n* fix(lint): 把 9 条 Compose lint error 改成配置感知写法\n* build: 去掉本地专包的 applicationIdSuffix，回到官方包名\n* fix: 关闭分组的\"允许下拉刷新\"后仍可下拉刷新\n* refactor: 收敛 R125 三处改动的写法与守卫口径\n* revert(tts): 撤回对 httpTTS_cache 的额外清理\n* fix(nav): 朗读通知回到阅读页不再叠出第二个阅读页\n* fix(read): 开书首帧不再把上一本书的正文排进这本书的面板\n* fix(tts): 即听即焚补上起手与逐句两个触发点\n* perf(read): 定位流从阅读屏整屏状态里摘出去\n* perf(book): 开书与详情页转场期间不再逐帧重建整页状态\n* Bump web v3.26.100422\n* feat: 优化手柄配置，添加摇杆死区和扳机判定，改进滚动体验\n* feat: 添加LT和RT按钮支持，增强手柄翻页功能\n* fix: 设置类页面静止时每帧空转重组\n* style: 我们自己的 49 个文件里注释只写作用与依赖\n* style(readaloud): 注释只写当前作用与依赖，去掉轮次与事故叙述\n* fix(player): 朗读设置的\"回来\"只认自己推上去的那个子页\n* fix(player): 朗读设置的 tab 记在宿主上，从「引擎与音色」进去回来仍停在引擎与音色\n* fix(player): 从朗读设置进子页不再先露阅读页，返回也回到朗读设置\n* fix(readaloud): 念不出东西的朗读单元不进队列，命中处不再垫一段 1.2 秒静音\n* fix(readaloud): 变声器两层的提前量按各自生效点重排\n* fix(readstyle): 补 translate 的 import（上一条提交编译不过）\n* fix(readstyle): 规则预览按内容外接框贴左上，示例句不再掉到卡片下方偏右\n* fix(readaloud): 命中前的缩进空格不再单独成块，命中处不再先播一段空音频\n* Revert \"第一百零六、一百零七轮：预合成覆盖本章 + 音效排期与耗时日志\"\n* fix(readaloud): 现场合成耗时这行归因日志不依赖「记录日志」开关\n* fix(readaloud): 音效按刚开始播的这一格排，不再晚一整句\n* perf(readaloud): 预合成覆盖正在读的这一章，系统音色也参与\n* Revert \"正则角色：R89 起的整条排查改动\"\n* refactor(readaloud): 撤掉正则角色这几轮加的诊断日志\n* fix(readaloud): 正则角色编译入口去掉两端空白，粘贴带进来的换行不再让规则永远不命中\n* fix(readaloud): 正则角色匹配直接走平台正则，并探针现对象与重编结果\n* chore(readaloud): 正则角色 0 命中时分段计数，定位丢在匹配还是裁切\n* fix(readaloud): 正则角色改在原文上匹配，不再被标记抹平擦掉命中\n* fix(readaloud): 正则角色的整章匹配不再依赖朗读单元的绝对坐标\n* fix(readaloud): 正则角色改按整章坐标匹配，跨句括号内容终于能命中\n* fix(readaloud): 正则角色按整段匹配，跨句的括号内容不再整章 0 命中\n* feat(readaloud): 正则角色的命中数与顶到音色数分开计\n* fix(readaloud): 一句合成失败先试备用音色，都不行才落无声音频\n* fix(readaloud): 正则角色的引擎升级不再被「多角色朗读」开关拦住\n* feat(readaloud): 正则角色 0 命中时按字符给出归因\n* feat(readaloud): 正则角色不生效时给出可归因证据\n* feat(nav): 书内子页改用自带位移与返回处理的覆盖层场景\n* fix(morph): 内容层的点击闸门改按透明度放行，不再等弹簧正好收敛\n* Revert \"fix(nav): 从阅读页打开的 10 个书籍子页把阅读页整页销毁\"\n* fix(nav): 从阅读页打开的 10 个书籍子页把阅读页整页销毁\n* fix(readaloud): 正则角色选的音色没算进引擎选型，命中处被直读过滤成默认音色\n* fix(readaloud): 朗读日志页同一毫秒的重复日志把 LazyColumn key 撞崩\n* fix(nav): 补回合并上游时丢掉的三处接线，并守住路由注册表\n* R85: AI 分配按别名拆身份，把角色的气泡弄没了\n* R84: 正则角色变声器+试听、心声默认变声、AI 分配范围与中断续跑、两套导入导出\n* R83: 钉底预览按实测高度给列表留底，配乐改名接上界面\n* R82: 批量 FAB 按实测坐标归位，胶囊设置预览改成钉底不滚走\n* R81: 占位胶囊图标与角色那颗共用居中落点，批量 FAB 归位\n* R80: 音色批量操作改右下角折叠菜单，未分配胶囊改正方形\n* R79: 长按菜单加「插入(前)/插入(后)」手动分配背景音乐场景\n* R78: 背景音乐的淡出不再被进度回调自己掐断\n* R77: 正则角色加「使用正则匹配」开关\n* R76: 新代码整理——注释只留作用与跨文件依赖，删掉死方法\n* R75: 音效改由媒体时钟排到命中处，并提前备好播放器\n* R74: 音效不再拆朗读单元；变声提前量按层拆开；撤掉冲管线\n* R72-R73: 正则角色的分组树与全局生效、音效轨不占主线程、变声器边界改冲管线\n* R71: 正则角色的池只是筛选 + 列表拖动排序 + 同一句不再重复请求 TTS\n* R70: 胶囊头像只有一条落点 + 新增「正则角色管理」\n* R69: 撤回 R63-E 折页性能优化与 R63-F 叠页动画，仿真翻页画法回 R62\n* R68 补: 折页分支在离屏图层之外再直接垫画一份当前页\n* R68: 仿真翻页隔帧闪烁——折页 Path 退回每帧新建\n* R67 追加: 图片大小对九宫格真正生效（整张图放大，带子上下对称分那一截）\n* R67: 九宫格四条边共用一个倍率，预览里被压扁的图案恢复等比\n* R64-R66: 封面 morph 跑完 420ms、九宫格纵向零拉伸、翻页与书架卡顿量化\n* R63: 九宫格纵向改等比缩放、转场与仿真翻页的每帧代价、胶囊三开关、新增叠页\n* R62: 九宫格切线放开 + 气泡任何设置都优先 + 预览沿用正文排版\n* R61: 角色气泡补齐成高亮规则那一整套，背景图不再被垃圾回收删掉\n* R60: 刷新正文不再删缓存、预览钉死示例段、角色气泡、记忆双向同步\n* R59: 胶囊回到气泡上面，九宫格拼缝改用 0.5px 叠压 + 关抗锯齿\n* R58: 预览改走正文同一套排版与绘制，气泡不再被后画的层切出直边\n* R57: 命中字距的空隙不许被背景框吞掉\n* fix: 高亮背景图只做装饰（不参与排版）、胶囊不再裁断气泡、长度偏移拆左右\n* test: 把朗读划分与设置映射的单测对齐 fork 口径\n* fork snapshot r49m: multi-role cast pipeline (voice pool / BGM / capsule / download / avatar) before upstream merge",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.44-arm64-v8a.apk",
-            "size": 20117877,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.44/legado-3.26.16-beta.44-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.45-arm64-v8a.apk",
+            "size": 20771393,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.45/legado-3.26.16-beta.45-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.44-armeabi-v7a.apk",
-            "size": 19657704,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.44/legado-3.26.16-beta.44-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.45-armeabi-v7a.apk",
+            "size": 20311217,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.45/legado-3.26.16-beta.45-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.44.apk",
-            "size": 26690388,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.44/legado-3.26.16-beta.44.apk"
+            "name": "legado-3.26.16-beta.45.apk",
+            "size": 27343894,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.45/legado-3.26.16-beta.45.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 279444502,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.44/mapping.txt"
+            "size": 293259106,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.45/mapping.txt"
           }
         ]
       },
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2827,
+      "stars": 2828,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1417,
+      "stars": 1418,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 604,
+      "stars": 603,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -697,7 +697,7 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 118,
-      "sourceUpdatedAt": "2026-09-25T17:55:57Z",
+      "sourceUpdatedAt": "2026-10-07T17:20:08Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.092601",
@@ -1107,35 +1107,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-06T18:22:46Z",
+      "sourceUpdatedAt": "2026-10-07T20:24:09Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.26",
-        "tagName": "3.26.17-beta.26",
+        "name": "Pre-release 3.26.17-beta.27",
+        "tagName": "3.26.17-beta.27",
         "prerelease": true,
-        "publishedAt": "2026-10-06T04:44:34Z",
-        "createdAt": "2026-10-06T03:52:25Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新为墨水屏模式优化了换源与字体选择列表，并新增汉王设备后台免疫模块（需 LSPosed）。\n\n### 新增\n\n* 墨水屏模式：换源列表第一位常驻当前书源——打开换源即可看到当前正在使用的书源（带「当前源」标记），重新搜索也不会消失；点击它会提示已是当前书源，搜索结果中也不再重复出现当前书源\n* 墨水屏模式：字体选择列表所见即所得——列表中每个字体都用它自己的字形显示名称和一段中英文示例文字，选中项有醒目的标记；列表按名称排序，更容易比较和找到想要的字体\n* 墨水屏模式：应用内置 LSPosed 模块「墨本阅读」——汉王设备上配合 LSPosed 启用本模块（作用域勾选 设置 + 桌面，重启后生效），回到桌面应用不再被桌面强制清理后台",
+        "publishedAt": "2026-10-07T20:23:55Z",
+        "createdAt": "2026-10-07T20:09:49Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新墨水屏模式落地自动翻页节奏、弹窗样式与独立字体设置三项改进，完整模式合入上游朗读多角色配音套件，Web 阅读端支持手柄翻页，并修复多项问题。\n\n### 新增\n\n* 墨水屏模式：自动翻页按页面内容量调节等待——本页内容不满一屏时，等待时间按实际内容占比缩短，不再每页都等满时长（最短保留 1 秒，防墨水屏高频刷新）\n* 墨水屏模式：确认弹窗按钮改为格线样式——按钮之间以细线分隔、按压时整格反白，双按钮一横一竖、三个动作两横一竖，墨水屏下更清晰\n* 墨水屏模式：新增独立字体设置页——「我的」中设置应用界面字体（含系统预设与自定义字体，选择后自动定位反显）；阅读器内打开则进入阅读字体选择，两处入口各自生效\n* 完整模式：朗读多角色配音——正则角色按规则匹配角色并绑定音色，也可让 AI 自动分配；支持音色池、变声器、背景音乐与音效、角色悬浮胶囊与头像等一整套设置\n* Web 阅读端：支持手柄翻页——LT/RT 扳机键翻页，摇杆死区与扳机判定优化；十字键加冷却防抖，抖动不再一次连跳多章\n\n### 修复\n\n* 完整模式：书源人机验证完成后自动继续之前的搜索，不再中断\n* 完整模式：分组关闭「允许下拉刷新」后不再能下拉刷新\n* 完整模式：修复开书瞬间可能闪现上一本书正文、朗读通知点回阅读页叠出两层阅读页、高亮规则预览示例句位置偏移等问题\n\n### 优化\n\n* 完整模式：开书与详情页转场更流畅，设置类页面静止时不再空转耗电",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 291119077,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/mapping.txt"
+            "size": 304878311,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.27/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.26-arm64-v8a.apk",
-            "size": 20482228,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.27-arm64-v8a.apk",
+            "size": 21098174,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.27/moben-3.26.17-beta.27-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.26-armeabi-v7a.apk",
-            "size": 20022048,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.27-armeabi-v7a.apk",
+            "size": 20637979,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.27/moben-3.26.17-beta.27-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.26.apk",
-            "size": 27054690,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.26/moben-3.26.17-beta.26.apk"
+            "name": "moben-3.26.17-beta.27.apk",
+            "size": 27670622,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.27/moben-3.26.17-beta.27.apk"
           }
         ]
       },
