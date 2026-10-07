@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:46:33.354Z",
+  "generatedAt": "2026-10-07T16:35:22.495Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 161,
-      "sourceUpdatedAt": "2026-10-05T07:33:42Z",
+      "sourceUpdatedAt": "2026-10-07T16:20:37Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读C v3.26.091403（10897）",
-        "tagName": "v3.26.091403",
+        "name": "v3.26.100716",
+        "tagName": "v3.26.100716",
         "prerelease": false,
-        "publishedAt": "2026-09-14T04:18:29Z",
+        "publishedAt": "2026-10-07T16:13:47Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "## 阅读C v3.26.091403（10897）\n\n### 评论数据分页抓取与下载控制\n\n- 评论下载接入分页抓取并拆分各阶段独立控制：数据接口支持 idea_comment 段评及楼中楼分页，章评、书评自动选择网页快照，可选强制数据接口或网页快照，执行失败不自动切换引擎。\n- 新增评论下载设置：评论数据、楼中楼、离线资源、网页快照页面、快照重处理五路并发配额，评论/回复每页请求数量、网页稳定检测间隔与确认轮数、各阶段超时、请求失败重试次数与退避方式（固定/线性/指数）均可调。\n- 新增下载要求开关：头像、评论图片、样式表、字体失败即标记部分快照，可关闭；支持复用接口内嵌完整回复与已缓存公共资源。\n- 书源新增评论数据协议声明（snapshotProtocol：留空自动识别，idea_comment 支持段评及楼中楼）。\n\n交流群 1101873338，好用的话点个 star，谢谢啦。\n",
+        "body": "阅读C 本次更新（bug 修复与必要更新合集，无新增功能）：\n\n备份与恢复\n- 备份打包清单只含实际落盘文件，空表不再导致整次备份失败；备份加密失败即中止，不再写出半加密包。\n- 恢复 DB 段整体事务化，任一步失败整库回滚，杜绝半恢复态；损坏的备份条目直接报错中止，不再静默跳过。\n- 恢复书籍按身份（书名+作者+媒体类型）收敛，两台设备选了不同书源的同一本书不再出现重复条目；配图按最终落库重映射，跨源配图丢弃。\n\n阅读进度同步\n- 云端进度拉取区分“云端无文件”与“拉取失败”，网络抖动不再用本地旧进度反向覆盖云端新进度。\n- 下载成功但内容损坏的进度文件不再被当成无进度；数字字段严格校验，错误类型不再被静默归零。\n- 阅读进度仅在上传成功后推进同步水位；“拉取/覆盖云端进度”菜单项改常驻，不再时有时无。\n\n日夜切换\n- 日夜间切换整体修复，夜间覆盖与后续界面解析始终同步；阅读页跟随系统日夜翻转就地刷新，不再重建。\n\n朗读\n- 朗读跟随四点修复：确认切换后短路防双击拽页、翻页动画中不跟随、跟随进度落库、滚动模式不重置页偏移。\n- 朗读服务启动改为串行准备并在主线程确认令牌，关闭旧请求压掉新请求状态的竞态；书源音频速度非法输入改为提示不再崩溃服务进程。\n- 朗读悬浮窗非法位置改为清除陈旧避让区并重算，不再崩溃或残留避让。\n\n评论\n- 评论楼中楼兜底强展：结构定位加文本兜底两段式展开，防重入标记，连续无新展开即收口。\n- 阅读刷新真正提交评论下载任务，不再只打待刷新标记等自动下载顺带消费。\n\n换源\n- 换源对话框点击当前书源行改为 toast 提示，不再静默无反应；书源已被删除时提示并返回，不再无反应。\n- 批量换源书籍与目录原子保存，补删旧记录，不再残留重复书；同址更新不再触发级联清空章节。\n\n主题与设置\n- 日夜同名主题按名称加夜间标志双键匹配，不再互相覆盖丢配色。\n- 偏好行文字明暗按卡片实际绘制表面判定，中灰主题不再白字配浅卡。\n\n其它\n- 本地书 Mobi 描述符统一关闭，解析失败不再滞留文件句柄；文本目录并发补锁；截图迟到回调回收位图；同书址刷目录改走更新，保留章节与快捷入口；删除 4 处已证伪的死代码与零引用字符串。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.091403_10897.apk",
-            "size": 35917656,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.091403/legado_oss_3.26.091403_10897.apk"
+            "name": "legado_oss_3.26.100716_10898.apk",
+            "size": 39598838,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.100716/legado_oss_3.26.100716_10898.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47114,
+      "stars": 47111,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6392,
-      "sourceUpdatedAt": "2026-10-05T07:08:43Z",
+      "stars": 6397,
+      "sourceUpdatedAt": "2026-10-07T13:56:02Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.44",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2825,
+      "stars": 2827,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1410,
+      "stars": 1417,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 602,
+      "stars": 604,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 397,
+      "stars": 399,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -507,45 +507,70 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 261,
-      "sourceUpdatedAt": "2026-10-07T04:08:16Z",
+      "sourceUpdatedAt": "2026-10-07T09:48:18Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.10071148",
+        "name": "3.26.10071715",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-07T04:08:17Z",
-        "createdAt": "2026-10-07T03:05:29Z",
-        "body": "## 更新日志\n- chore(proguard): 收窄 zxing keep 到编码面, release 裁掉二维码解析面      (3b17f4c80)\n- fix(compat): 清编译 warning (catvod 壳与兼容层弃用标注)                  (e883a7483)\n- feat(plugin): 插件源筛选接入发现页与搜索页, 会话随页面持有               (ee44a4cdd)\n- feat(search): 按源分类区块内显示搜索 url 可配置项, 点选只重搜该源        (e2b530747)\n- refactor(search): 聚合结果列表改为按源分组纯派生                         (bd7e99501)\n- fix(tvbox): 修 TVBox 桥接/委派/发现分类审计缺陷                          (996201ebc)\n- fix(bookmark): 修书签导出审计缺陷                                        (c505d7318)\n- fix(read): 修阅读高亮投影审计缺陷                                        (2ab448654)\n- fix(extension): 修插件偏好持久化与恢复钩子审计缺陷                       (85e8bdf02)\n- fix(video): 修播放装载与格式重试审计缺陷                                 (5f6028836)\n- fix(network): 修 CF 挑战拦截审计缺陷                                     (04f987a0a)\n- test(tvbox): 加 js2Proxy 端到端环回验证                                  (5f58b4dbd)\n- feat(manga): 插件配置支持动作型偏好项                                    (d46f8018e)\n- test(tvbox): 加全站真播排查工具                                          (cd4e9a883)\n- fix(书源): 修冻结编辑页的下拉框参数接线                                  (3195420b0)\n- feat(read): 改划线为批注，新增自由选色与线型自选                         (cbcc86f2a)\n- refactor(source): 收敛插件取数委派为有序注册表                           (b45d5a8fa)\n- fix(ui): 统一四处对话框列表限高为 textAreaMaxHeight                      (274cda04b)\n- feat(书源): 冻结虚拟源编辑页规则字段, 启用与发现开关保持可改             (14a18c2d2)\n- fix(ui): 对齐 app 端对话框宿主高度锚为共享模块 0.8                       (fa9dd051c)\n",
+        "publishedAt": "2026-10-07T09:48:19Z",
+        "createdAt": "2026-10-07T08:52:52Z",
+        "body": "## 更新日志\n- refactor(tvbox): JS 桥 headers 兜底解析从 Gson 迁 kotlinx.serialization  (81b48171b)\n- fix(tvbox): 补 spider jar 直调 Gson 的 release keep 规则                 (38a3d64ff)\n- fix(proguard): 锚定 injekt/Gson 泛型反射子类, 修 release 包启动即崩      (61089fbf3)\n- feat(update): 恢复升级弹更新日志并接入四端启动序列                       (72e97671c)\n- fix(data): compose runtime 官方声明+ohos 替换, 修鸿蒙解析失败            (909d01739)\n- fix(ksoup): jsoup 门面 expect/actual 化, 修 ios/ohos native 编译         (6435592cc)\n- fix(desktop): proguard 忽略 apk-parser/dex2jar 可选依赖缺类              (66478488e)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 18717678,
+            "size": 18752432,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 18717678,
+            "size": 18752432,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 11652331,
+            "size": 11687085,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 11652331,
+            "size": 11687085,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 10937453,
+            "size": 10972207,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 10937453,
+            "size": 10972207,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
+          },
+          {
+            "name": "linux_x64.deb",
+            "size": 101976900,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
+          },
+          {
+            "name": "linux_x64.rpm",
+            "size": 108861888,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
+          },
+          {
+            "name": "macos_arm64.dmg",
+            "size": 113539031,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
+          },
+          {
+            "name": "windows_x64.msi",
+            "size": 104653329,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
+          },
+          {
+            "name": "windows_x64_portable.zip",
+            "size": 103429191,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
       },
@@ -773,7 +798,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 74,
+      "stars": 75,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -921,75 +946,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-07T03:26:36Z",
+      "sourceUpdatedAt": "2026-10-07T15:39:22Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.12.0",
-        "tagName": "v1.12.0",
+        "name": "LightRead 轻阅 v1.14.0",
+        "tagName": "v1.14.0",
         "prerelease": false,
-        "publishedAt": "2026-10-07T03:18:38Z",
-        "createdAt": "2026-10-07T03:03:35Z",
-        "body": "release: v1.12.0\n\n## 新功能\n\n- 互传：在自己的设备之间发送文字、链接和书。登录同一账号即可互传（单件最大 50 MB，保留 7 天，任意一台删除即全部删除）；没有账号时可经 WebDAV（坚果云等）互传；也可以生成 6 位取件码 / 二维码，临时传给任何设备，双方都不用登录（最大 20 MB，10 分钟或 1 小时后过期，最多取 10 次）。收到的文字可复制或存为 TXT，链接可打开或导入，书可直接导入并打开；阅读时选中文字、书卡片上都能「发送到其他设备」。入口：桌面侧栏「互传」，手机在藏书「导入」菜单和设置的同步区。\n- 书单推荐：书源页新增 10 个推荐书单（哲学入门、马克思主义原典、西方文学公版经典、中国古典名著、科学史与科普、经济学、义务教育语文课标推荐读物、茅盾文学奖、雨果奖、布克奖），每个书单注明数据来源。逐本显示是否已在藏书，「找书」就地搜索并下载，可一键「全部加入我的书单」，并可外链豆瓣查看。\n- 书单支持「待找」的书：还没有的书也能放进书单，之后导入或下载到匹配的书会自动归入（含原名匹配）；书单可分享为文件或文字清单，也可导入别人的书单。待找条目随多端同步，书单也纳入整库备份。\n- 竖屏阅读：手机、iPad、Surface 等竖屏时默认单栏连续滚动，横屏仍是双栏；竖屏两侧边距大幅收窄，正文铺满屏宽；旋转屏幕保持阅读位置。排版设置里可关闭「竖屏时单页滚动」。PDF 竖屏时单页连续滚动，DjVu 支持上下滑动翻页。\n- 手机上的自动翻页：滚动模式下改为平滑自动滚动（约 N 秒一屏，跨章继续），点按暂停 / 继续，手指按住时暂停、松手继续；新增底部迷你控制条（暂停、快慢、退出）；阅读模式面板的按钮在触屏上加大。\n\n## 改进\n\n- 书源页整体改版：通栏搜索框与「搜索范围」选择；搜索结果按来源分组，每组先显示 6 条、可展开，搜索中显示占位，GitHub 结果新增「下载到藏书」按钮；书源卡片显示域名与已保存账号标记，新增「连接自己的书库」入口；下载网站与 GitHub 书库区块更紧凑；深色模式与手机布局同步调校。\n- 进入书源目录时回到页面顶部（修复手机上返回按钮被滚出屏幕）；书源连接失败时显示可读的提示，不再是「Failed to fetch」。\n- 排版面板字号一行在窄屏上不再溢出。\n\n## 验证\n\n- 单元测试 22 组全部通过（含新增互传 15、二维码 9、书单 15；同步合并 40、同步引擎 10、阅读器页码 14、阅读模式 41）；账号后端接口测试 33 项通过。\n- 端到端：冒烟 35 项、公共书源、书单、WebDAV 同步 11 步、互传 10 步（账号 / WebDAV / 取件码）全部通过；手机、iPad、Surface 横竖屏浏览器实测。\n- 账号后端已部署，生产环境取件码文字与文件收发、撤回自检通过。\n\n## 已知限制\n\n- 互传通过定时查询收取，账号约 30 秒、WebDAV 约 2 分钟到达，不是即时推送；内容经 HTTPS 传输，服务器上不做端到端加密，取件码只适合传不敏感的内容。\n- 桌面 / 安卓上生成的取件码链接暂时打开的是文字说明（按说明在轻阅「互传」里输入取件码即可）。\n- 打字机模式下尚未打出的文字，行尾偶尔会出现断字连字符。\n- 2026 年雨果奖、2025 年布克奖条目来自新闻报道，尚未独立核实。\n- 竖屏、互传、自动滚动均为浏览器模拟测试，真机验收待补。\n\n",
+        "publishedAt": "2026-10-07T15:37:54Z",
+        "createdAt": "2026-10-07T14:52:49Z",
+        "body": "release: v1.14.0\n\n## 新功能\n\n- 点睛阅读合二为一：模式面板顶部只有一个「点睛阅读」，打开后选「基础」或「智能」。基础版按词分色，断句一眼看清，不联网、打开即用；智能版由 AI 先替你读一遍，把关键概念和金句点出来。智能版暂时用不了时，一键「先用基础版」。按 D 键开关时会提示当前用的是哪一版。原先单独的「实验 · 仿生阅读」并入基础版。\n- 手机上直接更新：安卓 App 里点更新，新版本在应用内下载，进度看得见，下完自动打开安装；GitHub 慢或打不开时自动换国内镜像（GitCode）；安装前核对文件完整性。第一次需要允许「安装未知应用」，轻阅会直接带你去那个设置页，回来接着装。手机浏览器里下载安装包时，GitHub 打不开也会自动换国内镜像链接。\n\n## 改进\n\n- 全部界面文案重写：用读者的话说清好处，统一叫法（藏书、私人书库、划线、添加书籍……），去掉技术术语和原始报错，每个出错提示都告诉你下一步怎么办。\n- 自动翻页 / 自动滚动速度改为 100 档，从「极慢」到「极快」，默认「适中」在正中间；刻度可点，也能拖到任意一档。\n- 刻度滑动条的可调范围更宽：听书语速 0.5× – 3×，点睛基础版的明显程度可以调得更淡或更浓。\n- 点睛基础版默认颜色改为玫瑰色。\n- PDF 听书的语速也换成同款刻度滑动条。\n\n## 修复\n\n- 自带目录只有一项的书（例如从研辞问典导入的古籍），点目录会跳回扉页。\n- 「阿Q」这类中英文混写的词，着色时会把后面的汉字连在一起。\n\n## 验证\n\n- 单元测试 32 组全部通过（598 项）。\n- 端到端：冒烟 35 项、跨章连续滚动、公共书源（连续 3 次）、书单、文件夹导入、格式转换、WebDAV 同步 11 步全部通过。\n- 安卓 App（K30 Pro，Android 12）真机：GitHub 起步过慢时 10 秒内自动切到国内镜像，68 MB 约 8 秒下完，授权后自动续装成功，数据完整保留。\n\n## 已知限制\n\n- 已在用「书单推荐」「互传」或点睛阅读的用户，升级后设置会自动迁移；智能版仍按书单独开启。\n- 安卓 App 的应用内更新从这一版开始生效：旧版本仍需按原方式更新到 v1.14.0。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.12.0-1.x86_64.rpm",
-            "size": 29157907,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead-1.12.0-1.x86_64.rpm"
+            "name": "LightRead-1.14.0-1.x86_64.rpm",
+            "size": 29752781,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead-1.14.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.12.0_aarch64.dmg",
-            "size": 22578704,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_1.12.0_aarch64.dmg"
+            "name": "LightRead_1.14.0_aarch64.dmg",
+            "size": 23173835,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.12.0_amd64.AppImage",
-            "size": 105036280,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_1.12.0_amd64.AppImage"
+            "name": "LightRead_1.14.0_amd64.AppImage",
+            "size": 105597432,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.12.0_amd64.deb",
-            "size": 29158820,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_1.12.0_amd64.deb"
+            "name": "LightRead_1.14.0_amd64.deb",
+            "size": 29754382,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.12.0_x64-setup.exe",
-            "size": 17298117,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_1.12.0_x64-setup.exe"
+            "name": "LightRead_1.14.0_x64-setup.exe",
+            "size": 17903654,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.12.0_x64.dmg",
-            "size": 23822408,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_1.12.0_x64.dmg"
+            "name": "LightRead_1.14.0_x64.dmg",
+            "size": 24422353,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 22505745,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_aarch64.app.tar.gz"
+            "size": 23102771,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.12.0_android_arm64.apk",
-            "size": 70876796,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_v1.12.0_android_arm64.apk"
+            "name": "LightRead_v1.14.0_android_arm64.apk",
+            "size": 71629336,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.12.0_android_arm64.apk.json",
+            "name": "LightRead_v1.14.0_android_arm64.apk.json",
             "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_v1.12.0_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.12.0_android_arm64.apk.sha256",
+            "name": "LightRead_v1.14.0_android_arm64.apk.sha256",
             "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_v1.12.0_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 23776100,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/LightRead_x64.app.tar.gz"
+            "size": 24365692,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1074,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.12.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/SHA256SUMS"
           }
         ]
       },
@@ -1126,7 +1151,7 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 14,
-      "sourceUpdatedAt": "2026-10-05T07:53:32Z",
+      "sourceUpdatedAt": "2026-10-07T12:12:07Z",
       "githubArchived": false,
       "release": {
         "name": "阅读SK 3.26.100515c (10081)",
@@ -1276,6 +1301,52 @@
       "forkOf": null
     },
     {
+      "id": "eink",
+      "name": "阅读E-ink",
+      "tag": "eink",
+      "repo": "legado-backup/eink",
+      "term": "legado-branch-eink",
+      "skipAutoForks": true,
+      "allowNoRelease": true,
+      "gitee": "lyj09x/legado",
+      "upstreamUrl": "https://gitee.com/lyj09x/legado",
+      "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
+      "stars": 3,
+      "sourceUpdatedAt": "2026-10-07T23:15:05+08:00",
+      "githubArchived": false,
+      "release": {
+        "name": "阅读_E-ink_3.26.100723",
+        "tagName": "阅读_E-ink_3.26.100723",
+        "prerelease": false,
+        "publishedAt": "2026-10-07T23:15:05+08:00",
+        "createdAt": "2026-10-07T23:15:05+08:00",
+        "body": "- 优化页面自适应屏幕\r\n- 首页统计周最高刻度",
+        "assets": [
+          {
+            "name": "阅读_E-ink_3.26.100723.apk",
+            "size": 20912200,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100723/%E9%98%85%E8%AF%BB_E-ink_3.26.100723.apk"
+          },
+          {
+            "name": "阅读_magisk_3.26.100723.zip",
+            "size": 22655081,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100723/%E9%98%85%E8%AF%BB_magisk_3.26.100723.zip"
+          },
+          {
+            "name": "阅读_E-ink_3.26.100723.zip",
+            "size": null,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100723.zip"
+          },
+          {
+            "name": "阅读_E-ink_3.26.100723.tar.gz",
+            "size": null,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100723.tar.gz"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
       "id": "iyuedu",
       "name": "i阅读",
       "tag": "iyuedu",
@@ -1292,54 +1363,6 @@
       "errors": [],
       "fork": false,
       "forkOf": null
-    },
-    {
-      "id": "eink",
-      "name": "阅读E-ink",
-      "tag": "eink",
-      "repo": "legado-backup/eink",
-      "term": "legado-branch-eink",
-      "skipAutoForks": true,
-      "allowNoRelease": true,
-      "gitee": "lyj09x/legado",
-      "upstreamUrl": "https://gitee.com/lyj09x/legado",
-      "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
-      "stars": null,
-      "sourceUpdatedAt": null,
-      "githubArchived": false,
-      "release": {
-        "name": "阅读_E-ink_3.26.100712",
-        "tagName": "阅读_E-ink_3.26.100712",
-        "prerelease": false,
-        "publishedAt": "2026-10-07T12:18:06+08:00",
-        "createdAt": "2026-10-07T12:18:06+08:00",
-        "body": "- 不再对国文特性更新\r\n- 页眉页脚可点击返回\r\n- 新增主页并优化页面\r\n- 新增权限提示并跳转",
-        "assets": [
-          {
-            "name": "阅读_E-ink_3.26.100712.apk",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100712/%E9%98%85%E8%AF%BB_E-ink_3.26.100712.apk"
-          },
-          {
-            "name": "阅读_magisk_3.26.100712.zip",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100712/%E9%98%85%E8%AF%BB_magisk_3.26.100712.zip"
-          },
-          {
-            "name": "阅读_E-ink_3.26.100712.zip",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100712.zip"
-          },
-          {
-            "name": "阅读_E-ink_3.26.100712.tar.gz",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100712.tar.gz"
-          }
-        ]
-      },
-      "errors": [
-        "仓库信息同步失败：fetch failed"
-      ]
     }
   ]
 }
