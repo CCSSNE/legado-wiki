@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T22:02:17.345Z",
+  "generatedAt": "2026-10-08T02:00:12.670Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6399,
+      "stars": 6401,
       "sourceUpdatedAt": "2026-10-07T21:25:56Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2828,
+      "stars": 2831,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1418,
+      "stars": 1419,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -866,7 +866,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 40,
+      "stars": 41,
       "sourceUpdatedAt": "2026-10-05T14:06:06Z",
       "githubArchived": false,
       "release": {
@@ -946,75 +946,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 28,
-      "sourceUpdatedAt": "2026-10-07T15:39:22Z",
+      "sourceUpdatedAt": "2026-10-08T00:51:35Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead 轻阅 v1.14.0",
-        "tagName": "v1.14.0",
+        "name": "LightRead 轻阅 v1.15.0",
+        "tagName": "v1.15.0",
         "prerelease": false,
-        "publishedAt": "2026-10-07T15:37:54Z",
-        "createdAt": "2026-10-07T14:52:49Z",
-        "body": "release: v1.14.0\n\n## 新功能\n\n- 点睛阅读合二为一：模式面板顶部只有一个「点睛阅读」，打开后选「基础」或「智能」。基础版按词分色，断句一眼看清，不联网、打开即用；智能版由 AI 先替你读一遍，把关键概念和金句点出来。智能版暂时用不了时，一键「先用基础版」。按 D 键开关时会提示当前用的是哪一版。原先单独的「实验 · 仿生阅读」并入基础版。\n- 手机上直接更新：安卓 App 里点更新，新版本在应用内下载，进度看得见，下完自动打开安装；GitHub 慢或打不开时自动换国内镜像（GitCode）；安装前核对文件完整性。第一次需要允许「安装未知应用」，轻阅会直接带你去那个设置页，回来接着装。手机浏览器里下载安装包时，GitHub 打不开也会自动换国内镜像链接。\n\n## 改进\n\n- 全部界面文案重写：用读者的话说清好处，统一叫法（藏书、私人书库、划线、添加书籍……），去掉技术术语和原始报错，每个出错提示都告诉你下一步怎么办。\n- 自动翻页 / 自动滚动速度改为 100 档，从「极慢」到「极快」，默认「适中」在正中间；刻度可点，也能拖到任意一档。\n- 刻度滑动条的可调范围更宽：听书语速 0.5× – 3×，点睛基础版的明显程度可以调得更淡或更浓。\n- 点睛基础版默认颜色改为玫瑰色。\n- PDF 听书的语速也换成同款刻度滑动条。\n\n## 修复\n\n- 自带目录只有一项的书（例如从研辞问典导入的古籍），点目录会跳回扉页。\n- 「阿Q」这类中英文混写的词，着色时会把后面的汉字连在一起。\n\n## 验证\n\n- 单元测试 32 组全部通过（598 项）。\n- 端到端：冒烟 35 项、跨章连续滚动、公共书源（连续 3 次）、书单、文件夹导入、格式转换、WebDAV 同步 11 步全部通过。\n- 安卓 App（K30 Pro，Android 12）真机：GitHub 起步过慢时 10 秒内自动切到国内镜像，68 MB 约 8 秒下完，授权后自动续装成功，数据完整保留。\n\n## 已知限制\n\n- 已在用「书单推荐」「互传」或点睛阅读的用户，升级后设置会自动迁移；智能版仍按书单独开启。\n- 安卓 App 的应用内更新从这一版开始生效：旧版本仍需按原方式更新到 v1.14.0。\n\n",
+        "publishedAt": "2026-10-08T00:50:45Z",
+        "createdAt": "2026-10-08T00:33:12Z",
+        "body": "release: v1.15.0\n\n## 新功能\n\n- 点睛阅读·重点词：打开点睛阅读的基础版，选「重点词」，每段最要紧的人名、术语会先跳出来，扫一眼就抓住要点；第一次出现的地方更醒目。「标记多少」可选少 · 适中 · 多。不联网也能用，整本书在后台准备好，翻页不等待。仍可选「词与词」，按词分色、看清断句。\n- 智能版更懂重点：点睛阅读的智能版在点出关键概念和金句的同时，把每段真正的重点词也挑出来点亮；AI 结果还没到、断网或今日额度用完时，先用不联网的重点词顶上，到了就逐段换成更准的结果。\n\n## 改进\n\n- 「阿Q」这类中英文混写的名字也能整体识别和点亮。\n- 新安装默认使用「重点词」；已在用「词与词」的读者保持不变。\n\n## 修复\n\n- 包含 v1.14.1 的修复：账号同步不再报「structuredClone」错误。\n\n## 验证\n\n- 单元测试 33 组全部通过（616 项；新增重点词 12 项）；账号后端接口测试 34 项通过。\n- 端到端：冒烟 35 项、跨章连续滚动、公共书源、书单、文件夹导入、格式转换、WebDAV 同步 11 步全部通过。\n- 重点词准确率（6 篇文本、两个不同模型独立标注的标准答案）：基础版「适中」72%、「少」86%；智能版「适中」94%、「少」97%。\n- 线上实测：内置 AI 通道已返回重点词。\n\n## 已知限制\n\n- 重点词目前只支持中文书，英文书自动使用「词与词」。\n- 超过 150 万字的书只统计前面的部分；「多」档会点亮一些较普通的词。\n\n",
         "assets": [
           {
-            "name": "LightRead-1.14.0-1.x86_64.rpm",
-            "size": 29752781,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead-1.14.0-1.x86_64.rpm"
+            "name": "LightRead-1.15.0-1.x86_64.rpm",
+            "size": 29771046,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead-1.15.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_1.14.0_aarch64.dmg",
-            "size": 23173835,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_aarch64.dmg"
+            "name": "LightRead_1.15.0_aarch64.dmg",
+            "size": 23199750,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_1.15.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_1.14.0_amd64.AppImage",
-            "size": 105597432,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_amd64.AppImage"
+            "name": "LightRead_1.15.0_amd64.AppImage",
+            "size": 105630200,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_1.15.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_1.14.0_amd64.deb",
-            "size": 29754382,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_amd64.deb"
+            "name": "LightRead_1.15.0_amd64.deb",
+            "size": 29771174,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_1.15.0_amd64.deb"
           },
           {
-            "name": "LightRead_1.14.0_x64-setup.exe",
-            "size": 17903654,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_x64-setup.exe"
+            "name": "LightRead_1.15.0_x64-setup.exe",
+            "size": 17921799,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_1.15.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_1.14.0_x64.dmg",
-            "size": 24422353,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_1.14.0_x64.dmg"
+            "name": "LightRead_1.15.0_x64.dmg",
+            "size": 24440165,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_1.15.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 23102771,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_aarch64.app.tar.gz"
+            "size": 23124033,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v1.14.0_android_arm64.apk",
-            "size": 71629336,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk"
+            "name": "LightRead_v1.15.0_android_arm64.apk",
+            "size": 71650072,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_v1.15.0_android_arm64.apk"
           },
           {
-            "name": "LightRead_v1.14.0_android_arm64.apk.json",
+            "name": "LightRead_v1.15.0_android_arm64.apk.json",
             "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_v1.15.0_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.14.0_android_arm64.apk.sha256",
+            "name": "LightRead_v1.15.0_android_arm64.apk.sha256",
             "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_v1.14.0_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_v1.15.0_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 24365692,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/LightRead_x64.app.tar.gz"
+            "size": 24381449,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1074,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.14.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.15.0/SHA256SUMS"
           }
         ]
       },
@@ -1107,7 +1107,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-07T20:24:09Z",
+      "sourceUpdatedAt": "2026-10-08T00:57:51Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.27",
