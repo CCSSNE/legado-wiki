@@ -250,9 +250,16 @@
       "upstreamRepo": "Mupceet/EssentialReader",
       "upstreamBranch": "eink/port/md3/modules",
       "backupRepo": "legado-backup/legado-moben",
-      "activeBranch": "md3/port/eink",
-      "generation": 1,
-      "retired": [],
+      "activeBranch": "backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "md3/port/eink",
+          "head": "cfe0f058166217f14d5e63447702842aed3658fd",
+          "retiredAt": "2026-10-08T16:53:57.510Z",
+          "reason": "diverged"
+        }
+      ],
       "status": "active"
     },
     "sk": {
@@ -868,14 +875,19 @@
       "repo": "Mupceet/EssentialReader",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T01:29:54.886Z",
+      "since": "2026-10-08T16:53:59.002Z",
       "backupRepo": "legado-backup/legado-moben",
-      "activeBranch": "md3/port/eink",
+      "activeBranch": "backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc",
       "events": [
         {
           "at": "2026-10-05T01:29:54.886Z",
           "type": "synced",
           "message": "Mupceet/EssentialReader:eink/port/md3/modules → legado-backup/legado-moben:md3/port/eink 已同步"
+        },
+        {
+          "at": "2026-10-08T16:53:59.002Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-moben/backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc 接收新历史"
         }
       ]
     },
@@ -1200,5 +1212,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-08T09:25:50.262Z"
+  "checkedAt": "2026-10-08T16:54:19.983Z"
 }
