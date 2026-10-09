@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T16:17:46.776Z",
+  "generatedAt": "2026-10-09T21:01:59.301Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47113,
+      "stars": 47111,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6423,
+      "stars": 6424,
       "sourceUpdatedAt": "2026-10-07T21:25:56Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2848,
+      "stars": 2849,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 610,
+      "stars": 611,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -821,7 +821,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 41,
+      "stars": 42,
       "sourceUpdatedAt": "2026-10-05T14:06:06Z",
       "githubArchived": false,
       "release": {
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-09T08:25:24Z",
+      "sourceUpdatedAt": "2026-10-09T20:59:44Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1062,35 +1062,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 17,
-      "sourceUpdatedAt": "2026-10-09T03:16:01Z",
+      "sourceUpdatedAt": "2026-10-09T17:53:47Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.29",
-        "tagName": "3.26.17-beta.29",
+        "name": "Pre-release 3.26.17-beta.30",
+        "tagName": "3.26.17-beta.30",
         "prerelease": true,
-        "publishedAt": "2026-10-09T00:22:09Z",
-        "createdAt": "2026-10-08T22:18:25Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新墨水屏模式修复目录页部分字体缩放下整页空白的问题，「字体设置」一页即可完成选字体与调字号，新装机开箱即可见「墨水屏模式」入口；完整模式合入上游新一轮优化——发现页支持直接浏览内容、AI 供应商可配置自定义请求头、与其他阅读应用的备份互通更顺，页面进出与阅读衔接体验优化。\n\n### 新增\n\n* 新装机开箱即在「我的」页可见「墨水屏模式」开关——「实验室」与「墨水屏显示」默认开启，无需再去实验室里手动打开；已手动关闭过的用户不受影响\n\n* 完整模式：发现页可选择「直接浏览发现内容」或「显示发现书源列表」两种形态\n* 完整模式：AI 供应商设置支持自定义请求头——需要额外鉴权信息或特殊参数的 AI 接口可以直接配置使用\n\n### 修复\n\n* 墨水屏模式：修复目录页在部分界面字体与缩放组合下整页空白、列表被遮住无法显示的问题\n* 完整模式：导入其他 legado 系阅读应用的备份兼容性提升——恢复后书架分组、阅读亮度等设置正常生效，不再落到无效值\n\n### 优化\n\n* 墨水屏模式：「我的 → 字体设置」合并了字体大小调节——拖动滑条实时预览界面字号，选字体与调字号同一页完成；从阅读器进入时仍只选字体，不打扰阅读排版\n* 完整模式：书籍详情、漫画、目录等页面统一了进入与返回路径及转场，返回手势在更多页面行为一致\n* 完整模式：阅读时章节加载与翻页衔接更稳定，排版更新后停留位置保持不变",
+        "publishedAt": "2026-10-09T17:53:30Z",
+        "createdAt": "2026-10-09T17:15:31Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新「音量键翻页」扩展为全局翻页——书架、目录、搜索结果等列表里，音量键与翻页器同样可以翻页；阅读菜单的设置面板完整展开，不再需要滚动才能点到按钮；打开缓存面板时顶部操作栏保持可见。\n\n### 新增\n\n* 「音量键翻页」扩展到全部可翻页列表——书架、目录、搜索结果、换源、书籍详情、字体设置等界面同样可用音量键或翻页器整页翻动；「我的」页新增「音量键翻页」开关，与阅读界面「其它设置」中的开关联动，一处设置全局生效\n\n* 弹出窗口（如确认框、想法编辑、边距调整）打开期间，音量键自动恢复为调节音量，不会在窗口背后继续翻页\n\n### 修复\n\n* 墨水屏模式：修复阅读菜单「排版设置」等面板底部按钮显示不全、需要滚动才能点到的问题——面板现在完整展开\n\n### 优化\n\n* 墨水屏模式：打开「缓存」面板时顶部操作栏不再消失——书签、换源、刷新、缓存按钮保持可见可点",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 305920692,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/mapping.txt"
+            "size": 305848572,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.30/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.29-arm64-v8a.apk",
-            "size": 21119742,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.30-arm64-v8a.apk",
+            "size": 21135820,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.30/moben-3.26.17-beta.30-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.29-armeabi-v7a.apk",
-            "size": 20659565,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.30-armeabi-v7a.apk",
+            "size": 20675638,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.30/moben-3.26.17-beta.30-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.29.apk",
-            "size": 27692208,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29.apk"
+            "name": "moben-3.26.17-beta.30.apk",
+            "size": 27708276,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.30/moben-3.26.17-beta.30.apk"
           }
         ]
       },
