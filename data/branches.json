@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T22:08:33.088Z",
+  "generatedAt": "2026-10-09T02:14:28.661Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 162,
+      "stars": 163,
       "sourceUpdatedAt": "2026-10-07T17:31:53Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47111,
+      "stars": 47110,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6412,
+      "stars": 6411,
       "sourceUpdatedAt": "2026-10-07T21:25:56Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2838,
+      "stars": 2839,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2199,
+      "stars": 2200,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1431,
+      "stars": 1433,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 400,
+      "stars": 401,
       "sourceUpdatedAt": "2026-09-30T15:00:04Z",
       "githubArchived": false,
       "release": {
@@ -506,7 +506,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 262,
+      "stars": 264,
       "sourceUpdatedAt": "2026-10-08T09:04:28Z",
       "githubArchived": false,
       "release": {
@@ -652,20 +652,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 119,
-      "sourceUpdatedAt": "2026-10-08T22:03:26Z",
+      "sourceUpdatedAt": "2026-10-09T01:03:53Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.100814",
-        "tagName": "3.26.100814",
+        "name": "legado_ng_3.26.100906",
+        "tagName": "3.26.100906",
         "prerelease": false,
-        "publishedAt": "2026-10-08T06:36:33Z",
-        "createdAt": "2026-10-08T05:54:33Z",
-        "body": "### 更新内容\n* 增强书源隔离执行与静态资源处理\n* 修复书源二进制请求的限速参数传递\n* 支持书源 MCP 调试临时覆盖规则\n* 优化 EPUB 加载性能与仿真翻页稳定性\n* 统一发现搜索与其他作品卡片排版\n* 优化 EPUB 原书背景整页显示与信息栏叠层\n* 新增可切换的咕咕嘎嘎宠物聊天入口\n* 新增蓝色大肥鱼宠物与拖拽互动\n* 统一抽屉尺寸比例与界面字体选项卡\n* 补全每日阅读统计、书籍更新与听书续播记录\n* 复用目录队列检查首页今日书讯\n* 精简个人页面顶部占位\n* 新增可编排首页与书讯、阅读日历和听书组件\n* 移除书架右滑进入AI助理的设置与手势\n* 新增绘本书屋主题并支持独立抽屉背景\n* 将初始主题与书架卡片默认设为绘本书屋和液态玻璃\n* 统一书籍操作抽屉图标的视觉大小\n* 优化夜间抽屉跨主题容器配色\n* 补齐发现与订阅MCP能力并完善自动化回归\n* 修复书架与发现首字图标的emoji截断\n* 新增多模式取色器与纯背景吸管\n* 修复替换净化列表长按排序失效\n* 支持高亮规则跨段匹配并修正实时预览\n* 修复订阅文章分页卡住与失败重试\n* 支持书签分组折叠与组合筛选\n* 统一绘本书屋组件叶饰配色\n* 统一阅读足迹与日历计时并补记阅读尾段\n* 迁移公共开关为Compose并保持原有交互样式\n* 优化夏日童趣日间壁纸并压缩图片体积\n\n",
+        "publishedAt": "2026-10-08T22:34:56Z",
+        "createdAt": "2026-10-08T22:03:47Z",
+        "body": "### 更新内容\n* 将首页和宠物素材压缩为Q95 WebP\n* 让首页抽屉按窗口安全区自适应高度\n* 修复首页阅读时长单位转换与窄卡片重叠\n* 修复液态玻璃底栏越界滑动后的残影 (#53)\n* 修复书源手动排序松手后回弹 (#54)\n* 新增书架分组跟手滑动与取消回弹 (#55)\n* 新增搜索页键盘上方书源分组快捷栏 (#56)\n* 修复切换阅读预设后高亮错位与丢失\n* 开关按下时滑块命中框尚未排版，拖回原位被当成点击；按下前先按控件尺寸排版。设置行测试补上应用上下文初始化。\n* 阅读与主题取色已改用内置取色器，去掉未再使用的 jaredrummler 依赖与 ColorPreference。\n* 平板新建或编辑预设时弹层按固定高度撑开，内容下方留白；大屏改为按内容收高，最高为屏幕的 85%。\n* 修复目录缓存字数显示与正文统计\n* 新增阅读抽屉书签筛选并整合搜索操作栏\n* 修复阅读进度同步覆盖书签跳转\n* 修复听书弹窗与正文编辑等界面的夜间配色\n* 合并 PR #60：修复开关拖动与平板预设弹层并清理旧取色器\n* 同步远端主分支并合入PR #60修复\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.10081418_release.apk",
-            "size": 60615312,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.100814/legado_NG_3.26.10081418_release.apk"
+            "name": "legado_NG_3.26.10090620_release.apk",
+            "size": 43140249,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.100906/legado_NG_3.26.10090620_release.apk"
           }
         ]
       },
@@ -900,7 +900,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 29,
+      "stars": 30,
       "sourceUpdatedAt": "2026-10-08T00:51:35Z",
       "githubArchived": false,
       "release": {
@@ -1061,36 +1061,36 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 16,
-      "sourceUpdatedAt": "2026-10-08T21:50:47Z",
+      "stars": 17,
+      "sourceUpdatedAt": "2026-10-09T00:22:22Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.28",
-        "tagName": "3.26.17-beta.28",
+        "name": "Pre-release 3.26.17-beta.29",
+        "tagName": "3.26.17-beta.29",
         "prerelease": true,
-        "publishedAt": "2026-10-08T05:16:08Z",
-        "createdAt": "2026-10-08T04:12:15Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新墨水屏模式落地自动翻页节奏、弹窗样式与独立字体设置三项改进，完整模式合入上游朗读多角色配音套件，Web 阅读端支持手柄翻页，并修复多项问题。\n\n### 新增\n\n* 墨水屏模式：自动翻页按页面内容量调节等待——本页内容不满一屏时，等待时间按实际内容占比缩短，不再每页都等满时长（最短保留 1 秒，防墨水屏高频刷新）\n* 墨水屏模式：确认弹窗按钮改为格线样式——按钮之间以细线分隔、按压时整格反白，双按钮一横一竖、三个动作两横一竖，墨水屏下更清晰\n* 墨水屏模式：新增独立字体设置页——「我的」中设置应用界面字体（含系统预设与自定义字体，选择后自动定位反显）；阅读器内打开则进入阅读字体选择，两处入口各自生效\n* 完整模式：朗读多角色配音——正则角色按规则匹配角色并绑定音色，也可让 AI 自动分配；支持音色池、变声器、背景音乐与音效、角色悬浮胶囊与头像等一整套设置\n* Web 阅读端：支持手柄翻页——LT/RT 扳机键翻页，摇杆死区与扳机判定优化；十字键加冷却防抖，抖动不再一次连跳多章\n\n### 修复\n\n* 完整模式：书源人机验证完成后自动继续之前的搜索，不再中断\n* 完整模式：分组关闭「允许下拉刷新」后不再能下拉刷新\n* 完整模式：修复开书瞬间可能闪现上一本书正文、朗读通知点回阅读页叠出两层阅读页、高亮规则预览示例句位置偏移等问题\n\n### 优化\n\n* 完整模式：开书与详情页转场更流畅，设置类页面静止时不再空转耗电",
+        "publishedAt": "2026-10-09T00:22:09Z",
+        "createdAt": "2026-10-08T22:18:25Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新墨水屏模式修复目录页部分字体缩放下整页空白的问题，「字体设置」一页即可完成选字体与调字号，新装机开箱即可见「墨水屏模式」入口；完整模式合入上游新一轮优化——发现页支持直接浏览内容、AI 供应商可配置自定义请求头、与其他阅读应用的备份互通更顺，页面进出与阅读衔接体验优化。\n\n### 新增\n\n* 新装机开箱即在「我的」页可见「墨水屏模式」开关——「实验室」与「墨水屏显示」默认开启，无需再去实验室里手动打开；已手动关闭过的用户不受影响\n\n* 完整模式：发现页可选择「直接浏览发现内容」或「显示发现书源列表」两种形态\n* 完整模式：AI 供应商设置支持自定义请求头——需要额外鉴权信息或特殊参数的 AI 接口可以直接配置使用\n\n### 修复\n\n* 墨水屏模式：修复目录页在部分界面字体与缩放组合下整页空白、列表被遮住无法显示的问题\n* 完整模式：导入其他 legado 系阅读应用的备份兼容性提升——恢复后书架分组、阅读亮度等设置正常生效，不再落到无效值\n\n### 优化\n\n* 墨水屏模式：「我的 → 字体设置」合并了字体大小调节——拖动滑条实时预览界面字号，选字体与调字号同一页完成；从阅读器进入时仍只选字体，不打扰阅读排版\n* 完整模式：书籍详情、漫画、目录等页面统一了进入与返回路径及转场，返回手势在更多页面行为一致\n* 完整模式：阅读时章节加载与翻页衔接更稳定，排版更新后停留位置保持不变",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 304886524,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.28/mapping.txt"
+            "size": 305920692,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.28-arm64-v8a.apk",
-            "size": 21098152,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.28/moben-3.26.17-beta.28-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.29-arm64-v8a.apk",
+            "size": 21119742,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.28-armeabi-v7a.apk",
-            "size": 20637953,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.28/moben-3.26.17-beta.28-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.29-armeabi-v7a.apk",
+            "size": 20659565,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.28.apk",
-            "size": 27670598,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.28/moben-3.26.17-beta.28.apk"
+            "name": "moben-3.26.17-beta.29.apk",
+            "size": 27692208,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.29/moben-3.26.17-beta.29.apk"
           }
         ]
       },
@@ -1105,7 +1105,7 @@
       "repo": "skxingyu/legado-sk",
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
-      "stars": 14,
+      "stars": 15,
       "sourceUpdatedAt": "2026-10-07T12:12:07Z",
       "githubArchived": false,
       "release": {
@@ -1168,7 +1168,7 @@
       "repo": "24257/novel-helper",
       "term": "legado-branch-xuanjuan",
       "note": "基于 Legado 定制的网文小助手。",
-      "stars": 8,
+      "stars": 9,
       "sourceUpdatedAt": "2026-09-30T15:22:43Z",
       "githubArchived": false,
       "release": {
