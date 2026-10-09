@@ -873,9 +873,9 @@
     "moben": {
       "name": "墨本阅读",
       "repo": "Mupceet/EssentialReader",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-08T16:53:59.002Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-09T21:12:38.169Z",
       "backupRepo": "legado-backup/legado-moben",
       "activeBranch": "backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc",
       "events": [
@@ -888,6 +888,11 @@
           "at": "2026-10-08T16:53:59.002Z",
           "type": "rotated",
           "message": "历史 diverged：旧分支已保留，legado-backup/legado-moben/backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc 接收新历史"
+        },
+        {
+          "at": "2026-10-09T21:12:38.169Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1212,5 +1217,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-09T16:31:36.517Z"
+  "checkedAt": "2026-10-09T21:12:55.369Z"
 }
