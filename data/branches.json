@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T02:14:28.661Z",
+  "generatedAt": "2026-10-09T09:13:39.275Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47110,
+      "stars": 47112,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6411,
+      "stars": 6420,
       "sourceUpdatedAt": "2026-10-07T21:25:56Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2839,
+      "stars": 2844,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1433,
+      "stars": 1439,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 609,
+      "stars": 611,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -310,8 +310,8 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 388,
-      "sourceUpdatedAt": "2026-10-08T03:34:02Z",
+      "stars": 390,
+      "sourceUpdatedAt": "2026-10-09T08:06:48Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.100811",
@@ -539,7 +539,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 140,
+      "stars": 141,
       "sourceUpdatedAt": "2026-09-07T05:49:13Z",
       "githubArchived": false,
       "release": {
@@ -618,7 +618,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 127,
+      "stars": 128,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -651,7 +651,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 119,
+      "stars": 121,
       "sourceUpdatedAt": "2026-10-09T01:03:53Z",
       "githubArchived": false,
       "release": {
@@ -725,20 +725,20 @@
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
       "stars": 85,
-      "sourceUpdatedAt": "2026-10-04T08:28:07Z",
+      "sourceUpdatedAt": "2026-10-09T03:56:46Z",
       "githubArchived": false,
       "release": {
-        "name": "墨知 1.3.0",
-        "tagName": "v1.3.0",
+        "name": "墨知 1.3.1",
+        "tagName": "v1.3.1",
         "prerelease": false,
-        "publishedAt": "2026-10-04T08:29:18Z",
-        "createdAt": "2026-10-04T08:27:57Z",
-        "body": "# MoRead · 墨知 1.3.0\n\n## 中文\n\n### 听书与伴读\n\n- 新增小米 MiMo 与 Fish Studio（Fish Audio）语音服务，支持对应服务的音色与朗读参数。\n- 陪伴足迹新增共读时间线、交流时段分布、首次交流与交流次数里程碑，并展示相关长期记忆。\n- 主动段评额度改为直接输入数字，支持「不限」；每章有限额度最高 99 条，每日有限额度最高 999 条。\n- 改进人物与章节大纲整理结果的兼容和校验，支持纠正未通过核对的文本 JSON 输出。\n\n### 阅读与界面\n\n- 生词本改为单词卡片，支持搜索筛选、掌握状态管理与可撤销操作。\n- 改进词典弹层的网页滚动边界，减少快速滑动和越界滚动对父弹层的影响。\n- 书籍详情新增封面取色与背景氛围，调整信息层级和划线入口。\n- 优化划线与笔记详情、全屏回顾的翻卡动效与原文定位，改进阅读页批注标记的稳定性。\n- 调整共用数字输入、阅读工具窗口和手机／平板页面适配，同步中英文说明与公开代码地图。\n\n正式安装包：`mozhi-1.3.0-vc79.apk`，Android 8.0 及以上。使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n### Speech and companions\n\n- Add Xiaomi MiMo and Fish Studio (Fish Audio) speech providers with provider-specific voice and narration controls.\n- Add a shared-reading timeline, conversation-hour distribution, first-conversation and conversation-count milestones, and related long-term memories to companion statistics.\n- Replace proactive annotation quota sliders with numeric inputs and an unlimited option; finite quotas support up to 99 annotations per chapter and 999 per day.\n- Improve parsing and validation of character and chapter-outline results, including correction rounds for text-only JSON responses.\n\n### Reading and interface\n\n- Redesign the vocabulary book with word cards, search and filters, mastery controls, and undoable actions.\n- Improve dictionary web scrolling at sheet boundaries during fast swipes and overscroll.\n- Add cover-derived colors and atmospheric backgrounds to book details, with clearer information and highlight entry points.\n- Refine highlight-and-note details, full-screen review card motion, source navigation, and annotation mark stability.\n- Update shared numeric controls, reading-tool windows, phone and tablet layouts, bilingual documentation, and the public code map.\n\nOfficial package: `mozhi-1.3.0-vc79.apk`, for Android 8.0 or later. Signed with the official release certificate and compatible with existing official installations.\n",
+        "publishedAt": "2026-10-09T03:57:35Z",
+        "createdAt": "2026-10-09T03:56:41Z",
+        "body": "# MoRead · 墨知 1.3.1\n\n## 中文\n\n### AI 与伴读\n\n- 独立只读工具调用支持并行执行；伴读过程显示可选择隐藏、简洁或详细，并分别控制思考、参数与结果预览。\n- 书籍原文与网页来源改用脚注式引用，可展开引文上下文并返回原文或打开网页。\n- 伴读可生成柱状图、折线图、饼图、雷达图、关系图与时间线，支持放大和导出。\n- 人物页新增快速调研，通过主任务与并行子任务整理人物资料。\n- 改进主动段评的当前章节优先级、失败重试与请求取消，减少切章后任务等待和过期请求。\n\n### 阅读与管理\n\n- 阅读辅助扩展到多种语言，可设置本书学习语言与译文目标语言。\n- 书籍、字体、图片与角色卡导入支持重复检测；划线与笔记支持多选管理和批量操作。\n- 精简阅读菜单、选文工具栏与 AI 设置，将低频选项收进二级页面。\n- 改进词典文件与文件夹导入，自动关联配套 MDD、CSS、字体和图片；支持旧式 MDX 编号样式，保留词典原有排版层级，并改善夜间颜色和滚动位置保持。\n- 改进 EPUB 出版样式兼容，支持关联样式表和更多文字装饰线型、颜色，保留链接的原书样式。\n- 修复滚动阅读的已读范围记录，只根据实际显示的正文更新阅读进度与伴读上下文。\n- 新增 ElevenLabs 听书服务，支持音色 ID、模型和语音调节参数。\n\n正式安装包：`mozhi-1.3.1-vc81.apk`，Android 8.0 及以上。使用正式发布证书，可覆盖安装已有正式版。数据库升级至版本 33，通过迁移保留现有数据。\n\n## English\n\n### AI and companions\n\n- Run independent read-only tool calls in parallel. Choose hidden, concise, or detailed process displays with separate controls for reasoning, arguments, and result previews.\n- Present book quotes and web sources as footnotes with expandable context and source navigation.\n- Create bar, line, pie, radar, relationship, and timeline charts in companion conversations, with enlargement and image export.\n- Add quick character research with a lead task and parallel research tasks.\n- Improve proactive annotation scheduling, current-chapter priority, failure retries, and request cancellation.\n\n### Reading and management\n\n- Extend reading aids to multiple languages with per-book learning languages and configurable translation targets.\n- Detect duplicate books, fonts, images, and persona cards during import. Add multi-select management and batch actions for highlights and notes.\n- Simplify reader menus, selection toolbars, and AI settings with secondary pages for less frequent options.\n- Improve dictionary imports by associating MDD, CSS, fonts, and images. Support legacy MDX numbered styles, preserve dictionary typography, and improve night colors and scroll position retention.\n- Improve EPUB publisher-style compatibility with imported stylesheets, additional text-decoration styles and colors, and original link styling.\n- Fix read-range tracking in scrolling mode so reading progress and companion context follow the text actually displayed.\n- Add ElevenLabs narration with voice IDs, model selection, and speech tuning controls.\n\nOfficial package: `mozhi-1.3.1-vc81.apk`, for Android 8.0 or later. Signed with the official release certificate and compatible with existing official installations. Database version 33 includes migrations preserving existing data.\r\n",
         "assets": [
           {
-            "name": "mozhi-1.3.0-vc79.apk",
-            "size": 20489237,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.3.0/mozhi-1.3.0-vc79.apk"
+            "name": "mozhi-1.3.1-vc81.apk",
+            "size": 20754129,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.3.1/mozhi-1.3.1-vc81.apk"
           }
         ]
       },
@@ -984,25 +984,25 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 22,
-      "sourceUpdatedAt": "2026-10-08T14:44:32Z",
+      "sourceUpdatedAt": "2026-10-09T08:25:24Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.100321",
-        "tagName": "3.26.100321",
+        "name": "3.26.100915",
+        "tagName": "3.26.100915",
         "prerelease": false,
-        "publishedAt": "2026-10-03T14:53:16Z",
-        "createdAt": "2026-10-03T13:51:51Z",
-        "body": "3.26.092809 → 3.26.100321\n\n**2026/10/03（问题修复）**\n### 修复\n- 修复部分订阅源列表加载失败、图片查看页图片显示不全的问题\n\n**2026/10/02（问题修复）**\n### 修复\n- 修复部分网站因重定向未跟随导致订阅列表一直转圈、加载不出来的问题\n- 修复编辑书源与订阅源时列表上滑，内容叠到上方标签栏的问题\n### 优化\n- 书架「继续阅读」提示改为紧贴底栏上沿、与底栏同款磨砂配色的悬浮条\n\n**2026/10/01（问题修复）**\n### 修复\n- 修复订阅列表翻页到第二页后无法继续、页脚一直转圈\n- 修复订阅列表翻页时右上角页码不跟随变化\n- 修复瀑布布局滚动时封面图片花屏或变形\n- 修复书架底部「继续阅读」提示被底栏遮挡看不见\n### 优化\n- 订阅源支持自定义分页表达式（如随机页码）自动翻页\n\n**2026/09/29（新增）**\n### 新增\n- 网页控制台新增侧边导航，书架与漫画视频调试台等一处直达\n- 新增「Web 服务与 AI 接入」设置页：看地址、生成令牌、改端口、安全开关\n- AI 网页服务执行危险操作前，需在手机上确认\n- 网页控制台支持按需下载安装，未安装时自动引导，也可本地导入\n- 网页控制台装新版后可一键回退到上一版本\n- 新增《网页服务 + MCP》使用帮助，附各家 AI 客户端接入步骤\n- 网页控制台可生成各 AI 客户端接入配置，并一键自检连接问题所在\n- 网页订阅可收藏文章、管理分组并导入导出 OPML\n- 网页设置可改应用偏好与主题模式，并支持检索设置项\n- 设置页新增公网中继卡片与「一键断电」，可停止服务并吊销全部令牌\n### 修复\n- 修复控制台本地导入包始终提示结构不完整、无法安装的问题\n- 修复未配置云存储时网页看缓存列表报服务器错误的问题\n### 优化\n- 网页控制台可查看与删除名场面书签、书签和朗读引擎\n- 网页控制台可查看并设置阅读目标（与手机阅读记录页同步）\n- 网页阅读器可一键切到经典阅读器续读\n- 网页列表页改左右同屏并支持键盘操作，窄窗口自动换成卡片\n- 生成读写/完全访问令牌前会二次确认，避免误发高权限令牌\n- 端口与后台唤醒锁设置移到该页，其他设置页保留入口不丢功能\n- 备份超时后不再卡住后续备份与恢复\n- 网页版新增访问令牌填写入口，未授权时提示获取方式\n\n**2026/09/28（问题修复）**\n### 新增\n- 新增名场面书签：一键收藏精彩瞬间，AI 自动生成描述，名场面库统一回看\n### 优化\n- 网页服务写操作与敏感接口需携带访问令牌，防止同网络他人改数据\n- 网页接口出错返回真实状态码，网页端提示更明确\n- 修正网页静态资源类型识别，字体与图片加载更可靠\n- 网页推送源会跳过结构残缺的源，并提示失败数量\n### 修复\n- 从阅读历史或收藏打开订阅视频，也能上下滑动切换上一条下一条\n- 图片加载中显示进度，加载失败可就地重试，不再一片漆黑\n- 修复书源编辑页六个标签下的编辑项全部不显示的问题\n- 订阅列表快速下滑翻页更跟手，不再一直转圈",
+        "publishedAt": "2026-10-09T07:53:37Z",
+        "createdAt": "2026-10-09T07:22:35Z",
+        "body": "3.26.100321 → 3.26.100915\n\n### 新增\n- 订阅文章列表新增「刷新后回到顶部」开关，默认开启\n- 网页控制台升级为全新阅读界面，书架发现搜索订阅一屏直达\n- 网页端书籍点开即用内置阅读器，支持文字漫画视频听书多形态\n\n### 优化\n- 发现套件新增一键生成，无需从零手工配置即可开始使用\n- 套件编辑器的书源改为纵向可搜索列表，选源不再左右滑动翻找\n- 套件编辑器的标签改为按分组多选，选中与已选数量一目了然\n- 套件编辑器为每种控件补充说明与布局示意，切换类型会提示保留数量\n- 发现页套件菜单可直接添加控件，长按控件可编辑、上移下移或删除\n- 套件空态新增一键生成与手动创建入口，保存后提示回发现页查看\n- 更新说明改为按版本差异展示，不再罗列日期\n- 订阅列表除自由布局外的各布局左右留白收窄，图片显示更宽\n\n### 修复\n- 修复套件编辑器书源较多时列表滚动卡顿、只显示部分书源的问题\n- 修复套件编辑器标签选中后无法分辨选中项的问题\n- 修复控件样式选项需左右滑动才能看全的问题\n- 修复控件未加载到内容时被误提示为尚未配置的问题\n- 修复一键生成可能生成出没有可用书源内容的套件的问题\n- 修复发现页书籍菜单弹层在夜间主题下文字与图标看不清的问题\n- 修复离线缓存页点击开始缓存后按钮图标不切换的问题\n- 修复部分弹层与对话框文字图标不随主题变化的问题\n- 修复部分订阅源解密列表后只显示一条、图片空白的问题\n- 修复播放订阅源直播时收藏按钮点击无反应的问题\n- 修复部分订阅源翻页到下一页时加载失败的问题\n- 修复订阅源校验对带分类前缀地址的源判定不准的问题\n- 修复网页控制台发现页打不开、搜索结果无法加入书架的问题\n- 修复网页端视频与漫画打开后无法播放、图片空白的问题\n- 网页控制台未授权时弹窗即可直接粘贴访问令牌，无需再找入口\n- 网页控制台首屏体积大幅精简，真机打开更快更流畅\n- 网页控制台静态资源启用缓存，再次打开明显更快\n- 修复部分订阅源列表加载失败、图片查看页图片显示不全的问题",
         "assets": [
           {
-            "name": "legado_miss_app_3.26.100321.apk",
-            "size": 26564225,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100321/legado_miss_app_3.26.100321.apk"
+            "name": "legado_miss_app_3.26.100915.apk",
+            "size": 28499435,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100915/legado_miss_app_3.26.100915.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.100321.apk",
-            "size": 41805772,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100321/legado_miss_app_debug_3.26.100321.apk"
+            "name": "legado_miss_app_debug_3.26.100915.apk",
+            "size": 44082390,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100915/legado_miss_app_debug_3.26.100915.apk"
           }
         ]
       },
@@ -1062,7 +1062,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 17,
-      "sourceUpdatedAt": "2026-10-09T00:22:22Z",
+      "sourceUpdatedAt": "2026-10-09T03:16:01Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.29",
@@ -1231,35 +1231,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-08T23:41:53+08:00",
+      "sourceUpdatedAt": "2026-10-09T11:08:00+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.100823",
-        "tagName": "阅读_E-ink_3.26.100823",
+        "name": "阅读_E-ink_3.26.100910",
+        "tagName": "阅读_E-ink_3.26.100910",
         "prerelease": false,
-        "publishedAt": "2026-10-08T23:41:53+08:00",
-        "createdAt": "2026-10-08T23:41:53+08:00",
-        "body": "- 组件有各自入口\r\n- 副标题点击自定\r\n- 取消底部导航栏",
+        "publishedAt": "2026-10-09T11:14:15+08:00",
+        "createdAt": "2026-10-09T11:14:15+08:00",
+        "body": "- 组件有各自入口\r\n- 取消底部导航栏\r\n- 副标题点击更改\r\n- 已新增页面调整\r\n- 已删除多余动画",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.100823.apk",
+            "name": "阅读_E-ink_3.26.100910.apk",
             "size": 20908046,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100823/%E9%98%85%E8%AF%BB_E-ink_3.26.100823.apk"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100910/%E9%98%85%E8%AF%BB_E-ink_3.26.100910.apk"
           },
           {
-            "name": "阅读_magisk_3.26.100823.zip",
-            "size": 22656321,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100823/%E9%98%85%E8%AF%BB_magisk_3.26.100823.zip"
-          },
-          {
-            "name": "阅读_E-ink_3.26.100823.zip",
+            "name": "阅读_magisk_3.26.100910.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100823.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.100910/%E9%98%85%E8%AF%BB_magisk_3.26.100910.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.100823.tar.gz",
+            "name": "阅读_E-ink_3.26.100910.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100823.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100910.zip"
+          },
+          {
+            "name": "阅读_E-ink_3.26.100910.tar.gz",
+            "size": null,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.100910.tar.gz"
           }
         ]
       },
