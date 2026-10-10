@@ -500,9 +500,9 @@
     "md3": {
       "name": "阅读 MD3",
       "repo": "HapeLee/legado-with-MD3",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:29:35.622Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-10T01:11:58.237Z",
       "backupRepo": "legado-backup/legado-md3",
       "activeBranch": "main",
       "events": [
@@ -510,6 +510,11 @@
           "at": "2026-10-05T01:29:35.622Z",
           "type": "synced",
           "message": "HapeLee/legado-with-MD3:main → legado-backup/legado-md3:main 已同步"
+        },
+        {
+          "at": "2026-10-10T01:11:58.237Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -873,9 +878,9 @@
     "moben": {
       "name": "墨本阅读",
       "repo": "Mupceet/EssentialReader",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-09T21:12:38.169Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-10T01:12:14.554Z",
       "backupRepo": "legado-backup/legado-moben",
       "activeBranch": "backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc",
       "events": [
@@ -893,6 +898,11 @@
           "at": "2026-10-09T21:12:38.169Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-10T01:12:14.554Z",
+          "type": "restored",
+          "message": "恢复同步；Mupceet/EssentialReader:eink/port/md3/modules → legado-backup/legado-moben:backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc 已同步"
         }
       ]
     },
@@ -1217,5 +1227,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-09T21:12:55.369Z"
+  "checkedAt": "2026-10-10T01:12:28.823Z"
 }
