@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T18:40:22.608Z",
+  "generatedAt": "2026-10-10T22:37:42.795Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47113,
+      "stars": 47114,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,36 +85,36 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6434,
-      "sourceUpdatedAt": "2026-10-10T15:21:12Z",
+      "stars": 6436,
+      "sourceUpdatedAt": "2026-10-10T20:50:33Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.46",
-        "tagName": "3.26.16-beta.46",
+        "name": "Pre-release 3.26.16-beta.47",
+        "tagName": "3.26.16-beta.47",
         "prerelease": true,
-        "publishedAt": "2026-10-09T22:54:46Z",
-        "createdAt": "2026-10-09T22:37:00Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* ci(release): Release 页自动附带 PR/贡献者列表，Telegram 复用同一份文案\n* fix(cast): 从配音侧删除角色时一并清理档案的关系与事件\n* feat: 界面优化\n* feat: 一些导航问题\n* Bump web v3.26.100902\n* refactor: 重构 Xbox 手柄配置和状态管理，优化代码结构\n* fix(cast): 中点不再是声音池分隔符，音译名可以做角色名\n* fix(cast): 配音页与正文胶囊改的主名也回写本书记忆\n* fix(ai): 换默认模型时把所有任务类型的预设一起带上\n* fix(lint): 记忆保存的重名提示改在组合期读文案\n* fix(cast): 记忆里的改名与改池按身份配对，两件各自成立\n* fix(cast): 声音池导入「本机都有了」不再报成「不是本软件导出的」\n* test(ai): 假 SSE 服务端在关连接前同步清接收队列\n* feat(cast): 变声器音高与语速可以直接填数值\n* fix(cast): 本书记忆的分隔符进名字禁列，两套语法共用同一份\n* fix(cast): 记忆里改的名字与池回写配音与档案，删除一次清两边\n* fix(cast): 声音池导出的键名钉死，换版本也认得自己的文件\n* feat: 本地书导入\n* feat: 阅读优化\n* fix(font): 字体文件夹读不出来时说明原因，并支持直接导入字体文件\n* fix(reader): 支持 file:// 字体路径，修复选中应用内字体静默回落默认字体\n\n## What's Changed\n* refactor: 重构 Xbox 手柄配置和状态管理，优化代码结构 by @mobeicanyue in https://github.com/HapeLee/legado-with-MD3/pull/2387\n* fix(cast): 角色记忆与配音双向同步、声音池导入自识别、AI 默认模型传播 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2384\n* fix(font): 修复应用内字体不生效与国产 ROM 字体文件夹读不出内容，新增「导入字体文件」 by @clevebitr in https://github.com/HapeLee/legado-with-MD3/pull/2379\n\n## New Contributors\n* @clevebitr made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2379\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.45...3.26.16-beta.46",
+        "publishedAt": "2026-10-10T20:50:20Z",
+        "createdAt": "2026-10-10T20:30:29Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 界面优化\n* feat: 阅读闪烁问题？\n* fix(network): 收紧局域网判定并修复本地网络权限申请可靠性\n* fix(network): 适配 Android 17 本地网络保护，补齐局域网访问权限\n\n## What's Changed\n* fix(network): 适配 Android 17 本地网络保护，补齐局域网访问权限 by @THERentropy in https://github.com/HapeLee/legado-with-MD3/pull/2391\n\n## New Contributors\n* @THERentropy made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2391\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.46...3.26.16-beta.47",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.46-arm64-v8a.apk",
-            "size": 20780462,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.46/legado-3.26.16-beta.46-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.47-arm64-v8a.apk",
+            "size": 20781893,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.47/legado-3.26.16-beta.47-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.46-armeabi-v7a.apk",
-            "size": 20320279,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.46/legado-3.26.16-beta.46-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.47-armeabi-v7a.apk",
+            "size": 20321712,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.47/legado-3.26.16-beta.47-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.46.apk",
-            "size": 27352945,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.46/legado-3.26.16-beta.46.apk"
+            "name": "legado-3.26.16-beta.47.apk",
+            "size": 27354383,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.47/legado-3.26.16-beta.47.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 292710516,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.46/mapping.txt"
+            "size": 292592737,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.47/mapping.txt"
           }
         ]
       },
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2857,
+      "stars": 2858,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1454,
+      "stars": 1455,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -652,7 +652,7 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 123,
-      "sourceUpdatedAt": "2026-10-09T01:03:53Z",
+      "sourceUpdatedAt": "2026-10-10T21:45:06Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.100906",
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-10T15:47:02Z",
+      "sourceUpdatedAt": "2026-10-10T20:41:28Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
