@@ -307,13 +307,19 @@
       "upstreamRepo": "ReTyne/legado-Klys",
       "upstreamBranch": "main",
       "backupRepo": "legado-backup/legado-k",
-      "activeBranch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
-      "generation": 2,
+      "activeBranch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
+      "generation": 3,
       "retired": [
         {
           "branch": "main",
           "head": "809c06511ca106e05a328d863a8ab828d23b240c",
           "retiredAt": "2026-10-05T01:30:00.089Z",
+          "reason": "unrelated"
+        },
+        {
+          "branch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
+          "head": "cab577d4d41978cecbcb5afde2bb2ceacca3d042",
+          "retiredAt": "2026-10-11T09:16:06.740Z",
           "reason": "unrelated"
         }
       ],
@@ -980,9 +986,9 @@
       "repo": "ReTyne/legado-Klys",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-11T02:08:48.798Z",
+      "since": "2026-10-11T09:16:07.973Z",
       "backupRepo": "legado-backup/legado-k",
-      "activeBranch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
+      "activeBranch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
       "events": [
         {
           "at": "2026-10-05T01:30:01.177Z",
@@ -993,6 +999,11 @@
           "at": "2026-10-11T02:08:48.798Z",
           "type": "renamed",
           "message": "ReTyne/legado-Klys:main → legado-backup/legado-k:backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042 已同步"
+        },
+        {
+          "at": "2026-10-11T09:16:07.973Z",
+          "type": "rotated",
+          "message": "历史 unrelated：旧分支已保留，legado-backup/legado-k/backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614 接收新历史"
         }
       ]
     },
@@ -1237,5 +1248,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-11T02:08:59.194Z"
+  "checkedAt": "2026-10-11T09:16:18.224Z"
 }
