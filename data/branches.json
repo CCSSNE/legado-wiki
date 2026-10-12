@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T00:36:51.338Z",
+  "generatedAt": "2026-10-12T07:26:33.801Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 169,
-      "sourceUpdatedAt": "2026-10-07T17:31:53Z",
+      "stars": 170,
+      "sourceUpdatedAt": "2026-10-12T07:02:01Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.100717",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 30,
+          "stars": 31,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47115,
+      "stars": 47117,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6442,
+      "stars": 6445,
       "sourceUpdatedAt": "2026-10-11T20:15:21Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2866,
+      "stars": 2869,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2202,
+      "stars": 2203,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1461,
+      "stars": 1463,
       "sourceUpdatedAt": "2026-10-05T15:13:38Z",
       "githubArchived": false,
       "release": {
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 615,
+      "stars": 616,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 424,
+      "stars": 426,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -647,7 +647,7 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 125,
-      "sourceUpdatedAt": "2026-10-11T03:01:12Z",
+      "sourceUpdatedAt": "2026-10-12T05:34:52Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.100906",
@@ -895,7 +895,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 32,
+      "stars": 34,
       "sourceUpdatedAt": "2026-10-08T00:51:35Z",
       "githubArchived": false,
       "release": {
@@ -979,7 +979,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-11T23:48:30Z",
+      "sourceUpdatedAt": "2026-10-12T05:56:49Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1101,25 +1101,25 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-07T12:12:07Z",
+      "sourceUpdatedAt": "2026-10-12T05:07:29Z",
       "githubArchived": false,
       "release": {
-        "name": "阅读SK 3.26.100515c (10081)",
-        "tagName": "v3.26.100515-10081",
+        "name": "阅读SK 3.26.101215c (10086)",
+        "tagName": "v3.26.101215-10086",
         "prerelease": true,
-        "publishedAt": "2026-10-05T07:39:27Z",
-        "createdAt": "2026-09-30T06:13:51Z",
-        "body": "## 更新内容\n\n- 优化书源换源逻辑，修复换源后书源标记显示不正确的问题\n- 优化换源界面的点击反馈\n- 优化界面细节，提升使用体验\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.100515c_10081_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.100515c_10081_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
+        "publishedAt": "2026-10-12T05:06:12Z",
+        "createdAt": "2026-10-12T05:05:17Z",
+        "body": "## 更新内容\n\n- 听书新增「按章节定时」：可选「听完本章 / 听完 3 章 / 听完 5 章」，读完设定章数后自动停止，停在这一章的末尾\n- 音量增强由滑条改为开关：打开即固定 2 倍增强，关闭即正常音量（2 倍以上会明显破音，故不再提供更高档位）\n- 朗读面板重新排布，信息更紧凑，一眼可见定时与音量增强\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.101215c_10086_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.101215c_10086_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
         "assets": [
           {
-            "name": "legado_sk_3.26.100515c_10081_arm64-v8a.apk",
-            "size": 36169149,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.100515-10081/legado_sk_3.26.100515c_10081_arm64-v8a.apk"
+            "name": "legado_sk_3.26.101215c_10086_arm64-v8a.apk",
+            "size": 36169704,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101215-10086/legado_sk_3.26.101215c_10086_arm64-v8a.apk"
           },
           {
-            "name": "legado_sk_3.26.100515c_10081_arm64-v8a_sk2-coexist.apk",
-            "size": 36168800,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.100515-10081/legado_sk_3.26.100515c_10081_arm64-v8a_sk2-coexist.apk"
+            "name": "legado_sk_3.26.101215c_10086_arm64-v8a_sk2-coexist.apk",
+            "size": 36169219,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101215-10086/legado_sk_3.26.101215c_10086_arm64-v8a_sk2-coexist.apk"
           }
         ]
       },
@@ -1306,7 +1306,7 @@
       "allowNoRelease": true,
       "upstreamUrl": "https://cnb.cool/mingwuyan/iyuedu",
       "note": "z阅读的非内置ttsserver版本，不建议独立使用。",
-      "stars": 1,
+      "stars": 2,
       "sourceUpdatedAt": "2026-08-30T05:38:21Z",
       "githubArchived": false,
       "release": null,
