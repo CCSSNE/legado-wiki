@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T12:04:09.544Z",
+  "generatedAt": "2026-10-14T17:17:04.477Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 174,
+      "stars": 175,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47113,
+      "stars": 47112,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6480,
-      "sourceUpdatedAt": "2026-10-13T20:44:50Z",
+      "stars": 6484,
+      "sourceUpdatedAt": "2026-10-14T16:33:38Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.48",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2888,
+      "stars": 2892,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1482,
-      "sourceUpdatedAt": "2026-10-05T15:13:38Z",
+      "stars": 1485,
+      "sourceUpdatedAt": "2026-10-14T16:58:37Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26100504",
+        "name": "legado_app_3.26101423",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-04T20:04:08Z",
-        "body": "<!-- legado-version-code:38448 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/05**\n- 修复 Cronet 跨站下载时仍携带原站认证的问题，避免 WebDAV 跳转下载发生认证冲突，并正确延续多次跳转后的请求状态\n- Cronet 回退至 152.0.7977.54，保留 Android 6 支持及开关即时生效；继续只保存当前设备架构的一份组件，清理旧组件，安装包不内置 Cronet 原生库\n\n",
+        "createdAt": "2026-10-14T15:54:29Z",
+        "body": "<!-- legado-version-code:38453 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/14**\n- 扩大阅读选区手柄的触摸范围，误触手柄外侧后拖动保留选区并避免翻页，点击仍可取消选择\n- 修复开启 Cronet 时 RSS 视频拖动进度后卡住、反复缓冲的问题，视频请求继续使用 Cronet\n- 高亮样式新增独立左右边距并保留胶囊弧度，修正 HTML 重排时相邻图片宽度缩小及两端对齐后右边界越界的问题\n- 系统朗读按完整段落排队，不再因页面边界拆开词语；保留实际进度回调跟页和引擎长度上限，无逐字回调时仅按真实段落开始事件跟随，仍可主动选择按页朗读\n- 选中文字的菜单新增独立“从此处朗读”，从选区首字继续读，与原“朗读”选择文本模式分别保留\n- 修复旧系统朗读引擎延迟初始化时可能重建当前朗读队列的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26100504_releaseA_vc38448.apk",
-            "size": 23141365,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_releaseA_vc38448.apk"
+            "name": "legado_app_3.26101423_releaseA_vc38453.apk",
+            "size": 23142153,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101423_releaseA_vc38453.apk"
           },
           {
-            "name": "legado_app_3.26100504_release_vc38448.apk",
-            "size": 23141378,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_release_vc38448.apk"
+            "name": "legado_app_3.26101423_release_vc38453.apk",
+            "size": 23142157,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101423_release_vc38453.apk"
           },
           {
-            "name": "legado_app_3.26100504_universal_releaseA_vc38448.apk",
-            "size": 29092192,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_universal_releaseA_vc38448.apk"
+            "name": "legado_app_3.26101423_universal_releaseA_vc38453.apk",
+            "size": 29092974,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101423_universal_releaseA_vc38453.apk"
           },
           {
-            "name": "legado_app_3.26100504_universal_release_vc38448.apk",
-            "size": 29092202,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26100504_universal_release_vc38448.apk"
+            "name": "legado_app_3.26101423_universal_release_vc38453.apk",
+            "size": 29092977,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101423_universal_release_vc38453.apk"
           }
         ]
       },
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 621,
+      "stars": 622,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -453,7 +453,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 273,
+      "stars": 274,
       "sourceUpdatedAt": "2026-10-13T03:51:22Z",
       "githubArchived": false,
       "release": {
@@ -651,7 +651,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 127,
+      "stars": 129,
       "sourceUpdatedAt": "2026-10-14T04:04:59Z",
       "githubArchived": false,
       "release": {
@@ -724,7 +724,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 93,
+      "stars": 95,
       "sourceUpdatedAt": "2026-10-13T08:40:08Z",
       "githubArchived": false,
       "release": {
@@ -900,7 +900,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 35,
+      "stars": 37,
       "sourceUpdatedAt": "2026-10-08T00:51:35Z",
       "githubArchived": false,
       "release": {
