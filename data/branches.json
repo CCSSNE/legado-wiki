@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:06:06.513Z",
+  "generatedAt": "2026-10-15T19:12:42.801Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47114,
+      "stars": 47116,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6499,
-      "sourceUpdatedAt": "2026-10-14T19:33:14Z",
+      "stars": 6504,
+      "sourceUpdatedAt": "2026-10-15T19:11:07Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.16-beta.49",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2904,
+      "stars": 2906,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1504,
-      "sourceUpdatedAt": "2026-10-15T14:43:10Z",
+      "stars": 1508,
+      "sourceUpdatedAt": "2026-10-15T18:52:48Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26101520",
+        "name": "legado_app_3.26101602",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-15T12:56:43Z",
-        "body": "<!-- legado-version-code:38468 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/15**\n- 修复后台网页请求取消或超时后，旧的延迟脚本和页面回调仍可能影响已复用网页的问题\n- 修复快速切换书籍时旧阅读页退出可能中断新书加载或删除新书临时记录的问题\n- 修复手动高亮取消最后一项样式后被重新填充的问题；重复选中同一范围沿用已有高亮，编辑时同步旧版同范围重复记录的样式并保留各条笔记\n- 修复高亮样式弹窗在页面重建后各通道勾选状态错乱的问题\n- 书源校验遇到非 HTTP 地址时标记为“无法校验”并继续执行其它已勾选检查；真实检查失败仍归为失败，校验详情支持在书源管理和网页端筛选\n- 修复高亮设置左右边距后，叠加字体颜色、粗体或下划线等样式时胶囊背景被拆成多个小胶囊的问题\n\n",
+        "createdAt": "2026-10-15T18:44:11Z",
+        "body": "<!-- legado-version-code:38472 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/16**\n- 修复打开大型 jsLib 时 Intent 传输过大导致黑屏返回书源列表的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26101520_releaseA_vc38468.apk",
-            "size": 23142824,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_releaseA_vc38468.apk"
+            "name": "legado_app_3.26101602_releaseA_vc38472.apk",
+            "size": 23143000,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101602_releaseA_vc38472.apk"
           },
           {
-            "name": "legado_app_3.26101520_release_vc38468.apk",
-            "size": 23142810,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_release_vc38468.apk"
+            "name": "legado_app_3.26101602_release_vc38472.apk",
+            "size": 23143002,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101602_release_vc38472.apk"
           },
           {
-            "name": "legado_app_3.26101520_universal_releaseA_vc38468.apk",
-            "size": 29093644,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_universal_releaseA_vc38468.apk"
+            "name": "legado_app_3.26101602_universal_releaseA_vc38472.apk",
+            "size": 29093829,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101602_universal_releaseA_vc38472.apk"
           },
           {
-            "name": "legado_app_3.26101520_universal_release_vc38468.apk",
-            "size": 29093641,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_universal_release_vc38468.apk"
+            "name": "legado_app_3.26101602_universal_release_vc38472.apk",
+            "size": 29093828,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101602_universal_release_vc38472.apk"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 443,
+      "stars": 444,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 278,
+      "stars": 279,
       "sourceUpdatedAt": "2026-10-15T03:02:51Z",
       "githubArchived": false,
       "release": {
@@ -613,6 +613,34 @@
       "abandonedReason": "Release 与源码均超过半年未更新"
     },
     {
+      "id": "ng",
+      "name": "阅读 NG",
+      "tag": "ng",
+      "repo": "joestar817/legado_NG",
+      "term": "legado-branch-ng",
+      "stars": 131,
+      "sourceUpdatedAt": "2026-10-15T04:14:48Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_ng_3.26.101300",
+        "tagName": "3.26.101300",
+        "prerelease": false,
+        "publishedAt": "2026-10-12T16:29:26Z",
+        "createdAt": "2026-10-12T15:50:15Z",
+        "body": "### 更新内容\n* 修复小米设备阅读自定义字体被系统字重处理替换\n* 优化书源QQ登录跳转并修复授权后返回\n* 完善书籍编辑顶栏液态玻璃与类型 Dock 亮白底\n* 按有效发布记录修正正式版与测试版更新说明\n* 补齐 EPUB 惯性滚动并完善中断清理\n* 修复 EPUB 朗读翻页时的首屏闪回\n* 修复按页朗读切换后的字幕与语音错位\n* 修复 EPUB 系统 TTS 跨页和末页跟随\n* 优化阅读目录与书签工具栏排版\n* 修复手动书籍类型被书架刷新覆盖\n* 优化听书小窗大窗口书名与章节排版\n* 修复js书源字形库在编辑保存时丢失\n* 重构漫画阅读界面\n* 重构视频播放界面并修复小窗与续播边界\n* 移除首页组件抽屉的关闭按钮\n* 修复发现页内容点击无响应\n* 修复书源嵌套脚本求值的作用域恢复\n* 修复书源缓存清理误删相似地址数据\n* 完善订阅源导出分享并修复导出抽屉下拉关闭\n* 新增今日书讯自动刷新开关\n* 居中显示抽屉背景选项文字\n\n",
+        "assets": [
+          {
+            "name": "legado_NG_3.26.10130014_release.apk",
+            "size": 43292496,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.101300/legado_NG_3.26.10130014_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
+    },
+    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -644,34 +672,6 @@
       "errors": [],
       "fork": false,
       "forkOf": null
-    },
-    {
-      "id": "ng",
-      "name": "阅读 NG",
-      "tag": "ng",
-      "repo": "joestar817/legado_NG",
-      "term": "legado-branch-ng",
-      "stars": 130,
-      "sourceUpdatedAt": "2026-10-15T04:14:48Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_ng_3.26.101300",
-        "tagName": "3.26.101300",
-        "prerelease": false,
-        "publishedAt": "2026-10-12T16:29:26Z",
-        "createdAt": "2026-10-12T15:50:15Z",
-        "body": "### 更新内容\n* 修复小米设备阅读自定义字体被系统字重处理替换\n* 优化书源QQ登录跳转并修复授权后返回\n* 完善书籍编辑顶栏液态玻璃与类型 Dock 亮白底\n* 按有效发布记录修正正式版与测试版更新说明\n* 补齐 EPUB 惯性滚动并完善中断清理\n* 修复 EPUB 朗读翻页时的首屏闪回\n* 修复按页朗读切换后的字幕与语音错位\n* 修复 EPUB 系统 TTS 跨页和末页跟随\n* 优化阅读目录与书签工具栏排版\n* 修复手动书籍类型被书架刷新覆盖\n* 优化听书小窗大窗口书名与章节排版\n* 修复js书源字形库在编辑保存时丢失\n* 重构漫画阅读界面\n* 重构视频播放界面并修复小窗与续播边界\n* 移除首页组件抽屉的关闭按钮\n* 修复发现页内容点击无响应\n* 修复书源嵌套脚本求值的作用域恢复\n* 修复书源缓存清理误删相似地址数据\n* 完善订阅源导出分享并修复导出抽屉下拉关闭\n* 新增今日书讯自动刷新开关\n* 居中显示抽屉背景选项文字\n\n",
-        "assets": [
-          {
-            "name": "legado_NG_3.26.10130014_release.apk",
-            "size": 43292496,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.101300/legado_NG_3.26.10130014_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "mr",
@@ -792,7 +792,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 57,
+      "stars": 58,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-15T15:00:25Z",
+      "sourceUpdatedAt": "2026-10-15T19:08:17Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
