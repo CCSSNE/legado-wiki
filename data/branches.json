@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T10:00:21.966Z",
+  "generatedAt": "2026-10-15T15:06:06.513Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47111,
+      "stars": 47114,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6492,
+      "stars": 6499,
       "sourceUpdatedAt": "2026-10-14T19:33:14Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2898,
+      "stars": 2904,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1495,
-      "sourceUpdatedAt": "2026-10-15T09:34:32Z",
+      "stars": 1504,
+      "sourceUpdatedAt": "2026-10-15T14:43:10Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26101516",
+        "name": "legado_app_3.26101520",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-15T08:23:40Z",
-        "body": "<!-- legado-version-code:38465 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/15**\n- 修复快速切换书籍时旧阅读页退出可能中断新书加载或删除新书临时记录的问题\n- 书源校验遇到非 HTTP 地址时标记为“无法校验”并继续执行其它已勾选检查；真实检查失败仍归为失败，校验详情支持在书源管理和网页端筛选\n- 修复高亮设置左右边距后，叠加字体颜色、粗体或下划线等样式时胶囊背景被拆成多个小胶囊的问题\n\n",
+        "createdAt": "2026-10-15T12:56:43Z",
+        "body": "<!-- legado-version-code:38468 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/15**\n- 修复后台网页请求取消或超时后，旧的延迟脚本和页面回调仍可能影响已复用网页的问题\n- 修复快速切换书籍时旧阅读页退出可能中断新书加载或删除新书临时记录的问题\n- 修复手动高亮取消最后一项样式后被重新填充的问题；重复选中同一范围沿用已有高亮，编辑时同步旧版同范围重复记录的样式并保留各条笔记\n- 修复高亮样式弹窗在页面重建后各通道勾选状态错乱的问题\n- 书源校验遇到非 HTTP 地址时标记为“无法校验”并继续执行其它已勾选检查；真实检查失败仍归为失败，校验详情支持在书源管理和网页端筛选\n- 修复高亮设置左右边距后，叠加字体颜色、粗体或下划线等样式时胶囊背景被拆成多个小胶囊的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26101516_releaseA_vc38465.apk",
-            "size": 23142670,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101516_releaseA_vc38465.apk"
+            "name": "legado_app_3.26101520_releaseA_vc38468.apk",
+            "size": 23142824,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_releaseA_vc38468.apk"
           },
           {
-            "name": "legado_app_3.26101516_release_vc38465.apk",
-            "size": 23142667,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101516_release_vc38465.apk"
+            "name": "legado_app_3.26101520_release_vc38468.apk",
+            "size": 23142810,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_release_vc38468.apk"
           },
           {
-            "name": "legado_app_3.26101516_universal_releaseA_vc38465.apk",
-            "size": 29093500,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101516_universal_releaseA_vc38465.apk"
+            "name": "legado_app_3.26101520_universal_releaseA_vc38468.apk",
+            "size": 29093644,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_universal_releaseA_vc38468.apk"
           },
           {
-            "name": "legado_app_3.26101516_universal_release_vc38465.apk",
-            "size": 29093500,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101516_universal_release_vc38465.apk"
+            "name": "legado_app_3.26101520_universal_release_vc38468.apk",
+            "size": 29093641,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101520_universal_release_vc38468.apk"
           }
         ]
       },
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 623,
+      "stars": 627,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 438,
+      "stars": 443,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 277,
+      "stars": 278,
       "sourceUpdatedAt": "2026-10-15T03:02:51Z",
       "githubArchived": false,
       "release": {
@@ -651,7 +651,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 129,
+      "stars": 130,
       "sourceUpdatedAt": "2026-10-15T04:14:48Z",
       "githubArchived": false,
       "release": {
@@ -724,7 +724,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 97,
+      "stars": 98,
       "sourceUpdatedAt": "2026-10-13T08:40:08Z",
       "githubArchived": false,
       "release": {
@@ -900,7 +900,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 39,
+      "stars": 40,
       "sourceUpdatedAt": "2026-10-08T00:51:35Z",
       "githubArchived": false,
       "release": {
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-15T09:22:36Z",
+      "sourceUpdatedAt": "2026-10-15T15:00:25Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1106,7 +1106,7 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-15T04:01:07Z",
+      "sourceUpdatedAt": "2026-10-15T10:51:03Z",
       "githubArchived": false,
       "release": {
         "name": "v3.26.101530-10094 · 朗读 bug 修复 + 朗读界面更新",
