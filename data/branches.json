@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:29:10.240Z",
+  "generatedAt": "2026-10-16T21:16:00.601Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47119,
+      "stars": 47118,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6514,
+      "stars": 6516,
       "sourceUpdatedAt": "2026-10-15T19:34:37Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1527,
+      "stars": 1528,
       "sourceUpdatedAt": "2026-10-16T16:36:09Z",
       "githubArchived": false,
       "release": {
@@ -446,7 +446,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 274,
+      "stars": 275,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -618,7 +618,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 131,
+      "stars": 132,
       "sourceUpdatedAt": "2026-10-15T04:14:48Z",
       "githubArchived": false,
       "release": {
@@ -815,6 +815,90 @@
       "forkOf": null
     },
     {
+      "id": "lightread",
+      "name": "LightRead 轻阅",
+      "tag": "lightread",
+      "repo": "yzfly/LightRead",
+      "term": "legado-branch-lightread",
+      "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
+      "stars": 48,
+      "sourceUpdatedAt": "2026-10-16T18:23:30Z",
+      "githubArchived": false,
+      "release": {
+        "name": "LightRead 轻阅 v1.17.0",
+        "tagName": "v1.17.0",
+        "prerelease": false,
+        "publishedAt": "2026-10-16T18:42:21Z",
+        "createdAt": "2026-10-16T18:23:28Z",
+        "body": "release: v1.17.0\n\n## 改进\n- 滚动阅读不再闪烁跳动: 自动滚动改为亚像素匀速推进, 慢速时也不再一顿一顿地跳\n- 打字机在滚动版式下平稳上移, 不再一下跳走大半屏; 墨水屏下自动滚动改为整屏推进, 不拖残影\n- 版式与带读统一到「模式 › 阅读方式」: 翻页/滚动、跨章、分栏、竖屏与自动翻页、打字机、歌词、听书在同一处设置, 并说明每种带读在当前版式下怎么动; 排版面板的「版式」入口显示当前生效值并一键跳转\n- 歌词模式的单栏滚动和字号放大只在运行时生效, 不再改动保存的设置, 也不会同步到其他设备\n- 自动滚动过程中也会保存阅读进度\n\n## 验证\n- vue-tsc + vite build; test:reading-modes / reading-focus / reader-pages / sync-settings / read-aloud / keyboard-shortcuts\n- npm run e2e 冒烟全部通过; e2e:continuous-scroll 全部场景 (含 CPU 降速 60 秒自动滚动) 通过; e2e:mobile 15 款机型 0 问题\n- 逐帧实测自动滚动位移: 慢速由 0/1px 交替变为恒定 0.38px/帧, 无回跳\n\n## 已知限制\n- 滚动平滑度在无头浏览器中验证, 尚未在 Android WebView / Surface 实机复测\n- 翻页/滚动开关从「排版」移到「模式」, 排版里保留跳转入口\n- Android 仍为实验性 arm64 debug 包\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "assets": [
+          {
+            "name": "LightRead-1.17.0-1.x86_64.rpm",
+            "size": 29787339,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead-1.17.0-1.x86_64.rpm"
+          },
+          {
+            "name": "LightRead_1.17.0_aarch64.dmg",
+            "size": 23230690,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_1.17.0_aarch64.dmg"
+          },
+          {
+            "name": "LightRead_1.17.0_amd64.AppImage",
+            "size": 105634296,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_1.17.0_amd64.AppImage"
+          },
+          {
+            "name": "LightRead_1.17.0_amd64.deb",
+            "size": 29789492,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_1.17.0_amd64.deb"
+          },
+          {
+            "name": "LightRead_1.17.0_x64-setup.exe",
+            "size": 17929599,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_1.17.0_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_1.17.0_x64.dmg",
+            "size": 24450271,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_1.17.0_x64.dmg"
+          },
+          {
+            "name": "LightRead_aarch64.app.tar.gz",
+            "size": 23124009,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_aarch64.app.tar.gz"
+          },
+          {
+            "name": "LightRead_v1.17.0_android_arm64.apk",
+            "size": 71652508,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_v1.17.0_android_arm64.apk"
+          },
+          {
+            "name": "LightRead_v1.17.0_android_arm64.apk.json",
+            "size": 390,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_v1.17.0_android_arm64.apk.json"
+          },
+          {
+            "name": "LightRead_v1.17.0_android_arm64.apk.sha256",
+            "size": 102,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_v1.17.0_android_arm64.apk.sha256"
+          },
+          {
+            "name": "LightRead_x64.app.tar.gz",
+            "size": 24397930,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/LightRead_x64.app.tar.gz"
+          },
+          {
+            "name": "SHA256SUMS",
+            "size": 1074,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.17.0/SHA256SUMS"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "nexhub",
       "name": "NexHub",
       "tag": "nexhub",
@@ -894,97 +978,13 @@
       "forkOf": null
     },
     {
-      "id": "lightread",
-      "name": "LightRead 轻阅",
-      "tag": "lightread",
-      "repo": "yzfly/LightRead",
-      "term": "legado-branch-lightread",
-      "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 45,
-      "sourceUpdatedAt": "2026-10-16T14:56:00Z",
-      "githubArchived": false,
-      "release": {
-        "name": "LightRead 轻阅 v1.16.0",
-        "tagName": "v1.16.0",
-        "prerelease": false,
-        "publishedAt": "2026-10-16T15:14:03Z",
-        "createdAt": "2026-10-16T14:55:53Z",
-        "body": "release: v1.16.0\n\n## 新功能\n- 通用纯文本阅读: 源码, 配置, 日志, 字幕, 数据文件及 README/LICENSE 等无扩展名文件都能加入书架. 代码类按等宽字体 + 行号显示, 散文类沿用 TXT 分章分段; 二进制文件仍会被拒绝\n- Markdown/HTML 按文档预览排版: 标题层级, 引用, 代码块, 任务列表更接近 GitHub 预览; 表格在窄屏可左右滑动; HTML 保留页面样式并按 h1-h3 生成多级目录\n- 支持带 BOM 的 UTF-16 文本, 以及 .mdx .mkd .qmd .rmd 等 Markdown 扩展名; 桌面端可把常见文本/源码文件关联到轻阅打开\n\n## 改进\n- 手机竖屏全面适配: 触控目标加大, 书架/阅读器/统计/互传/设置等页面在 344-690px 宽度下无横向溢出, 刘海与手势条不遮挡\n- 小屏阅读器工具栏改为不透明, 正文不再透出叠字\n- 导入失败提示改为可读文案\n\n## 验证\n- vue-tsc + vite build, test:plain-text / convert-epub / transfer\n- npm run e2e 冒烟全部通过; npm run e2e:mobile 15 款机型 0 问题\n\n## 已知限制\n- Markdown/HTML/代码文件的阅读位置在升级后按进度比例恢复 (版式版本变更)\n- Android 仍为实验性 arm64 debug 包\n\n",
-        "assets": [
-          {
-            "name": "LightRead-1.16.0-1.x86_64.rpm",
-            "size": 29779887,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead-1.16.0-1.x86_64.rpm"
-          },
-          {
-            "name": "LightRead_1.16.0_aarch64.dmg",
-            "size": 23227324,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_1.16.0_aarch64.dmg"
-          },
-          {
-            "name": "LightRead_1.16.0_amd64.AppImage",
-            "size": 105634296,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_1.16.0_amd64.AppImage"
-          },
-          {
-            "name": "LightRead_1.16.0_amd64.deb",
-            "size": 29781956,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_1.16.0_amd64.deb"
-          },
-          {
-            "name": "LightRead_1.16.0_x64-setup.exe",
-            "size": 17930025,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_1.16.0_x64-setup.exe"
-          },
-          {
-            "name": "LightRead_1.16.0_x64.dmg",
-            "size": 24447408,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_1.16.0_x64.dmg"
-          },
-          {
-            "name": "LightRead_aarch64.app.tar.gz",
-            "size": 23122257,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_aarch64.app.tar.gz"
-          },
-          {
-            "name": "LightRead_v1.16.0_android_arm64.apk",
-            "size": 71648052,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_v1.16.0_android_arm64.apk"
-          },
-          {
-            "name": "LightRead_v1.16.0_android_arm64.apk.json",
-            "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_v1.16.0_android_arm64.apk.json"
-          },
-          {
-            "name": "LightRead_v1.16.0_android_arm64.apk.sha256",
-            "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_v1.16.0_android_arm64.apk.sha256"
-          },
-          {
-            "name": "LightRead_x64.app.tar.gz",
-            "size": 24394391,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/LightRead_x64.app.tar.gz"
-          },
-          {
-            "name": "SHA256SUMS",
-            "size": 1074,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.16.0/SHA256SUMS"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "m",
       "name": "阅读 M",
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-16T17:03:50Z",
+      "sourceUpdatedAt": "2026-10-16T19:51:37Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1243,7 +1243,7 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.101616.apk",
-            "size": null,
+            "size": 20928526,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101616/%E9%98%85%E8%AF%BB_E-ink_3.26.101616.apk"
           },
           {
