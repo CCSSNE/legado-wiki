@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T07:15:28.837Z",
+  "generatedAt": "2026-10-16T12:32:05.548Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47113,
+      "stars": 47115,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6508,
+      "stars": 6509,
       "sourceUpdatedAt": "2026-10-15T19:34:37Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2907,
+      "stars": 2909,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2210,
+      "stars": 2213,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1519,
-      "sourceUpdatedAt": "2026-10-16T05:55:22Z",
+      "stars": 1525,
+      "sourceUpdatedAt": "2026-10-16T12:01:50Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26101613",
+        "name": "legado_app_3.26101619",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-16T05:44:04Z",
-        "body": "<!-- legado-version-code:38476 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/16**\n- 修复打开大型 jsLib 时 Intent 传输过大导致黑屏返回书源列表的问题\n- 超长 jsLib 改用安全编辑器，避免原生编辑器加载时黑屏退出\n- 修复纯文本首行高亮胶囊的边缘留白叠加段首缩进，保持高亮与未高亮段落对齐\n- 修复主界面打开输入法时底部导航栏随内容上移，保持导航栏固定并抬起当前页面内容\n- 修复高亮左右边距默认占用文字间距的问题；新增可选的“影响文字间距”开关，默认只扩展背景绘制\n\n",
+        "createdAt": "2026-10-16T11:51:15Z",
+        "body": "<!-- legado-version-code:38477 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/16**\n- 修复打开大型 jsLib 时 Intent 传输过大导致黑屏返回书源列表的问题\n- 超长 jsLib 改用安全编辑器，避免原生编辑器加载时黑屏退出\n- 修复纯文本首行高亮胶囊的边缘留白叠加段首缩进，保持高亮与未高亮段落对齐\n- 修复主界面打开输入法时底部导航栏随内容上移，保持导航栏固定并抬起当前页面内容\n- 修复高亮左右边距默认占用文字间距的问题；新增可选的“影响文字间距”开关，默认只扩展背景绘制\n- 修复发现列表开启分类后与首屏书源脚本并发执行导致加载失败的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26101613_releaseA_vc38476.apk",
-            "size": 23143465,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101613_releaseA_vc38476.apk"
+            "name": "legado_app_3.26101619_releaseA_vc38477.apk",
+            "size": 23143486,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101619_releaseA_vc38477.apk"
           },
           {
-            "name": "legado_app_3.26101613_release_vc38476.apk",
-            "size": 23143451,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101613_release_vc38476.apk"
+            "name": "legado_app_3.26101619_release_vc38477.apk",
+            "size": 23143486,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101619_release_vc38477.apk"
           },
           {
-            "name": "legado_app_3.26101613_universal_releaseA_vc38476.apk",
-            "size": 29094297,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101613_universal_releaseA_vc38476.apk"
+            "name": "legado_app_3.26101619_universal_releaseA_vc38477.apk",
+            "size": 29094314,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101619_universal_releaseA_vc38477.apk"
           },
           {
-            "name": "legado_app_3.26101613_universal_release_vc38476.apk",
-            "size": 29094288,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101613_universal_release_vc38476.apk"
+            "name": "legado_app_3.26101619_universal_release_vc38477.apk",
+            "size": 29094329,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101619_universal_release_vc38477.apk"
           }
         ]
       },
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 283,
+      "stars": 285,
       "sourceUpdatedAt": "2026-10-15T03:02:51Z",
       "githubArchived": false,
       "release": {
@@ -680,7 +680,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 108,
+      "stars": 109,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -753,7 +753,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 73,
+      "stars": 74,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -900,7 +900,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 41,
+      "stars": 43,
       "sourceUpdatedAt": "2026-10-16T00:58:06Z",
       "githubArchived": false,
       "release": {
@@ -984,7 +984,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-16T06:59:32Z",
+      "sourceUpdatedAt": "2026-10-16T10:28:16Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1106,7 +1106,7 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-16T02:55:54Z",
+      "sourceUpdatedAt": "2026-10-16T09:18:09Z",
       "githubArchived": false,
       "release": {
         "name": "阅读SK v3.26.101625c（10096）· 修复双击跳段位置错误 + 听书面板贴屏底",
@@ -1231,35 +1231,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-16T10:58:03+08:00",
+      "sourceUpdatedAt": "2026-10-16T16:39:52+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.101610",
-        "tagName": "阅读_E-ink_3.26.101610",
+        "name": "阅读_E-ink_3.26.101616",
+        "tagName": "阅读_E-ink_3.26.101616",
         "prerelease": false,
-        "publishedAt": "2026-10-16T10:58:03+08:00",
-        "createdAt": "2026-10-16T10:58:03+08:00",
-        "body": "- 支持直接选择文件\r\n- 样式背景支持编码\r\n- 标题样式支持正则\r\n- 修复已知新增未知",
+        "publishedAt": "2026-10-16T16:39:52+08:00",
+        "createdAt": "2026-10-16T16:39:52+08:00",
+        "body": "- 支持直接导出样式\r\n- 支持直接导入样式\r\n- 样式背景支持编码\r\n- 标题样式支持正则\r\n- 修复自带文件闪退\r\n- 修复已知新增未知",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.101610.apk",
-            "size": 20924430,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101610/%E9%98%85%E8%AF%BB_E-ink_3.26.101610.apk"
+            "name": "阅读_E-ink_3.26.101616.apk",
+            "size": 20928526,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101616/%E9%98%85%E8%AF%BB_E-ink_3.26.101616.apk"
           },
           {
-            "name": "阅读_magisk_3.26.101610.zip",
-            "size": 22674651,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101610/%E9%98%85%E8%AF%BB_magisk_3.26.101610.zip"
+            "name": "阅读_magisk_3.26.101616.zip",
+            "size": 22676682,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101616/%E9%98%85%E8%AF%BB_magisk_3.26.101616.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.101610.zip",
+            "name": "阅读_E-ink_3.26.101616.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101610.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101616.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.101610.tar.gz",
+            "name": "阅读_E-ink_3.26.101616.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101610.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101616.tar.gz"
           }
         ]
       },
