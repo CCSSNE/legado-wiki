@@ -53,7 +53,7 @@
     },
     "archive": {
       "upstreamId": 1218348252,
-      "upstreamRepo": "Rimchars/legado",
+      "upstreamRepo": "rimvoid/legado",
       "upstreamBranch": "main",
       "backupRepo": "legado-backup/legado-archive",
       "activeBranch": "main",
@@ -579,10 +579,10 @@
     },
     "archive": {
       "name": "阅读 Archive",
-      "repo": "Rimchars/legado",
+      "repo": "rimvoid/legado",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T01:29:38.506Z",
+      "since": "2026-10-17T14:22:57.754Z",
       "backupRepo": "legado-backup/legado-archive",
       "activeBranch": "main",
       "events": [
@@ -590,6 +590,11 @@
           "at": "2026-10-05T01:29:38.506Z",
           "type": "synced",
           "message": "Rimchars/legado:main → legado-backup/legado-archive:main 已同步"
+        },
+        {
+          "at": "2026-10-17T14:22:57.754Z",
+          "type": "renamed",
+          "message": "rimvoid/legado:main → legado-backup/legado-archive:main 已同步"
         }
       ]
     },
@@ -1258,5 +1263,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-17T11:08:12.394Z"
+  "checkedAt": "2026-10-17T14:23:26.296Z"
 }
