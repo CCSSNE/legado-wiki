@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T17:16:26.460Z",
+  "generatedAt": "2026-10-17T19:29:40.631Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47128,
+      "stars": 47130,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -86,35 +86,35 @@
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
       "stars": 6525,
-      "sourceUpdatedAt": "2026-10-15T19:34:37Z",
+      "sourceUpdatedAt": "2026-10-17T18:08:58Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.16-beta.50",
-        "tagName": "3.26.16-beta.50",
+        "name": "Pre-release 3.26.16-beta.51",
+        "tagName": "3.26.16-beta.51",
         "prerelease": true,
-        "publishedAt": "2026-10-15T19:34:24Z",
-        "createdAt": "2026-10-15T19:17:02Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* chore(read-aloud): 删掉 12 条无人引用的角色配音文案\n* fix(read-aloud): 角色补音改成随机，音色被删也自动重挑\n* fix(read-aloud): 准备还在跑时 play() 不再重起一次，起点不被冲成章首\n* fix(read-aloud): 切下一章时不再把脚下的准备作业取消掉\n* fix(voice-pool): 添加音色的搜索框不再把自己越筛越小\n* fix(read): 翻页模式下点朗读也从当前页开始\n* feat(voice-pool): 导入确认页给出已装引擎下拉，让人自己挑来源包名\n* feat(voice-pool): 认 TTS Server 导出的第二种层级（引擎分组 + categoryPath 池）\n* fix(read): 常挂弹层的当前章一律每次重组重读\n* fix(read-aloud): 分配覆盖层出错不再把整章的朗读准备带走\n* fix(read): 整图也带上 src 尾随 JSON 里的 click\n* feat: 漫画稳定性\n* feat: 漫画乱跳\n* fix(bookshelf): 再次长按搜索按钮时收起筛选\n* feat(bookshelf): 支持标签来源设置和搜索按钮长按\n* fix(reader): 恢复滑动翻页对斜划的响应\n\n## What's Changed\n* fix(read-aloud): 朗读切章与起点、角色随机补音、TTS Server 导入层级等 11 项 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2427\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.49...3.26.16-beta.50",
+        "publishedAt": "2026-10-17T18:08:43Z",
+        "createdAt": "2026-10-17T17:47:08Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n### [发布页](https://t.me/materado)\n### [反馈群组](https://t.me/+Yn1_v5PZqddmMjQ1)\n\n### 更新内容\n\n* feat: 朗读快捷设置定时\n* feat: 滚动翻页时上下边距不对\n* feat: 优化分组管理\n* feat: 条漫优化\n* feat: 朗读系列优化\n* fix(read-aloud): 修复运行中控制指令重复请求前台启动导致的超时崩溃\n* fix(tts): 修复外部 HTTP 音色兼容与数据一致性\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16-beta.50...3.26.16-beta.51",
         "assets": [
           {
-            "name": "legado-3.26.16-beta.50-arm64-v8a.apk",
-            "size": 20910954,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.50/legado-3.26.16-beta.50-arm64-v8a.apk"
+            "name": "legado-3.26.16-beta.51-arm64-v8a.apk",
+            "size": 20947133,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.51/legado-3.26.16-beta.51-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.50-armeabi-v7a.apk",
-            "size": 20450761,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.50/legado-3.26.16-beta.50-armeabi-v7a.apk"
+            "name": "legado-3.26.16-beta.51-armeabi-v7a.apk",
+            "size": 20486961,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.51/legado-3.26.16-beta.51-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.16-beta.50.apk",
-            "size": 27483421,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.50/legado-3.26.16-beta.50.apk"
+            "name": "legado-3.26.16-beta.51.apk",
+            "size": 27519607,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.51/legado-3.26.16-beta.51.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 296000945,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.50/mapping.txt"
+            "size": 296501493,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.16-beta.51/mapping.txt"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 455,
+      "stars": 456,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 290,
+      "stars": 291,
       "sourceUpdatedAt": "2026-10-17T05:52:40Z",
       "githubArchived": false,
       "release": {
@@ -618,7 +618,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 133,
+      "stars": 134,
       "sourceUpdatedAt": "2026-10-15T04:14:48Z",
       "githubArchived": false,
       "release": {
