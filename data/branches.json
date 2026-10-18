@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T01:08:17.506Z",
+  "generatedAt": "2026-10-18T05:59:14.501Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47131,
+      "stars": 47132,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6525,
+      "stars": 6526,
       "sourceUpdatedAt": "2026-10-17T18:08:58Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1547,
+      "stars": 1549,
       "sourceUpdatedAt": "2026-10-16T16:36:09Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 456,
+      "stars": 455,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -446,7 +446,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 275,
+      "stars": 274,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -540,7 +540,7 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 141,
-      "sourceUpdatedAt": "2026-09-07T05:49:13Z",
+      "sourceUpdatedAt": "2026-10-18T03:03:22Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.090313",
@@ -822,80 +822,40 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 49,
-      "sourceUpdatedAt": "2026-10-18T00:54:07Z",
+      "sourceUpdatedAt": "2026-10-18T03:55:15Z",
       "githubArchived": false,
       "release": {
-        "name": "LightRead v1.19.4 · 1.x 最终版",
-        "tagName": "v1.19.4",
+        "name": "v1.20.1",
+        "tagName": "v1.20.1",
         "prerelease": false,
-        "publishedAt": "2026-10-17T16:36:18Z",
-        "createdAt": "2026-10-17T16:18:31Z",
-        "body": "**1.x 系列最终版本。** 当前稳定版本完整保留，后续主要开发转入 2.0；维护基线见 `release/1.x` 分支。\n\nrelease: v1.19.4\n\n手机阅读界面与自动排版\n\n- 优化手机端论文筛选、书源列表、阅读记录和分组设置页面。\n- 按可用窗口尺寸自动选择横屏、竖屏排版，适配手机、平板、桌面窗口及分屏。\n- 用户手动设置的字号、行距、边距、翻页方式和分栏逐项优先，旋转、重启和同步后保留；已有自定义设置自动迁移。\n- PDF 同步支持自动布局，并保留手动布局、缩放与放映前的设置。\n- 统一阅读模式中数字和时间输入框的边框、底色、聚焦样式及手机点击区域，适配深浅主题。\n\n验证：排版与设置同步单测、阅读模式与页码回归、完整浏览器阅读器冒烟通过；K30 真机覆盖安装、横竖屏切换和输入框检查通过，33 本原有藏书及阅读进度保留。\n\nAndroid 安装包仍为实验性 arm64 debug 版本，使用既有固定签名，支持同签名版本覆盖安装。\n\n",
+        "publishedAt": "2026-10-18T03:55:51Z",
+        "createdAt": "2026-10-18T03:55:14Z",
+        "body": "<!-- lightread-android-maintenance -->\n\n轻阅 Android 1.20.1，基于 1.20.0 的维护补丁，保留该系列原有界面与功能。\n\n- 修复在线语音服务协议变化导致的合成失败，并限制连接、合成等待时间，失败后可重试。\n- 接入 Android 原生系统语音。选择“系统语音”可使用手机已安装的离线音色；在线合成失败时尝试该通道。支持连续朗读、暂停、恢复和停止。\n- 自动同步统一改为最短 6 小时间隔，设置变更、退出阅读、切后台和重启应用不会绕过限频；保留“立即同步”。应用被系统挂起时，在恢复运行后检查是否到期。\n- 安卓更新检查可识别本次独立维护版本，避免重新推荐旧的语音实现。\n\n兼容与验证：继续使用原包名 com.yzfly.lightread.debug 和固定签名；提供 arm64 实验性 Android debug APK。通过语音、播放与同步回归测试、TypeScript/Kotlin 编译及 APK 版本/签名/完整性检查。Android 原生语音需要设备已有可用 TTS 引擎和离线语音数据；未安装时显示明确提示。\n\n本次仅发布 Android 补丁。请选择对应系列 APK 手动覆盖安装；桌面版请继续使用原桌面发布版本。请勿卸载旧应用或清除应用数据。\n",
         "assets": [
           {
-            "name": "LightRead-1.19.4-1.x86_64.rpm",
-            "size": 30054935,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead-1.19.4-1.x86_64.rpm"
+            "name": "LightRead_v1.20.1_android_arm64.apk",
+            "size": 73511352,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.20.1/LightRead_v1.20.1_android_arm64.apk"
           },
           {
-            "name": "LightRead_1.19.4_aarch64.dmg",
-            "size": 23465737,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_1.19.4_aarch64.dmg"
-          },
-          {
-            "name": "LightRead_1.19.4_amd64.AppImage",
-            "size": 105896440,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_1.19.4_amd64.AppImage"
-          },
-          {
-            "name": "LightRead_1.19.4_amd64.deb",
-            "size": 30055394,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_1.19.4_amd64.deb"
-          },
-          {
-            "name": "LightRead_1.19.4_x64-setup.exe",
-            "size": 18209002,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_1.19.4_x64-setup.exe"
-          },
-          {
-            "name": "LightRead_1.19.4_x64.dmg",
-            "size": 24718141,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_1.19.4_x64.dmg"
-          },
-          {
-            "name": "LightRead_aarch64.app.tar.gz",
-            "size": 23391413,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_aarch64.app.tar.gz"
-          },
-          {
-            "name": "LightRead_v1.19.4_android_arm64.apk",
-            "size": 139600338,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_v1.19.4_android_arm64.apk"
-          },
-          {
-            "name": "LightRead_v1.19.4_android_arm64.apk.build.json",
+            "name": "LightRead_v1.20.1_android_arm64.apk.build.json",
             "size": 159,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_v1.19.4_android_arm64.apk.build.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.20.1/LightRead_v1.20.1_android_arm64.apk.build.json"
           },
           {
-            "name": "LightRead_v1.19.4_android_arm64.apk.json",
-            "size": 390,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_v1.19.4_android_arm64.apk.json"
+            "name": "LightRead_v1.20.1_android_arm64.apk.json",
+            "size": 480,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.20.1/LightRead_v1.20.1_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v1.19.4_android_arm64.apk.sha256",
+            "name": "LightRead_v1.20.1_android_arm64.apk.sha256",
             "size": 102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_v1.19.4_android_arm64.apk.sha256"
-          },
-          {
-            "name": "LightRead_x64.app.tar.gz",
-            "size": 24657237,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/LightRead_x64.app.tar.gz"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.20.1/LightRead_v1.20.1_android_arm64.apk.sha256"
           },
           {
             "name": "SHA256SUMS",
-            "size": 1187,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.19.4/SHA256SUMS"
+            "size": 431,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v1.20.1/SHA256SUMS"
           }
         ]
       },
@@ -910,7 +870,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 45,
+      "stars": 46,
       "sourceUpdatedAt": "2026-10-11T12:35:01Z",
       "githubArchived": false,
       "release": {
@@ -989,7 +949,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-17T11:31:15Z",
+      "sourceUpdatedAt": "2026-10-18T05:45:39Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1280,25 +1240,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-11T07:07:33Z",
+      "sourceUpdatedAt": "2026-10-18T05:56:29Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.30.0-20261011-070730 (预发布)",
-        "tagName": "v3.30.0-20261011-070730",
+        "name": "Legado MD3 v3.30.0-20261018-055626 (预发布)",
+        "tagName": "v3.30.0-20261018-055626",
         "prerelease": true,
-        "publishedAt": "2026-10-11T07:07:33Z",
-        "createdAt": "2026-10-11T07:00:46Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: c9592b52f4c77214b5556a4c05346a8f8fe9a614\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-10-18T05:56:29Z",
+        "createdAt": "2026-10-18T05:48:39Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: 9b04785becb75cad667e7ce37217481ee1e27986\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 24463074,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261011-070730/app-arm64-release.apk"
+            "size": 24554155,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261018-055626/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 42977482,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261011-070730/app-universal-release.apk"
+            "size": 43256230,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261018-055626/app-universal-release.apk"
           }
         ]
       },
