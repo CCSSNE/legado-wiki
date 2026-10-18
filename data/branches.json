@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T20:49:56.868Z",
+  "generatedAt": "2026-10-18T23:18:07.205Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6536,
+      "stars": 6539,
       "sourceUpdatedAt": "2026-10-18T20:29:10Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2922,
+      "stars": 2923,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1562,
+      "stars": 1563,
       "sourceUpdatedAt": "2026-10-18T11:11:34Z",
       "githubArchived": false,
       "release": {
@@ -585,30 +585,30 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 142,
-      "sourceUpdatedAt": "2026-10-18T20:48:19Z",
+      "sourceUpdatedAt": "2026-10-18T22:58:30Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.101904",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-18T07:33:51Z",
-        "createdAt": "2026-10-18T20:18:17Z",
-        "body": "# 2026/10/18 测试版更新说明\n\n> ⚠️ **升级前请先备份数据。** 本版数据库由 93 升级到 94，首次启动自动迁移。旧版应用不能直接读取迁移后的数据库；如需回退，请使用升级前备份，不要仅覆盖安装旧 APK。\n\n## 发现与 MCP\n\n- 恢复可选的旧版发现页：在“设置 → 其它设置 → 使用旧版发现页”开启，按书源展开分类，支持搜索、分组、登录、编辑与刷新；默认仍为新版卡片页。\n- MCP 新增发现卡片的查询、添加、批量添加、更新和删除工具，支持一次跨多个书源创建卡片，以及全部分类、动态分类和逐卡配置。\n- 批量最多提交 50 项，采用严格原子校验：任一书源不存在、未启用发现或参数无效，整批报错，不会部分添加。追加使用自增 ID 和连续排序，不覆盖已有卡片。\n- 本次新增的是 MCP 工具，不是独立 HTTP / WebSocket 接口；重复调用仍会新增卡片，不做跨调用去重。调用示例见 [API / MCP 使用说明](https://github.com/skybbk1001/legadoT/blob/a66ae3405cebe667ec751960df997e8e5f8f4028/api.md)。\n\n## 阅读记录与备份\n\n- 阅读记录增加作者与封面快照，尽量保留书籍移出书架后的展示信息；按书籍 URL 区分同名书，避免统计混在一起。\n- 历史记录只有能唯一匹配到在架书籍时才补全身份和元数据；有歧义或已删除的记录保留历史身份，不猜测作者。\n- 旧备份按同设备、同书籍身份合并累计时长，重复恢复不重复累加同一份时长；保留旧记录的设备归属。\n- 修复翻页、朗读和音频计时在切书、暂停及开关记录时的边界问题，并修复中英文大字体下两行时间可能重叠的问题。\n\n## 音频与书源交互\n\n- 音频页菜单新增“播放速度”，提供 0.5 / 0.75 / 1 / 1.25 / 1.5 / 2 / 3 倍预设，保留 ±0.1 倍微调，统一校验并保存速度。\n- 修复 v1 / v2 登录 UI 的动态渲染、按钮动作和登录脚本中的页面扩展绑定，支持使用 `java.open` 跳转。\n- 补齐交互回调 / 登录脚本的 `java.open(\"rss\", articleUrl, title, rssSourceUrl)`：使用已导入的目标订阅源进入文章加载链路，未缓存文章不会覆盖已有正文；导航受原页面生命周期约束。\n\n## 界面\n\n- 修正封面背景、图片与前景的圆角裁切，调整书架及发现封面卡片，避免双重圆角和额外内边距导致角部露底。\n- 沿用此前浅色文字修复，补充输入框正文和确认弹窗标题的可读性回归，不将既有修复重复记为本轮新增。\n\n## Nostr 段评\n\n- 支持 NIP-46 远程签名器与 NIP-55 本机签名器（如 Amber），连接入口集中管理，支持头像、昵称、点赞和五级嵌套回复。\n- 新增“最热 / 最新”切换：“最热”混合热度榜与最新榜，去重后展示；调整排序控件、列表配色及下拉刷新，已打开的列表避免后台更新引起跳动。\n- 发送状态与草稿支持跨弹窗展示，失败草稿落盘，重启后仍可恢复并点击重发。\n- 发布成功后原位更新占位项，不再整页重载；修复成功后残留“发送中”，断网或发送失败时保留已缓存的段评气泡。\n- 未定位段评入口改挂到最后一段旁的独立气泡，不再额外插入章末占位行。\n- 保留中继自动发现、签名校验、跨摘录回复与统计 / 详情缓存等能力。\n\n## 测试提示与已知限制\n\n- 已通过 85 项聚焦 JVM 回归、API 34 模拟器 14 项设备回归，App Debug 与 AndroidTest APK 构建成功；这不等于已签名发布包或所有场景均已验收。\n- 原始登录 / RSS 源的真实网络规则、Nostr 签名器与中继发布回读、Android 16 厂商设备的硬件圆角及完整日夜切换仍需实机反馈。全量 JVM 尚有既有原生库环境和静态断言失败，未宣称全量通过，详见 [验证记录](https://github.com/skybbk1001/legadoT/blob/a66ae3405cebe667ec751960df997e8e5f8f4028/docs/issue-fixes-34-42.md)。\n- 未新增或恢复“明月书阁”订阅源，仍需可验证的站点地址或旧源规则。\n- Test Build / Release Build 均保持手动触发，本次文档更新不会自动发布测试版。\n\n---\n\n[完整更新历史](https://github.com/skybbk1001/legadoT/blob/a66ae3405cebe667ec751960df997e8e5f8f4028/app/src/main/assets/updateLog.md) · [使用帮助](https://github.com/skybbk1001/legadoT/blob/a66ae3405cebe667ec751960df997e8e5f8f4028/app/src/main/assets/web/help/md/appHelp.md) · [API / MCP 使用说明](https://github.com/skybbk1001/legadoT/blob/a66ae3405cebe667ec751960df997e8e5f8f4028/api.md)\n\n<details>\n<summary>主线提交记录</summary>\n\n自上一测试版以来的主线更新:\n\n- fix: clean beta assets with gh release command\n\n</details>",
+        "publishedAt": "2026-10-18T20:57:23Z",
+        "createdAt": "2026-10-18T20:44:28Z",
+        "body": "## 更新日志\n\n- fix: restore source Java bridge and data URL parsing\n- docs: prepare beta release notes and guides\n- fix: size reading record rows by their tallest text\n- fix: address discovery tools, login navigation and reading records\n- ci: run test and release builds only on manual dispatch\n- Merge remote-tracking branch 'newdea/feat/nostr-paragraph-comments'\n- fix(review): 段评发布成功后原地升级占位，不再整页重载\n- fix(review): 段评占位项与待发布表对账，治发送成功后残留「发送中」\n- fix(read): 去掉章末占位行，未定位段评入口改为最后一段双气泡\n- fix(review): 段评发布失败的提示改为长时长 toast\n- fix(review): 断网发布失败不再清空整章段评气泡\n- fix(review): 段评草稿落盘，重启后仍可在列表恢复并重发\n- fix(review): 断网时保留已缓存的段评气泡\n- fix(review): 段评发布后统计回查延时改为 5s/20s\n- feat(review): 段评/回复发布跨弹窗乐观显示（发送中/草稿）\n- fix(review): 段评冻结排序 key 改用 buildDetailItemKey\n- feat(review): 段评排序调整——配色、位置、混合插入、冻结与下拉刷新\n- feat(review): 段评弹窗新增最热/最新排序切换\n- docs: 精简段评日志条目并将日期更新为 2026/10/15\n- fix(nostr): 段评详情建树改用本段全部评论，避免跨摘录回复丢失导致列表少于计数\n",
         "assets": [
           {
-            "name": "legado_app_3.26.10190419_arm64-v8a_release.apk",
-            "size": 18594920,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190419_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.10190447_arm64-v8a_release.apk",
+            "size": 18594928,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190447_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10190419_armeabi-v7a_release.apk",
-            "size": 17872659,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190419_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.10190447_armeabi-v7a_release.apk",
+            "size": 17872657,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190447_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10190419_x86_64_release.apk",
-            "size": 18840761,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190419_x86_64_release.apk"
+            "name": "legado_app_3.26.10190447_universal_release.apk",
+            "size": 18840760,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10190447_universal_release.apk"
           },
           {
             "name": "version.json",
