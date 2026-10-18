@@ -989,9 +989,9 @@
     "k": {
       "name": "阅读 K",
       "repo": "ReTyne/legado-Klys",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-11T09:16:07.973Z",
+      "status": "error",
+      "message": "/repos/legado-backup/legado-k/git/ref/heads/backup/v4-437612dfdcffc22ab9ad635030122bb4ac170f36 HTTP 404: Not Found",
+      "since": "2026-10-18T05:04:10.279Z",
       "backupRepo": "legado-backup/legado-k",
       "activeBranch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
       "events": [
@@ -1009,6 +1009,11 @@
           "at": "2026-10-11T09:16:07.973Z",
           "type": "rotated",
           "message": "历史 unrelated：旧分支已保留，legado-backup/legado-k/backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614 接收新历史"
+        },
+        {
+          "at": "2026-10-18T05:04:10.279Z",
+          "type": "error",
+          "message": "/repos/legado-backup/legado-k/git/ref/heads/backup/v4-437612dfdcffc22ab9ad635030122bb4ac170f36 HTTP 404: Not Found"
         }
       ]
     },
@@ -1263,5 +1268,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-18T00:14:57.225Z"
+  "checkedAt": "2026-10-18T05:04:19.592Z"
 }
