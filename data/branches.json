@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T05:59:14.501Z",
+  "generatedAt": "2026-10-18T11:14:37.026Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 176,
+      "stars": 177,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6526,
+      "stars": 6528,
       "sourceUpdatedAt": "2026-10-17T18:08:58Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1549,
-      "sourceUpdatedAt": "2026-10-16T16:36:09Z",
+      "stars": 1554,
+      "sourceUpdatedAt": "2026-10-18T11:11:34Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26101700",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-16T16:17:13Z",
-        "body": "<!-- legado-version-code:38483 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/16**\n- 修复发现页输入时键盘上方出现空白条的问题，按键盘实际遮挡范围调整页面\n- 更新本地 MCP 服务使用的 Ktor 至 3.6.0\n- 更新 Kotlin 至 2.4.20、KSP 至 2.3.12\n- 修复打开大型 jsLib 时 Intent 传输过大导致黑屏返回书源列表的问题\n- 超长 jsLib 改用安全编辑器，避免原生编辑器加载时黑屏退出\n- 修复未配置批量下载的正文规则在 JS 中转为 JSON 时文本变化，兼容旧书源的规则校验\n- 修复纯文本首行高亮胶囊的边缘留白叠加段首缩进，保持高亮与未高亮段落对齐\n- 修复主界面打开输入法时底部导航栏随内容上移，保持导航栏固定并抬起当前页面内容\n- 更新 BouncyCastle 加密组件至 1.86，并统一 Provider 与 PKIX 版本\n- 修复高亮左右边距默认占用文字间距的问题；新增可选的“影响文字间距”开关，默认只扩展背景绘制\n- 修复发现列表开启分类后与首屏书源脚本并发执行导致加载失败的问题\n\n",
+        "name": "legado_app_3.26101819",
+        "tagName": "3.26101819",
+        "prerelease": false,
+        "publishedAt": "2026-10-18T11:11:35Z",
+        "createdAt": "2026-10-18T07:55:48Z",
+        "body": "**2026/10/17**\n- 修复跨章翻页后立即拖动时翻页动画停在半页的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26101700_releaseA_vc38483.apk",
-            "size": 21846079,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101700_releaseA_vc38483.apk"
+            "name": "legado_app_3.26101819_release.apk",
+            "size": 21846149,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26101819/legado_app_3.26101819_release.apk"
           },
           {
-            "name": "legado_app_3.26101700_release_vc38483.apk",
-            "size": 21846082,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101700_release_vc38483.apk"
+            "name": "legado_app_3.26101819_releaseA.apk",
+            "size": 21846149,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26101819/legado_app_3.26101819_releaseA.apk"
           },
           {
-            "name": "legado_app_3.26101700_universal_releaseA_vc38483.apk",
-            "size": 27796912,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101700_universal_releaseA_vc38483.apk"
+            "name": "legado_app_3.26101819_universal_release.apk",
+            "size": 27796964,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26101819/legado_app_3.26101819_universal_release.apk"
           },
           {
-            "name": "legado_app_3.26101700_universal_release_vc38483.apk",
-            "size": 27796907,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26101700_universal_release_vc38483.apk"
+            "name": "legado_app_3.26101819_universal_releaseA.apk",
+            "size": 27796967,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/3.26101819/legado_app_3.26101819_universal_releaseA.apk"
           }
         ]
       },
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 632,
+      "stars": 634,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -540,30 +540,30 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 141,
-      "sourceUpdatedAt": "2026-10-18T03:03:22Z",
+      "sourceUpdatedAt": "2026-10-18T07:33:50Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.090313",
+        "name": "legado_app_3.26.101815",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-09-03T06:02:54Z",
-        "createdAt": "2026-09-03T05:37:36Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- feat(书源): 登录 JS 上下文支持 refreshBookInfo/refreshBookToc/refreshContent\n- feat(书源): 回调 JS 增加 open 页面跳转调度\n",
+        "publishedAt": "2026-10-18T07:33:51Z",
+        "createdAt": "2026-10-18T07:22:15Z",
+        "body": "# 2026/10/18 测试版更新说明\n\n> ⚠️ **升级前请先备份数据。** 本版数据库由 93 升级到 94，首次启动自动迁移。旧版应用不能直接读取迁移后的数据库；如需回退，请使用升级前备份，不要仅覆盖安装旧 APK。\n\n## 发现与 MCP\n\n- 恢复可选的旧版发现页：在“设置 → 其它设置 → 使用旧版发现页”开启，按书源展开分类，支持搜索、分组、登录、编辑与刷新；默认仍为新版卡片页。\n- MCP 新增发现卡片的查询、添加、批量添加、更新和删除工具，支持一次跨多个书源创建卡片，以及全部分类、动态分类和逐卡配置。\n- 批量最多提交 50 项，采用严格原子校验：任一书源不存在、未启用发现或参数无效，整批报错，不会部分添加。追加使用自增 ID 和连续排序，不覆盖已有卡片。\n- 本次新增的是 MCP 工具，不是独立 HTTP / WebSocket 接口；重复调用仍会新增卡片，不做跨调用去重。调用示例见 [API / MCP 使用说明](https://github.com/skybbk1001/legadoT/blob/master/api.md)。\n\n## 阅读记录与备份\n\n- 阅读记录增加作者与封面快照，尽量保留书籍移出书架后的展示信息；按书籍 URL 区分同名书，避免统计混在一起。\n- 历史记录只有能唯一匹配到在架书籍时才补全身份和元数据；有歧义或已删除的记录保留历史身份，不猜测作者。\n- 旧备份按同设备、同书籍身份合并累计时长，重复恢复不重复累加同一份时长；保留旧记录的设备归属。\n- 修复翻页、朗读和音频计时在切书、暂停及开关记录时的边界问题，并修复中英文大字体下两行时间可能重叠的问题。\n\n## 音频与书源交互\n\n- 音频页菜单新增“播放速度”，提供 0.5 / 0.75 / 1 / 1.25 / 1.5 / 2 / 3 倍预设，保留 ±0.1 倍微调，统一校验并保存速度。\n- 修复 v1 / v2 登录 UI 的动态渲染、按钮动作和登录脚本中的页面扩展绑定，支持使用 `java.open` 跳转。\n- 补齐交互回调 / 登录脚本的 `java.open(\"rss\", articleUrl, title, rssSourceUrl)`：使用已导入的目标订阅源进入文章加载链路，未缓存文章不会覆盖已有正文；导航受原页面生命周期约束。\n\n## 界面\n\n- 修正封面背景、图片与前景的圆角裁切，调整书架及发现封面卡片，避免双重圆角和额外内边距导致角部露底。\n- 沿用此前浅色文字修复，补充输入框正文和确认弹窗标题的可读性回归，不将既有修复重复记为本轮新增。\n\n## Nostr 段评\n\n- 支持 NIP-46 远程签名器与 NIP-55 本机签名器（如 Amber），连接入口集中管理，支持头像、昵称、点赞和五级嵌套回复。\n- 新增“最热 / 最新”切换：“最热”混合热度榜与最新榜，去重后展示；调整排序控件、列表配色及下拉刷新，已打开的列表避免后台更新引起跳动。\n- 发送状态与草稿支持跨弹窗展示，失败草稿落盘，重启后仍可恢复并点击重发。\n- 发布成功后原位更新占位项，不再整页重载；修复成功后残留“发送中”，断网或发送失败时保留已缓存的段评气泡。\n- 未定位段评入口改挂到最后一段旁的独立气泡，不再额外插入章末占位行。\n- 保留中继自动发现、签名校验、跨摘录回复与统计 / 详情缓存等能力。\n\n## 测试提示与已知限制\n\n- 已通过 85 项聚焦 JVM 回归、API 34 模拟器 14 项设备回归，App Debug 与 AndroidTest APK 构建成功；这不等于已签名发布包或所有场景均已验收。\n- 原始登录 / RSS 源的真实网络规则、Nostr 签名器与中继发布回读、Android 16 厂商设备的硬件圆角及完整日夜切换仍需实机反馈。全量 JVM 尚有既有原生库环境和静态断言失败，未宣称全量通过，详见 [验证记录](https://github.com/skybbk1001/legadoT/blob/master/docs/issue-fixes-34-42.md)。\n- 未新增或恢复“明月书阁”订阅源，仍需可验证的站点地址或旧源规则。\n- Test Build / Release Build 均保持手动触发，本次文档更新不会自动发布测试版。\n\n---\n\n[完整更新历史](https://github.com/skybbk1001/legadoT/blob/master/app/src/main/assets/updateLog.md) · [使用帮助](https://github.com/skybbk1001/legadoT/blob/master/app/src/main/assets/web/help/md/appHelp.md) · [API / MCP 使用说明](https://github.com/skybbk1001/legadoT/blob/master/api.md)\n\n<details>\n<summary>完整提交记录</summary>\n\n自上一测试版以来的全部更新:\n\n- docs: prepare beta release notes and guides\n- fix: size reading record rows by their tallest text\n- fix: address discovery tools, login navigation and reading records\n- ci: run test and release builds only on manual dispatch\n- Merge remote-tracking branch 'newdea/feat/nostr-paragraph-comments'\n- fix(review): 段评发布成功后原地升级占位，不再整页重载\n- fix(review): 段评占位项与待发布表对账，治发送成功后残留「发送中」\n- fix(read): 去掉章末占位行，未定位段评入口改为最后一段双气泡\n- fix(review): 段评发布失败的提示改为长时长 toast\n- fix(review): 断网发布失败不再清空整章段评气泡\n- fix(review): 段评草稿落盘，重启后仍可在列表恢复并重发\n- fix(review): 断网时保留已缓存的段评气泡\n- fix(review): 段评发布后统计回查延时改为 5s/20s\n- feat(review): 段评/回复发布跨弹窗乐观显示（发送中/草稿）\n- fix(review): 段评冻结排序 key 改用 buildDetailItemKey\n- feat(review): 段评排序调整——配色、位置、混合插入、冻结与下拉刷新\n- feat(review): 段评弹窗新增最热/最新排序切换\n- docs: 精简段评日志条目并将日期更新为 2026/10/15\n- fix(nostr): 段评详情建树改用本段全部评论，避免跨摘录回复丢失导致列表少于计数\n- fix(nostr): 显式标注签名器启动器类型避免递归类型推断\n- fix(nostr): 恢复使用 (Intent)->Unit 参数避免递归类型推断\n- fix(nostr): 修复 launch 方法解析歧义\n- feat(nostr): 未登录时段评评论/回复/点赞可点并提示连接\n- fix(nostr): 段评气泡不再「显示几秒后消失又出现」，并移除临时诊断\n- chore(nostr): 段评诊断补行级日志（段落号/offset/是否段末/是否已有列）\n- chore(nostr): 段评诊断日志（查询命中/评论数/入缓存/上屏）\n- fix(nostr): 段评统计内存缓存命中后仍后台刷新，回查并入计数下限\n- fix(review): 「查看更多回复」去掉不准确的条数\n- feat(review): 段评支持五级嵌套回复，昵称行标注回复对象\n- fix(review): 段评回复项也显示点赞\n- fix(review): 段评回复按钮统一到时间行，左对齐不再顶到最右\n- fix(nostr): 段评气泡改为点击即乐观 +1，发布失败再回退\n- chore(nostr): 临时诊断日志：段评乐观计数链路\n- fix(review): 修正回复按钮点击器里非法的 return@ 标签\n- fix(nostr): 修正段评乐观计数翻倍与发布后详情不立即缓存\n- fix(review): 段评回复项昵称独立成行，回复按钮移到时间行\n- fix(nostr): NIP-55 后台签名查询路径用大写方法名\n- feat(nostr): 签名器弹窗内直接显示二维码，bunker 去掉标签行\n- fix(read): 段评列无变化时不再整页重绘\n- feat(nostr): 签名器入口合并为一行，弹窗内集中三种连接方式\n- feat(nostr): 两种签名器并存、连接谁用谁，设置项挪到一起\n- fix(nostr): 修正 CI 报出的两处编译错误\n- feat(nostr): 段评支持 NIP-55 本机签名器，签名不再依赖中继\n- docs: 更新日志补充 Nostr 段评条目（2026/10/13）\n- feat(read): 段评计数两次递进回查取 max，预热改并发就近优先并补加载态\n- fix(read): 本地占位项不再写入段评详情缓存\n- feat(段评): 兼容重新分段的匹配，并把未定位段评汇总到章末\n- fix(read): 段评发布改用应用级协程，退回正文也在后台完成\n- fix(nostr): publishAndCollect 改为 internal，修复编译错误\n- feat(nostr): 发布返回逐中继结果并对传输层失败重试一次\n- feat(nostr): 段评照 Amethyst 补 relay hint、投递到摘录所在中继、摘录加 t 标签\n- fix(nostr): NIP-46 按 request id 收包，忽略无关回包，超时换新 id 重试\n- fix(nostr): fetchEventById 改为 internal，修复编译错误\n- fix(nostr): 新建摘录发布后校验可读，失败重发，仍失败则不产悬空评论\n- feat(nostr): 段评摘录复用 + 发布可观测与失败兜底\n- fix(read): 发布/回复后立即刷新段评统计与气泡\n- feat(read): 段评发布/回复乐观上屏，失败显示草稿态并可点击重发\n- fix(nostr): 账号资料拉取改用更宽的中继集合并补未命中日志\n- perf(read): 打开章节时预热段评详情（当前章+下一章）\n- feat(nostr): 段评书标识升级 v2，章节标题入 context 取代 r\n- feat(read): 点赞支持再次点击取消（NIP-09 删除自己的 reaction）\n- feat(read): 点赞改为乐观更新，失败再回滚\n- feat(read): 段评发布显示进度/防重，失败自动存草稿\n- feat(read): 段评列表优先展示头像与昵称\n- feat(nostr): 登录后启动时同步账号资料（kind 0 头像/昵称）\n- perf(read): 打开本章时预取下一章的 Nostr 段评统计\n- fix(read): 回复段评后刷新本章统计，使回复计入图标计数\n- perf(read): 段评详情缓存跨重启持久化（手写编解码）\n- fix(read): 段评发布协程吞掉取消异常，弹窗销毁后触碰 binding 崩溃\n- fix(read): onCancelSelect 改块体，避免返回类型推断成 Boolean（修编译）\n- perf(read): 段评先显缓存再联网刷新\n- fix(read): 选中态下点段评气泡生效，且气泡延后消失\n- fix(read): 磁盘缓存 keys 还原为 Int 段落键（修需求1 的编译）\n- fix(read): PageView 转发 selectedReviewTarget（修需求2 的编译）\n- fix(read): 取选中行改用 getOrNull，避免越界\n- fix(read): 段评菜单项默认归入「更多」\n- perf(read): 段评统计落盘缓存（3 天 TTL，保留当前章 ±5 章）\n- feat(read): 无段评不常显气泡，选中段落临时显示并可经菜单评论\n- feat(backup): 备份/恢复包含 Nostr 账号（非敏感字段）\n- feat(nostr): 段评事件带 NIP-89 客户端 tag\n- build: 提高 Kotlin 守护进程堆到 4G，修复 CI 编译 OOM\n- fix(nostr): NIP-46 互操作与健壮性改进 + 规范序列化回归测试\n- fix(nostr): NIP-01 规范序列化不再经 org.json，规避 Android 的 / 转义导致 id 不匹配\n- fix(nostr): NIP-46 请求事件 id 未转十六进制导致中继无法解析\n- fix(nostr): 记录 NIP-46 中继反馈(OK/NOTICE/AUTH/CLOSED)以定位连接失败\n- fix: 修复 Nostr 段评协程取消后仍触碰 UI 导致的崩溃\n- fix: 修复 NostrRelays 类型推断导致的 release 构建失败,并替换被污染的中继种子\n- fix: 修复 NostrRelays.forReading 中 relays(List) 误传给 parse(String) 导致的编译失败\n- fix: 登录 Nostr 后可对无评论段落进行首评\n- feat: Nostr 中继支持 NIP-11 健康检查自动发现与缓存\n- feat: Nostr 中继改为用户配置，二维码配对支持点击复制\n- fix: NIP-46 relay 错误诊断与保活，避免只暴露 90 秒超时\n- fix: 段评刷新切回主线程，修复打开书籍时的 CalledFromWrongThreadException\n- fix: import AppLog in OtherConfigFragment\n- fix: handle NIP-46 auth URL challenges\n- fix: bypass interceptors for Nostr websockets\n- fix: preserve secp256k1 JNI symbols\n- 修复音频封面 LiveData lint 错误\n- 修复 Map 扩展重复类\n- 修复 Nostr 发布编译错误\n- 修复 Nostr signer 编译错误\n- 修复 Nostr 评论构建错误\n- Make Nostr settings easier to find\n- Revert \"ci(release): fix key.jks\"\n- ci(release): fix key.jks\n- ci(release): 支持任意手动构建分支\n- Add Nostr signer and comment publishing\n- Verify Nostr event signatures\n- Fix cross-source Nostr paragraph matching\n- Add read-only Nostr paragraph comments\n- docs(迁移): Compose Multiplatform 迁移计划与 Phase 1 成果存档\n- refactor(迁移): Phase 1d —— 本地书解析器(Epub/Mobi/Umd/Txt)迁入 shared\n- build(迁移): Phase 1e —— epublib fork(modules/book) 转 kotlin-jvm 纯 JVM 模块\n- refactor(迁移): Phase 1c-3c-2 —— webBook 在线书籍模型迁入 shared, Phase 1 业务内核 commonMain 化收官\n- refactor(迁移): Phase 1c-3c-1 —— 规则编排器 AnalyzeRule/AnalyzeUrl 迁入 shared\n- refactor(迁移): Phase 1c-3b —— modules/rhino 转 KMP 模块, CacheManager 迁 shared\n- refactor(迁移): Phase 1c-3a —— JsExtensions 拆分纯逻辑/Android 两层\n- refactor(迁移): Phase 1c-2 —— Room 实体层迁入 shared commonMain\n- refactor(迁移): Phase 1c-1 —— 网络栈与工具类基础设施迁入 shared commonMain\n- refactor(迁移): Phase 1b —— 分析解析器族迁入 shared commonMain\n- refactor(迁移): Phase 1a —— 规则实体与纯 JVM 异常迁入 shared commonMain\n- build: compileSdk 升 37 适配 CMP 1.12, 增加 Termux 本机构建 sqlite-jdbc 强制替换\n- feat(迁移): Compose Multiplatform Phase 0 —— 建立 shared KMP 模块并试点迁移关于页\n\n</details>\n",
         "assets": [
           {
-            "name": "legado_app_3.26.09031353_arm64-v8a_release.apk",
-            "size": 15018015,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.10181525_arm64-v8a_release.apk",
+            "size": 18594925,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10181525_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.09031353_armeabi-v7a_release.apk",
-            "size": 14394036,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.10181525_armeabi-v7a_release.apk",
+            "size": 17872649,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10181525_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.09031353_universal_release.apk",
-            "size": 15214704,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.09031353_universal_release.apk"
+            "name": "legado_app_3.26.10181525_universal_release.apk",
+            "size": 18840756,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10181525_universal_release.apk"
           },
           {
             "name": "version.json",
@@ -724,7 +724,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 101,
+      "stars": 103,
       "sourceUpdatedAt": "2026-10-13T08:40:08Z",
       "githubArchived": false,
       "release": {
@@ -871,7 +871,7 @@
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
       "stars": 46,
-      "sourceUpdatedAt": "2026-10-11T12:35:01Z",
+      "sourceUpdatedAt": "2026-10-18T11:11:18Z",
       "githubArchived": false,
       "release": {
         "name": "NexHub v3.1.0",
@@ -949,7 +949,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-18T05:45:39Z",
+      "sourceUpdatedAt": "2026-10-18T09:08:19Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1071,25 +1071,25 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 16,
-      "sourceUpdatedAt": "2026-10-17T03:50:31Z",
+      "sourceUpdatedAt": "2026-10-18T06:16:13Z",
       "githubArchived": false,
       "release": {
-        "name": "v3.26.101700-10098 · 修复备份按钮在全选时没反应",
-        "tagName": "v3.26.101700-10098",
+        "name": "修复听书时重进阅读界面崩溃 + 自动清理音视频缓存",
+        "tagName": "v3.26.101905-10103",
         "prerelease": true,
-        "publishedAt": "2026-10-17T03:48:43Z",
-        "createdAt": "2026-10-16T09:18:03Z",
-        "body": "## 更新内容\n\n- 修复「备份」按钮点了没反应：备份内容为**全选**（默认状态）时无法备份，必须故意空掉一项才能备份\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.101700c_10098_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.101700c_10098_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
+        "publishedAt": "2026-10-18T06:14:23Z",
+        "createdAt": "2026-10-18T05:44:46Z",
+        "body": "## 更新内容\n\n- 自动清理视频/音频缓存，避免长期使用后占用存储过大\n- 修复听书过程中重新进入阅读界面的崩溃问题\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.101905c_10103_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
         "assets": [
           {
-            "name": "legado_sk_3.26.101700c_10098_arm64-v8a.apk",
-            "size": 36172514,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101700-10098/legado_sk_3.26.101700c_10098_arm64-v8a.apk"
+            "name": "legado_sk_3.26.101905c_10103_arm64-v8a.apk",
+            "size": 36181433,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101905-10103/legado_sk_3.26.101905c_10103_arm64-v8a.apk"
           },
           {
-            "name": "legado_sk_3.26.101700c_10098_arm64-v8a_sk2-coexist.apk",
-            "size": 36172187,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101700-10098/legado_sk_3.26.101700c_10098_arm64-v8a_sk2-coexist.apk"
+            "name": "legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk",
+            "size": 36181107,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101905-10103/legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk"
           }
         ]
       },
