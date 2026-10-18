@@ -307,8 +307,8 @@
       "upstreamRepo": "ReTyne/legado-Klys",
       "upstreamBranch": "main",
       "backupRepo": "legado-backup/legado-k",
-      "activeBranch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
-      "generation": 3,
+      "activeBranch": "backup/v4-2f258bd90b5469d513ebf79058826d085b3ad954",
+      "generation": 4,
       "retired": [
         {
           "branch": "main",
@@ -320,6 +320,12 @@
           "branch": "backup/v2-cab577d4d41978cecbcb5afde2bb2ceacca3d042",
           "head": "cab577d4d41978cecbcb5afde2bb2ceacca3d042",
           "retiredAt": "2026-10-11T09:16:06.740Z",
+          "reason": "unrelated"
+        },
+        {
+          "branch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
+          "head": "c9592b52f4c77214b5556a4c05346a8f8fe9a614",
+          "retiredAt": "2026-10-18T09:51:43.210Z",
           "reason": "unrelated"
         }
       ],
@@ -989,11 +995,11 @@
     "k": {
       "name": "阅读 K",
       "repo": "ReTyne/legado-Klys",
-      "status": "error",
-      "message": "/repos/legado-backup/legado-k/git/ref/heads/backup/v4-437612dfdcffc22ab9ad635030122bb4ac170f36 HTTP 404: Not Found",
-      "since": "2026-10-18T05:04:10.279Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-18T09:51:44.528Z",
       "backupRepo": "legado-backup/legado-k",
-      "activeBranch": "backup/v3-c9592b52f4c77214b5556a4c05346a8f8fe9a614",
+      "activeBranch": "backup/v4-2f258bd90b5469d513ebf79058826d085b3ad954",
       "events": [
         {
           "at": "2026-10-05T01:30:01.177Z",
@@ -1014,6 +1020,11 @@
           "at": "2026-10-18T05:04:10.279Z",
           "type": "error",
           "message": "/repos/legado-backup/legado-k/git/ref/heads/backup/v4-437612dfdcffc22ab9ad635030122bb4ac170f36 HTTP 404: Not Found"
+        },
+        {
+          "at": "2026-10-18T09:51:44.528Z",
+          "type": "restored",
+          "message": "恢复同步；历史 unrelated：旧分支已保留，legado-backup/legado-k/backup/v4-2f258bd90b5469d513ebf79058826d085b3ad954 接收新历史"
         }
       ]
     },
@@ -1268,5 +1279,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-18T05:04:19.592Z"
+  "checkedAt": "2026-10-18T09:51:55.507Z"
 }
