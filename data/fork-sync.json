@@ -133,9 +133,16 @@
       "upstreamRepo": "skybbk1001/legadoT",
       "upstreamBranch": "master",
       "backupRepo": "legado-backup/legado-t",
-      "activeBranch": "master",
-      "generation": 1,
-      "retired": [],
+      "activeBranch": "backup/v2-f0d85cb790b56b7f630f7308e4ab19a3f35f0688",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "master",
+          "head": "72cb77ac0de75049c28ac13ad8089b32727642ec",
+          "retiredAt": "2026-10-18T21:48:47.846Z",
+          "reason": "diverged"
+        }
+      ],
       "status": "active"
     },
     "jingshiro": {
@@ -721,9 +728,9 @@
       "repo": "skybbk1001/legadoT",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-18T19:37:17.412Z",
+      "since": "2026-10-18T21:48:49.414Z",
       "backupRepo": "legado-backup/legado-t",
-      "activeBranch": "master",
+      "activeBranch": "backup/v2-f0d85cb790b56b7f630f7308e4ab19a3f35f0688",
       "events": [
         {
           "at": "2026-10-05T01:29:47.092Z",
@@ -739,6 +746,11 @@
           "at": "2026-10-18T19:37:17.412Z",
           "type": "restored",
           "message": "恢复同步；skybbk1001/legadoT:master → legado-backup/legado-t:master 已同步"
+        },
+        {
+          "at": "2026-10-18T21:48:49.414Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-t/backup/v2-f0d85cb790b56b7f630f7308e4ab19a3f35f0688 接收新历史"
         }
       ]
     },
@@ -1299,5 +1311,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-18T19:37:40.010Z"
+  "checkedAt": "2026-10-18T21:49:12.149Z"
 }
