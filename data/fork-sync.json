@@ -719,9 +719,9 @@
     "t": {
       "name": "阅读 T",
       "repo": "skybbk1001/legadoT",
-      "status": "error",
-      "message": "比较历史 HTTP 404: Not Found",
-      "since": "2026-10-18T17:31:30.077Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-18T19:37:17.412Z",
       "backupRepo": "legado-backup/legado-t",
       "activeBranch": "master",
       "events": [
@@ -734,6 +734,11 @@
           "at": "2026-10-18T17:31:30.077Z",
           "type": "error",
           "message": "比较历史 HTTP 404: Not Found"
+        },
+        {
+          "at": "2026-10-18T19:37:17.412Z",
+          "type": "restored",
+          "message": "恢复同步；skybbk1001/legadoT:master → legado-backup/legado-t:master 已同步"
         }
       ]
     },
@@ -1254,9 +1259,9 @@
     "yedu": {
       "name": "夜讀",
       "repo": "bennytsai1234/Night-Reader",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-18T17:31:52.790Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-18T19:37:39.340Z",
       "backupRepo": "legado-backup/legado-yedu",
       "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
       "events": [
@@ -1269,6 +1274,11 @@
           "at": "2026-10-18T17:31:52.790Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-18T19:37:39.340Z",
+          "type": "restored",
+          "message": "恢复同步；bennytsai1234/Night-Reader:main → legado-backup/legado-yedu:backup/v2-2334a9869949008425524664eadd1d084859ca35 已同步"
         }
       ]
     },
@@ -1289,5 +1299,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-18T17:31:53.515Z"
+  "checkedAt": "2026-10-18T19:37:40.010Z"
 }
