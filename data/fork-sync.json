@@ -207,7 +207,7 @@
     },
     "nexhub": {
       "upstreamId": 1297899561,
-      "upstreamRepo": "nexhub-app/Nexhub",
+      "upstreamRepo": "nexhub-app/NexHub",
       "upstreamBranch": "main",
       "backupRepo": "legado-backup/legado-nexhub",
       "activeBranch": "backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b",
@@ -458,7 +458,7 @@
     "yedu": {
       "upstreamId": 1224708413,
       "upstreamRepo": "bennytsai1234/Night-Reader",
-      "upstreamBranch": "main",
+      "upstreamBranch": "beta",
       "backupRepo": "legado-backup/legado-yedu",
       "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
       "generation": 2,
@@ -852,10 +852,10 @@
     },
     "nexhub": {
       "name": "NexHub",
-      "repo": "nexhub-app/Nexhub",
+      "repo": "nexhub-app/NexHub",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T16:22:02.026Z",
+      "since": "2026-10-19T05:14:12.467Z",
       "backupRepo": "legado-backup/legado-nexhub",
       "activeBranch": "backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b",
       "events": [
@@ -868,6 +868,11 @@
           "at": "2026-10-05T16:22:02.026Z",
           "type": "rotated",
           "message": "历史 unrelated：旧分支已保留，legado-backup/legado-nexhub/backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b 接收新历史"
+        },
+        {
+          "at": "2026-10-19T05:14:12.467Z",
+          "type": "renamed",
+          "message": "nexhub-app/NexHub:main → legado-backup/legado-nexhub:backup/v2-5c89c3520f99580b95b19023a28f764c7b9ec94b 已同步"
         }
       ]
     },
@@ -1273,7 +1278,7 @@
       "repo": "bennytsai1234/Night-Reader",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-18T19:37:39.340Z",
+      "since": "2026-10-19T05:14:28.395Z",
       "backupRepo": "legado-backup/legado-yedu",
       "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
       "events": [
@@ -1291,6 +1296,11 @@
           "at": "2026-10-18T19:37:39.340Z",
           "type": "restored",
           "message": "恢复同步；bennytsai1234/Night-Reader:main → legado-backup/legado-yedu:backup/v2-2334a9869949008425524664eadd1d084859ca35 已同步"
+        },
+        {
+          "at": "2026-10-19T05:14:28.395Z",
+          "type": "renamed",
+          "message": "bennytsai1234/Night-Reader:beta → legado-backup/legado-yedu:backup/v2-2334a9869949008425524664eadd1d084859ca35 已同步"
         }
       ]
     },
@@ -1311,5 +1321,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-19T00:26:53.347Z"
+  "checkedAt": "2026-10-19T05:14:29.148Z"
 }
