@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T10:50:22.052Z",
+  "generatedAt": "2026-10-19T17:31:29.113Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47135,
+      "stars": 47142,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6553,
-      "sourceUpdatedAt": "2026-10-19T07:20:29Z",
+      "stars": 6562,
+      "sourceUpdatedAt": "2026-10-19T16:55:54Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.16",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2930,
+      "stars": 2931,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,8 +189,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1581,
-      "sourceUpdatedAt": "2026-10-18T11:11:34Z",
+      "stars": 1585,
+      "sourceUpdatedAt": "2026-10-19T15:32:08Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26101819",
@@ -232,7 +232,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 636,
+      "stars": 635,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 460,
+      "stars": 462,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -311,65 +311,65 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 397,
-      "sourceUpdatedAt": "2026-10-13T16:05:49Z",
+      "sourceUpdatedAt": "2026-10-19T15:48:43Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.101323",
-        "tagName": "beta-3.26.101323",
+        "name": "legado_app_3.26.101923",
+        "tagName": "beta-3.26.101923",
         "prerelease": true,
-        "publishedAt": "2026-10-13T16:05:49Z",
-        "createdAt": "2026-10-13T15:37:07Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* feat(阅读): 新增保留空行开关\n* style(格式): spotless 格式化本次 pick 引入的文件\n* fix(阅读): 修正保留空行开关的段落误判与章节末尾空行\n* fix(阅读): 保留空行的空行不再参与段落编号\n* refactor(阅读): 保留空行开关移入阅读设置面板并默认关闭\n* fix(主题): 修正分组菜单文本级灰阶，避免纯文本项整条消失\n\n",
+        "publishedAt": "2026-10-19T15:48:44Z",
+        "createdAt": "2026-10-19T15:06:55Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* docs(备份恢复): 落成备份恢复机制改造方案\n* feat(备份恢复): 恢复改为计划驱动并补齐目录与清单校验\n* perf(备份恢复): 云端内容未变化时跳过上传并补充计划单测\n* fix(备份恢复): 修复书架 REPLACE 级联删除章节与快照打包层级\n* docs(更新日志): 补充备份恢复机制改造条目\n* feat(备份恢复): 恢复方式改为持久化设置并补充加密密码入口\n* fix(备份恢复): 备份份数默认不限制并统一备份恢复工作区锁\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.101323_release_arm64-v8a.apk",
-            "size": 23075281,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_beta_3.26.101323_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.101923_release_arm64-v8a.apk",
+            "size": 23102493,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.101323_release_armeabi-v7a.apk",
-            "size": 22434926,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_beta_3.26.101323_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.101923_release_armeabi-v7a.apk",
+            "size": 22462142,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.101323_release_universal.apk",
-            "size": 31090153,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_beta_3.26.101323_release_universal.apk"
+            "name": "legado_beta_3.26.101923_release_universal.apk",
+            "size": 31117358,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.101323_legacy_arm64-v8a.apk",
-            "size": 23075255,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_compat_3.26.101323_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.101923_legacy_arm64-v8a.apk",
+            "size": 23102479,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.101323_legacy_armeabi-v7a.apk",
-            "size": 22434913,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_compat_3.26.101323_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.101923_legacy_armeabi-v7a.apk",
+            "size": 22462132,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.101323_legacy_universal.apk",
-            "size": 31090121,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_compat_3.26.101323_legacy_universal.apk"
+            "name": "legado_compat_3.26.101923_legacy_universal.apk",
+            "size": 31117351,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.101323_releaseS_arm64-v8a.apk",
-            "size": 23075280,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_plus_3.26.101323_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.101923_releaseS_arm64-v8a.apk",
+            "size": 23102491,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.101323_releaseS_armeabi-v7a.apk",
-            "size": 22434942,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_plus_3.26.101323_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.101923_releaseS_armeabi-v7a.apk",
+            "size": 22462141,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.101323_releaseS_universal.apk",
-            "size": 31090149,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_plus_3.26.101323_releaseS_universal.apk"
+            "name": "legado_plus_3.26.101923_releaseS_universal.apk",
+            "size": 31117358,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.101323_universal.apk",
-            "size": 69637301,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101323/legado_z_debug_3.26.101323_universal.apk"
+            "name": "legado_z_debug_3.26.101923_universal.apk",
+            "size": 69664451,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_z_debug_3.26.101923_universal.apk"
           }
         ]
       },
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 294,
+      "stars": 296,
       "sourceUpdatedAt": "2026-10-19T06:20:14Z",
       "githubArchived": false,
       "release": {
@@ -540,30 +540,30 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 143,
-      "sourceUpdatedAt": "2026-10-19T10:31:48Z",
+      "sourceUpdatedAt": "2026-10-19T16:19:09Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.101913",
+        "name": "legado_app_3.26.102000",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-19T06:02:52Z",
-        "createdAt": "2026-10-19T05:52:22Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- test: audit migrated delegate method surfaces\n- test: lock Rhino delegate API compatibility\n- fix: expose source storage to login v2 java facade\n- test: add executable book source regression coverage\n- fix: audit and harden app UI themes\n- 默认关闭nostr段评，优化展开菜单色彩显示\n- perf: remove unused release resources\n",
+        "publishedAt": "2026-10-19T16:19:10Z",
+        "createdAt": "2026-10-19T15:55:13Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- fix(review): restore reply counts and reply likes\n- fix(update): race configured manifest hosts\n",
         "assets": [
           {
-            "name": "legado_app_3.26.10191355_arm64-v8a_release.apk",
-            "size": 17266560,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10191355_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.10200012_arm64-v8a_release.apk",
+            "size": 17282957,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10191355_armeabi-v7a_release.apk",
-            "size": 16544284,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10191355_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.10200012_armeabi-v7a_release.apk",
+            "size": 16560687,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10191355_universal_release.apk",
-            "size": 17512397,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10191355_universal_release.apk"
+            "name": "legado_app_3.26.10200012_x86_64_release.apk",
+            "size": 17528803,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_x86_64_release.apk"
           },
           {
             "name": "version.json",
@@ -582,8 +582,8 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 138,
-      "sourceUpdatedAt": "2026-10-18T18:31:03Z",
+      "stars": 139,
+      "sourceUpdatedAt": "2026-10-19T12:21:35Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.101300",
@@ -646,7 +646,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 131,
+      "stars": 130,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -680,7 +680,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 112,
+      "stars": 111,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -724,7 +724,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 105,
+      "stars": 106,
       "sourceUpdatedAt": "2026-10-13T08:40:08Z",
       "githubArchived": false,
       "release": {
@@ -935,7 +935,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 47,
+      "stars": 48,
       "sourceUpdatedAt": "2026-10-19T02:18:50Z",
       "githubArchived": false,
       "release": {
@@ -964,7 +964,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-19T01:26:16Z",
+      "sourceUpdatedAt": "2026-10-19T14:41:45Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1042,35 +1042,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 20,
-      "sourceUpdatedAt": "2026-10-17T12:48:55Z",
+      "sourceUpdatedAt": "2026-10-19T14:52:19Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.32",
-        "tagName": "3.26.17-beta.32",
+        "name": "Pre-release 3.26.17-beta.34",
+        "tagName": "3.26.17-beta.34",
         "prerelease": true,
-        "publishedAt": "2026-10-17T12:48:39Z",
-        "createdAt": "2026-10-17T12:31:45Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：墨水屏书架支持分组——长按书籍即可归组，分组以封面拼贴卡片展示，点开即看组内书单；筛选器可自行挑选与排序；记住你最后浏览的位置，下次打开接着看。\n\n### 新增\n\n* 书架分组：长按书籍选择「加入分组」，一本书可同时属于多个分组；分组以封面拼贴卡片展示在书架顶部，点击进入组内书单，列表样式下还能直接预览组内书名\n\n* 分组管理：长按分组卡片可重命名、解散或调整顺序；暂时不用的分组可隐藏，需要时再打开\n\n* 筛选器管理：书架右上角筛选菜单可自行挑选（在读、未读等）、排序、显示隐藏，只留常用的\n\n* 记住浏览位置：上次选的筛选或进入的分组，下次打开应用自动恢复\n\n* 书架设置新增「支持分组展示」开关（默认关闭）：不需要分组的用户保持原有简洁书架，开启后长按书籍才出现分组操作\n\n* 书籍详情页：作者下方显示书源，点击可直接换源\n\n* 换源时顶部实时显示搜索进度「进度 n/m」\n\n### 修复\n\n* 修复自定义界面字体后标题不加粗的问题",
+        "publishedAt": "2026-10-19T14:52:05Z",
+        "createdAt": "2026-10-19T13:41:34Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：掌阅定制机型支持阅读锁屏——息屏后锁屏壁纸自动变成当前在读的书；同时修复墨水屏书架分组的几处使用问题。\n\n### 新增\n\n* 阅读锁屏（掌阅定制机型）：跟随设备的锁屏显示设置，息屏后系统锁屏壁纸自动显示当前在读的书，封面样式会自动优先加载清晰大图\n\n### 修复\n\n* 完整模式中设为私密的分组，不会再出现在墨水屏书架和分组列表里，也不会因上次的浏览位置被带出\n\n* 打开调整分组、筛选菜单或书架样式面板时，音量键不再误翻面板背后的书架页\n\n* 在这些面板里按返回键，会先收起面板并保存调整，不再直接退出应用\n\n* 存储写入异常时切换筛选、进出分组可能闪退——已加固\n\n* 字体设置面板的行距与滑条对齐细节修正",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 307672110,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.32/mapping.txt"
+            "size": 308081078,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.34/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.32-arm64-v8a.apk",
-            "size": 21171541,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.32/moben-3.26.17-beta.32-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.34-arm64-v8a.apk",
+            "size": 21204261,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.34/moben-3.26.17-beta.34-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.32-armeabi-v7a.apk",
-            "size": 20711363,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.32/moben-3.26.17-beta.32-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.34-armeabi-v7a.apk",
+            "size": 20744079,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.34/moben-3.26.17-beta.34-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.32.apk",
-            "size": 27743993,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.32/moben-3.26.17-beta.32.apk"
+            "name": "moben-3.26.17-beta.34.apk",
+            "size": 27776717,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.34/moben-3.26.17-beta.34.apk"
           }
         ]
       },
@@ -1211,35 +1211,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-18T01:12:56+08:00",
+      "sourceUpdatedAt": "2026-10-19T20:45:49+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.101721",
-        "tagName": "阅读_E-ink_3.26.101721",
+        "name": "阅读_E-ink_3.26.101921",
+        "tagName": "阅读_E-ink_3.26.101921",
         "prerelease": false,
-        "publishedAt": "2026-10-17T21:45:47+08:00",
-        "createdAt": "2026-10-17T21:45:47+08:00",
-        "body": "- 掌阅波纹移到界面\r\n- 新增在线制作样式\r\n- 支持直接导出样式\r\n- 支持直接导入样式\r\n- 样式背景支持编码\r\n- 标题样式支持正则\r\n- 修复自带文件闪退\r\n- 修复已知新增未知",
+        "publishedAt": "2026-10-19T20:45:49+08:00",
+        "createdAt": "2026-10-19T20:45:49+08:00",
+        "body": "- 新增字数统计\r\n- 修复标题出错\r\n- 修复已知问题\r\n- 新增未知问题",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.101721.apk",
-            "size": 20949087,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101721/%E9%98%85%E8%AF%BB_E-ink_3.26.101721.apk"
+            "name": "阅读_E-ink_3.26.101921.apk",
+            "size": 20953241,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101921/%E9%98%85%E8%AF%BB_E-ink_3.26.101921.apk"
           },
           {
-            "name": "阅读_magisk_3.26.101721.zip",
-            "size": 22694563,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101721/%E9%98%85%E8%AF%BB_magisk_3.26.101721.zip"
+            "name": "阅读_magisk_3.26.101921.zip",
+            "size": 22695267,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.101921/%E9%98%85%E8%AF%BB_magisk_3.26.101921.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.101721.zip",
+            "name": "阅读_E-ink_3.26.101921.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101721.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101921.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.101721.tar.gz",
+            "name": "阅读_E-ink_3.26.101921.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101721.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.101921.tar.gz"
           }
         ]
       },
@@ -1255,7 +1255,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-18T05:56:29Z",
+      "sourceUpdatedAt": "2026-10-19T15:47:00Z",
       "githubArchived": false,
       "release": {
         "name": "Legado MD3 v3.30.0-20261018-055626 (预发布)",
