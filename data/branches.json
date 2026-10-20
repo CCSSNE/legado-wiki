@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:24:57.437Z",
+  "generatedAt": "2026-10-20T01:52:30.711Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 177,
+      "stars": 178,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47141,
+      "stars": 47143,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6563,
+      "stars": 6564,
       "sourceUpdatedAt": "2026-10-19T20:52:45Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1587,
-      "sourceUpdatedAt": "2026-10-19T22:22:23Z",
+      "stars": 1588,
+      "sourceUpdatedAt": "2026-10-20T01:48:13Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26102005",
+        "name": "legado_app_3.26102009",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-19T21:21:53Z",
-        "body": "<!-- legado-version-code:38492 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/20**\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n\n",
+        "createdAt": "2026-10-20T01:03:28Z",
+        "body": "<!-- legado-version-code:38496 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/20**\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26102005_releaseA_vc38492.apk",
-            "size": 21846412,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102005_releaseA_vc38492.apk"
+            "name": "legado_app_3.26102009_releaseA_vc38496.apk",
+            "size": 21848508,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_releaseA_vc38496.apk"
           },
           {
-            "name": "legado_app_3.26102005_release_vc38492.apk",
-            "size": 21846427,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102005_release_vc38492.apk"
+            "name": "legado_app_3.26102009_release_vc38496.apk",
+            "size": 21848528,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_release_vc38496.apk"
           },
           {
-            "name": "legado_app_3.26102005_universal_releaseA_vc38492.apk",
-            "size": 27797246,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102005_universal_releaseA_vc38492.apk"
+            "name": "legado_app_3.26102009_universal_releaseA_vc38496.apk",
+            "size": 27799337,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_universal_releaseA_vc38496.apk"
           },
           {
-            "name": "legado_app_3.26102005_universal_release_vc38492.apk",
-            "size": 27797251,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102005_universal_release_vc38492.apk"
+            "name": "legado_app_3.26102009_universal_release_vc38496.apk",
+            "size": 27799351,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_universal_release_vc38496.apk"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 461,
+      "stars": 462,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -310,7 +310,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 397,
+      "stars": 396,
       "sourceUpdatedAt": "2026-10-19T15:48:43Z",
       "githubArchived": false,
       "release": {
@@ -502,7 +502,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 269,
+      "stars": 268,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
