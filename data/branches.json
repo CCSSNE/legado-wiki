@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T01:52:30.711Z",
+  "generatedAt": "2026-10-20T07:39:49.880Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 178,
+      "stars": 179,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 33,
+          "stars": 34,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47143,
+      "stars": 47145,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6564,
+      "stars": 6571,
       "sourceUpdatedAt": "2026-10-19T20:52:45Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2931,
+      "stars": 2933,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1588,
-      "sourceUpdatedAt": "2026-10-20T01:48:13Z",
+      "stars": 1595,
+      "sourceUpdatedAt": "2026-10-20T07:31:38Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26102009",
+        "name": "legado_app_3.26102014",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-20T01:03:28Z",
-        "body": "<!-- legado-version-code:38496 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/20**\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n\n",
+        "createdAt": "2026-10-20T06:13:31Z",
+        "body": "<!-- legado-version-code:38502 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/20**\n- 阅读边距调节项扩大触摸区域，支持长按 +/- 连续调整\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 修复阅读记录在大字体下时间字段高度不一致时行内容重叠的问题\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n- 订阅源阅读记录弹窗增加统一开启或关闭记录的开关\n- 修复恢复阅读配置时按错误阅读样式全局覆盖下划线设置的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26102009_releaseA_vc38496.apk",
-            "size": 21848508,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_releaseA_vc38496.apk"
+            "name": "legado_app_3.26102014_releaseA_vc38502.apk",
+            "size": 21849136,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102014_releaseA_vc38502.apk"
           },
           {
-            "name": "legado_app_3.26102009_release_vc38496.apk",
-            "size": 21848528,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_release_vc38496.apk"
+            "name": "legado_app_3.26102014_release_vc38502.apk",
+            "size": 21849148,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102014_release_vc38502.apk"
           },
           {
-            "name": "legado_app_3.26102009_universal_releaseA_vc38496.apk",
-            "size": 27799337,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_universal_releaseA_vc38496.apk"
+            "name": "legado_app_3.26102014_universal_releaseA_vc38502.apk",
+            "size": 27799963,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102014_universal_releaseA_vc38502.apk"
           },
           {
-            "name": "legado_app_3.26102009_universal_release_vc38496.apk",
-            "size": 27799351,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102009_universal_release_vc38496.apk"
+            "name": "legado_app_3.26102014_universal_release_vc38502.apk",
+            "size": 27799983,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102014_universal_release_vc38502.apk"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 462,
+      "stars": 463,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -310,7 +310,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 396,
+      "stars": 397,
       "sourceUpdatedAt": "2026-10-19T15:48:43Z",
       "githubArchived": false,
       "release": {
@@ -383,7 +383,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 313,
+      "stars": 315,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -582,7 +582,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 139,
+      "stars": 140,
       "sourceUpdatedAt": "2026-10-19T12:21:35Z",
       "githubArchived": false,
       "release": {
@@ -821,7 +821,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 52,
+      "stars": 53,
       "sourceUpdatedAt": "2026-10-19T00:20:50Z",
       "githubArchived": false,
       "release": {
@@ -964,7 +964,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-19T17:55:36Z",
+      "sourceUpdatedAt": "2026-10-20T06:47:53Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.100915",
@@ -1255,25 +1255,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-19T15:47:00Z",
+      "sourceUpdatedAt": "2026-10-20T04:55:27Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.30.0-20261018-055626 (预发布)",
-        "tagName": "v3.30.0-20261018-055626",
+        "name": "Legado MD3 v3.30.0-20261020-045523 (预发布)",
+        "tagName": "v3.30.0-20261020-045523",
         "prerelease": true,
-        "publishedAt": "2026-10-18T05:56:29Z",
-        "createdAt": "2026-10-18T05:48:39Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: 9b04785becb75cad667e7ce37217481ee1e27986\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-10-20T04:55:27Z",
+        "createdAt": "2026-10-20T04:47:14Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: a7719fb0f03ae416c9296b3fec0fd1b2a6fb935d\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 24554155,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261018-055626/app-arm64-release.apk"
+            "size": 24629461,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261020-045523/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 43256230,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261018-055626/app-universal-release.apk"
+            "size": 43472194,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261020-045523/app-universal-release.apk"
           }
         ]
       },
