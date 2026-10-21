@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:44:02.211Z",
+  "generatedAt": "2026-10-21T13:52:11.298Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 34,
+          "stars": 35,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47151,
+      "stars": 47147,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6585,
+      "stars": 6589,
       "sourceUpdatedAt": "2026-10-20T17:47:59Z",
       "githubArchived": false,
       "release": {
@@ -189,36 +189,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1615,
-      "sourceUpdatedAt": "2026-10-20T19:28:49Z",
+      "stars": 1620,
+      "sourceUpdatedAt": "2026-10-21T12:06:30Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26102103",
+        "name": "legado_app_3.26102119",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-20T19:18:17Z",
-        "body": "<!-- legado-version-code:38512 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/21**\n- 修复后台 WebView 复用已挂载实例后页面加载回调偶发超时的问题\n\n**2026/10/19**`r`n- 全文搜索支持从当前阅读位置向上或向下查找，并记住勾选参数`r`n`r`n**2026/10/20**\n- 修复导入同 ID 的 TXT 目录规则时，内容变更仍显示“已有”且未默认勾选的问题\n- 修复网页播放器全屏时未转为横屏的问题，退出全屏后恢复原来的屏幕方向\n- 修复阅读边距加减按钮快速单击和连续点击不灵敏的问题；紧凑模式触区调整为28dp，区域按钮文字居中并微调下方留白\n- 优化阅读边距面板的控件比例，默认使用紧凑加减按钮和行距；页眉、正文、页脚按钮可长按切换大按钮模式并随设置备份，两种模式的长按连续调整速度一致\n- 阅读正文边距新增默认关闭的上下联动开关，跟随独立或共享排版保存，支持设置备份和样式导入导出\n- 修复并发刷新书籍时请求头规则偶发提示找不到 JSON.stringify 的问题\n- 阅读边距调节项扩大触摸区域，支持长按 +/- 连续调整\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 修复阅读记录在大字体下时间字段高度不一致时行内容重叠的问题\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 阅读样式字号上限提升至 100，保留现有字号设置\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n- 修复发现分类跨行切换后旧标签仍显示高亮和下划线的问题\n- 订阅源阅读记录弹窗增加统一开启或关闭记录的开关\n- 修复恢复阅读配置时按错误阅读样式全局覆盖下划线设置的问题\n\n",
+        "createdAt": "2026-10-21T11:55:44Z",
+        "body": "<!-- legado-version-code:38516 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/21**\n- 修复升级测试版后因阅读记录数据库结构变化导致启动崩溃的问题，保留原有数据\n- 修复后台 WebView 复用已挂载实例后页面加载回调偶发超时的问题\n\n**2026/10/19**`r`n- 全文搜索支持从当前阅读位置向上或向下查找，并记住勾选参数`r`n`r`n**2026/10/20**\n- 修复导入同 ID 的 TXT 目录规则时，内容变更仍显示“已有”且未默认勾选的问题\n- 修复网页播放器全屏时未转为横屏的问题，退出全屏后恢复原来的屏幕方向\n- 修复阅读边距加减按钮快速单击和连续点击不灵敏的问题；紧凑模式触区调整为28dp，区域按钮文字居中并微调下方留白\n- 优化阅读边距面板的控件比例，默认使用紧凑加减按钮和行距；页眉、正文、页脚按钮可长按切换大按钮模式并随设置备份，两种模式的长按连续调整速度一致\n- 阅读正文边距新增默认关闭的上下联动开关，跟随独立或共享排版保存，支持设置备份和样式导入导出\n- 修复并发刷新书籍时请求头规则偶发提示找不到 JSON.stringify 的问题\n- 阅读边距调节项扩大触摸区域，支持长按 +/- 连续调整\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 修复阅读记录在大字体下时间字段高度不一致时行内容重叠的问题\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 阅读样式字号上限提升至 100，保留现有字号设置\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n- 修复发现分类跨行切换后旧标签仍显示高亮和下划线的问题\n- 订阅源阅读记录弹窗增加统一开启或关闭记录的开关\n- 修复恢复阅读配置时按错误阅读样式全局覆盖下划线设置的问题\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26102103_releaseA_vc38512.apk",
-            "size": 21871133,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102103_releaseA_vc38512.apk"
+            "name": "legado_app_3.26102119_releaseA_vc38516.apk",
+            "size": 21871167,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_releaseA_vc38516.apk"
           },
           {
-            "name": "legado_app_3.26102103_release_vc38512.apk",
-            "size": 21871133,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102103_release_vc38512.apk"
+            "name": "legado_app_3.26102119_release_vc38516.apk",
+            "size": 21871165,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_release_vc38516.apk"
           },
           {
-            "name": "legado_app_3.26102103_universal_releaseA_vc38512.apk",
-            "size": 27821936,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102103_universal_releaseA_vc38512.apk"
+            "name": "legado_app_3.26102119_universal_releaseA_vc38516.apk",
+            "size": 27821982,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_universal_releaseA_vc38516.apk"
           },
           {
-            "name": "legado_app_3.26102103_universal_release_vc38512.apk",
-            "size": 27821938,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102103_universal_release_vc38512.apk"
+            "name": "legado_app_3.26102119_universal_release_vc38516.apk",
+            "size": 27821967,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_universal_release_vc38516.apk"
           }
         ]
       },
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 464,
+      "stars": 465,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -311,65 +311,65 @@
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
       "stars": 396,
-      "sourceUpdatedAt": "2026-10-19T15:48:43Z",
+      "sourceUpdatedAt": "2026-10-21T09:06:00Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.101923",
-        "tagName": "beta-3.26.101923",
+        "name": "legado_app_3.26.102116",
+        "tagName": "beta-3.26.102116",
         "prerelease": true,
-        "publishedAt": "2026-10-19T15:48:44Z",
-        "createdAt": "2026-10-19T15:06:55Z",
-        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\n* docs(备份恢复): 落成备份恢复机制改造方案\n* feat(备份恢复): 恢复改为计划驱动并补齐目录与清单校验\n* perf(备份恢复): 云端内容未变化时跳过上传并补充计划单测\n* fix(备份恢复): 修复书架 REPLACE 级联删除章节与快照打包层级\n* docs(更新日志): 补充备份恢复机制改造条目\n* feat(备份恢复): 恢复方式改为持久化设置并补充加密密码入口\n* fix(备份恢复): 备份份数默认不限制并统一备份恢复工作区锁\n\n",
+        "publishedAt": "2026-10-21T09:06:01Z",
+        "createdAt": "2026-10-21T08:49:45Z",
+        "body": "⚠️ **重要提醒：安装前请务必备份您的数据！**\n\n📦 **APK版本说明：**\n| 版本类型 | 文件名标识 | 说明 |\n|---------|-----------|------|\n| 测试版 | beta | 测试版，包含新功能，专属于max版的安装包 |\n| 兼容版 | compact | 可覆盖原版和lyc版 |\n| 共存版 | plus | 独立安装，与主版本共存 |\n| 调试包 | debug | 独立安装，与其他共存，适用于调试用，无代码混淆，函数名完整，方便抓取崩溃、报错日志定位问题。此版本能正常抓包 |\n\n四个包名都不同，在安卓系统中不同包名视为不同软件，都可以独立存在。\n\n📱 **ABI架构说明：**\n| ABI标识 | 说明 |\n|---------|------|\n| arm64-v8a | 64位ARM设备（推荐，绝大多数现代手机） |\n| armeabi-v7a | 32位ARM设备（老款手机） |\n| universal | 包含所有ABI的通用包（体积较大，兼容所有设备） |\n\n请根据您的设备架构选择对应的APK安装。如果不确定设备架构，请选择 universal 版本。\n\n### 更新内容\nMerge pull request #361 from zmn001125/feat/body-title-split\n\nfeat(阅读界面): 正文标题新增分段显示(分段模式/次行字号/标题行距)\n\n",
         "assets": [
           {
-            "name": "legado_beta_3.26.101923_release_arm64-v8a.apk",
-            "size": 23102493,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_arm64-v8a.apk"
+            "name": "legado_beta_3.26.102116_release_arm64-v8a.apk",
+            "size": 23109165,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_beta_3.26.102116_release_arm64-v8a.apk"
           },
           {
-            "name": "legado_beta_3.26.101923_release_armeabi-v7a.apk",
-            "size": 22462142,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_armeabi-v7a.apk"
+            "name": "legado_beta_3.26.102116_release_armeabi-v7a.apk",
+            "size": 22468810,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_beta_3.26.102116_release_armeabi-v7a.apk"
           },
           {
-            "name": "legado_beta_3.26.101923_release_universal.apk",
-            "size": 31117358,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_beta_3.26.101923_release_universal.apk"
+            "name": "legado_beta_3.26.102116_release_universal.apk",
+            "size": 31124034,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_beta_3.26.102116_release_universal.apk"
           },
           {
-            "name": "legado_compat_3.26.101923_legacy_arm64-v8a.apk",
-            "size": 23102479,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_arm64-v8a.apk"
+            "name": "legado_compat_3.26.102116_legacy_arm64-v8a.apk",
+            "size": 23109151,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_compat_3.26.102116_legacy_arm64-v8a.apk"
           },
           {
-            "name": "legado_compat_3.26.101923_legacy_armeabi-v7a.apk",
-            "size": 22462132,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_armeabi-v7a.apk"
+            "name": "legado_compat_3.26.102116_legacy_armeabi-v7a.apk",
+            "size": 22468795,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_compat_3.26.102116_legacy_armeabi-v7a.apk"
           },
           {
-            "name": "legado_compat_3.26.101923_legacy_universal.apk",
-            "size": 31117351,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_compat_3.26.101923_legacy_universal.apk"
+            "name": "legado_compat_3.26.102116_legacy_universal.apk",
+            "size": 31124026,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_compat_3.26.102116_legacy_universal.apk"
           },
           {
-            "name": "legado_plus_3.26.101923_releaseS_arm64-v8a.apk",
-            "size": 23102491,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_arm64-v8a.apk"
+            "name": "legado_plus_3.26.102116_releaseS_arm64-v8a.apk",
+            "size": 23109178,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_plus_3.26.102116_releaseS_arm64-v8a.apk"
           },
           {
-            "name": "legado_plus_3.26.101923_releaseS_armeabi-v7a.apk",
-            "size": 22462141,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_armeabi-v7a.apk"
+            "name": "legado_plus_3.26.102116_releaseS_armeabi-v7a.apk",
+            "size": 22468820,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_plus_3.26.102116_releaseS_armeabi-v7a.apk"
           },
           {
-            "name": "legado_plus_3.26.101923_releaseS_universal.apk",
-            "size": 31117358,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_plus_3.26.101923_releaseS_universal.apk"
+            "name": "legado_plus_3.26.102116_releaseS_universal.apk",
+            "size": 31124043,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_plus_3.26.102116_releaseS_universal.apk"
           },
           {
-            "name": "legado_z_debug_3.26.101923_universal.apk",
-            "size": 69664451,
-            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.101923/legado_z_debug_3.26.101923_universal.apk"
+            "name": "legado_z_debug_3.26.102116_universal.apk",
+            "size": 69671290,
+            "browserDownloadUrl": "https://github.com/Suml-1/Legado_Max/releases/download/beta-3.26.102116/legado_z_debug_3.26.102116_universal.apk"
           }
         ]
       },
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 299,
+      "stars": 301,
       "sourceUpdatedAt": "2026-10-19T06:20:14Z",
       "githubArchived": false,
       "release": {
@@ -725,20 +725,20 @@
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
       "stars": 105,
-      "sourceUpdatedAt": "2026-10-13T08:40:08Z",
+      "sourceUpdatedAt": "2026-10-21T09:46:20Z",
       "githubArchived": false,
       "release": {
-        "name": "墨知 1.4.0",
-        "tagName": "v1.4.0",
+        "name": "墨知 1.4.1",
+        "tagName": "v1.4.1",
         "prerelease": false,
-        "publishedAt": "2026-10-13T09:12:21Z",
-        "createdAt": "2026-10-13T08:40:02Z",
-        "body": "# MoRead · 墨知 1.4.0\n\n## 中文\n\n### 互动伴读与人物档案\n\n- 伴读新增互动回答，可在对话中呈现原生控件、图表和可操作内容；支持调整生成方式、样式与图片生成策略。\n- 人物提取改为先整理名单、再逐人补全档案，支持断点继续；完整扫描改进超时重试和截断结果恢复，并为主要人物补写小传。\n- 人物页新增分组档案卡、人物详情与关系图；书籍资料任务通过前台通知和阅读页进度入口展示状态。\n- 改进伴读消息、过程显示、脚注引用和输入区排版；默认聊天样式采用直接排版，保留角色自定义气泡。\n- 段落讨论采用页边批注布局，支持就地调整划线样式与颜色。\n\n### 阅读与书架\n\n- 新增默认「纸墨」配色，改进浅色、深色及平板界面的文字层级和控件比例。\n- 手机悬浮导航支持随书架滚动收起和展开，搜索从右侧入口展开；书架标签改用索引页签。\n- 从书架续读卡或书籍详情继续阅读时，新增从封面翻开书的过渡动画。\n- 目录新增章节长短节律条、分卷标记、快速定位刻度、当前章节提示和正倒序切换；目录、大纲、人物、书签共用导航弹层。\n- 已生成的 AI 段评立即出现在正文、详情和回顾中，改进提前章节的段落生成调度。\n\n### 修复与维护\n\n- 修复 Android 上首条互动回复可能闪退的问题，改进选文与阅读页面状态管理。\n- 改进 MDX 词典兼容，自带 RIPEMD-128 实现并移除 BouncyCastle 依赖。\n- 启动时清理已安装版本的更新包，缓存占用按来源细分。\n- 保留公开贡献的 TTS「恢复默认参数」功能及本地化、批注排版回归修复。\n\n正式安装包：`mozhi-1.4.0-vc84.apk`，Android 8.0 及以上。使用正式发布证书，可覆盖安装已有正式版。数据库升级至版本 35，通过迁移保留现有数据。\n\n## English\n\n### Interactive companions and character dossiers\n\n- Add interactive companion replies with native controls, charts, and actionable content. Configure generation, styling, and image generation policies.\n- Extract character rosters before completing individual dossiers, with resumable progress. Improve full-scan retries and recovery of truncated results, and add biographies for major characters.\n- Add grouped character cards, dossier pages, and relationship graphs. Show book-knowledge task progress through foreground notifications and a reader progress entry.\n- Improve message layout, process displays, footnotes, and composition. Default conversations use inline text while preserving custom persona bubbles.\n- Present passage discussions as margin annotations, with inline highlight-style and color editing.\n\n### Reading and library\n\n- Add the default Paper & Ink palette and refine light, dark, and tablet layouts.\n- Collapse and expand the floating phone navigation while scrolling the bookshelf. Open search from its adjacent action and browse tags through index tabs.\n- Add a cover-opening transition when continuing from the bookshelf or book details.\n- Add chapter-length rhythm bars, volume labels, a quick-position scrubber, current-chapter cues, and reverse ordering to the contents panel. Contents, outlines, characters, and bookmarks share the navigation sheet.\n- Show generated AI annotations immediately in the reader, details, and review. Improve paragraph scheduling for upcoming chapters.\n\n### Fixes and maintenance\n\n- Fix a possible Android crash on the first interactive reply and improve text selection and reader state management.\n- Improve MDX compatibility with a built-in RIPEMD-128 implementation and remove BouncyCastle.\n- Clean up update packages for installed versions at startup and break down cache usage by source.\n- Preserve the contributed TTS reset-to-defaults control, localized labels, and annotation-layout regression fixes.\n\nOfficial package: `mozhi-1.4.0-vc84.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations. Database version 35 includes migrations preserving existing data.\n",
+        "publishedAt": "2026-10-21T09:47:04Z",
+        "createdAt": "2026-10-21T09:46:17Z",
+        "body": "# MoRead · 墨知 1.4.1\n\n## 中文\n\n- 伴读会话支持导出 Markdown，可分享或另存；阅读页伴读悬浮球可在设置中隐藏。\n- 改进主动段评的前方段落选择、全章覆盖和断点补全，避免后半章长时间没有段评。\n- 改进 EPUB 重复资源兼容；章节精排解析失败时保留正文与图片，并保护已有正文和批注坐标。\n- TXT 单本预览与批量导入改用流式处理，降低大文件内存占用；优化章节扫描与导入进度。\n- 书架支持调整网格列数；优化书籍详情加载、段落讨论及悬浮导航的拖拽、切页和收放。\n- 修复底部弹层滚动边界与视口稳定性，补充导航手势、导入和段评回归覆盖。\n\n正式安装包：`mozhi-1.4.1-vc85.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n- Export companion conversations as Markdown for sharing or saving, and optionally hide the companion bubble in the reader.\n- Improve proactive annotation scheduling, chapter coverage, and resumable completion.\n- Handle duplicate EPUB resources and preserve text and images when rich chapter parsing fails, while protecting existing text and annotation coordinates.\n- Stream TXT previews and batch imports to reduce memory use; improve chapter scanning and import progress.\n- Add configurable bookshelf grid columns and refine book-detail loading, passage discussions, and floating navigation gestures.\n- Stabilize bottom-sheet scrolling and viewport boundaries, with additional navigation, import, and annotation regression coverage.\n\nOfficial package: `mozhi-1.4.1-vc85.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
         "assets": [
           {
-            "name": "mozhi-1.4.0-vc84.apk",
-            "size": 23261963,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.4.0/mozhi-1.4.0-vc84.apk"
+            "name": "mozhi-1.4.1-vc85.apk",
+            "size": 23330687,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.4.1/mozhi-1.4.1-vc85.apk"
           }
         ]
       },
@@ -871,20 +871,20 @@
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
       "stars": 48,
-      "sourceUpdatedAt": "2026-10-19T02:18:50Z",
+      "sourceUpdatedAt": "2026-10-21T13:39:28Z",
       "githubArchived": false,
       "release": {
-        "name": "NexHub v3.1.1-ohos-beta.1",
-        "tagName": "v3.1.1-ohos-beta.1",
-        "prerelease": true,
-        "publishedAt": "2026-10-18T14:52:57Z",
-        "createdAt": "2026-10-18T14:19:52Z",
-        "body": "# NexHub v3.1.1-ohos-beta.1（鸿蒙预览版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🎉 首个鸿蒙版（预览）\n\nNexHub 鸿蒙（HarmonyOS / OpenHarmony）适配版首个预览发布。四合一聚合与「源即插件」架构完整移植：源导入与解析（含内嵌脚本源）、漫画 / 小说 / 影视阅读观看、弹幕、下载、收藏、Bangumi 同步全链路可用。**基础功能完整**，欢迎真机试用并反馈问题。\n\n> - **这是什么版本**：鸿蒙平台首个预览版（beta），仅提供未签名安装包，适合愿意折腾侧载的用户尝鲜；Android / Windows / Linux / macOS 请继续使用各平台正式版安装包，本版本不包含其安装文件。\n> - **运行要求**：HarmonyOS / OpenHarmony arm64 真机；模拟器暂不支持视频播放。\n> - **数据兼容**：无破坏性变更。首次启动会自动把历史记录、收藏、下载任务迁移到独立文件存储，过程无感，旧数据保留兜底。\n> - **应用内更新**：鸿蒙版检查到新版本时会直接打开浏览器发布页下载（HAP 不支持应用内安装）。\n\n## 📲 安装方式（侧载）\n\n1. 从下方附件下载 `NexHub-ohos-arm64-unsigned.hap`（未签名安装包）；\n2. 使用端侧签名安装工具对安装包自行签名后安装，或通过 DevEco Studio / hdc 安装；\n3. 首次打开后到「源管理 / 导入源」导入至少一个源 JSON，导入后即可使用。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n## ✨ 鸿蒙版已支持\n\n- **源解析与阅读全链路**：声明式选择器 + 内嵌 JS 脚本源（QuickJS 引擎），漫画 / 小说图文链路完整；\n- **视频播放**：libmpv 内核（与 Android 同源），支持倍速 / 音轨 / 字幕轨 / 外挂字幕 / 防盗链头，弹幕同屏渲染；\n- **画中画**：系统小窗，控制面板可播放 / 暂停 / 快进快退；\n- **系统能力**：系统通知（RSS 订阅等）、图片保存进系统相册（系统确认框，免权限）；\n- **数据持久化**：收藏 / 下载任务 / 历史记录独立文件存储，应用强杀后不丢；\n- **账号与更新**：Bangumi 登录与同步（应用内授权完成）、应用内更新跳转浏览器发布页。\n\n## ⚠️ 已知差异（预览版）\n\n| 功能 | 现状 | 替代 / 说明 |\n| --- | --- | --- |\n| 本地文件夹导入 / 自定义下载目录 / 自定义截图目录 | 目录选择暂不可用 | 改走「导入文件」逐个选择；下载 / 截图落应用内默认位置 |\n| 插件导出 / 备份导出 | 无目录选择 | 落默认位置后通过系统分享保存 |\n| 源 WebView 网络跟随 | 不跟随源级代理 / hosts / DoH | HTTP 抓取链路不受影响，仅 WebView 内页面受影响 |\n| 剪贴板图片导入 | 暂不可用 | 有路径复制兜底 |\n| 离线朗读（TTS）/ 音量键翻页 / 投屏 | 暂不可用（入口隐藏） | — |\n| Material You 莫奈取色 / ECH 加速 / 播客后台通知栏 | 暂不支持 | 回退默认主题色 / 直连 / 应用内播放不受影响 |\n| 模拟器（x64） | 不支持视频播放 | 播放内核仅提供 arm64 真机产物 |\n\n> 完整平台差异说明见 [README](https://github.com/nexhub-app/Nexhub#二平台支持与鸿蒙版进行中)。问题反馈请到 [Issues](https://github.com/nexhub-app/Nexhub/issues)，建议附日志与复现步骤，预览版阶段的问题会优先跟进。\n",
+        "name": "NexHub v3.2.0",
+        "tagName": "v3.2.0",
+        "prerelease": false,
+        "publishedAt": "2026-10-21T13:50:52Z",
+        "createdAt": "2026-10-21T13:38:50Z",
+        "body": "# NexHub v3.2.0（正式版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🎉 正式版说明\n\nNexHub **3.2.0 正式版**来了。这是鸿蒙（HarmonyOS / OpenHarmony）适配正式落地的一个版本：arm64 真机完整支持，与 Android 对齐源解析、播放、弹幕、画中画、朗读、投屏等核心链路；同时新增 iOS 未签名构建、内置免费翻译（Bing），并恢复投屏、莫奈壁纸取色、音量键翻页等能力。**基础功能完整、可安全升级。**\n\n> - **这是什么版本**：3.2.0 正式版；Android / Windows / Linux / macOS / iOS / 鸿蒙六平台产物统一发布在同一个 Release。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——书架 / 收藏 / 进度 / 书签 / 历史 / 分组直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥可直接覆盖安装。历史记录与收藏、下载任务会在首次启动时自动迁移到独立文件存储，过程无感、旧数据保留兜底。\n> - **鸿蒙安装方式**：HAP 统一不带签名，请用端侧签名工具自行签名后安装（或 DevEco Studio / hdc 侧载）。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 📱 鸿蒙（HarmonyOS / OpenHarmony）正式支持\n\n- **四合一聚合与「源即插件」架构完整移植**：源导入与解析全链路可用，**内嵌 JavaScript 脚本源同样可跑**（自研 QuickJS 原生桥）；漫画 / 小说 / 影视阅读观看完整。\n- **视频播放**：libmpv 内核（与 Android 同源），支持倍速 / 音轨 / 字幕 / 外挂字幕 / 防盗链头，弹幕同屏渲染；播放内核默认开启，亮度 / 音量手势控制升级到内置鸿蒙平台官方实现。\n- **系统能力对齐**：画中画小窗（含控制面板）、系统通知（RSS 等）、**图片保存进系统相册**（系统确认框、免权限）、**剪贴板图片粘贴**（原生 pasteboard）、系统级「另存为」导出。\n- **朗读**：系统 CoreSpeechKit 离线引擎（中文、语速、后台朗读、播放完成续读），也可配置自建在线 HTTP TTS。\n- **阅读器音量键翻页**：原生按键通道，支持长按连续翻页。\n- **投屏恢复**：设备发现改走原生 mDNS（`_googlecast._tcp`），播放器顶栏投屏入口恢复。\n- **莫奈取色**：接入系统壁纸主色并**实时跟随**壁纸变化，页面切换与回前台不重复取色。\n- **ECH 加速随 HAP 打包**：本地 ECH/DoH 代理引擎以 FFI 接入，应用级 / 源级 / Bangumi ECH 均可用。\n- **数据持久化**：历史 / 收藏 / 下载任务改独立文件存储，应用强杀不丢。\n- **平台差异（仍存在）**：本地文件夹导入改「导入文件」逐个选择；自定义下载 / 截图目录仅限应用私有目录与系统「下载」；插件与备份导出走系统分享；播客后台通知栏暂不可用；模拟器（x64）不支持视频播放与 ECH。\n\n### 🍎 iOS 支持\n\n- 新增 **未签名 IPA** 构建（与 Android / 鸿蒙共用包名），侧载后用 AltStore / Sideloadly 等工具自签安装。\n- 全平台显示名统一为 **NexHub**。\n\n### 🆓 内置免费翻译\n\n- **无 AI 配置也能翻译**：详情页标题 / 标签 / 简介 / 评论、小说与字幕默认走内置免费翻译，失败或不可用时自动回退已配置的 AI。\n- 连续失败自动熔断（静默 5 分钟）避免反复无效请求；术语表、非标准风格等高级需求命中时自动切 AI 优先。\n- UI 文本走批量聚合与本地缓存，详情页不再逐条请求。\n\n### 🎬 播放器\n\n- **投屏恢复**：投屏设备发现改用原生 mDNS，顶栏投屏入口回归。\n- **缓冲档位对齐**：修复省流档缓冲过浅导致的轻微卡顿。\n- **播放诊断日志**：播放启动时记录实际软 / 硬解状态与缓存档位，卡顿类反馈可直接从日志定位（鸿蒙硬解缺失会静默回退软解）。\n- 画中画接入社区适配版本，鸿蒙与 Android 双平台可用。\n\n### 📚 阅读器\n\n- 鸿蒙阅读器支持**音量键翻页**（原生按键拦截，长按连续翻页）。\n- 鸿蒙朗读入口恢复（系统离线 TTS + 在线 HTTP TTS），此前因缺少平台实现被隐藏。\n\n### 🕘 数据与稳定性\n\n- **历史记录改独立文件持久化**，修复重启后历史丢失。\n- 收藏与下载任务改独立文件存储，带一次性无感迁移。\n- 文件偏好按键串行写入，修复并发落盘崩溃。\n- 鸿蒙 QuickJS 释放竞态刷屏修复；图片保存补写回步骤，修复「提示成功但图库没有」。\n- 弹幕凭据未配置时跳过整批匹配，消除逐集无效请求与日志刷屏。\n- 修复鸿蒙下取消导入导致的崩溃；导出范围选择改为实时刷新。\n- 安装包按平台严格匹配；鸿蒙版检查更新改为跳转浏览器发布页（HAP 不支持应用内安装）。\n\n### 🎨 界面\n\n- 页面转场改为各平台系统默认（Android 预测性返回 / Zoom，桌面 Zoom，iOS / macOS 侧滑），不再强制零动画瞬切。\n- 鸿蒙返回时强调色突变修复；加载页首帧直显壁纸主色。\n- 存储位置弹层横屏 / 小窗溢出修复；低配整卡模式下源卡片不再包裹无源空白。\n\n### 🧹 内部\n\n- **CI 发版纪律统一**：任何 `v*` 标签都构建全部平台，鸿蒙 HAP 追加到**同一个** Release；不再使用平台后缀标签单独发版。\n- 平台判定全仓收口到统一服务；鸿蒙依赖换源与本地补丁、降级矩阵、README 重写；鸿蒙构建链（hvigor）CI 自愈与失败诊断强化。\n- 注释与文档延续中性表述清理；无新增破坏性依赖变更。\n\n---\n\n## ⬆️ 升级方式\n\n- **Android / 桌面端**：沿用同一签名密钥，可直接覆盖安装；也可在应用内「设置 → 关于 → 检查更新」自动升级。\n- **鸿蒙**：下载 `NexHub-ohos-arm64-unsigned.hap`，自行签名后覆盖安装。\n\n## ⚠️ 已知限制\n\n- 鸿蒙：本地文件夹导入、自定义任意目录、插件 / 备份导出受系统目录选择能力限制，均提供替代路径；模拟器（x64）无视频播放与 ECH 引擎。\n- 鸿蒙 ECH 引擎与播放内核仅有 arm64 产物，x64 调试构建已带 QuickJS / WebView 原生库。\n- 内置免费翻译为非官方公开接口，可能随时失效；失效时自动回退 AI 或显示原文。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n",
         "assets": [
           {
             "name": "NexHub-ohos-arm64-unsigned.hap",
-            "size": 95742546,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.1.1-ohos-beta.1/NexHub-ohos-arm64-unsigned.hap"
+            "size": 95813020,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-ohos-arm64-unsigned.hap"
           }
         ]
       },
@@ -899,25 +899,69 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 24,
-      "sourceUpdatedAt": "2026-10-21T07:42:32Z",
+      "sourceUpdatedAt": "2026-10-21T10:32:15Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.100915",
-        "tagName": "3.26.100915",
+        "name": "3.26.102113",
+        "tagName": "3.26.102113",
         "prerelease": false,
-        "publishedAt": "2026-10-09T07:53:37Z",
-        "createdAt": "2026-10-09T07:22:35Z",
-        "body": "3.26.100321 → 3.26.100915\n\n### 新增\n- 订阅文章列表新增「刷新后回到顶部」开关，默认开启\n- 网页控制台升级为全新阅读界面，书架发现搜索订阅一屏直达\n- 网页端书籍点开即用内置阅读器，支持文字漫画视频听书多形态\n\n### 优化\n- 发现套件新增一键生成，无需从零手工配置即可开始使用\n- 套件编辑器的书源改为纵向可搜索列表，选源不再左右滑动翻找\n- 套件编辑器的标签改为按分组多选，选中与已选数量一目了然\n- 套件编辑器为每种控件补充说明与布局示意，切换类型会提示保留数量\n- 发现页套件菜单可直接添加控件，长按控件可编辑、上移下移或删除\n- 套件空态新增一键生成与手动创建入口，保存后提示回发现页查看\n- 更新说明改为按版本差异展示，不再罗列日期\n- 订阅列表除自由布局外的各布局左右留白收窄，图片显示更宽\n\n### 修复\n- 修复套件编辑器书源较多时列表滚动卡顿、只显示部分书源的问题\n- 修复套件编辑器标签选中后无法分辨选中项的问题\n- 修复控件样式选项需左右滑动才能看全的问题\n- 修复控件未加载到内容时被误提示为尚未配置的问题\n- 修复一键生成可能生成出没有可用书源内容的套件的问题\n- 修复发现页书籍菜单弹层在夜间主题下文字与图标看不清的问题\n- 修复离线缓存页点击开始缓存后按钮图标不切换的问题\n- 修复部分弹层与对话框文字图标不随主题变化的问题\n- 修复部分订阅源解密列表后只显示一条、图片空白的问题\n- 修复播放订阅源直播时收藏按钮点击无反应的问题\n- 修复部分订阅源翻页到下一页时加载失败的问题\n- 修复订阅源校验对带分类前缀地址的源判定不准的问题\n- 修复网页控制台发现页打不开、搜索结果无法加入书架的问题\n- 修复网页端视频与漫画打开后无法播放、图片空白的问题\n- 网页控制台未授权时弹窗即可直接粘贴访问令牌，无需再找入口\n- 网页控制台首屏体积大幅精简，真机打开更快更流畅\n- 网页控制台静态资源启用缓存，再次打开明显更快\n- 修复部分订阅源列表加载失败、图片查看页图片显示不全的问题",
+        "publishedAt": "2026-10-21T10:26:01Z",
+        "createdAt": "2026-10-21T08:23:56Z",
+        "body": "3.26.100915 → 3.26.102113\n\n### 新增\n- 「首屏加载模板」入口并入阅读设置\n- 书源编辑页恢复段评标签，可填写段评地址与规则\n- 自动任务编辑页「登录」恢复可用，移除无效「调试」入口\n- 新增内置主题「幽夜回廊」：暗黑游戏风、翻页联动\n- 内置主题补段落样式：首行加重、对白描边、场景居中\n- 新增首屏加载模板：多套画面可选，支持预览与导入导出\n- 备份与恢复新增书角角色及角色关系，换机不再丢失\n- 备份与恢复新增朗读配乐与音效，换机不再丢失\n- AI 设置新增「系统提示词」编辑入口\n\n### 优化\n- 更新说明改为按版本差异汇总，重复修复合并展示\n- 第三方素材许可页改为只陈述来源与授权状态\n- 内置主题页眉可更换场景，怪物与技能特效更丰富\n- 移除 11 套旧内置阅读主题，由新主题体系替代\n- 内置页面主题加入每页动效（流光、星点、光标、进度条）\n- 支持水墨屏下的页面模板配色与阅读页主题\n- 阅读页模板支持跟随所选翻页方式的过渡动画\n- EPUB 默认启用保真排版引擎（标题/加粗/字色/引用/图片）\n- 阅读页帮助新增「阅读页模板」入口与用法说明\n- 分页模板首页与续页使用不同版式，续页自动切正文版式\n- 应用模板首屏显示加载占位，不再短暂白屏\n- 霓虹夜行/星图/墨迹三套主题新增成套美术与专属字体\n- 模板管理页新增「作者指南」，关于页新增第三方素材许可\n- 支持阅读 Markdown 及导入分享的 Markdown 文件\n- 阅读页样式面板新增「页面模板」入口，可就地启用\n- 阅读页模板支持在线正文与本地 txt 书籍，设置即时生效\n- EPUB 固定版式、竖排与图库章节按出版方排版保真显示\n- EPUB 兼容更多出版方的旧式样式声明\n- 支持直接打开 Markdown 文件阅读（按标题分章）\n- 设置新增「阅读页面模板」管理页，可编辑与导入导出\n- 内置阅读模板增至 11 套，新增终端、玻璃拟态、星图等\n- 模板管理页可预览模板，支持滚动浏览与分页翻看\n- 应用模板后图表、公式与代码块均可正常渲染\n- 模板模式下正文按页框分屏显示，翻页可正常定位\n- 阅读页样式新增模板装饰强度与专注模式\n- 阅读模板在窄屏与横屏下自动收紧页眉与装饰\n- 应用模板后正文排版交由模板决定，原排版项置灰说明\n- 发现套件新增一键生成，无需从零手工配置即可开始使用\n- 套件编辑器的书源改为纵向可搜索列表，选源不再左右滑动翻找\n- 套件编辑器的标签改为按分组多选，选中与已选数量一目了然\n- 套件编辑器为每种控件补充说明与布局示意，切换类型会提示保留数量\n- 发现页套件菜单可直接添加控件，长按控件可编辑、上移下移或删除\n- 套件空态新增一键生成与手动创建入口，保存后提示回发现页查看\n- 更新说明改为按版本差异展示，不再罗列日期\n\n### 修复\n- 修复内置主题页眉角色被裁切、正文暗斑与遮挡装饰\n- 修复在线/离线文本书正文不分段、段落样式丢失\n- 首屏加载模板扩展到在线/离线文本书\n- 首屏加载模板改为每次进入阅读页只展示一次\n- 修复网络请求失败时错误处理自身崩溃的问题\n- 修复内置主题页眉页脚、翻页、尺寸与文字重叠问题\n- 修复 https 书源校验误连 80 端口、被误判\"域名不可达\"\n- 修复空壳源（无搜索无发现）被校验判为通过\n- 书源校验遇网络抖动会自动重试，减少可用源被误判失效\n- 修复网络解析到不可达地址导致的加载卡顿（书源/订阅源/图片均受益）\n- 修复导入主题的行高、字体、段距等样式不生效\n- 修复自定义界面字体、标题字体在部分页面不生效\n- 修复部分弹窗与页面在夜间/主题包下颜色不跟随主题\n- 修复沉浸式书籍信息页缺少「上传 WebDav」入口\n- 修复权限多次被拒后无提示、授权成功仍被静音\n- 修复设置页搜索「清理缓存」「清除网页数据」找不到设置项\n- 删除 HTTP TTS 语音配置后可进回收站找回\n- 修复「自动刷新媒体目录」开关无效果、漫画目录无法重取\n- 修复划线批注导出 Obsidian 无设置入口\n- 修复高级标题无法单独为某本书设置拆分规则\n- 修复书源规则解析遇异常规则时可能崩溃\n- 修复备份临时文件清理与备份冲突、可能丢失备份\n- 修复已保存划线不显示、换书后串到别的书\n- 修复目录更新或反转后划线位置错乱\n- 修复开启页面模板后手动划线不显示\n- 修复恢复损坏或空备份包时数据只恢复一半且无提示\n- 修复书架封面加载方式导致的滑动卡顿\n- 修复换源误删同书址候选、切换分组时卡顿\n- 校验后不再残留\"失效/重复源/规则为空\"等旧标记\n- 校验结果可一键导出，订阅源支持校验所选与自定义超时\n- 修复导入或保存书源时丢失段评规则\n- 修复导入主题后页面未铺满、两侧露出底色\n- 修复导入主题正文区偏小、底部显示不全\n- 修复页面模板续页正文偏少、底部大片空白\n- 修复页面模板翻页动画方向相反\n- 修复页面模板页眉高度、页脚页码与进度跟原版不一致\n- 修复页面模板模式下关键词与正则高亮不生效\n- 修复导入 Archive 主题后装饰、配色与动效跟原版不一致\n- 修复体积较大的 Archive 主题导入被拒\n- 修复页面模板每页最后一行文字被裁掉一半\n- 修复页面模板默认档位压低作者装饰透明度\n- 修复导入主题缺少每页进场动效状态\n- 修复 EPUB 排版异常时整章挤在一页、图片不显示\n- 修复 EPUB 正文未按阅读设置字号、出版方样式丢失\n- 修复 AI 工具开关配置异常膨胀导致设置变慢\n- 修复导入页面模板时文件选择弹框按钮被挤出屏幕\n- 修复页面模板短章节底部留白、页脚随正文漂移\n- 修复页面模板版式偏差：末行被裁、页眉页脚留白、正文区偏小\n- 修复部分模板页脚装饰带过高、左右留白偏大\n- 修复页面模板恢复阅读进度可能偏一页\n- 修复页面模板同一章节内每页行数不一致\n- 兼容 Archive 页面模板：样式/页码/翻页/页脚与装饰强度\n- 修复部分 EPUB 内嵌字体不显示\n- 修复渲染组件异常后反复重试导致翻页闪回\n- 修复图表与公式渲染完成后页码跳动\n- 修复应用模板后续页底部大片留白、页脚不贴底\n- 修复存储空间不足时章节缓存失败无提示\n- 修复复杂 Markdown 章节与超长单章阅读卡顿\n- 修复开启页面模板后只能翻两页、后续翻不动\n- 修复页面模板阅读进度每次从头开始\n- 修复页面模板模式下正文超出屏幕、可上下拖动\n- 修复关闭页面模板后再开启不生效\n- 支持导入其它应用导出的页面模板压缩包（ZIP）\n- 修复翻页后页码与边界判断可能失准\n- 修复模板翻页瞬间装饰动效与分页抢资源导致卡顿\n- 修复阅读组件异常时停在错误页，改为自动切回基础排版\n- 修复模板页脚页码与时间始终空白\n- 修复大体积模板编辑 CSS 保存后闪退、内容丢失\n- 修复 EPUB 内容异常时章节打不开，改为自动降级\n- 修复富渲染阅读页点击无响应、无法翻页\n- 修复套件编辑器书源较多时列表滚动卡顿、只显示部分书源的问题\n- 修复套件编辑器标签选中后无法分辨选中项的问题\n- 修复控件样式选项需左右滑动才能看全的问题\n- 修复控件未加载到内容时被误提示为尚未配置的问题\n- 修复一键生成可能生成出没有可用书源内容的套件的问题",
         "assets": [
           {
-            "name": "legado_miss_app_3.26.100915.apk",
-            "size": 28499435,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100915/legado_miss_app_3.26.100915.apk"
+            "name": "legado_miss_app_3.26.102113.apk",
+            "size": 31068597,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.102113/legado_miss_app_3.26.102113.apk"
           },
           {
-            "name": "legado_miss_app_debug_3.26.100915.apk",
-            "size": 44082390,
-            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.100915/legado_miss_app_debug_3.26.100915.apk"
+            "name": "legado_miss_app_debug_3.26.102113.apk",
+            "size": 47080982,
+            "browserDownloadUrl": "https://github.com/syq17496152/legado/releases/download/3.26.102113/legado_miss_app_debug_3.26.102113.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "moben",
+      "name": "墨本阅读",
+      "tag": "moben",
+      "repo": "Mupceet/EssentialReader",
+      "term": "legado-branch-moben",
+      "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
+      "stars": 21,
+      "sourceUpdatedAt": "2026-10-21T13:41:48Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Pre-release 3.26.17-beta.36",
+        "tagName": "3.26.17-beta.36",
+        "prerelease": true,
+        "publishedAt": "2026-10-21T13:41:32Z",
+        "createdAt": "2026-10-21T12:51:35Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：合并上游 legado-with-MD3 至 2026-10-20 主线（132 项提交）——阅读排版、缓存与备份、局域网访问、字体管理全面升级。\n\n### 新增\n\n* 按书关闭阅读记录：完整模式书详情可为单本书关闭阅读时长统计，墨水屏阅读同样生效\n* 字体直接导入：系统文件选择器读不出字体目录的设备可直接导入字体文件；墨水屏字体列表同时并入已导入字体，同名以所选文件夹优先\n* Android 17 本地网络权限引导：墨水屏模式访问局域网 WebDAV、书源被系统拦截时自动弹出授权，不再静默超时\n* 完整模式：预下载拆分「向前 / 向后」（向前默认 0 不再抓上一章）、发现页跳转页码、书架标签来源设置、自定义顶栏按钮、平板与折叠屏分屏、听书与阅读可同时进行\n\n### 修复\n\n* 阅读排版（墨水屏同步受益）：英文换行不再吞词尾空格；整串标点不再把一行顶出空洞；长章节阅读内存优化；字号兼容\n* 升级后旧章节缓存不再失效；章节正文与图片缓存按章重组；朗读音色随备份保留\n* file:// 路径字体可用；字体文件夹读不出时说明原因\n* 阅读器 RectList 崩溃（Compose 升级至 1.13.0-beta01）\n* 听书与朗读：HTTP 朗读断流卡顿、段落间隔重复合成、多角色配音系列修复（完整模式）",
+        "assets": [
+          {
+            "name": "mapping.txt",
+            "size": 312301217,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.36/mapping.txt"
+          },
+          {
+            "name": "moben-3.26.17-beta.36-arm64-v8a.apk",
+            "size": 21417711,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.36/moben-3.26.17-beta.36-arm64-v8a.apk"
+          },
+          {
+            "name": "moben-3.26.17-beta.36-armeabi-v7a.apk",
+            "size": 20957530,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.36/moben-3.26.17-beta.36-armeabi-v7a.apk"
+          },
+          {
+            "name": "moben-3.26.17-beta.36.apk",
+            "size": 27990151,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.36/moben-3.26.17-beta.36.apk"
           }
         ]
       },
@@ -968,50 +1012,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "Luoyacheng/legado-E"
-    },
-    {
-      "id": "moben",
-      "name": "墨本阅读",
-      "tag": "moben",
-      "repo": "Mupceet/EssentialReader",
-      "term": "legado-branch-moben",
-      "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 20,
-      "sourceUpdatedAt": "2026-10-20T15:35:10Z",
-      "githubArchived": false,
-      "release": {
-        "name": "Pre-release 3.26.17-beta.35",
-        "tagName": "3.26.17-beta.35",
-        "prerelease": true,
-        "publishedAt": "2026-10-20T15:34:42Z",
-        "createdAt": "2026-10-20T15:17:40Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：墨水屏新增「备份与恢复」设置页——不进完整模式也能配置 WebDAV 并完成云端备份与恢复。\n\n### 新增\n\n* 备份与恢复（墨水屏）：「我的」页新增设置页，可直接配置 WebDAV 服务器地址、账号、密码、同步文件夹与设备名称，支持测试服务、立即备份与恢复云端最新备份；「同步阅读进度」开关移入该页，配置账号密码后即可开启。配置与完整模式共用同一份，两侧改动互相同步",
-        "assets": [
-          {
-            "name": "mapping.txt",
-            "size": 308689553,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.35/mapping.txt"
-          },
-          {
-            "name": "moben-3.26.17-beta.35-arm64-v8a.apk",
-            "size": 21204063,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.35/moben-3.26.17-beta.35-arm64-v8a.apk"
-          },
-          {
-            "name": "moben-3.26.17-beta.35-armeabi-v7a.apk",
-            "size": 20743874,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.35/moben-3.26.17-beta.35-armeabi-v7a.apk"
-          },
-          {
-            "name": "moben-3.26.17-beta.35.apk",
-            "size": 27776515,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.35/moben-3.26.17-beta.35.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
     },
     {
       "id": "sk",
