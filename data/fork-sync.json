@@ -243,9 +243,16 @@
       "upstreamRepo": "syq17496152/legado",
       "upstreamBranch": "master",
       "backupRepo": "legado-backup/legado-m",
-      "activeBranch": "master",
-      "generation": 1,
-      "retired": [],
+      "activeBranch": "backup/v2-4d4f81636bc5f62ee08f1b8b6cda3a1f32ca178b",
+      "generation": 2,
+      "retired": [
+        {
+          "branch": "master",
+          "head": "641d4b3f0b8a8f5a02ece5bba690babb0a9c42e6",
+          "retiredAt": "2026-10-21T10:32:24.245Z",
+          "reason": "unrelated"
+        }
+      ],
       "status": "active"
     },
     "pp": {
@@ -924,14 +931,19 @@
       "repo": "syq17496152/legado",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T01:29:53.497Z",
+      "since": "2026-10-21T10:32:25.912Z",
       "backupRepo": "legado-backup/legado-m",
-      "activeBranch": "master",
+      "activeBranch": "backup/v2-4d4f81636bc5f62ee08f1b8b6cda3a1f32ca178b",
       "events": [
         {
           "at": "2026-10-05T01:29:53.497Z",
           "type": "synced",
           "message": "syq17496152/legado:master → legado-backup/legado-m:master 已同步"
+        },
+        {
+          "at": "2026-10-21T10:32:25.912Z",
+          "type": "rotated",
+          "message": "历史 unrelated：旧分支已保留，legado-backup/legado-m/backup/v2-4d4f81636bc5f62ee08f1b8b6cda3a1f32ca178b 接收新历史"
         }
       ]
     },
@@ -1353,5 +1365,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-21T05:14:59.469Z"
+  "checkedAt": "2026-10-21T10:32:44.116Z"
 }
