@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:52:11.298Z",
+  "generatedAt": "2026-10-21T18:41:59.103Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47147,
+      "stars": 47151,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6589,
+      "stars": 6594,
       "sourceUpdatedAt": "2026-10-20T17:47:59Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2938,
+      "stars": 2940,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2215,
+      "stars": 2216,
       "sourceUpdatedAt": "2026-09-14T14:44:30Z",
       "githubArchived": false,
       "release": {
@@ -189,7 +189,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1620,
+      "stars": 1624,
       "sourceUpdatedAt": "2026-10-21T12:06:30Z",
       "githubArchived": false,
       "release": {
@@ -266,7 +266,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 465,
+      "stars": 466,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 301,
+      "stars": 304,
       "sourceUpdatedAt": "2026-10-19T06:20:14Z",
       "githubArchived": false,
       "release": {
@@ -680,7 +680,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 111,
+      "stars": 112,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -792,7 +792,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 58,
+      "stars": 59,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -870,21 +870,81 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 48,
-      "sourceUpdatedAt": "2026-10-21T13:39:28Z",
+      "stars": 49,
+      "sourceUpdatedAt": "2026-10-21T14:38:55Z",
       "githubArchived": false,
       "release": {
         "name": "NexHub v3.2.0",
         "tagName": "v3.2.0",
         "prerelease": false,
-        "publishedAt": "2026-10-21T13:50:52Z",
-        "createdAt": "2026-10-21T13:38:50Z",
+        "publishedAt": "2026-10-21T14:47:50Z",
+        "createdAt": "2026-10-21T14:38:12Z",
         "body": "# NexHub v3.2.0（正式版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🎉 正式版说明\n\nNexHub **3.2.0 正式版**来了。这是鸿蒙（HarmonyOS / OpenHarmony）适配正式落地的一个版本：arm64 真机完整支持，与 Android 对齐源解析、播放、弹幕、画中画、朗读、投屏等核心链路；同时新增 iOS 未签名构建、内置免费翻译（Bing），并恢复投屏、莫奈壁纸取色、音量键翻页等能力。**基础功能完整、可安全升级。**\n\n> - **这是什么版本**：3.2.0 正式版；Android / Windows / Linux / macOS / iOS / 鸿蒙六平台产物统一发布在同一个 Release。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——书架 / 收藏 / 进度 / 书签 / 历史 / 分组直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥可直接覆盖安装。历史记录与收藏、下载任务会在首次启动时自动迁移到独立文件存储，过程无感、旧数据保留兜底。\n> - **鸿蒙安装方式**：HAP 统一不带签名，请用端侧签名工具自行签名后安装（或 DevEco Studio / hdc 侧载）。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 📱 鸿蒙（HarmonyOS / OpenHarmony）正式支持\n\n- **四合一聚合与「源即插件」架构完整移植**：源导入与解析全链路可用，**内嵌 JavaScript 脚本源同样可跑**（自研 QuickJS 原生桥）；漫画 / 小说 / 影视阅读观看完整。\n- **视频播放**：libmpv 内核（与 Android 同源），支持倍速 / 音轨 / 字幕 / 外挂字幕 / 防盗链头，弹幕同屏渲染；播放内核默认开启，亮度 / 音量手势控制升级到内置鸿蒙平台官方实现。\n- **系统能力对齐**：画中画小窗（含控制面板）、系统通知（RSS 等）、**图片保存进系统相册**（系统确认框、免权限）、**剪贴板图片粘贴**（原生 pasteboard）、系统级「另存为」导出。\n- **朗读**：系统 CoreSpeechKit 离线引擎（中文、语速、后台朗读、播放完成续读），也可配置自建在线 HTTP TTS。\n- **阅读器音量键翻页**：原生按键通道，支持长按连续翻页。\n- **投屏恢复**：设备发现改走原生 mDNS（`_googlecast._tcp`），播放器顶栏投屏入口恢复。\n- **莫奈取色**：接入系统壁纸主色并**实时跟随**壁纸变化，页面切换与回前台不重复取色。\n- **ECH 加速随 HAP 打包**：本地 ECH/DoH 代理引擎以 FFI 接入，应用级 / 源级 / Bangumi ECH 均可用。\n- **数据持久化**：历史 / 收藏 / 下载任务改独立文件存储，应用强杀不丢。\n- **平台差异（仍存在）**：本地文件夹导入改「导入文件」逐个选择；自定义下载 / 截图目录仅限应用私有目录与系统「下载」；插件与备份导出走系统分享；播客后台通知栏暂不可用；模拟器（x64）不支持视频播放与 ECH。\n\n### 🍎 iOS 支持\n\n- 新增 **未签名 IPA** 构建（与 Android / 鸿蒙共用包名），侧载后用 AltStore / Sideloadly 等工具自签安装。\n- 全平台显示名统一为 **NexHub**。\n\n### 🆓 内置免费翻译\n\n- **无 AI 配置也能翻译**：详情页标题 / 标签 / 简介 / 评论、小说与字幕默认走内置免费翻译，失败或不可用时自动回退已配置的 AI。\n- 连续失败自动熔断（静默 5 分钟）避免反复无效请求；术语表、非标准风格等高级需求命中时自动切 AI 优先。\n- UI 文本走批量聚合与本地缓存，详情页不再逐条请求。\n\n### 🎬 播放器\n\n- **投屏恢复**：投屏设备发现改用原生 mDNS，顶栏投屏入口回归。\n- **缓冲档位对齐**：修复省流档缓冲过浅导致的轻微卡顿。\n- **播放诊断日志**：播放启动时记录实际软 / 硬解状态与缓存档位，卡顿类反馈可直接从日志定位（鸿蒙硬解缺失会静默回退软解）。\n- 画中画接入社区适配版本，鸿蒙与 Android 双平台可用。\n\n### 📚 阅读器\n\n- 鸿蒙阅读器支持**音量键翻页**（原生按键拦截，长按连续翻页）。\n- 鸿蒙朗读入口恢复（系统离线 TTS + 在线 HTTP TTS），此前因缺少平台实现被隐藏。\n\n### 🕘 数据与稳定性\n\n- **历史记录改独立文件持久化**，修复重启后历史丢失。\n- 收藏与下载任务改独立文件存储，带一次性无感迁移。\n- 文件偏好按键串行写入，修复并发落盘崩溃。\n- 鸿蒙 QuickJS 释放竞态刷屏修复；图片保存补写回步骤，修复「提示成功但图库没有」。\n- 弹幕凭据未配置时跳过整批匹配，消除逐集无效请求与日志刷屏。\n- 修复鸿蒙下取消导入导致的崩溃；导出范围选择改为实时刷新。\n- 安装包按平台严格匹配；鸿蒙版检查更新改为跳转浏览器发布页（HAP 不支持应用内安装）。\n\n### 🎨 界面\n\n- 页面转场改为各平台系统默认（Android 预测性返回 / Zoom，桌面 Zoom，iOS / macOS 侧滑），不再强制零动画瞬切。\n- 鸿蒙返回时强调色突变修复；加载页首帧直显壁纸主色。\n- 存储位置弹层横屏 / 小窗溢出修复；低配整卡模式下源卡片不再包裹无源空白。\n\n### 🧹 内部\n\n- **CI 发版纪律统一**：任何 `v*` 标签都构建全部平台，鸿蒙 HAP 追加到**同一个** Release；不再使用平台后缀标签单独发版。\n- 平台判定全仓收口到统一服务；鸿蒙依赖换源与本地补丁、降级矩阵、README 重写；鸿蒙构建链（hvigor）CI 自愈与失败诊断强化。\n- 注释与文档延续中性表述清理；无新增破坏性依赖变更。\n\n---\n\n## ⬆️ 升级方式\n\n- **Android / 桌面端**：沿用同一签名密钥，可直接覆盖安装；也可在应用内「设置 → 关于 → 检查更新」自动升级。\n- **鸿蒙**：下载 `NexHub-ohos-arm64-unsigned.hap`，自行签名后覆盖安装。\n\n## ⚠️ 已知限制\n\n- 鸿蒙：本地文件夹导入、自定义任意目录、插件 / 备份导出受系统目录选择能力限制，均提供替代路径；模拟器（x64）无视频播放与 ECH 引擎。\n- 鸿蒙 ECH 引擎与播放内核仅有 arm64 产物，x64 调试构建已带 QuickJS / WebView 原生库。\n- 内置免费翻译为非官方公开接口，可能随时失效；失效时自动回退 AI 或显示原文。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n",
         "assets": [
+          {
+            "name": "app-arm64-v8a-release.apk",
+            "size": 82773242,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/app-arm64-v8a-release.apk"
+          },
+          {
+            "name": "app-armeabi-v7a-release.apk",
+            "size": 78870042,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/app-armeabi-v7a-release.apk"
+          },
+          {
+            "name": "app-release.apk",
+            "size": 199796774,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/app-release.apk"
+          },
+          {
+            "name": "app-x86_64-release.apk",
+            "size": 88613312,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/app-x86_64-release.apk"
+          },
+          {
+            "name": "NexHub-ios.ipa",
+            "size": 41621227,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-ios.ipa"
+          },
+          {
+            "name": "NexHub-linux-x64.AppImage",
+            "size": 132057592,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-linux-x64.AppImage"
+          },
+          {
+            "name": "NexHub-linux-x64.deb",
+            "size": 28501932,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-linux-x64.deb"
+          },
+          {
+            "name": "NexHub-linux-x64.tar.gz",
+            "size": 35306074,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-linux-x64.tar.gz"
+          },
+          {
+            "name": "NexHub-macos.dmg",
+            "size": 79099300,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-macos.dmg"
+          },
+          {
+            "name": "NexHub-macos.zip",
+            "size": 70496486,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-macos.zip"
+          },
           {
             "name": "NexHub-ohos-arm64-unsigned.hap",
             "size": 95813020,
             "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-ohos-arm64-unsigned.hap"
+          },
+          {
+            "name": "NexHub-setup-3.2.0.exe",
+            "size": 47868019,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-setup-3.2.0.exe"
+          },
+          {
+            "name": "NexHub-windows-x64.zip",
+            "size": 65257887,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.2.0/NexHub-windows-x64.zip"
           }
         ]
       },
@@ -1190,25 +1250,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-21T04:52:00Z",
+      "sourceUpdatedAt": "2026-10-21T14:48:48Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.30.0-20261021-045156 (预发布)",
-        "tagName": "v3.30.0-20261021-045156",
+        "name": "Legado MD3 v3.30.0-20261021-144845 (预发布)",
+        "tagName": "v3.30.0-20261021-144845",
         "prerelease": true,
-        "publishedAt": "2026-10-21T04:52:00Z",
-        "createdAt": "2026-10-21T04:44:27Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: c6a7880ee569946c572ce96d1fa0d443cd294faf\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-10-21T14:48:49Z",
+        "createdAt": "2026-10-21T14:41:23Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: 83b50d2441d23982e0a122e07d94217440abf1ab\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 26966193,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261021-045156/app-arm64-release.apk"
+            "size": 26976715,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261021-144845/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 46285061,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261021-045156/app-universal-release.apk"
+            "size": 46329481,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261021-144845/app-universal-release.apk"
           }
         ]
       },
