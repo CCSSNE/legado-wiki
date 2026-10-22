@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T18:35:10.126Z",
+  "generatedAt": "2026-10-22T22:23:24.041Z",
   "branches": [
     {
       "id": "c",
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6600,
-      "sourceUpdatedAt": "2026-10-22T10:57:02Z",
+      "stars": 6601,
+      "sourceUpdatedAt": "2026-10-22T18:56:38Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.18",
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1642,
+      "stars": 1643,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -407,25 +407,70 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 306,
-      "sourceUpdatedAt": "2026-10-19T06:20:14Z",
+      "sourceUpdatedAt": "2026-10-22T19:54:58Z",
       "githubArchived": false,
       "release": {
-        "name": "multiplatform-test",
-        "tagName": "multiplatform-test",
+        "name": "3.26.10230342",
+        "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-19T06:20:14Z",
-        "createdAt": "2026-10-19T05:39:12Z",
-        "body": "多平台测试包（未签名，供侧载/自签验证）：\n\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\n- **iOS**: SideStore/AltStore 自签侧载\n\n⚠️ 均为未签名产物，仅供多平台功能测试。",
+        "publishedAt": "2026-10-22T19:54:59Z",
+        "createdAt": "2026-10-22T18:30:17Z",
+        "body": "## 更新日志\n- feat(发现/搜索): 参数行加可搜索选择弹窗并恢复多选原版形态                (d31c0a270)\n- fix(audio): 定时与倍速回显标签改半透明黑底                               (497feafc8)\n- feat(audio): 播放页顶栏整行点击进入书籍详情                              (9f8c27dcb)\n- feat(navigation): 单例页复用并清掉上层页面，跨多页转场只退一页           (37c2d7d16)\n- perf(audio): 播放页不可见时停掉逐帧动效，心跳只刷新进度区                (0602aa99b)\n- fix(desktop): 音频滤镜不可用时不再让整次播放失败                         (044233725)\n- feat(audio): 播放页去掉换源入口，日志移到菜单底部                        (3d867b752)\n- perf(audio): 边缘光带整圈一次绘制，律动与频谱四端共用                    (06461e142)\n- fix(backup): 桌面端配置改存 JSON 文件，跨端恢复不再崩                    (0d3a49ac0)\n- ci(publish): multiplatform-test 保持预发布，避免抢占 latest              (6cd79c8cc)\n- docs(readme): iOS 状态改为基本可用并拆分下载分组                         (39419f282)\n- fix(bookinfo): 详情页默认更新书名作者，点作者不再退化成搜索              (a559731e3)\n- feat(share): 链接与文件入口先判书籍再嗅探规则，iOS 分享扩展同走此分流    (53da5c2a7)\n- feat(backup): 未设书籍保存位置时备份改走网盘                             (e5ea405d1)\n- feat(js): 登录检查脚本可用 java.strResponse 构造替换响应                 (976621d1b)\n- fix(network): 非 http/https 地址构造请求时直接报错                       (24c7342be)",
         "assets": [
           {
-            "name": "legado-3.26.101914-unsigned.hap",
-            "size": 71280989,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.101914-unsigned.hap"
+            "name": "all.apk",
+            "size": 18978120,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
-            "name": "legado-3.26.10191409-ios-unsigned.ipa",
-            "size": 33657867,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.10191409-ios-unsigned.ipa"
+            "name": "all_releaseA.apk",
+            "size": 18978124,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
+          },
+          {
+            "name": "arm64.apk",
+            "size": 11904797,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
+          },
+          {
+            "name": "arm64_releaseA.apk",
+            "size": 11904801,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
+          },
+          {
+            "name": "armv7.apk",
+            "size": 11187827,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
+          },
+          {
+            "name": "armv7_releaseA.apk",
+            "size": 11187831,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
+          },
+          {
+            "name": "linux_x64.deb",
+            "size": 102862952,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
+          },
+          {
+            "name": "linux_x64.rpm",
+            "size": 102943466,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
+          },
+          {
+            "name": "macos_arm64.dmg",
+            "size": 114528367,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
+          },
+          {
+            "name": "windows_x64.msi",
+            "size": 105591304,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
+          },
+          {
+            "name": "windows_x64_portable.zip",
+            "size": 104362153,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
       },
@@ -817,40 +862,75 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 55,
-      "sourceUpdatedAt": "2026-10-22T18:34:41Z",
+      "sourceUpdatedAt": "2026-10-22T22:18:15Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.1.1",
-        "tagName": "app-v2.1.1",
+        "name": "v2.2.1",
+        "tagName": "v2.2.1",
         "prerelease": false,
-        "publishedAt": "2026-10-22T17:56:30Z",
-        "createdAt": "2026-10-22T11:49:56Z",
-        "body": "本次仅更新 Android App，桌面版继续为 v2.0.0。\n\n## 修复\n- 平板（如鸿蒙 4.2）导入 40～50 MB 的 PDF 时卡在 0% 后闪退（#14）：导入时书的内容改为分块交给原生层（Rust）写盘，内存占用与书的大小无关，导入过程中界面不再冻住。修改书籍文件名改为原生改名，不再把整本书读进界面层。\n\n## 改进\n- 手机上的 PDF 原版阅读界面重做，与电子书阅读一致：正文占满全屏，轻点中间呼出／收起工具栏；翻页模式下轻点上／下区域翻页；底栏为页码进度条（拖动时预览章节与页码，点页码可输入跳转）和目录／缩略图／笔记／听书／显示入口；面板改为底部抽屉，「显示」里可调翻页方式、适高／适宽、缩放和自动翻页。「转为电子书」改为顶栏图标。\n- 排版面板：字体选择框占满整行；「更多字体」与「更多文字设置」统一为对齐的列表行，行尾显示当前值。\n\n## 验证\n- 新增分块写盘的 Rust 单测与前端契约测试；App 浏览器端到端（v2 界面、阅读、功能、字体、PDF 双形态）全部通过；桌面构建与平台边界测试通过。\n- APK 沿用固定签名、`com.yzfly.lightread.debug`、arm64、API 24/36，版本、签名与 ZIP 布局检查通过。\n\n## 已知限制\n- 没有鸿蒙真机，#14 的修复未经实机验证；本次未做真机覆盖安装验收。\n- 本次不提供 iOS 安装包。可使用 SHA256SUMS 校验下载文件。\n",
+        "publishedAt": "2026-10-22T19:02:55Z",
+        "createdAt": "2026-10-22T18:42:57Z",
+        "body": "release: v2.2.1\n\nDesktop and App ship together from one commit. v2.2.0 was tagged but\nnever published: its Windows job failed before packaging (see below), so\nv2.2.1 carries everything planned for 2.2.0 plus the fix.\n\nUser-visible:\n- Desktop: App-aligned palette, layout, generated covers, continue-reading\n  card and paper status filters; LXGW WenKai titles and Inter UI type.\n- Desktop online read-aloud works again (Sec-MS-GEC v2; v1 now gets 403).\n- Library backup export/import and library-folder moves run natively in\n  Rust; large libraries no longer exhaust WebView memory.\n- Sync and 互传 upload books straight from disk (streamed, with progress);\n  folder import scans in one native pass.\n- App: includes everything from app-v2.1.1.\n\nFix: the IPC contract test is no longer compiled into Windows test\nbinaries (mock runtime → comctl32 v6 imports → STATUS_ENTRYPOINT_NOT_FOUND).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead_app-v2.1.1_android_arm64.apk",
-            "size": 98902364,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk"
+            "name": "LightRead-2.2.1-1.x86_64.rpm",
+            "size": 30566365,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead-2.2.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_app-v2.1.1_android_arm64.apk.build.json",
-            "size": 162,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.build.json"
+            "name": "LightRead_2.2.1_aarch64.dmg",
+            "size": 23993323,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_2.2.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_app-v2.1.1_android_arm64.apk.json",
-            "size": 597,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.json"
+            "name": "LightRead_2.2.1_amd64.AppImage",
+            "size": 106379768,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_2.2.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_app-v2.1.1_android_arm64.apk.sha256",
-            "size": 105,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.sha256"
+            "name": "LightRead_2.2.1_amd64.deb",
+            "size": 30568140,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_2.2.1_amd64.deb"
+          },
+          {
+            "name": "LightRead_2.2.1_x64-setup.exe",
+            "size": 18644108,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_2.2.1_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_2.2.1_x64.dmg",
+            "size": 25219258,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_2.2.1_x64.dmg"
+          },
+          {
+            "name": "LightRead_aarch64.app.tar.gz",
+            "size": 23904382,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_aarch64.app.tar.gz"
+          },
+          {
+            "name": "LightRead_v2.2.1_android_arm64.apk",
+            "size": 99780708,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_v2.2.1_android_arm64.apk"
+          },
+          {
+            "name": "LightRead_v2.2.1_android_arm64.apk.json",
+            "size": 593,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_v2.2.1_android_arm64.apk.json"
+          },
+          {
+            "name": "LightRead_v2.2.1_android_arm64.apk.sha256",
+            "size": 101,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_v2.2.1_android_arm64.apk.sha256"
+          },
+          {
+            "name": "LightRead_x64.app.tar.gz",
+            "size": 25166552,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
-            "size": 443,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/SHA256SUMS"
+            "size": 1065,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.1/SHA256SUMS"
           }
         ]
       },
