@@ -538,9 +538,9 @@
     "md3": {
       "name": "阅读 MD3",
       "repo": "HapeLee/legado-with-MD3",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-20T20:49:19.959Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-22T22:42:34.269Z",
       "backupRepo": "legado-backup/legado-md3",
       "activeBranch": "main",
       "events": [
@@ -568,6 +568,11 @@
           "at": "2026-10-20T20:49:19.959Z",
           "type": "restored",
           "message": "恢复同步；HapeLee/legado-with-MD3:main → legado-backup/legado-md3:main 已同步"
+        },
+        {
+          "at": "2026-10-22T22:42:34.269Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -606,9 +611,9 @@
     "main": {
       "name": "阅读Beta / 喵公子版",
       "repo": "LegadoTeam/legado",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-22T18:45:35.872Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-22T22:42:37.791Z",
       "backupRepo": "legado-backup/legado-main",
       "activeBranch": "master",
       "events": [
@@ -621,6 +626,11 @@
           "at": "2026-10-22T18:45:35.872Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-22T22:42:37.791Z",
+          "type": "restored",
+          "message": "恢复同步；LegadoTeam/legado:master → legado-backup/legado-main:master 已同步"
         }
       ]
     },
@@ -1277,9 +1287,9 @@
     "macos": {
       "name": "Legado macOS 版",
       "repo": "Kequans/legado-for-mac-pub",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-22T18:46:14.891Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-22T22:43:16.117Z",
       "backupRepo": "legado-backup/legado-macos",
       "activeBranch": "backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002",
       "events": [
@@ -1292,6 +1302,11 @@
           "at": "2026-10-22T18:46:14.891Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-22T22:43:16.117Z",
+          "type": "restored",
+          "message": "恢复同步；Kequans/legado-for-mac-pub:main → legado-backup/legado-macos:backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002 已同步"
         }
       ]
     },
@@ -1375,5 +1390,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-22T18:46:20.112Z"
+  "checkedAt": "2026-10-22T22:43:21.715Z"
 }
