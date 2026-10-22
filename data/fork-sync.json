@@ -606,9 +606,9 @@
     "main": {
       "name": "阅读Beta / 喵公子版",
       "repo": "LegadoTeam/legado",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:29:37.757Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-22T18:45:35.872Z",
       "backupRepo": "legado-backup/legado-main",
       "activeBranch": "master",
       "events": [
@@ -616,6 +616,11 @@
           "at": "2026-10-05T01:29:37.757Z",
           "type": "synced",
           "message": "LegadoTeam/legado:master → legado-backup/legado-main:master 已同步"
+        },
+        {
+          "at": "2026-10-22T18:45:35.872Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1272,9 +1277,9 @@
     "macos": {
       "name": "Legado macOS 版",
       "repo": "Kequans/legado-for-mac-pub",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:30:10.754Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-22T18:46:14.891Z",
       "backupRepo": "legado-backup/legado-macos",
       "activeBranch": "backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002",
       "events": [
@@ -1282,6 +1287,11 @@
           "at": "2026-10-05T01:30:10.754Z",
           "type": "rotated",
           "message": "历史 unrelated：旧分支已保留，legado-backup/legado-macos/backup/v2-25804c52c529a6d8bf9bc15f2ed6268b08073002 接收新历史"
+        },
+        {
+          "at": "2026-10-22T18:46:14.891Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1365,5 +1375,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-22T14:04:00.418Z"
+  "checkedAt": "2026-10-22T18:46:20.112Z"
 }
