@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T07:39:35.064Z",
+  "generatedAt": "2026-10-22T13:50:51.153Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47155,
+      "stars": 47146,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6597,
-      "sourceUpdatedAt": "2026-10-20T17:47:59Z",
+      "stars": 6598,
+      "sourceUpdatedAt": "2026-10-22T10:57:02Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.18",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2941,
+      "stars": 2942,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,26 +156,21 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2216,
-      "sourceUpdatedAt": "2026-09-14T14:44:30Z",
+      "stars": 2217,
+      "sourceUpdatedAt": "2026-10-22T12:49:20Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.6.158",
-        "tagName": "V1.0.6.158",
+        "name": "V1.0.6.197",
+        "tagName": "V1.0.6.197",
         "prerelease": false,
-        "publishedAt": "2026-09-09T12:19:16Z",
+        "publishedAt": "2026-10-22T12:49:20Z",
         "createdAt": "2026-09-08T15:23:05Z",
-        "body": "V1.0.6.158（2026/9/9）\r\n\r\n1. 修复书源名称过长时右侧更多操作按钮被挤出页面的问题\r\n2. 修复阅读设置中的阅读颜色选项卡超出面板边界的问题\r\n3. 修复 WebDAV 登录后立即备份仍提示上传失败的问题\r\n4. 兼容不支持 MOVE 方法的 WebDAV 服务，避免备份留下临时文件\r\n5. 进一步优化漫画书源的大页面解析，减少连续浏览时的卡顿和无响应\r\n6. 修复仿真翻页时章节标题的字距、行高和粗细与阅读设置不一致的问题\r\n7. 优化订阅文章的后台解析，避免加载较大订阅内容时界面卡住或无响应\r\n8. 优化多书源搜索结果的合并效率，减少搜索过程中的界面卡顿\r\n9. 优化大量搜索结果的列表加载，减少内存占用，并保持刷新后的书籍信息和书源数量及时更新\r\n10. 修复发现页切换分类或刷新时书源错位、加载状态异常的问题，减少重复加载\r\n11. 优化发现页连续切换书源时的内存占用，及时停止已关闭页面的刷新与内容解析\r\n12. 优化漫画等书源发现列表的后台解析，减少加载大页面时的界面卡顿，并保持搜索结果正常显示\r\n13. 优化长章节在调整阅读布局时的分页响应，避免重复排版，并保持切章、返回阅读时的进度正确\r\n14. 减少动态书源列表的重复解析，提升漫画等书源结果加载时的响应速度\r\n15. 优化发现页大量书源标题的加载与浏览，刷新后保持选中的书源位置\r\n16. 修复部分书源规则读取到其他书籍信息的问题，并减少重复解析\r\n17. 优化部分书源中含大量换行的正文与书籍信息提取，减少加载时的卡顿\r\n18. 修正云备份帮助中的自动备份频率说明，与每天一次的设置保持一致\r\n19. 优化云备份按钮在不同主题下的文字清晰度，并显示准备、压缩、保存和上传等实际备份阶段\r\n20. 云盘入口显示已保存的名称及连接结果，区分已配置与连接成功，避免重复点击时重复连接\r\n21. 修复替换规则窗口右上角新增按钮与关闭按钮重叠的问题\r\n",
+        "body": "V1.0.6.174（2026/10/16）\r\n\r\n1. 修复不同书源之间可能串用登录缓存的问题\r\n2. 识别安卓阅读备份并提供只读文件预览，避免误送入鸿蒙数据恢复流程\r\n3. 安卓备份预览按类别生成迁移选择计划，敏感登录数据默认不选\r\n4. 安卓备份可按类别选择保留本地或覆盖本地，并先暂存候选数据，避免误改当前数据\r\n5. 安卓备份暂存完成并通过校验后才显示待处理状态\r\n6. 支持查看上次暂存的安卓迁移计划，校验候选文件后再显示待处理状态\r\n7. 支持手动清除安卓迁移候选，避免异常待处理标记阻塞后续导入\r\n8. 安卓迁移暂存阶段校验已选 JSON 与 XML 内容，提前拦截损坏备份\r\n9. 安卓迁移预览记录不兼容项数量，避免导入后才发现部分数据无法转换\r\n10. 优化书源及订阅数据初始化时的异常处理\r\n11. 修复数据库检查异常后仍可能继续更新数据的问题\r\n12. 完善安卓备份暂存时的书籍类型检查，避免错误识别小说、漫画和有声书\r\n\r\n\r\nV1.0.6.175（2026/10/17）\r\n\r\n1. 加强安卓备份迁移草稿校验，避免继续使用已损坏或被改动的候选文件\r\n\r\n\r\nV1.0.6.183（2026/10/18）\r\n\r\n1. 按书源隔离 JS 缓存，避免不同书源之间串用缓存数据\r\n2. 支持导入并运行普通小说 JS 书源的配置、搜索、详情、目录和正文函数\r\n3. 安卓备份暂存时生成独立候选库并校验实际数据表，保护当前数据不被预览流程修改\r\n4. 安卓备份暂存预览显示实际解析记录、不兼容记录和重复输入数量\r\n5. 修复缺少分组或来源标识的备份记录被误计为重复的问题\r\n6. 安卓备份中暂未支持转换的类别会明确提示，避免数据被静默忽略\r\n7. 修复多书源搜索取消后仍继续读取登录缓存导致界面卡顿或闪退的问题\r\n8. 修复书源首次登录响应的 Cookie 未保存，导致后续请求丢失登录状态的问题\r\n\r\n\r\nV1.0.6.186（2026/10/19）\r\n\r\n1. 安卓备份迁移预览增加书源及嵌套规则的格式检查，提前提示不兼容记录，并保留原始备份内容\r\n2. 修复部分 JS 书源返回内容无法识别，以及书籍详情中的变量未正确传递到目录的问题\r\n3. 修复 JS 书源更新详情时可能覆盖书籍地址和自定义书名的问题\r\n4. 修复部分书源网页登录后请求未保留登录状态的问题，并避免不同网站之间串用登录信息\r\n5. 修复同一书源使用多个网站登录时，更新或清除一个网站的登录信息影响其他网站的问题\r\n\r\n\r\nV1.0.6.196（2026/10/20）\r\n\r\n1. 优化听书章节队列加载，避免重复请求导致播放中断\r\n2. 修复听书停止状态误触发章节切换的问题\r\n3. 支持听书在应用进入后台后继续播放\r\n4. 听书改用本地 CoreSpeech TTS，并移除旧版 Reader Kit 调用\r\n5. 修复本地离线 TTS 状态更新后听书入口显示不及时的问题\r\n6. 为本地离线 TTS 增加暂停、继续和停止控制\r\n7. 修复本地离线 TTS 在左右翻页模式下阅读进度不更新的问题\r\n8. 补充本地听书的上一段、下一段和语速调节控制\r\n9. 修复语音合成完成被误认为播报完成，导致听书提前跳段的问题\r\n10. 修复前后切段时旧语音仍留在播放队列的问题\r\n11. 为本地离线听书接入系统媒体音频焦点，被其他音频抢占时自动暂停并在恢复后继续\r\n12. 开始移植安卓版有声书与 HTTP TTS 数据结构，新增音频章节播放、进度控制和章节自动衔接\r\n13. 接入静态 HTTP TTS 听书回退，支持分段缓存、暂停、跳段、倍速和自动续播\r\n14. 修复 HTTP TTS 裸 URL 模板未替换，以及已保存登录请求头未参与播放请求的问题\r\n15. 修复切换听书片段或停止听书后旧 HTTP TTS 请求仍可能回写并播放的问题\r\n16. 支持部分安卓 HTTP TTS 的内联脚本和动态 URL，完善正文转义及按源隔离缓存\r\n17. 修复听书自动跨章意外停止的问题，并避免自动续播弹出书源验证页\r\n18. 修复听书初始化期间停止或退出后旧请求重新播放，以及影响再次启动的问题\r\n19. 修复全书听书结束后音频焦点未释放，以及末段语音队列可能残留的问题\r\n\r\n\r\nV1.0.6.197（2026/10/22）\r\n\r\n1. 支持按全局、本书和未入架书籍选择听书引擎，并保留书源隔离的选择状态\r\n2. 新增系统音色查询、下载和状态管理，完善听书引擎切换及阅读页入口\r\n3. 支持 HTTP TTS 配置的新增、删除、导入预览、冲突校验和导出\r\n4. 修复 HTTP TTS 配置切换、退出阅读和播放请求取消时旧请求回写的问题\r\n5. 将 TTS 设置纳入数据库备份与恢复，兼容旧备份并在校验失败时回滚\r\n",
         "assets": [
           {
-            "name": "Legado-1.0.6.158-26090920-signed.hap",
-            "size": 27984326,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.158/Legado-1.0.6.158-26090920-signed.hap"
-          },
-          {
-            "name": "Legado-1.0.6.158-26090920-unsigned.hap",
-            "size": 27822843,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.158/Legado-1.0.6.158-26090920-unsigned.hap"
+            "name": "Legado-1.0.6.197-26102220-unsigned.hap",
+            "size": 28168088,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.197/Legado-1.0.6.197-26102220-unsigned.hap"
           }
         ]
       },
@@ -189,36 +184,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1634,
-      "sourceUpdatedAt": "2026-10-21T12:06:30Z",
+      "stars": 1639,
+      "sourceUpdatedAt": "2026-10-22T13:27:42Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26102119",
+        "name": "legado_app_3.26102221",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-21T11:55:44Z",
-        "body": "<!-- legado-version-code:38516 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/21**\n- 修复升级测试版后因阅读记录数据库结构变化导致启动崩溃的问题，保留原有数据\n- 修复后台 WebView 复用已挂载实例后页面加载回调偶发超时的问题\n\n**2026/10/19**`r`n- 全文搜索支持从当前阅读位置向上或向下查找，并记住勾选参数`r`n`r`n**2026/10/20**\n- 修复导入同 ID 的 TXT 目录规则时，内容变更仍显示“已有”且未默认勾选的问题\n- 修复网页播放器全屏时未转为横屏的问题，退出全屏后恢复原来的屏幕方向\n- 修复阅读边距加减按钮快速单击和连续点击不灵敏的问题；紧凑模式触区调整为28dp，区域按钮文字居中并微调下方留白\n- 优化阅读边距面板的控件比例，默认使用紧凑加减按钮和行距；页眉、正文、页脚按钮可长按切换大按钮模式并随设置备份，两种模式的长按连续调整速度一致\n- 阅读正文边距新增默认关闭的上下联动开关，跟随独立或共享排版保存，支持设置备份和样式导入导出\n- 修复并发刷新书籍时请求头规则偶发提示找不到 JSON.stringify 的问题\n- 阅读边距调节项扩大触摸区域，支持长按 +/- 连续调整\n- 修复阅读器全文搜索结果为空或切换结果列表后导航按钮索引失效的问题\n- 修复主界面底部导航点击后始终返回未处理状态的问题\n- 书源管理默认隐藏书架书籍数量，可在菜单中按需显示\n- 修复阅读记录在大字体下时间字段高度不一致时行内容重叠的问题\n- 缩小书源管理中“显示书籍数量”菜单图标，保持与其它选项比例一致\n- 阅读样式字号上限提升至 100，保留现有字号设置\n- 修复发现分类只在发现页按需显示，并避免首屏延迟、跨行选择和定位异常\n- 修复发现分类跨行切换后旧标签仍显示高亮和下划线的问题\n- 订阅源阅读记录弹窗增加统一开启或关闭记录的开关\n- 修复恢复阅读配置时按错误阅读样式全局覆盖下划线设置的问题\n\n",
+        "createdAt": "2026-10-22T13:12:29Z",
+        "body": "<!-- legado-version-code:38517 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/22**\n- 新增 WebDAV 书籍同步：导入本地书籍后可自动上传到 WebDAV，配合「恢复缺失的本地书」实现多设备直接阅读（默认关闭，可在备份设置中开启）\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26102119_releaseA_vc38516.apk",
-            "size": 21871167,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_releaseA_vc38516.apk"
+            "name": "legado_app_3.26102221_releaseA_vc38517.apk",
+            "size": 21871790,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102221_releaseA_vc38517.apk"
           },
           {
-            "name": "legado_app_3.26102119_release_vc38516.apk",
-            "size": 21871165,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_release_vc38516.apk"
+            "name": "legado_app_3.26102221_release_vc38517.apk",
+            "size": 21871791,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102221_release_vc38517.apk"
           },
           {
-            "name": "legado_app_3.26102119_universal_releaseA_vc38516.apk",
-            "size": 27821982,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_universal_releaseA_vc38516.apk"
+            "name": "legado_app_3.26102221_universal_releaseA_vc38517.apk",
+            "size": 27822591,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102221_universal_releaseA_vc38517.apk"
           },
           {
-            "name": "legado_app_3.26102119_universal_release_vc38516.apk",
-            "size": 27821967,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102119_universal_release_vc38516.apk"
+            "name": "legado_app_3.26102221_universal_release_vc38517.apk",
+            "size": 27822595,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102221_universal_release_vc38517.apk"
           }
         ]
       },
@@ -446,7 +441,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 274,
+      "stars": 273,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -539,31 +534,31 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 143,
-      "sourceUpdatedAt": "2026-10-19T16:19:09Z",
+      "stars": 144,
+      "sourceUpdatedAt": "2026-10-22T13:03:58Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.102000",
+        "name": "legado_app_3.26.102219",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-19T16:19:10Z",
-        "createdAt": "2026-10-19T15:55:13Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- fix(review): restore reply counts and reply likes\n- fix(update): race configured manifest hosts\n",
+        "publishedAt": "2026-10-22T11:11:08Z",
+        "createdAt": "2026-10-22T10:47:05Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- fix(review): preserve position when switching sort\n- fix(nostr): improve bunker input readability\n- fix(review): preserve reply targets and test Nostr signer\n- feat(audio): add inline playback speed control\n",
         "assets": [
           {
-            "name": "legado_app_3.26.10200012_arm64-v8a_release.apk",
-            "size": 17282957,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.10221901_arm64-v8a_release.apk",
+            "size": 17283302,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10221901_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10200012_armeabi-v7a_release.apk",
-            "size": 16560687,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.10221901_armeabi-v7a_release.apk",
+            "size": 16561023,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10221901_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10200012_x86_64_release.apk",
-            "size": 17528803,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10200012_x86_64_release.apk"
+            "name": "legado_app_3.26.10221901_x86_64_release.apk",
+            "size": 17529140,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10221901_x86_64_release.apk"
           },
           {
             "name": "version.json",
@@ -822,40 +817,40 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 54,
-      "sourceUpdatedAt": "2026-10-20T09:16:46Z",
+      "sourceUpdatedAt": "2026-10-22T11:59:56Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.1.0",
-        "tagName": "app-v2.1.0",
+        "name": "v2.1.1",
+        "tagName": "app-v2.1.1",
         "prerelease": false,
-        "publishedAt": "2026-10-20T09:08:31Z",
-        "createdAt": "2026-10-20T09:07:28Z",
-        "body": "App v2.1.0：PDF 双形态阅读。本次仅发布 Android App，桌面版继续使用 v2.0.0。\n\n- 文字版 PDF 默认以电子书形态打开，复用字号、主题、分页／滚动、听书和阅读模式。\n- 顶栏可在电子书与原版 PDF 之间切换，并按当前页和段落对齐；每本书记住本机选择。\n- 转换在本机完成，重建段落和目录，图表按章节加载时裁切并缓存；不修改原始 PDF，也不新增藏书。\n- 扫描版与论文默认保留原版；设置中可选择始终使用原版。\n\n验证：18 项 PDF 重排契约、设置同步、更新器和 App 平台门禁通过；App 浏览器预览的 313 页公开 PDF 完成进度跳转、双形态往返、刷新记忆及扫描版回退，无页面错误。APK 的包名、版本、固定签名、arm64、API 24/36 和 ZIP 布局检查通过。\n\nK30 覆盖安装后，34 本藏书、10 款字体、全部原有设置与阅读进度保留。本轮原生 PDF 前台交互、离线阅读及真机性能受设备安全锁屏限制，未完成验收，不计为通过。\n\n限制：暂不支持扫描版 OCR、竖排、两种形态的划线互显；每本书的形态选择与精确 CFI 仅存在本机。图表、公式和表格使用裁切图片，复杂布局可能出现标题或文字误判。首次打开需要等待文字转换。\n\nAndroid 继续使用既有固定签名的 arm64 实验性 debug 包，包名和数据目录不变。同签名版本支持覆盖安装；历史随机签名版本按项目备份迁移说明处理。请使用 SHA256SUMS 校验下载文件。本次不提供 iOS 安装包。\n",
+        "publishedAt": "2026-10-22T12:01:40Z",
+        "createdAt": "2026-10-22T11:49:56Z",
+        "body": "本次仅更新 Android App，桌面版继续为 v2.0.0。\n\n## 修复\n- 平板（如鸿蒙 4.2）导入 40～50 MB 的 PDF 时卡在 0% 后闪退（#14）：导入时书的内容改为分块交给原生层（Rust）写盘，内存占用与书的大小无关，导入过程中界面不再冻住。修改书籍文件名改为原生改名，不再把整本书读进界面层。\n\n## 改进\n- 手机上的 PDF 原版阅读界面重做，与电子书阅读一致：正文占满全屏，轻点中间呼出／收起工具栏；翻页模式下轻点上／下区域翻页；底栏为页码进度条（拖动时预览章节与页码，点页码可输入跳转）和目录／缩略图／笔记／听书／显示入口；面板改为底部抽屉，「显示」里可调翻页方式、适高／适宽、缩放和自动翻页。「转为电子书」改为顶栏图标。\n- 排版面板：字体选择框占满整行；「更多字体」与「更多文字设置」统一为对齐的列表行，行尾显示当前值。\n\n## 验证\n- 新增分块写盘的 Rust 单测与前端契约测试；App 浏览器端到端（v2 界面、阅读、功能、字体、PDF 双形态）全部通过；桌面构建与平台边界测试通过。\n- APK 沿用固定签名、`com.yzfly.lightread.debug`、arm64、API 24/36，版本、签名与 ZIP 布局检查通过。\n\n## 已知限制\n- 没有鸿蒙真机，#14 的修复未经实机验证；本次未做真机覆盖安装验收。\n- 本次不提供 iOS 安装包。可使用 SHA256SUMS 校验下载文件。\n",
         "assets": [
           {
-            "name": "LightRead_app-v2.1.0_android_arm64.apk",
-            "size": 98697852,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.0/LightRead_app-v2.1.0_android_arm64.apk"
+            "name": "LightRead_app-v2.1.1_android_arm64.apk",
+            "size": 298576476,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk"
           },
           {
-            "name": "LightRead_app-v2.1.0_android_arm64.apk.build.json",
+            "name": "LightRead_app-v2.1.1_android_arm64.apk.build.json",
             "size": 162,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.0/LightRead_app-v2.1.0_android_arm64.apk.build.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.build.json"
           },
           {
-            "name": "LightRead_app-v2.1.0_android_arm64.apk.json",
+            "name": "LightRead_app-v2.1.1_android_arm64.apk.json",
             "size": 482,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.0/LightRead_app-v2.1.0_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_app-v2.1.0_android_arm64.apk.sha256",
+            "name": "LightRead_app-v2.1.1_android_arm64.apk.sha256",
             "size": 105,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.0/LightRead_app-v2.1.0_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/LightRead_app-v2.1.1_android_arm64.apk.sha256"
           },
           {
             "name": "SHA256SUMS",
             "size": 443,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.1.1/SHA256SUMS"
           }
         ]
       },
@@ -959,7 +954,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-21T10:32:15Z",
+      "sourceUpdatedAt": "2026-10-22T13:21:16Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
