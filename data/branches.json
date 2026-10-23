@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T13:30:47.521Z",
+  "generatedAt": "2026-10-23T18:24:57.699Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 181,
+      "stars": 182,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47152,
+      "stars": 47151,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6611,
-      "sourceUpdatedAt": "2026-10-22T18:56:38Z",
+      "stars": 6613,
+      "sourceUpdatedAt": "2026-10-23T14:25:53Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.18",
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1652,
+      "stars": 1658,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 471,
+      "stars": 470,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -529,6 +529,34 @@
       "abandonedReason": "作者声明删除仓库，停止维护"
     },
     {
+      "id": "ng",
+      "name": "阅读 NG",
+      "tag": "ng",
+      "repo": "joestar817/legado_NG",
+      "term": "legado-branch-ng",
+      "stars": 147,
+      "sourceUpdatedAt": "2026-10-19T12:21:35Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_ng_3.26.101300",
+        "tagName": "3.26.101300",
+        "prerelease": false,
+        "publishedAt": "2026-10-12T16:29:26Z",
+        "createdAt": "2026-10-12T15:50:15Z",
+        "body": "### 更新内容\n* 修复小米设备阅读自定义字体被系统字重处理替换\n* 优化书源QQ登录跳转并修复授权后返回\n* 完善书籍编辑顶栏液态玻璃与类型 Dock 亮白底\n* 按有效发布记录修正正式版与测试版更新说明\n* 补齐 EPUB 惯性滚动并完善中断清理\n* 修复 EPUB 朗读翻页时的首屏闪回\n* 修复按页朗读切换后的字幕与语音错位\n* 修复 EPUB 系统 TTS 跨页和末页跟随\n* 优化阅读目录与书签工具栏排版\n* 修复手动书籍类型被书架刷新覆盖\n* 优化听书小窗大窗口书名与章节排版\n* 修复js书源字形库在编辑保存时丢失\n* 重构漫画阅读界面\n* 重构视频播放界面并修复小窗与续播边界\n* 移除首页组件抽屉的关闭按钮\n* 修复发现页内容点击无响应\n* 修复书源嵌套脚本求值的作用域恢复\n* 修复书源缓存清理误删相似地址数据\n* 完善订阅源导出分享并修复导出抽屉下拉关闭\n* 新增今日书讯自动刷新开关\n* 居中显示抽屉背景选项文字\n\n",
+        "assets": [
+          {
+            "name": "legado_NG_3.26.10130014_release.apk",
+            "size": 43292496,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.101300/legado_NG_3.26.10130014_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "Luoyacheng/legado-E"
+    },
+    {
       "id": "t",
       "name": "阅读 T",
       "tag": "t",
@@ -570,34 +598,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "gedoor/legado"
-    },
-    {
-      "id": "ng",
-      "name": "阅读 NG",
-      "tag": "ng",
-      "repo": "joestar817/legado_NG",
-      "term": "legado-branch-ng",
-      "stars": 146,
-      "sourceUpdatedAt": "2026-10-19T12:21:35Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_ng_3.26.101300",
-        "tagName": "3.26.101300",
-        "prerelease": false,
-        "publishedAt": "2026-10-12T16:29:26Z",
-        "createdAt": "2026-10-12T15:50:15Z",
-        "body": "### 更新内容\n* 修复小米设备阅读自定义字体被系统字重处理替换\n* 优化书源QQ登录跳转并修复授权后返回\n* 完善书籍编辑顶栏液态玻璃与类型 Dock 亮白底\n* 按有效发布记录修正正式版与测试版更新说明\n* 补齐 EPUB 惯性滚动并完善中断清理\n* 修复 EPUB 朗读翻页时的首屏闪回\n* 修复按页朗读切换后的字幕与语音错位\n* 修复 EPUB 系统 TTS 跨页和末页跟随\n* 优化阅读目录与书签工具栏排版\n* 修复手动书籍类型被书架刷新覆盖\n* 优化听书小窗大窗口书名与章节排版\n* 修复js书源字形库在编辑保存时丢失\n* 重构漫画阅读界面\n* 重构视频播放界面并修复小窗与续播边界\n* 移除首页组件抽屉的关闭按钮\n* 修复发现页内容点击无响应\n* 修复书源嵌套脚本求值的作用域恢复\n* 修复书源缓存清理误删相似地址数据\n* 完善订阅源导出分享并修复导出抽屉下拉关闭\n* 新增今日书讯自动刷新开关\n* 居中显示抽屉背景选项文字\n\n",
-        "assets": [
-          {
-            "name": "legado_NG_3.26.10130014_release.apk",
-            "size": 43292496,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.101300/legado_NG_3.26.10130014_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "sanmu",
