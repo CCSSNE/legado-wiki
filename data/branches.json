@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:34:38.956Z",
+  "generatedAt": "2026-10-23T07:36:50.679Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47149,
+      "stars": 47153,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6601,
+      "stars": 6605,
       "sourceUpdatedAt": "2026-10-22T18:56:38Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2943,
+      "stars": 2945,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2217,
+      "stars": 2214,
       "sourceUpdatedAt": "2026-10-22T12:49:20Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1645,
+      "stars": 1647,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -305,7 +305,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 399,
+      "stars": 401,
       "sourceUpdatedAt": "2026-10-21T09:06:00Z",
       "githubArchived": false,
       "release": {
@@ -378,7 +378,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 314,
+      "stars": 315,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -816,76 +816,76 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 55,
-      "sourceUpdatedAt": "2026-10-22T23:24:53Z",
+      "stars": 56,
+      "sourceUpdatedAt": "2026-10-23T06:12:51Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.2.3",
-        "tagName": "v2.2.3",
+        "name": "v2.2.4",
+        "tagName": "v2.2.4",
         "prerelease": false,
-        "publishedAt": "2026-10-22T23:44:19Z",
-        "createdAt": "2026-10-22T23:24:52Z",
-        "body": "release: v2.2.3\n\nDesktop and App ship together from one commit.\n\nUser-visible (desktop):\n- EPUB import reads title, author, description, language and cover\n  natively instead of opening the whole book; results match the previous\n  import (checked against foliate on 12 sample EPUBs).\n- Fix: an EPUB whose manifest names a cover file missing from the archive\n  no longer gets a broken 4-byte cover.\n\nApp: no behavior change.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-10-23T03:36:50Z",
+        "createdAt": "2026-10-23T03:18:43Z",
+        "body": "release: v2.2.4\n\nDesktop and App ship together from one commit.\n\nUser-visible (all platforms):\n- Chinese word segmentation (仿生阅读 and 重点词) runs in Rust compiled\n  to WebAssembly, about 2.5–3× faster, with identical results; falls back\n  to the previous JS implementation if WebAssembly is unavailable.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.2.3-1.x86_64.rpm",
-            "size": 30828892,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead-2.2.3-1.x86_64.rpm"
+            "name": "LightRead-2.2.4-1.x86_64.rpm",
+            "size": 30842652,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead-2.2.4-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.2.3_aarch64.dmg",
-            "size": 24255835,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_2.2.3_aarch64.dmg"
+            "name": "LightRead_2.2.4_aarch64.dmg",
+            "size": 24268965,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_2.2.4_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.2.3_amd64.AppImage",
-            "size": 106580472,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_2.2.3_amd64.AppImage"
+            "name": "LightRead_2.2.4_amd64.AppImage",
+            "size": 106621432,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_2.2.4_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.2.3_amd64.deb",
-            "size": 30829518,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_2.2.3_amd64.deb"
+            "name": "LightRead_2.2.4_amd64.deb",
+            "size": 30843494,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_2.2.4_amd64.deb"
           },
           {
-            "name": "LightRead_2.2.3_x64-setup.exe",
-            "size": 18868344,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_2.2.3_x64-setup.exe"
+            "name": "LightRead_2.2.4_x64-setup.exe",
+            "size": 18881559,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_2.2.4_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.2.3_x64.dmg",
-            "size": 25488479,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_2.2.3_x64.dmg"
+            "name": "LightRead_2.2.4_x64.dmg",
+            "size": 25500561,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_2.2.4_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24172685,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_aarch64.app.tar.gz"
+            "size": 24183621,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_aarch64.app.tar.gz"
           },
           {
-            "name": "LightRead_v2.2.3_android_arm64.apk",
-            "size": 101056396,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_v2.2.3_android_arm64.apk"
+            "name": "LightRead_v2.2.4_android_arm64.apk",
+            "size": 101069652,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_v2.2.4_android_arm64.apk"
           },
           {
-            "name": "LightRead_v2.2.3_android_arm64.apk.json",
+            "name": "LightRead_v2.2.4_android_arm64.apk.json",
             "size": 593,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_v2.2.3_android_arm64.apk.json"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_v2.2.4_android_arm64.apk.json"
           },
           {
-            "name": "LightRead_v2.2.3_android_arm64.apk.sha256",
+            "name": "LightRead_v2.2.4_android_arm64.apk.sha256",
             "size": 101,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_v2.2.3_android_arm64.apk.sha256"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_v2.2.4_android_arm64.apk.sha256"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25428626,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/LightRead_x64.app.tar.gz"
+            "size": 25442762,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 1065,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.3/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.4/SHA256SUMS"
           }
         ]
       },
@@ -989,7 +989,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-22T13:56:38Z",
+      "sourceUpdatedAt": "2026-10-23T03:35:06Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
@@ -1023,7 +1023,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 22,
-      "sourceUpdatedAt": "2026-10-21T13:41:48Z",
+      "sourceUpdatedAt": "2026-10-23T03:17:53Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.36",
@@ -1280,25 +1280,25 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-22T16:57:05Z",
+      "sourceUpdatedAt": "2026-10-23T04:41:03Z",
       "githubArchived": false,
       "release": {
-        "name": "Legado MD3 v3.30.0-20261022-165701 (预发布)",
-        "tagName": "v3.30.0-20261022-165701",
+        "name": "Legado MD3 v3.30.0-20261023-044057 (预发布)",
+        "tagName": "v3.30.0-20261023-044057",
         "prerelease": true,
-        "publishedAt": "2026-10-22T16:57:06Z",
-        "createdAt": "2026-10-22T16:45:56Z",
-        "body": "## Legado MD3 自动构建\n\n- 提交: 1f03412a60b80f434e5491ba75f2ccda4fe824e7\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-10-23T04:41:03Z",
+        "createdAt": "2026-10-23T04:32:37Z",
+        "body": "## Legado MD3 自动构建\n\n- 提交: d8b1cdae91e0a8b56fa427ba093d9482c2d2f4bf\n- 分支: main\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64专用版（更小）\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 27488016,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261022-165701/app-arm64-release.apk"
+            "size": 27595214,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261023-044057/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 47672933,
-            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261022-165701/app-universal-release.apk"
+            "size": 48048194,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v3.30.0-20261023-044057/app-universal-release.apk"
           }
         ]
       },
