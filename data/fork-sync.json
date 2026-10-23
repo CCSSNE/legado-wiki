@@ -538,9 +538,9 @@
     "md3": {
       "name": "阅读 MD3",
       "repo": "HapeLee/legado-with-MD3",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-22T22:42:34.269Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-23T01:52:14.029Z",
       "backupRepo": "legado-backup/legado-md3",
       "activeBranch": "main",
       "events": [
@@ -573,6 +573,11 @@
           "at": "2026-10-22T22:42:34.269Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-23T01:52:14.029Z",
+          "type": "restored",
+          "message": "恢复同步；HapeLee/legado-with-MD3:main → legado-backup/legado-md3:main 已同步"
         }
       ]
     },
@@ -1390,5 +1395,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-22T22:43:21.715Z"
+  "checkedAt": "2026-10-23T01:52:50.199Z"
 }
