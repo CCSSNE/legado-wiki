@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T09:52:01.738Z",
+  "generatedAt": "2026-10-25T14:25:42.211Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47158,
+      "stars": 47157,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6645,
+      "stars": 6648,
       "sourceUpdatedAt": "2026-10-25T05:57:00Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2222,
+      "stars": 2221,
       "sourceUpdatedAt": "2026-10-22T12:49:20Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1681,
+      "stars": 1682,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 485,
+      "stars": 488,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -497,7 +497,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 268,
+      "stars": 267,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -817,80 +817,60 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 58,
-      "sourceUpdatedAt": "2026-10-24T03:37:53Z",
+      "sourceUpdatedAt": "2026-10-25T14:00:45Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.2.5",
-        "tagName": "v2.2.5",
+        "name": "v2.3.0",
+        "tagName": "v2.3.0",
         "prerelease": false,
-        "publishedAt": "2026-10-24T04:44:18Z",
-        "createdAt": "2026-10-24T03:37:52Z",
-        "body": "修复桌面文件导入，桌面与 App 从 Dev 同一提交发布。\n\n- 修复单文件、批量拖入无响应；从其他页面拖入会转到书架处理，连续批次排队导入。\n- 支持拖入或选择文件夹，递归查找书籍，提供格式优先级、重复书籍筛选和导入确认。\n- 使用 Rust 扫描路径、复制文件到暂存区；单本失败继续处理其余文件，索引失败清理暂存产物。\n- 修复导入完成后拖放提示层残留，保留 v2.2.4 的 EPUB 元数据、漫画、TXT 和中文分词实现。\n\n验证：t9 上 164 项前端测试、114 项 Rust 测试通过（3 项按原配置跳过）；真实 Linux 桌面单文件、批量文件、递归文件夹拖入及 EPUB 书名/作者解析通过；浏览器导入排队、失败继续、取消、跨页面拖入和文件夹回归通过；37 项完整阅读冒烟通过，无页面错误。\n\nAndroid 真机：Redmi K30 Pro 从 v2.1.1 覆盖升级至 v2.2.5，通过已有藏书与阅读位置核对、长文渲染和翻页、文件导入、主要页面与重启后设置检查；此次为针对升级的回归，未执行全部控件逐项验收。\n\nWindows/macOS 安装包由对应平台流水线构建，尚无交互实机验收。Android 仍为固定签名的实验性 arm64 debug 包。\n",
+        "publishedAt": "2026-10-25T14:20:06Z",
+        "createdAt": "2026-10-25T14:00:44Z",
+        "body": "release: v2.3.0\n\nDesktop (Windows / macOS / Linux). First desktop release on its own\nversion line; the App stays at 2.2.5 and releases separately as\napp-vX.Y.Z.\n\nPDF reader\n- One 56px top bar instead of two rows: back, sidebar and title on the\n  left; page number and zoom in the centre; view, listen, auto-read,\n  search, translate / AI and more on the right.\n- The zoom menu opens directly under the zoom button and stays inside\n  the window; 12 presets in a grid plus fit page / fit width, full\n  keyboard navigation, Esc returns to the button.\n- New 视图 panel with illustrated choices for scroll / paged and\n  single / facing / book, fit height / width, fullscreen and slideshow.\n- One sidebar button for contents, thumbnails and highlights (reopens\n  the last tab); print, save as, open folder, properties and keyboard\n  shortcuts are in the ⋯ menu with their shortcuts.\n- Narrow windows: labels collapse, listen / auto-read move into ⋯, and\n  page + zoom wrap to a second row on very narrow web windows.\n\nVerification: npm run build, npm run e2e and e2e:adaptive-layout on t9.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.2.5-1.x86_64.rpm",
-            "size": 30875523,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead-2.2.5-1.x86_64.rpm"
+            "name": "LightRead-2.3.0-1.x86_64.rpm",
+            "size": 30877477,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead-2.3.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.2.5_aarch64.dmg",
-            "size": 24294892,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_2.2.5_aarch64.dmg"
+            "name": "LightRead_2.3.0_aarch64.dmg",
+            "size": 24297228,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.2.5_amd64.AppImage",
-            "size": 106646008,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_2.2.5_amd64.AppImage"
+            "name": "LightRead_2.3.0_amd64.AppImage",
+            "size": 106658296,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.2.5_amd64.deb",
-            "size": 30874986,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_2.2.5_amd64.deb"
+            "name": "LightRead_2.3.0_amd64.deb",
+            "size": 30878230,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_amd64.deb"
           },
           {
-            "name": "LightRead_2.2.5_x64-setup.exe",
-            "size": 18912240,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_2.2.5_x64-setup.exe"
+            "name": "LightRead_2.3.0_x64-setup.exe",
+            "size": 18912213,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.2.5_x64.dmg",
-            "size": 25536066,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_2.2.5_x64.dmg"
+            "name": "LightRead_2.3.0_x64.dmg",
+            "size": 25538188,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24218970,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_aarch64.app.tar.gz"
-          },
-          {
-            "name": "LightRead_v2.2.5_android_arm64.apk",
-            "size": 102782852,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_v2.2.5_android_arm64.apk"
-          },
-          {
-            "name": "LightRead_v2.2.5_android_arm64.apk.build.json",
-            "size": 158,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_v2.2.5_android_arm64.apk.build.json"
-          },
-          {
-            "name": "LightRead_v2.2.5_android_arm64.apk.json",
-            "size": 593,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_v2.2.5_android_arm64.apk.json"
-          },
-          {
-            "name": "LightRead_v2.2.5_android_arm64.apk.sha256",
-            "size": 101,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_v2.2.5_android_arm64.apk.sha256"
+            "size": 24221568,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25476371,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/LightRead_x64.app.tar.gz"
+            "size": 25477811,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
-            "size": 1177,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.2.5/SHA256SUMS"
+            "size": 750,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/SHA256SUMS"
           }
         ]
       },
@@ -1247,14 +1227,19 @@
         "name": "阅读_E-ink_3.26.102517",
         "tagName": "阅读_E-ink_3.26.102517",
         "prerelease": false,
-        "publishedAt": "2026-10-25T17:03:14+08:00",
-        "createdAt": "2026-10-25T17:03:14+08:00",
-        "body": "测试",
+        "publishedAt": "2026-10-25T17:57:58+08:00",
+        "createdAt": "2026-10-25T17:57:58+08:00",
+        "body": "- 已新增对话高亮\r\n- 高亮为不同字体\r\n- 新增汉王水波纹",
         "assets": [
           {
             "name": "阅读_E-ink_3.26.102517.apk",
             "size": 20953070,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102517/%E9%98%85%E8%AF%BB_E-ink_3.26.102517.apk"
+          },
+          {
+            "name": "阅读_magisk_3.26.102517.zip",
+            "size": 22695591,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102517/%E9%98%85%E8%AF%BB_magisk_3.26.102517.zip"
           },
           {
             "name": "阅读_E-ink_3.26.102517.zip",
