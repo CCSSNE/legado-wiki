@@ -827,9 +827,9 @@
     "ng": {
       "name": "阅读 NG",
       "repo": "joestar817/legado_NG",
-      "status": "error",
-      "message": "同步后的分支 SHA 验证失败",
-      "since": "2026-10-25T01:32:41.173Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-10-25T06:45:38.517Z",
       "backupRepo": "legado-backup/legado-ng",
       "activeBranch": "main",
       "events": [
@@ -842,6 +842,11 @@
           "at": "2026-10-25T01:32:41.173Z",
           "type": "error",
           "message": "同步后的分支 SHA 验证失败"
+        },
+        {
+          "at": "2026-10-25T06:45:38.517Z",
+          "type": "restored",
+          "message": "恢复同步；joestar817/legado_NG:main → legado-backup/legado-ng:main 已同步"
         }
       ]
     },
@@ -1400,5 +1405,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-25T01:33:03.762Z"
+  "checkedAt": "2026-10-25T06:46:02.977Z"
 }
