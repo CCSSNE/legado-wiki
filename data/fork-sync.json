@@ -133,8 +133,8 @@
       "upstreamRepo": "skybbk1001/legadoT",
       "upstreamBranch": "master",
       "backupRepo": "legado-backup/legado-t",
-      "activeBranch": "backup/v3-d9c5860d8f8f271c8ab85841364e51246724cefd",
-      "generation": 3,
+      "activeBranch": "backup/v4-e2d8273a52a11452484fc4f24bb751c405cdd56c",
+      "generation": 4,
       "retired": [
         {
           "branch": "master",
@@ -146,6 +146,12 @@
           "branch": "backup/v2-f0d85cb790b56b7f630f7308e4ab19a3f35f0688",
           "head": "de38439391f71d4ab2db6fa80f28116685a8c7c7",
           "retiredAt": "2026-10-19T17:43:55.125Z",
+          "reason": "diverged"
+        },
+        {
+          "branch": "backup/v3-d9c5860d8f8f271c8ab85841364e51246724cefd",
+          "head": "93bce0180722766efe855b49cbbd59cfc48e8e8a",
+          "retiredAt": "2026-10-25T19:54:53.035Z",
           "reason": "diverged"
         }
       ],
@@ -777,9 +783,9 @@
       "repo": "skybbk1001/legadoT",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-19T17:43:56.497Z",
+      "since": "2026-10-25T19:54:54.440Z",
       "backupRepo": "legado-backup/legado-t",
-      "activeBranch": "backup/v3-d9c5860d8f8f271c8ab85841364e51246724cefd",
+      "activeBranch": "backup/v4-e2d8273a52a11452484fc4f24bb751c405cdd56c",
       "events": [
         {
           "at": "2026-10-05T01:29:47.092Z",
@@ -805,6 +811,11 @@
           "at": "2026-10-19T17:43:56.497Z",
           "type": "rotated",
           "message": "历史 diverged：旧分支已保留，legado-backup/legado-t/backup/v3-d9c5860d8f8f271c8ab85841364e51246724cefd 接收新历史"
+        },
+        {
+          "at": "2026-10-25T19:54:54.440Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-t/backup/v4-e2d8273a52a11452484fc4f24bb751c405cdd56c 接收新历史"
         }
       ]
     },
@@ -1405,5 +1416,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-25T17:12:32.529Z"
+  "checkedAt": "2026-10-25T19:55:17.597Z"
 }
