@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T04:49:01.814Z",
+  "generatedAt": "2026-10-25T09:52:01.738Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47159,
+      "stars": 47158,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,36 +85,36 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6638,
-      "sourceUpdatedAt": "2026-10-25T04:23:31Z",
+      "stars": 6645,
+      "sourceUpdatedAt": "2026-10-25T05:57:00Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.18",
-        "tagName": "3.26.18",
+        "name": "Release 3.26.19",
+        "tagName": "3.26.19",
         "prerelease": false,
-        "publishedAt": "2026-10-20T17:47:56Z",
-        "createdAt": "2026-10-20T17:33:24Z",
-        "body": "### 更新内容\n\n* 咕噜噜\n* feat: 阅读界面优化\n* feat: 添加阻止书源打开选项 在搞基里\n* feat:优化听书界面\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 (#2447)\n* fix(test): 移除ReadBookViewModel多余空行以满足2748行架构测试上限\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻\n* fix(reader): keep word spaces at line end when wrapping English text\n* feat: 呱\n* feat: 呱\n* feat: 优化\n* feat: 优化\n* fix(read-aloud): preserve pause across paragraph resume\n* fix(reader): 角色胶囊与整串标点不再把一行顶出空洞\n* fix(read-aloud): 段落间隔不再重建本章合成任务，纯符号段不再被跳过\n\n## What's Changed\n* fix(read-aloud): 段落间隔不再重建本章合成任务；reader: 胶囊与标点串不再顶出空洞 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2443\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2447\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2448\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.16...3.26.18",
+        "publishedAt": "2026-10-25T05:56:58Z",
+        "createdAt": "2026-10-25T05:40:58Z",
+        "body": "### 更新内容\n\n* feat(explore): 发现顶栏改为单书源搜索入口，书源选择改为可筛选底部 sheet\n* fix(manga): 整章拼接超长条漫图拆段渲染，修复 Constraints 尺寸溢出崩溃 (#2475)\n* fix(book-info): 简介纯文本分支二次转义，& < > 显示为 HTML 实体 (#2466)\n* fix(reader): 开标点连同 Latin 单词整体换行，不再拆词\n* fix(book-info): useweb 简介经 FrameLayout 容器承载，规避 Vulkan drawVk 原生崩溃 (#2468)\n* feat(highlight): 高亮规则新增边框样式，预览渲染修复与示例句加长\n* feat(book-info): 关联书籍移至简介下方，支持无规则时按作者搜索兜底\n* fix(reader): 关联书籍位置\n* fix: 关联书籍调试之\n* opt: memory usage (#2478)\n* perf(reader): 排版宽度链路去装箱，字形级宽度改 FloatArray\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 (#2476)\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 (#2474)\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） (#2473)\n* reader: cut pagination peak memory (streaming, merge, buffer release)\n* feat(reader): 可配置 AI 对话入口携带阅读上下文 & 修复换图标入口 IME 双重避让 (#2472)\n* feat(reader): add configurable AI chat entry with reading context\n* fix(ui): prevent double IME avoidance on alternate launcher activities\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） (#2465)\n* feat(reader): 分页失败原因带上异常 message 与栈顶\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 (#2450)\n* 咕噜噜\n* feat: 阅读界面优化\n* feat: 添加阻止书源打开选项 在搞基里\n* feat:优化听书界面\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 (#2447)\n* fix(test): 移除ReadBookViewModel多余空行以满足2748行架构测试上限\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻\n\n## What's Changed\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2447\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2448\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2461\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） by @qmzd111 in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* fix&feat: add configurable AI chat entry with reading context & fix IME double avoidance by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2473\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2474\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2476\n* opt: memory usage by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2478\n\n## New Contributors\n* @xuezhi123go made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* @qmzd111 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* @izumisagirii made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* @shaoyangz1 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2473\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.17...3.26.19",
         "assets": [
           {
-            "name": "legado-3.26.18-arm64-v8a.apk",
-            "size": 20968045,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.18/legado-3.26.18-arm64-v8a.apk"
+            "name": "legado-3.26.19-arm64-v8a.apk",
+            "size": 21045187,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/legado-3.26.19-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.18-armeabi-v7a.apk",
-            "size": 20507865,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.18/legado-3.26.18-armeabi-v7a.apk"
+            "name": "legado-3.26.19-armeabi-v7a.apk",
+            "size": 20585002,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/legado-3.26.19-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.18.apk",
-            "size": 27540521,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.18/legado-3.26.18.apk"
+            "name": "legado-3.26.19.apk",
+            "size": 27617669,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/legado-3.26.19.apk"
           },
           {
             "name": "mapping.txt",
-            "size": 297503441,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.18/mapping.txt"
+            "size": 299278720,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/mapping.txt"
           }
         ]
       },
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2960,
+      "stars": 2963,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1675,
+      "stars": 1681,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 482,
+      "stars": 485,
       "sourceUpdatedAt": "2026-10-11T13:14:05Z",
       "githubArchived": false,
       "release": {
@@ -406,7 +406,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 312,
+      "stars": 313,
       "sourceUpdatedAt": "2026-10-23T00:39:19Z",
       "githubArchived": false,
       "release": {
@@ -816,7 +816,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 57,
+      "stars": 58,
       "sourceUpdatedAt": "2026-10-24T03:37:53Z",
       "githubArchived": false,
       "release": {
@@ -994,8 +994,8 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 23,
-      "sourceUpdatedAt": "2026-10-25T01:06:40Z",
+      "stars": 24,
+      "sourceUpdatedAt": "2026-10-25T06:07:12Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.38",
@@ -1038,7 +1038,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-25T03:03:36Z",
+      "sourceUpdatedAt": "2026-10-25T04:52:06Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
@@ -1240,36 +1240,31 @@
       "gitee": "lyj09x/legado",
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
-      "stars": 5,
-      "sourceUpdatedAt": "2026-10-25T12:31:47+08:00",
+      "stars": 6,
+      "sourceUpdatedAt": "2026-10-25T17:03:14+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.102402",
-        "tagName": "阅读_E-ink_3.26.102402",
+        "name": "阅读_E-ink_3.26.102517",
+        "tagName": "阅读_E-ink_3.26.102517",
         "prerelease": false,
-        "publishedAt": "2026-10-24T11:54:28+08:00",
-        "createdAt": "2026-10-24T11:54:28+08:00",
-        "body": "- 由于主页改的过于舒服貌美\r\n- 桌面模式的启动器改为主页\r\n- 点击主标题即弹出应用列表\r\n- 副标题依旧是点击修改内容\r\n- 不支持指定更新某一些功能\r\n- 如果使用中不适请卸载应用",
+        "publishedAt": "2026-10-25T17:03:14+08:00",
+        "createdAt": "2026-10-25T17:03:14+08:00",
+        "body": "测试",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.102402.apk",
-            "size": 20953126,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102402/%E9%98%85%E8%AF%BB_E-ink_3.26.102402.apk"
+            "name": "阅读_E-ink_3.26.102517.apk",
+            "size": 20953070,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102517/%E9%98%85%E8%AF%BB_E-ink_3.26.102517.apk"
           },
           {
-            "name": "阅读_magisk_3.26.102402.zip",
-            "size": 22694961,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102402/%E9%98%85%E8%AF%BB_magisk_3.26.102402.zip"
-          },
-          {
-            "name": "阅读_E-ink_3.26.102402.zip",
+            "name": "阅读_E-ink_3.26.102517.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102402.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102517.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.102402.tar.gz",
+            "name": "阅读_E-ink_3.26.102517.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102402.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102517.tar.gz"
           }
         ]
       },
