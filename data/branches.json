@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T06:19:59.732Z",
+  "generatedAt": "2026-10-26T14:21:41.094Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47161,
+      "stars": 47164,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6664,
-      "sourceUpdatedAt": "2026-10-25T19:59:03Z",
+      "stars": 6669,
+      "sourceUpdatedAt": "2026-10-26T10:11:07Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.19",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2968,
+      "stars": 2970,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,21 +156,21 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2225,
-      "sourceUpdatedAt": "2026-10-22T12:49:20Z",
+      "stars": 2226,
+      "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
-        "name": "V1.0.6.197",
-        "tagName": "V1.0.6.197",
+        "name": "V1.0.6.218",
+        "tagName": "V1.0.6.218",
         "prerelease": false,
-        "publishedAt": "2026-10-22T12:49:20Z",
+        "publishedAt": "2026-10-26T09:57:48Z",
         "createdAt": "2026-09-08T15:23:05Z",
-        "body": "V1.0.6.174（2026/10/16）\r\n\r\n1. 修复不同书源之间可能串用登录缓存的问题\r\n2. 识别安卓阅读备份并提供只读文件预览，避免误送入鸿蒙数据恢复流程\r\n3. 安卓备份预览按类别生成迁移选择计划，敏感登录数据默认不选\r\n4. 安卓备份可按类别选择保留本地或覆盖本地，并先暂存候选数据，避免误改当前数据\r\n5. 安卓备份暂存完成并通过校验后才显示待处理状态\r\n6. 支持查看上次暂存的安卓迁移计划，校验候选文件后再显示待处理状态\r\n7. 支持手动清除安卓迁移候选，避免异常待处理标记阻塞后续导入\r\n8. 安卓迁移暂存阶段校验已选 JSON 与 XML 内容，提前拦截损坏备份\r\n9. 安卓迁移预览记录不兼容项数量，避免导入后才发现部分数据无法转换\r\n10. 优化书源及订阅数据初始化时的异常处理\r\n11. 修复数据库检查异常后仍可能继续更新数据的问题\r\n12. 完善安卓备份暂存时的书籍类型检查，避免错误识别小说、漫画和有声书\r\n\r\n\r\nV1.0.6.175（2026/10/17）\r\n\r\n1. 加强安卓备份迁移草稿校验，避免继续使用已损坏或被改动的候选文件\r\n\r\n\r\nV1.0.6.183（2026/10/18）\r\n\r\n1. 按书源隔离 JS 缓存，避免不同书源之间串用缓存数据\r\n2. 支持导入并运行普通小说 JS 书源的配置、搜索、详情、目录和正文函数\r\n3. 安卓备份暂存时生成独立候选库并校验实际数据表，保护当前数据不被预览流程修改\r\n4. 安卓备份暂存预览显示实际解析记录、不兼容记录和重复输入数量\r\n5. 修复缺少分组或来源标识的备份记录被误计为重复的问题\r\n6. 安卓备份中暂未支持转换的类别会明确提示，避免数据被静默忽略\r\n7. 修复多书源搜索取消后仍继续读取登录缓存导致界面卡顿或闪退的问题\r\n8. 修复书源首次登录响应的 Cookie 未保存，导致后续请求丢失登录状态的问题\r\n\r\n\r\nV1.0.6.186（2026/10/19）\r\n\r\n1. 安卓备份迁移预览增加书源及嵌套规则的格式检查，提前提示不兼容记录，并保留原始备份内容\r\n2. 修复部分 JS 书源返回内容无法识别，以及书籍详情中的变量未正确传递到目录的问题\r\n3. 修复 JS 书源更新详情时可能覆盖书籍地址和自定义书名的问题\r\n4. 修复部分书源网页登录后请求未保留登录状态的问题，并避免不同网站之间串用登录信息\r\n5. 修复同一书源使用多个网站登录时，更新或清除一个网站的登录信息影响其他网站的问题\r\n\r\n\r\nV1.0.6.196（2026/10/20）\r\n\r\n1. 优化听书章节队列加载，避免重复请求导致播放中断\r\n2. 修复听书停止状态误触发章节切换的问题\r\n3. 支持听书在应用进入后台后继续播放\r\n4. 听书改用本地 CoreSpeech TTS，并移除旧版 Reader Kit 调用\r\n5. 修复本地离线 TTS 状态更新后听书入口显示不及时的问题\r\n6. 为本地离线 TTS 增加暂停、继续和停止控制\r\n7. 修复本地离线 TTS 在左右翻页模式下阅读进度不更新的问题\r\n8. 补充本地听书的上一段、下一段和语速调节控制\r\n9. 修复语音合成完成被误认为播报完成，导致听书提前跳段的问题\r\n10. 修复前后切段时旧语音仍留在播放队列的问题\r\n11. 为本地离线听书接入系统媒体音频焦点，被其他音频抢占时自动暂停并在恢复后继续\r\n12. 开始移植安卓版有声书与 HTTP TTS 数据结构，新增音频章节播放、进度控制和章节自动衔接\r\n13. 接入静态 HTTP TTS 听书回退，支持分段缓存、暂停、跳段、倍速和自动续播\r\n14. 修复 HTTP TTS 裸 URL 模板未替换，以及已保存登录请求头未参与播放请求的问题\r\n15. 修复切换听书片段或停止听书后旧 HTTP TTS 请求仍可能回写并播放的问题\r\n16. 支持部分安卓 HTTP TTS 的内联脚本和动态 URL，完善正文转义及按源隔离缓存\r\n17. 修复听书自动跨章意外停止的问题，并避免自动续播弹出书源验证页\r\n18. 修复听书初始化期间停止或退出后旧请求重新播放，以及影响再次启动的问题\r\n19. 修复全书听书结束后音频焦点未释放，以及末段语音队列可能残留的问题\r\n\r\n\r\nV1.0.6.197（2026/10/22）\r\n\r\n1. 支持按全局、本书和未入架书籍选择听书引擎，并保留书源隔离的选择状态\r\n2. 新增系统音色查询、下载和状态管理，完善听书引擎切换及阅读页入口\r\n3. 支持 HTTP TTS 配置的新增、删除、导入预览、冲突校验和导出\r\n4. 修复 HTTP TTS 配置切换、退出阅读和播放请求取消时旧请求回写的问题\r\n5. 将 TTS 设置纳入数据库备份与恢复，兼容旧备份并在校验失败时回滚\r\n",
+        "body": "V1.0.6.198（2026/10/22）\r\n\r\n1. 修复清除缓存页面系统缓存大小一直显示为0的问题\r\n2. 修复我的页面读过、读完和书签统计一直显示为0的问题\r\n\r\n\r\nV1.0.6.202（2026/10/23）\r\n\r\n1. 修复本地书导入遇到编码文件名时无法读取或添加失败的问题\r\n2. 修复书源搜索结果加入书架失败的问题，恢复稳定的数据库写入路径\r\n3. 修复安卓备份迁移确认时 TaskPool 返回 pending Promise 导致迁移失败的问题\r\n4. 修复普通 JS 书源目录相对地址和详情变量传递不完整的问题\r\n5. 修复 CoreSpeech 听书按分段进度强制跳动阅读页面的问题\r\n6. 修复仿真翻页正文根节点重复占满高度导致页末文字被页脚截断的问题\r\n7. 修复原生行范围不连续导致翻页丢字，并在重排时取消过期翻页快照\r\n8. 修复部分设备原生测量结果为空时正文排版失败的问题\r\n\r\n\r\nV1.0.6.203（2026/10/24）\r\n\r\n1. 修正左右和仿真翻页的中文行边界，避免将原生字节范围当作字符位置造成正文截断和缺字\r\n2. 统一分页测量与正文显示的字号、字距、行高和段落样式，并在分页前复核整页高度\r\n3. 修正仿真页面正文顶部对齐，跨页续段保持原有缩进，放不下的完整行移至下一页\r\n\r\n\r\nV1.0.6.204（2026/10/24）\r\n\r\n1. 修复分页测量偏保守导致半页空白的问题，按正文实际排版高度补入完整行，保留文字连续性检查\r\n2. 仿真翻页使用整屏纸面，上下留白和页脚共同参与翻页，正文与菜单保留系统安全边距\r\n3. 修复退出阅读后书架最近阅读时间必须手动刷新才更新的问题\r\n4. 修复今日阅读时间未累计和未自动刷新的问题，分段保存前台阅读时长并按日期统计\r\n\r\n\r\nV1.0.6.205（2026/10/24）\r\n\r\n1. 新增按设计稿实现的全屏听书播放器，支持章节、分段、进度、语速和定时控制\r\n2. 修复重新进入阅读页后听书引擎显示回退的问题，并显示系统音色名称和状态\r\n3. 支持 HTTP TTS 配置导入预览、导出、删除及本书、通用和跟随通用范围操作\r\n4. 修复切换书源后沿用旧书源听书引擎的问题，并补充听书跳段回归校验\r\n\r\n\r\nV1.0.6.206（2026/10/24）\r\n\r\n1. 修复“读过”统计数量与详情列表不一致的问题，补回读过记录加载\r\n2. 支持在读过页面按小说、漫画和有声书切换筛选并刷新列表\r\n3. 支持点击读过记录恢复阅读\r\n\r\n\r\nV1.0.6.207（2026/10/24）\r\n\r\n1. 修复鸿蒙应用内打开书源页面后点击一键导入显示空白的问题\r\n2. 兼容 ArkWeb 自动补充的导入链接尾斜杠，确保书源、订阅源和规则导入正常弹出确认面板\r\n\r\n\r\nV1.0.6.208（2026/10/24）\r\n\r\n1. 按最新 Harmony 阅读 Figma 设计统一书架、发现、订阅和我的页面顶部背景与导航间距\r\n2. 更新阅读器章节标题、听书播放器和朗读引擎面板的视觉结构，保留内容加载中的鸿蒙加载动画\r\n\r\n\r\nV1.0.6.209（2026/10/25）\r\n\r\n1. 按 Figma 听书流程调整听书页背景、顶部安全区和黑胶唱片布局，书封面只显示在黑胶中心\r\n2. 修复播放与暂停时唱针状态切换，统一播放器浮层并支持返回阅读页和书架后继续控制\r\n3. 修复返回听书页后顶部摄像头遮挡标题的问题，保留内容加载中的鸿蒙加载动画\r\n4. 按 Figma 缩小听书悬浮条，修正阅读菜单上下安全区与多余留白\r\n\r\n\r\nV1.0.6.210（2026/10/25）\r\n\r\n1. 听书菜单仅覆盖顶部状态区和底部安全区，中间阅读内容保持原布局\r\n\r\n\r\nV1.0.6.211（2026/10/25）\r\n\r\n1. 按最新 Figma 规范缩小听书悬浮条，并固定在阅读内容底部安全区内，避免遮挡系统状态区\r\n2. 复核书架、发现、订阅、我的、阅读器菜单和听书页面的尺寸与安全区布局，保留鸿蒙内容加载动画\r\n\r\n\r\nV1.0.6.212（2026/10/25）\r\n\r\n1. 修复返回书架后听书悬浮条状态丢失，播放中的书籍继续显示底部小悬浮条\r\n\r\n\r\nV1.0.6.213（2026/10/25）\r\n\r\n1. 按本地 Figma 规范统一听书悬浮条为 148×48，并修正阅读页和书架中的位置\r\n\r\n\r\nV1.0.6.214（2026/10/25）\r\n\r\n1. 按本地 Figma 重排听书页：恢复章节信息、单行四项工具和独立朗读引擎栏，修复控件错位与多余留白\r\n2. 修复听书正文与播放控制重叠，统一进度标签与拖动反馈，保留鸿蒙加载动画\r\n\r\n\r\nV1.0.6.215（2026/10/25）\r\n\r\n1. 修复听书唱针播放、暂停时跳位，改为围绕固定轴心平滑旋转，并恢复设计稿中的唱针比例\r\n\r\n\r\nV1.0.6.216（2026/10/25）\r\n\r\n1. 修复听书整章被识别为一段，支持上一段、下一段切换和按文字位置拖动进度\r\n2. 系统和 HTTP TTS 从选中文字开始朗读，进度条显示本章文字百分比，修复连续跳转时旧音频干扰\r\n\r\n\r\nV1.0.6.217（2026/10/25）\r\n\r\n1. 修复仿真和左右翻页的正文大面积留白，校正原生段落测量多算的空行，保留完整文字和原有换行\r\n2. 收紧阅读页脚的多余高度，保留系统手势安全区并适配较大字体\r\n\r\n\r\nV1.0.6.218（2026/10/25）\r\n\r\n1. 继续修复分页段尾额外留白，保留原文空段，并统一仿真和左右翻页的页脚到手势条上方\r\n2. 翻页方式改为符合设计稿的底部紧凑菜单，修复三项选项占满全屏的问题\r\n",
         "assets": [
           {
-            "name": "Legado-1.0.6.197-26102220-unsigned.hap",
-            "size": 28168088,
-            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.197/Legado-1.0.6.197-26102220-unsigned.hap"
+            "name": "Legado-1.0.6.218-26102521-unsigned.hap",
+            "size": 30273569,
+            "browserDownloadUrl": "https://github.com/mgz0227/legado-Harmony/releases/download/V1.0.6.218/Legado-1.0.6.218-26102521-unsigned.hap"
           }
         ]
       },
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1691,
+      "stars": 1694,
       "sourceUpdatedAt": "2026-10-22T14:50:31Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 641,
+      "stars": 642,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -261,36 +261,36 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 493,
-      "sourceUpdatedAt": "2026-10-26T03:19:21Z",
+      "stars": 498,
+      "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
-        "name": "V2.0.9版本",
-        "tagName": "V2.0.9",
+        "name": "V2.0.10版本",
+        "tagName": "V2.0.10",
         "prerelease": false,
-        "publishedAt": "2026-10-11T13:14:05Z",
-        "createdAt": "2026-10-11T13:13:22Z",
-        "body": "[√] 去除广告\r\n[√] 接入AI\r\n[√] 图书阅读器新增背景样式\r\n[√] 图书阅读器新增对话与旁白样式\r\n[√] 图书阅读器新增繁转简，简转繁\r\n[√] 图书阅读器朗读新增旁白和对话音色设置\r\n[√] 同步与备份-导入，新增阅读备份导入功能\r\n[√] 同步与备份-扫描书库导入支持扫描文件夹\r\n[√] 图书阅读器背景+对话与旁白气泡skill\r\n[√] 书源引擎优化增强\r\n[√] 部分优化和bug修复\r\n[√] 桌面端布局优化",
+        "publishedAt": "2026-10-26T13:50:05Z",
+        "createdAt": "2026-10-26T13:35:49Z",
+        "body": "[√] 软件动画大量优化，提升使用体验\r\n[√] 拟真书架，没有一个能打的\r\n[√] 书源聚搜和复搜优化，可以一直搜索，可手动停止继续\r\n[√] 书源进入分类，添加返回分类页面功能\r\n[√] 书源仓库添加批量启用/禁用\r\n[√] 书架批量操作新增修改功能，支持修改封面 书名 作者\r\n[√] 书架批量操作新增手动去角标功能\r\n[√] 漫画详情页，添加换源功能\r\n[√] 图书阅读器左右/上下阅读模式优化\r\n[√] 修复阅读器看书串本的问题\r\n[√] 阅读器双页模式优化\r\n[√] 书架大文件夹支持长按进入详情与多选批量操作（全选/移出文件夹/移动书架/彻底删除等）\r\n[√] 修复部分bug，优化部分问题",
         "assets": [
           {
             "name": "Cmbok-reader.apk",
-            "size": 33980524,
-            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.9/Cmbok-reader.apk"
+            "size": 36295795,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.10/Cmbok-reader.apk"
           },
           {
             "name": "Cmbok.apk",
-            "size": 37803214,
-            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.9/Cmbok.apk"
+            "size": 40093593,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.10/Cmbok.apk"
           },
           {
             "name": "Cmbok_ios.ipa",
-            "size": 29392290,
-            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.9/Cmbok_ios.ipa"
+            "size": 31725681,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.10/Cmbok_ios.ipa"
           },
           {
-            "name": "Cmbok_setup_2.0.9.exe",
-            "size": 27030370,
-            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.9/Cmbok_setup_2.0.9.exe"
+            "name": "Cmbok_setup_2.0.10.exe",
+            "size": 29252682,
+            "browserDownloadUrl": "https://github.com/hlning/cmbok_app/releases/download/V2.0.10/Cmbok_setup_2.0.10.exe"
           }
         ]
       },
@@ -378,7 +378,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 318,
+      "stars": 319,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -406,7 +406,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 315,
+      "stars": 314,
       "sourceUpdatedAt": "2026-10-23T00:39:19Z",
       "githubArchived": false,
       "release": {
@@ -562,8 +562,8 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 149,
-      "sourceUpdatedAt": "2026-10-26T05:56:44Z",
+      "stars": 150,
+      "sourceUpdatedAt": "2026-10-26T12:22:32Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.102300",
@@ -787,7 +787,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 60,
+      "stars": 61,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -816,61 +816,61 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 59,
-      "sourceUpdatedAt": "2026-10-25T14:27:31Z",
+      "stars": 61,
+      "sourceUpdatedAt": "2026-10-26T08:02:44Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.3.0",
-        "tagName": "v2.3.0",
+        "name": "v2.3.1",
+        "tagName": "v2.3.1",
         "prerelease": false,
-        "publishedAt": "2026-10-25T14:20:06Z",
-        "createdAt": "2026-10-25T14:00:44Z",
-        "body": "release: v2.3.0\n\nDesktop (Windows / macOS / Linux). First desktop release on its own\nversion line; the App stays at 2.2.5 and releases separately as\napp-vX.Y.Z.\n\nPDF reader\n- One 56px top bar instead of two rows: back, sidebar and title on the\n  left; page number and zoom in the centre; view, listen, auto-read,\n  search, translate / AI and more on the right.\n- The zoom menu opens directly under the zoom button and stays inside\n  the window; 12 presets in a grid plus fit page / fit width, full\n  keyboard navigation, Esc returns to the button.\n- New 视图 panel with illustrated choices for scroll / paged and\n  single / facing / book, fit height / width, fullscreen and slideshow.\n- One sidebar button for contents, thumbnails and highlights (reopens\n  the last tab); print, save as, open folder, properties and keyboard\n  shortcuts are in the ⋯ menu with their shortcuts.\n- Narrow windows: labels collapse, listen / auto-read move into ⋯, and\n  page + zoom wrap to a second row on very narrow web windows.\n\nVerification: npm run build, npm run e2e and e2e:adaptive-layout on t9.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-10-26T07:12:11Z",
+        "createdAt": "2026-10-26T06:48:28Z",
+        "body": "release: v2.3.1\n\n修复\n- 书库封面显示空白：封面文件为空、缺失或不是图片时，不再显示空白，先显示文字封面，\n  并自动从书籍文件重新生成封面（PDF 取第一页，EPUB、DjVu、CBR 等同导入时的取法）。\n  书里取不到封面时改为长期显示文字封面。修复不改动书籍文件、阅读进度和批注。\n- 导入、同步下载和备份恢复不再把空图片保存为封面；同步上传与备份不再带出损坏封面。\n\n验证\n- T9：vue-tsc、test:cover-repair 9/9、sync-engine / sync-merge / sync-large-files、\n  平台边界测试通过；桌面与 App 平台前端构建通过；e2e:cover-repair 5/5；\n  npm run e2e 37 步通过、无页面错误。\n\n已知限制\n- 旧版本已上传到同步远端的空封面文件仍留在远端；拉取到它的设备会在本地重新生成封面。\n- 文件头正常但内容截断的图片按可用处理；完全无法解码的图片只回退为文字封面，不自动重新生成。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.3.0-1.x86_64.rpm",
-            "size": 30877477,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead-2.3.0-1.x86_64.rpm"
+            "name": "LightRead-2.3.1-1.x86_64.rpm",
+            "size": 30876482,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead-2.3.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.3.0_aarch64.dmg",
-            "size": 24297228,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_aarch64.dmg"
+            "name": "LightRead_2.3.1_aarch64.dmg",
+            "size": 24296157,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_2.3.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.3.0_amd64.AppImage",
-            "size": 106658296,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_amd64.AppImage"
+            "name": "LightRead_2.3.1_amd64.AppImage",
+            "size": 106646008,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_2.3.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.3.0_amd64.deb",
-            "size": 30878230,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_amd64.deb"
+            "name": "LightRead_2.3.1_amd64.deb",
+            "size": 30875836,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_2.3.1_amd64.deb"
           },
           {
-            "name": "LightRead_2.3.0_x64-setup.exe",
-            "size": 18912213,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_x64-setup.exe"
+            "name": "LightRead_2.3.1_x64-setup.exe",
+            "size": 18919293,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_2.3.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.3.0_x64.dmg",
-            "size": 25538188,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_2.3.0_x64.dmg"
+            "name": "LightRead_2.3.1_x64.dmg",
+            "size": 25532557,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_2.3.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24221568,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_aarch64.app.tar.gz"
+            "size": 24220884,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25477811,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/LightRead_x64.app.tar.gz"
+            "size": 25480476,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.3.1/SHA256SUMS"
           }
         ]
       },
@@ -975,35 +975,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 25,
-      "sourceUpdatedAt": "2026-10-26T05:56:50Z",
+      "sourceUpdatedAt": "2026-10-26T07:48:23Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.38",
-        "tagName": "3.26.17-beta.38",
+        "name": "Pre-release 3.26.17-beta.39",
+        "tagName": "3.26.17-beta.39",
         "prerelease": true,
-        "publishedAt": "2026-10-24T14:48:37Z",
-        "createdAt": "2026-10-24T14:23:34Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：掌阅定制机型的阅读锁屏修复完成并恢复——预览不闪退、图书壁纸正常显示、实时屏保不再被干扰。\n\n### 修复\n\n* 阅读锁屏（掌阅定制机型，上一版暂时停用、本版恢复）：系统设置里预览图书屏保不再闪退\n* 选「图书+封面」或「图书+阅读进度」后，息屏正常显示本书壁纸，不再回落系统默认图；升级本版后会自动修复旧版本遗留的目录权限问题\n* 选「实时屏保」时墨本完全静默、不再干扰它的显示效果；切回图书类屏保后立即恢复跟随当前阅读",
+        "publishedAt": "2026-10-26T07:48:08Z",
+        "createdAt": "2026-10-26T06:53:26Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：墨水屏模式支持高亮规则渲染——完整模式配置的对话、书名号等规则样式在墨水屏上按灰度呈现，修改规则即时生效。\n\n### 新增\n\n* 墨水屏模式渲染高亮规则（规则编辑仍在完整模式进行，数据两模式实时互通）\n* 规则样式支持（彩色一律按灰度呈现，保留透明度）：\n  * 字色、背景色、下划线颜色\n  * 下划线款式六种：实线 / 虚线 / 波浪 / 双线 / 删除线 / 荧光笔\n  * 下划线粗细、与文字的距离（虚线节距、波浪幅度、双线间距同步支持）\n  * 自定义字体、字重、斜体、字号偏移\n  * 命中字距（前/后）、命中行行距（上/下）\n* 暂不支持：SVG 花色下划线（显示为实线）、背景图气泡（平铺/拉伸/裁剪/九宫格）、多角色对话气泡\n\n### 修复\n\n* 删除线、荧光笔两种下划线款式此前在墨水屏被画成普通实线下划线\n* 带字体/字号偏移的规则文字与排版留宽不匹配（字画不满自己的位置，段间出现多余空隙）\n* 命中字距的段前留白被并入首字：高亮带、下划线与长按选区不再盖到空白上",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 312308526,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.38/mapping.txt"
+            "size": 312361758,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.39/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.38-arm64-v8a.apk",
-            "size": 21417200,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.38/moben-3.26.17-beta.38-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.39-arm64-v8a.apk",
+            "size": 21417499,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.39/moben-3.26.17-beta.39-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.38-armeabi-v7a.apk",
-            "size": 20957014,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.38/moben-3.26.17-beta.38-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.39-armeabi-v7a.apk",
+            "size": 20957312,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.39/moben-3.26.17-beta.39-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.38.apk",
-            "size": 27989647,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.38/moben-3.26.17-beta.38.apk"
+            "name": "moben-3.26.17-beta.39.apk",
+            "size": 27989945,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.39/moben-3.26.17-beta.39.apk"
           }
         ]
       },
@@ -1018,7 +1018,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-25T04:52:06Z",
+      "sourceUpdatedAt": "2026-10-26T12:48:10Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
@@ -1233,12 +1233,12 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.102611.apk",
-            "size": null,
+            "size": 20953070,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102611/%E9%98%85%E8%AF%BB_E-ink_3.26.102611.apk"
           },
           {
             "name": "阅读_magisk_3.26.102611.zip",
-            "size": null,
+            "size": 22697051,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102611/%E9%98%85%E8%AF%BB_magisk_3.26.102611.zip"
           },
           {
