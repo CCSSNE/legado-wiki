@@ -674,7 +674,7 @@
       ],
       "status": "pending",
       "message": "已保留 34 个快照，当前发布待备份 3 个",
-      "lastCheckedAt": "2026-10-25T23:39:58.187Z"
+      "lastCheckedAt": "2026-10-26T01:52:56.712Z"
     },
     "md3": {
       "repo": "HapeLee/legado-with-MD3",
@@ -1369,7 +1369,7 @@
       ],
       "status": "pending",
       "message": "已保留 34 个快照，当前发布待备份 66 个",
-      "lastCheckedAt": "2026-10-25T23:40:29.431Z"
+      "lastCheckedAt": "2026-10-26T01:52:57.993Z"
     },
     "sigma": {
       "repo": "Luoyacheng/legado-E",
@@ -1602,7 +1602,7 @@
       ],
       "status": "normal",
       "message": "已保留 11 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:30.148Z"
+      "lastCheckedAt": "2026-10-26T01:52:58.565Z"
     },
     "harmony": {
       "repo": "mgz0227/legado-Harmony",
@@ -2153,7 +2153,7 @@
       ],
       "status": "normal",
       "message": "已保留 28 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:30.930Z"
+      "lastCheckedAt": "2026-10-26T01:52:59.177Z"
     },
     "main": {
       "repo": "LegadoTeam/legado",
@@ -2858,7 +2858,7 @@
       ],
       "status": "pending",
       "message": "已保留 34 个快照，当前发布待备份 21 个",
-      "lastCheckedAt": "2026-10-25T23:40:46.609Z"
+      "lastCheckedAt": "2026-10-26T01:53:00.327Z"
     },
     "archive": {
       "repo": "rimvoid/legado",
@@ -3325,11 +3325,25 @@
           "completedAt": "2026-10-25T17:56:18.700Z",
           "assetCount": 2,
           "assetBytes": 73060886
+        },
+        "4258e7f5794a10733f3613c742800b052bd97881f3806a4a8647d73c82ce13ca": {
+          "sourceReleaseId": 331322477,
+          "sourceTag": "archive-v3-3.26.0529",
+          "fingerprint": "4258e7f5794a10733f3613c742800b052bd97881f3806a4a8647d73c82ce13ca",
+          "sourceCommit": "c79e3d77576186d4c65e6f371bfc41a894e18bd2",
+          "backupReleaseId": 423786470,
+          "backupTag": "backup-release/331322477-4258e7f5794a10733f3613c742800b052bd97881f3806a4a8647d73c82ce13ca",
+          "url": "https://github.com/legado-backup/legado-archive/releases/tag/backup-release/331322477-4258e7f5794a10733f3613c742800b052bd97881f3806a4a8647d73c82ce13ca",
+          "startedAt": "2026-10-26T01:50:21.363Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:50:27.388Z",
+          "assetCount": 2,
+          "assetBytes": 72837310
         }
       },
       "sourceReleaseCount": 54,
-      "pending": 21,
-      "completedCount": 33,
+      "pending": 20,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:34:26.798Z",
@@ -3505,11 +3519,16 @@
           "at": "2026-10-25T17:56:18.700Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 21 个"
+        },
+        {
+          "at": "2026-10-26T01:50:27.388Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 20 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 21 个",
-      "lastCheckedAt": "2026-10-25T23:40:47.579Z"
+      "message": "已保留 34 个快照，当前发布待备份 20 个",
+      "lastCheckedAt": "2026-10-26T01:50:27.388Z"
     },
     "cmbok": {
       "repo": "hlning/cmbok_app",
@@ -3809,7 +3828,7 @@
       ],
       "status": "normal",
       "message": "已保留 14 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:48.252Z"
+      "lastCheckedAt": "2026-10-26T01:50:28.032Z"
     },
     "max-sum": {
       "repo": "Suml-1/Legado_Max",
@@ -4276,11 +4295,25 @@
           "completedAt": "2026-10-25T21:17:16.104Z",
           "assetCount": 10,
           "assetBytes": 295628895
+        },
+        "d4d01f5e7c1b469027260c7558f2c8132c8e33d8af476fec087a39d6efb0a06d": {
+          "sourceReleaseId": 387632899,
+          "sourceTag": "beta-3.26.091300",
+          "fingerprint": "d4d01f5e7c1b469027260c7558f2c8132c8e33d8af476fec087a39d6efb0a06d",
+          "sourceCommit": "dac309b66254debc76f6710962afc2d6595ff63d",
+          "backupReleaseId": 423786543,
+          "backupTag": "backup-release/387632899-d4d01f5e7c1b469027260c7558f2c8132c8e33d8af476fec087a39d6efb0a06d",
+          "url": "https://github.com/legado-backup/legado-max-sum/releases/tag/backup-release/387632899-d4d01f5e7c1b469027260c7558f2c8132c8e33d8af476fec087a39d6efb0a06d",
+          "startedAt": "2026-10-26T01:50:32.341Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:50:53.989Z",
+          "assetCount": 10,
+          "assetBytes": 295579991
         }
       },
       "sourceReleaseCount": 194,
-      "pending": 161,
-      "completedCount": 33,
+      "pending": 160,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:35:06.984Z",
@@ -4486,11 +4519,16 @@
           "at": "2026-10-25T21:17:16.104Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 161 个"
+        },
+        {
+          "at": "2026-10-26T01:50:53.989Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 160 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 161 个",
-      "lastCheckedAt": "2026-10-25T23:40:50.681Z"
+      "message": "已保留 34 个快照，当前发布待备份 160 个",
+      "lastCheckedAt": "2026-10-26T01:50:53.989Z"
     },
     "r": {
       "repo": "refgd/legado",
@@ -4770,7 +4808,7 @@
       ],
       "status": "normal",
       "message": "已保留 14 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:51.520Z"
+      "lastCheckedAt": "2026-10-26T01:50:54.714Z"
     },
     "max": {
       "repo": "youfengknight/Legado_Max",
@@ -4822,7 +4860,7 @@
       ],
       "status": "normal",
       "message": "已保留 2 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:52.207Z"
+      "lastCheckedAt": "2026-10-26T01:50:55.314Z"
     },
     "shutiao": {
       "repo": "huajideshutiao/legado",
@@ -5389,7 +5427,7 @@
       ],
       "status": "normal",
       "message": "已保留 27 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:52.975Z"
+      "lastCheckedAt": "2026-10-26T01:50:56.073Z"
     },
     "sanmu": {
       "repo": "huage2580/yuedu_hd",
@@ -5650,7 +5688,7 @@
       ],
       "status": "normal",
       "message": "已保留 13 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:53.752Z"
+      "lastCheckedAt": "2026-10-26T01:50:56.740Z"
     },
     "t": {
       "repo": "skybbk1001/legadoT",
@@ -5855,7 +5893,7 @@
       ],
       "status": "normal",
       "message": "已保留 9 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:54.614Z"
+      "lastCheckedAt": "2026-10-26T01:50:57.329Z"
     },
     "jingshiro": {
       "repo": "Jingshiro/legado",
@@ -6322,11 +6360,25 @@
           "completedAt": "2026-10-25T21:17:26.542Z",
           "assetCount": 2,
           "assetBytes": 47510081
+        },
+        "30d77855da5e251e8e5868db8303ef7c7dc65a8530180957d454ae16a31ba790": {
+          "sourceReleaseId": 331898404,
+          "sourceTag": "3.26.053016",
+          "fingerprint": "30d77855da5e251e8e5868db8303ef7c7dc65a8530180957d454ae16a31ba790",
+          "sourceCommit": "28bb37c87d877e8d51c505a86a47ca6532908820",
+          "backupReleaseId": 423786724,
+          "backupTag": "backup-release/331898404-30d77855da5e251e8e5868db8303ef7c7dc65a8530180957d454ae16a31ba790",
+          "url": "https://github.com/legado-backup/legado-jingshiro/releases/tag/backup-release/331898404-30d77855da5e251e8e5868db8303ef7c7dc65a8530180957d454ae16a31ba790",
+          "startedAt": "2026-10-26T01:50:59.665Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:51:04.600Z",
+          "assetCount": 2,
+          "assetBytes": 47507651
         }
       },
       "sourceReleaseCount": 70,
-      "pending": 37,
-      "completedCount": 33,
+      "pending": 36,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:21.953Z",
@@ -6492,11 +6544,16 @@
           "at": "2026-10-25T21:17:26.543Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 37 个"
+        },
+        {
+          "at": "2026-10-26T01:51:04.600Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 36 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 37 个",
-      "lastCheckedAt": "2026-10-25T23:40:55.588Z"
+      "message": "已保留 34 个快照，当前发布待备份 36 个",
+      "lastCheckedAt": "2026-10-26T01:51:04.600Z"
     },
     "ng": {
       "repo": "joestar817/legado_NG",
@@ -7014,7 +7071,7 @@
       ],
       "status": "normal",
       "message": "已保留 26 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:40:56.441Z"
+      "lastCheckedAt": "2026-10-26T01:51:05.355Z"
     },
     "mr": {
       "repo": "DandanLLab/mr",
@@ -7481,11 +7538,25 @@
           "completedAt": "2026-10-25T21:17:41.196Z",
           "assetCount": 4,
           "assetBytes": 101315677
+        },
+        "a2b5a0ed93ae3ff8e3ba58140281168eb264a8676717f7c7f803ae6e36416c97": {
+          "sourceReleaseId": 381343428,
+          "sourceTag": "v2609029-dev",
+          "fingerprint": "a2b5a0ed93ae3ff8e3ba58140281168eb264a8676717f7c7f803ae6e36416c97",
+          "sourceCommit": "614a98ccad125246a43a2075a8b0f31f4e7b09f3",
+          "backupReleaseId": 423786805,
+          "backupTag": "backup-release/381343428-a2b5a0ed93ae3ff8e3ba58140281168eb264a8676717f7c7f803ae6e36416c97",
+          "url": "https://github.com/legado-backup/legado-mr/releases/tag/backup-release/381343428-a2b5a0ed93ae3ff8e3ba58140281168eb264a8676717f7c7f803ae6e36416c97",
+          "startedAt": "2026-10-26T01:51:11.093Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:51:20.248Z",
+          "assetCount": 4,
+          "assetBytes": 101281718
         }
       },
       "sourceReleaseCount": 431,
-      "pending": 398,
-      "completedCount": 33,
+      "pending": 397,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:44.668Z",
@@ -7661,11 +7732,16 @@
           "at": "2026-10-25T21:17:41.196Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 398 个"
+        },
+        {
+          "at": "2026-10-26T01:51:20.248Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 397 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 398 个",
-      "lastCheckedAt": "2026-10-25T23:41:00.512Z"
+      "message": "已保留 34 个快照，当前发布待备份 397 个",
+      "lastCheckedAt": "2026-10-26T01:51:20.248Z"
     },
     "moread": {
       "repo": "ovo066/MoRead",
@@ -8255,7 +8331,7 @@
       ],
       "status": "normal",
       "message": "已保留 29 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:01.377Z"
+      "lastCheckedAt": "2026-10-26T01:51:21.079Z"
     },
     "max-cichen": {
       "repo": "GEd520/legados",
@@ -8293,7 +8369,7 @@
       ],
       "status": "normal",
       "message": "已保留 1 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:02.172Z"
+      "lastCheckedAt": "2026-10-26T01:51:21.791Z"
     },
     "manxia": {
       "repo": "DaLongZhuaZi/manxia",
@@ -8540,7 +8616,7 @@
       ],
       "status": "normal",
       "message": "已保留 12 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:02.907Z"
+      "lastCheckedAt": "2026-10-26T01:51:22.448Z"
     },
     "nexhub": {
       "repo": "nexhub-app/NexHub",
@@ -9007,11 +9083,25 @@
           "completedAt": "2026-10-25T21:18:04.094Z",
           "assetCount": 7,
           "assetBytes": 267857372
+        },
+        "4ea36d603afed63920d441dbc0680e145f5ad3658e000796982de9b07d1c6af8": {
+          "sourceReleaseId": 361639466,
+          "sourceTag": "v0.3.0",
+          "fingerprint": "4ea36d603afed63920d441dbc0680e145f5ad3658e000796982de9b07d1c6af8",
+          "sourceCommit": "67d77915f03d941c20dff7b5499c1fdb9d093ed9",
+          "backupReleaseId": 423786911,
+          "backupTag": "backup-release/361639466-4ea36d603afed63920d441dbc0680e145f5ad3658e000796982de9b07d1c6af8",
+          "url": "https://github.com/legado-backup/legado-nexhub/releases/tag/backup-release/361639466-4ea36d603afed63920d441dbc0680e145f5ad3658e000796982de9b07d1c6af8",
+          "startedAt": "2026-10-26T01:51:25.654Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:51:47.409Z",
+          "assetCount": 7,
+          "assetBytes": 340227798
         }
       },
       "sourceReleaseCount": 38,
-      "pending": 6,
-      "completedCount": 33,
+      "pending": 5,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:48.516Z",
@@ -9202,11 +9292,16 @@
           "at": "2026-10-25T21:18:04.095Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 6 个"
+        },
+        {
+          "at": "2026-10-26T01:51:47.409Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 5 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 6 个",
-      "lastCheckedAt": "2026-10-25T23:41:04.098Z"
+      "message": "已保留 34 个快照，当前发布待备份 5 个",
+      "lastCheckedAt": "2026-10-26T01:51:47.409Z"
     },
     "lightread": {
       "repo": "yzfly/LightRead",
@@ -9673,11 +9768,25 @@
           "completedAt": "2026-10-25T21:18:31.921Z",
           "assetCount": 12,
           "assetBytes": 349967162
+        },
+        "5216a862fa665e7987796aa4b3a7e83bc4f40a3844bc4fc2105a99658d64300e": {
+          "sourceReleaseId": 406279715,
+          "sourceTag": "v1.15.0",
+          "fingerprint": "5216a862fa665e7987796aa4b3a7e83bc4f40a3844bc4fc2105a99658d64300e",
+          "sourceCommit": "9027e9a09ef19c1c37cc828c9fd42b21119e1ac9",
+          "backupReleaseId": 423787065,
+          "backupTag": "backup-release/406279715-5216a862fa665e7987796aa4b3a7e83bc4f40a3844bc4fc2105a99658d64300e",
+          "url": "https://github.com/legado-backup/legado-lightread/releases/tag/backup-release/406279715-5216a862fa665e7987796aa4b3a7e83bc4f40a3844bc4fc2105a99658d64300e",
+          "startedAt": "2026-10-26T01:51:50.539Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:52:15.586Z",
+          "assetCount": 12,
+          "assetBytes": 349891254
         }
       },
       "sourceReleaseCount": 31,
-      "pending": 16,
-      "completedCount": 33,
+      "pending": 15,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:49.371Z",
@@ -9933,11 +10042,16 @@
           "at": "2026-10-25T21:18:31.921Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 16 个"
+        },
+        {
+          "at": "2026-10-26T01:52:15.586Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 15 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 16 个",
-      "lastCheckedAt": "2026-10-25T23:41:05.310Z"
+      "message": "已保留 34 个快照，当前发布待备份 15 个",
+      "lastCheckedAt": "2026-10-26T01:52:15.586Z"
     },
     "m": {
       "repo": "syq17496152/legado",
@@ -10265,7 +10379,7 @@
       ],
       "status": "normal",
       "message": "已保留 16 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:06.070Z"
+      "lastCheckedAt": "2026-10-26T01:52:16.269Z"
     },
     "pp": {
       "repo": "damifan3/legadoPP",
@@ -10417,7 +10531,7 @@
       ],
       "status": "normal",
       "message": "已保留 7 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:06.806Z"
+      "lastCheckedAt": "2026-10-26T01:52:16.951Z"
     },
     "moben": {
       "repo": "Mupceet/EssentialReader",
@@ -10884,11 +10998,25 @@
           "completedAt": "2026-10-25T21:18:52.025Z",
           "assetCount": 4,
           "assetBytes": 337770743
+        },
+        "a02f6a7d7dc77a6ec01893f860178792200c17bbacb7ae85095d2ce124591903": {
+          "sourceReleaseId": 385282953,
+          "sourceTag": "3.26.17-beta.4",
+          "fingerprint": "a02f6a7d7dc77a6ec01893f860178792200c17bbacb7ae85095d2ce124591903",
+          "sourceCommit": "c610b214cab9907e9807f8a040058f14aa6df99f",
+          "backupReleaseId": 423787256,
+          "backupTag": "backup-release/385282953-a02f6a7d7dc77a6ec01893f860178792200c17bbacb7ae85095d2ce124591903",
+          "url": "https://github.com/legado-backup/legado-moben/releases/tag/backup-release/385282953-a02f6a7d7dc77a6ec01893f860178792200c17bbacb7ae85095d2ce124591903",
+          "startedAt": "2026-10-26T01:52:20.002Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:52:35.624Z",
+          "assetCount": 4,
+          "assetBytes": 337621404
         }
       },
       "sourceReleaseCount": 37,
-      "pending": 5,
-      "completedCount": 33,
+      "pending": 4,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:51.581Z",
@@ -11104,11 +11232,16 @@
           "at": "2026-10-25T21:18:52.025Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 5 个"
+        },
+        {
+          "at": "2026-10-26T01:52:35.624Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 4 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 5 个",
-      "lastCheckedAt": "2026-10-25T23:41:07.685Z"
+      "message": "已保留 34 个快照，当前发布待备份 4 个",
+      "lastCheckedAt": "2026-10-26T01:52:35.624Z"
     },
     "sk": {
       "repo": "skxingyu/legado-sk",
@@ -11436,7 +11569,7 @@
       ],
       "status": "error",
       "message": "下载附件 legado_sk_3.26.101530c_10094_arm64-v8a_.apk HTTP 404",
-      "lastCheckedAt": "2026-10-25T23:37:32.663Z",
+      "lastCheckedAt": "2026-10-26T01:50:11.144Z",
       "failedFingerprint": "9e7e7271da1257259892ad2f617ff107d4db7c72f8aaaa6d58bd273782c0dd40"
     },
     "x": {
@@ -11608,7 +11741,7 @@
       ],
       "status": "normal",
       "message": "已保留 8 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:08.458Z"
+      "lastCheckedAt": "2026-10-26T01:52:36.260Z"
     },
     "xuanjuan": {
       "repo": "24257/novel-helper",
@@ -11817,7 +11950,7 @@
       ],
       "status": "normal",
       "message": "已保留 10 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:09.213Z"
+      "lastCheckedAt": "2026-10-26T01:52:36.914Z"
     },
     "fu": {
       "repo": "h166278/legado_FU",
@@ -12284,11 +12417,25 @@
           "completedAt": "2026-10-25T21:18:59.439Z",
           "assetCount": 1,
           "assetBytes": 27135365
+        },
+        "b2c53fb54c9a9467fe3df242f47c098aa8b91986c3ea8dc8b1cffe6bf62db954": {
+          "sourceReleaseId": 375232503,
+          "sourceTag": "beta-170",
+          "fingerprint": "b2c53fb54c9a9467fe3df242f47c098aa8b91986c3ea8dc8b1cffe6bf62db954",
+          "sourceCommit": "b02004619f6200ab98e04ad2bd17ede61d84df97",
+          "backupReleaseId": 423787394,
+          "backupTag": "backup-release/375232503-b2c53fb54c9a9467fe3df242f47c098aa8b91986c3ea8dc8b1cffe6bf62db954",
+          "url": "https://github.com/legado-backup/legado-fu/releases/tag/backup-release/375232503-b2c53fb54c9a9467fe3df242f47c098aa8b91986c3ea8dc8b1cffe6bf62db954",
+          "startedAt": "2026-10-26T01:52:39.562Z",
+          "complete": true,
+          "completedAt": "2026-10-26T01:52:43.221Z",
+          "assetCount": 1,
+          "assetBytes": 27135072
         }
       },
       "sourceReleaseCount": 40,
-      "pending": 7,
-      "completedCount": 33,
+      "pending": 6,
+      "completedCount": 34,
       "events": [
         {
           "at": "2026-10-05T02:39:54.335Z",
@@ -12459,11 +12606,16 @@
           "at": "2026-10-25T21:18:59.439Z",
           "status": "pending",
           "message": "已保留 33 个快照，当前发布待备份 7 个"
+        },
+        {
+          "at": "2026-10-26T01:52:43.221Z",
+          "status": "pending",
+          "message": "已保留 34 个快照，当前发布待备份 6 个"
         }
       ],
       "status": "pending",
-      "message": "已保留 33 个快照，当前发布待备份 7 个",
-      "lastCheckedAt": "2026-10-25T23:41:10.285Z"
+      "message": "已保留 34 个快照，当前发布待备份 6 个",
+      "lastCheckedAt": "2026-10-26T01:52:43.221Z"
     },
     "k": {
       "repo": "ReTyne/legado-Klys",
@@ -12789,7 +12941,7 @@
       ],
       "status": "normal",
       "message": "已保留 13 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:41:12.097Z"
+      "lastCheckedAt": "2026-10-26T01:52:43.801Z"
     },
     "lightnovel": {
       "repo": "dmzz-yyhyy/LightNovelReader",
@@ -13455,7 +13607,7 @@
       ],
       "status": "pending",
       "message": "已保留 33 个快照，当前发布待备份 8 个",
-      "lastCheckedAt": "2026-10-25T23:37:44.614Z"
+      "lastCheckedAt": "2026-10-26T01:52:44.607Z"
     },
     "yisou": {
       "repo": "mabDc/eso",
@@ -13851,7 +14003,7 @@
       ],
       "status": "error",
       "message": "下载附件 eso.windows.zip HTTP 404",
-      "lastCheckedAt": "2026-10-25T23:37:24.245Z",
+      "lastCheckedAt": "2026-10-26T01:50:18.941Z",
       "failedFingerprint": "7ec2cadad65ac5c7775a56f99f39daf0aa76ab353b677594f4cd1511db304b1f"
     },
     "caidu": {
@@ -14351,7 +14503,7 @@
       ],
       "status": "normal",
       "message": "已保留 25 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:37:45.998Z"
+      "lastCheckedAt": "2026-10-26T01:52:45.544Z"
     },
     "readcat": {
       "repo": "read-cat/read-cat",
@@ -14560,7 +14712,7 @@
       ],
       "status": "normal",
       "message": "已保留 10 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:37:46.915Z"
+      "lastCheckedAt": "2026-10-26T01:52:46.292Z"
     },
     "kototoro": {
       "repo": "Kototoro-app/Kototoro",
@@ -15231,7 +15383,7 @@
       ],
       "status": "pending",
       "message": "已保留 33 个快照，当前发布待备份 177 个",
-      "lastCheckedAt": "2026-10-25T23:38:55.318Z"
+      "lastCheckedAt": "2026-10-26T01:52:48.516Z"
     },
     "kaiyuan": {
       "repo": "miloquinn/origo-x",
@@ -15942,7 +16094,7 @@
       ],
       "status": "pending",
       "message": "已保留 33 个快照，当前发布待备份 42 个",
-      "lastCheckedAt": "2026-10-25T23:39:25.322Z"
+      "lastCheckedAt": "2026-10-26T01:52:49.524Z"
     },
     "mojing": {
       "repo": "keys-cherish/morealm-reader",
@@ -16189,7 +16341,7 @@
       ],
       "status": "normal",
       "message": "已保留 12 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:39:26.343Z"
+      "lastCheckedAt": "2026-10-26T01:52:50.131Z"
     },
     "lumi": {
       "repo": "huangder/Lumi_Books",
@@ -16550,7 +16702,7 @@
       ],
       "status": "normal",
       "message": "已保留 18 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:39:27.204Z"
+      "lastCheckedAt": "2026-10-26T01:52:50.751Z"
     },
     "macos": {
       "repo": "Kequans/legado-for-mac-pub",
@@ -16683,7 +16835,7 @@
       ],
       "status": "normal",
       "message": "已保留 6 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:39:27.971Z"
+      "lastCheckedAt": "2026-10-26T01:52:51.399Z"
     },
     "moshui": {
       "repo": "radiumCN/inkwell",
@@ -17344,7 +17496,7 @@
       ],
       "status": "pending",
       "message": "已保留 33 个快照，当前发布待备份 211 个",
-      "lastCheckedAt": "2026-10-25T23:39:36.155Z"
+      "lastCheckedAt": "2026-10-26T01:52:53.631Z"
     },
     "books": {
       "repo": "user-A100/books-reader",
@@ -17458,7 +17610,7 @@
       ],
       "status": "normal",
       "message": "已保留 5 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:39:36.966Z"
+      "lastCheckedAt": "2026-10-26T01:52:54.187Z"
     },
     "yedu": {
       "repo": "bennytsai1234/Night-Reader",
@@ -18264,7 +18416,7 @@
       ],
       "status": "pending",
       "message": "已保留 33 个快照，当前发布待备份 100 个",
-      "lastCheckedAt": "2026-10-25T23:39:48.254Z"
+      "lastCheckedAt": "2026-10-26T01:52:55.526Z"
     },
     "aikanshu": {
       "repo": "leetomlee123/book",
@@ -18302,9 +18454,9 @@
       ],
       "status": "normal",
       "message": "已保留 1 个快照，当前发布待备份 0 个",
-      "lastCheckedAt": "2026-10-25T23:39:49.137Z"
+      "lastCheckedAt": "2026-10-26T01:52:56.013Z"
     }
   },
-  "nextIndex": 5,
-  "checkedAt": "2026-10-25T23:41:12.097Z"
+  "nextIndex": 28,
+  "checkedAt": "2026-10-26T01:53:00.327Z"
 }
