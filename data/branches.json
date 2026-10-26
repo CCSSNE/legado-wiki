@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:21:41.094Z",
+  "generatedAt": "2026-10-26T20:32:57.789Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47164,
+      "stars": 47166,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6669,
+      "stars": 6672,
       "sourceUpdatedAt": "2026-10-26T10:11:07Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2970,
+      "stars": 2972,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,8 +184,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1694,
-      "sourceUpdatedAt": "2026-10-22T14:50:31Z",
+      "stars": 1698,
+      "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26102222",
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 642,
+      "stars": 644,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 498,
+      "stars": 504,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -406,7 +406,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 314,
+      "stars": 315,
       "sourceUpdatedAt": "2026-10-23T00:39:19Z",
       "githubArchived": false,
       "release": {
@@ -534,7 +534,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 151,
+      "stars": 152,
       "sourceUpdatedAt": "2026-10-25T16:35:26Z",
       "githubArchived": false,
       "release": {
@@ -719,7 +719,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 106,
+      "stars": 107,
       "sourceUpdatedAt": "2026-10-21T09:46:20Z",
       "githubArchived": false,
       "release": {
@@ -781,43 +781,14 @@
       "forkOf": null
     },
     {
-      "id": "manxia",
-      "name": "漫匣阅读",
-      "tag": "manxia",
-      "repo": "DaLongZhuaZi/manxia",
-      "term": "legado-branch-manxia",
-      "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 61,
-      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
-      "githubArchived": false,
-      "release": {
-        "name": "阶段性构建 v0.1.4 · 08ef5b2",
-        "tagName": "latest",
-        "prerelease": false,
-        "publishedAt": "2026-09-28T15:54:47Z",
-        "createdAt": "2026-09-28T15:48:04Z",
-        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
-        "assets": [
-          {
-            "name": "entry-default-unsigned.hap",
-            "size": 123088042,
-            "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 61,
-      "sourceUpdatedAt": "2026-10-26T08:02:44Z",
+      "stars": 63,
+      "sourceUpdatedAt": "2026-10-26T17:47:56Z",
       "githubArchived": false,
       "release": {
         "name": "v2.3.1",
@@ -879,13 +850,42 @@
       "forkOf": null
     },
     {
+      "id": "manxia",
+      "name": "漫匣阅读",
+      "tag": "manxia",
+      "repo": "DaLongZhuaZi/manxia",
+      "term": "legado-branch-manxia",
+      "note": "阅读原版重构，鸿蒙 Next 版。",
+      "stars": 62,
+      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
+      "githubArchived": false,
+      "release": {
+        "name": "阶段性构建 v0.1.4 · 08ef5b2",
+        "tagName": "latest",
+        "prerelease": false,
+        "publishedAt": "2026-09-28T15:54:47Z",
+        "createdAt": "2026-09-28T15:48:04Z",
+        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
+        "assets": [
+          {
+            "name": "entry-default-unsigned.hap",
+            "size": 123088042,
+            "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "nexhub",
       "name": "NexHub",
       "tag": "nexhub",
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 52,
+      "stars": 53,
       "sourceUpdatedAt": "2026-10-26T05:14:09Z",
       "githubArchived": false,
       "release": {
@@ -975,7 +975,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 25,
-      "sourceUpdatedAt": "2026-10-26T07:48:23Z",
+      "sourceUpdatedAt": "2026-10-26T14:23:41Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.39",
@@ -1018,7 +1018,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-26T12:48:10Z",
+      "sourceUpdatedAt": "2026-10-26T17:44:54Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
@@ -1265,24 +1265,24 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-10-25T17:18:04Z",
+      "sourceUpdatedAt": "2026-10-26T15:46:31Z",
       "githubArchived": false,
       "release": {
         "name": "1.0-beta",
         "tagName": "v1.0-beta",
         "prerelease": true,
-        "publishedAt": "2026-10-25T17:18:04Z",
-        "createdAt": "2026-10-25T17:07:37Z",
-        "body": "## 1.0 版本预发布\n\n应用更名为「阅读 / legado」（随系统语言切换），版本号重置为 1.0。\n\n### 主要更新\n- 修复子页面按系统返回键直接退回桌面的问题\n- UI 与配色重构（钢蓝低饱和主题）及流畅度优化\n- 新增 PDF 阅读、legado:// 深链导入、主题导入导出与二维码分享、键盘助手、章节字数统计\n- 全新应用图标（自适应图标 + Android 13 monochrome themed 图标）\n- 修复书源 URL 选项解析、EPUB 乱码等问题\n- 83 个测试全过，CI 增加 analyze / test 门禁\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64 专用版（更小）\n\n- 提交: faf9ca0f9f991be40d25a37ee554f62c965733cd\n- 分支: main\n\n> 此为自动构建的预发布版本。\n",
+        "publishedAt": "2026-10-26T15:46:31Z",
+        "createdAt": "2026-10-26T15:37:34Z",
+        "body": "## 1.0 版本预发布\n\n应用更名为「阅读 / legado」（随系统语言切换），版本号重置为 1.0。\n\n### 主要更新\n- 修复子页面按系统返回键直接退回桌面的问题\n- UI 与配色重构（钢蓝低饱和主题）及流畅度优化\n- 新增 PDF 阅读、legado:// 深链导入、主题导入导出与二维码分享、键盘助手、章节字数统计\n- 全新应用图标（自适应图标 + Android 13 monochrome themed 图标）\n- 修复书源 URL 选项解析、EPUB 乱码等问题\n- 83 个测试全过，CI 增加 analyze / test 门禁\n\n### 下载\n- `app-universal-release.apk` - 通用版（支持所有架构）\n- `app-arm64-release.apk` - arm64 专用版（更小）\n\n- 提交: 58d8f20296059be6312c267d88773fc677a7e120\n- 分支: main\n\n> 此为自动构建的预发布版本。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
-            "size": 28853113,
+            "size": 28857413,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0-beta/app-arm64-release.apk"
           },
           {
             "name": "app-universal-release.apk",
-            "size": 49765826,
+            "size": 49779081,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0-beta/app-universal-release.apk"
           }
         ]
