@@ -1102,9 +1102,9 @@
     "k": {
       "name": "阅读 K",
       "repo": "ReTyne/legado-Klys",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-19T17:44:17.307Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-10-26T20:07:15.412Z",
       "backupRepo": "legado-backup/legado-k",
       "activeBranch": "backup/v5-d4e91a4835ecc4dda39a5cd8f691c52374941d35",
       "events": [
@@ -1137,6 +1137,11 @@
           "at": "2026-10-19T17:44:17.307Z",
           "type": "rotated",
           "message": "历史 diverged：旧分支已保留，legado-backup/legado-k/backup/v5-d4e91a4835ecc4dda39a5cd8f691c52374941d35 接收新历史"
+        },
+        {
+          "at": "2026-10-26T20:07:15.412Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1416,5 +1421,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-26T14:32:11.570Z"
+  "checkedAt": "2026-10-26T20:07:31.634Z"
 }
