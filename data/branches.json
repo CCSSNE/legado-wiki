@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T02:21:02.642Z",
+  "generatedAt": "2026-10-28T09:46:11.035Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 187,
+      "stars": 189,
       "sourceUpdatedAt": "2026-10-12T09:11:17Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47176,
+      "stars": 47173,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6688,
+      "stars": 6692,
       "sourceUpdatedAt": "2026-10-27T14:53:50Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2979,
+      "stars": 2982,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1708,
+      "stars": 1710,
       "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 528,
+      "stars": 532,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -373,6 +373,39 @@
       "forkOf": "youfengknight/Legado_Max"
     },
     {
+      "id": "shutiao",
+      "name": "薯条版",
+      "tag": "shutiao",
+      "repo": "huajideshutiao/legado",
+      "term": "legado-branch-shutiao",
+      "stars": 322,
+      "sourceUpdatedAt": "2026-10-23T00:39:19Z",
+      "githubArchived": false,
+      "release": {
+        "name": "multiplatform-test",
+        "tagName": "multiplatform-test",
+        "prerelease": true,
+        "publishedAt": "2026-10-23T00:39:20Z",
+        "createdAt": "2026-10-22T18:30:17Z",
+        "body": "多平台测试包（未签名，供侧载/自签验证）：\n\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\n- **iOS**: SideStore/AltStore 自签侧载\n\n⚠️ 均为未签名产物，仅供多平台功能测试。",
+        "assets": [
+          {
+            "name": "legado-3.26.102308-unsigned.hap",
+            "size": 71405029,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.102308-unsigned.hap"
+          },
+          {
+            "name": "legado-3.26.10230825-ios-unsigned.ipa",
+            "size": 33694097,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.10230825-ios-unsigned.ipa"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
       "id": "r",
       "name": "阅读 R",
       "tag": "r",
@@ -399,39 +432,6 @@
       "errors": [],
       "fork": true,
       "forkOf": "rimvoid/legado"
-    },
-    {
-      "id": "shutiao",
-      "name": "薯条版",
-      "tag": "shutiao",
-      "repo": "huajideshutiao/legado",
-      "term": "legado-branch-shutiao",
-      "stars": 319,
-      "sourceUpdatedAt": "2026-10-23T00:39:19Z",
-      "githubArchived": false,
-      "release": {
-        "name": "multiplatform-test",
-        "tagName": "multiplatform-test",
-        "prerelease": true,
-        "publishedAt": "2026-10-23T00:39:20Z",
-        "createdAt": "2026-10-22T18:30:17Z",
-        "body": "多平台测试包（未签名，供侧载/自签验证）：\n\n- **鸿蒙**: arm64-v8a，未签名，hdc install 安装需关闭签名校验或用 hap-sign-tool 自签\n- **iOS**: SideStore/AltStore 自签侧载\n\n⚠️ 均为未签名产物，仅供多平台功能测试。",
-        "assets": [
-          {
-            "name": "legado-3.26.102308-unsigned.hap",
-            "size": 71405029,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.102308-unsigned.hap"
-          },
-          {
-            "name": "legado-3.26.10230825-ios-unsigned.ipa",
-            "size": 33694097,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/multiplatform-test/legado-3.26.10230825-ios-unsigned.ipa"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
     },
     {
       "id": "max",
@@ -563,30 +563,30 @@
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
       "stars": 149,
-      "sourceUpdatedAt": "2026-10-27T17:24:43Z",
+      "sourceUpdatedAt": "2026-10-28T08:12:19Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26.102720",
+        "name": "legado_app_3.26.102814",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-10-27T12:28:10Z",
-        "createdAt": "2026-10-27T11:56:28Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- Fix JS source directory and content debugging\n- Fix JS source login entry in reader\n- Fix task WebView profile initialization\n- Isolate scheduled task cookies\n- fix(task): restore AnalyzeRule JS bridge compatibility\n- fix(dialog): enlarge custom group name input\n- fix(dialog): constrain import dialog content height\n- refactor(dialog): 尺寸/留边/画法三维度正交分解，废弃 DialogForm.FULL_SCREEN\n- test: 修 ProjectSources 字符串模板编译错误\n- test: 源码文本断言统一走 ProjectSources\n- test: 修复 5 个源码演进后腐烂的哨兵断言\n- feat(rss): java.open(\"sort\") 支持深链到订阅源指定分类\n- ci: add automatic build checks\n",
+        "publishedAt": "2026-10-28T06:32:42Z",
+        "createdAt": "2026-10-28T06:06:24Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- Register TaskCookieStore in the R8 reflection contract\n- Fix cookie getKey and removeCookie in scheduled tasks\n- Add remote RSS source search\n- Fix Nostr bunker input touch target\n",
         "assets": [
           {
-            "name": "legado_app_3.26.10272020_arm64-v8a_release.apk",
-            "size": 17286357,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10272020_arm64-v8a_release.apk"
+            "name": "legado_app_3.26.10281423_arm64-v8a_release.apk",
+            "size": 17287975,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_arm64-v8a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10272020_armeabi-v7a_release.apk",
-            "size": 16564082,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10272020_armeabi-v7a_release.apk"
+            "name": "legado_app_3.26.10281423_armeabi-v7a_release.apk",
+            "size": 16565697,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_armeabi-v7a_release.apk"
           },
           {
-            "name": "legado_app_3.26.10272020_x86_64_release.apk",
-            "size": 17532207,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10272020_x86_64_release.apk"
+            "name": "legado_app_3.26.10281423_x86_64_release.apk",
+            "size": 17533820,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_x86_64_release.apk"
           },
           {
             "name": "version.json",
@@ -856,7 +856,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 62,
+      "stars": 61,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -1018,7 +1018,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-28T00:46:41Z",
+      "sourceUpdatedAt": "2026-10-28T04:30:41Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102113",
