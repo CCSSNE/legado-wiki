@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T14:16:55.892Z",
+  "generatedAt": "2026-10-30T19:29:55.851Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 44,
+          "stars": 45,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47183,
+      "stars": 47188,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6735,
-      "sourceUpdatedAt": "2026-10-29T20:22:27Z",
+      "stars": 6739,
+      "sourceUpdatedAt": "2026-10-30T18:37:29Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.19",
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3002,
+      "stars": 3003,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1734,
+      "stars": 1735,
       "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
@@ -788,60 +788,60 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 71,
-      "sourceUpdatedAt": "2026-10-27T07:19:03Z",
+      "sourceUpdatedAt": "2026-10-30T17:39:39Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.4.0",
-        "tagName": "v2.4.0",
+        "name": "v2.5.0",
+        "tagName": "v2.5.0",
         "prerelease": false,
-        "publishedAt": "2026-10-27T06:30:21Z",
-        "createdAt": "2026-10-27T06:13:04Z",
-        "body": "release: v2.4.0\n\n## 新功能\n- 藏书页改为「书桌」布局：顶部只留标题、搜索和添加；「继续阅读」卡片加宽，右侧显示今日与本周阅读时长；书单变成一排标签（全部藏书 · 各书单 · ＋），其余书单操作收进「⋯」；排序和「管理」移到书架标题行右侧。\n- 书卡更清爽：封面统一为书本比例，不再叠加格式与进度角标；下方只显示短书名和「进度 · 作者」。鼠标移到书上出现「⋯」，加入书单、置顶、上传、转换为 EPUB、移至论文、设为私密、删除都在这个菜单里。\n- 「设置 → 关于」新增「下载轻阅」：列出 Windows、macOS（Apple 芯片 / Intel）、Linux（AppImage / deb / rpm）与 Android 的最新安装包，本机系统排在最前；GitHub 连不上时自动改用国内镜像。\n- 「设置 → 关于」新增「读者群」：微信扫码加入 LightRead 读者群。群二维码会定期更新；过期时提示关注公众号「云中江树」获取入群方式。\n\n## 改进\n- 界面字号、字重、圆角与阴影收敛为固定档位，并在发版前检查不再新增零散数值。\n\n## 验证\n- t9：书源 68、EPUB 兼容 7、听书 11、更新 30、封面修复 9、关于页下载与读者群 7、平台边界 10、拖放 4、文件夹导入 10、论文 Agent 9 项通过；类型检查、样式档位检查、Rust library_import 4 项通过。\n- e2e：冒烟 37 步、书单、格式转换 10 步、书库上传 9 项、互传 11 步通过；15 款手机布局检查无新增问题。\n\n## 已知限制\n- 手机浏览器访问的网页版藏书页保持原布局。可使用 SHA256SUMS 校验下载文件。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-10-30T17:49:47Z",
+        "createdAt": "2026-10-30T17:31:21Z",
+        "body": "release: v2.5.0\n\n## 改进\n- 书源更合规：不再内置、也不再自动拉取 GitHub「社区书源」清单，移除「教材」来源。GitHub 书源只搜索你自己添加的仓库，仓库列表随账号（或 WebDAV）的设置同步，换台设备也在。添加第一个仓库后，GitHub 才出现在搜索范围里。\n\n## 修复\n- 点睛阅读开着时使用打字机（或歌词）模式，还没出字的空白处会先冒出重点词的浅色底块；现在文字出来之后才显示标记。\n\n## 验证\n- t9：全部 49 组单元测试（含书源 55、重点词 14、设置同步 19、阅读模式 48 项）、类型检查、样式档位检查与桌面构建通过。\n- e2e：书源（统一搜书、哲学文库、研辞问典、只搜自己添加的 GitHub 仓库）在桌面与 App 界面均通过；打字机隐藏层盖住重点词底色已在 Chromium 149 截图核对。\n- 冒烟 e2e 在「PDF 网页版另存为」一步等不到下载事件；改动前的提交同样失败，与本次改动无关，另行排查。\n\n## 已知限制\n- 已安装的旧版本在升级前仍显示原来的内置书源清单。可使用 SHA256SUMS 校验下载文件。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.4.0-1.x86_64.rpm",
-            "size": 30878987,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead-2.4.0-1.x86_64.rpm"
+            "name": "LightRead-2.5.0-1.x86_64.rpm",
+            "size": 30877255,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead-2.5.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.4.0_aarch64.dmg",
-            "size": 24301239,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_2.4.0_aarch64.dmg"
+            "name": "LightRead_2.5.0_aarch64.dmg",
+            "size": 24297675,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.4.0_amd64.AppImage",
-            "size": 106641912,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_2.4.0_amd64.AppImage"
+            "name": "LightRead_2.5.0_amd64.AppImage",
+            "size": 106654200,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.4.0_amd64.deb",
-            "size": 30880028,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_2.4.0_amd64.deb"
+            "name": "LightRead_2.5.0_amd64.deb",
+            "size": 30874812,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_amd64.deb"
           },
           {
-            "name": "LightRead_2.4.0_x64-setup.exe",
-            "size": 18923276,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_2.4.0_x64-setup.exe"
+            "name": "LightRead_2.5.0_x64-setup.exe",
+            "size": 18920075,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.4.0_x64.dmg",
-            "size": 25535439,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_2.4.0_x64.dmg"
+            "name": "LightRead_2.5.0_x64.dmg",
+            "size": 25541678,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24223327,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_aarch64.app.tar.gz"
+            "size": 24221933,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25487943,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/LightRead_x64.app.tar.gz"
+            "size": 25481625,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.4.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/SHA256SUMS"
           }
         ]
       },
@@ -975,35 +975,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 25,
-      "sourceUpdatedAt": "2026-10-30T03:09:39Z",
+      "sourceUpdatedAt": "2026-10-30T16:45:43Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.41",
-        "tagName": "3.26.17-beta.41",
+        "name": "Pre-release 3.26.17-beta.42",
+        "tagName": "3.26.17-beta.42",
         "prerelease": true,
-        "publishedAt": "2026-10-30T00:03:35Z",
-        "createdAt": "2026-10-29T22:57:58Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：无封面书籍的文字封面全新设计；多项阅读与屏保显示修复。\n\n### 新增\n\n* 无封面书籍的文字封面全新设计：\n  * 书名以竖排「题签」呈现在封面左上，右下配作者名与书名首字藏书印，整洁美观、更具书卷气\n  * 封面文字与界面字体保持一致\n  * 过长的书名自动省略，不再挤满整个封面；书名中的【标签】以小字呈现，括号副标题不再上封面\n\n### 修复\n\n* 阅读器：\n  * 页眉时间/电量与页脚页码不再超出屏幕边缘，页脚字号与阅读设置一致\n  * 在两种阅读界面之间切换时，页面内容位置不再跳动\n* 屏保：屏保图按设备真实屏幕尺寸生成，不再拉伸变形\n* 书架：搜索历史条目排版修复，不再异常拥挤",
+        "publishedAt": "2026-10-30T16:45:25Z",
+        "createdAt": "2026-10-30T15:51:40Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：无封面书籍的文字封面升级为竖排大字书卷式；分组封面细节优化。\n\n### 调整\n\n* 无封面书籍的文字封面升级为「竖排大字」书卷式：\n  * 书名以竖排大字呈现在封面右侧，作者与「/ 著」落款在旁，大面积留白、更具书卷气\n  * 长书名自动分两列排布、字号不缩小（每列至多 8 字）；仍超长自动省略\n  * 封面文字与界面字体保持一致；书名中的【标签】与括号副标题不再上封面\n* 分组封面：左下角的本数计数标增加了留白，观感更舒适",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 312695149,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/mapping.txt"
+            "size": 312703860,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.42/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.41-arm64-v8a.apk",
-            "size": 21434483,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.42-arm64-v8a.apk",
+            "size": 21434365,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.42/moben-3.26.17-beta.42-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.41-armeabi-v7a.apk",
-            "size": 20974293,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.42-armeabi-v7a.apk",
+            "size": 20974186,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.42/moben-3.26.17-beta.42-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.41.apk",
-            "size": 28006924,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41.apk"
+            "name": "moben-3.26.17-beta.42.apk",
+            "size": 28006792,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.42/moben-3.26.17-beta.42.apk"
           }
         ]
       },
@@ -1221,35 +1221,35 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 6,
-      "sourceUpdatedAt": "2026-10-30T00:35:13+08:00",
+      "sourceUpdatedAt": "2026-10-31T00:55:01+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.103000",
-        "tagName": "阅读_E-ink_3.26.103000",
+        "name": "阅读_E-ink_3.26.102718",
+        "tagName": "阅读_E-ink_3.26.102718",
         "prerelease": false,
-        "publishedAt": "2026-10-30T00:35:13+08:00",
-        "createdAt": "2026-10-30T00:35:13+08:00",
-        "body": "- 优化一下书架\r\n- 修复已知问题\r\n- 新增未知问题",
+        "publishedAt": "2026-10-27T19:52:06+08:00",
+        "createdAt": "2026-10-27T19:52:06+08:00",
+        "body": "- 流态翻页支持反转和速度\r\n- 统一交互和视觉更加美观",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.103000.apk",
-            "size": 20957166,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.103000/%E9%98%85%E8%AF%BB_E-ink_3.26.103000.apk"
+            "name": "阅读_E-ink_3.26.102718.apk",
+            "size": 20953070,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102718/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.apk"
           },
           {
-            "name": "阅读_magisk_3.26.103000.zip",
-            "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.103000/%E9%98%85%E8%AF%BB_magisk_3.26.103000.zip"
+            "name": "阅读_magisk_3.26.102718.zip",
+            "size": 22702395,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102718/%E9%98%85%E8%AF%BB_magisk_3.26.102718.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.103000.zip",
+            "name": "阅读_E-ink_3.26.102718.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.103000.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.103000.tar.gz",
+            "name": "阅读_E-ink_3.26.102718.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.103000.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.tar.gz"
           }
         ]
       },
