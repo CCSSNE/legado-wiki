@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T01:06:17.559Z",
+  "generatedAt": "2026-10-30T07:13:42.387Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47177,
+      "stars": 47181,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6716,
+      "stars": 6726,
       "sourceUpdatedAt": "2026-10-29T20:22:27Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2997,
+      "stars": 3000,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -156,7 +156,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2227,
+      "stars": 2228,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1725,
+      "stars": 1727,
       "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 551,
+      "stars": 552,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -305,7 +305,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 408,
+      "stars": 410,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 318,
+      "stars": 319,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -562,7 +562,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 149,
+      "stars": 150,
       "sourceUpdatedAt": "2026-10-29T10:09:06Z",
       "githubArchived": false,
       "release": {
@@ -975,7 +975,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 25,
-      "sourceUpdatedAt": "2026-10-30T00:03:49Z",
+      "sourceUpdatedAt": "2026-10-30T03:09:39Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.41",
@@ -1096,25 +1096,25 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 17,
-      "sourceUpdatedAt": "2026-10-29T10:39:02Z",
+      "sourceUpdatedAt": "2026-10-30T05:54:01Z",
       "githubArchived": false,
       "release": {
-        "name": "修复听书时重进阅读界面崩溃 + 自动清理音视频缓存",
-        "tagName": "v3.26.101905-10103",
+        "name": "修复找书换源把未加入书架的书自动加架，以及书架重复书籍",
+        "tagName": "v3.26.102914-10107",
         "prerelease": true,
-        "publishedAt": "2026-10-18T06:14:23Z",
-        "createdAt": "2026-10-18T05:44:46Z",
-        "body": "## 更新内容\n\n- 自动清理视频/音频缓存，避免长期使用后占用存储过大\n- 修复听书过程中重新进入阅读界面的崩溃问题\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.101905c_10103_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
+        "publishedAt": "2026-10-30T01:33:29Z",
+        "createdAt": "2026-10-29T10:39:01Z",
+        "body": "## 更新内容\n\n- 修复找书时换源会把还没加入书架的书自动加入书架\n- 修复书架出现重复书籍\n- 修复阅读界面重新打开时闪退\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.102914c_10107_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
         "assets": [
           {
-            "name": "legado_sk_3.26.101905c_10103_arm64-v8a.apk",
-            "size": 36181433,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101905-10103/legado_sk_3.26.101905c_10103_arm64-v8a.apk"
+            "name": "legado_sk_3.26.102914c_10107_arm64-v8a.apk",
+            "size": 36181661,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.102914-10107/legado_sk_3.26.102914c_10107_arm64-v8a.apk"
           },
           {
-            "name": "legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk",
-            "size": 36181107,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.101905-10103/legado_sk_3.26.101905c_10103_arm64-v8a_sk2-coexist.apk"
+            "name": "legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk",
+            "size": 36181603,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.102914-10107/legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk"
           }
         ]
       },
