@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T21:12:17.602Z",
+  "generatedAt": "2026-10-30T01:06:17.559Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47178,
+      "stars": 47177,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6712,
+      "stars": 6716,
       "sourceUpdatedAt": "2026-10-29T20:22:27Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 2996,
+      "stars": 2997,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -975,35 +975,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 25,
-      "sourceUpdatedAt": "2026-10-29T17:03:21Z",
+      "sourceUpdatedAt": "2026-10-30T00:03:49Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.40",
-        "tagName": "3.26.17-beta.40",
+        "name": "Pre-release 3.26.17-beta.41",
+        "tagName": "3.26.17-beta.41",
         "prerelease": true,
-        "publishedAt": "2026-10-28T11:51:28Z",
-        "createdAt": "2026-10-28T11:02:18Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：首页顶栏改版——书架标题即筛选入口，搜索改为顶栏图标。\n\n### 新增\n\n* 首页顶栏改版：\n  * 书架标题即筛选入口：标题、筛选图标与当前筛选名整块可点，点击打开筛选菜单（菜单在标题下方左侧展开）\n  * 顶栏最右常驻搜索图标，书架/我的两 Tab 同一右上角位进入搜索\n  * 书架标题字号放大一档\n  * 分组视图标题为「书架/分组名」面包屑，点击退回顶层书架",
+        "publishedAt": "2026-10-30T00:03:35Z",
+        "createdAt": "2026-10-29T22:57:58Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：无封面书籍的文字封面全新设计；多项阅读与屏保显示修复。\n\n### 新增\n\n* 无封面书籍的文字封面全新设计：\n  * 书名以竖排「题签」呈现在封面左上，右下配作者名与书名首字藏书印，整洁美观、更具书卷气\n  * 封面文字与界面字体保持一致\n  * 过长的书名自动省略，不再挤满整个封面；书名中的【标签】以小字呈现，括号副标题不再上封面\n\n### 修复\n\n* 阅读器：\n  * 页眉时间/电量与页脚页码不再超出屏幕边缘，页脚字号与阅读设置一致\n  * 在两种阅读界面之间切换时，页面内容位置不再跳动\n* 屏保：屏保图按设备真实屏幕尺寸生成，不再拉伸变形\n* 书架：搜索历史条目排版修复，不再异常拥挤",
         "assets": [
           {
             "name": "mapping.txt",
-            "size": 312509787,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.40/mapping.txt"
+            "size": 312695149,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/mapping.txt"
           },
           {
-            "name": "moben-3.26.17-beta.40-arm64-v8a.apk",
-            "size": 21434274,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.40/moben-3.26.17-beta.40-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.41-arm64-v8a.apk",
+            "size": 21434483,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.40-armeabi-v7a.apk",
-            "size": 20974089,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.40/moben-3.26.17-beta.40-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.41-armeabi-v7a.apk",
+            "size": 20974293,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.40.apk",
-            "size": 28006699,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.40/moben-3.26.17-beta.40.apk"
+            "name": "moben-3.26.17-beta.41.apk",
+            "size": 28006924,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.41/moben-3.26.17-beta.41.apk"
           }
         ]
       },
@@ -1018,7 +1018,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 23,
-      "sourceUpdatedAt": "2026-10-29T19:44:08Z",
+      "sourceUpdatedAt": "2026-10-30T00:48:50Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102921",
