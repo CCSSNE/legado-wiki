@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T19:29:55.851Z",
+  "generatedAt": "2026-10-30T23:52:12.843Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47188,
+      "stars": 47190,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,16 +85,16 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6739,
-      "sourceUpdatedAt": "2026-10-30T18:37:29Z",
+      "stars": 6741,
+      "sourceUpdatedAt": "2026-10-30T21:49:42Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.19",
+        "name": "Release 3.26.19 Restore",
         "tagName": "3.26.19",
         "prerelease": false,
-        "publishedAt": "2026-10-25T05:56:58Z",
+        "publishedAt": "2026-10-30T22:14:47Z",
         "createdAt": "2026-10-25T05:40:58Z",
-        "body": "### 更新内容\n\n* feat(explore): 发现顶栏改为单书源搜索入口，书源选择改为可筛选底部 sheet\n* fix(manga): 整章拼接超长条漫图拆段渲染，修复 Constraints 尺寸溢出崩溃 (#2475)\n* fix(book-info): 简介纯文本分支二次转义，& < > 显示为 HTML 实体 (#2466)\n* fix(reader): 开标点连同 Latin 单词整体换行，不再拆词\n* fix(book-info): useweb 简介经 FrameLayout 容器承载，规避 Vulkan drawVk 原生崩溃 (#2468)\n* feat(highlight): 高亮规则新增边框样式，预览渲染修复与示例句加长\n* feat(book-info): 关联书籍移至简介下方，支持无规则时按作者搜索兜底\n* fix(reader): 关联书籍位置\n* fix: 关联书籍调试之\n* opt: memory usage (#2478)\n* perf(reader): 排版宽度链路去装箱，字形级宽度改 FloatArray\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 (#2476)\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 (#2474)\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） (#2473)\n* reader: cut pagination peak memory (streaming, merge, buffer release)\n* feat(reader): 可配置 AI 对话入口携带阅读上下文 & 修复换图标入口 IME 双重避让 (#2472)\n* feat(reader): add configurable AI chat entry with reading context\n* fix(ui): prevent double IME avoidance on alternate launcher activities\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） (#2465)\n* feat(reader): 分页失败原因带上异常 message 与栈顶\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 (#2450)\n* 咕噜噜\n* feat: 阅读界面优化\n* feat: 添加阻止书源打开选项 在搞基里\n* feat:优化听书界面\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 (#2447)\n* fix(test): 移除ReadBookViewModel多余空行以满足2748行架构测试上限\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻\n\n## What's Changed\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2447\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2448\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2461\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） by @qmzd111 in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* fix&feat: add configurable AI chat entry with reading context & fix IME double avoidance by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2473\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2474\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2476\n* opt: memory usage by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2478\n\n## New Contributors\n* @xuezhi123go made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* @qmzd111 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* @izumisagirii made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* @shaoyangz1 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2473\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.17...3.26.19",
+        "body": "更新内容（无更改，这是从TG还原的发布版）\r\n\r\n* feat(explore): 发现顶栏改为单书源搜索入口，书源选择改为可筛选底部 sheet\r\n* fix(manga): 整章拼接超长条漫图拆段渲染，修复 Constraints 尺寸溢出崩溃 (#2475)\r\n* fix(book-info): 简介纯文本分支二次转义，& < > 显示为 HTML 实体 (#2466)\r\n* fix(reader): 开标点连同 Latin 单词整体换行，不再拆词\r\n* fix(book-info): useweb 简介经 FrameLayout 容器承载，规避 Vulkan drawVk 原生崩溃 (#2468)\r\n* feat(highlight): 高亮规则新增边框样式，预览渲染修复与示例句加长\r\n* feat(book-info): 关联书籍移至简介下方，支持无规则时按作者搜索兜底\r\n* fix(reader): 关联书籍位置\r\n* fix: 关联书籍调试之\r\n* opt: memory usage (#2478)\r\n* perf(reader): 排版宽度链路去装箱，字形级宽度改 FloatArray\r\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 (#2476)\r\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 (#2474)\r\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） (#2473)\r\n* reader: cut pagination peak memory (streaming, merge, buffer release)\r\n* feat(reader): 可配置 AI 对话入口携带阅读上下文 & 修复换图标入口 IME 双重避让 (#2472)\r\n* feat(reader): add configurable AI chat entry with reading context\r\n* fix(ui): prevent double IME avoidance on alternate launcher activities\r\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） (#2465)\r\n* feat(reader): 分页失败原因带上异常 message 与栈顶\r\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂\r\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 (#2450)\r\n* 咕噜噜\r\n* feat: 阅读界面优化\r\n* feat: 添加阻止书源打开选项 在搞基里\r\n* feat:优化听书界面\r\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 (#2447)\r\n* fix(test): 移除ReadBookViewModel多余空行以满足2748行架构测试上限\r\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿\r\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻\r\n\r\nWhat's Changed\r\n* fix(about): 优化检测更新弹窗，将更新按钮移至底部常驻 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2447\r\n* fix(readaloud): 修复HTTP朗读在当前章未完成时抢占预合成导致的断流卡顿 by @ISuuuu in https://github.com/HapeLee/legado-with-MD3/pull/2448\r\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2450\r\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2461\r\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） by @qmzd111 in https://github.com/HapeLee/legado-with-MD3/pull/2465\r\n* fix&feat: add configurable AI chat entry with reading context & fix IME double avoidance by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2472\r\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2473\r\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2474\r\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2476\r\n* opt: memory usage by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2478\r\n\r\nNew Contributors\r\n* @xuezhi123go made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2450\r\n* @qmzd111 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2465\r\n* @izumisagirii made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2472\r\n* @shaoyangz1 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2473\r\n\r\nFull Changelog: https://github.com/HapeLee/legado-with-MD3/compare/3.26.17...3.26.19\r\n\r\n完整更新日志: https://github.com/HapeLee/legado-with-MD3/releases/tag/3.26.19",
         "assets": [
           {
             "name": "legado-3.26.19-arm64-v8a.apk",
@@ -110,11 +110,6 @@
             "name": "legado-3.26.19.apk",
             "size": 27617669,
             "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/legado-3.26.19.apk"
-          },
-          {
-            "name": "mapping.txt",
-            "size": 299278720,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.19/mapping.txt"
           }
         ]
       },
@@ -227,7 +222,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 647,
+      "stars": 648,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -669,6 +664,35 @@
       "forkOf": null
     },
     {
+      "id": "moread",
+      "name": "墨知 MoRead",
+      "tag": "moread",
+      "repo": "ovo066/MoRead",
+      "term": "legado-branch-moread",
+      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
+      "stars": 113,
+      "sourceUpdatedAt": "2026-10-21T09:46:20Z",
+      "githubArchived": false,
+      "release": {
+        "name": "墨知 1.4.1",
+        "tagName": "v1.4.1",
+        "prerelease": false,
+        "publishedAt": "2026-10-21T09:47:04Z",
+        "createdAt": "2026-10-21T09:46:17Z",
+        "body": "# MoRead · 墨知 1.4.1\n\n## 中文\n\n- 伴读会话支持导出 Markdown，可分享或另存；阅读页伴读悬浮球可在设置中隐藏。\n- 改进主动段评的前方段落选择、全章覆盖和断点补全，避免后半章长时间没有段评。\n- 改进 EPUB 重复资源兼容；章节精排解析失败时保留正文与图片，并保护已有正文和批注坐标。\n- TXT 单本预览与批量导入改用流式处理，降低大文件内存占用；优化章节扫描与导入进度。\n- 书架支持调整网格列数；优化书籍详情加载、段落讨论及悬浮导航的拖拽、切页和收放。\n- 修复底部弹层滚动边界与视口稳定性，补充导航手势、导入和段评回归覆盖。\n\n正式安装包：`mozhi-1.4.1-vc85.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n- Export companion conversations as Markdown for sharing or saving, and optionally hide the companion bubble in the reader.\n- Improve proactive annotation scheduling, chapter coverage, and resumable completion.\n- Handle duplicate EPUB resources and preserve text and images when rich chapter parsing fails, while protecting existing text and annotation coordinates.\n- Stream TXT previews and batch imports to reduce memory use; improve chapter scanning and import progress.\n- Add configurable bookshelf grid columns and refine book-detail loading, passage discussions, and floating navigation gestures.\n- Stabilize bottom-sheet scrolling and viewport boundaries, with additional navigation, import, and annotation regression coverage.\n\nOfficial package: `mozhi-1.4.1-vc85.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
+        "assets": [
+          {
+            "name": "mozhi-1.4.1-vc85.apk",
+            "size": 23330687,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.4.1/mozhi-1.4.1-vc85.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "mr",
       "name": "阅读 MR",
       "tag": "mr",
@@ -705,35 +729,6 @@
             "name": "mr_v2609127_dev_2026-09-12_x86_64.apk",
             "size": 22803598,
             "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609127-dev/mr_v2609127_dev_2026-09-12_x86_64.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
-      "id": "moread",
-      "name": "墨知 MoRead",
-      "tag": "moread",
-      "repo": "ovo066/MoRead",
-      "term": "legado-branch-moread",
-      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 112,
-      "sourceUpdatedAt": "2026-10-21T09:46:20Z",
-      "githubArchived": false,
-      "release": {
-        "name": "墨知 1.4.1",
-        "tagName": "v1.4.1",
-        "prerelease": false,
-        "publishedAt": "2026-10-21T09:47:04Z",
-        "createdAt": "2026-10-21T09:46:17Z",
-        "body": "# MoRead · 墨知 1.4.1\n\n## 中文\n\n- 伴读会话支持导出 Markdown，可分享或另存；阅读页伴读悬浮球可在设置中隐藏。\n- 改进主动段评的前方段落选择、全章覆盖和断点补全，避免后半章长时间没有段评。\n- 改进 EPUB 重复资源兼容；章节精排解析失败时保留正文与图片，并保护已有正文和批注坐标。\n- TXT 单本预览与批量导入改用流式处理，降低大文件内存占用；优化章节扫描与导入进度。\n- 书架支持调整网格列数；优化书籍详情加载、段落讨论及悬浮导航的拖拽、切页和收放。\n- 修复底部弹层滚动边界与视口稳定性，补充导航手势、导入和段评回归覆盖。\n\n正式安装包：`mozhi-1.4.1-vc85.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n- Export companion conversations as Markdown for sharing or saving, and optionally hide the companion bubble in the reader.\n- Improve proactive annotation scheduling, chapter coverage, and resumable completion.\n- Handle duplicate EPUB resources and preserve text and images when rich chapter parsing fails, while protecting existing text and annotation coordinates.\n- Stream TXT previews and batch imports to reduce memory use; improve chapter scanning and import progress.\n- Add configurable bookshelf grid columns and refine book-detail loading, passage discussions, and floating navigation gestures.\n- Stabilize bottom-sheet scrolling and viewport boundaries, with additional navigation, import, and annotation regression coverage.\n\nOfficial package: `mozhi-1.4.1-vc85.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
-        "assets": [
-          {
-            "name": "mozhi-1.4.1-vc85.apk",
-            "size": 23330687,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.4.1/mozhi-1.4.1-vc85.apk"
           }
         ]
       },
