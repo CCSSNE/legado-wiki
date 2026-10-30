@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:13:42.387Z",
+  "generatedAt": "2026-10-30T14:16:55.892Z",
   "branches": [
     {
       "id": "c",
@@ -10,20 +10,20 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 191,
-      "sourceUpdatedAt": "2026-10-12T09:11:17Z",
+      "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
-        "name": "公开版 Pre：蓝牙按键映射双态 v3.26.101209",
-        "tagName": "v3.26.101209",
+        "name": "公开版 Pre：日志分享与书架修复 v3.26.103013",
+        "tagName": "v3.26.103013",
         "prerelease": true,
-        "publishedAt": "2026-10-12T09:07:26Z",
+        "publishedAt": "2026-10-30T13:38:10Z",
         "createdAt": "2026-08-30T00:00:00Z",
-        "body": "Pre 预览版：含未广泛验证的新功能，Latest 标记保持在正式版不动。\n\n相对 v3.26.100717 的变化（均为开源构建包含的主代码功能）：\n- 新增阅读页蓝牙按键映射：上一曲/快退/下一曲/快进/播放暂停可映射无操作/整页书签/上一页/下一页/朗读切段\n- 蓝牙朗读快退/快进连续切段，朗读设置可调切段间隔\n- 映射界面改为居中弹窗；扩展为 7 键（新增音量加/减），每个键分阅读/朗读两态配置，底部阅读式/朗读式切换\n- 删除旧的音量键翻页、朗读时音量键翻页、耳机按键切段/切章开关（功能已被双态矩阵覆盖，升级后需按新矩阵重新配置）\n- 宣传图追加第 30 张\n\n包名 io.legado.app.c，可与自用版（io.legado.app.dev）共存安装。",
+        "body": "Pre 预览版：含未广泛验证的新功能，Latest 标记保持在正式版不动。\n\n相对 v3.26.103011 的变化（均为开源构建包含的主代码功能）：\n- 日志面板补分享入口：崩溃日志、普通日志、AI 日志均可直接分享，降低日志收集成本\n- 修复书架 diff 热路径性能问题：不再在每次对比时拼接 shelfKey 字符串，改为直接比较身份字段，解决书架内容变化时可能触发的内存溢出崩溃\n- 图片缓存动态扩容上限收紧为堆预算的 25%，不再逼近整个堆上限，降低大图场景下的内存压力\n- 应用冻结检测去重：重复 init 不再叠加多重 postDelayed 检测链\n\n包名 io.legado.app.c，可与自用版（io.legado.app.dev）共存安装。\n",
         "assets": [
           {
-            "name": "legado_oss_3.26.101209_10906.apk",
-            "size": 39618080,
-            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.101209/legado_oss_3.26.101209_10906.apk"
+            "name": "legado_oss_3.26.103013_10915.apk",
+            "size": 44424373,
+            "browserDownloadUrl": "https://github.com/CCSSNE/legadoC/releases/download/v3.26.103013/legado_oss_3.26.103013_10915.apk"
           }
         ]
       },
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47181,
+      "stars": 47183,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6726,
+      "stars": 6735,
       "sourceUpdatedAt": "2026-10-29T20:22:27Z",
       "githubArchived": false,
       "release": {
@@ -128,7 +128,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3000,
+      "stars": 3002,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -184,7 +184,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1727,
+      "stars": 1734,
       "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
@@ -227,7 +227,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 648,
+      "stars": 647,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -261,7 +261,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 552,
+      "stars": 558,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -378,7 +378,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 325,
+      "stars": 324,
       "sourceUpdatedAt": "2026-10-23T00:39:19Z",
       "githubArchived": false,
       "release": {
@@ -411,7 +411,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 319,
+      "stars": 320,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -441,7 +441,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 271,
+      "stars": 270,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -534,7 +534,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 156,
+      "stars": 158,
       "sourceUpdatedAt": "2026-10-25T16:35:26Z",
       "githubArchived": false,
       "release": {
@@ -562,7 +562,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 150,
+      "stars": 151,
       "sourceUpdatedAt": "2026-10-29T10:09:06Z",
       "githubArchived": false,
       "release": {
@@ -719,7 +719,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 111,
+      "stars": 112,
       "sourceUpdatedAt": "2026-10-21T09:46:20Z",
       "githubArchived": false,
       "release": {
@@ -787,7 +787,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 70,
+      "stars": 71,
       "sourceUpdatedAt": "2026-10-27T07:19:03Z",
       "githubArchived": false,
       "release": {
@@ -856,7 +856,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 62,
+      "stars": 63,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -1238,7 +1238,7 @@
           },
           {
             "name": "阅读_magisk_3.26.103000.zip",
-            "size": 22703022,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.103000/%E9%98%85%E8%AF%BB_magisk_3.26.103000.zip"
           },
           {
