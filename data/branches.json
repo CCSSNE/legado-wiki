@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T23:52:12.843Z",
+  "generatedAt": "2026-10-31T05:51:52.514Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 191,
+      "stars": 192,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47190,
+      "stars": 47192,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -123,7 +123,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3003,
+      "stars": 3004,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -179,7 +179,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1735,
+      "stars": 1739,
       "sourceUpdatedAt": "2026-10-26T15:12:31Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 558,
+      "stars": 560,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -529,7 +529,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 158,
+      "stars": 159,
       "sourceUpdatedAt": "2026-10-25T16:35:26Z",
       "githubArchived": false,
       "release": {
@@ -670,7 +670,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 113,
+      "stars": 114,
       "sourceUpdatedAt": "2026-10-21T09:46:20Z",
       "githubArchived": false,
       "release": {
@@ -782,61 +782,61 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 71,
-      "sourceUpdatedAt": "2026-10-30T17:39:39Z",
+      "stars": 72,
+      "sourceUpdatedAt": "2026-10-31T05:11:29Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.5.0",
-        "tagName": "v2.5.0",
+        "name": "v2.5.2",
+        "tagName": "v2.5.2",
         "prerelease": false,
-        "publishedAt": "2026-10-30T17:49:47Z",
-        "createdAt": "2026-10-30T17:31:21Z",
-        "body": "release: v2.5.0\n\n## 改进\n- 书源更合规：不再内置、也不再自动拉取 GitHub「社区书源」清单，移除「教材」来源。GitHub 书源只搜索你自己添加的仓库，仓库列表随账号（或 WebDAV）的设置同步，换台设备也在。添加第一个仓库后，GitHub 才出现在搜索范围里。\n\n## 修复\n- 点睛阅读开着时使用打字机（或歌词）模式，还没出字的空白处会先冒出重点词的浅色底块；现在文字出来之后才显示标记。\n\n## 验证\n- t9：全部 49 组单元测试（含书源 55、重点词 14、设置同步 19、阅读模式 48 项）、类型检查、样式档位检查与桌面构建通过。\n- e2e：书源（统一搜书、哲学文库、研辞问典、只搜自己添加的 GitHub 仓库）在桌面与 App 界面均通过；打字机隐藏层盖住重点词底色已在 Chromium 149 截图核对。\n- 冒烟 e2e 在「PDF 网页版另存为」一步等不到下载事件；改动前的提交同样失败，与本次改动无关，另行排查。\n\n## 已知限制\n- 已安装的旧版本在升级前仍显示原来的内置书源清单。可使用 SHA256SUMS 校验下载文件。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-10-31T05:29:59Z",
+        "createdAt": "2026-10-31T05:11:15Z",
+        "body": "优化\n- 精简藏书、书单、阅读、听书、论文和设置中的中文说明与确认提示，统一标点，减少界面里的冗长文案。\n- 补齐英文界面的网络错误、备份恢复进度、书库迁移、字体与 Calibre 文件选择、漫画导入和论文翻译阶段提示。\n- 离线语音下载失败时显示简明原因与重试建议，保留已下载部分；各下载线路的详细错误写入日志。\n- 更新桌面界面字体子集，覆盖新版文案。\n\n验证\n- t9：相关回归测试、TypeScript 检查、桌面生产构建、浏览器冒烟和藏书包往返测试通过。\n",
         "assets": [
           {
-            "name": "LightRead-2.5.0-1.x86_64.rpm",
-            "size": 30877255,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead-2.5.0-1.x86_64.rpm"
+            "name": "LightRead-2.5.2-1.x86_64.rpm",
+            "size": 30880765,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead-2.5.2-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.5.0_aarch64.dmg",
-            "size": 24297675,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_aarch64.dmg"
+            "name": "LightRead_2.5.2_aarch64.dmg",
+            "size": 24298105,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.5.0_amd64.AppImage",
-            "size": 106654200,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_amd64.AppImage"
+            "name": "LightRead_2.5.2_amd64.AppImage",
+            "size": 106658296,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.5.0_amd64.deb",
-            "size": 30874812,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_amd64.deb"
+            "name": "LightRead_2.5.2_amd64.deb",
+            "size": 30881714,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_amd64.deb"
           },
           {
-            "name": "LightRead_2.5.0_x64-setup.exe",
-            "size": 18920075,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_x64-setup.exe"
+            "name": "LightRead_2.5.2_x64-setup.exe",
+            "size": 18920335,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.5.0_x64.dmg",
-            "size": 25541678,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_2.5.0_x64.dmg"
+            "name": "LightRead_2.5.2_x64.dmg",
+            "size": 25535532,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24221933,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_aarch64.app.tar.gz"
+            "size": 24221911,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25481625,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/LightRead_x64.app.tar.gz"
+            "size": 25481499,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/SHA256SUMS"
           }
         ]
       },
@@ -880,7 +880,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 58,
+      "stars": 60,
       "sourceUpdatedAt": "2026-10-26T05:14:09Z",
       "githubArchived": false,
       "release": {
@@ -1091,7 +1091,7 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 17,
-      "sourceUpdatedAt": "2026-10-30T05:54:01Z",
+      "sourceUpdatedAt": "2026-10-31T05:08:40Z",
       "githubArchived": false,
       "release": {
         "name": "修复找书换源把未加入书架的书自动加架，以及书架重复书籍",
