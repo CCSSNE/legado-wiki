@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T05:51:52.514Z",
+  "generatedAt": "2026-10-31T12:41:06.818Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47192,
+      "stars": 47194,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6741,
+      "stars": 6747,
       "sourceUpdatedAt": "2026-10-30T21:49:42Z",
       "githubArchived": false,
       "release": {
@@ -123,7 +123,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3004,
+      "stars": 3007,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -151,7 +151,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2228,
+      "stars": 2229,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -179,36 +179,36 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1739,
-      "sourceUpdatedAt": "2026-10-26T15:12:31Z",
+      "stars": 1745,
+      "sourceUpdatedAt": "2026-10-31T12:09:28Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_app_3.26102222",
+        "name": "legado_app_3.26103119",
         "tagName": "beta",
         "prerelease": true,
         "publishedAt": "2026-08-11T18:18:40Z",
-        "createdAt": "2026-10-22T14:40:30Z",
-        "body": "<!-- legado-version-code:38519 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/22**\n- 新增 WebDAV 备份保留数量设置，可自动清理历史备份（默认不清理，填 1 则只保留最新一份）\n- 新增 WebDAV 书籍同步：导入本地书籍后可自动上传到 WebDAV，配合「恢复缺失的本地书」实现多设备直接阅读（默认关闭，可在备份设置中开启）\n\n",
+        "createdAt": "2026-10-31T11:56:40Z",
+        "body": "<!-- legado-version-code:38520 -->\n此版本为提交测试版，可能存在不稳定情况，升级前请备份数据。\n\n**2026/10/31**\n- 修复段落阅读模式下未显示朗读文字高亮的问题，沿用阅读强调色，并支持墨水屏下划线提示\n\n",
         "assets": [
           {
-            "name": "legado_app_3.26102222_releaseA_vc38519.apk",
-            "size": 21872413,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102222_releaseA_vc38519.apk"
+            "name": "legado_app_3.26103119_releaseA_vc38520.apk",
+            "size": 21906820,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26103119_releaseA_vc38520.apk"
           },
           {
-            "name": "legado_app_3.26102222_release_vc38519.apk",
-            "size": 21872411,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102222_release_vc38519.apk"
+            "name": "legado_app_3.26103119_release_vc38520.apk",
+            "size": 21906837,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26103119_release_vc38520.apk"
           },
           {
-            "name": "legado_app_3.26102222_universal_releaseA_vc38519.apk",
-            "size": 27823216,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102222_universal_releaseA_vc38519.apk"
+            "name": "legado_app_3.26103119_universal_releaseA_vc38520.apk",
+            "size": 27857635,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26103119_universal_releaseA_vc38520.apk"
           },
           {
-            "name": "legado_app_3.26102222_universal_release_vc38519.apk",
-            "size": 27823228,
-            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26102222_universal_release_vc38519.apk"
+            "name": "legado_app_3.26103119_universal_release_vc38520.apk",
+            "size": 27857649,
+            "browserDownloadUrl": "https://github.com/LegadoTeam/legado/releases/download/beta/legado_app_3.26103119_universal_release_vc38520.apk"
           }
         ]
       },
@@ -222,7 +222,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 648,
+      "stars": 649,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 560,
+      "stars": 566,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -300,7 +300,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 410,
+      "stars": 412,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -406,7 +406,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 320,
+      "stars": 321,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -436,7 +436,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 270,
+      "stars": 271,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -529,7 +529,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 159,
+      "stars": 160,
       "sourceUpdatedAt": "2026-10-25T16:35:26Z",
       "githubArchived": false,
       "release": {
@@ -783,60 +783,60 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 72,
-      "sourceUpdatedAt": "2026-10-31T05:11:29Z",
+      "sourceUpdatedAt": "2026-10-31T09:42:34Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.5.2",
-        "tagName": "v2.5.2",
+        "name": "v2.6.1",
+        "tagName": "v2.6.1",
         "prerelease": false,
-        "publishedAt": "2026-10-31T05:29:59Z",
-        "createdAt": "2026-10-31T05:11:15Z",
-        "body": "优化\n- 精简藏书、书单、阅读、听书、论文和设置中的中文说明与确认提示，统一标点，减少界面里的冗长文案。\n- 补齐英文界面的网络错误、备份恢复进度、书库迁移、字体与 Calibre 文件选择、漫画导入和论文翻译阶段提示。\n- 离线语音下载失败时显示简明原因与重试建议，保留已下载部分；各下载线路的详细错误写入日志。\n- 更新桌面界面字体子集，覆盖新版文案。\n\n验证\n- t9：相关回归测试、TypeScript 检查、桌面生产构建、浏览器冒烟和藏书包往返测试通过。\n",
+        "publishedAt": "2026-10-31T10:00:42Z",
+        "createdAt": "2026-10-31T09:42:32Z",
+        "body": "release: v2.6.1\n\n优化\n- 金句卡片版式重新排序：弥散、毛玻璃、大字报、稿纸、手账、纸卡放在最前，其后是竖排、书页、留白、克莱因、杂志、划线、星夜、日历、备忘录；第一次打开默认用弥散，已经选过的版式会记住。\n\n验证\n- t9：金句卡片与书摘导出单测、TypeScript 检查、样式令牌检查、书摘端到端（桌面与 App 界面，逐个生成 15 套卡片并核对顺序）通过。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.5.2-1.x86_64.rpm",
-            "size": 30880765,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead-2.5.2-1.x86_64.rpm"
+            "name": "LightRead-2.6.1-1.x86_64.rpm",
+            "size": 32056099,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead-2.6.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.5.2_aarch64.dmg",
-            "size": 24298105,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_aarch64.dmg"
+            "name": "LightRead_2.6.1_aarch64.dmg",
+            "size": 25483113,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_2.6.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.5.2_amd64.AppImage",
-            "size": 106658296,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_amd64.AppImage"
+            "name": "LightRead_2.6.1_amd64.AppImage",
+            "size": 107829752,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_2.6.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.5.2_amd64.deb",
-            "size": 30881714,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_amd64.deb"
+            "name": "LightRead_2.6.1_amd64.deb",
+            "size": 32056364,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_2.6.1_amd64.deb"
           },
           {
-            "name": "LightRead_2.5.2_x64-setup.exe",
-            "size": 18920335,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_x64-setup.exe"
+            "name": "LightRead_2.6.1_x64-setup.exe",
+            "size": 20107598,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_2.6.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.5.2_x64.dmg",
-            "size": 25535532,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_2.5.2_x64.dmg"
+            "name": "LightRead_2.6.1_x64.dmg",
+            "size": 26719410,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_2.6.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 24221911,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_aarch64.app.tar.gz"
+            "size": 25405956,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 25481499,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/LightRead_x64.app.tar.gz"
+            "size": 26659284,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.5.2/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.6.1/SHA256SUMS"
           }
         ]
       },
@@ -1091,7 +1091,7 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 17,
-      "sourceUpdatedAt": "2026-10-31T05:08:40Z",
+      "sourceUpdatedAt": "2026-10-31T10:33:57Z",
       "githubArchived": false,
       "release": {
         "name": "修复找书换源把未加入书架的书自动加架，以及书架重复书籍",
