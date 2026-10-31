@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T12:41:06.818Z",
+  "generatedAt": "2026-10-31T17:48:03.766Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47194,
+      "stars": 47193,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6747,
+      "stars": 6753,
       "sourceUpdatedAt": "2026-10-30T21:49:42Z",
       "githubArchived": false,
       "release": {
@@ -123,7 +123,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3007,
+      "stars": 3008,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -151,7 +151,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2229,
+      "stars": 2230,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -179,7 +179,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1745,
+      "stars": 1749,
       "sourceUpdatedAt": "2026-10-31T12:09:28Z",
       "githubArchived": false,
       "release": {
@@ -222,7 +222,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 649,
+      "stars": 648,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -256,7 +256,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 566,
+      "stars": 572,
       "sourceUpdatedAt": "2026-10-26T13:50:05Z",
       "githubArchived": false,
       "release": {
@@ -300,7 +300,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 412,
+      "stars": 413,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -529,7 +529,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 160,
+      "stars": 161,
       "sourceUpdatedAt": "2026-10-25T16:35:26Z",
       "githubArchived": false,
       "release": {
@@ -881,80 +881,75 @@
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
       "stars": 60,
-      "sourceUpdatedAt": "2026-10-26T05:14:09Z",
+      "sourceUpdatedAt": "2026-10-31T14:59:40Z",
       "githubArchived": false,
       "release": {
-        "name": "NexHub v3.3.0",
-        "tagName": "v3.3.0",
+        "name": "NexHub v3.4.0",
+        "tagName": "v3.4.0",
         "prerelease": false,
-        "publishedAt": "2026-10-26T05:27:47Z",
-        "createdAt": "2026-10-26T05:13:39Z",
-        "body": "# NexHub v3.3.0（正式版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🎉 正式版说明\n\nNexHub **3.3.0 正式版**来了。本次是**翻译与阅读体验的一次集中升级**：小说翻译加入上下文增强、术语闭环、精译模式与 AI 审校；漫画翻译改为「单次优先 + 两阶段兜底」更稳更省；小说阅读器新增多角色朗读、划词翻译、问 AI、笔记导出、划线云同步与阅读趋势图；鸿蒙端补齐 PC（2in1）适配与跨设备接续等特有能力。**基础功能完整、可安全升级。**\n\n> - **这是什么版本**：3.3.0 正式版；Android / Windows / Linux / macOS / iOS / 鸿蒙六平台产物统一发布在同一个 Release。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——书架 / 收藏 / 进度 / 书签 / 历史 / 分组直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥可直接覆盖安装。\n> - **鸿蒙安装方式**：HAP 统一不带签名，请用端侧签名工具自行签名后安装（或 DevEco Studio / hdc 侧载）。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 🌐 翻译体系升级（小说 / 漫画 / 详情页）\n\n- **上下文增强**：分块翻译注入滚动前文译文、批边界续句提示与下一段原文，并支持前章尾部衔接——长章节的指代与语气更连贯，不再「每块各译各的」。\n- **术语闭环**：术语表按当前批原文实际出现与否过滤；译后从译文自动提取术语（新词入库、同译合并别名、异译只记冲突不覆盖），后续分块立即生效；新增「作品术语页」展示全局 + 作品生效表与待裁决冲突，支持采用 / 保留。\n- **译文缓存指纹与过期提示**：原文、术语或翻译风格变更后，旧缓存会被标记过期并提示一键重译；旧缓存无指纹不会误判。\n- **精译模式**：每块并发生成三路不同温度草稿再逐段合成最终译文；草稿部分失败自动降级，绝不因精译失败阻断整章。默认关闭（约 4× token），切换后自动提示译文过期。\n- **AI 审校**：审查页新增云端逐段审校，一次请求产出问题清单与修订全文；修订以「影子」形式存在，只有你采纳才写回缓存。\n- **漫画翻译更稳更省**：改为「单次优先 + 两阶段兜底」——视觉一次出译文，校验失败纠错重试，再降级 OCR → 逐条翻译；严格 ID 协议与定向补译避免漏译错位，每页最多 5 次请求；支持部分结果状态、后台补译与跨会话续补，覆盖层只渲染真实译文并提供徽标与手动重试。\n- **详情页翻译三处修复**：长按不再被手指自然抖动吞掉（40px 容错）；长按标签不再只弹「按标签搜索」提示（手势归属翻译）；翻译开关改为即时保存；已是目标语言时给出「无需翻译」提示。\n\n### 📖 小说阅读与朗读\n\n- **多角色朗读**：角色卡管理（名字 / 别名 / 性别 / 双域音色绑定），路由按「角色绑定 → 全局映射 → 性别槽 → 旁白槽 → 默认」双域兜底；HTTP TTS 滑动窗口并发合成按序播放（首句即播）、音频缓存重听零网络；系统 TTS 逐句按角色分声（鸿蒙退化为单声）。\n- **AI 分镜归因**：两段式识别本章说话人（只返回角色 / 性别 / 置信度，不返回正文），章级缓存；新说话人自动建卡，未配置 AI 时静默回退本地规则。\n- **跨章连播**：角色朗读可开启跨章自动续读，会话隔离防串台。\n- **阅读器六项增强**：选区工具条新增「翻译」「问 AI」（携带章节上下文）；笔记 / 标记支持 Markdown 导出；划线笔记 WebDAV 细粒度同步（逐书文件、集合并集合并）；统计总览新增近 7 / 30 天阅读时长趋势折线图；在线 TTS 内置 Edge 语音并支持音色试听。\n- **互动阅读层**：新增开关与中心点按聚焦（翻页单页且未缩放 / 未旋转时启用），只影响阅读器叠加层。\n- 选区工具条宽屏等宽均分、窄屏横向滑动；工具条背景铺满到屏幕底，消除系统导航栏空白条。\n\n### ⚙️ 设置与 AI\n\n- AI 设置页重排为「通用接口 / 内容生成 / 翻译」三段分区，去掉二级折叠，嵌套小卡改平铺。\n- 新增**「问 AI」专用端点配置卡**：留空自动回落通用接口，对话优先使用专用配置。\n- 云同步页新增「同步划线笔记」按钮与状态卡（本机条数 / 书目数 / 上次同步结果）。\n- Edge TTS 音色下拉与试听按钮统一新样式。\n\n### 📱 鸿蒙（HarmonyOS / OpenHarmony）\n\n- **PC（2in1）适配**：新增设备形态与窗口控制通道，按设备类型区分 PC 与手机——PC 上正常初始化桌面窗口、滚动条、阅读器窗口全屏；**目录导入 6 个入口在 PC 恢复**（系统文件夹选择 + 复制进沙箱），手机端保持降级。\n- **特有能力补齐**：跨设备接续（流转接管后按章节窗口与位置重建播放 / 阅读）、后台下载保活、应用分身（最多 5 实例）、窗口矩形记忆、状态栏点按回到顶部、旋转与 2in1 布局适配。\n- **CI 出包补齐 ECH 引擎**：鸿蒙构建自动交叉编译 `libechproxy.so` 并校验体积与导出符号，干净环境打出的 HAP 不再静默缺失 ECH。\n\n### 🐞 修复\n\n- **Bangumi 401 自动续期**：access_token 过期后自动用 refresh_token 刷新并重试原请求（并发共用一次刷新）；个人 token 无法续期时保留原始错误提示。\n\n### 🙏 致谢\n\n- 小说翻译优化的思路与体验得益于 **wenyi**（MIT © BigDawnGhost）——翻译管线各阶段为净室独立实现，仅在致谢面署名。\n\n### 🧹 内部\n\n- 补齐本地化生成产物（问 AI / 划线同步 / 试听等文案）；注释与文档延续中性表述清理；无破坏性依赖变更。\n\n---\n\n## ⬆️ 升级方式\n\n- **Android / 桌面端**：沿用同一签名密钥，可直接覆盖安装；也可在应用内「设置 → 关于 → 检查更新」自动升级。\n- **鸿蒙**：下载 `NexHub-ohos-arm64-unsigned.hap`，自行签名后覆盖安装。\n\n## ⚠️ 已知限制\n\n- 精译模式与 AI 审校依赖已配置的 AI 端点，会产生更多 token 消耗（精译约 4×）。\n- 多角色朗读的 AI 分镜需要配置小说总览端点；未配置时回退本地规则（精度略低）。\n- 鸿蒙：本地文件夹导入、自定义任意目录、插件 / 备份导出仍受系统目录选择能力限制（PC 形态已恢复）；模拟器（x64）无视频播放与 ECH 引擎。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n",
+        "publishedAt": "2026-10-31T15:10:12Z",
+        "createdAt": "2026-10-31T14:59:19Z",
+        "body": "# NexHub v3.4.0（正式版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🎉 正式版说明\n\nNexHub **3.4.0 正式版**来了。本次主角是**桌面卡片（小组件）**：把「继续观看、追更、下载、统计」直接摆到手机桌面，配色与统计页同源、深浅色跟随系统；同时修掉三类真问题——长列表入场动画刷屏、中英混排漏译、统计口径走漏隐藏源，设置里还补上了「软件公告」与「联系我们」。**基础功能完整、可安全升级。**\n\n> - **这是什么版本**：3.4.0 正式版；Android / Windows / Linux / macOS / iOS / 鸿蒙六平台产物统一发布在同一个 Release。\n> - **数据兼容性**：经代码核查，**无破坏性数据变更**——书架 / 收藏 / 进度 / 书签 / 历史 / 分组直接沿用；旧源 JSON 无需修改、无需重新导入；沿用同一签名密钥可直接覆盖安装。\n> - **鸿蒙安装方式**：HAP 统一不带签名，请用端侧签名工具自行签名后安装（或 DevEco Studio / hdc 侧载）。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON（应用内「源管理 / 导入源」）才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 🖼️ 桌面卡片（Android 小组件 · 鸿蒙服务卡片）\n\n- **8 类卡片**：继续观看、追更（收藏总数与最近收藏）、下载、统计、热力图、大数字、分模块、连续打卡。Android 按尺寸自动切换小 / 中 / 大布局；鸿蒙提供 10 张可拉伸卡片，桌面拖拽即可换尺寸。\n- **继续观看显示真进度**：不再只是「上次看到哪一话」的旧标题，而是按实际播放 / 阅读位置显示第 N 话或第 N 集（影视附带已看分钟数），最多 8 条槽位（默认 4 条），带封面缩略图。\n- **统计类卡片与 App 统计页同源**：总时长 / 作品数 / 会话数三指标分色大数字，配当月月历缩略；热力图卡是当月打卡月历（格内日期数字 + 「少 → 多」图例）；大数字卡、分模块卡、连续打卡卡各有侧重。\n- **点一下就能用**：继续观看直达作品详情页，统计卡直达统计页，其余卡片一键回到对应模块。\n- **跟着应用主题走**：卡片底色、文字与强调色跟随当前主题，系统切深色 / 浅色后卡片自动变，不需要重开应用。\n- **个性化设置**：新增「设置 → 外观与语言 → 桌面卡片」，可选背景来源（封面 / 主题渐变 / 纯色）、模糊强度、不透明度，以及继续观看条数（3–8）。\n- **数据实时**：播放进度、历史与下载任务变化后自动重算并推送；应用启动首帧、切回前台各补推一次，卡片不会长期停在旧数据上。\n\n### 🔔 公告与联系\n\n- 设置新增「关于 → 软件公告」：历史公告按日期倒序展示，支持手动刷新，打开即标记已读，不会下次启动又弹一遍。\n- 关于页新增「联系我们」分组：GitHub 仓库与官方 QQ 群，点击直接跳转。\n- 设置搜索同步收录公告页与 QQ 群入口，搜「公告」「反馈」「QQ」都能找到。\n\n### 🐞 修复\n\n- **入场动画不再刷屏**：列表交错入场从第 13 条起起点越界，触发动画库断言、每帧往日志里刷错误；现在只对前 6 条做交错，并把起点 / 终点夹在合法区间，长列表入场反而更利落。\n- **中英混排不再漏译**：标题里夹着成句英文时（例如「某某某 Season 2」这类），不再被判定为「已是目标语言」而原样返回；对自动检测失灵的混排文本会显式指定外文源语言重译一次，并折叠紧邻的重复片段；界面文本遇到这种回显不写缓存，改由 AI 兜底真正翻译。\n- **统计不再算入隐藏源**：统计总览的作品列表按源可见性过滤，总览、近 7 / 30 天活跃与平均会话都按可见列表重算；在设置里切换隐藏或年龄限制开关后立即生效，不再残留已隐藏源的记录。\n\n### 🪟 平台与构建\n\n- **Windows 兼容新版 CMake**：VS 自带 CMake 4.x 移除了对旧式最低版本声明的兼容，PDF 组件在下载配置阶段直接失败、构建中断；现已在项目级注入策略下限（并传给派生的子构建进程），Windows 端构建恢复正常。\n\n### 📄 文档\n\n- README 中英双语改为居中头部：应用图标、一句话定位、技术栈与发行徽章、平台徽章、语言切换与 QQ 群入口，一眼看清项目定位与下载渠道。\n\n### 🧹 内部\n\n- 桌面卡片的快照键、背景预渲染与主题快照做了跨端对齐（Android 与鸿蒙共用同一份数据契约）；本地化文案补齐中英两版。无破坏性依赖变更。\n\n---\n\n## ⬆️ 升级方式\n\n- **Android / 桌面端**：沿用同一签名密钥，可直接覆盖安装；也可在应用内「设置 → 关于 → 检查更新」自动升级。\n- **鸿蒙**：下载 `NexHub-ohos-arm64-unsigned.hap`，自行签名后覆盖安装。\n- **桌面卡片**：本版起在桌面长按空白处 → 添加卡片即可找到 NexHub 的 8 类卡片；旧版添加过的统计卡（2×2 老布局）请移除后重新添加一次。\n\n## ⚠️ 已知限制\n\n- 桌面卡片仅 Android 与鸿蒙提供（iOS 与桌面端暂不支持）。\n- 追更卡目前展示收藏总数与最近收藏，联网「新章检测」尚未接入，后续版本补上。\n- 桌面卡片不做系统级定时刷新，数据以应用最后一次推送为准（鸿蒙另有约 30 分钟的系统兜底刷新）；建议添加卡片后先打开一次应用。\n- Android 大卡固定显示 4 条记录（系统卡片容器不支持动态增删行），鸿蒙大卡显示 5 条。\n- 鸿蒙卡片背景为主题色 / 纯色（平台不提供跨进程动态背景图通道），封面缩略图正常显示。\n- 统计类卡片与热力图按月生成，跨月后需要应用刷新一次才会切到新月份。\n- 卡片配色依赖应用最近一次主题快照：更换主题后，需打开一次应用才会同步到卡片。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n",
         "assets": [
           {
             "name": "app-arm64-v8a-release.apk",
-            "size": 83560850,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/app-arm64-v8a-release.apk"
+            "size": 83648302,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/app-arm64-v8a-release.apk"
           },
           {
             "name": "app-armeabi-v7a-release.apk",
-            "size": 79723186,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/app-armeabi-v7a-release.apk"
+            "size": 79876406,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/app-armeabi-v7a-release.apk"
           },
           {
             "name": "app-release.apk",
-            "size": 202222786,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/app-release.apk"
+            "size": 202636654,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/app-release.apk"
           },
           {
             "name": "app-x86_64-release.apk",
-            "size": 89400924,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/app-x86_64-release.apk"
+            "size": 89618184,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/app-x86_64-release.apk"
           },
           {
             "name": "NexHub-ios.ipa",
-            "size": 41936870,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-ios.ipa"
+            "size": 41960109,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-ios.ipa"
           },
           {
             "name": "NexHub-linux-x64.AppImage",
-            "size": 132332024,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-linux-x64.AppImage"
+            "size": 132360696,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-linux-x64.AppImage"
           },
           {
             "name": "NexHub-linux-x64.deb",
-            "size": 28733602,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-linux-x64.deb"
+            "size": 28747028,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-linux-x64.deb"
           },
           {
             "name": "NexHub-linux-x64.tar.gz",
-            "size": 35623693,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-linux-x64.tar.gz"
+            "size": 35649692,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-linux-x64.tar.gz"
           },
           {
             "name": "NexHub-macos.dmg",
-            "size": 79851206,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-macos.dmg"
+            "size": 79911998,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-macos.dmg"
           },
           {
             "name": "NexHub-macos.zip",
-            "size": 71129801,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-macos.zip"
+            "size": 71176218,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-macos.zip"
           },
           {
-            "name": "NexHub-ohos-arm64-unsigned.hap",
-            "size": 103592526,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-ohos-arm64-unsigned.hap"
-          },
-          {
-            "name": "NexHub-setup-3.3.0.exe",
-            "size": 48074275,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-setup-3.3.0.exe"
+            "name": "NexHub-setup-3.4.0.exe",
+            "size": 48098033,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-setup-3.4.0.exe"
           },
           {
             "name": "NexHub-windows-x64.zip",
-            "size": 65586402,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.3.0/NexHub-windows-x64.zip"
+            "size": 65602616,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-windows-x64.zip"
           }
         ]
       },
@@ -1216,35 +1211,30 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 6,
-      "sourceUpdatedAt": "2026-10-31T00:55:01+08:00",
+      "sourceUpdatedAt": "2026-10-31T23:46:41+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.102718",
-        "tagName": "阅读_E-ink_3.26.102718",
+        "name": "阅读_E-ink_3.26.103112",
+        "tagName": "阅读_E-ink_3.26.103112",
         "prerelease": false,
-        "publishedAt": "2026-10-27T19:52:06+08:00",
-        "createdAt": "2026-10-27T19:52:06+08:00",
-        "body": "- 流态翻页支持反转和速度\r\n- 统一交互和视觉更加美观",
+        "publishedAt": "2026-10-31T23:46:41+08:00",
+        "createdAt": "2026-10-31T23:46:41+08:00",
+        "body": "- 优化一下书架\r\n- 修复已知问题\r\n- 新增未知问题",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.102718.apk",
-            "size": 20953070,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102718/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.apk"
+            "name": "阅读_E-ink_3.26.103112.apk",
+            "size": 20957166,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.103112/%E9%98%85%E8%AF%BB_E-ink_3.26.103112.apk"
           },
           {
-            "name": "阅读_magisk_3.26.102718.zip",
-            "size": 22702395,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.102718/%E9%98%85%E8%AF%BB_magisk_3.26.102718.zip"
-          },
-          {
-            "name": "阅读_E-ink_3.26.102718.zip",
+            "name": "阅读_E-ink_3.26.103112.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.103112.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.102718.tar.gz",
+            "name": "阅读_E-ink_3.26.103112.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.102718.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.103112.tar.gz"
           }
         ]
       },
