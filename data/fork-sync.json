@@ -1360,9 +1360,9 @@
     "moshui": {
       "name": "墨水",
       "repo": "radiumCN/inkwell",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:30:11.463Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-11-01T09:40:00.742Z",
       "backupRepo": "legado-backup/legado-moshui",
       "activeBranch": "main",
       "events": [
@@ -1370,6 +1370,11 @@
           "at": "2026-10-05T01:30:11.463Z",
           "type": "synced",
           "message": "radiumCN/inkwell:main → legado-backup/legado-moshui:main 已同步"
+        },
+        {
+          "at": "2026-11-01T09:40:00.742Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1437,5 +1442,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-01T02:31:25.264Z"
+  "checkedAt": "2026-11-01T09:40:04.433Z"
 }
