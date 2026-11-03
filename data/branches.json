@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T23:37:57.363Z",
+  "generatedAt": "2026-11-03T06:54:31.696Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 45,
+          "stars": 46,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47208,
+      "stars": 47209,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,56 +85,56 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6800,
-      "sourceUpdatedAt": "2026-11-02T18:49:36Z",
+      "stars": 6802,
+      "sourceUpdatedAt": "2026-11-03T05:01:22Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.20",
-        "tagName": "3.26.20",
+        "name": "Release 3.26.21",
+        "tagName": "3.26.21",
         "prerelease": false,
-        "publishedAt": "2026-11-02T02:52:52Z",
-        "createdAt": "2026-11-02T02:22:23Z",
-        "body": "### 更新内容\n\n* ci(verify): core/full 改为并行 job；版本号 3.26.20\n* fix(test): 移除合并解冲突留下的重复 import\n* ci(verify): 拆分 core / full 两个变体的构建，避免并行编译 OOM\n* docs: 修复 Deploy Docs 构建失败\n* (Optimise)Formatter: 富文本渲染; RTF rendering (#2521)\n* fix(reader): 长按翻译按钮重新翻译当前章节 (#2526)\n* fix(reader): keep underlines inside the content clip (#2529)\n* fix(reader): 段评弹层关闭 sheet 手势，修复内嵌网页滑不动\n* fix(manga): 阅读器文字改用 LegadoTheme\n* feat(manga): core/full 双包拆分与翻译面板整理\n* feat(manga): 引擎抽取、全局清理与字号自适应排版\n* feat(manga): 漫画一些问题\n* feat(manga): 设置面板分类 tab 移到底部，点击区域改为整屏配置\n* fix(reader): 点击区域改为格子内下拉，修复与更多面板的层级冲突\n* test(tts): isolate endpoint smoke test from playback settings\n* fix(explore): retain layout flows across recompositions\n* feat(manga): add configurable translation, OCR, inpainting and reader tools\n* 视频播放: 播放页信息区重构、画中画与进度保存串行化\n* 视频播放: 播放页菜单按书源能力门控并收进 UiState\n* 视频播放: 补齐书源登录、自定义按钮与编辑书源菜单\n* 视频播放收尾: 目录事务化、Insets 适配与残留清理\n* 视频播放对齐上游(5/5): RSS 文章视频\n* 视频播放对齐上游(4/4): 加入书架后预取详情与目录\n* 视频播放对齐上游(3/4): 测试适配新架构并修复进度覆盖\n* 视频播放对齐上游(2/4): 悬浮小窗 + 后台保活\n* 视频播放对齐上游(1/4): 播放会话下沉到 VideoPlay + 前台服务托管\n* fix: 修复版本升级时默认数据迁移被跳过 (#2498)\n* feat(cache): 新增缓存维护，支持清理孤立章节缓存与重算字数 (#2509)\n* fix(reader): Google/视差翻页的就绪等待加上限、保留帧自愈、重捕获不闪烁\n* fix(reader): iOS 仿真翻页的就绪等待加上限，重捕获时保持卷曲\n* feat(reader): 段评气泡包（书源 dp: 约定 / 气泡管理 / 阅读内快速切换）(#2513)\n* fix(reader): retain committed page state during rapid turns\n* feat(reader): add Google curl and parallax page turns\n* fix(reader): apply page turn speed to iOS curl\n* feat(reader): add iOS-style simulated page turning\n* fix(video): 修复分页规则兼容、解析线程与后台进度保存\n* fix(video): 评审修复——效果重放、失败重试与控制层联动\n* fix(book-info): kind 标签按链接格式校验后再拆分跳转\n* fix(explore): 翻页参数兜底只对标签跳转的运行时地址生效\n* feat(explore): 发现页网格改瀑布流布局，网格封面接入比例自适应\n* fix(import): 批量导入预览列表改用 entryId 作 item key，重复条目不再崩溃\n* fix(cast): 胶囊只剩两个（英文撇号钉死引号栈）+ 分配窗口加复制按钮 (#2479)\n* feat(book-info): 作者名拆分为多个可点击标签\n* feat(explore): 书源级翻页参数 pageParam\n* chore: 忽略本地 resource 目录\n* fix(video): 支持 HLS 播放并隐藏单章上下章按钮\n* feat(book-info): 分类标签可点击跳转发现页\n* fix(video): 视频路由补私密闸门并同步 Fragment 入口\n* fix(video): 修复整分支评审的 Critical/Important 问题\n* feat(bookshelf): 视频类型标签\n* fix(video): 补视频路由导航与全屏判定\n* feat(video): 视频播放路由与入口\n* fix(video): 缓冲中切后台也暂停播放\n* fix(video): 配置变化不暂停，后台加载不自动开播\n* fix(video): 后台暂停并保证播放器初始化幂等\n* feat(video): 视频播放界面\n* fix(video): 修复播放进度覆盖与保存可靠性\n* feat(video): 视频播放器 ViewModel 与契约\n* fix(bookshelf): 修正视频分组预览与网络未分组查询\n* feat(bookshelf): 新增视频分组\n* fix(source): 补齐视频类型的本地化与类型转换\n* feat(source): 新增视频类型书源\n* docs: 视频书源实现计划\n* docs: 视频类型书源支持设计文档\n* feat(explore): 发现顶栏改为单书源搜索入口，书源选择改为可筛选底部 sheet\n* fix(manga): 整章拼接超长条漫图拆段渲染，修复 Constraints 尺寸溢出崩溃 (#2475)\n* fix(book-info): 简介纯文本分支二次转义，& < > 显示为 HTML 实体 (#2466)\n* fix(reader): 开标点连同 Latin 单词整体换行，不再拆词\n* fix(book-info): useweb 简介经 FrameLayout 容器承载，规避 Vulkan drawVk 原生崩溃 (#2468)\n* feat(highlight): 高亮规则新增边框样式，预览渲染修复与示例句加长\n* feat(book-info): 关联书籍移至简介下方，支持无规则时按作者搜索兜底\n* fix(reader): 关联书籍位置\n* fix: 关联书籍调试之\n* opt: memory usage (#2478)\n* perf(reader): 排版宽度链路去装箱，字形级宽度改 FloatArray\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 (#2476)\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 (#2474)\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） (#2473)\n* reader: cut pagination peak memory (streaming, merge, buffer release)\n* feat(reader): 可配置 AI 对话入口携带阅读上下文 & 修复换图标入口 IME 双重避让 (#2472)\n* feat(reader): add configurable AI chat entry with reading context\n* fix(ui): prevent double IME avoidance on alternate launcher activities\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） (#2465)\n* feat(reader): 分页失败原因带上异常 message 与栈顶\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 (#2450)\n\n## What's Changed\n* feat: 内置词典规则更新为汉典并清理失效的百度汉语规则 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* fix(reader): 引号跨段时角色气泡不再把整章排版打挂 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2461\n* feat(reader): 阅读主题列表弹窗（网格/流式/管理/导入导出） by @qmzd111 in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* fix&feat: add configurable AI chat entry with reading context & fix IME double avoidance by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* feat(ui): 搜索/发现/详情页封面按原图宽高比自适应（默认固定 5:7，设置可关） by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2473\n* fix(cast): 人物档案读取被夹到 80 个，配音页与人物列表少列人 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2474\n* feat(cast): AI 分配角色带上「过了几章没开口」与下一章开头 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2476\n* opt: memory usage by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2478\n* fix(cast): 胶囊只剩两个（英文撇号钉死引号栈）+ 分配窗口加复制按钮 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2479\n* feat(reader): 段评气泡包（书源 dp: 约定 / 气泡管理 / 阅读内快速切换） by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2513\n* feat(reader): 新增 iOS 仿真翻页 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2510\n* feat(reader): 新增 Google 仿真和视差翻页 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2511\n* feat(cache): 新增缓存维护，支持清理孤立章节缓存与重算字数 by @yjcchaos in https://github.com/HapeLee/legado-with-MD3/pull/2509\n* fix: 修复版本升级时默认数据迁移被跳过 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2498\n* feat(video): 新增视频类型书源与播放器 by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2482\n* feat(video): 视频播放器对齐上游（重整 #2482） by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2515\n* fix(reader): keep underlines inside the content clip by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2529\n* fix(reader): 长按翻译按钮重新翻译当前章节 by @wu5bocheng in https://github.com/HapeLee/legado-with-MD3/pull/2526\n\n## New Contributors\n* @xuezhi123go made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2450\n* @qmzd111 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2465\n* @izumisagirii made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2472\n* @shaoyangz1 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2473\n* @Peyilo made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2510\n* @yjcchaos made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2509\n* @wu5bocheng made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2526\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.18...3.26.20",
+        "publishedAt": "2026-11-03T05:01:20Z",
+        "createdAt": "2026-11-03T04:12:11Z",
+        "body": "### 更新内容\n\n* fix(reader): 修复滚动模式 epub 图片闪灰并自适应图片缓存容量 (#2547)\n* fix(a11y): 修复阅读与听书控件的无障碍语义 (#2534)\n* fix(login): avoid Miuix squircle offscreen rendering around WebView (#2546)\n* fix(reader): 修复英文符号断行与行尾标点越界\n* fix(reorder): 修复列表拖拽状态与书源排序同步\n* feat(about): 添加第三方开源许可页面 (#2548)\n* refactor(reader): 简化 iOS Curl 内核并修复 Google Curl 阴影 (#2533)\n* fix: 恢复段评网页兼容性并修复悬浮底栏避让 (#2545)\n* ci(verify): core/full 改为并行 job；版本号 3.26.20\n* fix(test): 移除合并解冲突留下的重复 import\n* ci(verify): 拆分 core / full 两个变体的构建，避免并行编译 OOM\n* docs: 修复 Deploy Docs 构建失败\n* (Optimise)Formatter: 富文本渲染; RTF rendering (#2521)\n* fix(reader): 长按翻译按钮重新翻译当前章节 (#2526)\n* fix(reader): keep underlines inside the content clip (#2529)\n* fix(reader): 段评弹层关闭 sheet 手势，修复内嵌网页滑不动\n* fix(manga): 阅读器文字改用 LegadoTheme\n* feat(manga): core/full 双包拆分与翻译面板整理\n* feat(manga): 引擎抽取、全局清理与字号自适应排版\n* feat(manga): 漫画一些问题\n* feat(manga): 设置面板分类 tab 移到底部，点击区域改为整屏配置\n* fix(reader): 点击区域改为格子内下拉，修复与更多面板的层级冲突\n* test(tts): isolate endpoint smoke test from playback settings\n* fix(explore): retain layout flows across recompositions\n* feat(manga): add configurable translation, OCR, inpainting and reader tools\n* 视频播放: 播放页信息区重构、画中画与进度保存串行化\n* 视频播放: 播放页菜单按书源能力门控并收进 UiState\n* 视频播放: 补齐书源登录、自定义按钮与编辑书源菜单\n* 视频播放收尾: 目录事务化、Insets 适配与残留清理\n* 视频播放对齐上游(5/5): RSS 文章视频\n* 视频播放对齐上游(4/4): 加入书架后预取详情与目录\n* 视频播放对齐上游(3/4): 测试适配新架构并修复进度覆盖\n* 视频播放对齐上游(2/4): 悬浮小窗 + 后台保活\n* 视频播放对齐上游(1/4): 播放会话下沉到 VideoPlay + 前台服务托管\n* fix: 修复版本升级时默认数据迁移被跳过 (#2498)\n* feat(cache): 新增缓存维护，支持清理孤立章节缓存与重算字数 (#2509)\n* fix(reader): Google/视差翻页的就绪等待加上限、保留帧自愈、重捕获不闪烁\n* fix(reader): iOS 仿真翻页的就绪等待加上限，重捕获时保持卷曲\n* feat(reader): 段评气泡包（书源 dp: 约定 / 气泡管理 / 阅读内快速切换）(#2513)\n* fix(reader): retain committed page state during rapid turns\n* feat(reader): add Google curl and parallax page turns\n* fix(reader): apply page turn speed to iOS curl\n* feat(reader): add iOS-style simulated page turning\n* fix(video): 修复分页规则兼容、解析线程与后台进度保存\n* fix(video): 评审修复——效果重放、失败重试与控制层联动\n* fix(book-info): kind 标签按链接格式校验后再拆分跳转\n* fix(explore): 翻页参数兜底只对标签跳转的运行时地址生效\n* feat(explore): 发现页网格改瀑布流布局，网格封面接入比例自适应\n* fix(import): 批量导入预览列表改用 entryId 作 item key，重复条目不再崩溃\n* fix(cast): 胶囊只剩两个（英文撇号钉死引号栈）+ 分配窗口加复制按钮 (#2479)\n* feat(book-info): 作者名拆分为多个可点击标签\n* feat(explore): 书源级翻页参数 pageParam\n* chore: 忽略本地 resource 目录\n* fix(video): 支持 HLS 播放并隐藏单章上下章按钮\n* feat(book-info): 分类标签可点击跳转发现页\n* fix(video): 视频路由补私密闸门并同步 Fragment 入口\n* fix(video): 修复整分支评审的 Critical/Important 问题\n* feat(bookshelf): 视频类型标签\n* fix(video): 补视频路由导航与全屏判定\n* feat(video): 视频播放路由与入口\n* fix(video): 缓冲中切后台也暂停播放\n* fix(video): 配置变化不暂停，后台加载不自动开播\n* fix(video): 后台暂停并保证播放器初始化幂等\n* feat(video): 视频播放界面\n* fix(video): 修复播放进度覆盖与保存可靠性\n* feat(video): 视频播放器 ViewModel 与契约\n* fix(bookshelf): 修正视频分组预览与网络未分组查询\n* feat(bookshelf): 新增视频分组\n* fix(source): 补齐视频类型的本地化与类型转换\n* feat(source): 新增视频类型书源\n* docs: 视频书源实现计划\n* docs: 视频类型书源支持设计文档\n\n## What's Changed\n* fix(cast): 胶囊只剩两个（英文撇号钉死引号栈）+ 分配窗口加复制按钮 by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2479\n* feat(reader): 段评气泡包（书源 dp: 约定 / 气泡管理 / 阅读内快速切换） by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2513\n* feat(reader): 新增 iOS 仿真翻页 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2510\n* feat(reader): 新增 Google 仿真和视差翻页 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2511\n* feat(cache): 新增缓存维护，支持清理孤立章节缓存与重算字数 by @yjcchaos in https://github.com/HapeLee/legado-with-MD3/pull/2509\n* fix: 修复版本升级时默认数据迁移被跳过 by @xuezhi123go in https://github.com/HapeLee/legado-with-MD3/pull/2498\n* feat(video): 新增视频类型书源与播放器 by @shaoyangz1 in https://github.com/HapeLee/legado-with-MD3/pull/2482\n* feat(video): 视频播放器对齐上游（重整 #2482） by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2515\n* fix(reader): keep underlines inside the content clip by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2529\n* fix(reader): 长按翻译按钮重新翻译当前章节 by @wu5bocheng in https://github.com/HapeLee/legado-with-MD3/pull/2526\n* fix: 段评网页回到半屏 WebView 弹窗；悬浮底栏不再重复让出底部 inset by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2545\n* refactor(reader): 简化 iOS Curl 内核并修复 Google Curl 阴影 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2533\n* feat(about): 添加第三方开源许可页面 by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2548\n\n## New Contributors\n* @Peyilo made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2510\n* @yjcchaos made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2509\n* @wu5bocheng made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2526\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.19...3.26.21",
         "assets": [
           {
-            "name": "legado-3.26.20-core-arm64-v8a.apk",
-            "size": 21686910,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-core-arm64-v8a.apk"
+            "name": "legado-3.26.21-core-arm64-v8a.apk",
+            "size": 21696202,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-core-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.20-core-armeabi-v7a.apk",
-            "size": 21226726,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-core-armeabi-v7a.apk"
+            "name": "legado-3.26.21-core-armeabi-v7a.apk",
+            "size": 21236014,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-core-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.20-core-universal.apk",
-            "size": 28259385,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-core-universal.apk"
+            "name": "legado-3.26.21-core-universal.apk",
+            "size": 28268660,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-core-universal.apk"
           },
           {
-            "name": "legado-3.26.20-full-arm64-v8a.apk",
-            "size": 72312010,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-full-arm64-v8a.apk"
+            "name": "legado-3.26.21-full-arm64-v8a.apk",
+            "size": 72338219,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-full-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.20-full-armeabi-v7a.apk",
-            "size": 59285304,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-full-armeabi-v7a.apk"
+            "name": "legado-3.26.21-full-armeabi-v7a.apk",
+            "size": 59311539,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-full-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.20-full-universal.apk",
-            "size": 198784163,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/legado-3.26.20-full-universal.apk"
+            "name": "legado-3.26.21-full-universal.apk",
+            "size": 198810390,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/legado-3.26.21-full-universal.apk"
           },
           {
             "name": "mapping-core.txt",
-            "size": 324017040,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/mapping-core.txt"
+            "size": 321442461,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/mapping-core.txt"
           },
           {
             "name": "mapping-full.txt",
-            "size": 331043705,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.20/mapping-full.txt"
+            "size": 328186302,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.21/mapping-full.txt"
           }
         ]
       },
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3027,
+      "stars": 3028,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2236,
+      "stars": 2237,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1774,
+      "stars": 1775,
       "sourceUpdatedAt": "2026-11-02T15:12:01Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "hlning/cmbok_app",
       "term": "legado-branch-cmbok",
       "note": "独立多平台应用，发布 Windows / iOS / 安卓安装包，兼容阅读书源。",
-      "stars": 596,
+      "stars": 597,
       "sourceUpdatedAt": "2026-11-02T11:34:56Z",
       "githubArchived": false,
       "release": {
@@ -325,7 +325,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 414,
+      "stars": 413,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -471,7 +471,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 323,
+      "stars": 322,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -501,7 +501,7 @@
       "term": "legado-branch-max",
       "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
       "manualAbandoned": "作者已声明不再维护",
-      "stars": 271,
+      "stars": 270,
       "sourceUpdatedAt": "2026-06-18T16:23:25Z",
       "githubArchived": true,
       "release": {
@@ -802,52 +802,13 @@
       "forkOf": null
     },
     {
-      "id": "max-cichen",
-      "name": "阅读 MAX 辞晨版",
-      "tag": "max-cichen",
-      "repo": "GEd520/legados",
-      "term": "legado-branch-max-cichen",
-      "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 78,
-      "sourceUpdatedAt": "2026-08-02T07:00:38Z",
-      "githubArchived": false,
-      "release": {
-        "name": "最新版8.2",
-        "tagName": "beta-3.26.080214",
-        "prerelease": true,
-        "publishedAt": "2026-07-29T12:54:34Z",
-        "createdAt": "2026-07-12T03:55:56Z",
-        "body": "**2026/08/02**\r\n- 修复书籍详情页 useWeb 简介渲染污染 showBrowser 页面显示的问题：两者共用 WebViewPool 的 GLOBAL 池导致复用污染（杀后台后池清空故正常）。新增 Scope.INLINE，BookInfoActivity useWeb 渲染改从 INLINE 池获取与 showBrowser 隔离，BackstageWebView 同步补全 INLINE 分支。\r\n- 新增应用主题「导入应用主题设置」选项：三点菜单新增导入设置入口，勾选要导入的组件（主题/顶栏/底栏/封面图集）后持久化保存，后续导入自动套用，未勾选的跳过。同时修复导入后主题管理列表不显示——restoreThemeAsset 漏调 ThemeConfig.addConfig 注册主题，补齐注册逻辑。\r\n- 优化气泡管理列表项排版，对齐应用主题三按键布局：单个「应用」按键重构为 buttonRow（textBox 信息区底部）含应用/编辑/更多三按键，bg_action_button 背景 + Space 分隔；整行点击与 tvMore 弹 showActions，长按进多选。同时修复 foreground 在 API 21-22 崩溃（加版本判断）。\r\n- 优化气泡颜色渲染：普通颜色作用于边框、强调颜色作用于数字。默认 SVG 模板 `${color}` 拆为 `${borderColor}`/`${textColor}`；内置气泡 emphasisColor 改为 normalColor 使边框数字同色，本地气泡默认边框灰数字红；渲染保留 `${color}` 兼容旧模板，cacheKey 同步含两颜色。\r\n- 优化强制气泡渲染：移植参考版 ParagraphBubbleRenderer 增强，URL 支持 displayText 覆盖数字文本、displayColor 覆盖数字颜色；新增 replaceBubbleValue 用正则匹配 `${name}`/`$name`/`{{name}}` 三种占位符格式并支持多别名（borderColor/color、textColor/displayColor、displayText/num），queryValue 参数名忽略大小写；保留边框普通色/数字强调色的分色逻辑，displayColor 只覆盖数字颜色不影响边框。\r\n- 新增图片文件夹导入漫画：本地导入界面长按文件夹弹出「导入漫画」菜单，以文件夹名为书名、子文件夹为章节（无子文件夹则整文件夹为一章），图片按文件名自然排序生成 `<img>` 正文。ImageFolderBook 解析器支持 content:// 和 file:// URI，ImageProvider 通过 ImageFolderBook.getImage 加载本地图片流。\r\n- 修复本地图片书从书架或详情页重新进入时变回文本模式：Fragment.startActivityForBook 和 BookInfoActivity 的路由判断含 `!book.isLocal` 限制，本地图片书被排除出 ReadMangaActivity；移除该限制使三处入口（Context/Fragment/BookInfoActivity）统一为 `book.isImage && AppConfig.showMangaUi`。\r\n\r\n**2026/08/01** \r\n- 修复播放界面通过自定义按钮回调跳转后再播放新视频，旧视频仍在继续播放的问题：VideoPlayerActivity 启动模式由 singleTask 改为 standard，新实例创建时自动 finish 旧实例并释放其播放器；新增 startNewSession 方法在启动新视频前停止旧播放、重置状态；onDestroy 在被替换时跳过操作 VideoPlay 单例（避免影响新实例），onResume 新会话启动时跳过恢复旧视频。返回栈支持逐级返回，不管跳转多少次按返回键都能回到上一个界面。\r\n- 修复视频播放通知标题显示对象引用而非视频标题的问题：字符串插值 `$VideoPlay.videoTitle` 实际插值的是 VideoPlay 对象，`.videoTitle` 变成字面文本，改为 `${VideoPlay.videoTitle ?: \"\"}`。\r\n- 修复 ExoPlayer 并发请求时 HTTP 请求头全局串改竞态：resolvingDataSource 原先通过 `okhttpDataFactory.setDefaultRequestProperties` 全局修改共享工厂的请求头，多请求并发时 headers 相互覆盖；改为使用 `DataSpec.withRequestHeaders` 将请求头绑定到每个请求，彻底消除竞态。\r\n- 修复 VideoPlay.isLoading 时序错误导致 releaseAllVideos 状态重置失效：原代码在 startPlay 末尾同步设置 `isLoading = false`，但加载协程异步运行尚未完成；且 singleUrl/rss 两条路径有 return 永远不会执行到该行。改为在每个协程的成功/错误回调中设置。\r\n- 修复切换视频时旧实例 onDestroy 触发 releaseAllVideos 误重新实例播放器的问题：旧 Activity 被新实例替换时，playerView.release() → releaseVideos() → releaseAllVideos() 会操作已指向新实例的 videoManager，导致新实例的播放器被释放、加载协程被取消。新增 skipReleaseAllVideos 标志，被替换时设置该标志使 releaseAllVideos 直接返回，仅由 GSY 框架释放旧实例自身的 surface 资源。\r\n- 修复 saveRead 自动获取进度时未实际播放（pos<=0）仍保存进度覆盖有效记录的问题：自动模式（参数为 null）下 pos<=0 跳过保存，显式传 0（切集重置）仍正常保存。\r\n- 修复弹幕 FileInputStream 泄漏：createParser 中 FileInputStream 传给 loader 后永不关闭，改为 readBytes 读入内存后用 ByteArrayInputStream 交给 loader，文件流即时关闭。\r\n- 修复切换章节后弹幕仍显示旧内容、新解析器无法激活的问题：initDanmaku 切集时未释放旧弹幕实例，DanmakuView.isPrepared 仍为 true 导致 onPrepareDanmaku 中的 prepare 调用被跳过；新增 initDanmaku 开头先 release 旧弹幕并清空 mParser。\r\n- 修复 BiliDanmukuParser 安全与健壮性问题：新增 XXE 防护（禁用 DTD 声明和外部实体解析）；SAX characters 多次调用导致文本截断，改用 StringBuilder 累积后在 endElement 统一处理；单条弹幕属性解析或特殊弹幕处理异常时跳过该条不影响整体解析；删除 SAX 已解码的冗余 XML 实体二次解码；修复空文本弹幕被错误添加到结果集的问题。\r\n- 修复 ExoPlayer 重建前旧实例未释放导致内存泄漏：Exo2MediaPlayer 创建新 ExoPlayer 前先 release 旧实例；ExoPlayerManager 初始化失败时不再误调 initSuccess，Surface/SurfaceControl 释放顺序修正为先 VideoSurface 后 SurfaceControl。\r\n- 修复 InputStreamDataSource skip 不准确导致 seek 偏移：实现 skipFully 循环确保跳过完整字节数，异常时正确关闭流，始终回调 bytesTransferred。\r\n- 修复 ExoPlayerHelper 窗口时长硬编码 3000ms 的问题：改为 C.TIME_UNSET 让 ExoPlayer 自动计算；CacheDataSource 设置 FLAG_IGNORE_CACHE_ON_ERROR 避免缓存错误时中断播放。\r\n- 修复 VideoPlayService Android 14 前台服务崩溃：MediaSession 初始化移至 super.onCreate 之前，确保 startForeground 时已有活跃 session；修复 null intent 未 stopSelf 的问题；修正 onDestroy 资源释放顺序。\r\n- 修复 ChoiceEpisodeDialog / ChoiceSpeedDialog 回调未设置时 NPE 崩溃：`!!` 改为 `?.` 空安全调用。\r\n- 修复 ChapterAdapter 越界崩溃：添加 NO_POSITION 守卫，position 超出 chapters 范围时不绑定数据。\r\n- 修复全屏模式选集列表背景过白遮挡文字的问题：card_bg_water 颜色值 alpha 从 F2/E6（95%/90%几乎不透明）改为 69（41%半透明），card_border_water 对应调整，使对话框深色底色透过卡片背景，白色文字清晰可读。\r\n\r\n**2026/07/31**\r\n- 修复书籍缓存选择界面底部「保存选择/导出选中」按钮被系统导航键遮挡的问题：edge-to-edge 模式下给 bottomBar 补上 navigationBarsPadding，按钮不再沉到导航栏下方。\r\n\r\n**2026/07/30**\r\n- 内置 CryptoJS 加解密库（参考 legadoT）：规则与 JS 源中可直接使用 `CryptoJS`，无需在 jsLib 重复引入；支持 MD5/SHA1/SHA256/SHA512/SHA3、HmacMD5/HmacSHA1/HmacSHA256/HmacSHA512、AES/DES/TripleDES/RC4/Rabbit/Blowfish、PBKDF2，以及 enc/mode/pad 编码与分组模式。无 jsLib 的 JSON 书源规则自动回退到 CryptoJS 作用域。\r\n- 修复书架阅读进度开关关闭时间距异常：列表项 tv_last 的 goneMarginBottom 由 8dp 改回 4dp，与原版一致，关闭开关时书架布局不再因进度条控件而偏移。\r\n- 书架新增显示阅读进度功能（参考 legadoT 实现）：列表布局在书籍项底部显示进度条与百分比，网格布局在封面底部叠加进度条；书架配置对话框新增「显示阅读进度」开关，默认关闭，进度条使用主题强调色支持换肤。\r\n- 修复订阅源长按保存图片未携带订阅源请求头的问题：保存网页图片时改为带上当前订阅源的 headerMap，避免需要请求头才能访问的图片下载失败。\r\n- 修复网页类型订阅源误应用静音播放设置的问题：WebView 内 h5 video/audio 的静音处理改为仅对视频类型（type==2）订阅源生效，网页类型（type==0）不再受静音播放开关控制。\r\n- 修复视频播放切换章节后静音状态不立即生效的问题：创建新播放器后立即应用当前静音设置，并重写 setNeedMute 使其立即作用到播放器，静音开关切换后无需重新进入即可生效。\r\n- 优化气泡管理的导出与分享入口：条目菜单从「应用/编辑/导出/文件分享/直链分享/删除」精简为「应用/编辑/导出/删除」，点「导出」弹出二级菜单，统一提供「导出到文件」（系统文件保存选择器）、「文件分享」（系统分享面板分享 zip）、「直链分享」（上传后分享下载链接）三项，操作层级更清晰。\r\n",
-        "assets": [
-          {
-            "name": "legado_._3.26.080214_legacy.apk",
-            "size": 23891035,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_legacy.apk"
-          },
-          {
-            "name": "legado_._3.26.080214_release.apk",
-            "size": 23891038,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_release.apk"
-          },
-          {
-            "name": "legado_._3.26.080214_releaseS.apk",
-            "size": 23891069,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_releaseS.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 78,
+      "stars": 83,
       "sourceUpdatedAt": "2026-11-01T13:01:54Z",
       "githubArchived": false,
       "release": {
@@ -910,27 +871,37 @@
       "forkOf": null
     },
     {
-      "id": "manxia",
-      "name": "漫匣阅读",
-      "tag": "manxia",
-      "repo": "DaLongZhuaZi/manxia",
-      "term": "legado-branch-manxia",
-      "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 63,
-      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
+      "id": "max-cichen",
+      "name": "阅读 MAX 辞晨版",
+      "tag": "max-cichen",
+      "repo": "GEd520/legados",
+      "term": "legado-branch-max-cichen",
+      "note": "独立仓库，有自己的 APK 发布。",
+      "stars": 78,
+      "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
-        "name": "阶段性构建 v0.1.4 · 08ef5b2",
-        "tagName": "latest",
-        "prerelease": false,
-        "publishedAt": "2026-09-28T15:54:47Z",
-        "createdAt": "2026-09-28T15:48:04Z",
-        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
+        "name": "最新版8.2",
+        "tagName": "beta-3.26.080214",
+        "prerelease": true,
+        "publishedAt": "2026-07-29T12:54:34Z",
+        "createdAt": "2026-07-12T03:55:56Z",
+        "body": "**2026/08/02**\r\n- 修复书籍详情页 useWeb 简介渲染污染 showBrowser 页面显示的问题：两者共用 WebViewPool 的 GLOBAL 池导致复用污染（杀后台后池清空故正常）。新增 Scope.INLINE，BookInfoActivity useWeb 渲染改从 INLINE 池获取与 showBrowser 隔离，BackstageWebView 同步补全 INLINE 分支。\r\n- 新增应用主题「导入应用主题设置」选项：三点菜单新增导入设置入口，勾选要导入的组件（主题/顶栏/底栏/封面图集）后持久化保存，后续导入自动套用，未勾选的跳过。同时修复导入后主题管理列表不显示——restoreThemeAsset 漏调 ThemeConfig.addConfig 注册主题，补齐注册逻辑。\r\n- 优化气泡管理列表项排版，对齐应用主题三按键布局：单个「应用」按键重构为 buttonRow（textBox 信息区底部）含应用/编辑/更多三按键，bg_action_button 背景 + Space 分隔；整行点击与 tvMore 弹 showActions，长按进多选。同时修复 foreground 在 API 21-22 崩溃（加版本判断）。\r\n- 优化气泡颜色渲染：普通颜色作用于边框、强调颜色作用于数字。默认 SVG 模板 `${color}` 拆为 `${borderColor}`/`${textColor}`；内置气泡 emphasisColor 改为 normalColor 使边框数字同色，本地气泡默认边框灰数字红；渲染保留 `${color}` 兼容旧模板，cacheKey 同步含两颜色。\r\n- 优化强制气泡渲染：移植参考版 ParagraphBubbleRenderer 增强，URL 支持 displayText 覆盖数字文本、displayColor 覆盖数字颜色；新增 replaceBubbleValue 用正则匹配 `${name}`/`$name`/`{{name}}` 三种占位符格式并支持多别名（borderColor/color、textColor/displayColor、displayText/num），queryValue 参数名忽略大小写；保留边框普通色/数字强调色的分色逻辑，displayColor 只覆盖数字颜色不影响边框。\r\n- 新增图片文件夹导入漫画：本地导入界面长按文件夹弹出「导入漫画」菜单，以文件夹名为书名、子文件夹为章节（无子文件夹则整文件夹为一章），图片按文件名自然排序生成 `<img>` 正文。ImageFolderBook 解析器支持 content:// 和 file:// URI，ImageProvider 通过 ImageFolderBook.getImage 加载本地图片流。\r\n- 修复本地图片书从书架或详情页重新进入时变回文本模式：Fragment.startActivityForBook 和 BookInfoActivity 的路由判断含 `!book.isLocal` 限制，本地图片书被排除出 ReadMangaActivity；移除该限制使三处入口（Context/Fragment/BookInfoActivity）统一为 `book.isImage && AppConfig.showMangaUi`。\r\n\r\n**2026/08/01** \r\n- 修复播放界面通过自定义按钮回调跳转后再播放新视频，旧视频仍在继续播放的问题：VideoPlayerActivity 启动模式由 singleTask 改为 standard，新实例创建时自动 finish 旧实例并释放其播放器；新增 startNewSession 方法在启动新视频前停止旧播放、重置状态；onDestroy 在被替换时跳过操作 VideoPlay 单例（避免影响新实例），onResume 新会话启动时跳过恢复旧视频。返回栈支持逐级返回，不管跳转多少次按返回键都能回到上一个界面。\r\n- 修复视频播放通知标题显示对象引用而非视频标题的问题：字符串插值 `$VideoPlay.videoTitle` 实际插值的是 VideoPlay 对象，`.videoTitle` 变成字面文本，改为 `${VideoPlay.videoTitle ?: \"\"}`。\r\n- 修复 ExoPlayer 并发请求时 HTTP 请求头全局串改竞态：resolvingDataSource 原先通过 `okhttpDataFactory.setDefaultRequestProperties` 全局修改共享工厂的请求头，多请求并发时 headers 相互覆盖；改为使用 `DataSpec.withRequestHeaders` 将请求头绑定到每个请求，彻底消除竞态。\r\n- 修复 VideoPlay.isLoading 时序错误导致 releaseAllVideos 状态重置失效：原代码在 startPlay 末尾同步设置 `isLoading = false`，但加载协程异步运行尚未完成；且 singleUrl/rss 两条路径有 return 永远不会执行到该行。改为在每个协程的成功/错误回调中设置。\r\n- 修复切换视频时旧实例 onDestroy 触发 releaseAllVideos 误重新实例播放器的问题：旧 Activity 被新实例替换时，playerView.release() → releaseVideos() → releaseAllVideos() 会操作已指向新实例的 videoManager，导致新实例的播放器被释放、加载协程被取消。新增 skipReleaseAllVideos 标志，被替换时设置该标志使 releaseAllVideos 直接返回，仅由 GSY 框架释放旧实例自身的 surface 资源。\r\n- 修复 saveRead 自动获取进度时未实际播放（pos<=0）仍保存进度覆盖有效记录的问题：自动模式（参数为 null）下 pos<=0 跳过保存，显式传 0（切集重置）仍正常保存。\r\n- 修复弹幕 FileInputStream 泄漏：createParser 中 FileInputStream 传给 loader 后永不关闭，改为 readBytes 读入内存后用 ByteArrayInputStream 交给 loader，文件流即时关闭。\r\n- 修复切换章节后弹幕仍显示旧内容、新解析器无法激活的问题：initDanmaku 切集时未释放旧弹幕实例，DanmakuView.isPrepared 仍为 true 导致 onPrepareDanmaku 中的 prepare 调用被跳过；新增 initDanmaku 开头先 release 旧弹幕并清空 mParser。\r\n- 修复 BiliDanmukuParser 安全与健壮性问题：新增 XXE 防护（禁用 DTD 声明和外部实体解析）；SAX characters 多次调用导致文本截断，改用 StringBuilder 累积后在 endElement 统一处理；单条弹幕属性解析或特殊弹幕处理异常时跳过该条不影响整体解析；删除 SAX 已解码的冗余 XML 实体二次解码；修复空文本弹幕被错误添加到结果集的问题。\r\n- 修复 ExoPlayer 重建前旧实例未释放导致内存泄漏：Exo2MediaPlayer 创建新 ExoPlayer 前先 release 旧实例；ExoPlayerManager 初始化失败时不再误调 initSuccess，Surface/SurfaceControl 释放顺序修正为先 VideoSurface 后 SurfaceControl。\r\n- 修复 InputStreamDataSource skip 不准确导致 seek 偏移：实现 skipFully 循环确保跳过完整字节数，异常时正确关闭流，始终回调 bytesTransferred。\r\n- 修复 ExoPlayerHelper 窗口时长硬编码 3000ms 的问题：改为 C.TIME_UNSET 让 ExoPlayer 自动计算；CacheDataSource 设置 FLAG_IGNORE_CACHE_ON_ERROR 避免缓存错误时中断播放。\r\n- 修复 VideoPlayService Android 14 前台服务崩溃：MediaSession 初始化移至 super.onCreate 之前，确保 startForeground 时已有活跃 session；修复 null intent 未 stopSelf 的问题；修正 onDestroy 资源释放顺序。\r\n- 修复 ChoiceEpisodeDialog / ChoiceSpeedDialog 回调未设置时 NPE 崩溃：`!!` 改为 `?.` 空安全调用。\r\n- 修复 ChapterAdapter 越界崩溃：添加 NO_POSITION 守卫，position 超出 chapters 范围时不绑定数据。\r\n- 修复全屏模式选集列表背景过白遮挡文字的问题：card_bg_water 颜色值 alpha 从 F2/E6（95%/90%几乎不透明）改为 69（41%半透明），card_border_water 对应调整，使对话框深色底色透过卡片背景，白色文字清晰可读。\r\n\r\n**2026/07/31**\r\n- 修复书籍缓存选择界面底部「保存选择/导出选中」按钮被系统导航键遮挡的问题：edge-to-edge 模式下给 bottomBar 补上 navigationBarsPadding，按钮不再沉到导航栏下方。\r\n\r\n**2026/07/30**\r\n- 内置 CryptoJS 加解密库（参考 legadoT）：规则与 JS 源中可直接使用 `CryptoJS`，无需在 jsLib 重复引入；支持 MD5/SHA1/SHA256/SHA512/SHA3、HmacMD5/HmacSHA1/HmacSHA256/HmacSHA512、AES/DES/TripleDES/RC4/Rabbit/Blowfish、PBKDF2，以及 enc/mode/pad 编码与分组模式。无 jsLib 的 JSON 书源规则自动回退到 CryptoJS 作用域。\r\n- 修复书架阅读进度开关关闭时间距异常：列表项 tv_last 的 goneMarginBottom 由 8dp 改回 4dp，与原版一致，关闭开关时书架布局不再因进度条控件而偏移。\r\n- 书架新增显示阅读进度功能（参考 legadoT 实现）：列表布局在书籍项底部显示进度条与百分比，网格布局在封面底部叠加进度条；书架配置对话框新增「显示阅读进度」开关，默认关闭，进度条使用主题强调色支持换肤。\r\n- 修复订阅源长按保存图片未携带订阅源请求头的问题：保存网页图片时改为带上当前订阅源的 headerMap，避免需要请求头才能访问的图片下载失败。\r\n- 修复网页类型订阅源误应用静音播放设置的问题：WebView 内 h5 video/audio 的静音处理改为仅对视频类型（type==2）订阅源生效，网页类型（type==0）不再受静音播放开关控制。\r\n- 修复视频播放切换章节后静音状态不立即生效的问题：创建新播放器后立即应用当前静音设置，并重写 setNeedMute 使其立即作用到播放器，静音开关切换后无需重新进入即可生效。\r\n- 优化气泡管理的导出与分享入口：条目菜单从「应用/编辑/导出/文件分享/直链分享/删除」精简为「应用/编辑/导出/删除」，点「导出」弹出二级菜单，统一提供「导出到文件」（系统文件保存选择器）、「文件分享」（系统分享面板分享 zip）、「直链分享」（上传后分享下载链接）三项，操作层级更清晰。\r\n",
         "assets": [
           {
-            "name": "entry-default-unsigned.hap",
-            "size": 123088042,
-            "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
+            "name": "legado_._3.26.080214_legacy.apk",
+            "size": 23891035,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_legacy.apk"
+          },
+          {
+            "name": "legado_._3.26.080214_release.apk",
+            "size": 23891038,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_release.apk"
+          },
+          {
+            "name": "legado_._3.26.080214_releaseS.apk",
+            "size": 23891069,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_releaseS.apk"
           }
         ]
       },
@@ -945,7 +916,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 63,
+      "stars": 64,
       "sourceUpdatedAt": "2026-11-01T01:55:55Z",
       "githubArchived": false,
       "release": {
@@ -1020,6 +991,35 @@
             "name": "NexHub-windows-x64.zip",
             "size": 65602631,
             "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v3.4.0/NexHub-windows-x64.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "manxia",
+      "name": "漫匣阅读",
+      "tag": "manxia",
+      "repo": "DaLongZhuaZi/manxia",
+      "term": "legado-branch-manxia",
+      "note": "阅读原版重构，鸿蒙 Next 版。",
+      "stars": 63,
+      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
+      "githubArchived": false,
+      "release": {
+        "name": "阶段性构建 v0.1.4 · 08ef5b2",
+        "tagName": "latest",
+        "prerelease": false,
+        "publishedAt": "2026-09-28T15:54:47Z",
+        "createdAt": "2026-09-28T15:48:04Z",
+        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
+        "assets": [
+          {
+            "name": "entry-default-unsigned.hap",
+            "size": 123088042,
+            "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
           }
         ]
       },
@@ -1320,7 +1320,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-11-01T11:02:47Z",
+      "sourceUpdatedAt": "2026-11-03T03:25:46Z",
       "githubArchived": false,
       "release": {
         "name": "1.1.0",
