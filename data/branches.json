@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:02:18.590Z",
+  "generatedAt": "2026-11-04T23:44:18.685Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 198,
+      "stars": 197,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47211,
+      "stars": 47212,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,56 +85,56 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6831,
-      "sourceUpdatedAt": "2026-11-04T02:59:45Z",
+      "stars": 6832,
+      "sourceUpdatedAt": "2026-11-04T19:49:16Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.22",
-        "tagName": "3.26.22",
+        "name": "Release 3.26.23",
+        "tagName": "3.26.23",
         "prerelease": false,
-        "publishedAt": "2026-11-03T20:53:35Z",
-        "createdAt": "2026-11-03T20:27:47Z",
-        "body": "### 更新内容\n\n* refactor(rss): 将订阅源导入弹窗迁移到 Compose\n* fix(rss): 支持订阅源网页选择上传文件 (#2550)\n* fix(reader): 修复 EPUB 跨章首图留白和漫画首帧拉伸 (#2547)\n* fix(tts): 预取同声线朗读并修复队列接播\n* perf(cache): 队列等待数与可启动判定改按区间计算\n* refactor(reader): 离线缓存逻辑摘成 ReadBookCacheDelegate\n* perf(reader): 预下载改为一次性防抖，缓存重试改分级退避\n* feat(reader): 离线缓存弹窗显示范围预览与待缓存章数\n* feat(reader): 离线缓存只入队待下载章节并去重已缓存计数\n* feat(reader): 重做离线缓存弹窗并补齐派发反馈\n* feat(bubble): 兼容 Legado-Arc 导入深链并改用 Sheet 编辑气泡\n* feat(bookshelf): 网格支持固定列数与固定封面宽度两种自适应模式\n* fix(ui): 修复覆盖卡片边框下相邻卡片边框贴合 (#2551)\n* fix(reader): 修复滚动模式 epub 图片闪灰并自适应图片缓存容量 (#2547)\n* fix(a11y): 修复阅读与听书控件的无障碍语义 (#2534)\n* fix(login): avoid Miuix squircle offscreen rendering around WebView (#2546)\n* fix(reader): 修复英文符号断行与行尾标点越界\n* fix(reorder): 修复列表拖拽状态与书源排序同步\n* feat(about): 添加第三方开源许可页面 (#2548)\n* refactor(reader): 简化 iOS Curl 内核并修复 Google Curl 阴影 (#2533)\n* fix: 恢复段评网页兼容性并修复悬浮底栏避让 (#2545)\n\n## What's Changed\n* fix: 段评网页回到半屏 WebView 弹窗；悬浮底栏不再重复让出底部 inset by @2408893730 in https://github.com/HapeLee/legado-with-MD3/pull/2545\n* refactor(reader): 简化 iOS Curl 内核并修复 Google Curl 阴影 by @Peyilo in https://github.com/HapeLee/legado-with-MD3/pull/2533\n* feat(about): 添加第三方开源许可页面 by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2548\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.20...3.26.22",
+        "publishedAt": "2026-11-04T19:49:13Z",
+        "createdAt": "2026-11-04T19:29:42Z",
+        "body": "### 下载哪个包\n\n- legado-3.26.23-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.23-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* chore: 给忒乐忒乐棒棒娜巴拉尼，卡特克贝贝呗，噗啾噔得了噔得了嘛哈嘛哈，尼哈啦尼哈啦喵，忒嘣了忒嘣了卡拉卡拉灵，厦喀勒哦哦哦哦，啊喔汪汪喵喵喵喵哦\n* feat(update): 启动自动检查更新并补齐更新源设置\n* refactor(build): 产品维度 full 更名为 comic 并统一发布与文案口径\n* fix(reader): 优化间距\n* refactor(ai): 模型配置弹窗改用 Tiny 系列设置项\n* chore(lint): 重建 lint 基线，清掉失效条目并固化剩余历史告警\n* chore(lint): 抑制 WebViewClient 渲染进程规则的 Kotlin 误报\n* fix(lint): 补繁中方向数组缺项并处理 WebView 渲染进程崩溃\n* perf(bookshelf): 批量导入分块提交与书架 Flow 失效防抖 (#2554)\n* fix(theme): 自定义字体加粗静默丢失与 content:// PFD 提前关闭 (#2553)\n* refactor(rss): 将订阅源导入弹窗迁移到 Compose\n* fix(rss): 支持订阅源网页选择上传文件 (#2550)\n* fix(reader): 修复 EPUB 跨章首图留白和漫画首帧拉伸 (#2547)\n* fix(tts): 预取同声线朗读并修复队列接播\n* perf(cache): 队列等待数与可启动判定改按区间计算\n* refactor(reader): 离线缓存逻辑摘成 ReadBookCacheDelegate\n* perf(reader): 预下载改为一次性防抖，缓存重试改分级退避\n* feat(reader): 离线缓存弹窗显示范围预览与待缓存章数\n* feat(reader): 离线缓存只入队待下载章节并去重已缓存计数\n* feat(reader): 重做离线缓存弹窗并补齐派发反馈\n* feat(bubble): 兼容 Legado-Arc 导入深链并改用 Sheet 编辑气泡\n* feat(bookshelf): 网格支持固定列数与固定封面宽度两种自适应模式\n* fix(ui): 修复覆盖卡片边框下相邻卡片边框贴合 (#2551)\n\n## What's Changed\n* fix(theme): 自定义字体加粗静默丢失与 content:// PFD 提前关闭 by @Mupceet in https://github.com/HapeLee/legado-with-MD3/pull/2553\n* perf(bookshelf): 批量导入分块提交与书架 Flow 失效防抖 by @Mupceet in https://github.com/HapeLee/legado-with-MD3/pull/2554\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.21...3.26.23",
         "assets": [
           {
-            "name": "legado-3.26.22-core-arm64-v8a.apk",
-            "size": 21737163,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-core-arm64-v8a.apk"
+            "name": "legado-3.26.23-comic-arm64-v8a.apk",
+            "size": 72382895,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-comic-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.22-core-armeabi-v7a.apk",
-            "size": 21276970,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-core-armeabi-v7a.apk"
+            "name": "legado-3.26.23-comic-armeabi-v7a.apk",
+            "size": 59356199,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-comic-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.22-core-universal.apk",
-            "size": 28309606,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-core-universal.apk"
+            "name": "legado-3.26.23-comic-universal.apk",
+            "size": 198855064,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-comic-universal.apk"
           },
           {
-            "name": "legado-3.26.22-full-arm64-v8a.apk",
-            "size": 72362775,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-full-arm64-v8a.apk"
+            "name": "legado-3.26.23-core-arm64-v8a.apk",
+            "size": 21757302,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-core-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.22-full-armeabi-v7a.apk",
-            "size": 59336078,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-full-armeabi-v7a.apk"
+            "name": "legado-3.26.23-core-armeabi-v7a.apk",
+            "size": 21297121,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-core-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.22-full-universal.apk",
-            "size": 198834949,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/legado-3.26.22-full-universal.apk"
+            "name": "legado-3.26.23-core-universal.apk",
+            "size": 28329755,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/legado-3.26.23-core-universal.apk"
+          },
+          {
+            "name": "mapping-comic.txt",
+            "size": 329201489,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/mapping-comic.txt"
           },
           {
             "name": "mapping-core.txt",
-            "size": 322066564,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/mapping-core.txt"
-          },
-          {
-            "name": "mapping-full.txt",
-            "size": 329210133,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.22/mapping-full.txt"
+            "size": 322353216,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.23/mapping-core.txt"
           }
         ]
       },
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3036,
+      "stars": 3034,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1794,
+      "stars": 1795,
       "sourceUpdatedAt": "2026-11-02T15:12:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 655,
+      "stars": 656,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 417,
+      "stars": 418,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -550,7 +550,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 183,
+      "stars": 184,
       "sourceUpdatedAt": "2026-11-03T15:25:21Z",
       "githubArchived": false,
       "release": {
