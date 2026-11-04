@@ -675,9 +675,9 @@
     "cmbok": {
       "name": "Cmbok",
       "repo": "hlning/cmbok_app",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:29:39.479Z",
+      "status": "error",
+      "message": "上游 HTTP 404：可能删除、私有化或令牌失去权限，无法确认删库；保留备份，未同步",
+      "since": "2026-11-04T18:50:40.998Z",
       "backupRepo": "legado-backup/legado-cmbok",
       "activeBranch": "main",
       "events": [
@@ -685,6 +685,11 @@
           "at": "2026-10-05T01:29:39.479Z",
           "type": "synced",
           "message": "hlning/cmbok_app:main → legado-backup/legado-cmbok:main 已同步"
+        },
+        {
+          "at": "2026-11-04T18:50:40.998Z",
+          "type": "error",
+          "message": "上游 HTTP 404：可能删除、私有化或令牌失去权限，无法确认删库；保留备份，未同步"
         }
       ]
     },
@@ -1447,5 +1452,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-04T11:30:25.147Z"
+  "checkedAt": "2026-11-04T18:50:57.454Z"
 }
