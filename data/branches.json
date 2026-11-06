@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T02:31:20.630Z",
+  "generatedAt": "2026-11-06T11:00:03.009Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 205,
+      "stars": 206,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 50,
+          "stars": 51,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47207,
+      "stars": 47213,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6850,
+      "stars": 6856,
       "sourceUpdatedAt": "2026-11-04T19:49:16Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3037,
+      "stars": 3042,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2242,
+      "stars": 2245,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1813,
+      "stars": 1822,
       "sourceUpdatedAt": "2026-11-02T15:12:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 658,
+      "stars": 659,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 419,
+      "stars": 421,
       "sourceUpdatedAt": "2026-10-27T09:02:26Z",
       "githubArchived": false,
       "release": {
@@ -427,7 +427,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 324,
+      "stars": 325,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -550,7 +550,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 194,
+      "stars": 195,
       "sourceUpdatedAt": "2026-11-05T18:00:56Z",
       "githubArchived": false,
       "release": {
@@ -692,20 +692,20 @@
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
       "stars": 114,
-      "sourceUpdatedAt": "2026-10-21T09:46:20Z",
+      "sourceUpdatedAt": "2026-11-06T10:22:33Z",
       "githubArchived": false,
       "release": {
-        "name": "墨知 1.4.1",
-        "tagName": "v1.4.1",
+        "name": "MoRead 1.5.0",
+        "tagName": "v1.5.0",
         "prerelease": false,
-        "publishedAt": "2026-10-21T09:47:04Z",
-        "createdAt": "2026-10-21T09:46:17Z",
-        "body": "# MoRead · 墨知 1.4.1\n\n## 中文\n\n- 伴读会话支持导出 Markdown，可分享或另存；阅读页伴读悬浮球可在设置中隐藏。\n- 改进主动段评的前方段落选择、全章覆盖和断点补全，避免后半章长时间没有段评。\n- 改进 EPUB 重复资源兼容；章节精排解析失败时保留正文与图片，并保护已有正文和批注坐标。\n- TXT 单本预览与批量导入改用流式处理，降低大文件内存占用；优化章节扫描与导入进度。\n- 书架支持调整网格列数；优化书籍详情加载、段落讨论及悬浮导航的拖拽、切页和收放。\n- 修复底部弹层滚动边界与视口稳定性，补充导航手势、导入和段评回归覆盖。\n\n正式安装包：`mozhi-1.4.1-vc85.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n- Export companion conversations as Markdown for sharing or saving, and optionally hide the companion bubble in the reader.\n- Improve proactive annotation scheduling, chapter coverage, and resumable completion.\n- Handle duplicate EPUB resources and preserve text and images when rich chapter parsing fails, while protecting existing text and annotation coordinates.\n- Stream TXT previews and batch imports to reduce memory use; improve chapter scanning and import progress.\n- Add configurable bookshelf grid columns and refine book-detail loading, passage discussions, and floating navigation gestures.\n- Stabilize bottom-sheet scrolling and viewport boundaries, with additional navigation, import, and annotation regression coverage.\n\nOfficial package: `mozhi-1.4.1-vc85.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
+        "publishedAt": "2026-11-06T10:25:45Z",
+        "createdAt": "2026-11-06T10:22:26Z",
+        "body": "## 新功能\n- **演出模式（墨戏）**：一句一屏的视觉小说式阅读，在宣纸上演出水墨戏。原文一字不改，程序化水墨布景、对白小笺与说话人印章、开章竖排题字、可选本机合成声景与 AI 导演（默认关）\n- 内置志莽行书（OFL 1.1）作演出题字字体\n- 伴读可生成 Markdown 文件（文件卡，可预览、分享、保存）\n\n## 改进\n- 现代仿真翻页页缘跟手、轻扫即翻，补卷页投影；提前落页判据更准\n\n注意：本 Release 为正式签名包，装过内测包的设备需卸载重装。\n",
         "assets": [
           {
-            "name": "mozhi-1.4.1-vc85.apk",
-            "size": 23330687,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.4.1/mozhi-1.4.1-vc85.apk"
+            "name": "mozhi-1.5.0-vc88.apk",
+            "size": 26386499,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.5.0/mozhi-1.5.0-vc88.apk"
           }
         ]
       },
@@ -765,60 +765,60 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 88,
-      "sourceUpdatedAt": "2026-11-05T07:29:21Z",
+      "sourceUpdatedAt": "2026-11-06T06:24:09Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.7.0",
-        "tagName": "v2.7.0",
+        "name": "v2.7.1",
+        "tagName": "v2.7.1",
         "prerelease": false,
-        "publishedAt": "2026-11-05T07:22:11Z",
-        "createdAt": "2026-11-05T07:05:31Z",
-        "body": "新增\n- 听书新增「API」语音：填入自己的 MiniMax（国内站或国际站）或火山引擎豆包语音 API Key，就能使用它们的大模型音色。提供精选音色和试听，也可以填写自定义音色 ID。费用由服务商按字数收取，朗读的文字会发送给所选服务商。\n- Windows 版听书新增「SAPI」语音：可以使用这台电脑注册的 SAPI 5 语音。安装第三方 NaturalVoiceSAPIAdapter 的 64 位版本后，Windows 11 讲述人的离线自然语音也能在轻阅里使用。\n\n验证\n- t9：TypeScript 检查与构建、样式令牌检查、平台边界检查、听书与设置同步单测、冒烟端到端、API 语音端到端（模拟原生调用）通过；Rust 用本地模拟服务校验请求与响应。\n\n已知限制\n- API 语音尚未用真实服务商账号实测，请求格式依据官方文档；如遇问题欢迎反馈。\n- SAPI 语音尚未在 Windows 上实机运行。\n- API 语音最高 2 倍速，网页版不提供 API 和 SAPI 语音。\n",
+        "publishedAt": "2026-11-06T06:26:54Z",
+        "createdAt": "2026-11-06T06:11:25Z",
+        "body": "release: v2.7.1\n\n修复\n- PDF 引擎崩溃后可以自动恢复。此前一个 PDF 让引擎崩溃后，之后打开任何 PDF（哪怕只有几百 KB）都只提示 memory access out of bounds，必须重启应用；现在下次打开会换一个新引擎实例并自动重试。\n- 高清渲染引擎出错时，能正确回退到备用引擎，不再直接显示报错。\n- PDF 报错页不再显示原始错误代码，改为说明文字，并提供导出诊断日志和加读者群反馈的入口。\n\n新增\n- 诊断日志：应用在本机保存滚动日志，可以在「关于 → 读者群」或 PDF 报错页导出 zip，发到读者群反馈问题。日志只存在本机，不会自动上传，不含书籍内容和密钥。\n\n验证\n- t9：类型检查与构建、诊断与发版回归单测、PDF 崩溃恢复端到端（注入崩溃）、Rust 诊断测试通过。\n- 冒烟 e2e 全部步骤走完，退出码为 1：测试环境里有一条 ERR_CONNECTION_CLOSED 网络错误；4 次中有 1 次还出现翻页器的 docBackground 空值错误，本版没有改动这部分代码。\n\n已知限制\n- 个别大 PDF（有用户反馈 75MB）第一次打开时引擎崩溃的根本原因尚未查明，未能复现。本版修的是崩溃后的连锁故障，不保证这类文件能打开。如果遇到，请导出诊断日志发到读者群。\n- 真实崩溃的恢复只用注入崩溃验证过。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.7.0-1.x86_64.rpm",
-            "size": 32105517,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead-2.7.0-1.x86_64.rpm"
+            "name": "LightRead-2.7.1-1.x86_64.rpm",
+            "size": 32243663,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead-2.7.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.7.0_aarch64.dmg",
-            "size": 25513610,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_2.7.0_aarch64.dmg"
+            "name": "LightRead_2.7.1_aarch64.dmg",
+            "size": 25635909,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.7.0_amd64.AppImage",
-            "size": 107854328,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_2.7.0_amd64.AppImage"
+            "name": "LightRead_2.7.1_amd64.AppImage",
+            "size": 107997688,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.7.0_amd64.deb",
-            "size": 32102082,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_2.7.0_amd64.deb"
+            "name": "LightRead_2.7.1_amd64.deb",
+            "size": 32245434,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_amd64.deb"
           },
           {
-            "name": "LightRead_2.7.0_x64-setup.exe",
-            "size": 20160788,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_2.7.0_x64-setup.exe"
+            "name": "LightRead_2.7.1_x64-setup.exe",
+            "size": 20221488,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.7.0_x64.dmg",
-            "size": 26756331,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_2.7.0_x64.dmg"
+            "name": "LightRead_2.7.1_x64.dmg",
+            "size": 26880602,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 25433814,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_aarch64.app.tar.gz"
+            "size": 25550858,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 26698672,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/LightRead_x64.app.tar.gz"
+            "size": 26817024,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/SHA256SUMS"
           }
         ]
       },
@@ -872,7 +872,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 66,
+      "stars": 67,
       "sourceUpdatedAt": "2026-11-05T14:18:52Z",
       "githubArchived": false,
       "release": {
@@ -990,8 +990,8 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 26,
-      "sourceUpdatedAt": "2026-11-03T15:40:09Z",
+      "stars": 25,
+      "sourceUpdatedAt": "2026-11-06T03:08:55Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.43",
@@ -1033,7 +1033,7 @@
       "tag": "m",
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
-      "stars": 24,
+      "stars": 25,
       "sourceUpdatedAt": "2026-11-02T03:14:27Z",
       "githubArchived": false,
       "release": {
@@ -1111,7 +1111,7 @@
       "repo": "skxingyu/legado-sk",
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
-      "stars": 18,
+      "stars": 19,
       "sourceUpdatedAt": "2026-11-01T12:31:39Z",
       "githubArchived": false,
       "release": {
@@ -1168,6 +1168,35 @@
       "forkOf": "Luoyacheng/legado-E"
     },
     {
+      "id": "xuanjuan",
+      "name": "玄卷",
+      "tag": "xuanjuan",
+      "repo": "24257/novel-helper",
+      "term": "legado-branch-xuanjuan",
+      "note": "基于 Legado 定制的网文小助手。",
+      "stars": 10,
+      "sourceUpdatedAt": "2026-09-30T15:22:43Z",
+      "githubArchived": false,
+      "release": {
+        "name": "玄卷 v0.1.9",
+        "tagName": "v0.1.9",
+        "prerelease": false,
+        "publishedAt": "2026-09-30T15:34:41Z",
+        "createdAt": "2026-09-30T15:22:34Z",
+        "body": "**Full Changelog**: https://github.com/24257/novel-helper/compare/v0.1.8...v0.1.9",
+        "assets": [
+          {
+            "name": "novel-helper.apk",
+            "size": 134077162,
+            "browserDownloadUrl": "https://github.com/24257/novel-helper/releases/download/v0.1.9/novel-helper.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "fu",
       "name": "阅融Fu",
       "tag": "fu",
@@ -1189,35 +1218,6 @@
             "name": "legado_fu_3.26.09061950_release.apk",
             "size": 36552778,
             "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090619/legado_fu_3.26.09061950_release.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
-      "id": "xuanjuan",
-      "name": "玄卷",
-      "tag": "xuanjuan",
-      "repo": "24257/novel-helper",
-      "term": "legado-branch-xuanjuan",
-      "note": "基于 Legado 定制的网文小助手。",
-      "stars": 9,
-      "sourceUpdatedAt": "2026-09-30T15:22:43Z",
-      "githubArchived": false,
-      "release": {
-        "name": "玄卷 v0.1.9",
-        "tagName": "v0.1.9",
-        "prerelease": false,
-        "publishedAt": "2026-09-30T15:34:41Z",
-        "createdAt": "2026-09-30T15:22:34Z",
-        "body": "**Full Changelog**: https://github.com/24257/novel-helper/compare/v0.1.8...v0.1.9",
-        "assets": [
-          {
-            "name": "novel-helper.apk",
-            "size": 134077162,
-            "browserDownloadUrl": "https://github.com/24257/novel-helper/releases/download/v0.1.9/novel-helper.apk"
           }
         ]
       },
