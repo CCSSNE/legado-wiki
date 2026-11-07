@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T02:53:44.006Z",
+  "generatedAt": "2026-11-07T10:19:56.740Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 207,
+      "stars": 208,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47209,
+      "stars": 47210,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6866,
+      "stars": 6873,
       "sourceUpdatedAt": "2026-11-04T19:49:16Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3046,
+      "stars": 3050,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1829,
+      "stars": 1832,
       "sourceUpdatedAt": "2026-11-02T15:12:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 659,
+      "stars": 660,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,8 +281,8 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 422,
-      "sourceUpdatedAt": "2026-10-27T09:02:26Z",
+      "stars": 423,
+      "sourceUpdatedAt": "2026-11-07T08:00:52Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26.102716",
@@ -550,7 +550,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 199,
+      "stars": 202,
       "sourceUpdatedAt": "2026-11-05T18:00:56Z",
       "githubArchived": false,
       "release": {
@@ -691,7 +691,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 116,
+      "stars": 117,
       "sourceUpdatedAt": "2026-11-06T10:22:33Z",
       "githubArchived": false,
       "release": {
@@ -764,61 +764,61 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 89,
-      "sourceUpdatedAt": "2026-11-06T06:24:09Z",
+      "stars": 90,
+      "sourceUpdatedAt": "2026-11-07T07:23:47Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.7.1",
-        "tagName": "v2.7.1",
+        "name": "v2.8.0",
+        "tagName": "v2.8.0",
         "prerelease": false,
-        "publishedAt": "2026-11-06T06:26:54Z",
-        "createdAt": "2026-11-06T06:11:25Z",
-        "body": "release: v2.7.1\n\n修复\n- PDF 引擎崩溃后可以自动恢复。此前一个 PDF 让引擎崩溃后，之后打开任何 PDF（哪怕只有几百 KB）都只提示 memory access out of bounds，必须重启应用；现在下次打开会换一个新引擎实例并自动重试。\n- 高清渲染引擎出错时，能正确回退到备用引擎，不再直接显示报错。\n- PDF 报错页不再显示原始错误代码，改为说明文字，并提供导出诊断日志和加读者群反馈的入口。\n\n新增\n- 诊断日志：应用在本机保存滚动日志，可以在「关于 → 读者群」或 PDF 报错页导出 zip，发到读者群反馈问题。日志只存在本机，不会自动上传，不含书籍内容和密钥。\n\n验证\n- t9：类型检查与构建、诊断与发版回归单测、PDF 崩溃恢复端到端（注入崩溃）、Rust 诊断测试通过。\n- 冒烟 e2e 全部步骤走完，退出码为 1：测试环境里有一条 ERR_CONNECTION_CLOSED 网络错误；4 次中有 1 次还出现翻页器的 docBackground 空值错误，本版没有改动这部分代码。\n\n已知限制\n- 个别大 PDF（有用户反馈 75MB）第一次打开时引擎崩溃的根本原因尚未查明，未能复现。本版修的是崩溃后的连锁故障，不保证这类文件能打开。如果遇到，请导出诊断日志发到读者群。\n- 真实崩溃的恢复只用注入崩溃验证过。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-11-07T07:41:33Z",
+        "createdAt": "2026-11-07T07:23:45Z",
+        "body": "release: v2.8.0\n\n新增\n- 划词翻译：选中文字后点「翻译」，在面板里查看译文，可以选择目标语言（默认中文译英文、其他语言译中文）。配了自己的 AI Key 时用自己的服务，不限次数；登录轻阅账号后每天有 100 次免费翻译。\n- 简繁转换：排版面板新增「原文 / 转简体 / 转繁體」。在本机用 OpenCC 词表转换，不联网、不需要 Key；划线、书签和阅读进度不受影响。\n- 选中本段：划线工具条新增「选中本段」，一键选中所在的整段。\n\n改进\n- 听书时顶栏和浮动胶囊使用同一套按钮（定时、回到听书处、暂停 / 继续、停止），顺序和点击区域一致。\n\n说明\n- 登录账号的免费翻译额度按账号计算，每天 100 次；超出后可以填入自己的 AI Key 继续使用。\n\n验证：t9 上 vue-tsc、相关单测、npm run e2e、e2e-translate。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.7.1-1.x86_64.rpm",
-            "size": 32243663,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead-2.7.1-1.x86_64.rpm"
+            "name": "LightRead-2.8.0-1.x86_64.rpm",
+            "size": 32679951,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead-2.8.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.7.1_aarch64.dmg",
-            "size": 25635909,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_aarch64.dmg"
+            "name": "LightRead_2.8.0_aarch64.dmg",
+            "size": 26078611,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.7.1_amd64.AppImage",
-            "size": 107997688,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_amd64.AppImage"
+            "name": "LightRead_2.8.0_amd64.AppImage",
+            "size": 108435960,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.7.1_amd64.deb",
-            "size": 32245434,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_amd64.deb"
+            "name": "LightRead_2.8.0_amd64.deb",
+            "size": 32681448,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_amd64.deb"
           },
           {
-            "name": "LightRead_2.7.1_x64-setup.exe",
-            "size": 20221488,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_x64-setup.exe"
+            "name": "LightRead_2.8.0_x64-setup.exe",
+            "size": 20667364,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.7.1_x64.dmg",
-            "size": 26880602,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_2.7.1_x64.dmg"
+            "name": "LightRead_2.8.0_x64.dmg",
+            "size": 27317193,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 25550858,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_aarch64.app.tar.gz"
+            "size": 25991622,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 26817024,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/LightRead_x64.app.tar.gz"
+            "size": 27258257,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.7.1/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/SHA256SUMS"
           }
         ]
       },
@@ -1168,35 +1168,6 @@
       "forkOf": "Luoyacheng/legado-E"
     },
     {
-      "id": "xuanjuan",
-      "name": "玄卷",
-      "tag": "xuanjuan",
-      "repo": "24257/novel-helper",
-      "term": "legado-branch-xuanjuan",
-      "note": "基于 Legado 定制的网文小助手。",
-      "stars": 10,
-      "sourceUpdatedAt": "2026-09-30T15:22:43Z",
-      "githubArchived": false,
-      "release": {
-        "name": "玄卷 v0.1.9",
-        "tagName": "v0.1.9",
-        "prerelease": false,
-        "publishedAt": "2026-09-30T15:34:41Z",
-        "createdAt": "2026-09-30T15:22:34Z",
-        "body": "**Full Changelog**: https://github.com/24257/novel-helper/compare/v0.1.8...v0.1.9",
-        "assets": [
-          {
-            "name": "novel-helper.apk",
-            "size": 134077162,
-            "browserDownloadUrl": "https://github.com/24257/novel-helper/releases/download/v0.1.9/novel-helper.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "fu",
       "name": "阅融Fu",
       "tag": "fu",
@@ -1218,6 +1189,35 @@
             "name": "legado_fu_3.26.09061950_release.apk",
             "size": 36552778,
             "browserDownloadUrl": "https://github.com/h166278/legado_FU/releases/download/3.26.090619/legado_fu_3.26.09061950_release.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "xuanjuan",
+      "name": "玄卷",
+      "tag": "xuanjuan",
+      "repo": "24257/novel-helper",
+      "term": "legado-branch-xuanjuan",
+      "note": "基于 Legado 定制的网文小助手。",
+      "stars": 9,
+      "sourceUpdatedAt": "2026-09-30T15:22:43Z",
+      "githubArchived": false,
+      "release": {
+        "name": "玄卷 v0.1.9",
+        "tagName": "v0.1.9",
+        "prerelease": false,
+        "publishedAt": "2026-09-30T15:34:41Z",
+        "createdAt": "2026-09-30T15:22:34Z",
+        "body": "**Full Changelog**: https://github.com/24257/novel-helper/compare/v0.1.8...v0.1.9",
+        "assets": [
+          {
+            "name": "novel-helper.apk",
+            "size": 134077162,
+            "browserDownloadUrl": "https://github.com/24257/novel-helper/releases/download/v0.1.9/novel-helper.apk"
           }
         ]
       },
@@ -1249,7 +1249,7 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.110619.apk",
-            "size": null,
+            "size": 21030951,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.110619/%E9%98%85%E8%AF%BB_E-ink_3.26.110619.apk"
           },
           {
