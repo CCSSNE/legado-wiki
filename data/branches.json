@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T08:02:21.346Z",
+  "generatedAt": "2026-11-09T18:52:15.587Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 57,
+          "stars": 59,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47224,
+      "stars": 47231,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6907,
-      "sourceUpdatedAt": "2026-11-09T07:22:47Z",
+      "stars": 6920,
+      "sourceUpdatedAt": "2026-11-09T18:12:10Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.25",
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3061,
+      "stars": 3067,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,8 +204,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1858,
-      "sourceUpdatedAt": "2026-11-02T15:12:01Z",
+      "stars": 1871,
+      "sourceUpdatedAt": "2026-11-09T15:10:55Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26110117",
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 425,
+      "stars": 426,
       "sourceUpdatedAt": "2026-11-07T15:48:56Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 332,
+      "stars": 333,
       "sourceUpdatedAt": "2026-11-02T18:36:21Z",
       "githubArchived": false,
       "release": {
@@ -764,61 +764,61 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 97,
-      "sourceUpdatedAt": "2026-11-09T07:44:13Z",
+      "stars": 99,
+      "sourceUpdatedAt": "2026-11-09T17:04:48Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.8.0",
-        "tagName": "v2.8.0",
+        "name": "v2.9.0",
+        "tagName": "v2.9.0",
         "prerelease": false,
-        "publishedAt": "2026-11-07T07:41:33Z",
-        "createdAt": "2026-11-07T07:23:45Z",
-        "body": "release: v2.8.0\n\n新增\n- 划词翻译：选中文字后点「翻译」，在面板里查看译文，可以选择目标语言（默认中文译英文、其他语言译中文）。配了自己的 AI Key 时用自己的服务，不限次数；登录轻阅账号后每天有 100 次免费翻译。\n- 简繁转换：排版面板新增「原文 / 转简体 / 转繁體」。在本机用 OpenCC 词表转换，不联网、不需要 Key；划线、书签和阅读进度不受影响。\n- 选中本段：划线工具条新增「选中本段」，一键选中所在的整段。\n\n改进\n- 听书时顶栏和浮动胶囊使用同一套按钮（定时、回到听书处、暂停 / 继续、停止），顺序和点击区域一致。\n\n说明\n- 登录账号的免费翻译额度按账号计算，每天 100 次；超出后可以填入自己的 AI Key 继续使用。\n\n验证：t9 上 vue-tsc、相关单测、npm run e2e、e2e-translate。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-11-09T17:28:16Z",
+        "createdAt": "2026-11-09T17:04:45Z",
+        "body": "release: v2.9.0\n\n新增\n- 摸鱼模式（桌面）：在阅读页「阅读模式」面板最上面一行进入，PDF 在「视图」菜单。窗口变成透明无边框，只留正文，背景和文字浓淡可以分开调；顶部细条拖动窗口，悬停露出调节和退出。\n- 老板键（默认 Alt+Shift+Z）：一键藏起 / 恢复阅读窗口，轻阅不在前台时也有效，可在设置里重新录制。\n- 摸鱼可选项：伪装窗口标题、窗口置顶、不在任务栏和 Alt+Tab 中显示、截图和共享屏幕时隐藏、打开图书自动进入。进出摸鱼模式保持阅读位置。\n\n改进\n- Windows 窗口与 macOS 对齐：去掉系统标题栏和深色细边框，窗口圆角；侧栏直通到顶，窗口按钮浮在右上角并与页面顶行对齐、留出间距。\n- 夜间阅读：正文用夜间主题时，工具栏、进度条、目录、笔记、搜索、阅读模式、排版、听书、AI、背景音、翻译和各类弹窗都跟着变深；反过来（深色外观 + 浅色正文）也一致，离开阅读页恢复应用外观。\n- 删除确认改为红色「删除」按钮；「恢复默认」排版先确认再执行。\n- 窄窗口底部标签栏完整显示；各页面记住自己的滚动位置；弹窗底部按钮始终可见。\n- 双击选词不再顺带翻页（鼠标单击翻页约有 0.2 秒判定）；书内搜索、新建书单、添加书源等输入框自动聚焦。\n- PDF：窗口缩窄自动切换布局时停留在当前页；文件属性可用 Esc 关闭；快捷键说明与自动翻页、听书速度刻度不再挤压；AI 解读不再显示 Markdown 符号。\n\n修复\n- 「写想法」取消后不再留下划线；Esc 可关闭背景音面板。\n- 藏书页今日 / 本周分钟与阅读记录取整一致。\n\n已知限制\n- 中文输入法组词时按 Esc 会先交给输入法。\n- PDF 个别页面缩略图上的批注颜色标记与正文不一致，不影响阅读。\n\n验证：t9 上 vue-tsc、npm run build、test:stealth、style-tokens、cargo test (lib)、npm run e2e 37 步全部通过（退出码受 t9 GitHub API 匿名限流 403 影响）、e2e:stealth、e2e:window-chrome；Win10 真机 Codex 共 5 轮验收，第 5 轮 50 项中 49 项复测通过（1 项按约定未测）。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.8.0-1.x86_64.rpm",
-            "size": 32679951,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead-2.8.0-1.x86_64.rpm"
+            "name": "LightRead-2.9.0-1.x86_64.rpm",
+            "size": 32865658,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead-2.9.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.8.0_aarch64.dmg",
-            "size": 26078611,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_aarch64.dmg"
+            "name": "LightRead_2.9.0_aarch64.dmg",
+            "size": 26175023,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.8.0_amd64.AppImage",
-            "size": 108435960,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_amd64.AppImage"
+            "name": "LightRead_2.9.0_amd64.AppImage",
+            "size": 108599800,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.8.0_amd64.deb",
-            "size": 32681448,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_amd64.deb"
+            "name": "LightRead_2.9.0_amd64.deb",
+            "size": 32861846,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_amd64.deb"
           },
           {
-            "name": "LightRead_2.8.0_x64-setup.exe",
-            "size": 20667364,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_x64-setup.exe"
+            "name": "LightRead_2.9.0_x64-setup.exe",
+            "size": 20730499,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.8.0_x64.dmg",
-            "size": 27317193,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_2.8.0_x64.dmg"
+            "name": "LightRead_2.9.0_x64.dmg",
+            "size": 27431246,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 25991622,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_aarch64.app.tar.gz"
+            "size": 26096152,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 27258257,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/LightRead_x64.app.tar.gz"
+            "size": 27365618,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.8.0/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/SHA256SUMS"
           }
         ]
       },
@@ -833,7 +833,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 80,
+      "stars": 81,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
@@ -872,7 +872,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 72,
+      "stars": 74,
       "sourceUpdatedAt": "2026-11-08T02:45:23Z",
       "githubArchived": false,
       "release": {
@@ -990,7 +990,7 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 25,
+      "stars": 26,
       "sourceUpdatedAt": "2026-11-08T04:32:55Z",
       "githubArchived": false,
       "release": {
@@ -1276,7 +1276,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-11-09T04:54:33Z",
+      "sourceUpdatedAt": "2026-11-09T15:36:04Z",
       "githubArchived": false,
       "release": {
         "name": "1.0.0-beta",
@@ -1287,8 +1287,18 @@
         "body": "界面与 legado-E 全面对齐（书架重构 / 发现 / 订阅 / 我的）。\niOS 为未签名 IPA，需自行签名或 sideload 后安装。\n详见 CHANGELOG.md。\n",
         "assets": [
           {
+            "name": "app-arm64-release.apk",
+            "size": 30297635,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.0-beta/app-arm64-release.apk"
+          },
+          {
+            "name": "app-universal-release.apk",
+            "size": 53066556,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.0-beta/app-universal-release.apk"
+          },
+          {
             "name": "legado-ios-unsigned.ipa",
-            "size": 21367357,
+            "size": 21440850,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.0-beta/legado-ios-unsigned.ipa"
           }
         ]
@@ -1307,7 +1317,7 @@
       "allowNoRelease": true,
       "upstreamUrl": "https://cnb.cool/mingwuyan/iyuedu",
       "note": "z阅读的非内置ttsserver版本，不建议独立使用。",
-      "stars": 2,
+      "stars": 3,
       "sourceUpdatedAt": "2026-08-30T05:38:21Z",
       "githubArchived": false,
       "release": null,
