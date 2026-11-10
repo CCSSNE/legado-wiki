@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T18:52:15.587Z",
+  "generatedAt": "2026-11-10T02:12:21.746Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 209,
+      "stars": 210,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47231,
+      "stars": 47234,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6920,
+      "stars": 6923,
       "sourceUpdatedAt": "2026-11-09T18:12:10Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3067,
+      "stars": 3068,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1871,
+      "stars": 1874,
       "sourceUpdatedAt": "2026-11-09T15:10:55Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 663,
+      "stars": 664,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -355,64 +355,69 @@
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
       "stars": 333,
-      "sourceUpdatedAt": "2026-11-02T18:36:21Z",
+      "sourceUpdatedAt": "2026-11-10T00:02:39Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.11030156",
+        "name": "3.26.11100743",
         "tagName": "beta",
         "prerelease": true,
-        "publishedAt": "2026-11-02T18:36:21Z",
-        "createdAt": "2026-11-02T17:55:51Z",
-        "body": "## 更新日志\n- fix(鸿蒙): 修复两处 ArkTS 严格模式编译错误                               (83657e548)\n- docs(帮助): 更新日志补 10/19-11/02 条目并压缩 10/04-10/07 段             (54a0a5f92)\n- test(navigation): 清掉重复且过时的返回手势断言                           (e8c9f359d)\n- fix(reader): 按可见尺寸避让选区游标                                      (db0986312)\n- fix(书源编辑): 保持切页签和滚动后的语法高亮                              (70d8afba8)\n- fix(http): 已编码的 URL 段不再被二次追加, 修 iOS/鸿蒙搜索全源无结果      (42336bb17)\n- fix(native): 修 iOS 与鸿蒙 klib 编译并补校验通道                         (71083ca6d)\n- fix(fileSelect): 选择请求资格四层分离并贯通取消                          (423f9307e)\n- fix(association): 窗口阶段呈现与文件书父门按真实可见性贯通               (a3425fa52)\n- fix(file): 页面阶段持有者落地并贯通保存撤销资格                          (d1ef8f12d)\n- fix(import): 下载导入链挂请求资格并闭环取消与呈现                        (6c837ad55)\n- fix(import): 导入与压缩包全链随页面请求作用域执行                        (296283f42)\n- fix(cache): 有插图的书离线缓存不再整本跳过                               (967d3a419)\n- 还原网络主机file地址为平台原生UNC路径                                    (13fc534fa)\n- fix(desktop): 开发期运行类路径剔除媒体工件的旧版传递依赖                 (bc12762fa)\n- fix(app): 导入请求独立归属并统一收口协议                                 (cfe0d14d2)\n- refactor(ui): 抽取瀑布流与图文条目公共组件并统一封面比例                 (e4da9dcdf)\n- feat(书源登录): 关闭登录对话框时保存未确认的输入                         (70060f668)\n- feat(script): 摘要接口新增原始字节入参版本                               (e0eb8d85f)\n- remove(api): 移除ContentProvider对外数据接口                             (31f0b6f27)\n",
+        "publishedAt": "2026-11-10T00:02:40Z",
+        "createdAt": "2026-11-09T20:23:32Z",
+        "body": "## 更新日志\n- fix(cache): 仅在文本书籍更新后自动缓存章节                               (52519722d)\n- fix(image): 保留切块边缘并统一拼接与裁剪结果                             (49201111d)\n- fix(script): 按真实数值读取原生脚本参数与对象编号                        (b5f4a2447)\n- fix(script): 保持原生图片可用并回收无人持有资源                          (a76a5f987)\n- fix(script): 修正原生作用域与鸿蒙图片释放终态                            (60d8eb0d9)\n- fix(script): 按作用域隔离类句柄缓存与对象身份索引                        (7a71355be)\n- feat(script): 原生脚本图片操作改真实JS对象持有                           (533c51efe)\n- fix(script): 释放脚本句柄与鸿蒙图片像素资源                              (7c7030d07)\n- feat(manga): 插件文本编辑按库事务收口                                    (d9f26536b)\n- feat(manga): 插件文本项编辑改活会话承载插件声明与校验                    (156739c7e)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 18841531,
+            "size": 22002255,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 18841535,
+            "size": 22002259,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 11768208,
+            "size": 12659821,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 11768212,
+            "size": 12659825,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 11051238,
+            "size": 11774057,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 11051242,
+            "size": 11774061,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
           },
           {
             "name": "linux_x64.deb",
-            "size": 106019656,
+            "size": 108516046,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
           },
           {
             "name": "linux_x64.rpm",
-            "size": 106086773,
+            "size": 108562106,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
           },
           {
+            "name": "macos_arm64.dmg",
+            "size": 120182517,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
+          },
+          {
             "name": "windows_x64.msi",
-            "size": 108778177,
+            "size": 111437194,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
           },
           {
             "name": "windows_x64_portable.zip",
-            "size": 107548084,
+            "size": 110201395,
             "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
@@ -427,7 +432,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 324,
+      "stars": 325,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
