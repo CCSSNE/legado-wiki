@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T22:44:50.019Z",
+  "generatedAt": "2026-11-12T03:51:23.235Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47249,
+      "stars": 47245,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6952,
+      "stars": 6957,
       "sourceUpdatedAt": "2026-11-11T21:08:00Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3077,
+      "stars": 3079,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -555,7 +555,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 208,
+      "stars": 209,
       "sourceUpdatedAt": "2026-11-05T18:00:56Z",
       "githubArchived": false,
       "release": {
@@ -769,61 +769,61 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 108,
-      "sourceUpdatedAt": "2026-11-09T17:04:48Z",
+      "stars": 109,
+      "sourceUpdatedAt": "2026-11-12T02:43:26Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.9.0",
-        "tagName": "v2.9.0",
+        "name": "v2.10.1",
+        "tagName": "v2.10.1",
         "prerelease": false,
-        "publishedAt": "2026-11-09T17:28:16Z",
-        "createdAt": "2026-11-09T17:04:45Z",
-        "body": "release: v2.9.0\n\n新增\n- 摸鱼模式（桌面）：在阅读页「阅读模式」面板最上面一行进入，PDF 在「视图」菜单。窗口变成透明无边框，只留正文，背景和文字浓淡可以分开调；顶部细条拖动窗口，悬停露出调节和退出。\n- 老板键（默认 Alt+Shift+Z）：一键藏起 / 恢复阅读窗口，轻阅不在前台时也有效，可在设置里重新录制。\n- 摸鱼可选项：伪装窗口标题、窗口置顶、不在任务栏和 Alt+Tab 中显示、截图和共享屏幕时隐藏、打开图书自动进入。进出摸鱼模式保持阅读位置。\n\n改进\n- Windows 窗口与 macOS 对齐：去掉系统标题栏和深色细边框，窗口圆角；侧栏直通到顶，窗口按钮浮在右上角并与页面顶行对齐、留出间距。\n- 夜间阅读：正文用夜间主题时，工具栏、进度条、目录、笔记、搜索、阅读模式、排版、听书、AI、背景音、翻译和各类弹窗都跟着变深；反过来（深色外观 + 浅色正文）也一致，离开阅读页恢复应用外观。\n- 删除确认改为红色「删除」按钮；「恢复默认」排版先确认再执行。\n- 窄窗口底部标签栏完整显示；各页面记住自己的滚动位置；弹窗底部按钮始终可见。\n- 双击选词不再顺带翻页（鼠标单击翻页约有 0.2 秒判定）；书内搜索、新建书单、添加书源等输入框自动聚焦。\n- PDF：窗口缩窄自动切换布局时停留在当前页；文件属性可用 Esc 关闭；快捷键说明与自动翻页、听书速度刻度不再挤压；AI 解读不再显示 Markdown 符号。\n\n修复\n- 「写想法」取消后不再留下划线；Esc 可关闭背景音面板。\n- 藏书页今日 / 本周分钟与阅读记录取整一致。\n\n已知限制\n- 中文输入法组词时按 Esc 会先交给输入法。\n- PDF 个别页面缩略图上的批注颜色标记与正文不一致，不影响阅读。\n\n验证：t9 上 vue-tsc、npm run build、test:stealth、style-tokens、cargo test (lib)、npm run e2e 37 步全部通过（退出码受 t9 GitHub API 匿名限流 403 影响）、e2e:stealth、e2e:window-chrome；Win10 真机 Codex 共 5 轮验收，第 5 轮 50 项中 49 项复测通过（1 项按约定未测）。\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-11-12T03:14:03Z",
+        "createdAt": "2026-11-12T02:43:22Z",
+        "body": "release: v2.10.1\n\nv2.10.0 没有公开过（发版构建在 macOS 与 Windows 上失败），这是 2.9.0 之后的第一个版本。\n\n新增\n- 离线翻译（macOS、Windows）：在「设置 › AI 助手」或翻译面板里下载翻译模型（1.1 GB）后，划词翻译在本机完成，不登录、不联网、不限次数，支持中、英、日、韩等 9 种语言。内存不足 8 GB 或处理器较旧的电脑不提供；本机实测太慢而又能在线翻译时自动改用在线。\n- 本机语音（实验，Apple 芯片的 Mac）：听书面板的语音多了「本机」，下载语音模型（1.5 GB）后朗读在本机合成，有女声、男声两种音色，语速设置同样生效。需要内存 12 GB 以上；合成跟不上朗读时自动改用在线语音。Windows 和 Intel Mac 暂不提供（没有显卡加速时合成跟不上朗读）。\n\n改进\n- PDF：页面渲染移到后台线程，翻页和缩放时界面不再跟着卡顿；放大后按内存预算少留几页，大文件更不容易把内存占满。渲染出错时自动换用备用引擎。\n- 自建书库地址带端口（如 http://192.168.1.10:8080）时可以正常连接。\n\n修复\n- 应用浅色外观 + 正文夜间主题时，书页底色与上下边缘颜色接不上。\n\n变化\n- macOS 最低系统版本由 10.13 提高到 10.15（离线翻译的引擎需要）。\n\n已知限制\n- 离线翻译在 Windows 上只验证了构建和原生层（真实模型），没有人在装好的应用里用过；Intel Mac 没有实机验证。Linux 版暂时不带离线翻译和本机语音。\n- 本机语音的音质和长时间朗读的稳定性还没有充分试听，属于实验功能；拉丁字母的文字一律按英语朗读。\n- 模型文件较大，下载走 ModelScope / Hugging Face，网络不通时可在「设置 › 网络」填写代理；下载支持断点续传。\n\n验证：t9 上 cargo test --lib 154 项、npm run build、e2e 冒烟、e2e:translate（桌面与 App 界面）、test:read-aloud、test:translate、test:pdf-render、e2e:pdf-crash 通过。MacAir（M5）上用与发版相同的命令打出应用，在真实应用里经 IPC 验证了模型下载（含退出后续传与校验）、流式翻译、语音合成、带着模型退出不闪退。GitHub 的 Windows 机器上构建、出安装包，并用真实模型跑通翻译与语音的原生层测试；Intel Mac 目标打包通过。界面一侧用原生层替身测试，没有人在装好的应用里点着用过这两项功能。\n\nCo-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.9.0-1.x86_64.rpm",
-            "size": 32865658,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead-2.9.0-1.x86_64.rpm"
+            "name": "LightRead-2.10.1-1.x86_64.rpm",
+            "size": 32953422,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead-2.10.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.9.0_aarch64.dmg",
-            "size": 26175023,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_aarch64.dmg"
+            "name": "LightRead_2.10.1_aarch64.dmg",
+            "size": 29938286,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.9.0_amd64.AppImage",
-            "size": 108599800,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_amd64.AppImage"
+            "name": "LightRead_2.10.1_amd64.AppImage",
+            "size": 108677624,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.9.0_amd64.deb",
-            "size": 32861846,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_amd64.deb"
+            "name": "LightRead_2.10.1_amd64.deb",
+            "size": 32951190,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_amd64.deb"
           },
           {
-            "name": "LightRead_2.9.0_x64-setup.exe",
-            "size": 20730499,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_x64-setup.exe"
+            "name": "LightRead_2.10.1_x64-setup.exe",
+            "size": 22717932,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.9.0_x64.dmg",
-            "size": 27431246,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_2.9.0_x64.dmg"
+            "name": "LightRead_2.10.1_x64.dmg",
+            "size": 31283341,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_x64.dmg"
           },
           {
             "name": "LightRead_aarch64.app.tar.gz",
-            "size": 26096152,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_aarch64.app.tar.gz"
+            "size": 29865470,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_aarch64.app.tar.gz"
           },
           {
             "name": "LightRead_x64.app.tar.gz",
-            "size": 27365618,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/LightRead_x64.app.tar.gz"
+            "size": 31233965,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_x64.app.tar.gz"
           },
           {
             "name": "SHA256SUMS",
-            "size": 750,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.9.0/SHA256SUMS"
+            "size": 756,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/SHA256SUMS"
           }
         ]
       },
@@ -1039,7 +1039,7 @@
       "repo": "syq17496152/legado",
       "term": "legado-branch-m",
       "stars": 26,
-      "sourceUpdatedAt": "2026-11-11T16:41:48Z",
+      "sourceUpdatedAt": "2026-11-12T02:40:59Z",
       "githubArchived": false,
       "release": {
         "name": "3.26.102921",
