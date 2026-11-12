@@ -728,9 +728,9 @@
     "max": {
       "name": "阅读 MAX怣疯版",
       "repo": "youfengknight/Legado_Max",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-05T01:29:41.717Z",
+      "status": "error",
+      "message": "上游 HTTP 404：可能删除、私有化或令牌失去权限，无法确认删库；保留备份，未同步",
+      "since": "2026-11-12T13:11:21.533Z",
       "backupRepo": "legado-backup/legado-max",
       "activeBranch": "main",
       "events": [
@@ -738,6 +738,11 @@
           "at": "2026-10-05T01:29:41.717Z",
           "type": "synced",
           "message": "youfengknight/Legado_Max:main → legado-backup/legado-max:main 已同步"
+        },
+        {
+          "at": "2026-11-12T13:11:21.533Z",
+          "type": "error",
+          "message": "上游 HTTP 404：可能删除、私有化或令牌失去权限，无法确认删库；保留备份，未同步"
         }
       ]
     },
@@ -1452,5 +1457,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-12T04:08:17.934Z"
+  "checkedAt": "2026-11-12T13:11:41.734Z"
 }
