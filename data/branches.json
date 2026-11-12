@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T03:51:23.235Z",
+  "generatedAt": "2026-11-12T12:49:41.249Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 61,
+          "stars": 62,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47245,
+      "stars": 47250,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6957,
-      "sourceUpdatedAt": "2026-11-11T21:08:00Z",
+      "stars": 6966,
+      "sourceUpdatedAt": "2026-11-12T08:01:48Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.25",
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3079,
+      "stars": 3081,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1896,
+      "stars": 1903,
       "sourceUpdatedAt": "2026-11-11T11:04:36Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 429,
+      "stars": 430,
       "sourceUpdatedAt": "2026-11-07T15:48:56Z",
       "githubArchived": false,
       "release": {
@@ -346,7 +346,7 @@
       },
       "errors": [],
       "fork": true,
-      "forkOf": "youfengknight/Legado_Max"
+      "forkOf": "Luoyacheng/legado-E"
     },
     {
       "id": "shutiao",
@@ -455,48 +455,6 @@
       "forkOf": "rimvoid/legado"
     },
     {
-      "id": "max",
-      "name": "阅读 MAX怣疯版",
-      "tag": "max",
-      "repo": "youfengknight/Legado_Max",
-      "term": "legado-branch-max",
-      "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
-      "manualAbandoned": "作者已声明不再维护",
-      "stars": 270,
-      "sourceUpdatedAt": "2026-06-18T16:23:25Z",
-      "githubArchived": true,
-      "release": {
-        "name": "legado_app_3.26.061723",
-        "tagName": "beta-3.26.061723",
-        "prerelease": true,
-        "publishedAt": "2026-06-17T15:43:18Z",
-        "createdAt": "2026-06-05T14:19:50Z",
-        "body": "### 更新内容\r\n#### 此版本有崩溃bug，该项目不再维护。\r\n* fix：普通朗读模式下按返回可以关闭朗读\r\n* 优化悬浮播放关闭按钮\r\n* 页眉和页脚上下边距最大值从100dp改为200dp\r\n* 封装Compose dialog\r\n* 优化与封装Compose的AppConfirmDialog的dialog\r\n* fix：调试模式改为调试工具\r\n* 文档：补充调试专属日志设计说明\r\n* 文档：修正调试专属日志设计说明中的 putNotSave 描述\r\n* 文档：补充调试专属日志功能实现计划\r\n* 调试日志：新增调试专属日志模式的 PreferKey 常量\r\n* 调试日志：新增 AppConfig.debugLogOnlyCategories 测试\r\n* 调试日志：回滚 AppConfig.debugLogOnlyCategories 测试\r\n* 调试日志：新增 AppConfig 的专属开关和分类配置\r\n* 完善调试专属日志分流与配置入口\r\n* feat：离线缓存界面增加文件大小，字典规则界面增加快速滚动条\r\n* fix：多个界面默认显示快速滚动条\r\n* fix：去除300ms防抖延迟造成文字上下跳动，选择恢复文件界面优化按钮颜色\r\n* fix：选择恢复内容界面优化\r\n\r\n",
-        "assets": [
-          {
-            "name": "legado_beta_3.26.061723_release.apk",
-            "size": 24152888,
-            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_beta_3.26.061723_release.apk"
-          },
-          {
-            "name": "legado_compat_3.26.061723_legacy.apk",
-            "size": 24152799,
-            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_compat_3.26.061723_legacy.apk"
-          },
-          {
-            "name": "legado_plus_3.26.061723_releaseS.apk",
-            "size": 24152835,
-            "browserDownloadUrl": "https://github.com/youfengknight/Legado_Max/releases/download/beta-3.26.061723/legado_plus_3.26.061723_releaseS.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "Luoyacheng/legado-E",
-      "abandoned": "弃坑",
-      "abandonedReason": "作者已声明不再维护"
-    },
-    {
       "id": "tauri",
       "name": "阅读 Tauri",
       "tag": "tauri",
@@ -555,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 209,
+      "stars": 210,
       "sourceUpdatedAt": "2026-11-05T18:00:56Z",
       "githubArchived": false,
       "release": {
@@ -769,7 +727,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 109,
+      "stars": 110,
       "sourceUpdatedAt": "2026-11-12T02:43:26Z",
       "githubArchived": false,
       "release": {
@@ -1117,25 +1075,25 @@
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
       "stars": 19,
-      "sourceUpdatedAt": "2026-11-01T12:31:39Z",
+      "sourceUpdatedAt": "2026-11-12T08:11:55Z",
       "githubArchived": false,
       "release": {
-        "name": "修复找书换源把未加入书架的书自动加架，以及书架重复书籍",
-        "tagName": "v3.26.102914-10107",
+        "name": "朗读引擎静默后自动重试本段，长段落不再被打断",
+        "tagName": "v3.26.111009-10122",
         "prerelease": true,
-        "publishedAt": "2026-10-30T01:33:29Z",
-        "createdAt": "2026-10-29T10:39:01Z",
-        "body": "## 更新内容\n\n- 修复找书时换源会把还没加入书架的书自动加入书架\n- 修复书架出现重复书籍\n- 修复阅读界面重新打开时闪退\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.102914c_10107_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
+        "publishedAt": "2026-11-12T08:11:11Z",
+        "createdAt": "2026-11-10T01:22:24Z",
+        "body": "## 更新内容\n\n**听书（本次重点）**\n\n- 朗读时引擎端出现静默（一段时间收不到任何回调）会主动重复尝试本段，尽量让朗读连续读下去，避免无声停住或直接跳过内容。长时间朗读、长段落也按段落长度放宽了判定时间，不会因为一段读得久就被打断。\n- 按章节定时的额度只在「本章真的读完且真的出过声」时才扣；切章失败会归还额度并提示，不再白掉额度\n- 朗读引擎对齐上游「阅读C」：新增蓝牙按键映射（阅读菜单 → 蓝牙按键映射，7 个键 × 阅读/朗读两套动作）；书源音频按字幕时长预测段内位置，进度跟随更顺\n- 修复点选引擎时的明显卡顿；脚本引擎可从详情页「脚本选项」配置、从「选择音色」挑发音人\n\n**书架与备份**\n\n- 书架变动自动备份的等待时间 8 秒 → 3 秒，加/删书后立刻退出更不容易丢备份\n- 试读后「加书架」不再漏触发自动备份\n\n---\n\n**两个包的区别**\n\n- `legado_sk_3.26.111009c_10122_arm64-v8a.apk`（正式版，包名 `io.legado.app.c`）：可覆盖升级，与「阅读C」签名不同、不能互覆。\n- `legado_sk_3.26.111009c_10122_arm64-v8a_sk2-coexist.apk`（共存版，包名 `io.legado.app.sk2`）：可与正式版、「阅读C」三者并存；**独立数据，不共享书架与进度**；不能覆盖安装正式版。\n",
         "assets": [
           {
-            "name": "legado_sk_3.26.102914c_10107_arm64-v8a.apk",
-            "size": 36181661,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.102914-10107/legado_sk_3.26.102914c_10107_arm64-v8a.apk"
+            "name": "legado_sk_3.26.111009c_10122_arm64-v8a.apk",
+            "size": 36215404,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.111009-10122/legado_sk_3.26.111009c_10122_arm64-v8a.apk"
           },
           {
-            "name": "legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk",
-            "size": 36181603,
-            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.102914-10107/legado_sk_3.26.102914c_10107_arm64-v8a_sk2-coexist.apk"
+            "name": "legado_sk_3.26.111009c_10122_arm64-v8a_sk2-coexist.apk",
+            "size": 36215636,
+            "browserDownloadUrl": "https://github.com/skxingyu/legado-sk/releases/download/v3.26.111009-10122/legado_sk_3.26.111009c_10122_arm64-v8a_sk2-coexist.apk"
           }
         ]
       },
@@ -1254,7 +1212,7 @@
         "assets": [
           {
             "name": "阅读_E-ink_3.26.110619.apk",
-            "size": 21030951,
+            "size": null,
             "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.110619/%E9%98%85%E8%AF%BB_E-ink_3.26.110619.apk"
           },
           {
@@ -1329,6 +1287,25 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "max",
+      "name": "阅读 MAX怣疯版",
+      "tag": "max",
+      "repo": "youfengknight/Legado_Max",
+      "term": "legado-branch-max",
+      "note": "原版 MAX 已宣布不再维护，家族各分支独立发版。",
+      "manualAbandoned": "作者已声明不再维护",
+      "stars": null,
+      "sourceUpdatedAt": null,
+      "githubArchived": false,
+      "release": null,
+      "errors": [
+        "仓库信息同步失败：GitHub API 404",
+        "版本信息同步失败：GitHub API 404"
+      ],
+      "abandoned": "弃坑",
+      "abandonedReason": "作者已声明不再维护"
     },
     {
       "id": "cmbok",
