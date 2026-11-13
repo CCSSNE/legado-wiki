@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T01:52:41.629Z",
+  "generatedAt": "2026-11-13T09:37:47.340Z",
   "branches": [
     {
       "id": "c",
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 6977,
-      "sourceUpdatedAt": "2026-11-12T16:50:18Z",
+      "stars": 6990,
+      "sourceUpdatedAt": "2026-11-13T09:05:41Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.25",
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3084,
+      "stars": 3086,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1905,
+      "stars": 1913,
       "sourceUpdatedAt": "2026-11-11T11:04:36Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 667,
+      "stars": 668,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 430,
+      "stars": 432,
       "sourceUpdatedAt": "2026-11-07T15:48:56Z",
       "githubArchived": false,
       "release": {
@@ -432,7 +432,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 328,
+      "stars": 329,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -683,7 +683,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 113,
+      "stars": 114,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -727,61 +727,51 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 112,
-      "sourceUpdatedAt": "2026-11-12T16:43:54Z",
+      "stars": 113,
+      "sourceUpdatedAt": "2026-11-13T06:46:38Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.10.1",
-        "tagName": "v2.10.1",
+        "name": "v2.10.3",
+        "tagName": "v2.10.3",
         "prerelease": false,
-        "publishedAt": "2026-11-12T03:14:03Z",
-        "createdAt": "2026-11-12T02:43:22Z",
-        "body": "release: v2.10.1\n\nv2.10.0 没有公开过（发版构建在 macOS 与 Windows 上失败），这是 2.9.0 之后的第一个版本。\n\n新增\n- 离线翻译（macOS、Windows）：在「设置 › AI 助手」或翻译面板里下载翻译模型（1.1 GB）后，划词翻译在本机完成，不登录、不联网、不限次数，支持中、英、日、韩等 9 种语言。内存不足 8 GB 或处理器较旧的电脑不提供；本机实测太慢而又能在线翻译时自动改用在线。\n- 本机语音（实验，Apple 芯片的 Mac）：听书面板的语音多了「本机」，下载语音模型（1.5 GB）后朗读在本机合成，有女声、男声两种音色，语速设置同样生效。需要内存 12 GB 以上；合成跟不上朗读时自动改用在线语音。Windows 和 Intel Mac 暂不提供（没有显卡加速时合成跟不上朗读）。\n\n改进\n- PDF：页面渲染移到后台线程，翻页和缩放时界面不再跟着卡顿；放大后按内存预算少留几页，大文件更不容易把内存占满。渲染出错时自动换用备用引擎。\n- 自建书库地址带端口（如 http://192.168.1.10:8080）时可以正常连接。\n\n修复\n- 应用浅色外观 + 正文夜间主题时，书页底色与上下边缘颜色接不上。\n\n变化\n- macOS 最低系统版本由 10.13 提高到 10.15（离线翻译的引擎需要）。\n\n已知限制\n- 离线翻译在 Windows 上只验证了构建和原生层（真实模型），没有人在装好的应用里用过；Intel Mac 没有实机验证。Linux 版暂时不带离线翻译和本机语音。\n- 本机语音的音质和长时间朗读的稳定性还没有充分试听，属于实验功能；拉丁字母的文字一律按英语朗读。\n- 模型文件较大，下载走 ModelScope / Hugging Face，网络不通时可在「设置 › 网络」填写代理；下载支持断点续传。\n\n验证：t9 上 cargo test --lib 154 项、npm run build、e2e 冒烟、e2e:translate（桌面与 App 界面）、test:read-aloud、test:translate、test:pdf-render、e2e:pdf-crash 通过。MacAir（M5）上用与发版相同的命令打出应用，在真实应用里经 IPC 验证了模型下载（含退出后续传与校验）、流式翻译、语音合成、带着模型退出不闪退。GitHub 的 Windows 机器上构建、出安装包，并用真实模型跑通翻译与语音的原生层测试；Intel Mac 目标打包通过。界面一侧用原生层替身测试，没有人在装好的应用里点着用过这两项功能。\n\nCo-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>\n\n",
+        "publishedAt": "2026-11-13T06:23:18Z",
+        "createdAt": "2026-11-13T06:03:07Z",
+        "body": "release: v2.10.3\n\n修复\n- macOS：从浏览器下载安装包后，在 Apple 芯片的 Mac 上打开提示「已损坏，无法打开」（#20）。原因是安装包里的应用一直没有签名，系统直接拒绝且不给放行入口；2.10.1 及更早的安装包都有这个问题，通过应用内更新下载的不受影响。从这个版本起，macOS 安装包带 Apple 开发者签名并经过 Apple 公证，下载后可以直接打开，不需要到系统设置里放行。\n\n其他平台与 2.10.1 相同，没有功能变化。v2.10.2 没有公开过。\n\n已知限制\n- 已经装上旧版并提示「已损坏」的，请重新下载本版本安装。\n- Intel Mac 的安装包通过了签名、公证与架构检查，没有实机打开过。\n\n验证：macOS 安装包在 jiangshuMac 上用 Developer ID 签名并经 Apple 公证（两种芯片均为 Accepted），应用与 DMG 都装订了票据。MacAir（M5，macOS 26.5）上按浏览器下载的条件（带隔离标记）安装后打开：2.9.0 与 2.10.1 的包复现「已损坏」；本版本系统提示「Apple 对其进行了检查，未检测到任何恶意软件」，点打开后正常启动，藏书与进度保留。t9 上桌面前端构建、网页版构建与 e2e 冒烟 37 步通过（在版本号与打包配置改动之前的同一份源码上）。发版流程改为 macOS 包在 jiangshuMac 签名公证后上传，由 GitHub 的 Mac 带隔离标记复核签名、公证、架构与版本，不通过不公开。\n\nCo-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>\n\n",
         "assets": [
           {
-            "name": "LightRead-2.10.1-1.x86_64.rpm",
-            "size": 32953422,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead-2.10.1-1.x86_64.rpm"
+            "name": "LightRead-2.10.3-1.x86_64.rpm",
+            "size": 32930767,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead-2.10.3-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.10.1_aarch64.dmg",
-            "size": 29938286,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_aarch64.dmg"
+            "name": "LightRead_2.10.3_aarch64.dmg",
+            "size": 29578061,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead_2.10.3_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.10.1_amd64.AppImage",
-            "size": 108677624,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_amd64.AppImage"
+            "name": "LightRead_2.10.3_amd64.AppImage",
+            "size": 108669432,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead_2.10.3_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.10.1_amd64.deb",
-            "size": 32951190,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_amd64.deb"
+            "name": "LightRead_2.10.3_amd64.deb",
+            "size": 32931862,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead_2.10.3_amd64.deb"
           },
           {
-            "name": "LightRead_2.10.1_x64-setup.exe",
-            "size": 22717932,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_x64-setup.exe"
+            "name": "LightRead_2.10.3_x64-setup.exe",
+            "size": 22701364,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead_2.10.3_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.10.1_x64.dmg",
-            "size": 31283341,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_2.10.1_x64.dmg"
-          },
-          {
-            "name": "LightRead_aarch64.app.tar.gz",
-            "size": 29865470,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_aarch64.app.tar.gz"
-          },
-          {
-            "name": "LightRead_x64.app.tar.gz",
-            "size": 31233965,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/LightRead_x64.app.tar.gz"
+            "name": "LightRead_2.10.3_x64.dmg",
+            "size": 31900000,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/LightRead_2.10.3_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
-            "size": 756,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.1/SHA256SUMS"
+            "size": 570,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.3/SHA256SUMS"
           }
         ]
       },
@@ -954,7 +944,7 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 29,
-      "sourceUpdatedAt": "2026-11-08T04:32:55Z",
+      "sourceUpdatedAt": "2026-11-13T03:08:16Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.44",
@@ -1239,7 +1229,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-11-12T14:44:07Z",
+      "sourceUpdatedAt": "2026-11-13T04:12:17Z",
       "githubArchived": false,
       "release": {
         "name": "1.0.0-beta",
@@ -1247,7 +1237,7 @@
         "prerelease": true,
         "publishedAt": "2026-11-09T04:54:33Z",
         "createdAt": "2026-11-09T04:49:46Z",
-        "body": "界面与 legado-E 全面对齐（书架重构 / 发现 / 订阅 / 我的）。\niOS 为未签名 IPA，需自行签名或 sideload 后安装。\n详见 CHANGELOG.md。\n",
+        "body": "界面与功能调整（书架重构 / 发现 / 订阅 / 我的）。\niOS 为未签名 IPA，需自行签名或 sideload 后安装。\n详见 CHANGELOG.md。\n",
         "assets": [
           {
             "name": "app-arm64-release.apk",
@@ -1261,7 +1251,7 @@
           },
           {
             "name": "legado-ios-unsigned.ipa",
-            "size": 21468156,
+            "size": 21512031,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.0-beta/legado-ios-unsigned.ipa"
           }
         ]
