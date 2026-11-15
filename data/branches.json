@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T11:02:24.055Z",
+  "generatedAt": "2026-11-15T17:46:37.869Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 211,
+      "stars": 213,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 65,
+          "stars": 66,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47251,
+      "stars": 47254,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7017,
-      "sourceUpdatedAt": "2026-11-14T22:07:11Z",
+      "stars": 7023,
+      "sourceUpdatedAt": "2026-11-15T17:44:15Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.27",
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3100,
+      "stars": 3102,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2251,
+      "stars": 2252,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1931,
+      "stars": 1937,
       "sourceUpdatedAt": "2026-11-11T11:04:36Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 671,
+      "stars": 673,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 434,
+      "stars": 435,
       "sourceUpdatedAt": "2026-11-15T09:18:44Z",
       "githubArchived": false,
       "release": {
@@ -432,7 +432,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 329,
+      "stars": 330,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -467,7 +467,7 @@
           "name": "CCSSNE/Legado-Tauri",
           "repo": "CCSSNE/Legado-Tauri",
           "url": "https://github.com/CCSSNE/Legado-Tauri",
-          "stars": 6,
+          "stars": 8,
           "updatedAt": "2026-08-13T16:47:51Z"
         }
       ],
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 214,
+      "stars": 215,
       "sourceUpdatedAt": "2026-11-15T04:57:42Z",
       "githubArchived": false,
       "release": {
@@ -654,7 +654,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 127,
+      "stars": 131,
       "sourceUpdatedAt": "2026-11-06T10:22:33Z",
       "githubArchived": false,
       "release": {
@@ -683,41 +683,51 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 117,
-      "sourceUpdatedAt": "2026-11-14T05:24:25Z",
+      "stars": 118,
+      "sourceUpdatedAt": "2026-11-15T14:05:27Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.10.3",
-        "tagName": "app-v2.10.3",
+        "name": "v2.10.4",
+        "tagName": "v2.10.4",
         "prerelease": false,
-        "publishedAt": "2026-11-14T03:11:59Z",
-        "createdAt": "2026-11-14T03:10:34Z",
-        "body": "版本号与桌面版对齐（上一版是 app-v2.9.0）。\n\n新增\n- 离线朗读：听书面板「音色 → 离线」下载语音包（约 350 MB）后，朗读在手机上合成，不联网。合成靠手机自己的处理器：较旧的手机会跟不上朗读而出现停顿，这时界面会提示改用在线语音。\n- 本机模型：「设置 → AI 助手 → AI 服务」可以选「本机模型」，由通义千问 Qwen3.5 在手机上回答问书、划词解读和翻译，不联网、不限次数。有轻量（0.5 GB）、标准（1.1 GB）、增强（2.4 GB）三档，应用按手机内存标出推荐的一档，带不动的档位不提供下载。小模型的回答会有差错，重要内容请核对。\n\n改进\n- 听书面板里用不了的语音来源（例如「系统」）现在可以点，点了会说明原因；原先是点不动的灰色按钮。\n- 离线语音包改为先从国内镜像下载：GitHub 上的同名文件被替换过，校验不过，原先要白下两遍才轮到镜像。\n- 关于页补上「轻阅官网」入口的文案。\n\n验证\n- K30（Redmi K30 Pro，骁龙 865，Android 12，API 31，arm64-v8a，WebView 157.0.8103.38）：用同一固定签名从 app-v2.9.0 覆盖升级，34 本藏书、阅读进度、设置和登录状态保留；冷启动正常。\n- 同一台手机：应用内下载语音包，在《理想国》里用离线语音听书约三分钟，能连续朗读但有短暂停顿（每 3 秒看一次，30 次里 4 次在等合成），界面给出了「有点卡」的提示；下载标准档模型（Qwen3.5 2B），在《理想国》的 AI 助手里提问得到回答，约 9 token/秒；先后使用离线语音和本机模型，未闪退。\n- t9：单测、原生测试、构建、冒烟端到端通过；APK 经发版检查（包名、版本、arm64、固定签名、无调试段）。\n\n已知限制\n- 只在 K30 一台手机上验证过。离线朗读在这台 2020 年的旗舰上合成速度约为播放速度的 0.8 倍，做不到完全流畅；更新的手机应当能跟上，没有实测。点「停止」后正在合成的那一句要算完才停。\n- 离线语音包目前只能从 GitCode 镜像下载，连不上 GitCode 的网络下不了。\n- 本机模型在这台手机上的速度低于同类应用（约 9 对 16 token/秒），还有优化空间；轻量和增强两档没有在真机上跑过。\n- 系统语音仍不可用。断网启动和「点开下载 → 返回应用 → 版本检查」这次没有在真机上重测。\n- 安装包约 139 MB（比上一版多约 30 MB，多出的是离线语音引擎）。\n\n说明\n- Android 仍为实验性 arm64 版本，需要 Android 7.0 或更新版本；保留现有应用身份与签名，可从同签名旧版直接覆盖升级。\n- iOS 版仍在实验中，本次不发布。\n\n\n",
+        "publishedAt": "2026-11-15T14:40:28Z",
+        "createdAt": "2026-11-15T13:56:09Z",
+        "body": "新增\n- 摸鱼模式可以自选背景颜色、文字颜色和字体（设置 → 阅读 → 摸鱼模式；摸鱼时顶部细条上也能调颜色）。Windows 上可以用吸管直接取窗口后面网页的底色和字色，配合「背景浓淡」融进网页；正文、标题和链接统一用所选字色。字体只在摸鱼时生效，PDF 只能调颜色。\n\n修复\n- 在阅读设置里换字体后，部分书（多为自带排版样式的中文 EPUB）正文字体不变。现在所选字体会盖过书里自带的字体，代码块仍是等宽字体。\n- 开着「沉浸」打开书时报错，工具栏也不会自动收起。\n- Windows 版关闭程序（或关机、注销）时偶尔报崩溃（窗口库已知问题），现在退出时清理完直接结束。\n- WebDAV 同步：连接被网盘偶尔断开时立即重试一次；断网时不再把每本书都上传一遍再逐个报错。\n- 打字机的打字声在暂停或退出后仍占着音频输出。\n- 歌词模式里直接返回藏书页时，阅读进度会被存成本章开头。\n- 手动歌词模式下点底部状态条的文字可以呼出 / 收起工具栏。\n- 手动歌词放大字号时偶尔误弹「回到当前行」。\n- 打字机和歌词的加速 / 减速按钮来回点回不到原来的速度。\n- 关于页的 iOS 下载改为 TestFlight 公开测试链接。\n\n验证\n- t9：类型检查、cargo check、20 组单测、平台边界检查、网页构建、冒烟端到端（37 项）与摸鱼模式端到端（含自带字体与字色的书）通过。\n\n已知限制\n- 退出崩溃的处理和屏幕取色没有在 Windows 真机上验证；macOS 上没有屏幕取色按钮，只能用取色框选颜色。\n",
         "assets": [
           {
-            "name": "LightRead_app-v2.10.3_android_arm64.apk",
-            "size": 145714316,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.3/LightRead_app-v2.10.3_android_arm64.apk"
+            "name": "LightRead-2.10.4-1.x86_64.rpm",
+            "size": 32943730,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead-2.10.4-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_app-v2.10.3_android_arm64.apk.build.json",
-            "size": 163,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.3/LightRead_app-v2.10.3_android_arm64.apk.build.json"
+            "name": "LightRead_2.10.4_aarch64.dmg",
+            "size": 29573295,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead_2.10.4_aarch64.dmg"
           },
           {
-            "name": "LightRead_app-v2.10.3_android_arm64.apk.json",
-            "size": 777,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.3/LightRead_app-v2.10.3_android_arm64.apk.json"
+            "name": "LightRead_2.10.4_amd64.AppImage",
+            "size": 108689912,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead_2.10.4_amd64.AppImage"
           },
           {
-            "name": "LightRead_app-v2.10.3_android_arm64.apk.sha256",
-            "size": 106,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.3/LightRead_app-v2.10.3_android_arm64.apk.sha256"
+            "name": "LightRead_2.10.4_amd64.deb",
+            "size": 32946050,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead_2.10.4_amd64.deb"
+          },
+          {
+            "name": "LightRead_2.10.4_x64-setup.exe",
+            "size": 22710784,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead_2.10.4_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_2.10.4_x64.dmg",
+            "size": 31917776,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/LightRead_2.10.4_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
-            "size": 447,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.3/SHA256SUMS"
+            "size": 570,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.4/SHA256SUMS"
           }
         ]
       },
@@ -1054,7 +1064,7 @@
       "repo": "skxingyu/legado-sk",
       "term": "legado-branch-sk",
       "note": "阅读 C 分支：听书界面与体验优化，内置 Edge Next 语音引擎。",
-      "stars": 20,
+      "stars": 21,
       "sourceUpdatedAt": "2026-11-15T03:21:18Z",
       "githubArchived": false,
       "release": {
@@ -1088,7 +1098,7 @@
       "repo": "XziXmn/legado-X",
       "term": "legado-branch-x",
       "note": "阅读 Sigma 分支。",
-      "stars": 16,
+      "stars": 17,
       "sourceUpdatedAt": "2026-09-03T01:00:22Z",
       "githubArchived": false,
       "release": {
@@ -1146,7 +1156,7 @@
       "repo": "24257/novel-helper",
       "term": "legado-branch-xuanjuan",
       "note": "基于 Legado 定制的网文小助手。",
-      "stars": 10,
+      "stars": 9,
       "sourceUpdatedAt": "2026-09-30T15:22:43Z",
       "githubArchived": false,
       "release": {
@@ -1180,30 +1190,30 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 8,
-      "sourceUpdatedAt": "2026-11-15T17:30:09+08:00",
+      "sourceUpdatedAt": "2026-11-15T20:41:02+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.111517",
-        "tagName": "阅读_E-ink_3.26.111517",
+        "name": "阅读_E-ink_3.26.111519",
+        "tagName": "阅读_E-ink_3.26.111519",
         "prerelease": false,
-        "publishedAt": "2026-11-15T17:30:09+08:00",
-        "createdAt": "2026-11-15T17:30:09+08:00",
+        "publishedAt": "2026-11-15T20:41:02+08:00",
+        "createdAt": "2026-11-15T20:41:02+08:00",
         "body": "- 已修复朗读源登录函数\r\n- 修复对话高亮字体变形\r\n- 对话高亮自定义下划线",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.111517.apk",
+            "name": "阅读_E-ink_3.26.111519.apk",
             "size": 21035047,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.111517/%E9%98%85%E8%AF%BB_E-ink_3.26.111517.apk"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.111519/%E9%98%85%E8%AF%BB_E-ink_3.26.111519.apk"
           },
           {
-            "name": "阅读_E-ink_3.26.111517.zip",
+            "name": "阅读_E-ink_3.26.111519.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111517.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111519.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.111517.tar.gz",
+            "name": "阅读_E-ink_3.26.111519.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111517.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111519.tar.gz"
           }
         ]
       },
