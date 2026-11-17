@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:31:42.964Z",
+  "generatedAt": "2026-11-17T22:56:39.775Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47261,
+      "stars": 47265,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,56 +85,56 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7060,
-      "sourceUpdatedAt": "2026-11-17T10:24:02Z",
+      "stars": 7070,
+      "sourceUpdatedAt": "2026-11-17T19:30:59Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.28",
-        "tagName": "3.26.28",
+        "name": "Release 3.26.29",
+        "tagName": "3.26.29",
         "prerelease": false,
-        "publishedAt": "2026-11-15T18:10:59Z",
-        "createdAt": "2026-11-15T17:43:55Z",
-        "body": "### 下载哪个包\n\n- legado-3.26.28-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.28-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* chore(release): 版本号 3.26.28\n* fix(a11y): 修复屏幕阅读器焦点缺失、重复朗读与勾选态不播报 (#2558)\n* feat(book): 封面换源支持图集自选与书源范围筛选\n* ci(release): 更新日志基线改用 describe 取最近正式版 tag\n* fix(read-record): 修复阅读总览自采样 native 闪退并恢复顶栏模糊\n* fix(reader): 修正整段绘制的字距几何与多字符元素合并 (#2606)\n* fix(ui): COUI 标签栏投影不再被渐隐层裁断，滚动分支保留 LazyRow\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.27...3.26.28",
+        "publishedAt": "2026-11-17T19:30:54Z",
+        "createdAt": "2026-11-17T19:02:20Z",
+        "body": "### 下载哪个包\n\n- legado-3.26.29-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.29-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* test(manga): 导出用例启动 Koin 设置网关\n* fix(manga): 本地漫画图片 URL 与归档路径改用规范形式\n* ci: Gradle 构建仅在依赖下载失败时自动重试\n* Update user agreement and software description in README\n* build(miuix): 升级 Miuix fork 到 v0.9.5-beta01 并对齐 Kotlin 2.4.21\n* fix(replace): 规则表写入统一失效净化缓存，修复改规则不生效\n* feat(read-aloud): 新增「朗读章节标题」开关，与正文标题显示解耦\n* feat(replace-rule): 列表项菜单改用声明式入口渲染各引擎原生行\n* chore(release): 版本号 3.26.29\n* build(coui): 升级 COUI fork 到 5527b0a\n* fix(reader): 整段合并绘制按 API 29 守卫 getTextRunAdvances，修复 lint 失败与 Android 8/9 隐患\n* fix(service): 修复 Web 服务因 dataSync 配额耗尽崩溃，改用 specialUse 前台类型\n* docs(reader): 说明 preserveBodyIndent 只控制虚拟缩进\n* test(reader): 锁定列表/引用不再叠加正文缩进\n* fix(reader): 列表与引用首行不再重复正文缩进\n* fix(reader): 保留整段绘制并校验原生字距几何，修复行尾裁字\n* fix(book): 段评气泡不再参与章节图片缓存判定 (#2593)\n* fix(book-source): 导入解析失败回落到本地化提示并补解析基线\n* fix(book-source): stream-parse large JSON imports to avoid OOM\n* fix(reader): 整段绘制按 minikin 量化字距并补回首字前半个字距\n* fix(book-source): 修复校验书源崩溃并补齐丢失的校验能力\n* feat: 为 EPUB/MOBI 本地书添加章节字数统计 (#2624)\n\n## What's Changed\n* feat: 为 EPUB/MOBI 本地书添加章节字数统计 by @serein-213 in https://github.com/HapeLee/legado-with-MD3/pull/2624\n\n## New Contributors\n* @serein-213 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2624\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.28...3.26.29",
         "assets": [
           {
-            "name": "legado-3.26.28-comic-arm64-v8a.apk",
-            "size": 73239194,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-comic-arm64-v8a.apk"
+            "name": "legado-3.26.29-comic-arm64-v8a.apk",
+            "size": 73258013,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.28-comic-armeabi-v7a.apk",
-            "size": 60212493,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-comic-armeabi-v7a.apk"
+            "name": "legado-3.26.29-comic-armeabi-v7a.apk",
+            "size": 60231318,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.28-comic-universal.apk",
-            "size": 199711371,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-comic-universal.apk"
+            "name": "legado-3.26.29-comic-universal.apk",
+            "size": 199730209,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-universal.apk"
           },
           {
-            "name": "legado-3.26.28-core-arm64-v8a.apk",
-            "size": 22613582,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-core-arm64-v8a.apk"
+            "name": "legado-3.26.29-core-arm64-v8a.apk",
+            "size": 22632404,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.28-core-armeabi-v7a.apk",
-            "size": 22153403,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-core-armeabi-v7a.apk"
+            "name": "legado-3.26.29-core-armeabi-v7a.apk",
+            "size": 22172209,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.28-core-universal.apk",
-            "size": 29186063,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/legado-3.26.28-core-universal.apk"
+            "name": "legado-3.26.29-core-universal.apk",
+            "size": 29204885,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-universal.apk"
           },
           {
             "name": "mapping-comic.txt",
-            "size": 357721777,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/mapping-comic.txt"
+            "size": 357981222,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/mapping-comic.txt"
           },
           {
             "name": "mapping-core.txt",
-            "size": 350526648,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.28/mapping-core.txt"
+            "size": 350835767,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/mapping-core.txt"
           }
         ]
       },
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2251,
+      "stars": 2252,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1963,
+      "stars": 1964,
       "sourceUpdatedAt": "2026-11-16T15:15:25Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 438,
+      "stars": 439,
       "sourceUpdatedAt": "2026-11-16T03:25:39Z",
       "githubArchived": false,
       "release": {
@@ -514,20 +514,20 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 222,
-      "sourceUpdatedAt": "2026-11-17T14:30:12Z",
+      "sourceUpdatedAt": "2026-11-17T14:34:38Z",
       "githubArchived": false,
       "release": {
-        "name": "legado_ng_3.26.111722",
-        "tagName": "3.26.111722",
+        "name": "legado_ng_3.26.111621",
+        "tagName": "3.26.111621",
         "prerelease": false,
-        "publishedAt": "2026-11-17T14:30:13Z",
-        "createdAt": "2026-11-17T10:55:45Z",
-        "body": "### 更新内容\n* 修复阅读颜色抽屉的键盘抖动和遮挡\n* 统一阅读目录的反转状态和工具入口\n* 修复组件皮肤抽屉的菜单定位和高度\n* 支持自定义阅读底部工具栏\n* 优化书架分组和主页面横滑\n* 拆分听书动效并接入资源中心\n* 在书架进度条右侧显示阅读百分比\n* 修复详情刷新时书籍类型与缓存计数不同步\n\n",
+        "publishedAt": "2026-11-16T13:42:41Z",
+        "createdAt": "2026-11-16T13:27:56Z",
+        "body": "### 更新内容\n* 优化听书左右分栏抽屉\n* 切换内置 Edge TTS 至 LibreTTS 并默认启用\n* 统一设置与关于悬浮顶栏\n* 统一发现页顶栏标题样式\n* 修复公共开关波纹动画宿主导致的崩溃\n* 修复漫画缓存完整性及目录反序后的缓存与阅读位置\n* 修复阅读目录分卷及排序切换闪烁\n* 修复 EPUB 跨页跨章拖选及高亮投影\n* fix(test): 修复 QqAccountProfileParserTest 缺失的右花括号\n* feat: 完善 AI 提供商列表与设置重置\n* 优化 EPUB 翻页缓存与跨章响应\n* 修复 QQ 账号解析测试缺失的右花括号 (#91)\n* 修复听书目录切章加载与播放控制收尾\n* 修复目录状态栏切换导致的听书进度回退\n* fix: 修复自动名称在空 host 中间态后不再跟随 Base URL\n* test: 补充提供商重置后模型选择保留的验证\n* refactor: 将模型能力恢复拆分到独立分支\n* feat: 模型编辑支持按模型名恢复能力\n* feat(mcp): 新增单本正文搜索与章节号/缓存分页\n* feat(ai): 角色卡指定角色模式与正文选中入口\n* feat(character): 角色卡编辑页显示并复制生图提示词\n* feat(ai): 累计每轮真实 token 用量\n* 重整书籍详情设置抽屉并统一菜单图标\n* 重做书籍详情横屏布局并恢复玻璃材质\n* 合并 PR #93：优化 AI 提供商管理\n* 合并 PR #95：增加模型能力恢复入口\n* 合并 PR #96：增加 MCP 正文搜索和章节分页\n* 合并 PR #98：增加角色卡生图提示词编辑与复制\n* 合并远端 main：同步提供商、模型能力、正文搜索与角色卡提示词\n* 优化 AI 提供商与设置页面布局\n* fix(ai): 保留缺失用量字段并累计服务端 total_tokens\n* 合并 PR #99：累计每轮 token 用量\n* 合并远端 main：同步 PR #99 用量统计\n* 修复 AI 整轮用量统计的字段覆盖判断\n* fix(skill): 同名角色收敛为更新或跳过\n* fix(ai): 记忆刷新 Hook 改为注入开关便于单测\n* feat(read): 选中已有角色卡时支持查看角色卡\n* merge: 同步 upstream/main 并解决正文选词菜单冲突\n* feat(read): 角色卡入口默认置顶并兼容已保存顺序\n* revert: 撤销角色卡入口默认置顶\n* chore(skill): 移除别名重复计数示例并提升版本至 29\n* fix(ai): 正文选中创建角色卡不再自动展开全局扫描建议\n* 合并 PR #97：角色卡指定角色模式与正文选中入口\n* 修复正文角色卡匹配时别名抢占主名\n* 增加内置 Skill 版本递增校验与持续集成门禁\n* 适配 Web 自动提交的版本门禁发布流程\n* 统一 GitHub 资源和版本检查的中继规则\n* 整理共享分段控件、菜单和列表组件\n* 收紧常用页面布局并调整首次启动默认值\n* 增加宠物插件接口、安装校验和打包 SDK\n* 增加特效主题插件接口与打包工程\n* 实现资源目录协议、哈希缓存与本地资源索引\n* 统一主题 ZIP 管理并接入界面特效主题\n* 实现资源安装及字体和阅读背景的本地管理\n* 外置 AI 入口宠物并接入本地宠物管理\n* 接入资源中心页面及主题、宠物和阅读背景入口\n* 将原内置普通主题整理为可发布资源包\n* docs: 补充模型能力恢复入口说明\n* docs: 补充 bookshelf_chapter_snippets_get 工具说明\n* docs: 修正模型能力恢复入口的位置描述\n* 合并资源中心与主题管理改动\n* 修复阅读背景切换即时刷新\n* 在阅读字体选择器中显示当前字体\n* 修复阅读浮窗配色与预设编辑联动\n* 统一夜间操作按钮配色\n* MCP 服务：前台服务启动受限时停止自身，避免应用启动崩溃循环\n* 重构阅读设置及浮窗交互\n* 调整起点读书标题上间距\n* 支持资源中心阅读预设下载与更新\n* 支持首页组件皮肤及资源中心管理\n* 支持主题壁纸等比裁切\n* 整理资源详情与目录加载测试\n* 接入 TTS 资源更新和微软离线语音\n* 修复主题切换时顶栏间距沿用旧值\n* 优化首页编辑交互并统一保存取消\n* 优化发音人与模型选择抽屉\n* 补充模型能力恢复入口说明（#107）\n* 补充 MCP 章节片段工具说明（#108）\n* 修正 MCP 章节片段未缓存说明\n* 修复 MCP 前台服务启动受限时的崩溃（#110）\n* 修复书籍详情切换崩溃与数据串书\n* 修复 EPUB 图片前缩进导致正文空白\n* 修复 EPUB 预设切换与下划线刷新异常\n* 修复取消封面后书架备份仍访问封面\n* 修复旧备份失效封面与配置路径\n* 修复源变量多行输入\n* 优化发现页封面加载并修复分页显示\n* 修复书架分组变化时选中错位\n* 新增 OpenCode 内置提供商\n* 更新 Issue 模板正式版链接\n* 优化划线备注输入框自适应高度\n* 完善封面换源筛选和搜索进度\n* 修复发布构建的签名库缺失类告警\n\n",
         "assets": [
           {
-            "name": "legado_NG_3.26.11172207_release.apk",
-            "size": 31670851,
-            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.111722/legado_NG_3.26.11172207_release.apk"
+            "name": "legado_NG_3.26.11162129_release.apk",
+            "size": 37285318,
+            "browserDownloadUrl": "https://github.com/joestar817/legado_NG/releases/download/3.26.111621/legado_NG_3.26.11162129_release.apk"
           }
         ]
       },
@@ -683,7 +683,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 125,
+      "stars": 127,
       "sourceUpdatedAt": "2026-11-17T10:18:03Z",
       "githubArchived": false,
       "release": {
