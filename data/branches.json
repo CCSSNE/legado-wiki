@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T22:12:11.402Z",
+  "generatedAt": "2026-11-17T04:33:59.788Z",
   "branches": [
     {
       "id": "c",
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7048,
+      "stars": 7054,
       "sourceUpdatedAt": "2026-11-16T07:31:02Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3110,
+      "stars": 3111,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1956,
+      "stars": 1959,
       "sourceUpdatedAt": "2026-11-16T15:15:25Z",
       "githubArchived": false,
       "release": {
@@ -514,7 +514,7 @@
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
       "stars": 218,
-      "sourceUpdatedAt": "2026-11-16T13:42:41Z",
+      "sourceUpdatedAt": "2026-11-17T03:18:58Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.111621",
@@ -683,51 +683,51 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 122,
-      "sourceUpdatedAt": "2026-11-16T11:46:05Z",
+      "stars": 124,
+      "sourceUpdatedAt": "2026-11-17T01:26:23Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.10.5",
-        "tagName": "v2.10.5",
+        "name": "v2.10.6",
+        "tagName": "v2.10.6",
         "prerelease": false,
-        "publishedAt": "2026-11-16T12:18:21Z",
-        "createdAt": "2026-11-16T11:37:54Z",
-        "body": "修复\n- 在阅读设置里改行距后，部分书（多为自带排版样式的 EPUB）行距不变。现在所选行距会盖过书里自带的行距；标题、注音和上下标保留书里原来的样子。\n- 用鼠标划选句子时，划到一半停住、还没松开左键，划线工具条就弹了出来。现在松开左键后才弹出；触屏长按选字不受影响。\n\n验证\n- t9：类型检查、15 组单测与平台边界检查、网页构建、冒烟端到端（37 项）、摸鱼模式端到端（含书里写死行距与字体的情形）、划词端到端通过；后两个用改动前的代码复跑会失败。\n- v2.10.4 的字体修复与摸鱼模式自选颜色 / 背景浓淡已由 Windows 用户确认生效。\n\n已知限制\n- 划词与行距的改动没有在 Windows 真机上验证；无头浏览器里划词测试是用事件模拟的，不是真实拖动鼠标。\n",
+        "publishedAt": "2026-11-17T02:09:18Z",
+        "createdAt": "2026-11-17T01:26:22Z",
+        "body": "新功能\n- 划线支持三种风格：色块、下划线、波浪线。选中文字后先选风格再点颜色，会记住上次的选择；点已有的划线也能换风格。竖排书画成竖线。PDF 阅读页仍只有色块。（#21）\n\n修复\n- 部分 EPUB（多为出版社排版、在书里写死了 pt / px 字号的）调字号没有效果。现在书里写死的字号会按设置的字号等比换算，标题、注释和正文的大小比例保持书里的设计。（#22）\n\n验证\n- t9：类型检查、网页构建、冒烟端到端（37 项）、书摘端到端（桌面 / App）、划词端到端，以及新增的划线风格端到端（桌面 / App，含写死 pt / px 字号的 EPUB 调字号、三种风格绘制与改回色块）通过；兼容、书摘、同步合并 / 引擎 / 设置单测与样式档位检查通过。\n\n已知限制\n- 旧版本存不下划线风格：同一账号里还有没升级的旧版设备参与同步时，下划线 / 波浪线可能被改回色块，各设备都升级后不再发生。\n- 字号与划线风格的改动没有在 macOS / Windows 真机上验证。\n",
         "assets": [
           {
-            "name": "LightRead-2.10.5-1.x86_64.rpm",
-            "size": 32942938,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead-2.10.5-1.x86_64.rpm"
+            "name": "LightRead-2.10.6-1.x86_64.rpm",
+            "size": 32945015,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead-2.10.6-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.10.5_aarch64.dmg",
-            "size": 29571742,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead_2.10.5_aarch64.dmg"
+            "name": "LightRead_2.10.6_aarch64.dmg",
+            "size": 29574878,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead_2.10.6_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.10.5_amd64.AppImage",
-            "size": 108689912,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead_2.10.5_amd64.AppImage"
+            "name": "LightRead_2.10.6_amd64.AppImage",
+            "size": 108685816,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead_2.10.6_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.10.5_amd64.deb",
-            "size": 32946928,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead_2.10.5_amd64.deb"
+            "name": "LightRead_2.10.6_amd64.deb",
+            "size": 32949192,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead_2.10.6_amd64.deb"
           },
           {
-            "name": "LightRead_2.10.5_x64-setup.exe",
-            "size": 22711369,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead_2.10.5_x64-setup.exe"
+            "name": "LightRead_2.10.6_x64-setup.exe",
+            "size": 22718167,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead_2.10.6_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.10.5_x64.dmg",
-            "size": 31916923,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/LightRead_2.10.5_x64.dmg"
+            "name": "LightRead_2.10.6_x64.dmg",
+            "size": 31916986,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/LightRead_2.10.6_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
             "size": 570,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.5/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.10.6/SHA256SUMS"
           }
         ]
       },
@@ -825,7 +825,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 80,
+      "stars": 81,
       "sourceUpdatedAt": "2026-11-14T01:27:17Z",
       "githubArchived": false,
       "release": {
@@ -914,7 +914,7 @@
       "repo": "DaLongZhuaZi/manxia",
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
-      "stars": 63,
+      "stars": 62,
       "sourceUpdatedAt": "2026-09-28T15:54:46Z",
       "githubArchived": false,
       "release": {
@@ -944,35 +944,35 @@
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
       "stars": 33,
-      "sourceUpdatedAt": "2026-11-16T08:58:46Z",
+      "sourceUpdatedAt": "2026-11-17T03:00:14Z",
       "githubArchived": false,
       "release": {
-        "name": "Pre-release 3.26.17-beta.45",
-        "tagName": "3.26.17-beta.45",
+        "name": "Pre-release 3.26.17-beta.46",
+        "tagName": "3.26.17-beta.46",
         "prerelease": true,
-        "publishedAt": "2026-11-15T10:41:51Z",
-        "createdAt": "2026-11-15T10:15:09Z",
-        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：合并上游大量更新（设置搜索、跨页选择文字、高亮夜间颜色、Markdown 本地书、漫画导出等）；墨水屏模式新增联网自愈与整页下划线显示。\n\n### 新增\n\n* 设置页新增搜索：输入关键词直接定位到对应设置项，不用层层翻找\n* 本地书新增 Markdown 格式：正文排版、图片、链接可直接阅读\n* 高亮规则支持白天/夜间两套颜色，夜间阅读高亮不再刺眼\n* 长按选择文字支持跨页延续，选中范围不再被一页截断（可在设置中开关）\n* 阅读外观（主题、字号等）对本地 EPUB / MOBI 书籍同样生效\n* 段评弹窗高度可调节，小屏也能舒展看评论\n* 本地漫画支持导出为图片文件夹或 CBZ 文件\n* 完整模式新增 Mochi / Miuix / HyperOS 4 等主题家族，外观选择更丰富\n* 联网自愈：灭屏唤醒、网络恢复后，加载失败的正文自动重新加载；断网时打不开的书联网后自动重试进入；「恢复进度」跳转后不再停在无内容页，无需手动刷新\n\n### 优化\n\n* 保存正文图片不再卡住界面，大图保存也顺滑\n* 横屏阅读时正文避开侧边手势条，不再被遮挡\n* 仿真翻页渲染更省资源\n* 墨水屏模式下整页文字下划线、分隔线能正确显示，划线样式不再缺失\n\n### 修复\n\n* 听书：离线下载的语音优先播放；下载中途出错不再丢失已完成的音频；朗读出错时停在读到的句子，恢复后从原句继续\n* 快速连续切换书籍时，上一本的阅读进度不再串写到新书\n* 视频书源：全屏播放切换剧集不再退出全屏；支持播放本地视频文件\n* 缓存维护运行中可以随时取消，取消后进度不再错乱\n* 多设备恢复书架时，换过源的书本记录不再残留\n* 修复带图片章节加载过程中刷新，会导致该章反复刷新也加载不出、必须完全退出应用重进的问题",
+        "publishedAt": "2026-11-17T02:08:08Z",
+        "createdAt": "2026-11-17T01:45:32Z",
+        "body": "**此版本为测试版，会存在不稳定问题。**\n\n# 更新日志\n\n墨本阅读——开源阅读 legado 的墨水屏增强发行版：同一本书，两种读法。\n\n## 3.26.17-beta（预发布）\n\n本次更新：墨水屏阅读页的页眉页脚内容遵从完整模式的自定义设置；修复书架刷新卡住、锁屏返回后页眉时间不刷新、部分设备阅读闪退等问题。\n\n### 新增\n\n* 墨水屏阅读页的页眉页脚遵从完整模式设置：在完整模式中自定义的页眉页脚信息（书名、章节、进度、时间、电量等）在墨水屏模式同样显示；默认显示保持不变，图形类信息（如进度条）自动转为文字显示\n\n### 修复\n\n* 应用启动后和锁屏返回阅读页时，页眉的时间、电量立即刷新，不再停留旧值等待下一分钟\n* 修复个别书源拖住书架刷新，导致刷新按钮一直转圈、无法再次刷新的问题；单本书籍刷新超过 5 分钟自动放弃，不再卡住整个书架\n* 修复部分墨水屏设备（如讯飞 Cube2）打开书籍闪退的问题\n* 书籍自带下划线样式的文字同时做了高亮或笔记划线时，同一行不再叠画两条线",
         "assets": [
           {
             "name": "mapping-core.txt",
-            "size": 365606256,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.45/mapping-core.txt"
+            "size": 365492687,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.46/mapping-core.txt"
           },
           {
-            "name": "moben-3.26.17-beta.45-core-arm64-v8a.apk",
-            "size": 23007743,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.45/moben-3.26.17-beta.45-core-arm64-v8a.apk"
+            "name": "moben-3.26.17-beta.46-core-arm64-v8a.apk",
+            "size": 23007112,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.46/moben-3.26.17-beta.46-core-arm64-v8a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.45-core-armeabi-v7a.apk",
-            "size": 22547557,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.45/moben-3.26.17-beta.45-core-armeabi-v7a.apk"
+            "name": "moben-3.26.17-beta.46-core-armeabi-v7a.apk",
+            "size": 22546938,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.46/moben-3.26.17-beta.46-core-armeabi-v7a.apk"
           },
           {
-            "name": "moben-3.26.17-beta.45-core-universal.apk",
-            "size": 29580229,
-            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.45/moben-3.26.17-beta.45-core-universal.apk"
+            "name": "moben-3.26.17-beta.46-core-universal.apk",
+            "size": 29579604,
+            "browserDownloadUrl": "https://github.com/Mupceet/EssentialReader/releases/download/3.26.17-beta.46/moben-3.26.17-beta.46-core-universal.apk"
           }
         ]
       },
@@ -1190,7 +1190,7 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 8,
-      "sourceUpdatedAt": "2026-11-17T00:50:43+08:00",
+      "sourceUpdatedAt": "2026-11-17T07:40:07+08:00",
       "githubArchived": false,
       "release": {
         "name": "阅读_E-ink_3.26.111519",
