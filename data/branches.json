@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T03:35:03.697Z",
+  "generatedAt": "2026-11-19T13:18:56.783Z",
   "branches": [
     {
       "id": "c",
@@ -85,56 +85,56 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7090,
-      "sourceUpdatedAt": "2026-11-18T14:34:51Z",
+      "stars": 7102,
+      "sourceUpdatedAt": "2026-11-19T06:36:11Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.29",
-        "tagName": "3.26.29",
+        "name": "Release 3.26.30",
+        "tagName": "3.26.30",
         "prerelease": false,
-        "publishedAt": "2026-11-17T19:30:54Z",
-        "createdAt": "2026-11-17T19:02:20Z",
-        "body": "### 下载哪个包\n\n- legado-3.26.29-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.29-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* test(manga): 导出用例启动 Koin 设置网关\n* fix(manga): 本地漫画图片 URL 与归档路径改用规范形式\n* ci: Gradle 构建仅在依赖下载失败时自动重试\n* Update user agreement and software description in README\n* build(miuix): 升级 Miuix fork 到 v0.9.5-beta01 并对齐 Kotlin 2.4.21\n* fix(replace): 规则表写入统一失效净化缓存，修复改规则不生效\n* feat(read-aloud): 新增「朗读章节标题」开关，与正文标题显示解耦\n* feat(replace-rule): 列表项菜单改用声明式入口渲染各引擎原生行\n* chore(release): 版本号 3.26.29\n* build(coui): 升级 COUI fork 到 5527b0a\n* fix(reader): 整段合并绘制按 API 29 守卫 getTextRunAdvances，修复 lint 失败与 Android 8/9 隐患\n* fix(service): 修复 Web 服务因 dataSync 配额耗尽崩溃，改用 specialUse 前台类型\n* docs(reader): 说明 preserveBodyIndent 只控制虚拟缩进\n* test(reader): 锁定列表/引用不再叠加正文缩进\n* fix(reader): 列表与引用首行不再重复正文缩进\n* fix(reader): 保留整段绘制并校验原生字距几何，修复行尾裁字\n* fix(book): 段评气泡不再参与章节图片缓存判定 (#2593)\n* fix(book-source): 导入解析失败回落到本地化提示并补解析基线\n* fix(book-source): stream-parse large JSON imports to avoid OOM\n* fix(reader): 整段绘制按 minikin 量化字距并补回首字前半个字距\n* fix(book-source): 修复校验书源崩溃并补齐丢失的校验能力\n* feat: 为 EPUB/MOBI 本地书添加章节字数统计 (#2624)\n\n## What's Changed\n* feat: 为 EPUB/MOBI 本地书添加章节字数统计 by @serein-213 in https://github.com/HapeLee/legado-with-MD3/pull/2624\n\n## New Contributors\n* @serein-213 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2624\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.28...3.26.29",
+        "publishedAt": "2026-11-19T06:36:08Z",
+        "createdAt": "2026-11-19T05:37:22Z",
+        "body": "### 下载哪个包\n\n- legado-3.26.30-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.30-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* chore(release): 更新版本至 3.26.30\n* fix(book-info): 修复 HyperOS4 下 WebView 简介闪退 (#2610)\n* feat(theme): 接入 OxygenX 并完善搜索和书架交互\n* fix: 修复旧注音缓存升级与有声书后台换章 (#2632)\n* feat(reader): 支持本地书籍 ruby 标签解析、排版与绘制 (#2626)\n* fix(audio): 修复有声书系统媒体控制 (#2627)\n\n## What's Changed\n* fix(audio): 修复有声书系统媒体控制 by @lingran7031 in https://github.com/HapeLee/legado-with-MD3/pull/2627\n* feat(reader): 支持本地书籍 ruby 标签解析、排版与绘制 by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2626\n* fix: 修复旧注音缓存升级与有声书后台换章 by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2632\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.29...3.26.30",
         "assets": [
           {
-            "name": "legado-3.26.29-comic-arm64-v8a.apk",
-            "size": 73258013,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-arm64-v8a.apk"
+            "name": "legado-3.26.30-comic-arm64-v8a.apk",
+            "size": 73439058,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.29-comic-armeabi-v7a.apk",
-            "size": 60231318,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-armeabi-v7a.apk"
+            "name": "legado-3.26.30-comic-armeabi-v7a.apk",
+            "size": 60412358,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.29-comic-universal.apk",
-            "size": 199730209,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-comic-universal.apk"
+            "name": "legado-3.26.30-comic-universal.apk",
+            "size": 199911241,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-universal.apk"
           },
           {
-            "name": "legado-3.26.29-core-arm64-v8a.apk",
-            "size": 22632404,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-arm64-v8a.apk"
+            "name": "legado-3.26.30-core-arm64-v8a.apk",
+            "size": 22780688,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.29-core-armeabi-v7a.apk",
-            "size": 22172209,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-armeabi-v7a.apk"
+            "name": "legado-3.26.30-core-armeabi-v7a.apk",
+            "size": 22320510,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.29-core-universal.apk",
-            "size": 29204885,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/legado-3.26.29-core-universal.apk"
+            "name": "legado-3.26.30-core-universal.apk",
+            "size": 29353154,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-universal.apk"
           },
           {
             "name": "mapping-comic.txt",
-            "size": 357981222,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/mapping-comic.txt"
+            "size": 364009452,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/mapping-comic.txt"
           },
           {
             "name": "mapping-core.txt",
-            "size": 350835767,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.29/mapping-core.txt"
+            "size": 356633924,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/mapping-core.txt"
           }
         ]
       },
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 1976,
+      "stars": 1978,
       "sourceUpdatedAt": "2026-11-16T15:15:25Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 347,
+      "stars": 348,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -476,7 +476,7 @@
         "tag": "v0.9.9-20260528195115-b00000093"
       },
       "manualAbandoned": "作者声明删除仓库，停止维护",
-      "stars": 265,
+      "stars": 266,
       "sourceUpdatedAt": "2026-05-28T13:26:20Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 227,
+      "stars": 229,
       "sourceUpdatedAt": "2026-11-18T07:49:46Z",
       "githubArchived": false,
       "release": {
@@ -584,7 +584,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 137,
+      "stars": 138,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -648,43 +648,14 @@
       "abandonedReason": "Release 与源码均超过半年未更新"
     },
     {
-      "id": "moread",
-      "name": "墨知 MoRead",
-      "tag": "moread",
-      "repo": "ovo066/MoRead",
-      "term": "legado-branch-moread",
-      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 133,
-      "sourceUpdatedAt": "2026-11-06T10:22:33Z",
-      "githubArchived": false,
-      "release": {
-        "name": "MoRead 1.5.0",
-        "tagName": "v1.5.0",
-        "prerelease": false,
-        "publishedAt": "2026-11-06T10:25:45Z",
-        "createdAt": "2026-11-06T10:22:26Z",
-        "body": "## 新功能\n- **演出模式（墨戏）**：一句一屏的视觉小说式阅读，在宣纸上演出水墨戏。原文一字不改，程序化水墨布景、对白小笺与说话人印章、开章竖排题字、可选本机合成声景与 AI 导演（默认关）\n- 内置志莽行书（OFL 1.1）作演出题字字体\n- 伴读可生成 Markdown 文件（文件卡，可预览、分享、保存）\n\n## 改进\n- 现代仿真翻页页缘跟手、轻扫即翻，补卷页投影；提前落页判据更准\n\n注意：本 Release 为正式签名包，装过内测包的设备需卸载重装。\n",
-        "assets": [
-          {
-            "name": "mozhi-1.5.0-vc88.apk",
-            "size": 26386499,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.5.0/mozhi-1.5.0-vc88.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 132,
-      "sourceUpdatedAt": "2026-11-18T08:52:57Z",
+      "stars": 134,
+      "sourceUpdatedAt": "2026-11-19T10:10:16Z",
       "githubArchived": false,
       "release": {
         "name": "v2.10.8",
@@ -718,6 +689,35 @@
             "name": "SHA256SUMS",
             "size": 447,
             "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.10.8/SHA256SUMS"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "moread",
+      "name": "墨知 MoRead",
+      "tag": "moread",
+      "repo": "ovo066/MoRead",
+      "term": "legado-branch-moread",
+      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
+      "stars": 133,
+      "sourceUpdatedAt": "2026-11-06T10:22:33Z",
+      "githubArchived": false,
+      "release": {
+        "name": "MoRead 1.5.0",
+        "tagName": "v1.5.0",
+        "prerelease": false,
+        "publishedAt": "2026-11-06T10:25:45Z",
+        "createdAt": "2026-11-06T10:22:26Z",
+        "body": "## 新功能\n- **演出模式（墨戏）**：一句一屏的视觉小说式阅读，在宣纸上演出水墨戏。原文一字不改，程序化水墨布景、对白小笺与说话人印章、开章竖排题字、可选本机合成声景与 AI 导演（默认关）\n- 内置志莽行书（OFL 1.1）作演出题字字体\n- 伴读可生成 Markdown 文件（文件卡，可预览、分享、保存）\n\n## 改进\n- 现代仿真翻页页缘跟手、轻扫即翻，补卷页投影；提前落页判据更准\n\n注意：本 Release 为正式签名包，装过内测包的设备需卸载重装。\n",
+        "assets": [
+          {
+            "name": "mozhi-1.5.0-vc88.apk",
+            "size": 26386499,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.5.0/mozhi-1.5.0-vc88.apk"
           }
         ]
       },
@@ -1219,7 +1219,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-11-18T16:26:13Z",
+      "sourceUpdatedAt": "2026-11-19T05:44:40Z",
       "githubArchived": false,
       "release": {
         "name": "1.0.9",
@@ -1231,7 +1231,7 @@
         "assets": [
           {
             "name": "legado-ios-unsigned.ipa",
-            "size": 21835079,
+            "size": 21835077,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.9/legado-ios-unsigned.ipa"
           }
         ]
