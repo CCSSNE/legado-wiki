@@ -1412,9 +1412,9 @@
     "yedu": {
       "name": "夜讀",
       "repo": "bennytsai1234/Night-Reader",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-19T05:14:28.395Z",
+      "status": "error",
+      "message": "比较历史 HTTP 404: Not Found",
+      "since": "2026-11-19T02:46:17.135Z",
       "backupRepo": "legado-backup/legado-yedu",
       "activeBranch": "backup/v2-2334a9869949008425524664eadd1d084859ca35",
       "events": [
@@ -1437,6 +1437,11 @@
           "at": "2026-10-19T05:14:28.395Z",
           "type": "renamed",
           "message": "bennytsai1234/Night-Reader:beta → legado-backup/legado-yedu:backup/v2-2334a9869949008425524664eadd1d084859ca35 已同步"
+        },
+        {
+          "at": "2026-11-19T02:46:17.135Z",
+          "type": "error",
+          "message": "比较历史 HTTP 404: Not Found"
         }
       ]
     },
@@ -1457,5 +1462,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-18T21:34:07.557Z"
+  "checkedAt": "2026-11-19T02:46:18.117Z"
 }
