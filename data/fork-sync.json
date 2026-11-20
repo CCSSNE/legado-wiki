@@ -1270,9 +1270,9 @@
     "kototoro": {
       "name": "Kototoro",
       "repo": "Kototoro-app/Kototoro",
-      "status": "normal",
-      "message": "正常同步",
-      "since": "2026-10-16T06:19:34.057Z",
+      "status": "error",
+      "message": "同步后的分支 SHA 验证失败",
+      "since": "2026-11-20T10:25:26.944Z",
       "backupRepo": "legado-backup/legado-kototoro",
       "activeBranch": "devel",
       "events": [
@@ -1290,6 +1290,11 @@
           "at": "2026-10-16T06:19:34.057Z",
           "type": "restored",
           "message": "恢复同步；Kototoro-app/Kototoro:devel → legado-backup/legado-kototoro:devel 已同步"
+        },
+        {
+          "at": "2026-11-20T10:25:26.944Z",
+          "type": "error",
+          "message": "同步后的分支 SHA 验证失败"
         }
       ]
     },
@@ -1467,5 +1472,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-20T02:33:36.570Z"
+  "checkedAt": "2026-11-20T10:25:36.529Z"
 }
