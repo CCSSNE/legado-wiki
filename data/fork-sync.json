@@ -1028,9 +1028,9 @@
     "moben": {
       "name": "墨本阅读",
       "repo": "Mupceet/EssentialReader",
-      "status": "error",
-      "message": "快进同步（不强推） HTTP 422: Object does not exist",
-      "since": "2026-11-21T16:55:28.477Z",
+      "status": "normal",
+      "message": "正常同步",
+      "since": "2026-11-21T22:19:27.564Z",
       "backupRepo": "legado-backup/legado-moben",
       "activeBranch": "backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc",
       "events": [
@@ -1058,6 +1058,11 @@
           "at": "2026-11-21T16:55:28.477Z",
           "type": "error",
           "message": "快进同步（不强推） HTTP 422: Object does not exist"
+        },
+        {
+          "at": "2026-11-21T22:19:27.564Z",
+          "type": "restored",
+          "message": "恢复同步；Mupceet/EssentialReader:eink/port/md3/modules → legado-backup/legado-moben:backup/v2-c137b6b91c7cda3124c24636fa16fd14695890fc 已同步"
         }
       ]
     },
@@ -1482,5 +1487,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-21T16:55:49.329Z"
+  "checkedAt": "2026-11-21T22:19:44.706Z"
 }
