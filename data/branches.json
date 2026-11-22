@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T23:24:15.218Z",
+  "generatedAt": "2026-11-22T06:57:49.694Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 221,
+      "stars": 222,
       "sourceUpdatedAt": "2026-10-30T13:47:30Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47271,
+      "stars": 47277,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7155,
+      "stars": 7173,
       "sourceUpdatedAt": "2026-11-20T14:17:06Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3143,
+      "stars": 3144,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 685,
+      "stars": 687,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 352,
+      "stars": 353,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 236,
+      "stars": 237,
       "sourceUpdatedAt": "2026-11-18T07:49:46Z",
       "githubArchived": false,
       "release": {
@@ -654,7 +654,7 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 136,
+      "stars": 137,
       "sourceUpdatedAt": "2026-11-19T10:10:16Z",
       "githubArchived": false,
       "release": {
@@ -703,7 +703,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 134,
+      "stars": 135,
       "sourceUpdatedAt": "2026-11-20T08:45:54Z",
       "githubArchived": false,
       "release": {
@@ -732,7 +732,7 @@
       "repo": "DandanLLab/mr",
       "term": "legado-branch-mr",
       "note": "Flutter 跨平台重写，兼容 Legado 书源规则，发布 Android/iOS/鸿蒙 安装包。",
-      "stars": 112,
+      "stars": 113,
       "sourceUpdatedAt": "2026-09-12T06:24:42Z",
       "githubArchived": false,
       "release": {
@@ -777,80 +777,80 @@
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
       "stars": 86,
-      "sourceUpdatedAt": "2026-11-18T01:26:10Z",
+      "sourceUpdatedAt": "2026-11-22T04:21:47Z",
       "githubArchived": false,
       "release": {
-        "name": "NexHub v4.0.0-beta.1",
-        "tagName": "v4.0.0-beta.1",
+        "name": "NexHub v4.0.0-beta.2",
+        "tagName": "v4.0.0-beta.2",
         "prerelease": true,
-        "publishedAt": "2026-11-18T01:41:52Z",
-        "createdAt": "2026-11-18T01:25:54Z",
-        "body": "# NexHub v4.0.0-beta.1（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 这是 4.0 的第一个公开测试版\n\n这个 beta 的主角是**书源兼容层**：把 Legado 风格书源的导入、规则求值、发现页、登录与多类型分发整套打通。相对 v3.6.0 共 42 个提交，几乎都集中在这条线。\n\n> - **本次发布的是 `feature/legado-booksource-compat` 分支**，尚未合并进主分支；产物从该分支构建，版本号为 v4.0.0-beta.1。\n> - **兼容性**：现有源、书架 / 收藏 / 阅读进度不受影响；兼容能力依据源文件声明自动识别，不需要你手动改旧源。\n> - **测试版提醒**：新规则引擎覆盖面大，个别非常规源仍可能解析失败；遇到请保存应用内「运行日志」反馈，便于定位。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的，这是正常现象。请先导入至少一个源 JSON 才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 🧩 书源兼容：导入保真 + 规则引擎\n\n- **导入保真**：书源里的 `ruleData` / `jsLib` 等字段不再被丢弃；源变量并入源管理并可持久化，重启后脚本变量仍在。\n- **规则语法对齐**：ElementsSingle（下标 / 排除 / 区间 / `tag.` `class.` `id.` `text.` 前缀）、XPath（谓词 / 并集 / 复合规则）、JSONPath 全集、`textNodes` 逐文本节点语义、`replaceRegex` 多形态、`@js:` 内嵌脚本展开、`@put` 无括号写法、`bookUrlPattern` 语义；正则方言（内联标志、`\\Q..\\E`、占有量词、原子分组）就地翻译。\n- **详情 / 目录 / 正文**：修正 baseUrl 分工、后处理时序、简介缺失、目录错序等一批语义差异；媒体直链按 legado 语义直接作为正文处理。\n\n### ☕ `java.*` 规则桥\n\n- **Java 互操作**：纯 JS 实现 `Packages` / `JavaImporter`，覆盖 Cipher / Base64 / Arrays / String / hutool / GZIP / okhttp3 / Jsoup 等高频类；未注册的类保持报错，不伪造结果。\n- **加密与摘要**：AES（ECB/CBC + PKCS5/7）、DES / 3DES、SHA / HMAC、RSA 常用路径（`createAsymmetricCrypto` + SPKI/PKCS#8 解析），分块与 hex/base64 识别；OAEP / EC / CTR / GCM 等未支持形态明确返回空。\n- **字体还原**：`queryTTF` / `replaceFont` 纯 JS 解析 sfnt 字形表，还原被字体混淆的字符。\n- **网络族**：`java.ajax/get/post/head` 支持自定义头、`followRedirects:false`、`StrResponse` 超集（body / code / headers / cookies / url / isSuccessful / raw 等），播放地址与 API 类源不再因读响应元数据而崩。\n- **动态规则重放**：`java.*` 由确定性重放协议支撑（记录调用 → 宿主求值 → 回填缓存 → 重跑，最多 4 轮），settle 上限提到 16 轮 / 120 秒，多跳脚本能收敛。\n\n### 🔎 发现页与分类\n\n- **源行内嵌选项栏**：对齐 ExploreKind 的 url / text / button / toggle / select 六类选项，值按源持久化；点击分类直达对应标签页。\n- **分类更全**：动态分类脚本支持占位符抓取后重放，跨页去重、空页自动连翻，首个分类失效有兜底；GSON 宽松解析修复了 29 个源的分类缺失。\n\n### 📺 多类型书源分发\n\n- `bookSourceType=2`（图片 / 漫画）自动接入漫画模块，`images` 走适配后的正文管线；音频 / 视频源落入媒体栏，阅读器里出现章节播放卡片，播放优先确定性解析直链，不再等 15 秒嗅探；相关章节文案已补中英本地化。\n\n### 🔐 登录与请求语义\n\n- **登录三件套**：`loginCheckJs` 消费、WebView 登录、`loginUi` 表单；登录脚本进入上下文作用域，表单值可被规则读取，失败不再假报成功。\n- **WebView 取数**：新增无头 WebView 取源器（`java.webView` 与 URL 选项 `webView:true`），`webJs` 可在 WebView 内执行并把结果回灌给规则解析；反爬路由会把 `sourceRegex` 一并喂入，避免校验页解析落空。\n- **Cookie / Referer**：响应 `Set-Cookie` 按源落库并自动回放；请求头对齐 legado——默认不再兜底注入 Referer（图片同样处理），存量 Referer 做迁移，带 `##` 后缀的源不再全链路失败。\n- **上下文隔离**：规则上下文改为 Zone 传递，修复 `await` 之后上下文丢失与多源并发串上下文；cookie host 改为 domain-match，仿冒域不再收走登录 cookie；删除源时释放池化引擎并清理该源 cookie / 变量。\n\n### 🧪 测试与已知限制\n\n- 书源兼容测试套件 **84/84** 通过，另含桥 / 上下文 / 正则兼容层测试与独立校验脚本。\n- 少数 Java API（约 2.6% 调用 / 3% 源）尚未覆盖；不支持的形态一律明确降级，不会给出错误结果。\n- WebView 相关路径（无头取源、webJs、登录表单）需要更多真机环境验证；遇到问题请优先反馈应用内运行日志。\n\n---\n\n## ⬆️ 安装与升级\n\n- 本版是分支 beta，Android / Windows / Linux / macOS / iOS / 鸿蒙产物发布在同一个预发布 Release 下。\n- 沿用同一签名密钥，可直接覆盖安装。鸿蒙 HAP 依旧不带签名，需自行签名后侧载。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n",
+        "publishedAt": "2026-11-22T04:34:32Z",
+        "createdAt": "2026-11-22T04:21:37Z",
+        "body": "# NexHub v4.0.0-beta.2（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 4.0 的第二个测试版\n\nbeta.2 在书源兼容层上继续补齐，同时带来两块新体验：**音频播放三页界面**与**直播流自适应**。相对 v4.0.0-beta.1 共 46 个提交。\n\n> - **本次仍是 `feature/legado-booksource-compat` 分支构建**，未合并主分支；版本号 v4.0.0-beta.2。\n> - **兼容性**：现有源、书架 / 收藏 / 阅读进度不受影响；自动识别书源类型，无需改旧源。\n> - **测试版提醒**：新能力覆盖面大，个别非常规源仍可能失败；请附应用内「运行日志」反馈。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的。请先导入至少一个源 JSON 才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 🎵 音频播放（新增）\n\n- **音频三页界面**：封面主页 + 章节列表 + 歌词页，左右滑动切换；底栏只在封面主页常驻，浏览列表 / 歌词时自动淡出，不挡手势。\n- **单行空间感控制栏**：上一集 / 定时 / 播放 / 下一集 / 倍速收在一行，左右两组等宽、暂停键严格居中；按钮尺寸由中心向外递减。\n- **空间感缩放**：列表与歌词按距视口中线的距离缩放，当前集 / 当前行略加成；翻动期间不抢滚动，停手约 3 秒自动回中，首项与末项同样能停在正中。\n- **封面取色**：播放按钮与背景共用「封面取色 / 应用主题 / 纯色」三选项配色。\n- **倍速弹层**：选中行改用主题色强调，不再因勾选符号挤压文字。\n- 书源音频源的内嵌歌词会被读取并在播放器呈现。\n\n### 📺 直播流自适应\n\n- **自动识别直播**：打开后探测到时长恒为 0 且位置在推进（约 3 秒出结论），或地址为 rtsp / rtmp 等协议时直接判定，无需手动开关。\n- **低延迟配方**：直播启用专用缓存参数（4 秒缓冲、迟滞 1 秒、16MiB、禁用强制可拖动），并让点播链路不再干扰直播（跳过恢复 seek、重连不再恢复到过时时间戳）。\n- **断流自愈**：新增连续缓冲 30 秒看门狗与底层错误订阅，稳定播放 90 秒后重置重连预算；直播结束按断流重连，而不是清进度连播。\n- **底栏适配**：直播时以红点直播徽标替代进度条与时长，键盘左右方向键加守卫，避免误 seek 打死直播。\n\n### 📚 书源兼容继续补齐\n\n- **文件类书源**：支持下载链接与本地导入；详情页目录区改为源文件列表（未下载点击先下载、已下载直接打开），进度卡改读本地进度与浏览历史。\n- **加密与求值**：RSA 非对称加解密改为宿主导出并补齐 OAEP / 严格语义；新增 AES-GCM；随机源按内容定种子，修复重放不收敛；重放占位符不再落缓存，hex 解码严格对齐。\n- **规则细节**：`java` 对象双语义与正文标题规则贯通阅读器；漫画取图头对齐并补齐重放等待上界；支持 `data:` 章节地址与 `type` 选项字节 hex；修复 JS 组合列表规则、数组分页与目录 / 发现页求值。\n- **发现页**：纯 JS 实现 `org.jsoup.Jsoup.parse` 与最小 DOM / CSS 选择器，依赖 jsoup 直调的脚本可直接解析；发现脚本异常以可见错误态呈现，分类列表按源持久缓存、刷新强制重抓。\n- **会话与鉴权**：HTTP 412 时从站点根域取会话 Cookie 并重试；Cookie 合并改为显式值优先；支持章节购买动作（payAction）、`callBackJs` 事件回调与事件位；取图期会求值脚本式 header 与登录 Cookie 覆盖层。\n- **鸿蒙**：书源 WebView 交互与取源在鸿蒙平台启用；修复桥错误文案缺少定位导致 jsLib 兼容改写不触发的问题。\n\n### 🗂 源管理与导入\n\n- **源列表搜索**：源列表与在线源列表都加了搜索框，搜索框随列表滚动、不再吸顶。\n- **导入更稳**：放行文件类书源导入，修复网络导入卡在加载态与多源列表崩溃；多源导入改批量入库 + 后台解析，缓解卡顿与卡退。\n- **精简入口**：移除「一键启用推荐源」，只保留逐源开关。\n- **引导页免责声明**：引导页末尾新增免责声明页（5 条要点 + 必须勾选同意才能「开始使用」）。\n\n### 🙏 致谢与文档\n\n- 新增 **Legado with MD3** 致谢条目（README 中英、应用内致谢页、发布说明），明确仅借鉴书源解析规则思路、未复制源码。\n- 发布流水线支持**中英双语 Release 正文**：中文在前、英文在后，同一条 Release 内呈现。\n\n### 🧪 测试与已知限制\n\n- 书源兼容套件与新增单测（直播配方、桥 / 上下文 / 正则兼容层等）通过；`dart analyze lib` 无 error。\n- 少数 Java API 仍未覆盖，未支持形态一律明确降级。\n- WebView 相关路径（无头取源、`webJs`、登录表单）仍需更多真机环境验证；鸿蒙上的表现也请一并反馈。\n\n---\n\n## ⬆️ 安装与升级\n\n- 本版是分支 beta，Android / Windows / Linux / macOS / iOS / 鸿蒙产物发布在同一个预发布 Release 下。\n- 沿用同一签名密钥，可直接覆盖安装。鸿蒙 HAP 不带签名，需自行签名后侧载。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n\n---\n\n## English\n\n# NexHub v4.0.0-beta.2 (pre-release)\n\n> All-in-one media aggregator (anime / manga / novels / video) — Source-as-Plugin · co-created community.\n\n---\n\n## 🧪 The second 4.0 test build\n\nbeta.2 keeps filling in the book-source compatibility layer and adds two new experiences: a **three-page audio player** and **adaptive live-stream playback**. 46 commits since v4.0.0-beta.1.\n\n> - **Still built from the `feature/legado-booksource-compat` branch**, not merged into main; version v4.0.0-beta.2.\n> - **Compatibility**: existing sources, bookshelves / favorites / reading progress are unaffected; source types are detected automatically, no manual edits needed.\n> - **Beta reminder**: the new capabilities cover a lot of ground; a few unconventional sources may still fail. Please attach the in-app \"runtime log\" when reporting.\n\n> ⚠️ **This app ships with no content sources.** It is empty on first launch. Import at least one source JSON before you can see anything. Sources are shared by the community; assess their compliance and legality yourself.\n\n---\n\n## ✨ What's new\n\n### 🎵 Audio playback (new)\n\n- **Three-page audio UI**: cover page + chapter list + lyrics, swipe left/right to switch. The bottom bar stays only on the cover page and fades out while browsing lists or lyrics, so it never blocks gestures.\n- **Single-row spatial control bar**: previous / sleep timer / play / next / speed on one row, both side groups equal-width, play button strictly centred, button sizes shrinking outward from the centre.\n- **Spatial scaling**: list rows and lyrics scale by distance from the viewport centre, with the current episode / line slightly boosted. Scrolling is never hijacked while you drag; about 3 seconds after you stop, the current item re-centres — and the first/last items can centre too.\n- **Cover-based colouring**: play button and background share three schemes — cover colour / app theme / solid colour.\n- **Speed sheet**: the selected row is emphasised with the primary colour instead of a check mark that squeezed the text.\n- Embedded lyrics from audio book sources are read and shown in the player.\n\n### 📺 Adaptive live streams\n\n- **Automatic detection**: after opening, a duration stuck at 0 while the position advances (verdict in ~3s), or an rtsp / rtmp style URL, is treated as live — no manual toggle.\n- **Low-latency profile**: live playback uses dedicated cache parameters (4s buffer, 1s hysteresis, 16MiB, forced seekable disabled), and the VOD path no longer interferes (skips resume seek, reconnects no longer jump to stale timestamps).\n- **Self-healing**: a 30s continuous-buffering watchdog plus low-level error subscription; the reconnect budget resets after 90s of stable playback; stream end reconnects instead of clearing progress and chaining episodes.\n- **Control bar**: live mode replaces the progress bar and duration with a red-dot LIVE badge; keyboard left/right is guarded so a stray seek cannot kill the stream.\n\n### 📚 Book-source compatibility, continued\n\n- **File sources**: download links and local import are supported; the detail page lists source files (tap an undownloaded file to fetch it, tap a downloaded one to open), and the progress card reads local progress plus browsing history.\n- **Crypto & evaluation**: RSA asymmetric crypto now exports via the host with OAEP / strict semantics; AES-GCM added; random sources seed from content so replay converges; replay placeholders are no longer cached and hex decoding is strict.\n- **Rule details**: dual semantics for `java` objects and body-title rules now reach the reader; comic image headers aligned with a replay wait ceiling; `data:` chapter URLs and `type` option byte hex supported; fixed JS composite list rules, array pagination and TOC / discovery evaluation.\n- **Discovery**: a pure-JS `org.jsoup.Jsoup.parse` with a minimal DOM / CSS selector set lets scripts that call jsoup parse directly; discovery script failures surface as visible error states, and category lists cache per source with forced refresh.\n- **Sessions & auth**: on HTTP 412 the session cookie is fetched from the site root and the request retried; explicit Cookie values take precedence when merging; chapter purchase (`payAction`), `callBackJs` event callbacks and event bits are supported; scripted headers and the login Cookie overlay are evaluated during image fetching.\n- **HarmonyOS**: book-source WebView interaction and fetching are enabled on HarmonyOS; fixed a bridge error message that lacked location and silently disabled jsLib compatibility rewriting.\n\n### 🗂 Source management & import\n\n- **Search**: both the source library and the online source list gained a search box that scrolls with the list instead of sticking to the top.\n- **Steadier imports**: file-type sources are allowed, network import no longer hangs in a loading state, and the multi-source list no longer crashes; bulk imports are inserted in one batch and parsed in the background, reducing stalls and crashes.\n- **Simplified entry**: the \"enable recommended sources\" shortcut is removed; per-source toggles remain.\n- **Onboarding disclaimer**: a disclaimer page (5 key points + a required agreement checkbox before \"Get started\") was added to the end of onboarding.\n\n### 🙏 Credits & docs\n\n- Added a **Legado with MD3** credit (README in both languages, in-app credits page, release notes) stating that only rule ideas were consulted and no source code was copied.\n- The release pipeline now produces a **bilingual Release body**: Chinese first, English after, in the same Release.\n\n### 🧪 Tests & known limits\n\n- The book-source compatibility suite and new unit tests (live profile, bridge / context / regex compatibility, etc.) pass; `dart analyze lib` reports no errors.\n- A small set of Java APIs is still uncovered; unsupported forms degrade explicitly.\n- WebView paths (headless fetching, `webJs`, login forms) still need more on-device verification — please report how they behave on HarmonyOS too.\n\n---\n\n## ⬆️ Install & upgrade\n\n- This is a branch beta; Android / Windows / Linux / macOS / iOS / HarmonyOS artifacts ship in the same pre-release.\n- The same signing key applies, so overwrite-install works. The HarmonyOS HAP remains unsigned and must be signed before sideloading.\n\n## 📄 Disclaimer\n\n- NexHub ships no content sources. Everything comes from sources you import yourself; verify each source's legality and safety before use. You bear the risk of using them.\n",
         "assets": [
           {
             "name": "app-arm64-v8a-release.apk",
-            "size": 84421557,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/app-arm64-v8a-release.apk"
+            "size": 85017745,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/app-arm64-v8a-release.apk"
           },
           {
             "name": "app-armeabi-v7a-release.apk",
-            "size": 80666045,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/app-armeabi-v7a-release.apk"
+            "size": 81392177,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/app-armeabi-v7a-release.apk"
           },
           {
             "name": "app-release.apk",
-            "size": 204868085,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/app-release.apk"
+            "size": 206840457,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/app-release.apk"
           },
           {
             "name": "app-x86_64-release.apk",
-            "size": 90325907,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/app-x86_64-release.apk"
+            "size": 90987559,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/app-x86_64-release.apk"
           },
           {
             "name": "NexHub-ios.ipa",
-            "size": 42253395,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-ios.ipa"
+            "size": 42513133,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-ios.ipa"
           },
           {
             "name": "NexHub-linux-x64.AppImage",
-            "size": 129427960,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-linux-x64.AppImage"
+            "size": 129640952,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-linux-x64.AppImage"
           },
           {
             "name": "NexHub-linux-x64.deb",
-            "size": 28915308,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-linux-x64.deb"
+            "size": 29083024,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-linux-x64.deb"
           },
           {
             "name": "NexHub-linux-x64.tar.gz",
-            "size": 35925795,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-linux-x64.tar.gz"
+            "size": 36160466,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-linux-x64.tar.gz"
           },
           {
             "name": "NexHub-macos.dmg",
-            "size": 80575965,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-macos.dmg"
+            "size": 80816343,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-macos.dmg"
           },
           {
             "name": "NexHub-macos.zip",
-            "size": 71755305,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-macos.zip"
+            "size": 72244242,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-macos.zip"
           },
           {
             "name": "NexHub-ohos-arm64-unsigned.hap",
-            "size": 104759310,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-ohos-arm64-unsigned.hap"
+            "size": 105392923,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-ohos-arm64-unsigned.hap"
           },
           {
-            "name": "NexHub-setup-4.0.0-beta.1.exe",
-            "size": 48315606,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-setup-4.0.0-beta.1.exe"
+            "name": "NexHub-setup-4.0.0-beta.2.exe",
+            "size": 48474128,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-setup-4.0.0-beta.2.exe"
           },
           {
             "name": "NexHub-windows-x64.zip",
-            "size": 65902087,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.1/NexHub-windows-x64.zip"
+            "size": 66151756,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-windows-x64.zip"
           }
         ]
       },
@@ -865,7 +865,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 83,
+      "stars": 84,
       "sourceUpdatedAt": "2026-08-02T07:00:38Z",
       "githubArchived": false,
       "release": {
