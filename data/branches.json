@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T15:24:35.317Z",
+  "generatedAt": "2026-11-22T21:51:21.807Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47276,
+      "stars": 47275,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7181,
+      "stars": 7183,
       "sourceUpdatedAt": "2026-11-20T14:17:06Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3147,
+      "stars": 3148,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2005,
+      "stars": 2007,
       "sourceUpdatedAt": "2026-11-20T14:38:37Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 687,
+      "stars": 688,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 444,
+      "stars": 445,
       "sourceUpdatedAt": "2026-11-21T14:43:01Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 353,
+      "stars": 354,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -612,49 +612,13 @@
       "forkOf": null
     },
     {
-      "id": "sanmu",
-      "name": "三目阅读",
-      "tag": "sanmu",
-      "repo": "huage2580/yuedu_hd",
-      "term": "legado-branch-sanmu",
-      "note": "Flutter 重写的阅读 HD 版，发布 Android / Windows 安装包。",
-      "stars": 137,
-      "sourceUpdatedAt": "2022-03-30T07:07:22Z",
-      "githubArchived": false,
-      "release": {
-        "name": "v2.3.0",
-        "tagName": "v2.3.0",
-        "prerelease": false,
-        "publishedAt": "2022-03-09T07:04:00Z",
-        "createdAt": "2022-03-09T06:55:21Z",
-        "body": "😀  \r\n使用flutter 2.10打包;  \r\n修复Windows 问题； ",
-        "assets": [
-          {
-            "name": "yuedu-v230.apk",
-            "size": 28227435,
-            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-v230.apk"
-          },
-          {
-            "name": "yuedu-windows-v230_fix2.zip",
-            "size": 30732801,
-            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-windows-v230_fix2.zip"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null,
-      "abandoned": "弃坑",
-      "abandonedReason": "Release 与源码均超过半年未更新"
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 137,
+      "stars": 138,
       "sourceUpdatedAt": "2026-11-22T14:46:40Z",
       "githubArchived": false,
       "release": {
@@ -705,6 +669,42 @@
       "errors": [],
       "fork": false,
       "forkOf": null
+    },
+    {
+      "id": "sanmu",
+      "name": "三目阅读",
+      "tag": "sanmu",
+      "repo": "huage2580/yuedu_hd",
+      "term": "legado-branch-sanmu",
+      "note": "Flutter 重写的阅读 HD 版，发布 Android / Windows 安装包。",
+      "stars": 137,
+      "sourceUpdatedAt": "2022-03-30T07:07:22Z",
+      "githubArchived": false,
+      "release": {
+        "name": "v2.3.0",
+        "tagName": "v2.3.0",
+        "prerelease": false,
+        "publishedAt": "2022-03-09T07:04:00Z",
+        "createdAt": "2022-03-09T06:55:21Z",
+        "body": "😀  \r\n使用flutter 2.10打包;  \r\n修复Windows 问题； ",
+        "assets": [
+          {
+            "name": "yuedu-v230.apk",
+            "size": 28227435,
+            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-v230.apk"
+          },
+          {
+            "name": "yuedu-windows-v230_fix2.zip",
+            "size": 30732801,
+            "browserDownloadUrl": "https://github.com/huage2580/yuedu_hd/releases/download/v2.3.0/yuedu-windows-v230_fix2.zip"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null,
+      "abandoned": "弃坑",
+      "abandonedReason": "Release 与源码均超过半年未更新"
     },
     {
       "id": "moread",
