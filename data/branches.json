@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T02:51:48.769Z",
+  "generatedAt": "2026-11-23T12:57:49.050Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47276,
+      "stars": 47275,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,8 +85,8 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7186,
-      "sourceUpdatedAt": "2026-11-20T14:17:06Z",
+      "stars": 7203,
+      "sourceUpdatedAt": "2026-11-23T07:34:48Z",
       "githubArchived": false,
       "release": {
         "name": "Release 3.26.30",
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3149,
+      "stars": 3152,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2257,
+      "stars": 2256,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2008,
+      "stars": 2016,
       "sourceUpdatedAt": "2026-11-20T14:38:37Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 354,
+      "stars": 355,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 239,
+      "stars": 242,
       "sourceUpdatedAt": "2026-11-18T07:49:46Z",
       "githubArchived": false,
       "release": {
@@ -579,46 +579,13 @@
       "forkOf": "gedoor/legado"
     },
     {
-      "id": "jingshiro",
-      "name": "Jingshiro 版",
-      "tag": "jingshiro",
-      "repo": "Jingshiro/legado",
-      "term": "legado-branch-jingshiro",
-      "stars": 140,
-      "sourceUpdatedAt": "2026-09-06T09:25:49Z",
-      "githubArchived": false,
-      "release": {
-        "name": "Legado 3.26.090617",
-        "tagName": "3.26.090617",
-        "prerelease": false,
-        "publishedAt": "2026-09-06T09:25:50Z",
-        "createdAt": "2026-09-06T09:09:44Z",
-        "body": null,
-        "assets": [
-          {
-            "name": "legado_releaseS_3.26.090617.apk",
-            "size": 23678357,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_releaseS_3.26.090617.apk"
-          },
-          {
-            "name": "legado_release_3.26.090617.apk",
-            "size": 23678394,
-            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_release_3.26.090617.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 139,
+      "stars": 141,
       "sourceUpdatedAt": "2026-11-23T02:39:00Z",
       "githubArchived": false,
       "release": {
@@ -653,6 +620,39 @@
             "name": "SHA256SUMS",
             "size": 447,
             "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.1/SHA256SUMS"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "jingshiro",
+      "name": "Jingshiro 版",
+      "tag": "jingshiro",
+      "repo": "Jingshiro/legado",
+      "term": "legado-branch-jingshiro",
+      "stars": 140,
+      "sourceUpdatedAt": "2026-09-06T09:25:49Z",
+      "githubArchived": false,
+      "release": {
+        "name": "Legado 3.26.090617",
+        "tagName": "3.26.090617",
+        "prerelease": false,
+        "publishedAt": "2026-09-06T09:25:50Z",
+        "createdAt": "2026-09-06T09:09:44Z",
+        "body": null,
+        "assets": [
+          {
+            "name": "legado_releaseS_3.26.090617.apk",
+            "size": 23678357,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_releaseS_3.26.090617.apk"
+          },
+          {
+            "name": "legado_release_3.26.090617.apk",
+            "size": 23678394,
+            "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_release_3.26.090617.apk"
           }
         ]
       },
@@ -703,7 +703,7 @@
       "repo": "ovo066/MoRead",
       "term": "legado-branch-moread",
       "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 135,
+      "stars": 136,
       "sourceUpdatedAt": "2026-11-20T08:45:54Z",
       "githubArchived": false,
       "release": {
@@ -762,6 +762,45 @@
             "name": "mr_v2609127_dev_2026-09-12_x86_64.apk",
             "size": 22803598,
             "browserDownloadUrl": "https://github.com/DandanLLab/mr/releases/download/v2609127-dev/mr_v2609127_dev_2026-09-12_x86_64.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
+      "id": "max-cichen",
+      "name": "阅读 MAX 辞晨版",
+      "tag": "max-cichen",
+      "repo": "GEd520/legados",
+      "term": "legado-branch-max-cichen",
+      "note": "独立仓库，有自己的 APK 发布。",
+      "stars": 86,
+      "sourceUpdatedAt": "2026-11-23T10:47:55Z",
+      "githubArchived": false,
+      "release": {
+        "name": "最新版",
+        "tagName": "bata-3.26.112318",
+        "prerelease": false,
+        "publishedAt": "2026-11-23T10:47:55Z",
+        "createdAt": "2026-07-12T03:55:56Z",
+        "body": "\r\n**2026/11/22**\r\n- 修复（漫画）：在漫画阅读页的菜单里点书源名进入「编辑书源」，返回时应用闪退，保存没保存都会闪退（本地漫画不受影响）。原因是返回后在主线程读数据库重新加载书源，现在改到后台加载，加载完再刷新菜单。\r\n\r\n**2026/11/20**\r\n- 修复（高亮规则）：规则换了字体、而且这套字体的字宽和正文字体不完全一样时，命中里的逗号、句号、问号、冒号会被摆到格子正中间，离前面的字很远，看着像多了空格。现在标点照着正文字体里的位置来摆：正文里靠左的仍然靠左，前引号仍然靠右，汉字仍然居中，和不开高亮时一样。\r\n- 验证（高亮换字体后的标点位置）：模拟器 Android 15，正文系统字体和黑体，规则分别用普通楷体和一份把每个字加宽 4% 的楷体，截图和没开高亮对比，逗号、问号、冒号、引号、省略号、破折号、英文数字的位置都和没开高亮一致。全部单元测试重跑通过（610 项，0 失败，新增 `HighlightGlyphPlacementTest` 6 项）；开高亮不挪字的 25 项真机测试通过。\r\n\r\n**2026/11/19**\r\n- 修复（高亮规则）：规则没有背景图（只改颜色、纯色背景、下划线）时，填过的「命中字距」仍然会把命中的文字往两边推开，看起来像字偏了。现在命中字距只在规则设置了背景图（气泡）时生效，没有背景图就和普通正文排得一模一样；填的数值照常保存，以后加上背景图会重新起作用。编辑页「命中字距」标题下加了一行说明。注意：以前靠命中字距给纯色背景、下划线两边留空的规则，这次更新后不再留空。\r\n- 修复（高亮规则）：规则里填了背景图，但图片已经读不出来（文件被删、规则是从别的设备导入的、文件不是图片）时，气泡画不出来，命中的文字却仍被「命中字距」推开。现在这种情况也按没有背景图处理，文字不推开；图片恢复后自动重新生效，保存的规则不变。\r\n- 修复（高亮规则）：正文设了字距、手机是 Android 15 及以上时，带高亮的那几行会把字距多算一遍，每段最后一行明显比别的行松，命中的句子看着像被挪了位置。现在带高亮的行和普通行用同一套字宽，开不开高亮每个字的位置完全一样。\r\n- 修复（高亮规则）：规则里换了字体时，新字体的引号、省略号这类符号常常比正文字体的宽，一开高亮就把后面的字往右挤，断行也跟着变。现在换字体只换字的样子，不再占排版宽度：每个字仍按正文字体占位，新字体的字形居中画在原来那一格里，开不开高亮文字位置都不变。\r\n- 验证（命中字距只跟背景图走）：全部单元测试重跑通过（604 项，0 失败，新增 2 项）。模拟器上新增一项设备测试，把「只改颜色 / 纯色背景 / 下划线」各配字距 0 和 12 排版，逐字和「没有任何规则」比对坐标：改之前字距 12 的三种断行都变了，改之后 201 个字位置全部一致；带气泡、字距 12 的规则照常推开。编辑页预览和字距滑块的设备测试 14 项通过（其中 4 项原来断言「没有背景图也推开」，按新规则改写，另新增 2 项）。\r\n- 验证（图片读不出来时不推开）：全部单元测试重跑通过（604 项，0 失败）。模拟器上给规则配一个已删除的图片路径、一个内容不是图片的文件，字距都填 12，逐字和「没有任何规则」比对：改之前两种断行都变了，改之后 201 个字位置全部一致；图片正常的气泡规则照常推开。编辑页预览的设备测试新增 1 项（共 15 项通过）。\r\n- 验证（开高亮不挪字）：模拟器 Android 15，正文字距 0 和 0.13，正文分别用系统字体和黑体，规则只改红色、红色加楷体各排一次，和没有规则逐字比位置。改之前正文带字距时只改红色就有 96 个字被挪动（最多 120 像素），系统字体加楷体规则连断行都变了；改之后 6 种组合全部断行相同、挪动 0 个字。全部单元测试重跑通过（604 项，0 失败）。\r\n\r\n**2026/11/18**\r\n- 新增：加密云端备份。「备份与恢复」里多了「加密云端备份」开关（默认关闭），打开后上传到 WebDav 的备份包先用本地密码整包加密再上传，文件名不变。\r\n  - 恢复时自动识别加密的备份包，用当前的本地密码解密；从网盘手动下载回来的加密备份包，也可以从本地选择文件恢复。\r\n  - 需要先设置本地密码：打开开关时没有密码会先让填一个；之后密码被清空的话，备份不会上传，也不会改传未加密的备份，并给出提示。\r\n  - 密码不对、备份包被改动或没下载完整，恢复时会直接报错，不会恢复出一半的数据。\r\n  - 只加密传到 WebDav 的那一份，本机备份目录里的备份包不加密。加密后的备份包不能用解压软件打开；密码忘记后无法恢复。\r\n  - 恢复备份只会把这个开关打开，不会关掉，避免恢复一份旧备份之后云端备份悄悄变回未加密。\r\n  - 加密方式：密码经 PBKDF2-HMAC-SHA256（30 万次）生成密钥，AES-256-GCM 按 1MB 分块加密。\r\n- 新增：自动备份时，如果内容和上一次传到 WebDav 的那份相同，而且云端那个文件还在、大小和修改时间都没变，就不再重复上传，日志里记一条「备份内容与云端 xxx 相同，未重复上传」。手动备份不受影响，每次都上传。\r\n  - 判断方法：对比备份包里每个文件的名字、大小和校验值，再查云端文件；有一项对不上、查不到，或 WebDav 服务器不报告文件大小和修改时间，都照常上传。\r\n- 新增（单文件 JS 源）：`java.getQuickJsSandbox()` 纯 JS 沙箱。每次调用都是全新的空环境，里面访问不到 `java` / `source` / `cookie` / `cache`，也读不到主脚本的变量，只接受字符串进出；名字沿用外部书源的叫法，实际仍由 Rhino 执行。\r\n- 新增（书源）：`jsLib` 支持结构化包 `legado.js.library/1`：`scripts` 按顺序逐段执行，`resources` 存放不执行的内联数据（用 `java.getJsLibResource(name)` 读取）；单文件 JS 源的 `config.jsLib` 可以只写 `legado.js.library.ref/1:<sha256>` 引用，保存时从已导入的书源里还原并核对。\r\n- 新增（单文件 JS 源）：`java.postBase64Body`（以 Base64 发二进制正文的 POST，只允许 https）、`java.gzipUtf8ToBase64`、`java.decompressBase64ToUtf8`、`java.getArchiveByteArrayContent`（在内存里读 Base64 压缩包的条目）；新增 `sourceApi`，与 `source` 是同一个对象；脚本没有 `config` 时把顶层的 `var source = {...}` 当作配置读取。用法见 JS 帮助文档（`jsHelp.md`）最后两节。\r\n- 修复：发现页用 JS 生成分类的书源，脚本存进 `infoMap` 的内容（登录信息、筛选状态等）重启后丢失。原来只有离开发现页时才保存，而分类列表本身有缓存，重启后脚本不再执行，`infoMap` 就一直是空的。现在脚本跑完立即保存；分类有缓存但 `infoMap` 没存过（旧版本留下的，或者已过期、被清掉）时重新跑一次脚本。\r\n- 新增：「我的」页在「书源管理」下面加了「订阅源管理」入口。订阅页右上角原有的入口保留。\r\n- 修复：导出书籍时，书名、作者或自定义导出文件名里带 `/ \\ : * ? \" < > |` 会导出失败，或者多出一层目录。现在这些字符换成外形相同的全角字符（`／ ＼ ：` 等），换行、制表符换成空格；导出图片时按书名、章节名建的目录同样处理。自定义文件名规则算出空名字时改用默认名字。\r\n  - 和以前的区别：分卷导出原来把这些字符换成 `_`，现在统一换成全角字符，`A/B` 和 `A_B` 两本书不会再导出成同一个文件名。\r\n- 修复：换设备或换包名恢复备份后，自定义底栏的图标、侧边栏背景丢失。\r\n  - 备份里新增「底栏图标与背景」一项（备份选择器里可以取消勾选），只带上底栏配置实际用到的图片；网页端备份同样带上。\r\n  - 恢复后把底栏配置里的图片路径改到当前应用的目录；备份里没有、原位置也读不到的图片从配置里去掉，显示内置图标，不再留着一条失效的路径。\r\n  - 旧备份里没有这些图片，恢复后图标仍然要重新设置一次。\r\n- 修复（高亮规则）：九宫格气泡在行首 / 行末时，「强制外扩」或手动加大的左右间距会把气泡边角推到正文可见范围之外，边角被裁掉一半。现在超出的一侧收回到可见范围的边上，边角完整显示（会更靠近文字）。\r\n- 优化（高亮规则气泡）：带透明边、阴影、尾巴、角饰的气泡图，现在是气泡主体包住文字，这些装饰挂在主体外面。以前是整张图对齐到文字上，主体比文字小一圈，字从气泡里顶出来；透明边宽的图只剩一条细带子横在字中间。\r\n  - 主体的位置从图片里自动量出来，不用额外设置。主体本来就顶满整张图的气泡（内置的圆角、胶囊）和以前一样。\r\n  - 「智能」：主体包住文字，装饰挂在外面；装饰最多挂出主体高度的 0.6 倍，再大就整张图等比缩小。「严格」：只跳过看不见的透明边，看得见的部分仍然全部压在文字范围里。「强制」不变。\r\n  - 挂在外面的装饰可以画进左右页边距，行首、行末的尾巴和角饰不再被切掉一半；气泡主体仍然不会超出正文范围。\r\n- 修复（高亮规则）：外扩的气泡会盖住上一行的字（「强制」外扩最明显）。现在每一页先把所有高亮背景画完再画文字，气泡外扩多少都只垫在字下面。\r\n- 修复（高亮规则）：两个命中紧挨着（比如 `“你来了。”“嗯。”`）时连成了一个气泡，现在各画各的。\r\n- 修复（高亮规则）：自动识别拉伸区会把图片四周的透明边当成拉伸区（尾巴长在侧面的气泡最容易出现），气泡被画得比文字小。现在整条透明的行 / 列不参与识别；只有一个方向找不到干净的主体时，那个方向取最长的一小段，气泡在这个方向上整体等比缩放，不变形。\r\n- 优化（高亮规则）：先选图、后把填充方式改成「九宫格」时，切线还是默认值就自动识别一次，不用再进「九宫格调整」手动点；从手机选的图识别成功后，命中前后字距都是 0 的话自动填 12px（和选内置气泡时一样），边框不会压住引号。「九宫格调整」里三种外扩策略的说明写得更具体。\r\n- 优化（高亮规则）：删掉九宫格气泡「跨行切开」的画法（断行处不画边角、只在命中首尾画）。这个画法界面上早就没有入口，只剩内置预设「对话气泡（带尾巴）」还在用；现在所有气泡跨行时都是每一行各画一个完整气泡，带尾巴的预设因此每一行都有尾巴。以前保存或备份过的规则照常读取，里面的这一项直接忽略。\r\n- 优化（高亮规则）：「九宫格调整」里去掉「给文字留白」勾选项。选内置气泡、或自动识别拉伸区成功时，命中前后字距都是 0 就已经自动填 12px，这个勾选项是重复的；想改字距仍然在规则编辑页的「命中前 / 后字距」里改。\r\n- 修复（高亮规则）：滚动翻页模式下，两页交界的地方，后一页的气泡背景会盖住前一页最后一行的字。现在滚动模式先把屏幕上这几页的高亮背景全部画完，再画文字；开着「优化渲染」时也一样。\r\n- 修复（高亮规则）：「强制」外扩的命中跨了好几行时，每一行气泡的上下边框都压在相邻行的字上。现在同一个命中的行与行之间只借用行距，整个命中最外面一圈照旧按边框厚度外扩（所以「强制」仍然会盖到命中上方、下方的那一行和左右相邻的字，这是这个档位本来的意思）。\r\n- 优化（高亮规则）：「强制」外扩遇到边框特别厚的图片时，气泡会比文字高出很多、压住上下好几行。现在上下最多外扩 0.6 倍字高、左右最多 1.2 倍字高，超过就整个气泡等比缩小。「九宫格调整」里「强制」的说明文字也按现在的行为重写了。\r\n- 修复（高亮规则）：规则编辑页的预览里，行首气泡伸到文字外面的尾巴、角饰被裁掉一截，现在完整显示。\r\n- 验证：`:app:compileAppMaxDebugKotlin`、`:app:processAppMaxDebugResources` 通过；新增单元测试 51 项全部通过（`BackupCryptoTest` 13、`WebDavBackupUploadTest` 8、`JsLibraryBundleTest` 5、`model.jsSource` 下 4 个测试类 25），`help.storage` 与 `utils.compress` 下原有的测试一起重跑也通过。以上都没有在真机或模拟器上跑过：加密开关界面、真实 WebDav 上的上传 / 跳过 / 恢复、JS 书源新接口在应用里的实际表现都还没实测。\r\n- 验证（后 5 条）：全部单元测试重跑通过，新增 22 项（`ExportFileNameTest` 8、`NavigationBarAssetPathsTest` 7、`NineSliceFrameTest` 7）。在 MuMu 模拟器（Android 15）上用独立包名安装实测：新增设备测试 `SmallFixesDeviceTest` 4 项通过（`infoMap` 重启后仍在、导出文件名、底栏图片随备份换包名恢复）；「我的」页的「订阅源管理」能打开订阅源管理页；备份选择器里有「底栏图标与背景」；「加密云端备份」开关在已设本地密码时能打开。没有实测的：九宫格气泡行首 / 行末的实际显示效果（只测了计算）、真实的导出操作和整包备份恢复流程、真实 WebDav 上的加密上传 / 跳过 / 恢复。\r\n- 验证（高亮气泡 5 条）：全部单元测试重跑通过（601 项，0 失败），其中新增 13 项（`NineSliceBodyTest` 7、`NineSliceTargetsTest` 新增 4、`NinePatchGridMathTest` 新增 2）。在 MuMu 模拟器（Android 15）上用独立包名安装，新增设备测试 `HighlightBubbleShowcaseDeviceTest`：12 种气泡图（3 张内置图、高清大图、30px 小图、透明边带角饰和尾巴、带阴影、纯色方块、左侧尾巴、顶部耳朵、不透明方图、半透明）× 智能 / 严格 / 强制 × 字距 0 / 12 × 缩放 0.5 / 1 / 2，在阅读页真实排版后截图 32 张，人工查看了其中 16 张（每种气泡、每种策略都看到了），另把编辑页预览画成长图对照。没有验证：深色主题、滚动翻页、标题里的命中、`.9.png` 文件、在编辑页里手动操作一遍。\r\n- 验证（删跨行切开、去掉留白勾选项）：全部单元测试重跑通过（598 项，0 失败；比上一条少 3 项是删掉了只测「切开」的 3 项，另有 1 项改成检查带旧字段的规则还能读取）。模拟器上把设备测试重跑一遍：阅读页 28 张截图重新生成，查看了带尾巴气泡跨 4 行的一张（每行都有尾巴）和编辑页预览长图的开头一段；新增一项把「九宫格调整」界面弹出来截图，看了内置尾巴、透明边角饰两张图各一张，界面上只有预览、拉伸范围、自动识别、外扩策略，一屏放得下。没有验证：用内置预设本身（而不是同一张图建的测试规则）在阅读页里看一遍、深色主题下的「九宫格调整」界面。\r\n- 验证（高亮规则收尾 4 条）：全部单元测试重跑通过（602 项，0 失败，新增 `ForceBleedScaleTest` 4 项）。模拟器（MuMu，Android 15，独立包名）上设备测试 `HighlightBubbleShowcaseDeviceTest` 整个重跑通过，出图 78 张，这次补上了以前没测过的场景并逐张看过：深色主题、滚动翻页（含整段高亮跨页交界，「优化渲染」开和关各一遍）、标题命中、真正的 `.9.png`、两个内置气泡预设、复杂正则（嵌套、跨段落）、在规则编辑页里实际操作一遍（选图、改成九宫格、进九宫格调整、看预览、保存；白天和深色各一遍）。正式版混淆任务 `:app:minifyAppMaxReleaseWithR8` 跑通，产物里 `HighlightRule` 的类名和字段名都保留着；但混淆后的安装包没有装到设备上跑过。行与行之间只借行距这一条只有截图验证，没有单元测试。\r\n\r\n**2026/11/15**\r\n- 修复：恢复备份时只勾「书籍缓存」、不勾「书架」，缓存里的书不在书架上就恢复不出来，书也看不到，只能把整个书架一起恢复。\r\n  - 原因：缓存备份只带了缓存文件和章节目录，没有带这本书的书架记录；恢复时缓存和目录只挂到书架上已有的书上，找不到的书直接跳过。「书籍缓存」单独导出的压缩包同样如此。\r\n  - 现在备份缓存时把每本书的书架记录一起写进缓存索引；恢复缓存时，书架上没有的书先补到书架，再恢复它的目录和缓存。书架上已有的书不动（阅读进度不会被备份里的覆盖），也不会删书；备份里的分组在本机不存在时，这本书按未分组处理。\r\n  - 旧备份的缓存索引里没有书架记录：同一个备份里有书架文件时，只取缓存对应的那几本书补上，书架里的其它书不动；连书架文件也没有的（旧版「书籍缓存」单独导出的包），不在书架上的书仍然恢复不了，会在日志里记一条，需要用新版重新导出。\r\n  - 验证：模拟器（Android 15，appMax debug）上新增的 `CacheOnlyRestoreDeviceTest` 2 项走真实的备份、恢复入口（导出缓存 → 从书架删掉这本书和缓存 → 只勾缓存恢复 → 书、目录、缓存正文都回来；旧格式备份只补有缓存的那本），`RestoreAtomicityTest` 新增 4 项（已有的书不被覆盖、旧备份回退、没有书籍信息时跳过、伪造的记录不能顶掉书架上的书），连同原有的 `BackupPerformanceDeviceTest` 共 26 项通过；把补书那一步关掉时 `CacheOnlyRestoreDeviceTest` 2 项都失败。没有在界面上手动点一遍备份和恢复。\r\n- 修复：竖屏全屏连续滑动切集的两个问题。\r\n  - 新的一集地址解析完、播放器还在准备的那一两秒里再滑不起作用（拉动一小段就弹回，也没有提示）。现在上一集还在解析地址或还在准备时都可以接着滑；还在准备的那一集不会出声。\r\n  - 上一集的地址还没解析完就再切一次时，两次加载同时进行、互不取消：先发的请求晚返回的话，播出来的是被跳过的那一集，选集列表却标着另一集，进度也会记到错的那一集上；关了「自动播放」时最后停下的那一集还不会自己开播。现在每次切集（滑动、「下一集」、选集、播完自动连播）先取消上一次加载，只有最后一次请求能设置播放器、播放地址和弹幕。\r\n- 修复：「其它播放器打开」（工具栏菜单和全屏「更多」）在手机上没有能接手的应用时会闪退，现在改为提示；「复制播放地址」对订阅源和直链视频什么也不做，现在直接复制。\r\n- 更正：11/14 那条「滑过去的一集直接开播，不看自动播放开关」只在滑之前正在播放时成立，原文已改。\r\n- 验证：`:app:compileAppMaxDebugKotlin` 通过；`VideoGesturePolicyTest` / `VideoDisplayPolicyTest` / `VideoCastTest` 共 40 项通过；模拟器（Android 15，appMax debug）上 `VideoTimelineDeviceTest` 13 项连续三轮全部通过。新增的 `portraitFullscreenRapidSwipesEndOnTheLastEpisode` 覆盖「播放器还在准备时接着滑」和「地址还在解析时往回滑，迟到的地址不能顶掉后一集」；把两处修复分别撤掉时，这一项各自在对应的步骤失败。「其它播放器打开」和「复制播放地址」两处只过了编译，没有在设备上点过。\r\n\r\n**2026/11/14**\r\n- 优化：视频全屏控件按常见播放器的布局重排（页面内小播放器保持原来的单行控件不变）。\r\n  - 顶部：返回、标题，右侧补上时间和电量（全屏时系统状态栏是隐藏的），以及「更多」。\r\n  - 左侧：小窗、锁屏、截图；右侧中间：投屏。锁屏后只留一个「解锁」按钮。投屏图标画成电视机外框加「TV」字样和一个向上的小三角，横屏、竖屏全屏用同一个。\r\n  - 底部：第一行「当前 / 总时长」+ 进度条，最右端是旋转（横屏 / 竖屏全屏互切）；第二行播放、上一集 / 下一集、弹幕开关、选集、倍速、画面。\r\n  - 竖屏全屏（全屏时点旋转进入）另有一套排法：投屏、小窗、锁屏、截图、转屏收成右下角一列，时间单独一行靠右，进度条占满整行；点「转屏」回到横屏全屏。锁屏后「解锁」出现在原来「锁屏」的位置。\r\n  - 竖屏全屏下有选集时，上下滑动切集，方便刷短剧：上滑下一集，下滑上一集。和短视频一样画面跟着手指走：松手后当前画面顺势滑出去，新的一集从另一头滑进来；滑得太短会弹回原位，已经是第一集 / 最后一集时只能拉动一小段然后弹回。滑之前正在播放的话，滑过去的一集解析完直接开播，不看「自动播放」开关；暂停着滑过去则仍按开关来。这时竖屏全屏的上下滑不再调亮度 / 音量（音量用音量键），横屏全屏和页面内播放器的亮度 / 音量手势不变；没有选集的单个视频在竖屏全屏下也照旧是亮度 / 音量。\r\n  - 横屏全屏和竖屏全屏按手机返回键（或左上角返回）都是回到视频页面，不会直接退出页面。\r\n  - 倍速、画面比例、更多改为从右侧滑出的面板，不再弹对话框打断画面；点面板外收起。倍速不是 1× 时底栏直接显示当前倍速并高亮。\r\n- 新增：全屏「截图」，只截视频画面（不含控件和弹幕），保存到相册 `Pictures/Legado`；Android 10 及以上走 MediaStore，不需要存储权限。\r\n- 新增：全屏「画面」比例切换：适应 / 铺满 / 拉伸 / 16:9 / 4:3；每次打开新视频时恢复为「适应」。\r\n- 新增：全屏「更多」面板里可以直接打开播放设置、复制播放地址、用其它播放器打开，不用先退出全屏去点工具栏菜单。\r\n- 新增：缓冲转圈下方显示实时网速。\r\n- 新增：全屏「投屏」（DLNA）。点开后在同一个 Wi-Fi 里搜索电视 / 盒子，点设备名就把当前视频地址交给它播放；电视接手后手机这边自动暂停，已经看了 10 秒以上会让电视从当前进度接着播。\r\n  - 投过去的是视频地址，由电视自己联网去取，所以：需要 Referer / Cookie 等专用请求头的视频源电视大概率播不了（面板里会提示）；本地文件和 127.0.0.1 这类地址电视取不到，直接提示无法投屏。\r\n  - 只做了「把视频交给电视」，投出去以后的暂停、拖动、音量请用电视遥控器；手机上暂时没有投屏遥控界面。\r\n  - 没有引入新的依赖库，搜索和控制各是几个 UDP / HTTP 请求。\r\n- 说明：参考模板里的「音效 / 超清 / ZVIP」没有照搬——播放地址由书源给出，只有一路流，没有可切换的清晰度，也没有音效处理链路，放上去只能是空按钮；这个位置改放确实能用的「画面」。实时字幕同样没有对应能力，未加入口。\r\n- 修复：全屏时被盖住的页面内播放器仍在后台渲染一整套全屏控件，读屏和自动化测试会读到两份同名按钮；现在被盖住时不再渲染。GSY 保留的透明原生控件也不再暴露给读屏。\r\n- 验证：`:app:compileAppMaxDebugKotlin` 通过；`VideoGesturePolicyTest` / `VideoDisplayPolicyTest` / `VideoCastTest` 共 40 项通过；模拟器（Android 15，appMax debug）上 `VideoTimelineDeviceTest` 12 项连续三轮全部通过，其中新增的 `fullscreenSideActionsAndPanelsWork` 覆盖倍速 / 画面 / 更多 / 投屏面板、锁屏解锁、截图入相册且内容是视频画面、横竖屏旋转、竖屏全屏的按钮位置、两种全屏下按返回键回到视频页面，`portraitFullscreenSwipeSwitchesEpisodes` 覆盖竖屏全屏上下滑切集（画面跟着手指移动、滑动中没有文字提示、短滑弹回不切、横屏不切、最后一集弹回不切、切集后画面回到原位），`castingHandsTheVideoToTheTvAndPausesThePhone` 覆盖搜到设备、点设备投出、手机暂停、电视收到续播进度。投屏只对着测试里模拟的 DLNA 电视验证过，没有接真实电视。「小窗」按钮未在设备上实测（模拟器未授予悬浮窗权限），它与工具栏菜单的小窗走同一个入口。滑动切集用的是测试里的三集假数据，没有拿真实的多集视频源实测。\r\n- 修复：切到后台（`TRIM_MEMORY_UI_HIDDEN`）时正文位图缓存仍被裁掉一半、GIF 判定缓存被清空，切回阅读页整章插图要重新解码。\r\n  - 原因：`ImageProvider.trimMemory()` 用 `level >= TRIM_MEMORY_RUNNING_CRITICAL` 判断，而级别数值不是按吃紧程度单调排的——`RUNNING_CRITICAL` 是 15，`UI_HIDDEN` 是 20，于是 `UI_HIDDEN` 也被算了进去，与 11/05「`UI_HIDDEN` 不动缓存」的本意相反。\r\n  - 修复：`RUNNING_CRITICAL` 改为 `==` 判断；`BACKGROUND` 及以上、`RUNNING_CRITICAL` 才减半并清 GIF 判定缓存，`COMPLETE` 仍全清，`UI_HIDDEN` / `RUNNING_MODERATE` / `RUNNING_LOW` 不动。\r\n- 优化：正文里下载不下来的图片，排版时少等一次重试。原先整章预取失败后，排版里取尺寸、判断 GIF 各自又完整下载一次，而排版是逐张串行的，坏图多、超时长的章节出页会被成倍拖慢；现在取尺寸那次仍拿不到文件就直接按错误图排版，不再为判断 GIF 多下一次。绘制时的异步补试保留，不影响偶发失败的图片稍后显示出来。\r\n- 修复：长按图标弹出名称提示后，第一次点击别处只会关掉提示而不生效，在输入框旁长按还可能把输入焦点带走；`HintIconButton` 的提示气泡改为不获取焦点、不拦截触摸，到时间自动消失。\r\n- 修复：后台听书或朗读时关闭阅读记录开关，从上次保存到关闭这一段时长会丢失；现在关闭前先把正在计时的听书 / 朗读会话结算入库。阅读页、漫画、视频在离开页面时已结算，不重复计。\r\n- 验证：`:app:compileAppMaxDebugKotlin` 编译通过。\r\n\r\n**2026/11/12**\r\n- 优化：Compose 界面的图标按钮统一支持长按显示名称提示（在图标正下方弹出），对齐原有 XML 页面 `android:tooltipText` / `TooltipCompat.setTooltipText` 的交互；新增公共 `HintIconButton`，覆盖关于、下载管理、存储管理、文件管理、URL 记录、阅读记录与阅读成就、封面图库、书源校验、调试工具、缓存选择、直链上传等 Compose 页面共 100+ 个图标。\r\n- 完善：补上 RSS 阅读查找栏、导入 URL 弹窗、图片裁剪页里漏掉提示的 6 个 XML 图标（`android:tooltipText`）；缓存选择页里重复实现且未被使用的本地 `HintIconButton` 一并删除，改用公共组件。\r\n- 说明：视频播放器全屏控件暂不加长按提示——整块画面已有「长按倍速」手势，控件上再加长按提示会与倍速同时触发。\r\n- 修复：长按图标提示会连震两下——Compose foundation 的 `combinedClickable` 长按本身就会触发一次 LONG_PRESS 触觉反馈，组件里又手动补了一次；现在只保留框架自带的那次。\r\n- 新增：累计阅读成就页右上角加阅读记录开关图标（开 = `History`，关 = `HistoryToggleOff` 并压暗）。关掉后正文、听书、漫画、视频都不再写入阅读记录；重新开启时把计时起点推到当下，关闭期间的时长不计也不补记。\r\n- 调整：阅读记录长按删除的「确认删除」弹窗去掉「不再提示」勾选框及文字，每次删除都需确认。\r\n- 修复：`AppConfig.enableReadRecord` 此前被写死为 `true`、setter 只删偏好，开关实际关不掉；现恢复为读写偏好 `enableReadRecord`（默认开启），沿用原偏好键，没有新增开关机制。\r\n- 验证：`:app:compileAppMaxDebugKotlin` 编译通过。\r\n\r\n**2026/11/11**\r\n- 修复：正文与标题的字重切换（粗略模式「正常/粗体/细体」、精细模式 100~900）在当前章节没有任何效果，必须翻章重排后才变。\r\n  - 原因：正文标题分段那次改动为支持「次行字号」，把每一行实际使用的画笔实例存进了 `TextLine.lineTextPaint`；而 `ChapterProvider.upStyle()` 每次都是新建 `TextPaint`，已排版的行仍指向旧实例，typeface 字重、加粗描边、变细擦除、字距与字号都留在旧对象上，绘制端优先用的是这份旧快照。字重是对话框里唯一只发 `UP_CONTENT`（只重绘、不重排）的项，所以只有它被破坏；字号、字距、行距、字体、颜色都另有重排或绘制期取值，不受影响。\r\n  - 修复：`TextLine` 改为只记录行角色 `isTitleSubLine`，`lineTextPaint` 变成实时解析 `titleSubPaint` / `titlePaint` / `contentPaint` 的只读属性，不再缓存画笔实例；`TextChapterLayout.setTypeText(...)` 增加 `isTitleSubLine` 参数（标题调用处传 `!isTitleFirstLine`），`TextColumn.draw(...)` 直接取实时画笔。标题分段次行的缩放字号与描边换算保持原样。\r\n- 说明：字重切换仍按原设计只重绘不重排（与加入快照之前一致），系统字体粗体的字宽略增，逐字绘制路径下相邻字会略微贴近，不影响阅读。\r\n- 验证：`:app:compileAppMaxDebugKotlin` 编译通过。\r\n\r\n**2026/11/05**\r\n- 修复：正文图片加载比原版（`legado_sigma`）慢、翻页不跟手。\r\n  - 排版恢复原版策略：排版前用 `AppConfig.threadCount`（默认 32）并发预取整章图片，排版里逐张等整张图下好再取真实尺寸；页面一出现就是最终版面，取消「16:9 占位排版 → 图片到了整章重排」这套流程。\r\n  - 去掉 `PageImageGate` 的整页等待（原为图片没下完先显示「加载中」，每张最多等 10 秒）：翻页不再被图片卡住。\r\n  - 正文图片下载并发 3 → 32，对齐原版的整章并发预取；限流书源「同一时间只放一张」的排队规则保留。\r\n  - 相邻章正文不再等当前章正文/图片（原先最多等 10 秒 + 30 秒），恢复原版的并发请求。\r\n  - 去掉 `ImageProvider.put()` 里的全局内存清理，`trimMemory()` 也不再在 `UI_HIDDEN` / `RUNNING_LOW` 时清空正文位图缓存：原先是「放进去 → 立刻裁掉 → 下次 draw() 回主线程重新解码」，翻页一顿一顿的。\r\n- 验证：`:app:compileAppMaxDebugKotlin`、`:app:compileAppMaxDebugAndroidTestKotlin` 编译通过。\r\n\r\n**2026/11/04**\r\n- 调整：书架列表项书名上方增加 4dp 间距，封面位置保持不变。\r\n\r\n**2026/11/03**\r\n- 修复：自定义主题（浅色顶栏配色 + 浅色页面）下，弹窗工具栏的标题、副标题、放大镜、「⋮」与搜索框内容渲染成近白色，在浅色底上几乎看不见。工具栏内容色此前取自 `?attr/actionBarStyle` 浮层与主题 `backgroundColor`，与工具栏实际底色不是同源；现在统一按工具栏实际底色推导（浅底黑、深底白）。\r\n- 修复：换源、搜索范围、登录、分组管理、导入书源等 50 处弹窗的 `⋮` 与工具栏图标同色处理；换源查询对话框的工具栏底色是 `@color/background_menu` 而非主题主色，也按实际底色取色。\r\n- 修复：搜索框展开后的输入框文字、提示语、放大镜、清除按钮、底板与光标颜色；光标此前跟随主题 emphasis 色，自定义主题下会与工具栏底色撞成「看不见」。\r\n- 修复：菜单内容在工具栏着色之后才填充（`inflateMenu` 晚于取色）时新菜单项保持默认色的问题，改为着色后再补染一次。\r\n- 说明：本次不改动阅读界面的阅读菜单（`ReadMenu` 跟随阅读背景取色）与自带顶栏主题（`TitleBar` 自行着色）。\r\n- 验证：`:app:compileAppMaxDebugKotlin`、`:app:assembleAppMaxDebug` 编译通过。\r\n",
+        "assets": [
+          {
+            "name": "legado_._3.26.112318_legacy.apk",
+            "size": 18787751,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/bata-3.26.112318/legado_._3.26.112318_legacy.apk"
+          },
+          {
+            "name": "legado_._3.26.112318_release.apk",
+            "size": 18788361,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/bata-3.26.112318/legado_._3.26.112318_release.apk"
+          },
+          {
+            "name": "legado_._3.26.112318_releaseS.apk",
+            "size": 18787975,
+            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/bata-3.26.112318/legado_._3.26.112318_releaseS.apk"
           }
         ]
       },
@@ -851,45 +890,6 @@
             "name": "NexHub-windows-x64.zip",
             "size": 66151756,
             "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.2/NexHub-windows-x64.zip"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
-      "id": "max-cichen",
-      "name": "阅读 MAX 辞晨版",
-      "tag": "max-cichen",
-      "repo": "GEd520/legados",
-      "term": "legado-branch-max-cichen",
-      "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 84,
-      "sourceUpdatedAt": "2026-08-02T07:00:38Z",
-      "githubArchived": false,
-      "release": {
-        "name": "最新版8.2",
-        "tagName": "beta-3.26.080214",
-        "prerelease": true,
-        "publishedAt": "2026-07-29T12:54:34Z",
-        "createdAt": "2026-07-12T03:55:56Z",
-        "body": "**2026/08/02**\r\n- 修复书籍详情页 useWeb 简介渲染污染 showBrowser 页面显示的问题：两者共用 WebViewPool 的 GLOBAL 池导致复用污染（杀后台后池清空故正常）。新增 Scope.INLINE，BookInfoActivity useWeb 渲染改从 INLINE 池获取与 showBrowser 隔离，BackstageWebView 同步补全 INLINE 分支。\r\n- 新增应用主题「导入应用主题设置」选项：三点菜单新增导入设置入口，勾选要导入的组件（主题/顶栏/底栏/封面图集）后持久化保存，后续导入自动套用，未勾选的跳过。同时修复导入后主题管理列表不显示——restoreThemeAsset 漏调 ThemeConfig.addConfig 注册主题，补齐注册逻辑。\r\n- 优化气泡管理列表项排版，对齐应用主题三按键布局：单个「应用」按键重构为 buttonRow（textBox 信息区底部）含应用/编辑/更多三按键，bg_action_button 背景 + Space 分隔；整行点击与 tvMore 弹 showActions，长按进多选。同时修复 foreground 在 API 21-22 崩溃（加版本判断）。\r\n- 优化气泡颜色渲染：普通颜色作用于边框、强调颜色作用于数字。默认 SVG 模板 `${color}` 拆为 `${borderColor}`/`${textColor}`；内置气泡 emphasisColor 改为 normalColor 使边框数字同色，本地气泡默认边框灰数字红；渲染保留 `${color}` 兼容旧模板，cacheKey 同步含两颜色。\r\n- 优化强制气泡渲染：移植参考版 ParagraphBubbleRenderer 增强，URL 支持 displayText 覆盖数字文本、displayColor 覆盖数字颜色；新增 replaceBubbleValue 用正则匹配 `${name}`/`$name`/`{{name}}` 三种占位符格式并支持多别名（borderColor/color、textColor/displayColor、displayText/num），queryValue 参数名忽略大小写；保留边框普通色/数字强调色的分色逻辑，displayColor 只覆盖数字颜色不影响边框。\r\n- 新增图片文件夹导入漫画：本地导入界面长按文件夹弹出「导入漫画」菜单，以文件夹名为书名、子文件夹为章节（无子文件夹则整文件夹为一章），图片按文件名自然排序生成 `<img>` 正文。ImageFolderBook 解析器支持 content:// 和 file:// URI，ImageProvider 通过 ImageFolderBook.getImage 加载本地图片流。\r\n- 修复本地图片书从书架或详情页重新进入时变回文本模式：Fragment.startActivityForBook 和 BookInfoActivity 的路由判断含 `!book.isLocal` 限制，本地图片书被排除出 ReadMangaActivity；移除该限制使三处入口（Context/Fragment/BookInfoActivity）统一为 `book.isImage && AppConfig.showMangaUi`。\r\n\r\n**2026/08/01** \r\n- 修复播放界面通过自定义按钮回调跳转后再播放新视频，旧视频仍在继续播放的问题：VideoPlayerActivity 启动模式由 singleTask 改为 standard，新实例创建时自动 finish 旧实例并释放其播放器；新增 startNewSession 方法在启动新视频前停止旧播放、重置状态；onDestroy 在被替换时跳过操作 VideoPlay 单例（避免影响新实例），onResume 新会话启动时跳过恢复旧视频。返回栈支持逐级返回，不管跳转多少次按返回键都能回到上一个界面。\r\n- 修复视频播放通知标题显示对象引用而非视频标题的问题：字符串插值 `$VideoPlay.videoTitle` 实际插值的是 VideoPlay 对象，`.videoTitle` 变成字面文本，改为 `${VideoPlay.videoTitle ?: \"\"}`。\r\n- 修复 ExoPlayer 并发请求时 HTTP 请求头全局串改竞态：resolvingDataSource 原先通过 `okhttpDataFactory.setDefaultRequestProperties` 全局修改共享工厂的请求头，多请求并发时 headers 相互覆盖；改为使用 `DataSpec.withRequestHeaders` 将请求头绑定到每个请求，彻底消除竞态。\r\n- 修复 VideoPlay.isLoading 时序错误导致 releaseAllVideos 状态重置失效：原代码在 startPlay 末尾同步设置 `isLoading = false`，但加载协程异步运行尚未完成；且 singleUrl/rss 两条路径有 return 永远不会执行到该行。改为在每个协程的成功/错误回调中设置。\r\n- 修复切换视频时旧实例 onDestroy 触发 releaseAllVideos 误重新实例播放器的问题：旧 Activity 被新实例替换时，playerView.release() → releaseVideos() → releaseAllVideos() 会操作已指向新实例的 videoManager，导致新实例的播放器被释放、加载协程被取消。新增 skipReleaseAllVideos 标志，被替换时设置该标志使 releaseAllVideos 直接返回，仅由 GSY 框架释放旧实例自身的 surface 资源。\r\n- 修复 saveRead 自动获取进度时未实际播放（pos<=0）仍保存进度覆盖有效记录的问题：自动模式（参数为 null）下 pos<=0 跳过保存，显式传 0（切集重置）仍正常保存。\r\n- 修复弹幕 FileInputStream 泄漏：createParser 中 FileInputStream 传给 loader 后永不关闭，改为 readBytes 读入内存后用 ByteArrayInputStream 交给 loader，文件流即时关闭。\r\n- 修复切换章节后弹幕仍显示旧内容、新解析器无法激活的问题：initDanmaku 切集时未释放旧弹幕实例，DanmakuView.isPrepared 仍为 true 导致 onPrepareDanmaku 中的 prepare 调用被跳过；新增 initDanmaku 开头先 release 旧弹幕并清空 mParser。\r\n- 修复 BiliDanmukuParser 安全与健壮性问题：新增 XXE 防护（禁用 DTD 声明和外部实体解析）；SAX characters 多次调用导致文本截断，改用 StringBuilder 累积后在 endElement 统一处理；单条弹幕属性解析或特殊弹幕处理异常时跳过该条不影响整体解析；删除 SAX 已解码的冗余 XML 实体二次解码；修复空文本弹幕被错误添加到结果集的问题。\r\n- 修复 ExoPlayer 重建前旧实例未释放导致内存泄漏：Exo2MediaPlayer 创建新 ExoPlayer 前先 release 旧实例；ExoPlayerManager 初始化失败时不再误调 initSuccess，Surface/SurfaceControl 释放顺序修正为先 VideoSurface 后 SurfaceControl。\r\n- 修复 InputStreamDataSource skip 不准确导致 seek 偏移：实现 skipFully 循环确保跳过完整字节数，异常时正确关闭流，始终回调 bytesTransferred。\r\n- 修复 ExoPlayerHelper 窗口时长硬编码 3000ms 的问题：改为 C.TIME_UNSET 让 ExoPlayer 自动计算；CacheDataSource 设置 FLAG_IGNORE_CACHE_ON_ERROR 避免缓存错误时中断播放。\r\n- 修复 VideoPlayService Android 14 前台服务崩溃：MediaSession 初始化移至 super.onCreate 之前，确保 startForeground 时已有活跃 session；修复 null intent 未 stopSelf 的问题；修正 onDestroy 资源释放顺序。\r\n- 修复 ChoiceEpisodeDialog / ChoiceSpeedDialog 回调未设置时 NPE 崩溃：`!!` 改为 `?.` 空安全调用。\r\n- 修复 ChapterAdapter 越界崩溃：添加 NO_POSITION 守卫，position 超出 chapters 范围时不绑定数据。\r\n- 修复全屏模式选集列表背景过白遮挡文字的问题：card_bg_water 颜色值 alpha 从 F2/E6（95%/90%几乎不透明）改为 69（41%半透明），card_border_water 对应调整，使对话框深色底色透过卡片背景，白色文字清晰可读。\r\n\r\n**2026/07/31**\r\n- 修复书籍缓存选择界面底部「保存选择/导出选中」按钮被系统导航键遮挡的问题：edge-to-edge 模式下给 bottomBar 补上 navigationBarsPadding，按钮不再沉到导航栏下方。\r\n\r\n**2026/07/30**\r\n- 内置 CryptoJS 加解密库（参考 legadoT）：规则与 JS 源中可直接使用 `CryptoJS`，无需在 jsLib 重复引入；支持 MD5/SHA1/SHA256/SHA512/SHA3、HmacMD5/HmacSHA1/HmacSHA256/HmacSHA512、AES/DES/TripleDES/RC4/Rabbit/Blowfish、PBKDF2，以及 enc/mode/pad 编码与分组模式。无 jsLib 的 JSON 书源规则自动回退到 CryptoJS 作用域。\r\n- 修复书架阅读进度开关关闭时间距异常：列表项 tv_last 的 goneMarginBottom 由 8dp 改回 4dp，与原版一致，关闭开关时书架布局不再因进度条控件而偏移。\r\n- 书架新增显示阅读进度功能（参考 legadoT 实现）：列表布局在书籍项底部显示进度条与百分比，网格布局在封面底部叠加进度条；书架配置对话框新增「显示阅读进度」开关，默认关闭，进度条使用主题强调色支持换肤。\r\n- 修复订阅源长按保存图片未携带订阅源请求头的问题：保存网页图片时改为带上当前订阅源的 headerMap，避免需要请求头才能访问的图片下载失败。\r\n- 修复网页类型订阅源误应用静音播放设置的问题：WebView 内 h5 video/audio 的静音处理改为仅对视频类型（type==2）订阅源生效，网页类型（type==0）不再受静音播放开关控制。\r\n- 修复视频播放切换章节后静音状态不立即生效的问题：创建新播放器后立即应用当前静音设置，并重写 setNeedMute 使其立即作用到播放器，静音开关切换后无需重新进入即可生效。\r\n- 优化气泡管理的导出与分享入口：条目菜单从「应用/编辑/导出/文件分享/直链分享/删除」精简为「应用/编辑/导出/删除」，点「导出」弹出二级菜单，统一提供「导出到文件」（系统文件保存选择器）、「文件分享」（系统分享面板分享 zip）、「直链分享」（上传后分享下载链接）三项，操作层级更清晰。\r\n",
-        "assets": [
-          {
-            "name": "legado_._3.26.080214_legacy.apk",
-            "size": 23891035,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_legacy.apk"
-          },
-          {
-            "name": "legado_._3.26.080214_release.apk",
-            "size": 23891038,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_release.apk"
-          },
-          {
-            "name": "legado_._3.26.080214_releaseS.apk",
-            "size": 23891069,
-            "browserDownloadUrl": "https://github.com/GEd520/legados/releases/download/beta-3.26.080214/legado_._3.26.080214_releaseS.apk"
           }
         ]
       },
