@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:57:49.050Z",
+  "generatedAt": "2026-11-24T00:57:35.840Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47275,
+      "stars": 47280,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,56 +85,56 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7203,
-      "sourceUpdatedAt": "2026-11-23T07:34:48Z",
+      "stars": 7212,
+      "sourceUpdatedAt": "2026-11-23T18:26:58Z",
       "githubArchived": false,
       "release": {
-        "name": "Release 3.26.30",
-        "tagName": "3.26.30",
+        "name": "Release 3.26.31",
+        "tagName": "3.26.31",
         "prerelease": false,
-        "publishedAt": "2026-11-19T06:36:08Z",
-        "createdAt": "2026-11-19T05:37:22Z",
-        "body": "### 下载哪个包\n\n- legado-3.26.30-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.30-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* chore(release): 更新版本至 3.26.30\n* fix(book-info): 修复 HyperOS4 下 WebView 简介闪退 (#2610)\n* feat(theme): 接入 OxygenX 并完善搜索和书架交互\n* fix: 修复旧注音缓存升级与有声书后台换章 (#2632)\n* feat(reader): 支持本地书籍 ruby 标签解析、排版与绘制 (#2626)\n* fix(audio): 修复有声书系统媒体控制 (#2627)\n\n## What's Changed\n* fix(audio): 修复有声书系统媒体控制 by @lingran7031 in https://github.com/HapeLee/legado-with-MD3/pull/2627\n* feat(reader): 支持本地书籍 ruby 标签解析、排版与绘制 by @izumisagirii in https://github.com/HapeLee/legado-with-MD3/pull/2626\n* fix: 修复旧注音缓存升级与有声书后台换章 by @HapeLee in https://github.com/HapeLee/legado-with-MD3/pull/2632\n\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.29...3.26.30",
+        "publishedAt": "2026-11-23T18:26:54Z",
+        "createdAt": "2026-11-23T18:04:53Z",
+        "body": "### 下载哪个包\n\n- legado-3.26.31-core-*.apk：基础包，不含本地推理运行时；云端 OCR、AI 识图/翻译可用。\n- legado-3.26.31-comic-*.apk：漫画增强版，内置本地 OCR、擦字与气泡检测，体积明显更大。\n- 原 full 版用户：产品标记已从 full 改为 comic，应用内更新不会跨包升级，请手动下载一次 comic 包，之后恢复正常更新。\n\n### 更新内容\n\n* chore(release): 更新版本至 3.26.31\n* fix(coui): 在搜索栏渲染探测前检查 SDK 版本\n* fix(book-info): 各主题避免对 WebView 简介采样\n* fix(explore): 合并重复的尾部指示器，并恢复 ThemeModeSelector 的 M3 分段按钮\n* refactor(theme): 页面 M3 令牌与裸组件统一到项目主题\n* fix(reader): 笔记浮层取色面板改为窗口级呈现并统一图标着色\n* feat(manga): CBZ 漫画生成默认封面\n* fix(reader): 滚动模式斜滑按 Y 分量认领纵向滚动\n* fix(readaloud): 跟随系统语速被显式 setSpeechRate(1f) 覆盖导致失效\n* chore: 忽略 .codebuddy 工作目录\n* refactor(ai): 推理档位控件改名为 AiReasoningLevelButton\n* refactor(sheet): 各页面改用声明式 SheetAction\n* build(deps): 升级 miuix fork 至 0.9.5-beta03-c71a0bebaad2\n* build(deps): 升级 mochi fork 至 0.3.1-legado.fbcdf655007d\n* build(deps): 同步 coui 上游 0.0.1-alpha16\n* build(deps): 升级 coui fork 至 3aab8437e0e2\n* refactor(sheet): 首页模块管理与云 TTS 头部触发器改声明式 SheetAction\n* refactor(sheet): 面板头部操作统一为声明式 SheetAction，移除 Composable 槽\n* fix(reader): 书签角标支持左上/右上/自定义位置，下滑加书签不再弹提示\n* feat(bookshelf): 书架同系列多卷折叠收纳\n* fix(reader): 替换净化补齐富文本段并保护图片与分页标记\n* fix(main): 修正横划顶栏模式底部页签的显隐动画\n* feat(bookshelf): 紧凑/仅封面网格新增沉浸模式\n* feat(main): 主壳接入横划顶栏，OxygenX 快照升级至 0.0.2-local.9\n* fix(rss): 视频订阅源点击直接进播放页并携带源请求头\n* feat(theme): 外观页内联首页与导航、顶栏与底栏设置\n* refactor(media-notification): 统一媒体服务的前台类型与通知属性\n* fix(read-aloud): 收敛媒体通知上一/下一语义，通知按钮不再与系统媒体控件冲突\n* fix(book-content): 过滤段评气泡地址，避免解析与导出链路报错 (#2593)\n\n## What's Changed\n* fix : tts跟随系统语速失效的问题 by @xin2233 in https://github.com/HapeLee/legado-with-MD3/pull/2637\n* 修复：滚动模式斜滑按 Y 分量认领纵向滚动 by @t200229 in https://github.com/HapeLee/legado-with-MD3/pull/2642\n\n## New Contributors\n* @xin2233 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2637\n* @t200229 made their first contribution in https://github.com/HapeLee/legado-with-MD3/pull/2642\n\n**Full Changelog**: https://github.com/HapeLee/legado-with-MD3/compare/3.26.30...3.26.31",
         "assets": [
           {
-            "name": "legado-3.26.30-comic-arm64-v8a.apk",
-            "size": 73439058,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-arm64-v8a.apk"
+            "name": "legado-3.26.31-comic-arm64-v8a.apk",
+            "size": 73574227,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-comic-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.30-comic-armeabi-v7a.apk",
-            "size": 60412358,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-armeabi-v7a.apk"
+            "name": "legado-3.26.31-comic-armeabi-v7a.apk",
+            "size": 60547531,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-comic-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.30-comic-universal.apk",
-            "size": 199911241,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-comic-universal.apk"
+            "name": "legado-3.26.31-comic-universal.apk",
+            "size": 200046399,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-comic-universal.apk"
           },
           {
-            "name": "legado-3.26.30-core-arm64-v8a.apk",
-            "size": 22780688,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-arm64-v8a.apk"
+            "name": "legado-3.26.31-core-arm64-v8a.apk",
+            "size": 22932216,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-core-arm64-v8a.apk"
           },
           {
-            "name": "legado-3.26.30-core-armeabi-v7a.apk",
-            "size": 22320510,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-armeabi-v7a.apk"
+            "name": "legado-3.26.31-core-armeabi-v7a.apk",
+            "size": 22472040,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-core-armeabi-v7a.apk"
           },
           {
-            "name": "legado-3.26.30-core-universal.apk",
-            "size": 29353154,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/legado-3.26.30-core-universal.apk"
+            "name": "legado-3.26.31-core-universal.apk",
+            "size": 29504687,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/legado-3.26.31-core-universal.apk"
           },
           {
             "name": "mapping-comic.txt",
-            "size": 364009452,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/mapping-comic.txt"
+            "size": 368590145,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/mapping-comic.txt"
           },
           {
             "name": "mapping-core.txt",
-            "size": 356633924,
-            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.30/mapping-core.txt"
+            "size": 361291625,
+            "browserDownloadUrl": "https://github.com/HapeLee/legado-with-MD3/releases/download/3.26.31/mapping-core.txt"
           }
         ]
       },
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3152,
+      "stars": 3153,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,8 +204,8 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2016,
-      "sourceUpdatedAt": "2026-11-20T14:38:37Z",
+      "stars": 2022,
+      "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
         "name": "legado_app_3.26110117",
@@ -585,8 +585,8 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 141,
-      "sourceUpdatedAt": "2026-11-23T02:39:00Z",
+      "stars": 142,
+      "sourceUpdatedAt": "2026-11-24T00:04:24Z",
       "githubArchived": false,
       "release": {
         "name": "v2.11.1",
@@ -633,7 +633,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 140,
+      "stars": 139,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -776,7 +776,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 86,
+      "stars": 87,
       "sourceUpdatedAt": "2026-11-23T10:47:55Z",
       "githubArchived": false,
       "release": {
@@ -1180,30 +1180,30 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 8,
-      "sourceUpdatedAt": "2026-11-23T07:41:00+08:00",
+      "sourceUpdatedAt": "2026-11-24T00:48:31+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.112301",
-        "tagName": "阅读_E-ink_3.26.112301",
+        "name": "阅读_E-ink_3.26.112401",
+        "tagName": "阅读_E-ink_3.26.112401",
         "prerelease": false,
-        "publishedAt": "2026-11-23T07:41:00+08:00",
-        "createdAt": "2026-11-23T07:41:00+08:00",
-        "body": "- 已修复异常闪退\r\n- 已新增微信读书\r\n- 点击首页进度环\r\n- 已新增隐私模式\r\n- 可搜索输入密码\r\n- 当前时间为密码\r\n- 19:16就是1916\r\n- 已大量精简优化\r\n- 已压缩应用体积",
+        "publishedAt": "2026-11-24T00:48:31+08:00",
+        "createdAt": "2026-11-24T00:48:31+08:00",
+        "body": "- 已修复微信续期\r\n- 已修复异常闪退\r\n- 已新增微信读书\r\n- 点击首页进度环\r\n- 已新增隐私模式\r\n- 可搜索输入密码\r\n- 当前时间为密码\r\n- 19:16就是1916\r\n- 已大量精简优化\r\n- 已压缩应用体积",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.112301.apk",
-            "size": 8185354,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.112301/%E9%98%85%E8%AF%BB_E-ink_3.26.112301.apk"
+            "name": "阅读_E-ink_3.26.112401.apk",
+            "size": 8181200,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.112401/%E9%98%85%E8%AF%BB_E-ink_3.26.112401.apk"
           },
           {
-            "name": "阅读_E-ink_3.26.112301.zip",
+            "name": "阅读_E-ink_3.26.112401.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112301.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112401.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.112301.tar.gz",
+            "name": "阅读_E-ink_3.26.112401.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112301.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112401.tar.gz"
           }
         ]
       },
@@ -1237,7 +1237,7 @@
       "allowNoRelease": true,
       "note": "预备观察，未达收录标准，仅防跑路备份，不展示不计数。",
       "stars": 4,
-      "sourceUpdatedAt": "2026-11-22T15:01:55Z",
+      "sourceUpdatedAt": "2026-11-23T16:28:14Z",
       "githubArchived": false,
       "release": {
         "name": "1.0.9",
@@ -1248,8 +1248,18 @@
         "body": "界面与功能调整（书架重构 / 发现 / 订阅 / 我的）。\niOS 为未签名 IPA，需自行签名或 sideload 后安装。\n详见 CHANGELOG.md。\n",
         "assets": [
           {
+            "name": "app-arm64-release.apk",
+            "size": 30774566,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.9/app-arm64-release.apk"
+          },
+          {
+            "name": "app-universal-release.apk",
+            "size": 54542507,
+            "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.9/app-universal-release.apk"
+          },
+          {
             "name": "legado-ios-unsigned.ipa",
-            "size": 21948171,
+            "size": 21955912,
             "browserDownloadUrl": "https://github.com/ReTyne/legado-Klys/releases/download/v1.0.9/legado-ios-unsigned.ipa"
           }
         ]
