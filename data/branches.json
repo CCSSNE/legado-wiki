@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:21:19.524Z",
+  "generatedAt": "2026-11-25T15:41:34.948Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 223,
+      "stars": 224,
       "sourceUpdatedAt": "2026-11-25T01:23:50Z",
       "githubArchived": false,
       "release": {
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 73,
+          "stars": 74,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47293,
+      "stars": 47297,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7242,
+      "stars": 7261,
       "sourceUpdatedAt": "2026-11-24T13:31:29Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3164,
+      "stars": 3167,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2029,
+      "stars": 2038,
       "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 692,
+      "stars": 693,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 450,
+      "stars": 451,
       "sourceUpdatedAt": "2026-11-21T14:43:01Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 356,
+      "stars": 358,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 245,
+      "stars": 247,
       "sourceUpdatedAt": "2026-11-24T21:16:55Z",
       "githubArchived": false,
       "release": {
@@ -585,41 +585,51 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 141,
-      "sourceUpdatedAt": "2026-11-24T20:54:26Z",
+      "stars": 145,
+      "sourceUpdatedAt": "2026-11-25T09:33:18Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.11.2",
-        "tagName": "app-v2.11.2",
+        "name": "v2.11.1",
+        "tagName": "v2.11.1",
         "prerelease": false,
-        "publishedAt": "2026-11-24T20:46:20Z",
-        "createdAt": "2026-11-24T20:37:37Z",
-        "body": "新功能\n- 加密 PDF：设了打开密码的 PDF 可以照常导入，打开时输入密码即可阅读。输错会提示并清空重输；可选「在这台设备上记住密码」，密码只存在本机，不会同步。解锁后自动用第一页补上书架封面。\n- Android：可以在文件管理器里用轻阅直接打开书籍，或把书分享到轻阅；轻阅已在运行时也能接住。\n\n改进\n- 选文件导入时，azw / azw3 不再是灰色，可以直接选；「打开方式」列表里也有轻阅。\n- 给选中的书批量设置标签时，可以直接点选已有标签，也可以继续手动输入。\n\n修复\n- 港台常见的 Big5 编码 TXT 打开是乱码：现在自动识别 GBK 与 Big5。\n- Standard Ebooks 等精排 EPUB / AZW3 的书名页和徽标显示为坏图。\n- Markdown 书籍的书名改为取文件名，不再显示正文的第一个标题。\n- 没有 ComicInfo 的 CBZ / CBR 漫画，书名不再带「.cbz」扩展名。\n- 手册页「在网页上看」按钮的无障碍标签显示成了内部文案编号。\n\n验证\n- 已在 Android 真机上验证：各种格式样书的导入与打开，加密 PDF 输错提示、输对打开、记住密码后直接打开，解锁后书架显示封面。\n- 新增格式兼容测试：39 本公有领域与开放许可的测试书，覆盖常见电子书、漫画、DjVu 与各类 PDF，全部通过；以后每次发版前都要通过。\n",
+        "publishedAt": "2026-11-25T09:57:38Z",
+        "createdAt": "2026-11-25T09:33:16Z",
+        "body": "新功能\n- 加密 PDF：设了打开密码的 PDF 可以照常导入，打开时输入密码即可阅读。输错会提示并清空重输；可选「在这台设备上记住密码」，密码只存在本机，不会同步。解锁后自动用第一页补上书架封面。\n\n改进\n- 给选中的书批量设置标签时，可以直接点选已有标签，也可以继续手动输入。\n\n修复\n- 港台常见的 Big5 编码 TXT 打开是乱码：现在自动识别 GBK 与 Big5。\n- Standard Ebooks 等精排 EPUB / AZW3 的书名页和徽标显示为坏图。\n- Markdown 书籍的书名改为取文件名，不再显示正文的第一个标题。\n- 没有 ComicInfo 的 CBZ / CBR 漫画，书名不再带「.cbz」扩展名。\n\n验证\n- 新增格式兼容测试：39 本公有领域与开放许可的测试书，覆盖 EPUB、kepub、MOBI / AZW / AZW3、各种编码的 TXT、HTML、Markdown、FB2、CBZ / CBR、DjVu 和各类 PDF，逐本导入、打开并核对书名、封面、正文、目录与图片，全部通过；以后每次发版前都要通过。\n- 类型检查、网页构建与冒烟端到端测试通过。\n- macOS 安装包已签名并经 Apple 公证。\n",
         "assets": [
           {
-            "name": "LightRead_app-v2.11.2_android_arm64.apk",
-            "size": 145796488,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.2/LightRead_app-v2.11.2_android_arm64.apk"
+            "name": "LightRead-2.11.1-1.x86_64.rpm",
+            "size": 32947571,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead-2.11.1-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_app-v2.11.2_android_arm64.apk.build.json",
-            "size": 163,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.2/LightRead_app-v2.11.2_android_arm64.apk.build.json"
+            "name": "LightRead_2.11.1_aarch64.dmg",
+            "size": 29612947,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_aarch64.dmg"
           },
           {
-            "name": "LightRead_app-v2.11.2_android_arm64.apk.json",
-            "size": 2047,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.2/LightRead_app-v2.11.2_android_arm64.apk.json"
+            "name": "LightRead_2.11.1_amd64.AppImage",
+            "size": 108698104,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_amd64.AppImage"
           },
           {
-            "name": "LightRead_app-v2.11.2_android_arm64.apk.sha256",
-            "size": 106,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.2/LightRead_app-v2.11.2_android_arm64.apk.sha256"
+            "name": "LightRead_2.11.1_amd64.deb",
+            "size": 32951364,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_amd64.deb"
+          },
+          {
+            "name": "LightRead_2.11.1_x64-setup.exe",
+            "size": 22747776,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_2.11.1_x64.dmg",
+            "size": 31967222,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
-            "size": 447,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/app-v2.11.2/SHA256SUMS"
+            "size": 570,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/SHA256SUMS"
           }
         ]
       },
@@ -776,7 +786,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 90,
+      "stars": 91,
       "sourceUpdatedAt": "2026-11-23T10:47:55Z",
       "githubArchived": false,
       "release": {
@@ -905,19 +915,19 @@
       "term": "legado-branch-manxia",
       "note": "阅读原版重构，鸿蒙 Next 版。",
       "stars": 62,
-      "sourceUpdatedAt": "2026-09-28T15:54:46Z",
+      "sourceUpdatedAt": "2026-11-25T14:27:27Z",
       "githubArchived": false,
       "release": {
-        "name": "阶段性构建 v0.1.4 · 08ef5b2",
+        "name": "阶段性构建 v0.1.5 · 636b712",
         "tagName": "latest",
         "prerelease": false,
-        "publishedAt": "2026-09-28T15:54:47Z",
-        "createdAt": "2026-09-28T15:48:04Z",
-        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.4 (105402300)` |\n| 提交 / Commit | [`08ef5b2`](https://github.com/DaLongZhuaZi/manxia/commit/08ef5b2657473a7605e72fe797f8a33349b76d40) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#9](https://github.com/DaLongZhuaZi/manxia/actions/runs/36446343300) · 2026-09-28 15:54 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 118MB |\n\n### 本次变更 / What's Changed\n\n- `08ef5b26` Merge branch 'agent/supporters-json': 远端图源阅读修复与加载阶段显示 — DaLongZhuaZi, 2026-09-28 23:47\n- `3e9b5f80` fix(reader): 修复远端图源阅读链路，补齐加载阶段显示与全局字体接入 — DaLongZhuaZi, 2026-09-28 23:46\n\n\n### 变更文件 / Changed Files\n\n```\n entry/src/main/ets/EntryAbility.ets                |  31 +-\n .../main/ets/Framework/Cache/ImageCacheManager.ets | 291 ++++++++++-----\n .../ContinuationReadingSettingsManager.ets         |  42 ++-\n .../Distributed/ContinuationReadingTypes.ets       |  11 +\n .../Distributed/ContinuationStateHelper.ets        |  59 ++-\n .../Distributed/DistributedPermissionManager.ets   | 406 ++++++++-------------\n .../Framework/Reader/MangaLoadStageReporter.ets    |  86 +++++\n .../ets/Framework/Source/KomgaCacheManager.ets     | 203 ++++++++++-\n .../src/main/ets/Framework/Source/KomgaSource.ets  | 180 ++++++++-\n .../Framework/Source/RemoteLibraryMangaBridge.ets  |  28 +-\n .../main/ets/Framework/Source/SourceExecutor.ets   |   5 +\n .../ets/components/MainMenuKomgaTabContent.ets     |   9 +-\n .../main/ets/components/MangaReaderSettings.ets    |  79 +++-\n entry/src/main/ets/components/MangaViewer.ets      | 142 ++++++-\n entry/src/main/ets/pages/EBookReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/MainMenuPage.ets          |  29 +-\n entry/src/main/ets/pages/MangaReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/NovelReadAloudPage.ets    |   6 +-\n entry/src/main/ets/pages/NovelReaderPage.ets       |  25 +-\n entry/src/main/ets/pages/ReadAloudPlayerPage.ets   |   6 +-\n .../src/main/ets/pages/SuwayomiMangaDetailPage.ets | 327 ++++++++++-------\n entry/src/main/ets/pages/WelcomeGuidePage.ets      | 101 ++---\n .../settings/ContinuationReadingSettingsPage.ets   | 255 ++++++++++++-\n .../main/ets/pages/settings/GlobalSettingsPage.ets |   2 +-\n entry/src/main/resources/rawfile/changelog.md      |  56 +++\n .../src/main/resources/rawfile/changelog_brief.md  |  15 +\n 26 files changed, 1811 insertions(+), 633 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
+        "publishedAt": "2026-11-25T14:27:28Z",
+        "createdAt": "2026-11-25T14:21:08Z",
+        "body": "## 阶段性构建 / Staged build\n\n由 `main` 分支最新提交自动构建的**未签名** debug HAP。\nUnsigned debug HAP, built automatically from the latest `main` commit.\n\n| 项目 / Item | 值 / Value |\n|---|---|\n| 版本 / Version | `0.1.5 (105502300)` |\n| 提交 / Commit | [`636b712`](https://github.com/DaLongZhuaZi/manxia/commit/636b712c785fc0eb74ea835e9b04581ad4d13ede) |\n| 分支 / Branch | `main` |\n| 构建 / Build | [#11](https://github.com/DaLongZhuaZi/manxia/actions/runs/45633122006) · 2026-11-25 14:27 UTC |\n| 产物 / Artifact | `entry-default-unsigned.hap` · 113MB |\n\n### 本次变更 / What's Changed\n\n- `636b712c` ci: switch CI image to harmonyos-ci:api26r (API 26 release toolchain) — Kit, 2026-11-25 22:21\n\n\n### 变更文件 / Changed Files\n\n```\n .github/workflows/build.yml | 6 +++---\n 1 file changed, 3 insertions(+), 3 deletions(-)\n```\n\n> ⚠️ 未签名,安装前请用 DevEco Studio 或 hap-sign-tool 重新签名。\n> Unsigned - re-sign it with DevEco Studio or hap-sign-tool before installing.\n",
         "assets": [
           {
             "name": "entry-default-unsigned.hap",
-            "size": 123088042,
+            "size": 117745698,
             "browserDownloadUrl": "https://github.com/DaLongZhuaZi/manxia/releases/download/latest/entry-default-unsigned.hap"
           }
         ]
@@ -933,7 +943,7 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 36,
+      "stars": 37,
       "sourceUpdatedAt": "2026-11-21T14:52:17Z",
       "githubArchived": false,
       "release": {
@@ -1180,30 +1190,30 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 8,
-      "sourceUpdatedAt": "2026-11-24T19:50:02+08:00",
+      "sourceUpdatedAt": "2026-11-25T21:07:09+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.112419",
-        "tagName": "阅读_E-ink_3.26.112419",
+        "name": "阅读_E-ink_3.26.111812",
+        "tagName": "阅读_E-ink_3.26.111812",
         "prerelease": false,
-        "publishedAt": "2026-11-24T19:50:02+08:00",
-        "createdAt": "2026-11-24T19:50:02+08:00",
-        "body": "- 已修复目录问题\r\n- 已修复微信续期\r\n- 已修复异常闪退\r\n- 已新增微信读书\r\n- 点击首页进度环\r\n- 已新增隐私模式\r\n- 可搜索输入密码\r\n- 当前时间为密码\r\n- 19:16就是1916\r\n- 已大量精简优化\r\n- 已压缩应用体积",
+        "publishedAt": "2026-11-18T13:07:28+08:00",
+        "createdAt": "2026-11-18T13:07:28+08:00",
+        "body": "- 修复其他页面返回主页\r\n- 已修复朗读源登录函数\r\n- 修复对话高亮字体变形\r\n- 对话高亮自定义下划线",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.112419.apk",
-            "size": 8181200,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.112419/%E9%98%85%E8%AF%BB_E-ink_3.26.112419.apk"
+            "name": "阅读_E-ink_3.26.111812.apk",
+            "size": 21035047,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.111812/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.apk"
           },
           {
-            "name": "阅读_E-ink_3.26.112419.zip",
+            "name": "阅读_E-ink_3.26.111812.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112419.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.112419.tar.gz",
+            "name": "阅读_E-ink_3.26.111812.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112419.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.tar.gz"
           }
         ]
       },
