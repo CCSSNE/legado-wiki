@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T21:17:40.218Z",
+  "generatedAt": "2026-11-25T04:21:19.524Z",
   "branches": [
     {
       "id": "c",
@@ -10,7 +10,7 @@
       "pinned": true,
       "note": "站长开发。",
       "stars": 223,
-      "sourceUpdatedAt": "2026-10-30T13:47:30Z",
+      "sourceUpdatedAt": "2026-11-25T01:23:50Z",
       "githubArchived": false,
       "release": {
         "name": "公开版 Pre：日志分享与书架修复 v3.26.103013",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 72,
+          "stars": 73,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47291,
+      "stars": 47293,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7235,
+      "stars": 7242,
       "sourceUpdatedAt": "2026-11-24T13:31:29Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3161,
+      "stars": 3164,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2027,
+      "stars": 2029,
       "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 691,
+      "stars": 692,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -628,6 +628,35 @@
       "forkOf": null
     },
     {
+      "id": "moread",
+      "name": "墨知 MoRead",
+      "tag": "moread",
+      "repo": "ovo066/MoRead",
+      "term": "legado-branch-moread",
+      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
+      "stars": 140,
+      "sourceUpdatedAt": "2026-11-20T08:45:54Z",
+      "githubArchived": false,
+      "release": {
+        "name": "MoRead 1.6.0",
+        "tagName": "v1.6.0",
+        "prerelease": false,
+        "publishedAt": "2026-11-20T08:50:56Z",
+        "createdAt": "2026-11-20T08:24:36Z",
+        "body": "# MoRead · 墨知 1.6.0\n\n## 中文\n\n**导入**\n- 新增 Markdown、HTML 与无 DRM 的 MOBI / AZW3 导入：转成 EPUB 后沿用原有阅读、排版与批注能力，转换全程不联网；带 DRM 或暂不支持的文件会给出明确原因。\n\n**伴读**\n- 随读配图改为按段落画面感挑选，每章上限可设；生图服务未配置时不再空耗额度，设置页显示今日语音、插图用量与失败次数。\n- 多位伴读参与段评时互相看得见：不重复划同一段，偶尔在讨论里接一句；讨论串新增「大家聊聊」，几位伴读轮流各说一句。\n- 阅读菜单「更多」新增「插图排进正文」（按书开关，默认关）：已生成的插图像出版书那样排在段落之间，图注标明 AI 配图，不改变原文与阅读进度。\n\n**演出模式**\n- 说话人有定妆图时，名牌旁显示小像；已生成的插图演到那一句时出现。\n- 配音跟读：章节做过有声书时，演到哪句放哪句，自动播放等配音念完再走。\n- 旁白节奏（逐句 / 合句 / 整段）、全屏演出、旁白冷暖色，并修复精排书对白颜色丢失。\n\n**阅读**\n- 操作区新增一键预设（标准 / 全屏翻页 / 左手 / 上下）；页眉页脚改为左中右六个槽位；左右边距可调到 0。\n\n正式安装包：`mozhi-1.6.0-vc90.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n**Import**\n- Import Markdown, HTML and DRM-free MOBI / AZW3. Files are converted to EPUB locally and then use the existing reading, layout and annotation features. Nothing is fetched from the network; DRM-protected or unsupported files are rejected with a clear reason.\n\n**Companions**\n- Proactive illustrations are now chosen by how visual a passage is, with a per-chapter limit. No quota is spent when no image service is configured, and settings show today's voice and image use and failures.\n- When several companions comment, they see each other: they do not mark the same passage twice and sometimes add a line in the thread. A new “Let them talk” button lets companions take turns.\n- New per-book “Illustrations in the text” (More menu, off by default): generated pictures sit between paragraphs like a printed book, captioned as AI illustrations, without changing the source text or reading progress.\n\n**Stage mode**\n- Speakers with a reference look get a small portrait beside the name tag; generated illustrations appear at their line.\n- Audiobook voices: if a chapter has an audiobook, each line plays its recorded voice and auto-play waits for it to finish.\n- Narration rhythm (per sentence / merged / per paragraph), full-screen stage, warm and cold tints for narration, and a fix for lost dialogue colours in rich EPUBs.\n\n**Reading**\n- One-tap tap-zone presets (standard / full-screen turns / left-handed / up-down), six header and footer slots, and side margins down to zero.\n\nOfficial package: `mozhi-1.6.0-vc90.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
+        "assets": [
+          {
+            "name": "mozhi-1.6.0-vc90.apk",
+            "size": 26581239,
+            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.6.0/mozhi-1.6.0-vc90.apk"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": false,
+      "forkOf": null
+    },
+    {
       "id": "jingshiro",
       "name": "Jingshiro 版",
       "tag": "jingshiro",
@@ -653,35 +682,6 @@
             "name": "legado_release_3.26.090617.apk",
             "size": 23678394,
             "browserDownloadUrl": "https://github.com/Jingshiro/legado/releases/download/3.26.090617/legado_release_3.26.090617.apk"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": false,
-      "forkOf": null
-    },
-    {
-      "id": "moread",
-      "name": "墨知 MoRead",
-      "tag": "moread",
-      "repo": "ovo066/MoRead",
-      "term": "legado-branch-moread",
-      "note": "原生 Android 本地小说阅读器 + AI 伴读。",
-      "stars": 139,
-      "sourceUpdatedAt": "2026-11-20T08:45:54Z",
-      "githubArchived": false,
-      "release": {
-        "name": "MoRead 1.6.0",
-        "tagName": "v1.6.0",
-        "prerelease": false,
-        "publishedAt": "2026-11-20T08:50:56Z",
-        "createdAt": "2026-11-20T08:24:36Z",
-        "body": "# MoRead · 墨知 1.6.0\n\n## 中文\n\n**导入**\n- 新增 Markdown、HTML 与无 DRM 的 MOBI / AZW3 导入：转成 EPUB 后沿用原有阅读、排版与批注能力，转换全程不联网；带 DRM 或暂不支持的文件会给出明确原因。\n\n**伴读**\n- 随读配图改为按段落画面感挑选，每章上限可设；生图服务未配置时不再空耗额度，设置页显示今日语音、插图用量与失败次数。\n- 多位伴读参与段评时互相看得见：不重复划同一段，偶尔在讨论里接一句；讨论串新增「大家聊聊」，几位伴读轮流各说一句。\n- 阅读菜单「更多」新增「插图排进正文」（按书开关，默认关）：已生成的插图像出版书那样排在段落之间，图注标明 AI 配图，不改变原文与阅读进度。\n\n**演出模式**\n- 说话人有定妆图时，名牌旁显示小像；已生成的插图演到那一句时出现。\n- 配音跟读：章节做过有声书时，演到哪句放哪句，自动播放等配音念完再走。\n- 旁白节奏（逐句 / 合句 / 整段）、全屏演出、旁白冷暖色，并修复精排书对白颜色丢失。\n\n**阅读**\n- 操作区新增一键预设（标准 / 全屏翻页 / 左手 / 上下）；页眉页脚改为左中右六个槽位；左右边距可调到 0。\n\n正式安装包：`mozhi-1.6.0-vc90.apk`，Android 8.0 及以上，使用正式发布证书，可覆盖安装已有正式版。\n\n## English\n\n**Import**\n- Import Markdown, HTML and DRM-free MOBI / AZW3. Files are converted to EPUB locally and then use the existing reading, layout and annotation features. Nothing is fetched from the network; DRM-protected or unsupported files are rejected with a clear reason.\n\n**Companions**\n- Proactive illustrations are now chosen by how visual a passage is, with a per-chapter limit. No quota is spent when no image service is configured, and settings show today's voice and image use and failures.\n- When several companions comment, they see each other: they do not mark the same passage twice and sometimes add a line in the thread. A new “Let them talk” button lets companions take turns.\n- New per-book “Illustrations in the text” (More menu, off by default): generated pictures sit between paragraphs like a printed book, captioned as AI illustrations, without changing the source text or reading progress.\n\n**Stage mode**\n- Speakers with a reference look get a small portrait beside the name tag; generated illustrations appear at their line.\n- Audiobook voices: if a chapter has an audiobook, each line plays its recorded voice and auto-play waits for it to finish.\n- Narration rhythm (per sentence / merged / per paragraph), full-screen stage, warm and cold tints for narration, and a fix for lost dialogue colours in rich EPUBs.\n\n**Reading**\n- One-tap tap-zone presets (standard / full-screen turns / left-handed / up-down), six header and footer slots, and side margins down to zero.\n\nOfficial package: `mozhi-1.6.0-vc90.apk`, for Android 8.0 or later. Signed with the official release certificate for upgrades from existing official installations.\n",
-        "assets": [
-          {
-            "name": "mozhi-1.6.0-vc90.apk",
-            "size": 26581239,
-            "browserDownloadUrl": "https://github.com/ovo066/MoRead/releases/download/v1.6.0/mozhi-1.6.0-vc90.apk"
           }
         ]
       },
@@ -776,7 +776,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 89,
+      "stars": 90,
       "sourceUpdatedAt": "2026-11-23T10:47:55Z",
       "githubArchived": false,
       "release": {
