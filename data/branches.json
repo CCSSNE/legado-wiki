@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:36:30.556Z",
+  "generatedAt": "2026-11-26T19:40:38.588Z",
   "branches": [
     {
       "id": "c",
@@ -9,8 +9,8 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 225,
-      "sourceUpdatedAt": "2026-11-25T01:23:50Z",
+      "stars": 226,
+      "sourceUpdatedAt": "2026-11-26T16:30:37Z",
       "githubArchived": false,
       "release": {
         "name": "公开版 Pre：日志分享与书架修复 v3.26.103013",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47297,
+      "stars": 47303,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7286,
+      "stars": 7306,
       "sourceUpdatedAt": "2026-11-24T13:31:29Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3172,
+      "stars": 3175,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2043,
+      "stars": 2047,
       "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 693,
+      "stars": 696,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -432,7 +432,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 339,
+      "stars": 340,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 248,
+      "stars": 250,
       "sourceUpdatedAt": "2026-11-24T21:16:55Z",
       "githubArchived": false,
       "release": {
@@ -585,51 +585,51 @@
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 145,
-      "sourceUpdatedAt": "2026-11-25T16:19:48Z",
+      "stars": 150,
+      "sourceUpdatedAt": "2026-11-26T16:25:45Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.11.2",
-        "tagName": "v2.11.2",
+        "name": "v2.11.3",
+        "tagName": "v2.11.3",
         "prerelease": false,
-        "publishedAt": "2026-11-25T17:08:58Z",
-        "createdAt": "2026-11-25T16:19:40Z",
-        "body": "修复\n- 听书时用有线耳机线控键（或键盘的播放 / 暂停键）暂停后，再按一次不能继续播放（#25）。现在暂停中再按会继续，再按一次暂停。\n\n验证\n- 用系统媒体键复测：暂停 → 继续 → 暂停。\n- 类型检查、网页构建与冒烟端到端测试通过；格式兼容测试全部通过。\n- macOS 安装包已签名并经 Apple 公证。\n\n",
+        "publishedAt": "2026-11-26T17:08:55Z",
+        "createdAt": "2026-11-26T16:25:33Z",
+        "body": "修复\n- Windows: 听书时用有线耳机线控键或键盘媒体键 (如 Fn+F8) 暂停后, 再按一次不能继续播放 (#25)。现在暂停中再按会继续, 再按一次暂停; 轻阅在前台或后台都可以。用「系统语音」朗读时以前媒体键完全不起作用, 现在也能控制。听书时 Windows 的媒体控制浮窗会显示书名和章节。\n\n验证\n- 已在 Windows 10 上用媒体键实测: 暂停 → 继续 → 暂停 → 继续; 退出阅读页后媒体键交还给其他播放器。\n- 读者反馈回归测试与格式兼容测试全部通过。\n\n",
         "assets": [
           {
-            "name": "LightRead-2.11.2-1.x86_64.rpm",
-            "size": 32946224,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead-2.11.2-1.x86_64.rpm"
+            "name": "LightRead-2.11.3-1.x86_64.rpm",
+            "size": 32963577,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead-2.11.3-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.11.2_aarch64.dmg",
-            "size": 29612747,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_aarch64.dmg"
+            "name": "LightRead_2.11.3_aarch64.dmg",
+            "size": 29608351,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.11.2_amd64.AppImage",
-            "size": 108677624,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_amd64.AppImage"
+            "name": "LightRead_2.11.3_amd64.AppImage",
+            "size": 108702200,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.11.2_amd64.deb",
-            "size": 32949522,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_amd64.deb"
+            "name": "LightRead_2.11.3_amd64.deb",
+            "size": 32961102,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_amd64.deb"
           },
           {
-            "name": "LightRead_2.11.2_x64-setup.exe",
-            "size": 22746385,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_x64-setup.exe"
+            "name": "LightRead_2.11.3_x64-setup.exe",
+            "size": 22764275,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.11.2_x64.dmg",
-            "size": 31967633,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_x64.dmg"
+            "name": "LightRead_2.11.3_x64.dmg",
+            "size": 31965870,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
             "size": 570,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/SHA256SUMS"
           }
         ]
       },
@@ -672,7 +672,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 139,
+      "stars": 140,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -786,7 +786,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 91,
+      "stars": 93,
       "sourceUpdatedAt": "2026-11-23T10:47:55Z",
       "githubArchived": false,
       "release": {
