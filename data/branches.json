@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:41:34.948Z",
+  "generatedAt": "2026-11-26T00:27:36.431Z",
   "branches": [
     {
       "id": "c",
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47297,
+      "stars": 47301,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7261,
+      "stars": 7267,
       "sourceUpdatedAt": "2026-11-24T13:31:29Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3167,
+      "stars": 3169,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -176,7 +176,7 @@
       "tag": "harmony",
       "repo": "mgz0227/legado-Harmony",
       "term": "legado-branch-harmony",
-      "stars": 2257,
+      "stars": 2258,
       "sourceUpdatedAt": "2026-10-26T09:57:47Z",
       "githubArchived": false,
       "release": {
@@ -247,7 +247,7 @@
       "tag": "archive",
       "repo": "Rimchars/legado",
       "term": "legado-branch-archive",
-      "stars": 693,
+      "stars": 692,
       "sourceUpdatedAt": "2026-09-24T15:32:04Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 358,
+      "stars": 359,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -513,7 +513,7 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 247,
+      "stars": 248,
       "sourceUpdatedAt": "2026-11-24T21:16:55Z",
       "githubArchived": false,
       "release": {
@@ -586,50 +586,50 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 145,
-      "sourceUpdatedAt": "2026-11-25T09:33:18Z",
+      "sourceUpdatedAt": "2026-11-25T16:19:48Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.11.1",
-        "tagName": "v2.11.1",
+        "name": "v2.11.2",
+        "tagName": "v2.11.2",
         "prerelease": false,
-        "publishedAt": "2026-11-25T09:57:38Z",
-        "createdAt": "2026-11-25T09:33:16Z",
-        "body": "新功能\n- 加密 PDF：设了打开密码的 PDF 可以照常导入，打开时输入密码即可阅读。输错会提示并清空重输；可选「在这台设备上记住密码」，密码只存在本机，不会同步。解锁后自动用第一页补上书架封面。\n\n改进\n- 给选中的书批量设置标签时，可以直接点选已有标签，也可以继续手动输入。\n\n修复\n- 港台常见的 Big5 编码 TXT 打开是乱码：现在自动识别 GBK 与 Big5。\n- Standard Ebooks 等精排 EPUB / AZW3 的书名页和徽标显示为坏图。\n- Markdown 书籍的书名改为取文件名，不再显示正文的第一个标题。\n- 没有 ComicInfo 的 CBZ / CBR 漫画，书名不再带「.cbz」扩展名。\n\n验证\n- 新增格式兼容测试：39 本公有领域与开放许可的测试书，覆盖 EPUB、kepub、MOBI / AZW / AZW3、各种编码的 TXT、HTML、Markdown、FB2、CBZ / CBR、DjVu 和各类 PDF，逐本导入、打开并核对书名、封面、正文、目录与图片，全部通过；以后每次发版前都要通过。\n- 类型检查、网页构建与冒烟端到端测试通过。\n- macOS 安装包已签名并经 Apple 公证。\n",
+        "publishedAt": "2026-11-25T17:08:58Z",
+        "createdAt": "2026-11-25T16:19:40Z",
+        "body": "修复\n- 听书时用有线耳机线控键（或键盘的播放 / 暂停键）暂停后，再按一次不能继续播放（#25）。现在暂停中再按会继续，再按一次暂停。\n\n验证\n- 用系统媒体键复测：暂停 → 继续 → 暂停。\n- 类型检查、网页构建与冒烟端到端测试通过；格式兼容测试全部通过。\n- macOS 安装包已签名并经 Apple 公证。\n\n",
         "assets": [
           {
-            "name": "LightRead-2.11.1-1.x86_64.rpm",
-            "size": 32947571,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead-2.11.1-1.x86_64.rpm"
+            "name": "LightRead-2.11.2-1.x86_64.rpm",
+            "size": 32946224,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead-2.11.2-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.11.1_aarch64.dmg",
-            "size": 29612947,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_aarch64.dmg"
+            "name": "LightRead_2.11.2_aarch64.dmg",
+            "size": 29612747,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.11.1_amd64.AppImage",
-            "size": 108698104,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_amd64.AppImage"
+            "name": "LightRead_2.11.2_amd64.AppImage",
+            "size": 108677624,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.11.1_amd64.deb",
-            "size": 32951364,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_amd64.deb"
+            "name": "LightRead_2.11.2_amd64.deb",
+            "size": 32949522,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_amd64.deb"
           },
           {
-            "name": "LightRead_2.11.1_x64-setup.exe",
-            "size": 22747776,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_x64-setup.exe"
+            "name": "LightRead_2.11.2_x64-setup.exe",
+            "size": 22746385,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_x64-setup.exe"
           },
           {
-            "name": "LightRead_2.11.1_x64.dmg",
-            "size": 31967222,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/LightRead_2.11.1_x64.dmg"
+            "name": "LightRead_2.11.2_x64.dmg",
+            "size": 31967633,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/LightRead_2.11.2_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
             "size": 570,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.1/SHA256SUMS"
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.2/SHA256SUMS"
           }
         ]
       },
@@ -1190,30 +1190,30 @@
       "upstreamUrl": "https://gitee.com/lyj09x/legado",
       "note": "墨水屏（E-ink）优化分支，分叉自 Sigma（legado-E）；源码与 APK 发布自 Gitee，GitHub 镜像 `legado-backup/eink` 作备份。",
       "stars": 8,
-      "sourceUpdatedAt": "2026-11-25T21:07:09+08:00",
+      "sourceUpdatedAt": "2026-11-25T23:41:16+08:00",
       "githubArchived": false,
       "release": {
-        "name": "阅读_E-ink_3.26.111812",
-        "tagName": "阅读_E-ink_3.26.111812",
+        "name": "阅读_E-ink_3.26.112523",
+        "tagName": "阅读_E-ink_3.26.112523",
         "prerelease": false,
-        "publishedAt": "2026-11-18T13:07:28+08:00",
-        "createdAt": "2026-11-18T13:07:28+08:00",
-        "body": "- 修复其他页面返回主页\r\n- 已修复朗读源登录函数\r\n- 修复对话高亮字体变形\r\n- 对话高亮自定义下划线",
+        "publishedAt": "2026-11-25T23:41:16+08:00",
+        "createdAt": "2026-11-25T23:41:16+08:00",
+        "body": "- 恢复底部导航栏\r\n- 主标题长按即可\r\n- 阅读备份到微读\r\n- 已修复目录错误\r\n- 已修复微信续期\r\n- 已修复异常闪退\r\n- 已新增微信读书\r\n- 点击首页进度环\r\n- 已新增隐私模式\r\n- 可搜索输入密码\r\n- 当前时间为密码\r\n- 如19:16就是1916\r\n- 已大量精简优化\r\n- 已压缩应用体积",
         "assets": [
           {
-            "name": "阅读_E-ink_3.26.111812.apk",
-            "size": 21035047,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.111812/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.apk"
+            "name": "阅读_E-ink_3.26.112523.apk",
+            "size": 8193488,
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/releases/download/%E9%98%85%E8%AF%BB_E-ink_3.26.112523/%E9%98%85%E8%AF%BB_E-ink_3.26.112523.apk"
           },
           {
-            "name": "阅读_E-ink_3.26.111812.zip",
+            "name": "阅读_E-ink_3.26.112523.zip",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.zip"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112523.zip"
           },
           {
-            "name": "阅读_E-ink_3.26.111812.tar.gz",
+            "name": "阅读_E-ink_3.26.112523.tar.gz",
             "size": null,
-            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.111812.tar.gz"
+            "browserDownloadUrl": "https://gitee.com/lyj09x/legado/archive/refs/tags/%E9%98%85%E8%AF%BB_E-ink_3.26.112523.tar.gz"
           }
         ]
       },
