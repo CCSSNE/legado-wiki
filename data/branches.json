@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T02:54:32.417Z",
+  "generatedAt": "2026-11-27T12:33:12.688Z",
   "branches": [
     {
       "id": "c",
@@ -44,7 +44,7 @@
           "name": "CCSSNE/legado",
           "repo": "CCSSNE/legado",
           "url": "https://github.com/CCSSNE/legado",
-          "stars": 74,
+          "stars": 75,
           "updatedAt": "2026-08-11T01:49:32Z"
         }
       ],
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47303,
+      "stars": 47304,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7311,
+      "stars": 7318,
       "sourceUpdatedAt": "2026-11-24T13:31:29Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3175,
+      "stars": 3174,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2049,
+      "stars": 2053,
       "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
@@ -354,7 +354,7 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 359,
+      "stars": 360,
       "sourceUpdatedAt": "2026-11-15T04:10:59Z",
       "githubArchived": false,
       "release": {
@@ -432,7 +432,7 @@
       "tag": "r",
       "repo": "refgd/legado",
       "term": "legado-branch-r",
-      "stars": 340,
+      "stars": 341,
       "sourceUpdatedAt": "2026-06-21T19:49:22Z",
       "githubArchived": false,
       "release": {
@@ -513,8 +513,8 @@
       "tag": "ng",
       "repo": "joestar817/legado_NG",
       "term": "legado-branch-ng",
-      "stars": 250,
-      "sourceUpdatedAt": "2026-11-24T21:16:55Z",
+      "stars": 251,
+      "sourceUpdatedAt": "2026-11-27T05:26:32Z",
       "githubArchived": false,
       "release": {
         "name": "legado_ng_3.26.111815",
@@ -536,56 +536,13 @@
       "forkOf": "Luoyacheng/legado-E"
     },
     {
-      "id": "t",
-      "name": "阅读 T",
-      "tag": "t",
-      "repo": "skybbk1001/legadoT",
-      "term": "legado-branch-t",
-      "stars": 154,
-      "sourceUpdatedAt": "2026-11-05T18:03:45Z",
-      "githubArchived": false,
-      "release": {
-        "name": "legado_app_3.26.102814",
-        "tagName": "beta",
-        "prerelease": true,
-        "publishedAt": "2026-10-28T06:32:42Z",
-        "createdAt": "2026-10-28T06:06:24Z",
-        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- Register TaskCookieStore in the R8 reflection contract\n- Fix cookie getKey and removeCookie in scheduled tasks\n- Add remote RSS source search\n- Fix Nostr bunker input touch target\n",
-        "assets": [
-          {
-            "name": "legado_app_3.26.10281423_arm64-v8a_release.apk",
-            "size": 17287975,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_arm64-v8a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.10281423_armeabi-v7a_release.apk",
-            "size": 16565697,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_armeabi-v7a_release.apk"
-          },
-          {
-            "name": "legado_app_3.26.10281423_x86_64_release.apk",
-            "size": 17533820,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_x86_64_release.apk"
-          },
-          {
-            "name": "version.json",
-            "size": 67,
-            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
-          }
-        ]
-      },
-      "errors": [],
-      "fork": true,
-      "forkOf": "gedoor/legado"
-    },
-    {
       "id": "lightread",
       "name": "LightRead 轻阅",
       "tag": "lightread",
       "repo": "yzfly/LightRead",
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
-      "stars": 152,
+      "stars": 155,
       "sourceUpdatedAt": "2026-11-26T16:25:45Z",
       "githubArchived": false,
       "release": {
@@ -638,6 +595,49 @@
       "forkOf": null
     },
     {
+      "id": "t",
+      "name": "阅读 T",
+      "tag": "t",
+      "repo": "skybbk1001/legadoT",
+      "term": "legado-branch-t",
+      "stars": 154,
+      "sourceUpdatedAt": "2026-11-05T18:03:45Z",
+      "githubArchived": false,
+      "release": {
+        "name": "legado_app_3.26.102814",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-10-28T06:32:42Z",
+        "createdAt": "2026-10-28T06:06:24Z",
+        "body": "## 更新日志\n\n自上一测试版以来的全部更新:\n\n- Register TaskCookieStore in the R8 reflection contract\n- Fix cookie getKey and removeCookie in scheduled tasks\n- Add remote RSS source search\n- Fix Nostr bunker input touch target\n",
+        "assets": [
+          {
+            "name": "legado_app_3.26.10281423_arm64-v8a_release.apk",
+            "size": 17287975,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_arm64-v8a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.10281423_armeabi-v7a_release.apk",
+            "size": 16565697,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_armeabi-v7a_release.apk"
+          },
+          {
+            "name": "legado_app_3.26.10281423_x86_64_release.apk",
+            "size": 17533820,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/legado_app_3.26.10281423_x86_64_release.apk"
+          },
+          {
+            "name": "version.json",
+            "size": 67,
+            "browserDownloadUrl": "https://github.com/skybbk1001/legadoT/releases/download/beta/version.json"
+          }
+        ]
+      },
+      "errors": [],
+      "fork": true,
+      "forkOf": "gedoor/legado"
+    },
+    {
       "id": "moread",
       "name": "墨知 MoRead",
       "tag": "moread",
@@ -672,7 +672,7 @@
       "tag": "jingshiro",
       "repo": "Jingshiro/legado",
       "term": "legado-branch-jingshiro",
-      "stars": 140,
+      "stars": 139,
       "sourceUpdatedAt": "2026-09-06T09:25:49Z",
       "githubArchived": false,
       "release": {
@@ -825,7 +825,7 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 86,
+      "stars": 87,
       "sourceUpdatedAt": "2026-11-22T04:21:47Z",
       "githubArchived": false,
       "release": {
@@ -943,8 +943,8 @@
       "repo": "Mupceet/EssentialReader",
       "term": "legado-branch-moben",
       "note": "MD3 下游，墨水屏增强发行版：轻量单界面墨水屏模式 + MD3 完整模式双模式。",
-      "stars": 37,
-      "sourceUpdatedAt": "2026-11-21T14:52:17Z",
+      "stars": 38,
+      "sourceUpdatedAt": "2026-11-27T03:08:23Z",
       "githubArchived": false,
       "release": {
         "name": "Pre-release 3.26.17-beta.46",
