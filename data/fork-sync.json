@@ -106,13 +106,19 @@
       "upstreamRepo": "huajideshutiao/legado",
       "upstreamBranch": "master",
       "backupRepo": "legado-backup/legado-shutiao",
-      "activeBranch": "backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f",
-      "generation": 2,
+      "activeBranch": "backup/v3-8c3e9417dfefd9a582bcec661eaf4d1ae4b19044",
+      "generation": 3,
       "retired": [
         {
           "branch": "master",
           "head": "2903707a577fce69c00f000eb4ea81e762cef6a5",
           "retiredAt": "2026-10-05T01:29:44.159Z",
+          "reason": "diverged"
+        },
+        {
+          "branch": "backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f",
+          "head": "bbc8e0f6a09a7bf7bc8f699caff716658c3d411c",
+          "retiredAt": "2026-11-28T14:28:36.159Z",
           "reason": "diverged"
         }
       ],
@@ -767,14 +773,19 @@
       "repo": "huajideshutiao/legado",
       "status": "normal",
       "message": "正常同步",
-      "since": "2026-10-05T01:29:45.630Z",
+      "since": "2026-11-28T14:28:37.977Z",
       "backupRepo": "legado-backup/legado-shutiao",
-      "activeBranch": "backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f",
+      "activeBranch": "backup/v3-8c3e9417dfefd9a582bcec661eaf4d1ae4b19044",
       "events": [
         {
           "at": "2026-10-05T01:29:45.630Z",
           "type": "rotated",
           "message": "历史 diverged：旧分支已保留，legado-backup/legado-shutiao/backup/v2-91eabcc92c920a7971dab9405dbb22b4ddb8181f 接收新历史"
+        },
+        {
+          "at": "2026-11-28T14:28:37.977Z",
+          "type": "rotated",
+          "message": "历史 diverged：旧分支已保留，legado-backup/legado-shutiao/backup/v3-8c3e9417dfefd9a582bcec661eaf4d1ae4b19044 接收新历史"
         }
       ]
     },
@@ -1487,5 +1498,5 @@
       ]
     }
   },
-  "checkedAt": "2026-11-28T04:56:11.953Z"
+  "checkedAt": "2026-11-28T14:29:06.944Z"
 }
