@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T03:57:25.820Z",
+  "generatedAt": "2026-11-28T13:07:12.769Z",
   "branches": [
     {
       "id": "c",
@@ -9,7 +9,7 @@
       "term": "legado-branch-c",
       "pinned": true,
       "note": "站长开发。",
-      "stars": 227,
+      "stars": 228,
       "sourceUpdatedAt": "2026-11-26T16:30:37Z",
       "githubArchived": false,
       "release": {
@@ -53,7 +53,7 @@
         "tag": "3.26.04271714"
       },
       "manualAbandoned": "上游仓库已删除，作者停止维护",
-      "stars": 47308,
+      "stars": 47307,
       "sourceUpdatedAt": "2026-05-27T08:41:54Z",
       "githubArchived": false,
       "release": {
@@ -85,7 +85,7 @@
       "tag": "md3",
       "repo": "HapeLee/legado-with-MD3",
       "term": "legado-branch-md3",
-      "stars": 7337,
+      "stars": 7346,
       "sourceUpdatedAt": "2026-11-27T17:49:07Z",
       "githubArchived": false,
       "release": {
@@ -148,7 +148,7 @@
       "tag": "plus",
       "repo": "Luoyacheng/legado-E",
       "term": "legado-branch-sigma",
-      "stars": 3178,
+      "stars": 3180,
       "sourceUpdatedAt": "2026-08-01T05:19:41Z",
       "githubArchived": false,
       "release": {
@@ -204,7 +204,7 @@
       "tag": "beta",
       "repo": "LegadoTeam/legado",
       "term": "legado-branch-main",
-      "stars": 2054,
+      "stars": 2057,
       "sourceUpdatedAt": "2026-11-23T15:07:01Z",
       "githubArchived": false,
       "release": {
@@ -281,7 +281,7 @@
       "repo": "Suml-1/Legado_Max",
       "term": "legado-branch-max-sum",
       "note": "独立发版，目前 MAX 家族最活跃的版本。",
-      "stars": 451,
+      "stars": 452,
       "sourceUpdatedAt": "2026-11-21T14:43:01Z",
       "githubArchived": false,
       "release": {
@@ -354,71 +354,71 @@
       "tag": "shutiao",
       "repo": "huajideshutiao/legado",
       "term": "legado-branch-shutiao",
-      "stars": 360,
-      "sourceUpdatedAt": "2026-11-15T04:10:59Z",
+      "stars": 362,
+      "sourceUpdatedAt": "2026-11-28T05:48:54Z",
       "githubArchived": false,
       "release": {
-        "name": "3.26.111511",
-        "tagName": "3.26.111511",
-        "prerelease": false,
-        "publishedAt": "2026-11-15T04:10:59Z",
-        "createdAt": "2026-11-09T20:23:32Z",
-        "body": "## 更新日志\n\n- fix(cache): 仅在文本书籍更新后自动缓存章节                               (52519722d)\n- fix(image): 保留切块边缘并统一拼接与裁剪结果                             (49201111d)\n- fix(script): 按真实数值读取原生脚本参数与对象编号                        (b5f4a2447)\n- fix(script): 保持原生图片可用并回收无人持有资源                          (a76a5f987)\n- fix(script): 修正原生作用域与鸿蒙图片释放终态                            (60d8eb0d9)\n- fix(script): 按作用域隔离类句柄缓存与对象身份索引                        (7a71355be)\n- feat(script): 原生脚本图片操作改真实JS对象持有                           (533c51efe)\n- fix(script): 释放脚本句柄与鸿蒙图片像素资源                              (7c7030d07)\n- feat(manga): 插件文本编辑按库事务收口                                    (d9f26536b)\n- feat(manga): 插件文本项编辑改活会话承载插件声明与校验                    (156739c7e)\n- fix(extension): 删除插件仓库后重拉索引失败吐司提示                       (d85342837)\n- fix(extension): 补齐扩展zstd/brotli真实压缩依赖                          (3fb903adb)\n- fix(extension): 插件站点地址异常不再崩溃进程与冻结状态流                 (945777a1b)\n- feat(pdf): 补齐iOS和鸿蒙应用内PDF阅读                                    (788a6d7d6)\n- fix(share): 对齐多端分享类型与接收能力                                   (7390dc634)\n- test(android): 清理媒体回归的无效检查                                    (56cd63047)\n- fix(ui): 保持已加载封面回滑时的自适应高度                                (eca7e9eca)\n- fix(image): 分离正文与非正文预算并统一封面复用                           (08cd423cc)\n- fix(bookinfo): 按资源复用模糊背景并保留透明度                            (f4ec1b3e3)\n- perf(home): 封面横向行按需组合并统一滚轮仲裁                             (db7c34043)\n- fix(media): 避免朗读和有声书封面缩放闪退                                 (449accc18)\n- fix(bookinfo): 详情页模糊背景按档位复用请求尺寸                          (ca8a28624)\n- fix(image): 位图缓存总占用对齐设置值并修正条目数判据                     (1ac514216)\n- perf(home): 首页与搜索封面行改为惰性横向列表                             (1bb52bf04)\n- fix(reader): 固定文本菜单展开锚边并补滚动指示                            (b454ee3fd)\n- *……还有 33 条提交未显示*\n\n[查看完整提交记录 →](https://github.com/huajideshutiao/legado/compare/d31c0a270e7c8610e9679dbbda5a6bee06927952...HEAD)\n",
+        "name": "3.26.11281235",
+        "tagName": "beta",
+        "prerelease": true,
+        "publishedAt": "2026-11-28T04:54:54Z",
+        "createdAt": "2026-11-28T04:33:14Z",
+        "body": "## 更新日志\n- fix(ohos): 修正鸿蒙ArkTS编译错误使hap可打包 [skip ci]                    (bbc8e0f6a)\n- fix(ohos): 补鸿蒙音频宿主缺失的起播请求类型导入 [skip ci]                (5c9a7ab89)\n- fix(book): 空简介时隐藏占位标题                                          (250323654)\n- fix(app): 清理多余 Java Cronet 声明                                      (c3aebc157)\n- fix(video): 切章后旧任务不再回写状态                                     (4dbdda77b)\n- fix(book): 目录书不按单文件操作且长按进详情                              (2f3b10267)\n- perf(remote): 复用目录列表并支持逐级返回                                 (7aa828c40)\n- feat(remote): 支持 WebDAV 目录书与远程音频                               (6d382424d)\n- fix(import): 统一文件识别与本地导入行为                                  (03b7ade0a)\n- fix(import): 拒绝重复导入并保护现有文件                                  (54b6d1067)",
         "assets": [
           {
             "name": "all.apk",
-            "size": 22002259,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/all.apk"
+            "size": 22153223,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all.apk"
           },
           {
             "name": "all_releaseA.apk",
-            "size": 22002263,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/all_releaseA.apk"
+            "size": 22153223,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/all_releaseA.apk"
           },
           {
             "name": "arm64.apk",
-            "size": 12659825,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/arm64.apk"
+            "size": 12810789,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64.apk"
           },
           {
             "name": "arm64_releaseA.apk",
-            "size": 12659829,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/arm64_releaseA.apk"
+            "size": 12810789,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/arm64_releaseA.apk"
           },
           {
             "name": "armv7.apk",
-            "size": 11774061,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/armv7.apk"
+            "size": 11925025,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7.apk"
           },
           {
             "name": "armv7_releaseA.apk",
-            "size": 11774065,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/armv7_releaseA.apk"
+            "size": 11925025,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/armv7_releaseA.apk"
           },
           {
             "name": "linux_x64.deb",
-            "size": 108516996,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/linux_x64.deb"
+            "size": 110086236,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.deb"
           },
           {
             "name": "linux_x64.rpm",
-            "size": 108551945,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/linux_x64.rpm"
+            "size": 110183583,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/linux_x64.rpm"
           },
           {
             "name": "macos_arm64.dmg",
-            "size": 120182009,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/macos_arm64.dmg"
+            "size": 121824213,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/macos_arm64.dmg"
           },
           {
             "name": "windows_x64.msi",
-            "size": 111437194,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/windows_x64.msi"
+            "size": 113046160,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64.msi"
           },
           {
             "name": "windows_x64_portable.zip",
-            "size": 110201380,
-            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/3.26.111511/windows_x64_portable.zip"
+            "size": 111802701,
+            "browserDownloadUrl": "https://github.com/huajideshutiao/legado/releases/download/beta/windows_x64_portable.zip"
           }
         ]
       },
@@ -543,50 +543,55 @@
       "term": "legado-branch-lightread",
       "note": "独立多平台应用，开源本地优先电子书阅读器，发布 Linux / macOS / Windows / 安卓安装包。",
       "stars": 156,
-      "sourceUpdatedAt": "2026-11-28T03:55:35Z",
+      "sourceUpdatedAt": "2026-11-28T07:14:27Z",
       "githubArchived": false,
       "release": {
-        "name": "v2.11.3",
-        "tagName": "v2.11.3",
+        "name": "v2.12.0",
+        "tagName": "v2.12.0",
         "prerelease": false,
-        "publishedAt": "2026-11-26T17:08:55Z",
-        "createdAt": "2026-11-26T16:25:33Z",
-        "body": "修复\n- Windows: 听书时用有线耳机线控键或键盘媒体键 (如 Fn+F8) 暂停后, 再按一次不能继续播放 (#25)。现在暂停中再按会继续, 再按一次暂停; 轻阅在前台或后台都可以。用「系统语音」朗读时以前媒体键完全不起作用, 现在也能控制。听书时 Windows 的媒体控制浮窗会显示书名和章节。\n\n验证\n- 已在 Windows 10 上用媒体键实测: 暂停 → 继续 → 暂停 → 继续; 退出阅读页后媒体键交还给其他播放器。\n- 读者反馈回归测试与格式兼容测试全部通过。\n\n",
+        "publishedAt": "2026-11-28T07:54:04Z",
+        "createdAt": "2026-11-28T07:11:26Z",
+        "body": "- EPUB 阅读设置新增「书写方向」。阅读日文竖排书时，选择「横排」即可横向阅读，也可以切回「原书」。切换时保留阅读位置。（#27）\n- 修复 Windows 上 EPUB 连续滚动模式的左右页边距。调整设置后，居中的阅读栏会随之变宽或变窄。（#26）\n- 新增原生 Windows ARM64 安装包。ARM 电脑可下载文件名含 arm64 的安装包，Intel 和 AMD 电脑继续使用 x64 包。应用内更新会选择对应架构。\n\n已在 Windows 上验证页边距调整，并在 Windows 11 ARM64 上完成原生安装和启动验证。\n",
         "assets": [
           {
-            "name": "LightRead-2.11.3-1.x86_64.rpm",
-            "size": 32963577,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead-2.11.3-1.x86_64.rpm"
+            "name": "LightRead-2.12.0-1.x86_64.rpm",
+            "size": 32962862,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead-2.12.0-1.x86_64.rpm"
           },
           {
-            "name": "LightRead_2.11.3_aarch64.dmg",
-            "size": 29608351,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_aarch64.dmg"
+            "name": "LightRead_2.12.0_aarch64.dmg",
+            "size": 29617815,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_aarch64.dmg"
           },
           {
-            "name": "LightRead_2.11.3_amd64.AppImage",
-            "size": 108702200,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_amd64.AppImage"
+            "name": "LightRead_2.12.0_amd64.AppImage",
+            "size": 108714488,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_amd64.AppImage"
           },
           {
-            "name": "LightRead_2.11.3_amd64.deb",
-            "size": 32961102,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_amd64.deb"
+            "name": "LightRead_2.12.0_amd64.deb",
+            "size": 32963542,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_amd64.deb"
           },
           {
-            "name": "LightRead_2.11.3_x64-setup.exe",
-            "size": 22764275,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_x64-setup.exe"
+            "name": "LightRead_2.12.0_arm64-installer.exe",
+            "size": 21244738,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_arm64-installer.exe"
           },
           {
-            "name": "LightRead_2.11.3_x64.dmg",
-            "size": 31965870,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/LightRead_2.11.3_x64.dmg"
+            "name": "LightRead_2.12.0_x64-setup.exe",
+            "size": 22763102,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_x64-setup.exe"
+          },
+          {
+            "name": "LightRead_2.12.0_x64.dmg",
+            "size": 31971477,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/LightRead_2.12.0_x64.dmg"
           },
           {
             "name": "SHA256SUMS",
-            "size": 570,
-            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.11.3/SHA256SUMS"
+            "size": 673,
+            "browserDownloadUrl": "https://github.com/yzfly/LightRead/releases/download/v2.12.0/SHA256SUMS"
           }
         ]
       },
@@ -600,7 +605,7 @@
       "tag": "t",
       "repo": "skybbk1001/legadoT",
       "term": "legado-branch-t",
-      "stars": 154,
+      "stars": 155,
       "sourceUpdatedAt": "2026-11-05T18:03:45Z",
       "githubArchived": false,
       "release": {
@@ -786,7 +791,7 @@
       "repo": "GEd520/legados",
       "term": "legado-branch-max-cichen",
       "note": "独立仓库，有自己的 APK 发布。",
-      "stars": 93,
+      "stars": 94,
       "sourceUpdatedAt": "2026-11-23T10:47:55Z",
       "githubArchived": false,
       "release": {
@@ -825,81 +830,81 @@
       "repo": "nexhub-app/Nexhub",
       "term": "legado-branch-nexhub",
       "note": "独立多平台应用，动漫 / 漫画 / 小说 / 影视聚合，发布安卓 / Linux / macOS / Windows 安装包。",
-      "stars": 87,
-      "sourceUpdatedAt": "2026-11-27T14:37:47Z",
+      "stars": 88,
+      "sourceUpdatedAt": "2026-11-28T07:21:27Z",
       "githubArchived": false,
       "release": {
-        "name": "NexHub v4.0.0-beta.3",
-        "tagName": "v4.0.0-beta.3",
+        "name": "NexHub v4.0.0-beta.4",
+        "tagName": "v4.0.0-beta.4",
         "prerelease": true,
-        "publishedAt": "2026-11-27T14:53:02Z",
-        "createdAt": "2026-11-27T14:37:36Z",
-        "body": "# NexHub v4.0.0-beta.3（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🧪 4.0 的第三个测试版\n\nbeta.3 继续把书源引擎逐条对齐，并修掉一批日常使用中的硬伤：**收藏重启丢失**、**下载内容没封面**、**目录定位不准**、**日志导不出**；同时上线**段评**能力。相对 v4.0.0-beta.2 共 42 个提交。\n\n> - **本次仍是 `feature/legado-booksource-compat` 分支构建**，未合并主分支；版本号 v4.0.0-beta.3。\n> - **兼容性**：现有源、书架 / 收藏 / 阅读进度不受影响；本次书源改动为语义对齐与容错增强，旧源无需修改。\n> - **测试版提醒**：遇到问题请用「设置 → 高级 → 运行日志 → 导出日志文件」把日志发出来，定位会快很多。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的。请先导入至少一个源 JSON 才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 💬 段评与正文内嵌图标（新增）\n\n- **段评面板**：书源正文支持段落评论，面板内可查看、加载与翻页；正文内嵌图标按规则位置渲染，点开即看对应讨论。\n- 段评相关求值走书源规则链，站点逻辑仍在源文件里，引擎不写死站点。\n\n### ⭐ 收藏不再凭空消失\n\n- **修掉「重启后收藏全没」**：此前读文件失败会被当成「没有数据」，随后一次正常的收藏更新就把空列表写回磁盘，导致收藏永久丢失。现在读取失败会先回退备份文件，备份也失败就明确报错并**拒绝写盘**，不再用空列表覆盖好数据。\n- 写入改为「先备份再覆盖 + 长度校验」，失败会在应用内提示（新增「收藏保存失败」提示），运行日志里也能看到具体原因。\n- 历史记录同样加了启动兜底，读失败不会再把应用卡在启动阶段。\n\n### 📥 下载内容有封面了\n\n- **下载封面改走源级网络档案**：此前保存封面时用的是全局网络配置，源级代理 / 加密通道 / hosts 对封面不生效，导致「内容下载成功、封面被 CDN 拒绝」。现在与章节图一致，按源取网络配置。\n- **协议相对地址兜底**：`//cdn/xxx.jpg` 这类地址会正确补成 https，不再被当成本地文件而显示占位图。\n- **坏缓存不再永久复用**：0 字节的残留封面（写入中断）判定为空并删除重下；封面缓存键改用对文件系统安全的字符，避免 Windows 上落盘失败。\n\n### 📑 阅读器目录定位更准\n\n- 漫画 / 小说阅读器的目录跳转不再用固定行高估算滚动距离，改为按条目下标精确定位当前章；长目录、带分节标题的目录不再跳错位置。\n- 「定位当前章」瞬移到位；搜索或书签筛选挡住当前章时，会先清掉筛选再定位；筛选变化时列表安全重建，不会停在越界位置。\n\n### 🧾 运行日志可导出\n\n- 「运行日志」页修好了只能复制一行的老问题；两个日志页（崩溃 / 运行）都新增「导出日志文件」，带应用版本、平台与导出时间的环境头，鸿蒙走系统另存为，其余平台走分享面板。\n\n### 🧩 书源兼容：逐条语义对齐\n\n- **规则求值**：修正上行规则参数求值顺序与结果回填顺序；拼接类规则保持文本顺序不变，只对齐副作用次序；`@put`、`@js:`、内嵌规则、选择器分组的边界语义一并收口。\n- **变量**：源 / 书 / 章节三级的变量删除（put null 即删除）、整段替换、跨轮持久化与回写时机对齐；大变量按阈值分流，不再同步写文件卡界面。\n- **目录与分页**：目录首页为空仍会继续求下一页地址；目录页上限放宽并命中告警；列表与详情在多页场景下的变量贯通、失败即失败（不再静默空结果）。\n- **网络与编码**：新增 Java charset 别名表（GBK / GB18030 / Big5 等），未知字符集明确抛错；PUT / DELETE / PATCH 与二进制请求体支持；缓存键纳入请求体与更多选项；限流改为固定窗口，运行期改并发率保留窗口进度。\n- **jsoup 兼容**：补齐 `Elements` / `Element` 集合与遍历面、`abs:` 按文档基址解析、兄弟集合不含自身。\n- **WebView 与登录**：POST 预取后再交给 WebView 渲染、`loginCheck` 整体替换响应（含 url / headers）并逐轮推进、源 header 的 `@js:` 由宿主求值后回填。\n- **稳定性补丁**：修复预置脚本里重复定义导致整段脚本中断的问题（此前会让 `java.ajax` / 全局对象全部失效），书源相关测试通过数从 719 恢复到 844。\n\n### 🧪 测试与已知限制\n\n- 书源测试全集 857 通过 / 23 失败，失败项与改动前逐条一致（均为基线既有），无新增回归；新增段评、二进制缓存、变量删除等单测。\n- `dart analyze lib` 0 error。\n- 少数 Java API 与字符集仍按容错降级（未知 charset 走 UTF-8）；`unrar` / `un7z` 仍只解析 zip 路径；WebView 相关路径需更多真机验证。\n\n---\n\n## ⬆️ 安装与升级\n\n- 本版是分支 beta，Android / Windows / Linux / macOS / iOS / 鸿蒙产物发布在同一个预发布 Release 下。\n- 沿用同一签名密钥，可直接覆盖安装。鸿蒙 HAP 不带签名，需自行签名后侧载。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n\n---\n\n## English\n\n# NexHub v4.0.0-beta.3 (pre-release)\n\n> All-in-one media aggregator (anime / manga / novels / video) — Source-as-Plugin · co-created community.\n\n---\n\n## 🧪 The third 4.0 test build\n\nbeta.3 keeps lining the book-source engine up with its reference semantics and fixes a batch of everyday blockers: **favorites vanishing after a restart**, **downloaded content without covers**, **inaccurate TOC positioning**, and **logs you could not export**. It also adds **paragraph comments**. 42 commits since v4.0.0-beta.2.\n\n> - **Still built from the `feature/legado-booksource-compat` branch**, not merged into main; version v4.0.0-beta.3.\n> - **Compatibility**: existing sources, bookshelves / favorites / reading progress are unaffected; the book-source work here is semantic alignment plus tolerance, so old sources need no edits.\n> - **Beta reminder**: when something breaks, use Settings → Advanced → Runtime Log → Export log file and send it over — that makes diagnosis much faster.\n\n> ⚠️ **This app ships with no content sources.** It is empty on first launch. Import at least one source JSON before you can see anything. Sources are shared by the community; assess their compliance and legality yourself.\n\n---\n\n## ✨ What's new\n\n### 💬 Paragraph comments and inline icons (new)\n\n- **Paragraph comment panel**: book-source content supports per-paragraph comments — view, load and page through them in a panel; inline icons render where the rules place them and open the matching discussion.\n- Comment evaluation goes through the source rule chain; site logic stays in the source file and nothing is hardcoded in the engine.\n\n### ⭐ Favorites no longer disappear\n\n- **Fixed \"all favorites gone after a restart\"**: a failed file read used to be treated as \"no data\", and the next ordinary favorite update wrote that empty list back to disk, losing favorites for good. Now a failed read falls back to the backup file; if the backup also fails the app reports it and **refuses to write**, so a good file is never overwritten by an empty list.\n- Writes now back up before overwriting and verify length afterwards; failures surface a \"favorite save failed\" message and show the reason in the runtime log.\n- History loading got the same startup guard: a failed read no longer leaves the app stuck while launching.\n\n### 📥 Downloaded content has covers again\n\n- **Cover saving now uses the per-source network profile**: saving used the global profile, so per-source proxy / encrypted channel / hosts never applied and covers were rejected by the CDN while the content itself downloaded fine. It now matches chapter images and reads the source profile.\n- **Protocol-relative URLs**: `//cdn/xxx.jpg` is normalised to https instead of being treated as a local file and showing a placeholder.\n- **Bad cache is no longer reused forever**: zero-byte cover leftovers (interrupted writes) count as empty and are deleted before re-downloading; cache keys now use filesystem-safe characters, so saving no longer fails on Windows.\n\n### 📑 More accurate TOC positioning\n\n- The comic / novel reader's TOC jump no longer estimates scroll distance from a fixed row height; it positions the current chapter by item index, so long TOCs and sectioned TOCs land correctly.\n- \"Locate current chapter\" jumps precisely; if search or bookmark filters hide the current chapter, filters are cleared first; the list rebuilds safely on filter changes instead of resting on an out-of-range index.\n\n### 🧾 Exportable runtime logs\n\n- The runtime log page no longer copies just one line; both log pages (crash / runtime) gained \"Export log file\", with an environment header (app version, platform, export time). HarmonyOS uses system save-as, other platforms use the share sheet.\n\n### 🧩 Book-source compatibility: semantic alignment, item by item\n\n- **Rule evaluation**: fixed argument evaluation order and result backfill order for upward rules; concatenation rules keep text order while matching side-effect order; boundary semantics for `@put`, `@js:`, inline rules and selector groups are tightened.\n- **Variables**: deletion (put null), whole-block replacement, cross-round persistence and write-back timing are aligned across source / book / chapter levels; large variables are routed by threshold so synchronous file writes no longer block the UI.\n- **TOC and paging**: an empty first TOC page still evaluates the next-page URL; the TOC page ceiling was raised with a warning when hit; variable propagation across multi-page lists and details works, and failures now fail instead of returning silent empty results.\n- **Network and encoding**: a Java charset alias table (GBK / GB18030 / Big5 …) with explicit errors for unknown charsets; PUT / DELETE / PATCH plus binary request bodies; cache keys include the body and more options; rate limiting uses fixed windows and keeps window progress when the rate changes at runtime.\n- **jsoup compatibility**: the `Elements` / `Element` collection and traversal surface, `abs:` resolved against the document base URI, sibling collections excluding the element itself.\n- **WebView and login**: POST prefetch before handing off to WebView, `loginCheck` replacing the whole response (including url / headers) and advancing per round, and source headers with `@js:` evaluated by the host.\n- **Stability fix**: fixed a duplicate definition in the preset script that aborted it, which had made `java.ajax` and the global objects unavailable; book-source tests recovered from 719 to 844 passing.\n\n### 🧪 Tests & known limits\n\n- The full book-source suite passes 857 / fails 23, the same failures as before the change (all pre-existing); new tests cover paragraph comments, binary cache and variable deletion.\n- `dart analyze lib` reports 0 errors.\n- A small set of Java APIs and charsets still degrade gracefully (unknown charsets fall back to UTF-8); `unrar` / `un7z` still only handle the zip path; WebView paths need more on-device verification.\n\n---\n\n## ⬆️ Install & upgrade\n\n- This is a branch beta; Android / Windows / Linux / macOS / iOS / HarmonyOS artifacts ship in the same pre-release.\n- The same signing key applies, so overwrite-install works. The HarmonyOS HAP remains unsigned and must be signed before sideloading.\n\n## 📄 Disclaimer\n\n- NexHub ships no content sources. Everything comes from sources you import yourself; verify each source's legality and safety before use. You bear the risk of using them.\n",
+        "publishedAt": "2026-11-28T07:35:52Z",
+        "createdAt": "2026-11-28T07:21:14Z",
+        "body": "# NexHub v4.0.0-beta.4（预发布测试版）\n\n> 四合一媒体聚合客户端（动漫 / 漫画 / 小说 / 影视）—— 源即插件 · 共创社区。\n\n---\n\n## 🩹 4.0 的第四个测试版\n\nbeta.4 是一次集中收口：**修好鸿蒙版装完打不开的问题**，并把书源引擎的并发、限流与网络语义再对一轮。相对 v4.0.0-beta.3 共 6 个提交。\n\n> - **本次仍是 `feature/legado-booksource-compat` 分支构建**，未合并主分支；版本号 v4.0.0-beta.4。\n> - **兼容性**：现有源、书架 / 收藏 / 阅读进度不受影响；本次书源改动集中在语义对齐与容错，旧源无需修改。\n> - **测试版提醒**：遇到问题请用「设置 → 高级 → 运行日志 → 导出日志文件」把日志发出来，定位会快很多。\n\n> ⚠️ **本应用不内置任何内容源**，首次打开是空的。请先导入至少一个源 JSON 才能看到内容。源由社区共享维护，请自行评估其合规性与内容合法性。\n\n---\n\n## ✨ 本次更新内容\n\n### 📱 鸿蒙版可以正常启动了\n\n- **修好「装完打开就停住」**：此前鸿蒙构建时补依赖的准备脚本判断写错，安全存储插件的依赖实际从未写进清单，打出来的包缺少该插件的原生注册。应用一启动就要读一次凭据，拿不到注册便报错并停在启动画面，看起来就是「进不去」。\n- 现在改为按依赖行精确判断，两个鸿蒙专属依赖都会真实写入；构建日志里也能确认插件注册齐全。\n- 之前装过 beta.3 鸿蒙包且打不开的，直接覆盖安装本版即可。\n\n### 🚦 并发与限流更守规矩\n\n- **排队请求不再「一起放行」**：限流窗口期满后重新判定，多个等待中的请求不会在同一时刻全部通过，实际并发不会超出源里配置的数值，降低被站点限流或封 IP 的概率。\n- **发现页分类脚本只跑一次**：同一源的动态分类并发调用复用同一个在飞结果，重复点按或快速切换不会再重复执行分类脚本；主动刷新时会先等旧请求收尾再重抓，不会被旧结果覆盖。\n\n### 📄 正文分页与批量请求更省更稳\n\n- **下一页地址回到当前页上下文求值**，不跨页串变量；批量取页在首个失败后停止派发，不再白跑剩余页，也不再重复打站点。\n- **批量请求语义收紧**：任一项失败即整批报错，不再把「部分成功」当完整成功；新增批量测速接口，测源时逐项计时并给出统一失败码。\n- **页面内脚本取不到结果时按固定节奏重试**（上限 30 次 / 30 秒），耗尽后回退到已拿到的 HTML，不再长时间干等。\n- **字数显示更准**：按 HALF_EVEN 与单精度口径换算，`.x5` 这类边界不再显示错位。\n- **jsoup 连接选项真正生效**：超时、跟随重定向、最大响应体、忽略 HTTP 错误都按配置执行；替换模板按 Java Matcher 展开，越界组号与非法写法回退字面量，而不是中途报错。\n\n### 🧩 规则与归档兼容再收一轮\n\n- 规则切尾、占有量词、XML 解析、JSONPath 取值、自动密钥、多格式归档、目录回灌、临时源变量等边界按基准口径对齐，加密与压缩类源更少出现「能搜到、正文打不开」。\n- 发现页选项栏的显示名与动作共享同一份实时数据，脚本写入会回写并随既有流程落盘。\n\n### 🧪 测试与已知限制\n\n- `dart analyze lib` 0 error；书源相关测试结果与改动前逐条一致，无新增回归。\n- 少数 Java API 与字符集仍按容错降级（未知 charset 走 UTF-8）；`unrar` / `un7z` 仍只解析 zip 路径；WebView 相关路径需更多真机验证。\n\n---\n\n## ⬆️ 安装与升级\n\n- 本版是分支 beta，Android / Windows / Linux / macOS / iOS / 鸿蒙产物发布在同一个预发布 Release 下。\n- 沿用同一签名密钥，可直接覆盖安装。鸿蒙 HAP 不带签名，需自行签名后侧载。\n\n## 📄 免责声明\n\n- NexHub 不内置任何内容源，所有内容均来自你自行导入的「源」；请在导入前自行确认来源的合法性与安全性，使用产生的风险由用户自行承担。\n\n---\n\n## English\n\n# NexHub v4.0.0-beta.4 (pre-release)\n\n> All-in-one media aggregator (anime / manga / novels / video) — Source-as-Plugin · co-created community.\n\n---\n\n## 🩹 The fourth 4.0 test build\n\nbeta.4 is a focused cleanup: it **fixes the HarmonyOS build that could not get past launch**, and gives the book-source engine's concurrency, rate-limiting and network semantics another pass. 6 commits since v4.0.0-beta.3.\n\n> - **Still built from the `feature/legado-booksource-compat` branch**, not merged into main; version v4.0.0-beta.4.\n> - **Compatibility**: existing sources, bookshelves / favorites / reading progress are unaffected; the book-source work here is semantic alignment plus tolerance, so old sources need no edits.\n> - **Beta reminder**: when something breaks, use Settings → Advanced → Runtime Log → Export log file and send it over — that makes diagnosis much faster.\n\n> ⚠️ **This app ships with no content sources.** It is empty on first launch. Import at least one source JSON before you can see anything. Sources are shared by the community; assess their compliance and legality yourself.\n\n---\n\n## ✨ What's new\n\n### 📱 The HarmonyOS build launches again\n\n- **Fixed \"install, open, stuck\"**: the preparation script that adds HarmonyOS-only dependencies during the build had a faulty check, so the secure-storage dependency was never actually written into the manifest. The resulting package lacked that plugin's native registration; the app reads a credential at startup, fails, and stays on the splash screen — which looks exactly like \"it won't open\".\n- The check now matches actual dependency lines, so both HarmonyOS-only dependencies land in the manifest, and the build log confirms the plugin is registered.\n- If you installed the beta.3 HarmonyOS package and it would not start, just overwrite-install this build.\n\n### 🚦 Concurrency and rate limiting behave properly\n\n- **Queued requests no longer all pass at once**: after a rate-limit window expires the request is re-evaluated, so waiters are not released in one burst and real concurrency stays within the value configured on the source — less chance of being throttled or blocked by a site.\n- **Explore-page category scripts run once**: concurrent calls for the same source reuse the in-flight result, so repeated taps or fast switching no longer re-run the category script; an explicit refresh waits for the pending call before refetching, instead of being overwritten by stale results.\n\n### 📄 Content paging and batch requests: leaner and steadier\n\n- **The next-page URL is evaluated in the current page's context**, so variables no longer leak across pages; batch page fetching stops dispatching after the first failure instead of burning through the remaining pages and re-hitting the site.\n- **Batch request semantics tightened**: any failed item fails the whole batch, no more treating a partial success as complete; a batch speed-test API times each item and reports a unified failure code when testing sources.\n- **In-page scripts retry on a fixed cadence** (up to 30 times / 30 seconds) when they yield nothing, then fall back to the HTML already fetched instead of waiting indefinitely.\n- **Word counts are accurate**: rounded with HALF_EVEN at single precision, so `.x5` boundaries no longer display wrong.\n- **jsoup connection options actually apply**: timeout, follow-redirects, max body size and ignore-HTTP-errors are honoured; replacement templates expand like a Java Matcher, with out-of-range groups and malformed patterns falling back to the literal instead of aborting.\n\n### 🧩 Rules and archives: another compatibility pass\n\n- Trailing cuts in rules, possessive quantifiers, XML parsing, JSONPath lookups, auto keys, multi-format archives, TOC refill and temporary source variables are aligned with baseline behaviour, so encrypted and compressed sources are less likely to \"search fine but fail to open the content\".\n- The explore-page option bar now shares one live dataset between display name and action; script writes flow back and persist through the existing pipeline.\n\n### 🧪 Tests & known limits\n\n- `dart analyze lib` reports 0 errors; book-source test results match the pre-change baseline item by item, with no new regressions.\n- A small set of Java APIs and charsets still degrade gracefully (unknown charsets fall back to UTF-8); `unrar` / `un7z` still only handle the zip path; WebView paths need more on-device verification.\n\n---\n\n## ⬆️ Install & upgrade\n\n- This is a branch beta; Android / Windows / Linux / macOS / iOS / HarmonyOS artifacts ship in the same pre-release.\n- The same signing key applies, so overwrite-install works. The HarmonyOS HAP remains unsigned and must be signed before sideloading.\n\n## 📄 Disclaimer\n\n- NexHub ships no content sources. Everything comes from sources you import yourself; verify each source's legality and safety before use. You bear the risk of using them.\n",
         "assets": [
           {
             "name": "app-arm64-v8a-release.apk",
-            "size": 86001513,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/app-arm64-v8a-release.apk"
+            "size": 86067553,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/app-arm64-v8a-release.apk"
           },
           {
             "name": "app-armeabi-v7a-release.apk",
-            "size": 82392325,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/app-armeabi-v7a-release.apk"
+            "size": 82507521,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/app-armeabi-v7a-release.apk"
           },
           {
             "name": "app-release.apk",
-            "size": 209741149,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/app-release.apk"
+            "size": 210052949,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/app-release.apk"
           },
           {
             "name": "app-x86_64-release.apk",
-            "size": 91905787,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/app-x86_64-release.apk"
+            "size": 92037363,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/app-x86_64-release.apk"
           },
           {
             "name": "NexHub-ios.ipa",
-            "size": 42979583,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-ios.ipa"
+            "size": 43018550,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-ios.ipa"
           },
           {
             "name": "NexHub-linux-x64.AppImage",
-            "size": 130103800,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-linux-x64.AppImage"
+            "size": 130111992,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-linux-x64.AppImage"
           },
           {
             "name": "NexHub-linux-x64.deb",
-            "size": 29484618,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-linux-x64.deb"
+            "size": 29517190,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-linux-x64.deb"
           },
           {
             "name": "NexHub-linux-x64.tar.gz",
-            "size": 36628881,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-linux-x64.tar.gz"
+            "size": 36670486,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-linux-x64.tar.gz"
           },
           {
             "name": "NexHub-macos.dmg",
-            "size": 82710672,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-macos.dmg"
+            "size": 82186202,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-macos.dmg"
           },
           {
             "name": "NexHub-macos.zip",
-            "size": 73175043,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-macos.zip"
+            "size": 73239604,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-macos.zip"
           },
           {
             "name": "NexHub-ohos-arm64-unsigned.hap",
-            "size": 81769591,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-ohos-arm64-unsigned.hap"
+            "size": 106462395,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-ohos-arm64-unsigned.hap"
           },
           {
-            "name": "NexHub-setup-4.0.0-beta.3.exe",
-            "size": 48756450,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-setup-4.0.0-beta.3.exe"
+            "name": "NexHub-setup-4.0.0-beta.4.exe",
+            "size": 48769711,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-setup-4.0.0-beta.4.exe"
           },
           {
             "name": "NexHub-windows-x64.zip",
-            "size": 66628986,
-            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.3/NexHub-windows-x64.zip"
+            "size": 66667740,
+            "browserDownloadUrl": "https://github.com/nexhub-app/NexHub/releases/download/v4.0.0-beta.4/NexHub-windows-x64.zip"
           }
         ]
       },
